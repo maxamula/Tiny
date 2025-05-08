@@ -191,7 +191,7 @@ namespace tiny
 				{
 					gContext.BeginScene();
 					
-					CComPtr<ID3D12GraphicsCommandList6> cmd = gContext.mainQueue.GetCurrentCommandList();
+					CComPtr<ID3D12GraphicsCommandList6> cmd = gContext.mainQueue.AcquireNextCommandList();
 					std::set<Window*> windows;
 					
 					for (auto& view : gRenderViews)
@@ -213,17 +213,10 @@ namespace tiny
 						ID3D12DescriptorHeap* heaps[] = { *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV), *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_SAMPLER) };
 						cmd->SetDescriptorHeaps(_countof(heaps), heaps);
 						
-
 						CD3DX12_RESOURCE_BARRIER barrier = CD3DX12_RESOURCE_BARRIER::Transition(rt.resource, D3D12_RESOURCE_STATE_PRESENT, D3D12_RESOURCE_STATE_RENDER_TARGET);
 						cmd->ResourceBarrier(1, &barrier);		
 									
-						
 						view.frameGraph.Execute(sf, renderContext, gContext);
-						
-						
-						
-						
-
 						
 						windows.insert(view.window);
 						barrier = CD3DX12_RESOURCE_BARRIER::Transition(rt.resource, D3D12_RESOURCE_STATE_RENDER_TARGET, D3D12_RESOURCE_STATE_PRESENT);

@@ -2,6 +2,7 @@
 #include <d3d12.h>
 #include <atlbase.h>
 #include <future>
+#include <array>
 
 namespace tiny
 {
@@ -22,24 +23,28 @@ namespace tiny
 		bool CheckFrameCompletion(u64 fence);
 
 		// Getters
+		CComPtr<ID3D12GraphicsCommandList6> AcquireNextCommandList();
 		ID3D12CommandQueue* GetQueue() const { return mCommandQueue.p; }
-		ID3D12GraphicsCommandList6* GetCurrentCommandList() const { return mCurrentCmdList.p; }
 		u8 GetFrameIndex() const { return mFrameIndex.load(); }
 		u64 GetNextFenceValue() const { return mNextFenceValue.load(); }
 
 	private:
 		struct CommandFrame
 		{
-			CComPtr<ID3D12CommandAllocator>		commandAllocator;
-			CComPtr<ID3D12GraphicsCommandList6>	commandList;
-			u64									fenceValue;
+			struct CommandFrameThreadContext
+			{
+				CComPtr<ID3D12CommandAllocator>		commandAllocator;
+				CComPtr<ID3D12GraphicsCommandList6>	commandList;
+			};
+			std::array<CommandFrameThreadContext, TINY_COMMAND_LIST_POOL_SIZE> commandListContexts;
+			u8 allocatedCommandListCount;
+			u64	fenceValue;
 		};
 
 		void _WaitForFrame(u8 frameIndex);
 
 		CComPtr<ID3D12CommandQueue>			mCommandQueue;
 		std::vector<CommandFrame>			mCommandFrames;
-		CComPtr<ID3D12GraphicsCommandList6>	mCurrentCmdList;
 		CComPtr<ID3D12Fence>				mFence;
 		HANDLE								mFenceEvent;
 		std::atomic<u8>						mLastSubmittedFrame;

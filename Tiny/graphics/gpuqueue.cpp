@@ -14,9 +14,13 @@ namespace tiny
 		THROW_IF_FAILED(gDevice->CreateCommandQueue(&queueDesc, IID_PPV_ARGS(&mCommandQueue)));
 		for (u8 i = 0; i < bufferCount; ++i)
 		{
-			THROW_IF_FAILED(gDevice->CreateCommandAllocator(queueDesc.Type, IID_PPV_ARGS(&mCommandFrames[i].commandAllocator)));
-			THROW_IF_FAILED(gDevice->CreateCommandList(0, queueDesc.Type, mCommandFrames[i].commandAllocator.p, nullptr, IID_PPV_ARGS(&mCommandFrames[i].commandList)));
-			THROW_IF_FAILED(mCommandFrames[i].commandList->Close());
+			for (auto& ctx : mCommandFrames[i].commandListContexts)
+			{
+				THROW_IF_FAILED(gDevice->CreateCommandAllocator(queueDesc.Type, IID_PPV_ARGS(&ctx.commandAllocator)));
+				THROW_IF_FAILED(gDevice->CreateCommandList(0, queueDesc.Type, ctx.commandAllocator.p, nullptr, IID_PPV_ARGS(&ctx.commandList)));
+				ctx.commandList->Close();
+			}
+			mCommandFrames[i].allocatedCommandListCount = 0;
 			mCommandFrames[i].fenceValue = 0;
 		}
 		THROW_IF_FAILED(gDevice->CreateFence(0, D3D12_FENCE_FLAG_NONE, IID_PPV_ARGS(&mFence)));
@@ -27,7 +31,6 @@ namespace tiny
 		mCommandFrames.clear();
 		mCommandQueue.Release();
 		mFence.Release();
-		mCurrentCmdList.Release();
 		if (mFenceEvent)
 		{
 			CloseHandle(mFenceEvent);
@@ -38,17 +41,21 @@ namespace tiny
 	u8 D3DGpuQueue::BeginFrame()
 	{
 		_WaitForFrame(mFrameIndex);
-		THROW_IF_FAILED(mCommandFrames[mFrameIndex].commandAllocator->Reset());
-		THROW_IF_FAILED(mCommandFrames[mFrameIndex].commandList->Reset(mCommandFrames[mFrameIndex].commandAllocator.p, nullptr));
-		mCurrentCmdList = mCommandFrames[mFrameIndex].commandList;
 		return mFrameIndex;
 	}
 
 	void D3DGpuQueue::EndFrame(std::function<void()> completionCallback)
 	{
-		THROW_IF_FAILED(mCurrentCmdList->Close());
-		ID3D12CommandList* cmdLists[] = { mCurrentCmdList.p };
-		mCommandQueue->ExecuteCommandLists(_countof(cmdLists), cmdLists);
+		std::vector<ID3D12CommandList*> commandLists;
+		commandLists.reserve(mCommandFrames[mFrameIndex].allocatedCommandListCount);
+		for (u8 i = 0; i < mCommandFrames[mFrameIndex].allocatedCommandListCount; ++i)
+		{
+			auto& ctx = mCommandFrames[mFrameIndex].commandListContexts[i];
+			THROW_IF_FAILED(ctx.commandList->Close());
+			commandLists.push_back(ctx.commandList.p);
+		}
+		mCommandQueue->ExecuteCommandLists(mCommandFrames[mFrameIndex].allocatedCommandListCount, commandLists.data());
+		mCommandFrames[mFrameIndex].allocatedCommandListCount = 0;
 		
 		if (completionCallback)
 			completionCallback();
@@ -69,6 +76,15 @@ namespace tiny
 	bool D3DGpuQueue::CheckFrameCompletion(u64 fence)
 	{
 		return mFence->GetCompletedValue() >= fence;
+	}
+
+	CComPtr<ID3D12GraphicsCommandList6> D3DGpuQueue::AcquireNextCommandList()
+	{
+		u8 frameIndex = mFrameIndex;
+		auto& ctx = mCommandFrames[frameIndex].commandListContexts[mCommandFrames[frameIndex].allocatedCommandListCount++];
+		THROW_IF_FAILED(ctx.commandAllocator->Reset());
+		THROW_IF_FAILED(ctx.commandList->Reset(ctx.commandAllocator.p, nullptr));
+		return ctx.commandList;
 	}
 
 	void D3DGpuQueue::_WaitForFrame(u8 frameIndex)
