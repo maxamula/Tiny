@@ -17,7 +17,7 @@ namespace tiny
 		void Destroy();
 
 		u8 BeginFrame();
-		std::future<void> EndFrame(std::function<void()> completionCallback);
+		void EndFrame(std::function<void()> completionCallback);
 		void Flush();
 		bool CheckFrameCompletion(u64 fence);
 

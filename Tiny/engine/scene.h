@@ -2,11 +2,13 @@
 #include "entt.hpp"
 #include "content/content.h"
 #include "fx/shaderfx.h"
-
-#include <DirectXMath.h>
+#include "camera.h"
 
 namespace tiny
 {
+	using ComponentGeometry = Mesh;
+	using ComponentMaterial = fx::MeshTechnique;
+
 	struct ComponentHierarchy
 	{
 	_internal:
@@ -15,25 +17,22 @@ namespace tiny
 		std::string tag;
 	};
 
+	struct TINYFX_API ComponentTransform
+	{
+		DirectX::XMVECTOR position;
+		DirectX::XMVECTOR rotation;
+		DirectX::XMVECTOR scale;
+	};
+
 	struct TINYFX_API Scene
 	{
 		entt::entity CreateObject(entt::entity entity, const std::string& tag);
 		entt::entity CreateObject(const std::string& tag);
+
+		DirectX::XMMATRIX GetWorldMatrix(entt::entity entity);
+		entt::registry& GetRegistry() { return registry; }
 	_internal:
 		entt::registry registry;
 		std::set<entt::entity> rootEntities;
-	};
-
-	struct TINYFX_API ComponentRenderItem
-	{
-		Mesh mesh;
-		fx::MeshTechnique technique;
-	};
-
-	struct TINYFX_API ComponentTransform
-	{
-		DirectX::XMMATRIX world;
-		DirectX::XMMATRIX view;
-		DirectX::XMMATRIX projection;
 	};
 }

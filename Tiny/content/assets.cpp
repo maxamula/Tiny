@@ -5,6 +5,17 @@
 #include "entt.hpp"
 #include "content.h"
 
+#include "cereal/archives/binary.hpp"
+#include "cereal/types/vector.hpp"
+#include "cereal/types/string.hpp"
+#include "cereal/types/variant.hpp"
+#include "cereal/types/optional.hpp"
+#include "cereal/types/array.hpp"
+#include "cereal/types/unordered_map.hpp"
+
+
+#include <fstream>
+
 namespace tiny
 {
 	TINYFX_API Mesh AssetCreateMesh(const SerializedMesh& mesh)
@@ -110,5 +121,103 @@ namespace tiny
 		ret.srv = GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV).AllocateDescriptor();
 		gDevice->CreateShaderResourceView(ret.resource, &srvDesc, ret.srv.cpu);
 		return ret;
+	}
+
+	std::shared_ptr<fx::IMeshMaterialInstance> AssetCreateMeshMaterial(const SerializedMaterial& material)
+	{
+		entt::meta_type type = entt::resolve(material.matID);
+		if (!type)
+			THROW_ENGINE_EXCEPTION("Material type {} not found", material.matID);
+
+		auto& reg = fx::GetMeshMaterialsRegistry();
+		auto it = reg.find(material.matID);
+		if (it == reg.end())
+			THROW_ENGINE_EXCEPTION("Material type {} not registered", material.matID);
+		std::shared_ptr<fx::IMeshMaterialInstance> mat = it->second.factory();
+
+		entt::meta_any any = mat->Meta();
+		if (!any)
+			THROW_ENGINE_EXCEPTION("Material type {} could not be constructed", material.matID);
+
+		for (const auto& prop : material.properties)
+		{
+			entt::meta_data field = type.data(prop.propertyID);
+			if (!field)
+				THROW_ENGINE_EXCEPTION("Material type {} does not have property {}", material.matID, prop.propertyID);
+			entt::meta_any value = field.get(any);
+			if (!value)
+				THROW_ENGINE_EXCEPTION("Material type {} property {} could not be set", material.matID, prop.propertyID);
+
+			if (auto icbuffer = value.try_cast<ICBuffer>())
+			{
+				auto [data, size] = icbuffer->GetData();
+				SerializedCBuffer serializedCbuffer = std::get<SerializedCBuffer>(prop.value);
+				memcpy(data, serializedCbuffer.data.data(), size);
+			}
+			else if (auto texture = value.try_cast<Texture2D>())
+			{
+				SerializedTexture serializedTexture = std::get<SerializedTexture>(prop.value);
+				field.set(any, AssetCreateTexture(serializedTexture));
+			}
+		}
+		mat->SetFeatureFlags(material.features);
+		return mat;
+	}
+
+	fx::MeshTechnique AssetCreateTechnique(const SerializedTechnique& texture)
+	{
+		fx::MeshTechnique technique;
+		for (auto& [passID, material] : texture.materials)
+			technique.passes[passID] = AssetCreateMeshMaterial(material);
+		return technique;
+	}
+
+	void AssetSaveTechnique(const std::string& path, const SerializedTechnique& technique)
+	{
+		std::ofstream file(path, std::ios::binary);
+		if (!file)
+			THROW_ENGINE_EXCEPTION("Failed to open file for writing: {}", path);
+		cereal::BinaryOutputArchive ar(file);
+		ar(technique);
+	}
+
+	void AssetSaveMaterial(const std::string& path, SerializedMaterial material)
+	{
+		std::ofstream file(path, std::ios::binary);
+		if (!file)
+			THROW_ENGINE_EXCEPTION("Failed to open file for writing: {}", path);
+		cereal::BinaryOutputArchive ar(file);
+		ar(material);
+	}
+
+	void AssetSaveMesh(const std::string& path, const SerializedMesh& mesh)
+	{
+		std::ofstream file(path, std::ios::binary);
+		if (!file)
+			THROW_ENGINE_EXCEPTION("Failed to open file for writing: {}", path);
+		cereal::BinaryOutputArchive ar(file);
+		ar(mesh);
+	}
+
+	SerializedMesh AssetLoadMesh(const std::string& path)
+	{
+		std::ifstream file(path, std::ios::binary);
+		if (!file)
+			THROW_ENGINE_EXCEPTION("Failed to open file for reading: {}", path);
+		cereal::BinaryInputArchive ar(file);
+		SerializedMesh mesh;
+		ar(mesh);
+		return mesh;
+	}
+
+	SerializedTechnique AssetLoadTechnique(const std::string& path)
+	{
+		std::ifstream file(path, std::ios::binary);
+		if (!file)
+			THROW_ENGINE_EXCEPTION("Failed to open file for reading: {}", path);
+		cereal::BinaryInputArchive ar(file);
+		SerializedTechnique technique;
+		ar(technique);
+		return technique;
 	}
 }

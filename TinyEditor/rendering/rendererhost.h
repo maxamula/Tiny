@@ -7,7 +7,7 @@
 
 namespace tiny
 {
-	class RendererHost : public TinyForwardRenderer
+	class RendererHost : public IRenderer
 	{
 	public:
 		RendererHost(HWND hwnd);

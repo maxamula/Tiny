@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="watermat.cpp" />
+    <ClCompile Include="renderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="watermat.h" />
+    <ClInclude Include="renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DemoCustomRenderer.rc" />
+  </ItemGroup>
+</Project>

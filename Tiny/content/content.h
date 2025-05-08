@@ -5,7 +5,7 @@
 #include "graphics/descriptors.h"
 #include "graphics/copyqueue.h"
 #include "entt.hpp"
-#include "graphics/renderctx.h"
+//#include "graphics/renderctx.h"
 
 using namespace entt;
 
@@ -14,20 +14,13 @@ namespace tiny
 	enum InputAttributes
 	{
 		InputAttribute_Position = 0,
-		InputAttribute_Normal = 1,
-		InputAttribute_Tangent = 2,
-		InputAttribute_UV = 3,
-		InputAttribute_Color = 4,
-		InputAttribute_BoneWeights = 5,
-		InputAttributes_BoneIndices = 6,
+		InputAttribute_Normal = 1 << 0,
+		InputAttribute_Tangent = 1 << 1,
+		InputAttribute_UV = 1 << 2,
+		InputAttribute_Color = 1 << 3,
+		InputAttribute_BoneWeights = 1 << 4,
+		InputAttributes_BoneIndices = 1 << 5,
 		NumInputAttributes = 7
-	};
-
-	template<typename T>
-	concept Resource = requires(T t)
-	{
-		{ T::Create() } -> std::same_as<T>;
-		typename T::Desc;
 	};
 
 	struct TINYFX_API ICBuffer
@@ -37,36 +30,40 @@ namespace tiny
 		virtual std::tuple<void*, u32> GetData() = 0;
 	};
 
-	struct TINYFX_API ICBufferCPU : public ICBuffer
+	struct TINYFX_API CBufferCPUBase : public ICBuffer
 	{
 	public:
-		virtual ~ICBufferCPU() = default;
+		CBufferCPUBase(u32 size);
+		virtual ~CBufferCPUBase() = default;
 		void Update();
 	_internal:
 		CComPtr<ID3D12Resource> resource;
 	};
 
-	struct TINYFX_API ICBufferGPU : public ICBuffer
+	struct TINYFX_API CBufferGPUBase : public ICBuffer
 	{
 	public:
-		virtual ~ICBufferGPU() = default;
+		CBufferGPUBase(u32 size);
+		virtual ~CBufferGPUBase() = default;
 		void Update();
 	_internal:
 		CComPtr<ID3D12Resource> resource;
 	};
 
 	template<typename T>
-	struct TINYFX_API CBufferCPU final : public ICBufferCPU
+	struct TINYFX_API CBufferCPU final : public CBufferCPUBase
 	{
 	public:
-		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) / sizeof(u32) }; }
+		CBufferCPU() : CBufferCPUBase(sizeof(T))
+		{}
+		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) }; }
 		T data;
 	private:
 		static bool _sRegisterType()
 		{
 			entt::meta_factory<CBufferCPU<T>>()
 				.type(entt::hashed_string{ ("CBufferCPU<" + std::string(typeid(T).name()) + ">").c_str() })
-				.base<ICBufferCPU>()
+				.base<CBufferCPUBase>()
 				.data<&CBufferCPU<T>::data>("data"_hs);
 			return true;
 		}
@@ -74,17 +71,19 @@ namespace tiny
 	};
 
 	template<typename T>
-	struct TINYFX_API CBufferGPU final : public ICBufferGPU
+	struct TINYFX_API CBufferGPU final : public CBufferGPUBase
 	{
 	public:
-		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) / sizeof(u32) }; }
+		CBufferGPU() : CBufferGPUBase(sizeof(T))
+		{}
+		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) }; }
 		T data;
 	private:
 		static bool _sRegisterType()
 		{
 			entt::meta_factory<CBufferGPU<T>>()
 				.type(entt::hashed_string{ ("CBufferGPU<" + std::string(typeid(T).name()) + ">").c_str() })
-				.base<ICBufferCPU>()
+				.base<CBufferGPUBase>()
 				.data<&CBufferGPU<T>::data>("data"_hs);
 			return true;
 		}
@@ -92,11 +91,13 @@ namespace tiny
 	};
 
 	template<typename T>
-	struct TINYFX_API CBufferInline final : public ICBuffer
+	struct CBufferInline final : public ICBuffer
 	{
 	public:
+		CBufferInline() = default;
+		~CBufferInline() = default;
 		T data;
-		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) / sizeof(u32) }; }
+		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) }; }
 	private:
 		static bool _sRegisterType()
 		{
@@ -109,18 +110,13 @@ namespace tiny
 		static inline const bool _sReg = _sRegisterType();
 	};
 
-	struct TINYFX_API Texture
-	{
-	_internal:
-		CComPtr<ID3D12Resource> resource;
-		DescriptorHandle srv;
-	};
 
 	struct TINYFX_API Texture2D
 	{
 	_internal:
 		CComPtr<ID3D12Resource> resource;
 		DescriptorHandle srv;
+		u32 width, height;
 	};
 
 	struct TINYFX_API RenderTexture
@@ -137,6 +133,7 @@ namespace tiny
 		CComPtr<ID3D12Resource> resource;
 		DescriptorHandle rtv;
 		DescriptorHandle srv;
+		u32 width, height;
 	};
 
 	struct TINYFX_API DepthTexture
@@ -151,6 +148,7 @@ namespace tiny
 		CComPtr<ID3D12Resource> resource;
 		DescriptorHandle dsv;
 		DescriptorHandle srv;
+		u32 width, height;
 	};
 
 	struct TINYFX_API Mesh
@@ -166,5 +164,5 @@ namespace tiny
 	};
 
 	std::vector<D3D12_INPUT_ELEMENT_DESC> ConstructInputLayout(u8 attributes);
-	u32 GetVertexStride(u8 attributes);
+	TINYFX_API u32 GetVertexStride(u8 attributes);
 }

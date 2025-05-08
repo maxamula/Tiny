@@ -61,7 +61,7 @@ namespace tiny::fx
 
 	// CRTP
 	template<typename Derived>
-	struct TINYFX_API MaterialInstance : public IMaterialInstance
+	struct MaterialInstance : public IMaterialInstance
 	{
 		virtual ~MaterialInstance() = default;
 		entt::meta_any Meta() override { return entt::forward_as_meta(static_cast<Derived&>(*this));}
@@ -86,16 +86,13 @@ namespace tiny::fx
 #pragma region Mesh Material
 	struct MeshShaderFX
 	{
-		struct
-		{
-			CComPtr<IDxcBlob>										vs;
-			CComPtr<IDxcBlob>										ps;
-			CComPtr<ID3D12RootSignature>							rootSig;
-			CComPtr<ID3DBlob>										rootSigBlob;
-			std::unordered_map<u64, CComPtr<ID3D12PipelineState>>	pso;
-			std::vector<ShaderResourceBinding>						bindings;
-			std::vector<ShaderResourceSpecialBinding>				specialBindings;
-		} forward;
+		CComPtr<IDxcBlob>										vs;
+		CComPtr<IDxcBlob>										ps;
+		CComPtr<ID3D12RootSignature>							rootSig;
+		CComPtr<ID3DBlob>										rootSigBlob;
+		std::unordered_map<u64, CComPtr<ID3D12PipelineState>>	pso;
+		std::vector<ShaderResourceBinding>						bindings;
+		std::vector<ShaderResourceSpecialBinding>				specialBindings;
 	};
 
 	struct TINYFX_API IMeshMaterialInstance
@@ -108,7 +105,6 @@ namespace tiny::fx
 		MeshShaderFX* fx;
 	};
 
-	// CRTP
 	template<typename Derived>
 	struct TINYFX_API MeshMaterialInstance : public IMeshMaterialInstance
 	{
@@ -170,7 +166,6 @@ namespace tiny::fx
 
 	struct TINYFX_API FxVariantsCompilationDesc final
 	{
-		LPCSTR name;
 		struct
 		{
 			LPCSTR sourcePath;
@@ -213,7 +208,7 @@ namespace tiny::fx
 	TINYFX_API void CompileFxVariants(const FxVariantsCompilationDesc& desc, std::vector<IntermediateCompiledCombination>& oCompiled);
 	TINYFX_API void GetReflectionInfo(const IntermediateCompiledCombination& combination, IntermediateCompiledReflection& oReflection);
 	TINYFX_API void InitializeRootParameter(const IntermediateShaderResource& resource, CD3DX12_ROOT_PARAMETER& oRootParameter);
-	TINYFX_API bool ProcessSpecialBindings(const IntermediateShaderResource& resource, u64 propertyID, std::vector<ShaderResourceSpecialBinding>& bindings);
+	TINYFX_API bool ProcessSpecialBindings(const IntermediateShaderResource& resource, u32 rootIndex, u64 propertyID, std::vector<ShaderResourceSpecialBinding>& bindings);
 	TINYFX_API void GenInputVariantsPSOs(D3D12_GRAPHICS_PIPELINE_STATE_DESC& baseDesc, ID3D12Device* pDevice, u8 mandatoryAttributes, std::unordered_map<u64, CComPtr<ID3D12PipelineState>>& oPso);
 
 	struct StaticSamplerDesc
@@ -230,8 +225,7 @@ namespace tiny::fx
 	};
 
 	TINYFX_API void MaterialDefaultInitialize(ID3D12Device* pDevice, const MaterialInitializationDesc& desc, Material& material);
-	TINYFX_API void DefaultInitialize(ID3D12Device* pDevice, const FxCompilationDesc& desc, const D3D12_GRAPHICS_PIPELINE_STATE_DESC& basePsoDesc, MeshMaterial& material);
-
+	TINYFX_API void MeshMaterialDefaultInitialize(ID3D12Device* pDevice, const MaterialInitializationDesc& desc, MeshMaterial& material);
 
 #pragma endregion
 }

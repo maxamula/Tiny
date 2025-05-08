@@ -1,17 +1,20 @@
 #include "rendererhost.h"
 #include "imgui/imgui_impl_dx12.h"
 #include "imgui/imgui_impl_win32.h"
+#include "gui/gui.h"
 
 #include <graphics/gfxglobal.h>
 #include "imguipass.h"
 
 namespace tiny
 {
-	RendererHost::RendererHost(HWND hwnd) : TinyForwardRenderer()
+	RendererHost::RendererHost(HWND hwnd)
+		: mHostedRederer(std::make_unique<TinyForwardRenderer>())
 	{
 		IMGUI_CHECKVERSION();
 		mImGuiContext = ImGui::CreateContext();
 		ImGui::SetCurrentContext(mImGuiContext);
+		StyleColorsTiny();
 
 		ImGuiIO& io = ImGui::GetIO();
 		io.ConfigFlags |= ImGuiConfigFlags_DockingEnable | ImGuiConfigFlags_ViewportsEnable;
@@ -42,19 +45,21 @@ namespace tiny
 			.format = DXGI_FORMAT_R8G8B8A8_UNORM,
 			.clearValue = { DXGI_FORMAT_UNKNOWN, { 0.0f, 0.0f, 0.0f, 1.0f } }
 		};
+		if (size.x > 0 && size.y > 0)
+		{
+			desc.width = static_cast<u32>(size.x);
+			desc.height = static_cast<u32>(size.y);
+		}
+		else
 		{
 			desc.width = 1264;
 			desc.height = 681;
 		}
 
+		RenderTextureHandle hostedTexture = mHostedRederer->Build(mFrameGraph);
 
 		RenderTextureHandle outputTexture = mFrameGraph.CreateRenderTexture(desc);
-		mFrameGraph.AddPass<ImGuiPass>([&](FrameGraph::Builder& builder, ImGuiPass& pass)
-		{
-				pass.outputTexture = outputTexture;
-				builder.Write(pass.outputTexture);
-		});
-		
+		mFrameGraph.AddPass<ImGuiPass>(outputTexture, hostedTexture);
 		return outputTexture;
 	}
 }

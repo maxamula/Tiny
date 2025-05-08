@@ -9,9 +9,7 @@ namespace tiny
 	struct SerializedCBuffer;
 	struct SerializedTexture;
 	struct SerializedMaterialProperty;
-	using TextureAsset = SerializedTexture;
 	struct SerializedMaterial;
-	struct MeshAsset;
 
 	struct SerializedCBuffer
 	{
@@ -54,8 +52,8 @@ namespace tiny
 	struct SerializedMesh
 	{
 		u32 inputAttributes;
-		std::vector<u8> vertices;
-		std::vector<u8> indices;
+		std::vector<f32> vertices;
+		std::vector<u32> indices;
 
 		template <class Archive>
 		void serialize(Archive& ar)
@@ -88,6 +86,15 @@ namespace tiny
 		}
 	};
 
+
 	TINYFX_API Mesh AssetCreateMesh(const SerializedMesh& mesh);
 	TINYFX_API Texture2D AssetCreateTexture(const SerializedTexture& texture);
+	TINYFX_API std::shared_ptr<fx::IMeshMaterialInstance> AssetCreateMeshMaterial(const SerializedMaterial& material);
+	TINYFX_API fx::MeshTechnique AssetCreateTechnique(const SerializedTechnique& texture);
+
+	TINYFX_API void AssetSaveMaterial(const std::string& path, const SerializedMaterial& material);
+	TINYFX_API void AssetSaveTechnique(const std::string& path, const SerializedTechnique& technique);
+	TINYFX_API void AssetSaveMesh(const std::string& path, const SerializedMesh& mesh);
+	TINYFX_API SerializedMesh AssetLoadMesh(const std::string& path);
+	TINYFX_API SerializedTechnique AssetLoadTechnique(const std::string& path);
 }

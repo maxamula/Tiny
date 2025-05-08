@@ -15,7 +15,7 @@ namespace tiny::fx
 		return meshMaterials;
 	}
 
-	u8 RegisterMaterial(u64 instanceId, fnMaterialInitializer initializer)
+	u8 RegisterMaterial(u64 instanceId, fnMaterialInitializer initializer, fnMaterialFactory factory)
 	{
 		auto& materials = GetMaterialsRegistry();
 		if (materials.find(instanceId) != materials.end())
@@ -23,12 +23,13 @@ namespace tiny::fx
 		materials[instanceId] = MaterialInfo
 		{ 
 			.initializer = initializer,
+			.factory = factory,
 			.material = {}
 		};
 		return 0;
 	}
 
-	u8 RegisterMeshMaterial(u64 instanceId, fnMeshMaterialInitializer initializer)
+	u8 RegisterMeshMaterial(u64 instanceId, fnMeshMaterialInitializer initializer, fnMeshMaterialFactory factory)
 	{
 		auto& meshMaterials = GetMeshMaterialsRegistry();
 		if (meshMaterials.find(instanceId) != meshMaterials.end())
@@ -36,6 +37,7 @@ namespace tiny::fx
 		meshMaterials[instanceId] = MeshMaterialInfo
 		{
 			.initializer = initializer,
+			.factory = factory,
 			.material = {}
 		};
 		return 0;

@@ -10,11 +10,15 @@
 #include <algorithm>
 #include <cassert>
 #include "content/content.h"
-#include "pass.h"
+#include "graphics/renderctx.h"
+
+#include "taskflow/taskflow.hpp"
 
 
 namespace tiny
 {
+	class IRenderPass;
+
     constexpr uint32_t InvalidResourceId = UINT32_MAX;
 
     struct RenderTextureHandle
@@ -74,17 +78,17 @@ namespace tiny
         // Register resources before setup
         RenderTextureHandle CreateRenderTexture(const RenderTexture::Desc& desc);
         DepthTextureHandle CreateDepthTexture(const DepthTexture::Desc& desc);
+        void Reset();
         FrameGraph();
         ~FrameGraph();
 
-        template<typename PassType>
-        PassType* AddPass(const std::function<void(Builder&, PassType&)>& setupFunc)
+        template<typename PassType, typename... Args>
+        PassType& AddPass(Args&&... args)
         {
-            auto passPtr = std::make_shared<PassType>();
-            PassType* passRaw = passPtr.get();
+            auto passPtr = std::make_shared<PassType>(std::forward<Args>(args)...);
             mPassNodes.emplace_back();
             int passIndex = static_cast<int>(mPassNodes.size()) - 1;
-            mPassNodes[passIndex].Pass = std::move(passPtr);
+            mPassNodes[passIndex].Pass = passPtr;
 
             if (mDependencies.size() <= static_cast<size_t>(passIndex))
             {
@@ -92,13 +96,13 @@ namespace tiny
             }
 
             Builder builder(*this, passIndex);
-            setupFunc(builder, *passRaw);
+            passPtr->Setup(builder);
 
-            return passRaw;
+            return *passPtr;
         }
 
-        void Compile();
-        void Execute(RenderContext& ctx, D3DContext& d3d);
+        void Compile(D3DContext& d3d);
+        void Execute(tf::Subflow& sf, RenderContext& ctx, D3DContext& d3d);
 
     private:
         void AddDependency(int src, int dst);
@@ -147,6 +151,9 @@ namespace tiny
         std::vector<int> mSortedPassIndices;
         std::vector<Allocation> mRenderAllocations;
         std::vector<Allocation> mDepthAllocations;
+
+        std::vector<RenderTexture> mRenderInstances;
+        std::vector<DepthTexture> mDepthInstances;
 
     public:
         friend class FrameGraphResources;

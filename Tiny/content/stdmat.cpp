@@ -1,6 +1,7 @@
 ﻿#include "stdmat.h"
 #include "fx/shaderfx.h"
 #include "fx/registry.h"
+#include "graphics/gfxcommon.h"
 #include "meta.h"
 
 using namespace tiny::fx;
@@ -10,18 +11,27 @@ namespace tiny
 {
 	TINY_REGISTER_MATERIAL(InitializeBeamMaterial, BeamMaterialInstance);
 	TINY_REGISTER_MATERIAL(InitializeTextureStretcherMaterial, TextureStretcherMaterialInstance);
+	TINY_REGISTER_MESH_MATERIAL(InitializeUnlitMaterial, UnlitMaterialInstance);
 
 	META(BeamMaterialInstance)
 	{
-		meta.base<MaterialInstance<BeamMaterialInstance>>()
+		meta.base<MaterialInstance<BeamMaterialInstance>>().ctor()
 			.data<&BeamMaterialInstance::ilShaderParams>("ilShaderParams"_hs);
 	}
 
 	META(TextureStretcherMaterialInstance)
 	{
-		meta.base<MaterialInstance<TextureStretcherMaterialInstance>>()
+		meta.base<MaterialInstance<TextureStretcherMaterialInstance>>().ctor()
 			.data<&TextureStretcherMaterialInstance::diffuseTexture>("diffuseTexture"_hs);
 	}
+
+	META(UnlitMaterialInstance)
+	{
+		meta.base<fx::MeshMaterialInstance<UnlitMaterialInstance>>().ctor()
+			.data<&UnlitMaterialInstance::diffuseTexture>("diffuseTexture"_hs);
+	}
+
+
 
 	void InitializeBeamMaterial(ID3D12Device* pDevice, Material& material)
 	{
@@ -166,5 +176,54 @@ namespace tiny
 		};
 
 		MaterialDefaultInitialize(pDevice, desc, material);
+	}
+
+	void InitializeUnlitMaterial(ID3D12Device* pDevice, MeshMaterial& material)
+	{
+		D3D12_STATIC_SAMPLER_DESC linearClampSampler = {};
+		linearClampSampler.Filter = D3D12_FILTER_MIN_MAG_MIP_LINEAR;
+		linearClampSampler.AddressU = D3D12_TEXTURE_ADDRESS_MODE_CLAMP;
+		linearClampSampler.AddressV = D3D12_TEXTURE_ADDRESS_MODE_CLAMP;
+		linearClampSampler.AddressW = D3D12_TEXTURE_ADDRESS_MODE_CLAMP;
+		linearClampSampler.MipLODBias = 0;
+		linearClampSampler.MaxAnisotropy = 1;
+		linearClampSampler.ComparisonFunc = D3D12_COMPARISON_FUNC_ALWAYS;
+		linearClampSampler.BorderColor = D3D12_STATIC_BORDER_COLOR_TRANSPARENT_BLACK;
+		linearClampSampler.MinLOD = 0.0f;
+		linearClampSampler.MaxLOD = D3D12_FLOAT32_MAX;
+		linearClampSampler.ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
+
+		fx::MaterialInitializationDesc desc
+		{
+			.fxDesc
+			{
+				.vs = { "res:Tiny::mesh_unlit", "VSMain" },
+				.ps = { "res:Tiny::mesh_unlit", "PSMain" },
+				.defines = { },
+				.numConditionalCompilations = 0u
+			},
+			.basePsoDesc
+			{
+				.BlendState = CD3DX12_BLEND_DESC(D3D12_DEFAULT),
+				.SampleMask = UINT_MAX,
+				.RasterizerState = RASTERIZER_STATE.NO_CULL,
+				.DepthStencilState = DEPTH_STATE.DISABLED,
+				.InputLayout = { nullptr, 0 },
+				.PrimitiveTopologyType = D3D12_PRIMITIVE_TOPOLOGY_TYPE_TRIANGLE,
+				.NumRenderTargets = 1,
+				.RTVFormats = { DXGI_FORMAT_R8G8B8A8_UNORM },
+				.SampleDesc = { 1, 0 }
+			},
+			.staticSamplers
+			{
+				StaticSamplerDesc
+				{
+					.id = "linearSampler"_hs,
+					.desc = linearClampSampler
+				}
+			}
+		};
+
+		MeshMaterialDefaultInitialize(pDevice, desc, material);
 	}
 }

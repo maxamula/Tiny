@@ -8,13 +8,15 @@ namespace tiny
 	class ImGuiPass : public IRenderPass
 	{
 	public:
-		ImGuiPass() = default;
+		ImGuiPass(RenderTextureHandle outputTexture, RenderTextureHandle hostedTexture);
 		~ImGuiPass() = default;
 
+		void Setup(FrameGraph::Builder& builder) override;
 		void Execute(RenderContext& ctx, FrameGraphResources& res) override;
 
-		RenderTextureHandle viewportTexture;
-		RenderTextureHandle outputTexture;
+	private:
+		const RenderTextureHandle mOutputTexture;
+		const RenderTextureHandle mHostedTexture;
 	};
 }
 

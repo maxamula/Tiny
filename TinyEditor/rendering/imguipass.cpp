@@ -3,9 +3,11 @@
 #include "imgui/imgui_impl_dx12.h"
 #include "imgui/imgui_impl_win32.h"
 
+#include "materials.h"
+
 namespace tiny
 {
-	void RenderUI()
+	void RenderUI(RenderTexture& vpTexture)
 	{
 		// Full-screen parent window for docking
 		ImGuiViewport* viewport = ImGui::GetMainViewport();
@@ -76,6 +78,8 @@ namespace tiny
 		ImGui::Begin("Scene Debugger");
 		ImGui::End();
 		ImGui::Begin("Scene Viewport");
+		ImVec2 region = ImGui::GetContentRegionAvail();
+		ImGui::Image((ImTextureID)vpTexture.srv.gpu.ptr, region);
 		ImGui::End();
 		ImGui::Begin("Entity Components");
 		ImGui::End();
@@ -87,17 +91,30 @@ namespace tiny
 		ImGui::End();
 	}
 
+	ImGuiPass::ImGuiPass(RenderTextureHandle outputTexture, RenderTextureHandle hostedTexture)
+		: mOutputTexture(outputTexture), mHostedTexture(hostedTexture)
+	{}
+
+	void ImGuiPass::Setup(FrameGraph::Builder& builder)
+	{
+		builder.Write(mOutputTexture);
+		builder.Read(mHostedTexture);
+	}
+
 	void ImGuiPass::Execute(RenderContext& ctx, FrameGraphResources& res)
 	{
-		RenderTexture& tex = res.GetRenderTexture(outputTexture);
+		RenderTexture& tex = res.GetRenderTexture(mOutputTexture);
+		RenderTexture& hosted = res.GetRenderTexture(mHostedTexture);
+		/*ctx.context.Defer(hosted.resource);
+		ctx.context.Defer(hosted.rtv);
+		ctx.context.Defer(hosted.srv);*/
 		auto rtv = tex.rtv.cpu;
 
 		ctx.cmd->OMSetRenderTargets(1, &rtv, FALSE, nullptr);
 		ImGui_ImplDX12_NewFrame();
 		ImGui_ImplWin32_NewFrame();
 		ImGui::NewFrame();
-		//ImGui::ShowDemoWindow();
-		RenderUI();
+		RenderUI(hosted);
 		ImGui::Render();
 		ImGui_ImplDX12_RenderDrawData(ImGui::GetDrawData(), ctx.cmd);
 	}

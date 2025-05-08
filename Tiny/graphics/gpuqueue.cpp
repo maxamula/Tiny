@@ -44,12 +44,12 @@ namespace tiny
 		return mFrameIndex;
 	}
 
-	std::future<void> D3DGpuQueue::EndFrame(std::function<void()> completionCallback)
+	void D3DGpuQueue::EndFrame(std::function<void()> completionCallback)
 	{
 		THROW_IF_FAILED(mCurrentCmdList->Close());
 		ID3D12CommandList* cmdLists[] = { mCurrentCmdList.p };
 		mCommandQueue->ExecuteCommandLists(_countof(cmdLists), cmdLists);
-
+		
 		if (completionCallback)
 			completionCallback();
 
@@ -58,8 +58,6 @@ namespace tiny
 
 		mLastSubmittedFrame.store(mFrameIndex);
 		mFrameIndex = (mFrameIndex + 1) % mFramesInFlight;
-
-		return std::async(std::launch::deferred, [=]() { _WaitForFrame(mLastSubmittedFrame); });
 	}
 
 	void D3DGpuQueue::Flush()

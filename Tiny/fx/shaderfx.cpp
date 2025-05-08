@@ -351,7 +351,11 @@ namespace tiny::fx
 						{
 							std::string dllName = rem.substr(0, pos);
 							std::string resourceName = rem.substr(pos + 2);
-							HMODULE hModule = GetModuleHandleA(dllName.c_str());
+							HMODULE hModule = nullptr;
+							if (dllName == "MainModule")
+								hModule = GetModuleHandleA(nullptr);
+							else
+								hModule = GetModuleHandleA(dllName.c_str());
 							if (!hModule)
 								THROW_ENGINE_EXCEPTION("Failed to get {}.dll module handle", dllName);
 							HRSRC hResource = FindResourceA(hModule, resourceName.c_str(), "SHADERS");
@@ -455,7 +459,11 @@ namespace tiny::fx
 						{
 							std::string dllName = rem.substr(0, pos);
 							std::string resourceName = rem.substr(pos + 2);
-							HMODULE hModule = GetModuleHandleA(dllName.c_str());
+							HMODULE hModule = nullptr;
+							if (dllName == "MainModule")
+								hModule = GetModuleHandleA(nullptr);
+							else
+								hModule	= GetModuleHandleA(dllName.c_str());
 							if (!hModule)
 								THROW_ENGINE_EXCEPTION("Failed to get {}.dll module handle", dllName);
 							HRSRC hResource = FindResourceA(hModule, resourceName.c_str(), "SHADERS");
@@ -710,21 +718,21 @@ namespace tiny::fx
 		}
 	}
 
-	bool ProcessSpecialBindings(const IntermediateShaderResource& resource, u64 propertyID, std::vector<ShaderResourceSpecialBinding>& bindings)
+	bool ProcessSpecialBindings(const IntermediateShaderResource& resource, u32 rootIndex, u64 propertyID, std::vector<ShaderResourceSpecialBinding>& bindings)
 	{
 		switch (propertyID)
 		{
 		case "cbWorld"_hs:
 			if (resource.type == D3D_SIT_CBUFFER)
-				bindings.push_back(ShaderResourceSpecialBinding{ resource.bindPoint, ShaderSpecialBind_World });
+				bindings.push_back(ShaderResourceSpecialBinding{ rootIndex, ShaderSpecialBind_World });
 			return true;
 		case "cbLight"_hs:
 			if (resource.type == D3D_SIT_CBUFFER)
-				bindings.push_back(ShaderResourceSpecialBinding{ resource.bindPoint, ShaderSpecialBind_Light });
+				bindings.push_back(ShaderResourceSpecialBinding{ rootIndex, ShaderSpecialBind_Light });
 			return true;
 		case "cbEnvironment"_hs:
 			if (resource.type == D3D_SIT_CBUFFER)
-				bindings.push_back(ShaderResourceSpecialBinding{ resource.bindPoint, ShaderSpecialBind_Environment });
+				bindings.push_back(ShaderResourceSpecialBinding{ rootIndex, ShaderSpecialBind_Environment });
 			return true;
 		default:
 			return false;
@@ -738,17 +746,12 @@ namespace tiny::fx
 		{
 			if ((i & mandatoryAttributes) != mandatoryAttributes)
 				continue;
-
-			{
-				D3D12_GRAPHICS_PIPELINE_STATE_DESC desc = baseDesc;
-				std::vector<D3D12_INPUT_ELEMENT_DESC> inputElementDescs = ConstructInputLayout(i);
-				desc.InputLayout = { inputElementDescs.data(), static_cast<UINT>(inputElementDescs.size()) };
-				CComPtr<ID3D12PipelineState> pso;
-				HRESULT hr = pDevice->CreateGraphicsPipelineState(&desc, IID_PPV_ARGS(&pso));
-				if (FAILED(hr))
-					throw std::runtime_error("Failed to create PSO");
-				oPso[i] = pso;
-			}
+			D3D12_GRAPHICS_PIPELINE_STATE_DESC desc = baseDesc;
+			auto inputElementDescs = ConstructInputLayout(i);
+			desc.InputLayout = { inputElementDescs.data(), static_cast<UINT>(inputElementDescs.size()) };
+			CComPtr<ID3D12PipelineState> pso;
+			THROW_IF_FAILED(pDevice->CreateGraphicsPipelineState(&desc, IID_PPV_ARGS(&pso)));
+			oPso[i] = pso;
 		}
 	}
 
@@ -763,10 +766,10 @@ namespace tiny::fx
 		THROW_IF_FAILED(gDxcUtils->CreateDefaultIncludeHandler(&gDxcIncludeHandler));
 		// Register common metadata
 		{
-			entt::meta_factory<ICBufferCPU> meta;
+			entt::meta_factory<CBufferCPUBase> meta;
 			meta.type("ICBuffer"_hs)
-				.base<ICBufferCPU>()
-				.data<&ICBufferCPU::resource>("resource"_hs);
+				.base<CBufferCPUBase>()
+				.data<&CBufferCPUBase::resource>("resource"_hs);
 		}
 		{
 			entt::meta_factory<IMeshMaterialInstance> meta;
@@ -858,8 +861,11 @@ namespace tiny::fx
 
 
 				// In case resource is a environment variable (special binding)
-				if (ProcessSpecialBindings(resource, fieldID, currentFx.specialBindings))
+				if (ProcessSpecialBindings(resource, rootIndex, fieldID, currentFx.specialBindings))
+				{
+					rootIndex++;
 					continue;
+				}
 
 				// In case resource is a regular binding
 				currentFx.bindings.push_back(ShaderResourceBinding
@@ -900,6 +906,120 @@ namespace tiny::fx
 
 			THROW_IF_FAILED(pDevice->CreateGraphicsPipelineState(&psoDesc, IID_PPV_ARGS(&currentFx.pso)));
 
+			material.fx[combination.combinationId] = std::move(currentFx);
+		}
+	}
+
+	TINYFX_API void MeshMaterialDefaultInitialize(ID3D12Device* pDevice, const MaterialInitializationDesc& desc, MeshMaterial& material)
+	{
+		std::vector<IntermediateCompiledCombination> compiledCombinations;
+		CompileFxVariants(desc.fxDesc, compiledCombinations);
+
+		for (const auto& combination : compiledCombinations)
+		{
+			MeshShaderFX currentFx;
+			IntermediateCompiledReflection reflection;
+			std::vector<CD3DX12_ROOT_PARAMETER> rootParameters;
+			std::vector<CD3DX12_STATIC_SAMPLER_DESC> staticSamplers;
+			u32 rootIndex = 0u;
+			CComPtr<ID3DBlob> signatureBlob;
+			CComPtr<ID3DBlob> errorBlob;
+
+			currentFx.vs = combination.vs;
+			currentFx.ps = combination.ps;
+
+			GetReflectionInfo(combination, reflection);
+
+			for (const IntermediateShaderResource& resource : reflection.resources)
+			{
+				u64 fieldID = entt::hashed_string(resource.name, strlen(resource.name));
+
+				// In case resource is a static sampler
+				if (resource.type == D3D_SIT_SAMPLER && resource.bindCount == 1)
+				{
+					auto it = std::find_if(desc.staticSamplers.begin(), desc.staticSamplers.end(),
+						[&](const StaticSamplerDesc& staticSampler)
+						{
+							return staticSampler.id == fieldID;
+						});
+					if (it != desc.staticSamplers.end())
+					{
+						CD3DX12_STATIC_SAMPLER_DESC staticSamplerDesc(resource.bindPoint, it->desc.Filter,
+							it->desc.AddressU, it->desc.AddressV, it->desc.AddressW,
+							it->desc.MipLODBias, it->desc.MaxAnisotropy, it->desc.ComparisonFunc,
+							it->desc.BorderColor, it->desc.MinLOD, it->desc.MaxLOD,
+							D3D12_SHADER_VISIBILITY_PIXEL);
+						staticSamplers.push_back(staticSamplerDesc);
+						continue;
+					}
+				}
+
+
+				if (resource.type == D3D_SIT_CBUFFER)
+				{
+					// In case resource is a cbuffer
+					CD3DX12_ROOT_PARAMETER rootParameter;
+					// Check name prefix for "il" which means "inline" which means that this cbuffer sent as root constants
+					if (strncmp(resource.name, "il", 2) == 0)
+						rootParameter.InitAsConstants(/*resource.cbufferSize*/64 / sizeof(u32), resource.bindPoint, 0, D3D12_SHADER_VISIBILITY_ALL); // TODO num constants
+					else
+						rootParameter.InitAsConstantBufferView(resource.bindPoint, 0, D3D12_SHADER_VISIBILITY_ALL);
+					rootParameters.push_back(rootParameter);
+				}
+				else
+				{
+					// In case resource is any other type (texture, buffer, sampler, etc.) no matter if it is special binding or not, create root parameter
+					CD3DX12_ROOT_PARAMETER rootParameter;
+					InitializeRootParameter(resource, rootParameter);
+					rootParameters.push_back(rootParameter);
+				}
+
+
+				// In case resource is a environment variable (special binding)
+				if (ProcessSpecialBindings(resource, rootIndex, fieldID, currentFx.specialBindings))
+				{
+					rootIndex++;
+					continue;
+				}
+
+				// In case resource is a regular binding
+				currentFx.bindings.push_back(ShaderResourceBinding
+					{
+						.type = resource.type,
+						.fieldID = fieldID,
+						.rootParamIndex = rootIndex
+					});
+
+				rootIndex++;
+			}
+
+			CD3DX12_ROOT_SIGNATURE_DESC rootSignatureDesc;
+			rootSignatureDesc.Init(static_cast<UINT>(rootParameters.size()),
+				rootParameters.data(),
+				staticSamplers.size(),
+				staticSamplers.data(),
+				D3D12_ROOT_SIGNATURE_FLAG_ALLOW_INPUT_ASSEMBLER_INPUT_LAYOUT);
+
+			THROW_IF_FAILED(D3D12SerializeRootSignature(&rootSignatureDesc, D3D_ROOT_SIGNATURE_VERSION_1, &signatureBlob, &errorBlob));
+			if (errorBlob)
+			{
+				std::string errorMsg((char*)errorBlob->GetBufferPointer(), errorBlob->GetBufferSize());
+				THROW_ENGINE_EXCEPTION("Failed to serialize root signature: {}", errorMsg);
+			}
+
+			currentFx.rootSigBlob = signatureBlob;
+
+			THROW_IF_FAILED(pDevice->CreateRootSignature(0,
+				signatureBlob->GetBufferPointer(),
+				signatureBlob->GetBufferSize(),
+				IID_PPV_ARGS(&currentFx.rootSig)));
+
+			D3D12_GRAPHICS_PIPELINE_STATE_DESC psoDesc = desc.basePsoDesc;
+			psoDesc.pRootSignature = currentFx.rootSig.p;
+			psoDesc.VS = CD3DX12_SHADER_BYTECODE(currentFx.vs->GetBufferPointer(), currentFx.vs->GetBufferSize());
+			psoDesc.PS = CD3DX12_SHADER_BYTECODE(currentFx.ps->GetBufferPointer(), currentFx.ps->GetBufferSize());
+
+			GenInputVariantsPSOs(psoDesc, pDevice, reflection.mandatoryInputAttributes, currentFx.pso);
 			material.fx[combination.combinationId] = std::move(currentFx);
 		}
 	}

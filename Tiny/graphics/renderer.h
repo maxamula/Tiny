@@ -15,6 +15,8 @@ namespace tiny
 	public:
 		virtual ~TinyForwardRenderer() override = default;
 		virtual RenderTextureHandle Build(FrameGraph& mFrameGraph) override;
+	protected:
+
 	};
 
 	class TinyDeferredRenderer : public IRenderer

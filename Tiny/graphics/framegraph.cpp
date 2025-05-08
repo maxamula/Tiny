@@ -1,5 +1,6 @@
 #include "framegraph.h"
 #include "d3dx12.hpp"
+#include "pass.h"
 #include <algorithm>
 #include <cassert>
 
@@ -19,26 +20,6 @@ namespace tiny
         , mPassIndex(passIndex)
     {
     }
-
-    //RenderTextureHandle FrameGraph::Builder::CreateRenderTexture(const RenderTexture::Desc& desc)
-    //{
-    //    uint32_t id = static_cast<uint32_t>(mFrameGraph.mRenderResourceInfos.size());
-    //    RenderResourceInfo info{ desc, mPassIndex, mPassIndex, {}, -1, -1, -1 };
-    //    mFrameGraph.mRenderResourceInfos.push_back(info);
-    //    RenderTextureHandle handle(id);
-    //    mFrameGraph.mPassNodes[mPassIndex].WritesRender.push_back(handle);
-    //    return handle;
-    //}
-    //
-    //DepthTextureHandle FrameGraph::Builder::CreateDepthTexture(const DepthTexture::Desc& desc)
-    //{
-    //    uint32_t id = static_cast<uint32_t>(mFrameGraph.mDepthResourceInfos.size());
-    //    DepthResourceInfo info{ desc, mPassIndex, mPassIndex, {}, -1, -1, -1 };
-    //    mFrameGraph.mDepthResourceInfos.push_back(info);
-    //    DepthTextureHandle handle(id);
-    //    mFrameGraph.mPassNodes[mPassIndex].WritesDepth.push_back(handle);
-    //    return handle;
-    //}
 
     void FrameGraph::Builder::Read(const RenderTextureHandle& handle)
     {
@@ -153,7 +134,7 @@ namespace tiny
         }
     }
 
-    void FrameGraph::Compile()
+    void FrameGraph::Compile(D3DContext& d3d)
     {
         int passCount = static_cast<int>(mPassNodes.size());
         if (passCount == 0)
@@ -296,59 +277,61 @@ namespace tiny
             };
         allocatePool(mRenderResourceInfos, mRenderAllocations);
         allocatePool(mDepthResourceInfos, mDepthAllocations);
-        mSortedPassIndices = sorted;
-    }
 
-    void FrameGraph::Execute(RenderContext& ctx, D3DContext& d3d)
-    {
-        if (mSortedPassIndices.empty() && !mPassNodes.empty())
-            Compile();
+        mRenderInstances.resize(mRenderAllocations.size());
+        mDepthInstances.resize(mDepthAllocations.size());
 
-        // Allocate physical resources
-        std::vector<RenderTexture> renderInstances(mRenderAllocations.size());
-        std::vector<DepthTexture> depthInstances(mDepthAllocations.size());
         for (size_t i = 0; i < mRenderResourceInfos.size(); ++i)
         {
             auto& info = mRenderResourceInfos[i];
             int idx = info.PhysAllocationIndex;
-            if (idx >= 0 && idx < static_cast<int>(mRenderAllocations.size()))
+            if (idx >= 0 && idx < (int)mRenderAllocations.size())
             {
                 auto& alloc = mRenderAllocations[idx];
                 if (!alloc.IsInitialized)
                 {
-                    renderInstances[idx] = RenderTexture::Create(info.Desc);
-					d3d.Defer(renderInstances[idx].resource);
-					d3d.Defer(renderInstances[idx].rtv);
-					d3d.Defer(renderInstances[idx].srv);
+                    mRenderInstances[idx] = RenderTexture::Create(info.Desc);
+                    d3d.Defer(mRenderInstances[idx].resource);
+                    d3d.Defer(mRenderInstances[idx].rtv);
+                    d3d.Defer(mRenderInstances[idx].srv);
                     alloc.IsInitialized = true;
                 }
             }
         }
+
         for (size_t i = 0; i < mDepthResourceInfos.size(); ++i)
         {
             auto& info = mDepthResourceInfos[i];
             int idx = info.PhysAllocationIndex;
-            if (idx >= 0 && idx < static_cast<int>(mDepthAllocations.size()))
+            if (idx >= 0 && idx < (int)mDepthAllocations.size())
             {
                 auto& alloc = mDepthAllocations[idx];
                 if (!alloc.IsInitialized)
                 {
-                    depthInstances[idx] = DepthTexture::Create(info.Desc);
-                    d3d.Defer(depthInstances[idx].resource);
-                    d3d.Defer(depthInstances[idx].dsv);
-                    d3d.Defer(depthInstances[idx].srv);
+                    mDepthInstances[idx] = DepthTexture::Create(info.Desc);
+                    d3d.Defer(mDepthInstances[idx].resource);
+                    d3d.Defer(mDepthInstances[idx].dsv);
+                    d3d.Defer(mDepthInstances[idx].srv);
                     alloc.IsInitialized = true;
                 }
             }
         }
+
+        mSortedPassIndices = sorted;
+    }
+
+    void FrameGraph::Execute(tf::Subflow& sf, RenderContext& ctx, D3DContext& d3d)
+    {
+        if (mSortedPassIndices.empty() && !mPassNodes.empty())
+			THROW_ENGINE_EXCEPTION("FrameGraph not compiled. Call Compile() before Execute().");
 
         // Track last barrier state per allocation
         std::vector<ResourceState> renderStates(mRenderAllocations.size(), ResourceState::Undefined);
         std::vector<ResourceState> depthStates(mDepthAllocations.size(), ResourceState::Undefined);
 
         FrameGraphResources resources;
-        resources.mRenderTextures = &renderInstances;
-        resources.mDepthTextures = &depthInstances;
+        resources.mRenderTextures = &mRenderInstances;
+        resources.mDepthTextures = &mDepthInstances;
         resources.mRenderResourceInfos = &mRenderResourceInfos;
         resources.mDepthResourceInfos = &mDepthResourceInfos;
 
@@ -442,4 +425,16 @@ namespace tiny
         return DepthTextureHandle(id);
     }
 
+    void FrameGraph::Reset()
+    {
+		mRenderResourceInfos.clear();
+		mDepthResourceInfos.clear();
+		mRenderAllocations.clear();
+		mDepthAllocations.clear();
+		mRenderInstances.clear();
+		mDepthInstances.clear();
+		mPassNodes.clear();
+		mDependencies.clear();
+		mSortedPassIndices.clear();
+    }
 }

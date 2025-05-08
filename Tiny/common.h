@@ -4,6 +4,7 @@
 #include <string>
 #include <format>
 #include <iostream>
+#include <chrono>
 
 using u8 = unsigned char;
 using u16 = unsigned short;

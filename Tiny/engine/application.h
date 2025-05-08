@@ -48,13 +48,20 @@ namespace tiny
 		D3DViewport vp;
 	};
 
-	using RenderViewHandle = void*;
+	struct TINYFX_API RenderView
+	{
+	_internal:
+		Window* window;
+		IRenderer* renderer;
+		FrameGraph frameGraph;
+		Camera* camera;
+		bool bMarkedForRebuild;
+	};
 
 	TINYFX_API void LoadScene(const std::string& path);
+	TINYFX_API Scene& GetScene();
 	TINYFX_API void RunEngine();
-	TINYFX_API void CreateRenderView(Window* pWindow, IRenderer* renderer);
-	TINYFX_API void RebuildRenderView(RenderViewHandle handle, IRenderer* renderer);
-
+	TINYFX_API RenderView* CreateRenderView(Window* pWindow, IRenderer* renderer);
 	TINYFX_API void Initialize();
 	TINYFX_API void Shutdown();	
 }

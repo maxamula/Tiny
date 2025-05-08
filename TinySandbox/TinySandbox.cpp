@@ -42,7 +42,7 @@ void Test2(tiny::fx::IMeshMaterialInstance* i)
 
 		entt::meta_any value = field.second.get(meta);
 		//std::cout << "Value: " << value.type().base().begin()->second.info().name() << "\n";
-		if (auto icbuffer = value.try_cast<tiny::ICBufferCPU>())
+		if (auto icbuffer = value.try_cast<tiny::CBufferCPUBase>())
 		{
 			std::cout << "resource ptr: " << icbuffer->resource << std::endl;
 		}

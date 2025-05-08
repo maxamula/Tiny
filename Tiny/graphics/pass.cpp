@@ -9,11 +9,11 @@ namespace tiny
 
 	void SceneFilteredPass::Execute(RenderContext& ctx, FrameGraphResources& res)
 	{
-		ctx.renderItems->view<ComponentRenderItem>().each([&](entt::entity entity, ComponentRenderItem& item)
+		ctx.renderItems->view<ComponentMaterial, ComponentGeometry>().each([&](entt::entity entity, ComponentMaterial& mat, ComponentGeometry& geo)
 		{ 
-				auto it = item.technique.passes.find(mPassId);
-				if (it != item.technique.passes.end())
-					OnRenderItem(ctx, res, item);
+				auto it = mat.passes.find(mPassId);
+				if (it != mat.passes.end())
+					OnRenderItem(ctx, res, mat, geo);
 		});
 	}
 }
