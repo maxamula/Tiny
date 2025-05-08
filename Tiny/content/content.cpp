@@ -1,4 +1,4 @@
-#include "content.h"
+﻿#include "content.h"
 #include "graphics/gfxglobal.h"
 #include "d3dx12.hpp"
 

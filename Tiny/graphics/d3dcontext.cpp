@@ -114,11 +114,8 @@ namespace tiny
 		{
 			mainQueue.Flush();
 
-			// Garbage collect deferred resources for ALL frames
 			for (u8 i = 0; i < framesInFlight; ++i)
 			{
-				//for (auto& res : deferredResources[i])
-				//	res->Release();
 				deferredResources[i].clear();
 				deferredDescriptors[i].clear();
 				deferredRanges[i].clear();
@@ -128,16 +125,19 @@ namespace tiny
 
 	void D3DContext::Defer(IUnknown* resource)
 	{
-		deferredResources[currentFrameIdx].push_back(resource);
+		std::lock_guard lock(deferredResourcesMutex);
+		deferredResources[currentFrameIdx].insert(resource);
 	}
 
 	void D3DContext::Defer(DescriptorHandle descriptor)
 	{
-		deferredDescriptors[currentFrameIdx].push_back(descriptor);
+		std::lock_guard lock(deferredDescriptorsMutex);
+		deferredDescriptors[currentFrameIdx].insert(descriptor);
 	}
 
 	void D3DContext::Defer(DescriptorRange range)
 	{
-		deferredRanges[currentFrameIdx].push_back(range);
+		std::lock_guard lock(deferredRangesMutex);
+		deferredRanges[currentFrameIdx].insert(range);
 	}
 }

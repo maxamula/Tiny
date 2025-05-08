@@ -22,6 +22,13 @@ namespace tiny
 		DescriptorHandle& operator=(DescriptorHandle&&) noexcept;
 		~DescriptorHandle();
 
+		bool operator<(DescriptorHandle const& o) const noexcept
+		{
+			if (mHeap != o.mHeap)
+				return mHeap < o.mHeap;
+			return mIndex < o.mIndex;
+		}
+
 		void Release();
 
 		[[nodiscard]] D3D12_CPU_DESCRIPTOR_HANDLE GetCpuHandle() const noexcept;
@@ -49,6 +56,13 @@ namespace tiny
 		DescriptorRange& operator=(DescriptorRange&&) noexcept;
 		~DescriptorRange();
 
+		bool operator<(DescriptorRange const& o) const noexcept
+		{
+			if (mHeap != o.mHeap)
+				return mHeap < o.mHeap;
+			return mIndex < o.mIndex;
+		}
+
 		[[nodiscard]] D3D12_CPU_DESCRIPTOR_HANDLE GetCpuHandle(int index) const;
 		[[nodiscard]] D3D12_GPU_DESCRIPTOR_HANDLE GetGpuHandle(int index) const;
 
@@ -57,7 +71,7 @@ namespace tiny
 	private:
 		DescriptorRange(D3DDescriptorHeap* heap, u32 index, u32 length, D3D12_CPU_DESCRIPTOR_HANDLE cpu, D3D12_GPU_DESCRIPTOR_HANDLE gpu);
 
-		D3DDescriptorHeap* mHeap;
+		D3DDescriptorHeap*			mHeap;
 		u32							mIndex;
 		u32							mLength;
 		D3D12_CPU_DESCRIPTOR_HANDLE	mSartCpu;

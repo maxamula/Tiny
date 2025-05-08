@@ -26,6 +26,7 @@ namespace tiny
 		CComPtr<ID3D12GraphicsCommandList6> AcquireNextCommandList();
 		ID3D12CommandQueue* GetQueue() const { return mCommandQueue.p; }
 		u8 GetFrameIndex() const { return mFrameIndex.load(); }
+		u8 GetFramesInFlight() const { return mFramesInFlight; }
 		u64 GetNextFenceValue() const { return mNextFenceValue.load(); }
 
 	private:

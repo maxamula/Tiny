@@ -15,18 +15,18 @@ namespace tiny
 	void InitializeGFX()
 	{
 		// Enable debug layer and gpu based validation
-		CComPtr<ID3D12Debug> debugController;
-		if (SUCCEEDED(D3D12GetDebugInterface(IID_PPV_ARGS(&debugController))))
-		{
-			debugController->EnableDebugLayer();
-			
-			// Enable GPU based validation
-			CComPtr<ID3D12Debug1> debugController1;
-			if (SUCCEEDED(debugController->QueryInterface(IID_PPV_ARGS(&debugController1))))
-			{
-				debugController1->SetEnableGPUBasedValidation(true);
-			}
-		}
+		//CComPtr<ID3D12Debug> debugController;
+		//if (SUCCEEDED(D3D12GetDebugInterface(IID_PPV_ARGS(&debugController))))
+		//{
+		//	debugController->EnableDebugLayer();
+		//	
+		//	// Enable GPU based validation
+		//	CComPtr<ID3D12Debug1> debugController1;
+		//	if (SUCCEEDED(debugController->QueryInterface(IID_PPV_ARGS(&debugController1))))
+		//	{
+		//		debugController1->SetEnableGPUBasedValidation(true);
+		//	}
+		//}
 
 		THROW_IF_FAILED(CreateDXGIFactory2(DXGI_CREATE_FACTORY_DEBUG, IID_PPV_ARGS(&gDxgiFactory)));
 		CComPtr<IDXGIAdapter1> adapter = nullptr;

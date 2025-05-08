@@ -102,7 +102,8 @@ namespace tiny
         }
 
         void Compile(D3DContext& d3d);
-        void Execute(tf::Subflow& sf, RenderContext& ctx, D3DContext& d3d);
+        void Execute(ID3D12GraphicsCommandList6* cmd, D3DContext& d3d);
+        void ExecuteAsync(tf::Subflow& sf, D3DContext& d3d, entt::registry& scene);
 
     private:
         void AddDependency(int src, int dst);

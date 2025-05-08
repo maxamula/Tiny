@@ -91,11 +91,9 @@ namespace tiny
 	};
 
 	template<typename T>
-	struct CBufferInline final : public ICBuffer
+	struct TINYFX_API CBufferInline final : public ICBuffer
 	{
 	public:
-		CBufferInline() = default;
-		~CBufferInline() = default;
 		T data;
 		std::tuple<void*, u32> GetData() override { return { &data, sizeof(T) }; }
 	private:

@@ -81,7 +81,8 @@ namespace tiny
 	CComPtr<ID3D12GraphicsCommandList6> D3DGpuQueue::AcquireNextCommandList()
 	{
 		u8 frameIndex = mFrameIndex;
-		auto& ctx = mCommandFrames[frameIndex].commandListContexts[mCommandFrames[frameIndex].allocatedCommandListCount++];
+		u8 contextIndex = mCommandFrames[frameIndex].allocatedCommandListCount++;
+		auto& ctx = mCommandFrames[frameIndex].commandListContexts[contextIndex];
 		THROW_IF_FAILED(ctx.commandAllocator->Reset());
 		THROW_IF_FAILED(ctx.commandList->Reset(ctx.commandAllocator.p, nullptr));
 		return ctx.commandList;

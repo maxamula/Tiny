@@ -5,6 +5,8 @@ using namespace entt;
 
 namespace tiny
 {
+	extern "C++" D3DContext gContext;
+
 	void RenderContext::BindMaterial(fx::IMaterialInstance* pMatInstance)
 	{
 		fx::ShaderFX* fx = pMatInstance->fx;
@@ -39,9 +41,9 @@ namespace tiny
 						auto gpu = renderTexture->srv.gpu;
 						auto cpu = renderTexture->srv.cpu;
 
-						context.Defer(renderTexture->rtv);
-						context.Defer(renderTexture->srv);
-						context.Defer(renderTexture->resource);
+						gContext.Defer(renderTexture->rtv);
+						gContext.Defer(renderTexture->srv);
+						gContext.Defer(renderTexture->resource);
 					}
 				}
 			}
@@ -67,8 +69,8 @@ namespace tiny
 		if (it == fx->pso.end())
 			THROW_ENGINE_EXCEPTION("PSO not found for input attributes: {}", inputAttributes);
 
-		context.Defer(it->second);
-		context.Defer(fx->rootSig);
+		gContext.Defer(it->second);
+		gContext.Defer(fx->rootSig);
 
 		cmd->SetPipelineState(it->second);
 		cmd->SetGraphicsRootSignature(fx->rootSig);
@@ -87,19 +89,19 @@ namespace tiny
 					if (auto icbuffer = value.try_cast<CBufferCPUBase>())
 					{
 						cmd->SetGraphicsRootConstantBufferView(binding.rootParamIndex, icbuffer->resource->GetGPUVirtualAddress());
-						context.Defer(icbuffer->resource);
+						gContext.Defer(icbuffer->resource);
 					}
 					else if (auto texture = value.try_cast<Texture2D>())
 					{
 						cmd->SetGraphicsRootDescriptorTable(binding.rootParamIndex, texture->srv.gpu);
-						context.Defer(texture->resource);
-						context.Defer(texture->srv);
+						gContext.Defer(texture->resource);
+						gContext.Defer(texture->srv);
 					}
 					else if (auto renderTexture = value.try_cast<RenderTexture>())
 					{
 						cmd->SetGraphicsRootDescriptorTable(binding.rootParamIndex, renderTexture->srv.gpu);
-						context.Defer(renderTexture->resource);
-						context.Defer(renderTexture->srv);
+						gContext.Defer(renderTexture->resource);
+						gContext.Defer(renderTexture->srv);
 					}
 				}
 			}
@@ -128,9 +130,11 @@ namespace tiny
 				//cmd->SetGraphicsRoot32BitConstants(specialBinding.rootParamIndex, sizeof(fullTransform) / sizeof(u32), &fullTransform, 0);
 
 				worldData.data.fullTransform = fullTransform;
-				worldData.Update();
-				cmd->SetGraphicsRootConstantBufferView(specialBinding.rootParamIndex, worldData.resource->GetGPUVirtualAddress());
-				context.Defer(worldData.resource);
+				auto [data, size] = worldData.GetData();
+				cmd->SetGraphicsRoot32BitConstants(specialBinding.rootParamIndex, size / sizeof(u32), data, 0);
+				//worldData.Update();
+				//cmd->SetGraphicsRootConstantBufferView(specialBinding.rootParamIndex, worldData.resource->GetGPUVirtualAddress());
+				//gContext.Defer(worldData.resource);
 
 				/*auto [data, size] = worldData.GetData();
 				cmd->SetGraphicsRootConstantBufferView(specialBinding.rootParamIndex, worldData.resource->GetGPUVirtualAddress());
@@ -144,7 +148,7 @@ namespace tiny
 		cmd->IASetVertexBuffers(0, 1, &mesh.vertexBufferView);
 		cmd->IASetIndexBuffer(&mesh.indexBufferView);
 		cmd->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
-		context.Defer(mesh.vertexBuffer);
-		context.Defer(mesh.indexBuffer);
+		gContext.Defer(mesh.vertexBuffer);
+		gContext.Defer(mesh.indexBuffer);
 	}
 }

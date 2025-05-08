@@ -12,6 +12,7 @@ namespace tiny
 		virtual ~IRenderPass() = default;
 		virtual void Setup(FrameGraph::Builder& builder) = 0;
 		virtual void Execute(RenderContext& ctx, FrameGraphResources& res) = 0;
+		f64 EstimateCost() { return 450.0; }
 	};
 
 	class TINYFX_API SceneFilteredPass : public IRenderPass

@@ -1,4 +1,4 @@
-#include "framegraph.h"
+﻿#include "framegraph.h"
 #include "d3dx12.hpp"
 #include "pass.h"
 #include <algorithm>
@@ -320,7 +320,44 @@ namespace tiny
         mSortedPassIndices = sorted;
     }
 
-    void FrameGraph::Execute(tf::Subflow& sf, RenderContext& ctx, D3DContext& d3d)
+    std::vector<std::vector<int>> makeContiguousBatches(
+        const std::vector<int>& sortedPassIndices,
+        const std::vector<double>& costs,
+        int batchCount
+    ) {
+        int N = sortedPassIndices.size();
+        double total = std::accumulate(costs.begin(), costs.end(), 0.0);
+        double target = total / batchCount;
+
+        std::vector<std::vector<int>> batches;
+        batches.reserve(batchCount);
+
+        int start = 0;
+        for (int b = 0; b < batchCount; ++b) {
+            double acc = 0;
+            int end = start;
+            // набираем хоть один элемент, либо пока не перешагнём target
+            while (end < N &&
+                (acc + costs[end] <= target || end == start)) {
+                acc += costs[end++];
+            }
+            batches.emplace_back(
+                sortedPassIndices.begin() + start,
+                sortedPassIndices.begin() + end
+            );
+            start = end;
+        }
+        // остаток — в последний батч
+        if (start < N) {
+            auto& last = batches.back();
+            last.insert(last.end(),
+                sortedPassIndices.begin() + start,
+                sortedPassIndices.end());
+        }
+        return batches;
+    }
+
+    void FrameGraph::Execute(ID3D12GraphicsCommandList6* cmd, D3DContext& d3d)
     {
         if (mSortedPassIndices.empty() && !mPassNodes.empty())
 			THROW_ENGINE_EXCEPTION("FrameGraph not compiled. Call Compile() before Execute().");
@@ -388,9 +425,110 @@ namespace tiny
                 }
             }
             if (barriers.size())
-                ctx.cmd->ResourceBarrier(static_cast<u32>(barriers.size()), barriers.data());
-            node.Pass->Execute(ctx, resources);
+                cmd->ResourceBarrier(static_cast<u32>(barriers.size()), barriers.data());
+			//RenderContext ctx(d3d);
+
+            //node.Pass->Execute(ctx, resources);
         }
+    }
+
+
+    void FrameGraph::ExecuteAsync(tf::Subflow& sf, D3DContext& d3d, entt::registry& scene)
+    {
+        if (mSortedPassIndices.empty() && !mPassNodes.empty())
+            THROW_ENGINE_EXCEPTION("FrameGraph not compiled. Call Compile() before Execute().");
+
+        // Track last barrier state per allocation
+        std::vector<ResourceState> renderStates(mRenderAllocations.size(), ResourceState::Undefined);
+        std::vector<ResourceState> depthStates(mDepthAllocations.size(), ResourceState::Undefined);
+
+        FrameGraphResources resources;
+        resources.mRenderTextures = &mRenderInstances;
+        resources.mDepthTextures = &mDepthInstances;
+        resources.mRenderResourceInfos = &mRenderResourceInfos;
+        resources.mDepthResourceInfos = &mDepthResourceInfos;
+
+        std::vector<f64> costs;
+        costs.reserve(mSortedPassIndices.size());
+        for (int idx : mSortedPassIndices)
+            costs.push_back(mPassNodes[idx].Pass->EstimateCost());
+
+        f64 sumCost = std::accumulate(costs.begin(), costs.end(), 0.0);
+        u32 maxLists = TINY_COMMAND_LIST_POOL_SIZE;
+        u32 desiredBatches = std::clamp(u32(sumCost / 500.0 + 0.5), 1u, maxLists);
+
+        auto batches = makeContiguousBatches(mSortedPassIndices, costs, desiredBatches);
+
+        for (int i = 0; i < desiredBatches; ++i)
+        {
+            sf.emplace([&, i]()
+            {
+                    CComPtr<ID3D12GraphicsCommandList6> cmd = d3d.mainQueue.AcquireNextCommandList();
+                    ID3D12DescriptorHeap* heaps[] = { *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV), *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_SAMPLER) };
+                    cmd->SetDescriptorHeaps(_countof(heaps), heaps);
+                    for (int passIndex : batches[i])
+                    {
+                        auto& node = mPassNodes[passIndex];
+                        std::vector<CD3DX12_RESOURCE_BARRIER> barriers;
+
+                        for (auto& h : node.ReadsRender)
+                        {
+                            auto& info = mRenderResourceInfos[h.Id];
+                            int idx = info.PhysAllocationIndex;
+                            if (renderStates[idx] != ResourceState::Read)
+                            {
+                                RenderTexture& tex = resources.GetRenderTexture(h);
+                                barriers.push_back(CD3DX12_RESOURCE_BARRIER::Transition(tex.resource, D3D12_RESOURCE_STATE_RENDER_TARGET, D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE));
+                                renderStates[idx] = ResourceState::Read;
+                            }
+                        }
+                        for (auto& h : node.ReadsDepth)
+                        {
+                            auto& info = mDepthResourceInfos[h.Id];
+                            int idx = info.PhysAllocationIndex;
+                            if (depthStates[idx] != ResourceState::Read)
+                            {
+                                DepthTexture& tex = resources.GetDepthTexture(h);
+                                barriers.push_back(CD3DX12_RESOURCE_BARRIER::Transition(tex.resource, D3D12_RESOURCE_STATE_DEPTH_WRITE, D3D12_RESOURCE_STATE_DEPTH_READ));
+                                depthStates[idx] = ResourceState::Read;
+                            }
+                        }
+                        // Write barriers only on transition
+                        for (auto& h : node.WritesRender)
+                        {
+                            auto& info = mRenderResourceInfos[h.Id];
+                            int idx = info.PhysAllocationIndex;
+                            if (renderStates[idx] != ResourceState::Write)
+                            {
+                                RenderTexture& tex = resources.GetRenderTexture(h);
+                                barriers.push_back(CD3DX12_RESOURCE_BARRIER::Transition(tex.resource, D3D12_RESOURCE_STATE_PIXEL_SHADER_RESOURCE, D3D12_RESOURCE_STATE_RENDER_TARGET));
+                                renderStates[idx] = ResourceState::Write;
+                            }
+                        }
+                        for (auto& h : node.WritesDepth)
+                        {
+                            auto& info = mDepthResourceInfos[h.Id];
+                            int idx = info.PhysAllocationIndex;
+                            if (depthStates[idx] != ResourceState::Write)
+                            {
+                                DepthTexture& tex = resources.GetDepthTexture(h);
+                                barriers.push_back(CD3DX12_RESOURCE_BARRIER::Transition(tex.resource, D3D12_RESOURCE_STATE_DEPTH_READ, D3D12_RESOURCE_STATE_DEPTH_WRITE));
+                                depthStates[idx] = ResourceState::Write;
+                            }
+                        }
+                        if (barriers.size())
+                            cmd->ResourceBarrier(static_cast<u32>(barriers.size()), barriers.data());
+
+                        RenderContext ctx
+                        {
+                            .renderItems = &scene,
+							.cmd = cmd
+                        };
+                        node.Pass->Execute(ctx, resources);
+                    }
+            });
+        }
+		sf.join();
     }
 
     RenderTexture& FrameGraphResources::GetRenderTexture(const RenderTextureHandle& handle)

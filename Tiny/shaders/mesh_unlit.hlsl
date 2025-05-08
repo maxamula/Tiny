@@ -1,7 +1,7 @@
 ﻿Texture2D diffuseTexture : register(t0);
 SamplerState linearSampler : register(s0);
 
-cbuffer cbWorld : register(b0)
+cbuffer ilWorld : register(b0)
 {
     matrix worldViewProj;
 };

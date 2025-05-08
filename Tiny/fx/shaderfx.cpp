@@ -722,7 +722,7 @@ namespace tiny::fx
 	{
 		switch (propertyID)
 		{
-		case "cbWorld"_hs:
+		case "ilWorld"_hs:
 			if (resource.type == D3D_SIT_CBUFFER)
 				bindings.push_back(ShaderResourceSpecialBinding{ rootIndex, ShaderSpecialBind_World });
 			return true;
@@ -764,12 +764,11 @@ namespace tiny::fx
 		THROW_IF_FAILED(DxcCreateInstance(CLSID_DxcUtils, IID_PPV_ARGS(&gDxcUtils)));
 		THROW_IF_FAILED(DxcCreateInstance(CLSID_DxcCompiler, IID_PPV_ARGS(&gDxcCompiler)));
 		THROW_IF_FAILED(gDxcUtils->CreateDefaultIncludeHandler(&gDxcIncludeHandler));
-		// Register common metadata
+
 		{
 			entt::meta_factory<CBufferCPUBase> meta;
 			meta.type("ICBuffer"_hs)
-				.base<CBufferCPUBase>()
-				.data<&CBufferCPUBase::resource>("resource"_hs);
+				.base<CBufferCPUBase>();
 		}
 		{
 			entt::meta_factory<IMeshMaterialInstance> meta;

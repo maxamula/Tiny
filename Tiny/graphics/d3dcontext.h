@@ -3,6 +3,8 @@
 #include <atlbase.h>
 #include <chrono>
 #include <functional>
+#include <set>
+#include <mutex>
 
 #include "descriptors.h"
 #include "gpuqueue.h"
@@ -50,9 +52,12 @@ namespace tiny
 		D3DGpuQueue									mainQueue;
 		u8											framesInFlight;
 		std::atomic<u8>								currentFrameIdx;
-		std::vector<std::vector<CComPtr<IUnknown>>>	deferredResources;
-		std::vector<std::vector<DescriptorHandle>>	deferredDescriptors;
-		std::vector<std::vector<DescriptorRange>>	deferredRanges;
+		std::vector<std::set<CComPtr<IUnknown>>>	deferredResources;
+		std::mutex									deferredResourcesMutex;
+		std::vector<std::set<DescriptorHandle>>		deferredDescriptors;
+		std::mutex									deferredDescriptorsMutex;
+		std::vector<std::set<DescriptorRange>>		deferredRanges;
+		std::mutex									deferredRangesMutex;
 		std::vector<FrameTimingData>				frameTimingData;
 	};
 }

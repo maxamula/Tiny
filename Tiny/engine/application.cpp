@@ -97,16 +97,6 @@ namespace tiny
 
 #pragma endregion
 
-	void LoadScene(const std::string& path)
-	{
-		gDeferDispatcher.post([path]()
-		{
-			gScene = Scene();
-			entt::entity obj = gScene.CreateObject("test object");
-			//gScene.registry.emplace<Mesh>(obj);
-		});
-	}
-
 	Scene& GetScene()
 	{
 		return gScene;
@@ -149,8 +139,6 @@ namespace tiny
 			cmd->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 			cmd->DrawInstanced(6, 1, 0, 0);
 		}
-
-
 	private:
 		const Window* 				pWindow;
 		const RenderTextureHandle	targetTexture;
@@ -164,7 +152,7 @@ namespace tiny
 		gRunning = true;
 
 		entt::entity obj = gScene.CreateObject("test object");
-		gScene.registry.emplace<Mesh>(obj);
+		gScene.mRegistry.emplace<Mesh>(obj);
 		
 		entt::registry renderRegistry;
 		tf::Taskflow taskflow;
@@ -200,15 +188,6 @@ namespace tiny
 						auto rt = view.window->vp.renderTargets[view.window->vp.swap->GetCurrentBackBufferIndex()];
 						gContext.Defer(rt.allocation);
 						gContext.Defer(rt.resource);
-						
-
-						RenderContext renderContext
-						{
-							.context = gContext,
-							.renderItems = &gScene.registry,
-							.cmd = cmd
-						};
-						// set descriptor heaps
 
 						ID3D12DescriptorHeap* heaps[] = { *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV), *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_SAMPLER) };
 						cmd->SetDescriptorHeaps(_countof(heaps), heaps);
@@ -216,8 +195,8 @@ namespace tiny
 						CD3DX12_RESOURCE_BARRIER barrier = CD3DX12_RESOURCE_BARRIER::Transition(rt.resource, D3D12_RESOURCE_STATE_PRESENT, D3D12_RESOURCE_STATE_RENDER_TARGET);
 						cmd->ResourceBarrier(1, &barrier);		
 									
-						view.frameGraph.Execute(sf, renderContext, gContext);
-						
+						view.frameGraph.ExecuteAsync(sf, gContext, gScene.mRegistry);
+												
 						windows.insert(view.window);
 						barrier = CD3DX12_RESOURCE_BARRIER::Transition(rt.resource, D3D12_RESOURCE_STATE_RENDER_TARGET, D3D12_RESOURCE_STATE_PRESENT);
 						cmd->ResourceBarrier(1, &barrier);
@@ -230,9 +209,8 @@ namespace tiny
 					gContext.EndScene([windows]()
 					{
 						for (Window* window : windows)
-							window->vp.Present(1);
+							window->vp.Present(0);
 					});
-					
 				}
 				catch (const EngineException& e)
 				{
