@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_stack_sizes" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiStackSizes</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1ace27d02b760e0224c041d44bea926ae6" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfIDStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfIDStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfIDStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1244" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1ada3c64baaac1256f04d5f1a99dfb6ed2" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfColorStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfColorStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfColorStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1245" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1a038e2705132e5561bb187148a8395be0" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfStyleVarStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfStyleVarStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfStyleVarStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1246" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1a5430682ade553552a42a7012b83c212d" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfFontStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfFontStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfFontStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1247" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1a99fa2a45397945e6f0209ab556ca19d9" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfFocusScopeStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfFocusScopeStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfFocusScopeStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1248" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1a1fd94592cd82ddac79aab6cc01cb8703" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfGroupStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfGroupStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfGroupStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1249" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1afa2af2775b3925e0dfd9fac22e097e30" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfItemFlagsStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfItemFlagsStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfItemFlagsStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1250" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1a6851e33fafec9be3c27412de81ba6e68" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfBeginPopupStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfBeginPopupStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfBeginPopupStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1251" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_sizes_1a955ce6bbb9e231d67d087bd886848dc5" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImGuiStackSizes::SizeOfDisabledStack</definition>
+        <argsstring></argsstring>
+        <name>SizeOfDisabledStack</name>
+        <qualifiedname>ImGuiStackSizes::SizeOfDisabledStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1252" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_stack_sizes_1ac8d9f1bb427e2480bbae8acc55ee58a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiStackSizes::ImGuiStackSizes</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiStackSizes</name>
+        <qualifiedname>ImGuiStackSizes::ImGuiStackSizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1254" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1254" bodyend="1254"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_stack_sizes_1a7dd94b563bf4547685bc93fc00f58543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiStackSizes::SetToContextState</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>SetToContextState</name>
+        <qualifiedname>ImGuiStackSizes::SetToContextState</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1255" column="10" bodyfile="graphics/imgui/imgui.cpp" bodystart="9532" bodyend="9545"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_stack_sizes_1a800d27777904276582b3a6d8c2cab961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiStackSizes::CompareWithContextState</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>CompareWithContextState</name>
+        <qualifiedname>ImGuiStackSizes::CompareWithContextState</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1256" column="10" bodyfile="graphics/imgui/imgui.cpp" bodystart="9548" bodyend="9568"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1242" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1243" bodyend="1257"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_stack_sizes_1a800d27777904276582b3a6d8c2cab961" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>CompareWithContextState</name></member>
+      <member refid="struct_im_gui_stack_sizes_1ac8d9f1bb427e2480bbae8acc55ee58a2" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>ImGuiStackSizes</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a7dd94b563bf4547685bc93fc00f58543" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SetToContextState</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a6851e33fafec9be3c27412de81ba6e68" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfBeginPopupStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1ada3c64baaac1256f04d5f1a99dfb6ed2" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfColorStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a955ce6bbb9e231d67d087bd886848dc5" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfDisabledStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a99fa2a45397945e6f0209ab556ca19d9" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfFocusScopeStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a5430682ade553552a42a7012b83c212d" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfFontStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a1fd94592cd82ddac79aab6cc01cb8703" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfGroupStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1ace27d02b760e0224c041d44bea926ae6" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfIDStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1afa2af2775b3925e0dfd9fac22e097e30" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfItemFlagsStack</name></member>
+      <member refid="struct_im_gui_stack_sizes_1a038e2705132e5561bb187148a8395be0" prot="public" virt="non-virtual"><scope>ImGuiStackSizes</scope><name>SizeOfStyleVarStack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

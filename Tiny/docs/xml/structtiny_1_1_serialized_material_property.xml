@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_serialized_material_property" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::SerializedMaterialProperty</compoundname>
+    <includes refid="assets_8h" local="no">assets.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_serialized_material_property_1a430798df1216886313ca81ea01ecd4d1" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 tiny::SerializedMaterialProperty::propertyID</definition>
+        <argsstring></argsstring>
+        <name>propertyID</name>
+        <qualifiedname>tiny::SerializedMaterialProperty::propertyID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.h" line="42" column="5" bodyfile="content/assets.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_serialized_material_property_1a14fc9bb64d97ab57609c6c3419d00069" prot="public" static="no" mutable="no">
+        <type>std::variant&lt; <ref refid="structtiny_1_1_serialized_c_buffer" kindref="compound">SerializedCBuffer</ref>, <ref refid="structtiny_1_1_serialized_texture" kindref="compound">SerializedTexture</ref> &gt;</type>
+        <definition>std::variant&lt;SerializedCBuffer, SerializedTexture&gt; tiny::SerializedMaterialProperty::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>tiny::SerializedMaterialProperty::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.h" line="43" column="14" bodyfile="content/assets.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_serialized_material_property_1aeba271156b201f173095004e3a37f562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tiny::SerializedMaterialProperty::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>tiny::SerializedMaterialProperty::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.h" line="46" column="6" bodyfile="content/assets.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/assets.h" line="40" column="1" bodyfile="content/assets.h" bodystart="41" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_serialized_material_property_1a430798df1216886313ca81ea01ecd4d1" prot="public" virt="non-virtual"><scope>tiny::SerializedMaterialProperty</scope><name>propertyID</name></member>
+      <member refid="structtiny_1_1_serialized_material_property_1aeba271156b201f173095004e3a37f562" prot="public" virt="non-virtual"><scope>tiny::SerializedMaterialProperty</scope><name>serialize</name></member>
+      <member refid="structtiny_1_1_serialized_material_property_1a14fc9bb64d97ab57609c6c3419d00069" prot="public" virt="non-virtual"><scope>tiny::SerializedMaterialProperty</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_mesh_shader_f_x" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::MeshShaderFX</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1a1ee4bdd90d1255eb3a34ad24fd5074c0" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; IDxcBlob &gt;</type>
+        <definition>CComPtr&lt;IDxcBlob&gt; tiny::fx::MeshShaderFX::vs</definition>
+        <argsstring></argsstring>
+        <name>vs</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::vs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="100" column="8" bodyfile="fx/shaderfx.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1a3309927ae2e61205dd050243fa930bda" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; IDxcBlob &gt;</type>
+        <definition>CComPtr&lt;IDxcBlob&gt; tiny::fx::MeshShaderFX::ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::ps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="101" column="8" bodyfile="fx/shaderfx.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1a96f40db5b556276bde62197a306e3bc5" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12RootSignature &gt;</type>
+        <definition>CComPtr&lt;ID3D12RootSignature&gt; tiny::fx::MeshShaderFX::rootSig</definition>
+        <argsstring></argsstring>
+        <name>rootSig</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::rootSig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="102" column="8" bodyfile="fx/shaderfx.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1a5c4a7dcdc839dfd794f81d665a8b9b72" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3DBlob &gt;</type>
+        <definition>CComPtr&lt;ID3DBlob&gt; tiny::fx::MeshShaderFX::rootSigBlob</definition>
+        <argsstring></argsstring>
+        <name>rootSigBlob</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::rootSigBlob</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="103" column="8" bodyfile="fx/shaderfx.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1a8a2684a207b09cb8fa091f77ab249fcc" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; u64, CComPtr&lt; ID3D12PipelineState &gt; &gt;</type>
+        <definition>std::unordered_map&lt;u64, CComPtr&lt;ID3D12PipelineState&gt; &gt; tiny::fx::MeshShaderFX::pso</definition>
+        <argsstring></argsstring>
+        <name>pso</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::pso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="104" column="19" bodyfile="fx/shaderfx.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1aa72e5d7b668241244de3d686d6ec158a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1fx_1_1_shader_resource_binding" kindref="compound">ShaderResourceBinding</ref> &gt;</type>
+        <definition>std::vector&lt;ShaderResourceBinding&gt; tiny::fx::MeshShaderFX::bindings</definition>
+        <argsstring></argsstring>
+        <name>bindings</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::bindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="105" column="12" bodyfile="fx/shaderfx.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_shader_f_x_1a54e77eff44a4c1a0c5aa892430ac75e9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1fx_1_1_shader_resource_special_binding" kindref="compound">ShaderResourceSpecialBinding</ref> &gt;</type>
+        <definition>std::vector&lt;ShaderResourceSpecialBinding&gt; tiny::fx::MeshShaderFX::specialBindings</definition>
+        <argsstring></argsstring>
+        <name>specialBindings</name>
+        <qualifiedname>tiny::fx::MeshShaderFX::specialBindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="106" column="12" bodyfile="fx/shaderfx.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="98" column="1" bodyfile="fx/shaderfx.h" bodystart="99" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1aa72e5d7b668241244de3d686d6ec158a" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>bindings</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a3309927ae2e61205dd050243fa930bda" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>ps</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a8a2684a207b09cb8fa091f77ab249fcc" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>pso</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a96f40db5b556276bde62197a306e3bc5" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>rootSig</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a5c4a7dcdc839dfd794f81d665a8b9b72" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>rootSigBlob</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a54e77eff44a4c1a0c5aa892430ac75e9" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>specialBindings</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a1ee4bdd90d1255eb3a34ad24fd5074c0" prot="public" virt="non-virtual"><scope>tiny::fx::MeshShaderFX</scope><name>vs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

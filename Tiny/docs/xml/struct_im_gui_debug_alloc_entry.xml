@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_debug_alloc_entry" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiDebugAllocEntry</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_entry_1adff95c7f4c02bf394edda49c37065bf2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiDebugAllocEntry::FrameCount</definition>
+        <argsstring></argsstring>
+        <name>FrameCount</name>
+        <qualifiedname>ImGuiDebugAllocEntry::FrameCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1788" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_entry_1ac2dd133bbfe0ab6d8f446d05444bd583" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiDebugAllocEntry::AllocCount</definition>
+        <argsstring></argsstring>
+        <name>AllocCount</name>
+        <qualifiedname>ImGuiDebugAllocEntry::AllocCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1789" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_entry_1a6d5c227fc7d46ed6a01e1b328b3a7b3a" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiDebugAllocEntry::FreeCount</definition>
+        <argsstring></argsstring>
+        <name>FreeCount</name>
+        <qualifiedname>ImGuiDebugAllocEntry::FreeCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1790" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1790" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1786" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1787" bodyend="1791"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_debug_alloc_entry_1ac2dd133bbfe0ab6d8f446d05444bd583" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocEntry</scope><name>AllocCount</name></member>
+      <member refid="struct_im_gui_debug_alloc_entry_1adff95c7f4c02bf394edda49c37065bf2" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocEntry</scope><name>FrameCount</name></member>
+      <member refid="struct_im_gui_debug_alloc_entry_1a6d5c227fc7d46ed6a01e1b328b3a7b3a" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocEntry</scope><name>FreeCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_debug_alloc_info" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiDebugAllocInfo</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_info_1a9f2dc8d9ec70b6193d10dda675c0f19c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiDebugAllocInfo::TotalAllocCount</definition>
+        <argsstring></argsstring>
+        <name>TotalAllocCount</name>
+        <qualifiedname>ImGuiDebugAllocInfo::TotalAllocCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1795" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_info_1af482f6e6e3a9cf3e8309809d25bc7ada" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiDebugAllocInfo::TotalFreeCount</definition>
+        <argsstring></argsstring>
+        <name>TotalFreeCount</name>
+        <qualifiedname>ImGuiDebugAllocInfo::TotalFreeCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1796" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_info_1ac71adcd670fec5d469856d235cecd5fa" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiDebugAllocInfo::LastEntriesIdx</definition>
+        <argsstring></argsstring>
+        <name>LastEntriesIdx</name>
+        <qualifiedname>ImGuiDebugAllocInfo::LastEntriesIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1797" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1797" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_debug_alloc_info_1a08ac2748c718e2d93de7abe16928e2a3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_debug_alloc_entry" kindref="compound">ImGuiDebugAllocEntry</ref></type>
+        <definition>ImGuiDebugAllocEntry ImGuiDebugAllocInfo::LastEntriesBuf[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>LastEntriesBuf</name>
+        <qualifiedname>ImGuiDebugAllocInfo::LastEntriesBuf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1798" column="26" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1798" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_debug_alloc_info_1af30e2855aabf5afffeb2743af1827455" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiDebugAllocInfo::ImGuiDebugAllocInfo</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiDebugAllocInfo</name>
+        <qualifiedname>ImGuiDebugAllocInfo::ImGuiDebugAllocInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1800" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1800" bodyend="1800"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ImGuiDebugAllocEntry</label>
+        <link refid="struct_im_gui_debug_alloc_entry"/>
+      </node>
+      <node id="1">
+        <label>ImGuiDebugAllocInfo</label>
+        <link refid="struct_im_gui_debug_alloc_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LastEntriesBuf</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1793" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1794" bodyend="1801"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_debug_alloc_info_1af30e2855aabf5afffeb2743af1827455" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocInfo</scope><name>ImGuiDebugAllocInfo</name></member>
+      <member refid="struct_im_gui_debug_alloc_info_1a08ac2748c718e2d93de7abe16928e2a3" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocInfo</scope><name>LastEntriesBuf</name></member>
+      <member refid="struct_im_gui_debug_alloc_info_1ac71adcd670fec5d469856d235cecd5fa" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocInfo</scope><name>LastEntriesIdx</name></member>
+      <member refid="struct_im_gui_debug_alloc_info_1a9f2dc8d9ec70b6193d10dda675c0f19c" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocInfo</scope><name>TotalAllocCount</name></member>
+      <member refid="struct_im_gui_debug_alloc_info_1af482f6e6e3a9cf3e8309809d25bc7ada" prot="public" virt="non-virtual"><scope>ImGuiDebugAllocInfo</scope><name>TotalFreeCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

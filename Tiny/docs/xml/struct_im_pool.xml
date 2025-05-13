@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_pool" kind="struct" language="C++" prot="public">
+    <compoundname>ImPool</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_pool_1ab9368393a8b95f903d77bd49beb84a18" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; T &gt;</type>
+        <definition>ImVector&lt;T&gt; ImPool&lt; T &gt;::Buf</definition>
+        <argsstring></argsstring>
+        <name>Buf</name>
+        <qualifiedname>ImPool::Buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="668" column="18" bodyfile="graphics/imgui/imgui_internal.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_pool_1a6d3b4c9267ef5f496abb97871f9820eb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_storage" kindref="compound">ImGuiStorage</ref></type>
+        <definition>ImGuiStorage ImPool&lt; T &gt;::Map</definition>
+        <argsstring></argsstring>
+        <name>Map</name>
+        <qualifiedname>ImPool::Map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="669" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_pool_1afe057c62cef34c6425dd56a8a396c118" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a2bcd38f7be434db57a9757ebf7aa56d0" kindref="member">ImPoolIdx</ref></type>
+        <definition>ImPoolIdx ImPool&lt; T &gt;::FreeIdx</definition>
+        <argsstring></argsstring>
+        <name>FreeIdx</name>
+        <qualifiedname>ImPool::FreeIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="670" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_pool_1aa4a1075102fbc90875cc6144b3961e49" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a2bcd38f7be434db57a9757ebf7aa56d0" kindref="member">ImPoolIdx</ref></type>
+        <definition>ImPoolIdx ImPool&lt; T &gt;::AliveCount</definition>
+        <argsstring></argsstring>
+        <name>AliveCount</name>
+        <qualifiedname>ImPool::AliveCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="671" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_pool_1a8377750adcef3c1b858b6271bc6ecff8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImPool&lt; T &gt;::ImPool</definition>
+        <argsstring>()</argsstring>
+        <name>ImPool</name>
+        <qualifiedname>ImPool::ImPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="673" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="673" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1aa0b55e4483e95d6723d51b5106de4bc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImPool&lt; T &gt;::~ImPool</definition>
+        <argsstring>()</argsstring>
+        <name>~ImPool</name>
+        <qualifiedname>ImPool::~ImPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="674" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="674" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1ae53033af46a5df28084f1d946c9face3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImPool&lt; T &gt;::GetByKey</definition>
+        <argsstring>(ImGuiID key)</argsstring>
+        <name>GetByKey</name>
+        <qualifiedname>ImPool::GetByKey</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="675" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="675" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a0129c0e467c287a5a7441f2abe0baf35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImPool&lt; T &gt;::GetByIndex</definition>
+        <argsstring>(ImPoolIdx n)</argsstring>
+        <name>GetByIndex</name>
+        <qualifiedname>ImPool::GetByIndex</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a2bcd38f7be434db57a9757ebf7aa56d0" kindref="member">ImPoolIdx</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="676" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="676" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a3e683876ebd44c7f6f098851ee522870" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="imgui__internal_8h_1a2bcd38f7be434db57a9757ebf7aa56d0" kindref="member">ImPoolIdx</ref></type>
+        <definition>ImPoolIdx ImPool&lt; T &gt;::GetIndex</definition>
+        <argsstring>(const T *p) const</argsstring>
+        <name>GetIndex</name>
+        <qualifiedname>ImPool::GetIndex</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="677" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="677" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a47973a2eac8e4c06ef369ac02d23f4e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImPool&lt; T &gt;::GetOrAddByKey</definition>
+        <argsstring>(ImGuiID key)</argsstring>
+        <name>GetOrAddByKey</name>
+        <qualifiedname>ImPool::GetOrAddByKey</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="678" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="678" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a2434a4efa2eab4aeca8e15ac208c18d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImPool&lt; T &gt;::Contains</definition>
+        <argsstring>(const T *p) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>ImPool::Contains</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="679" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="679" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a613b0fa43ad7457ebde2988d4ea5f0be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImPool&lt; T &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>ImPool::Clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="680" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="680" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a39f9b742304d164c4298031537c1b09c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImPool&lt; T &gt;::Add</definition>
+        <argsstring>()</argsstring>
+        <name>Add</name>
+        <qualifiedname>ImPool::Add</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="681" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="681" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a7b2c095ea540dc8afb670e705a37a912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImPool&lt; T &gt;::Remove</definition>
+        <argsstring>(ImGuiID key, const T *p)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>ImPool::Remove</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="682" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="682" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a967f556412946a33bca3950f9be7a6ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImPool&lt; T &gt;::Remove</definition>
+        <argsstring>(ImGuiID key, ImPoolIdx idx)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>ImPool::Remove</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a2bcd38f7be434db57a9757ebf7aa56d0" kindref="member">ImPoolIdx</ref></type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="683" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="683" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a62a34bcb3efcaaa3f4402c0c3cc1d600" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImPool&lt; T &gt;::Reserve</definition>
+        <argsstring>(int capacity)</argsstring>
+        <name>Reserve</name>
+        <qualifiedname>ImPool::Reserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="684" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="684" bodyend="684"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a3073eefd71bfd53dede8a5d62ad5e019" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImPool&lt; T &gt;::GetAliveCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAliveCount</name>
+        <qualifiedname>ImPool::GetAliveCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="688" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="688" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a4ec15d734fead5c872ee5e309b2294af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImPool&lt; T &gt;::GetBufSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBufSize</name>
+        <qualifiedname>ImPool::GetBufSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="689" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="689" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a519f3e31d5750c6fef15642720f68a6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImPool&lt; T &gt;::GetMapSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMapSize</name>
+        <qualifiedname>ImPool::GetMapSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="690" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="690" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1a36a6b758775e849f3ccc20727376476a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImPool&lt; T &gt;::TryGetMapData</definition>
+        <argsstring>(ImPoolIdx n)</argsstring>
+        <name>TryGetMapData</name>
+        <qualifiedname>ImPool::TryGetMapData</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a2bcd38f7be434db57a9757ebf7aa56d0" kindref="member">ImPoolIdx</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="691" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="691" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_pool_1ae71be921586613e7676b1085b5e5676f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImPool&lt; T &gt;::GetSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetSize</name>
+        <qualifiedname>ImPool::GetSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="693" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="693" bodyend="693"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ImGuiStorage</label>
+        <link refid="struct_im_gui_storage"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImGuiStorage::ImGuiStoragePair</label>
+        <link refid="struct_im_gui_storage_1_1_im_gui_storage_pair"/>
+      </node>
+      <node id="1">
+        <label>ImPool&lt; T &gt;</label>
+        <link refid="struct_im_pool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Map</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVector&lt; ImGuiStorage::ImGuiStoragePair &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="666" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="667" bodyend="695"/>
+    <listofallmembers>
+      <member refid="struct_im_pool_1a39f9b742304d164c4298031537c1b09c" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Add</name></member>
+      <member refid="struct_im_pool_1aa4a1075102fbc90875cc6144b3961e49" prot="public" virt="non-virtual"><scope>ImPool</scope><name>AliveCount</name></member>
+      <member refid="struct_im_pool_1ab9368393a8b95f903d77bd49beb84a18" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Buf</name></member>
+      <member refid="struct_im_pool_1a613b0fa43ad7457ebde2988d4ea5f0be" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Clear</name></member>
+      <member refid="struct_im_pool_1a2434a4efa2eab4aeca8e15ac208c18d8" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Contains</name></member>
+      <member refid="struct_im_pool_1afe057c62cef34c6425dd56a8a396c118" prot="public" virt="non-virtual"><scope>ImPool</scope><name>FreeIdx</name></member>
+      <member refid="struct_im_pool_1a3073eefd71bfd53dede8a5d62ad5e019" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetAliveCount</name></member>
+      <member refid="struct_im_pool_1a4ec15d734fead5c872ee5e309b2294af" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetBufSize</name></member>
+      <member refid="struct_im_pool_1a0129c0e467c287a5a7441f2abe0baf35" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetByIndex</name></member>
+      <member refid="struct_im_pool_1ae53033af46a5df28084f1d946c9face3" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetByKey</name></member>
+      <member refid="struct_im_pool_1a3e683876ebd44c7f6f098851ee522870" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetIndex</name></member>
+      <member refid="struct_im_pool_1a519f3e31d5750c6fef15642720f68a6c" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetMapSize</name></member>
+      <member refid="struct_im_pool_1a47973a2eac8e4c06ef369ac02d23f4e5" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetOrAddByKey</name></member>
+      <member refid="struct_im_pool_1ae71be921586613e7676b1085b5e5676f" prot="public" virt="non-virtual"><scope>ImPool</scope><name>GetSize</name></member>
+      <member refid="struct_im_pool_1a8377750adcef3c1b858b6271bc6ecff8" prot="public" virt="non-virtual"><scope>ImPool</scope><name>ImPool</name></member>
+      <member refid="struct_im_pool_1a6d3b4c9267ef5f496abb97871f9820eb" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Map</name></member>
+      <member refid="struct_im_pool_1a7b2c095ea540dc8afb670e705a37a912" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Remove</name></member>
+      <member refid="struct_im_pool_1a967f556412946a33bca3950f9be7a6ae" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Remove</name></member>
+      <member refid="struct_im_pool_1a62a34bcb3efcaaa3f4402c0c3cc1d600" prot="public" virt="non-virtual"><scope>ImPool</scope><name>Reserve</name></member>
+      <member refid="struct_im_pool_1a36a6b758775e849f3ccc20727376476a" prot="public" virt="non-virtual"><scope>ImPool</scope><name>TryGetMapData</name></member>
+      <member refid="struct_im_pool_1aa0b55e4483e95d6723d51b5106de4bc2" prot="public" virt="non-virtual"><scope>ImPool</scope><name>~ImPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

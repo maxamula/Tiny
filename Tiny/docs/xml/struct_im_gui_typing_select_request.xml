@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_typing_select_request" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTypingSelectRequest</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_typing_select_request_1a0f8c5c32128bb79c52a4fe371bdf489f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1abe62ecb5234d3ca104d3fb3647c77a8e" kindref="member">ImGuiTypingSelectFlags</ref></type>
+        <definition>ImGuiTypingSelectFlags ImGuiTypingSelectRequest::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiTypingSelectRequest::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1577" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_typing_select_request_1a0ff97ec2a40499fb8980365625abc074" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTypingSelectRequest::SearchBufferLen</definition>
+        <argsstring></argsstring>
+        <name>SearchBufferLen</name>
+        <qualifiedname>ImGuiTypingSelectRequest::SearchBufferLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1578" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_typing_select_request_1a1d85507214938cb04e98cc7b165678fa" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ImGuiTypingSelectRequest::SearchBuffer</definition>
+        <argsstring></argsstring>
+        <name>SearchBuffer</name>
+        <qualifiedname>ImGuiTypingSelectRequest::SearchBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1579" column="28" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_typing_select_request_1a0381b8599e3e8137f2764b907521cb43" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTypingSelectRequest::SelectRequest</definition>
+        <argsstring></argsstring>
+        <name>SelectRequest</name>
+        <qualifiedname>ImGuiTypingSelectRequest::SelectRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1580" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_typing_select_request_1a7ab45dfe40b23659b896064eb1fb7eae" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTypingSelectRequest::SingleCharMode</definition>
+        <argsstring></argsstring>
+        <name>SingleCharMode</name>
+        <qualifiedname>ImGuiTypingSelectRequest::SingleCharMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1581" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_typing_select_request_1abc2b98a4522bc1482da0dca003a760ec" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a33644f626f44716357624c2755a9b9d1" kindref="member">ImS8</ref></type>
+        <definition>ImS8 ImGuiTypingSelectRequest::SingleCharSize</definition>
+        <argsstring></argsstring>
+        <name>SingleCharSize</name>
+        <qualifiedname>ImGuiTypingSelectRequest::SingleCharSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1582" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1582" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1575" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1576" bodyend="1583"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_typing_select_request_1a0f8c5c32128bb79c52a4fe371bdf489f" prot="public" virt="non-virtual"><scope>ImGuiTypingSelectRequest</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_typing_select_request_1a1d85507214938cb04e98cc7b165678fa" prot="public" virt="non-virtual"><scope>ImGuiTypingSelectRequest</scope><name>SearchBuffer</name></member>
+      <member refid="struct_im_gui_typing_select_request_1a0ff97ec2a40499fb8980365625abc074" prot="public" virt="non-virtual"><scope>ImGuiTypingSelectRequest</scope><name>SearchBufferLen</name></member>
+      <member refid="struct_im_gui_typing_select_request_1a0381b8599e3e8137f2764b907521cb43" prot="public" virt="non-virtual"><scope>ImGuiTypingSelectRequest</scope><name>SelectRequest</name></member>
+      <member refid="struct_im_gui_typing_select_request_1a7ab45dfe40b23659b896064eb1fb7eae" prot="public" virt="non-virtual"><scope>ImGuiTypingSelectRequest</scope><name>SingleCharMode</name></member>
+      <member refid="struct_im_gui_typing_select_request_1abc2b98a4522bc1482da0dca003a760ec" prot="public" virt="non-virtual"><scope>ImGuiTypingSelectRequest</scope><name>SingleCharSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

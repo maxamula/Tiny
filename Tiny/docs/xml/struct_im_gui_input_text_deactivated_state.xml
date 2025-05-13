@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_input_text_deactivated_state" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiInputTextDeactivatedState</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_input_text_deactivated_state_1a43332a0e530aff3f308605119fb36b5b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiInputTextDeactivatedState::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiInputTextDeactivatedState::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1095" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1095" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_text_deactivated_state_1a19db36bc26be137f8b9c7a55f09dd1a3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; char &gt;</type>
+        <definition>ImVector&lt;char&gt; ImGuiInputTextDeactivatedState::TextA</definition>
+        <argsstring></argsstring>
+        <name>TextA</name>
+        <qualifiedname>ImGuiInputTextDeactivatedState::TextA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1096" column="18" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_input_text_deactivated_state_1abefa99fe24b6becb8a463e66120219a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiInputTextDeactivatedState::ImGuiInputTextDeactivatedState</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiInputTextDeactivatedState</name>
+        <qualifiedname>ImGuiInputTextDeactivatedState::ImGuiInputTextDeactivatedState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1098" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1098" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_input_text_deactivated_state_1ab25f0ed83856bf370fa78e9a6aaaa895" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiInputTextDeactivatedState::ClearFreeMemory</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFreeMemory</name>
+        <qualifiedname>ImGuiInputTextDeactivatedState::ClearFreeMemory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1099" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1099" bodyend="1099"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiInputTextDeactivatedState</label>
+        <link refid="struct_im_gui_input_text_deactivated_state"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TextA</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; char &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1093" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1094" bodyend="1100"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_input_text_deactivated_state_1ab25f0ed83856bf370fa78e9a6aaaa895" prot="public" virt="non-virtual"><scope>ImGuiInputTextDeactivatedState</scope><name>ClearFreeMemory</name></member>
+      <member refid="struct_im_gui_input_text_deactivated_state_1a43332a0e530aff3f308605119fb36b5b" prot="public" virt="non-virtual"><scope>ImGuiInputTextDeactivatedState</scope><name>ID</name></member>
+      <member refid="struct_im_gui_input_text_deactivated_state_1abefa99fe24b6becb8a463e66120219a1" prot="public" virt="non-virtual"><scope>ImGuiInputTextDeactivatedState</scope><name>ImGuiInputTextDeactivatedState</name></member>
+      <member refid="struct_im_gui_input_text_deactivated_state_1a19db36bc26be137f8b9c7a55f09dd1a3" prot="public" virt="non-virtual"><scope>ImGuiInputTextDeactivatedState</scope><name>TextA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

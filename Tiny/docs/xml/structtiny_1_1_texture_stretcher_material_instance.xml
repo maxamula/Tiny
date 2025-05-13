@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_texture_stretcher_material_instance" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::TextureStretcherMaterialInstance</compoundname>
+    <basecompoundref refid="structtiny_1_1fx_1_1_material_instance" prot="public" virt="non-virtual">tiny::fx::MaterialInstance&lt; TextureStretcherMaterialInstance &gt;</basecompoundref>
+    <includes refid="stdmat_8h" local="no">stdmat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_texture_stretcher_material_instance_1a6078aa404ad988941bc312cfcc942359" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref></type>
+        <definition>RenderTexture tiny::TextureStretcherMaterialInstance::diffuseTexture</definition>
+        <argsstring></argsstring>
+        <name>diffuseTexture</name>
+        <qualifiedname>tiny::TextureStretcherMaterialInstance::diffuseTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="25" column="15" bodyfile="content/stdmat.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_texture_stretcher_material_instance_1a0668da329e734b5f73c624bca8733b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::TextureStretcherMaterialInstance::TINY_DECLARE_MAT_ID</definition>
+        <argsstring>(TextureStretcherMaterialInstance)</argsstring>
+        <name>TINY_DECLARE_MAT_ID</name>
+        <qualifiedname>tiny::TextureStretcherMaterialInstance::TINY_DECLARE_MAT_ID</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_texture_stretcher_material_instance" kindref="compound">TextureStretcherMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="24" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tiny::TextureStretcherMaterialInstance</label>
+        <link refid="structtiny_1_1_texture_stretcher_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::fx::IMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_material_instance"/>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MaterialInstance&lt; TextureStretcherMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_material_instance"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>tiny::DescriptorHandle</label>
+        <link refid="classtiny_1_1_descriptor_handle"/>
+      </node>
+      <node id="4">
+        <label>tiny::RenderTexture</label>
+        <link refid="structtiny_1_1_render_texture"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>rtv</edgelabel>
+          <edgelabel>srv</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>tiny::TextureStretcherMaterialInstance</label>
+        <link refid="structtiny_1_1_texture_stretcher_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>diffuseTexture</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::fx::IMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_material_instance"/>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MaterialInstance&lt; TextureStretcherMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_material_instance"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="content/stdmat.h" line="21" column="1" bodyfile="content/stdmat.h" bodystart="23" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1ae199273fae25acfa98e365227a6f98cc" prot="public" virt="non-virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_texture_stretcher_material_instance_1a6078aa404ad988941bc312cfcc942359" prot="public" virt="non-virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>diffuseTexture</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1ac26b1e181a2f5bf19f2eaa8a4094b8ad" prot="public" virt="pure-virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1a9ed5b453ff7baf2bf60d654dd0003769" prot="public" virt="virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>Meta</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1aff7547c0e338911a14c21ad22f710302" prot="public" virt="non-virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>SetFeatureFlags</name></member>
+      <member refid="structtiny_1_1_texture_stretcher_material_instance_1a0668da329e734b5f73c624bca8733b01" prot="public" virt="non-virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>TINY_DECLARE_MAT_ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1a988aa75e0b9ab8762d2b232e81c62e5c" prot="public" virt="virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>~IMaterialInstance</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1ab85a4a133f5e17b5265c6a78443791c0" prot="public" virt="virtual"><scope>tiny::TextureStretcherMaterialInstance</scope><name>~MaterialInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

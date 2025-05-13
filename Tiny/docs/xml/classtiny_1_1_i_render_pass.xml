@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_i_render_pass" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>tiny::IRenderPass</compoundname>
+    <derivedcompoundref refid="classtiny_1_1_im_gui_debug_pass" prot="public" virt="non-virtual">tiny::ImGuiDebugPass</derivedcompoundref>
+    <derivedcompoundref refid="classtiny_1_1_scene_filtered_pass" prot="public" virt="non-virtual">tiny::SceneFilteredPass</derivedcompoundref>
+    <derivedcompoundref refid="classtiny_1_1_submit_to_swapchain_pass" prot="public" virt="non-virtual">tiny::SubmitToSwapchainPass</derivedcompoundref>
+    <includes refid="pass_8h" local="no">pass.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_i_render_pass_1acdc0504e7a298aa148112b0e4b33d9eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual tiny::IRenderPass::~IRenderPass</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IRenderPass</name>
+        <qualifiedname>tiny::IRenderPass::~IRenderPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="11" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_i_render_pass_1a1bb24bef78077a26beb2b3e049e85a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tiny::IRenderPass::Setup</definition>
+        <argsstring>(FrameGraph::Builder &amp;builder)=0</argsstring>
+        <name>Setup</name>
+        <qualifiedname>tiny::IRenderPass::Setup</qualifiedname>
+        <reimplementedby refid="classtiny_1_1_im_gui_debug_pass_1afb0801ba38157ddefdc9a816d5e215f1">Setup</reimplementedby>
+        <reimplementedby refid="classtiny_1_1_opaque_pass_1acb4b3a00b93f5e617dd72d9d67a7eabf">Setup</reimplementedby>
+        <reimplementedby refid="classtiny_1_1_submit_to_swapchain_pass_1a4b0621ae6430da16b06c8571f9d9c60f">Setup</reimplementedby>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph_1_1_builder" kindref="compound">FrameGraph::Builder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_i_render_pass_1a3cbbca0afaaa0c644c81d3e4c6e9524d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tiny::IRenderPass::Execute</definition>
+        <argsstring>(RenderContext &amp;ctx, FrameGraphResources &amp;res)=0</argsstring>
+        <name>Execute</name>
+        <qualifiedname>tiny::IRenderPass::Execute</qualifiedname>
+        <reimplementedby refid="classtiny_1_1_im_gui_debug_pass_1ac30ff101c57bc24d5722adccc8c912d4">Execute</reimplementedby>
+        <reimplementedby refid="classtiny_1_1_scene_filtered_pass_1a8e6104c9a8b4d6611317e2a9158ec55c">Execute</reimplementedby>
+        <reimplementedby refid="classtiny_1_1_submit_to_swapchain_pass_1afd4f679db6ea7e2764d39b47f58e1454">Execute</reimplementedby>
+        <param>
+          <type><ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_i_render_pass_1ac9144bdb0b89038daf768d7a978b592a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f64</type>
+        <definition>f64 tiny::IRenderPass::EstimateCost</definition>
+        <argsstring>()</argsstring>
+        <name>EstimateCost</name>
+        <qualifiedname>tiny::IRenderPass::EstimateCost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="14" column="5" bodyfile="graphics/pass.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tiny::IRenderPass</label>
+        <link refid="classtiny_1_1_i_render_pass"/>
+      </node>
+      <node id="2">
+        <label>tiny::ImGuiDebugPass</label>
+        <link refid="classtiny_1_1_im_gui_debug_pass"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>tiny::OpaquePass</label>
+        <link refid="classtiny_1_1_opaque_pass"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::SceneFilteredPass</label>
+        <link refid="classtiny_1_1_scene_filtered_pass"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tiny::SubmitToSwapchainPass</label>
+        <link refid="classtiny_1_1_submit_to_swapchain_pass"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="graphics/pass.h" line="8" column="1" bodyfile="graphics/pass.h" bodystart="9" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_i_render_pass_1ac9144bdb0b89038daf768d7a978b592a" prot="public" virt="non-virtual"><scope>tiny::IRenderPass</scope><name>EstimateCost</name></member>
+      <member refid="classtiny_1_1_i_render_pass_1a3cbbca0afaaa0c644c81d3e4c6e9524d" prot="public" virt="pure-virtual"><scope>tiny::IRenderPass</scope><name>Execute</name></member>
+      <member refid="classtiny_1_1_i_render_pass_1a1bb24bef78077a26beb2b3e049e85a71" prot="public" virt="pure-virtual"><scope>tiny::IRenderPass</scope><name>Setup</name></member>
+      <member refid="classtiny_1_1_i_render_pass_1acdc0504e7a298aa148112b0e4b33d9eb" prot="public" virt="virtual"><scope>tiny::IRenderPass</scope><name>~IRenderPass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

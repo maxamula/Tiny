@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_d3_d_gpu_queue" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>tiny::D3DGpuQueue</compoundname>
+    <includes refid="gpuqueue_8h" local="no">gpuqueue.h</includes>
+    <innerclass refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame" prot="private">tiny::D3DGpuQueue::CommandFrame</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1ae0a6b74b1af2c758b69c406e93344a21" prot="private" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12CommandQueue &gt;</type>
+        <definition>CComPtr&lt;ID3D12CommandQueue&gt; tiny::D3DGpuQueue::mCommandQueue</definition>
+        <argsstring></argsstring>
+        <name>mCommandQueue</name>
+        <qualifiedname>tiny::D3DGpuQueue::mCommandQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="47" column="8" bodyfile="graphics/gpuqueue.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a5394e448b920cb1d556c3caa10565cb3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; CommandFrame &gt;</type>
+        <definition>std::vector&lt;CommandFrame&gt; tiny::D3DGpuQueue::mCommandFrames</definition>
+        <argsstring></argsstring>
+        <name>mCommandFrames</name>
+        <qualifiedname>tiny::D3DGpuQueue::mCommandFrames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="48" column="12" bodyfile="graphics/gpuqueue.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a08c7dbd9caa78c629dd6328f9d270f3c" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::D3DGpuQueue::mAcquireMutex</definition>
+        <argsstring></argsstring>
+        <name>mAcquireMutex</name>
+        <qualifiedname>tiny::D3DGpuQueue::mAcquireMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="49" column="11" bodyfile="graphics/gpuqueue.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a26f25ee428071c90256c7950eb958dbb" prot="private" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12Fence &gt;</type>
+        <definition>CComPtr&lt;ID3D12Fence&gt; tiny::D3DGpuQueue::mFence</definition>
+        <argsstring></argsstring>
+        <name>mFence</name>
+        <qualifiedname>tiny::D3DGpuQueue::mFence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="50" column="8" bodyfile="graphics/gpuqueue.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a37d1613e937ab19b9c1406cce34fc867" prot="private" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE tiny::D3DGpuQueue::mFenceEvent</definition>
+        <argsstring></argsstring>
+        <name>mFenceEvent</name>
+        <qualifiedname>tiny::D3DGpuQueue::mFenceEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="51" column="7" bodyfile="graphics/gpuqueue.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a6fc364816c65127e5c8e1ebdfe6526bd" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; u8 &gt;</type>
+        <definition>std::atomic&lt;u8&gt; tiny::D3DGpuQueue::mLastSubmittedFrame</definition>
+        <argsstring></argsstring>
+        <name>mLastSubmittedFrame</name>
+        <qualifiedname>tiny::D3DGpuQueue::mLastSubmittedFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="52" column="12" bodyfile="graphics/gpuqueue.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a889903ab41967fec333e87b362f6c2a3" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; u8 &gt;</type>
+        <definition>std::atomic&lt;u8&gt; tiny::D3DGpuQueue::mFrameIndex</definition>
+        <argsstring></argsstring>
+        <name>mFrameIndex</name>
+        <qualifiedname>tiny::D3DGpuQueue::mFrameIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="53" column="12" bodyfile="graphics/gpuqueue.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1a1c5ee70c887a5c20f49fb757166aa399" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; u64 &gt;</type>
+        <definition>std::atomic&lt;u64&gt; tiny::D3DGpuQueue::mNextFenceValue</definition>
+        <argsstring></argsstring>
+        <name>mNextFenceValue</name>
+        <qualifiedname>tiny::D3DGpuQueue::mNextFenceValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="54" column="12" bodyfile="graphics/gpuqueue.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_gpu_queue_1ae924e41e474acd7c896133c754ff57b5" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::D3DGpuQueue::mFramesInFlight</definition>
+        <argsstring></argsstring>
+        <name>mFramesInFlight</name>
+        <qualifiedname>tiny::D3DGpuQueue::mFramesInFlight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="55" column="3" bodyfile="graphics/gpuqueue.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a09be6d4c688302ce3ae8caf55df1f6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DGpuQueue::D3DGpuQueue</definition>
+        <argsstring>()=default</argsstring>
+        <name>D3DGpuQueue</name>
+        <qualifiedname>tiny::D3DGpuQueue::D3DGpuQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a9f245639556e0b8627a36c620f541b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DGpuQueue::~D3DGpuQueue</definition>
+        <argsstring>()=default</argsstring>
+        <name>~D3DGpuQueue</name>
+        <qualifiedname>tiny::D3DGpuQueue::~D3DGpuQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a2c75c8d99b6c3d94b71c477419d95fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DGpuQueue::D3DGpuQueue</definition>
+        <argsstring>(const D3DGpuQueue &amp;)=delete</argsstring>
+        <name>D3DGpuQueue</name>
+        <qualifiedname>tiny::D3DGpuQueue::D3DGpuQueue</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_d3_d_gpu_queue" kindref="compound">D3DGpuQueue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a2f3c5a9cc0d19d728bf91b937ef948f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_d3_d_gpu_queue" kindref="compound">D3DGpuQueue</ref> &amp;</type>
+        <definition>D3DGpuQueue &amp; tiny::D3DGpuQueue::operator=</definition>
+        <argsstring>(const D3DGpuQueue &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::D3DGpuQueue::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_d3_d_gpu_queue" kindref="compound">D3DGpuQueue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="15" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1ae213cb289f6c5a52f30208bc857e24ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DGpuQueue::Create</definition>
+        <argsstring>(const D3D12_COMMAND_QUEUE_DESC &amp;queueDesc, u8 bufferCount)</argsstring>
+        <name>Create</name>
+        <qualifiedname>tiny::D3DGpuQueue::Create</qualifiedname>
+        <param>
+          <type>const D3D12_COMMAND_QUEUE_DESC &amp;</type>
+          <declname>queueDesc</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>bufferCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="17" column="6" bodyfile="graphics/gpuqueue.cpp" bodystart="6" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a0db4231c02a93d2cc5142913ed27758a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DGpuQueue::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <qualifiedname>tiny::D3DGpuQueue::Destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="18" column="6" bodyfile="graphics/gpuqueue.cpp" bodystart="29" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a1d7d32cb8e2a44482a6b40d457e1684e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tiny::D3DGpuQueue::BeginFrame</definition>
+        <argsstring>()</argsstring>
+        <name>BeginFrame</name>
+        <qualifiedname>tiny::D3DGpuQueue::BeginFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="20" column="4" bodyfile="graphics/gpuqueue.cpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a8051a391dac9013d8d4ad3e68a5b5bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DGpuQueue::EndFrame</definition>
+        <argsstring>(std::function&lt; void()&gt; completionCallback)</argsstring>
+        <name>EndFrame</name>
+        <qualifiedname>tiny::D3DGpuQueue::EndFrame</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>completionCallback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="21" column="6" bodyfile="graphics/gpuqueue.cpp" bodystart="47" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1ab446173782c3a4ff41408c28203fdfe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DGpuQueue::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <qualifiedname>tiny::D3DGpuQueue::Flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="22" column="6" bodyfile="graphics/gpuqueue.cpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1aabaa76165f6be38668537aa50192c9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tiny::D3DGpuQueue::CheckFrameCompletion</definition>
+        <argsstring>(u64 fence)</argsstring>
+        <name>CheckFrameCompletion</name>
+        <qualifiedname>tiny::D3DGpuQueue::CheckFrameCompletion</qualifiedname>
+        <param>
+          <type>u64</type>
+          <declname>fence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="23" column="6" bodyfile="graphics/gpuqueue.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a55d7410da0127c34baa67635625d540f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CComPtr&lt; ID3D12GraphicsCommandList6 &gt;</type>
+        <definition>CComPtr&lt; ID3D12GraphicsCommandList6 &gt; tiny::D3DGpuQueue::AcquireNextCommandList</definition>
+        <argsstring>()</argsstring>
+        <name>AcquireNextCommandList</name>
+        <qualifiedname>tiny::D3DGpuQueue::AcquireNextCommandList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="26" column="9" bodyfile="graphics/gpuqueue.cpp" bodystart="81" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1afb1fac2464b6a1f8ddbd69f2aa9a669c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ID3D12CommandQueue *</type>
+        <definition>ID3D12CommandQueue * tiny::D3DGpuQueue::GetQueue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetQueue</name>
+        <qualifiedname>tiny::D3DGpuQueue::GetQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="27" column="20" bodyfile="graphics/gpuqueue.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a271a1945d56811a25f3170eb28e09407" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tiny::D3DGpuQueue::GetFrameIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFrameIndex</name>
+        <qualifiedname>tiny::D3DGpuQueue::GetFrameIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="28" column="4" bodyfile="graphics/gpuqueue.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a70251b9bf572f9e743b836744458825f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u8</type>
+        <definition>u8 tiny::D3DGpuQueue::GetFramesInFlight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFramesInFlight</name>
+        <qualifiedname>tiny::D3DGpuQueue::GetFramesInFlight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="29" column="4" bodyfile="graphics/gpuqueue.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a3ed1b34a8f66a083d90d0c6a701b2b4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>u64</type>
+        <definition>u64 tiny::D3DGpuQueue::GetNextFenceValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNextFenceValue</name>
+        <qualifiedname>tiny::D3DGpuQueue::GetNextFenceValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="30" column="5" bodyfile="graphics/gpuqueue.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtiny_1_1_d3_d_gpu_queue_1a15759baa4ac11c5abef90008e364f429" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DGpuQueue::_WaitForFrame</definition>
+        <argsstring>(u8 frameIndex)</argsstring>
+        <name>_WaitForFrame</name>
+        <qualifiedname>tiny::D3DGpuQueue::_WaitForFrame</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>frameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="45" column="6" bodyfile="graphics/gpuqueue.cpp" bodystart="92" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/gpuqueue.h" line="9" column="1" bodyfile="graphics/gpuqueue.h" bodystart="10" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a15759baa4ac11c5abef90008e364f429" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>_WaitForFrame</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a55d7410da0127c34baa67635625d540f" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>AcquireNextCommandList</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a1d7d32cb8e2a44482a6b40d457e1684e" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>BeginFrame</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1aabaa76165f6be38668537aa50192c9ea" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>CheckFrameCompletion</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1ae213cb289f6c5a52f30208bc857e24ad" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>Create</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a09be6d4c688302ce3ae8caf55df1f6dd" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>D3DGpuQueue</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a2c75c8d99b6c3d94b71c477419d95fe3" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>D3DGpuQueue</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a0db4231c02a93d2cc5142913ed27758a" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>Destroy</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a8051a391dac9013d8d4ad3e68a5b5bdf" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>EndFrame</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1ab446173782c3a4ff41408c28203fdfe6" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>Flush</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a271a1945d56811a25f3170eb28e09407" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>GetFrameIndex</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a70251b9bf572f9e743b836744458825f" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>GetFramesInFlight</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a3ed1b34a8f66a083d90d0c6a701b2b4c" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>GetNextFenceValue</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1afb1fac2464b6a1f8ddbd69f2aa9a669c" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>GetQueue</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a08c7dbd9caa78c629dd6328f9d270f3c" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mAcquireMutex</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a5394e448b920cb1d556c3caa10565cb3" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mCommandFrames</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1ae0a6b74b1af2c758b69c406e93344a21" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mCommandQueue</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a26f25ee428071c90256c7950eb958dbb" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mFence</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a37d1613e937ab19b9c1406cce34fc867" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mFenceEvent</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a889903ab41967fec333e87b362f6c2a3" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mFrameIndex</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1ae924e41e474acd7c896133c754ff57b5" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mFramesInFlight</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a6fc364816c65127e5c8e1ebdfe6526bd" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mLastSubmittedFrame</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a1c5ee70c887a5c20f49fb757166aa399" prot="private" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>mNextFenceValue</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a2f3c5a9cc0d19d728bf91b937ef948f3" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_d3_d_gpu_queue_1a9f245639556e0b8627a36c620f541b8b" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue</scope><name>~D3DGpuQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

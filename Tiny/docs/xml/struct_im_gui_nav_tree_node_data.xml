@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_nav_tree_node_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiNavTreeNodeData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_nav_tree_node_data_1a3fdcb5140ad8a4952c0215a0daebabb1" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiNavTreeNodeData::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiNavTreeNodeData::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1237" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_nav_tree_node_data_1a6d44562f63910458f797264eb4f843f7" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1abcf9eafab4557e911b2c0d8fe2feeb38" kindref="member">ImGuiItemFlags</ref></type>
+        <definition>ImGuiItemFlags ImGuiNavTreeNodeData::InFlags</definition>
+        <argsstring></argsstring>
+        <name>InFlags</name>
+        <qualifiedname>ImGuiNavTreeNodeData::InFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1238" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_nav_tree_node_data_1ab5ff54bbe182803311823c3b507f017b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiNavTreeNodeData::NavRect</definition>
+        <argsstring></argsstring>
+        <name>NavRect</name>
+        <qualifiedname>ImGuiNavTreeNodeData::NavRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1239" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1239" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiNavTreeNodeData</label>
+        <link refid="struct_im_gui_nav_tree_node_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>NavRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1235" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1236" bodyend="1240"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_nav_tree_node_data_1a3fdcb5140ad8a4952c0215a0daebabb1" prot="public" virt="non-virtual"><scope>ImGuiNavTreeNodeData</scope><name>ID</name></member>
+      <member refid="struct_im_gui_nav_tree_node_data_1a6d44562f63910458f797264eb4f843f7" prot="public" virt="non-virtual"><scope>ImGuiNavTreeNodeData</scope><name>InFlags</name></member>
+      <member refid="struct_im_gui_nav_tree_node_data_1ab5ff54bbe182803311823c3b507f017b" prot="public" virt="non-virtual"><scope>ImGuiNavTreeNodeData</scope><name>NavRect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

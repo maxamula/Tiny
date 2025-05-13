@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d3dcontext_8cpp" kind="file" language="C++">
+    <compoundname>d3dcontext.cpp</compoundname>
+    <includes refid="d3dcontext_8h" local="yes">d3dcontext.h</includes>
+    <includes refid="gfxglobal_8h" local="yes">gfxglobal.h</includes>
+    <includes local="yes">d3dx12.hpp</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>cbringbuffer.h</label>
+        <link refid="cbringbuffer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>graphics/d3dcontext.cpp</label>
+        <link refid="d3dcontext_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>d3dcontext.h</label>
+        <link refid="d3dcontext_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gfxglobal.h</label>
+        <link refid="gfxglobal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gpuqueue.h</label>
+        <link refid="gpuqueue_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>array</label>
+      </node>
+      <node id="4">
+        <label>atlbase.h</label>
+      </node>
+      <node id="18">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="3">
+        <label>d3d12.h</label>
+      </node>
+      <node id="22">
+        <label>d3dx12.hpp</label>
+      </node>
+      <node id="17">
+        <label>deque</label>
+      </node>
+      <node id="21">
+        <label>dxgi1_6.h</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="13">
+        <label>future</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>mutex</label>
+      </node>
+      <node id="7">
+        <label>set</label>
+      </node>
+      <node id="11">
+        <label>unordered_map</label>
+      </node>
+      <node id="19">
+        <label>windows.h</label>
+      </node>
+      <node id="16">
+        <label>wrl.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3dcontext_8h" kindref="compound">d3dcontext.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gfxglobal_8h" kindref="compound">gfxglobal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;d3dx12.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a8e81bdca6f7aae15da12bcb5d9d4fa0f" kindref="member">D3DContext::Create</ref>(u8<sp/>framesInFlight)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_COMMAND_QUEUE_DESC<sp/>queueDesc</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Type<sp/>=<sp/>D3D12_COMMAND_LIST_TYPE_DIRECT,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Priority<sp/>=<sp/>D3D12_COMMAND_QUEUE_PRIORITY_NORMAL,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Flags<sp/>=<sp/>D3D12_COMMAND_QUEUE_FLAG_NONE,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.NodeMask<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>.Create(queueDesc,<sp/><ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1a13fdab4c8168a3fb21c161e638b67b63" kindref="member">frameRingBuffer</ref>.Initialize(<ref refid="namespacetiny_1a58c4f21fc3285e8552c5689345f30506" kindref="member">gDevice</ref>,<sp/><ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>.GetQueue(),<sp/>256<sp/>*<sp/>1024<sp/>*<sp/>1024);<sp/></highlight><highlight class="comment">//<sp/>256<sp/>MB<sp/>ring<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" kindref="member">deferredResources</ref>.resize(<ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" kindref="member">deferredDescriptors</ref>.resize(<ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" kindref="member">deferredRanges</ref>.resize(<ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref><sp/>=<sp/><ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" kindref="member">frameTimingData</ref>.resize(<ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>frame<sp/>:<sp/><ref refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" kindref="member">frameTimingData</ref>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_QUERY_HEAP_DESC<sp/>queryHeapDesc</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Type<sp/>=<sp/>D3D12_QUERY_HEAP_TYPE_TIMESTAMP,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Count<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.NodeMask<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>THROW_IF_FAILED(<ref refid="namespacetiny_1a58c4f21fc3285e8552c5689345f30506" kindref="member">gDevice</ref>-&gt;CreateQueryHeap(&amp;queryHeapDesc,<sp/>IID_PPV_ARGS(&amp;frame.timestampHeap)));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>readback<sp/>buffer<sp/>for<sp/>the<sp/>query<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>bufferDesc<sp/>=<sp/>CD3DX12_RESOURCE_DESC::Buffer(2<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(u64));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>heapProperties<sp/>=<sp/>CD3DX12_HEAP_PROPERTIES(D3D12_HEAP_TYPE_READBACK);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>THROW_IF_FAILED(<ref refid="namespacetiny_1a58c4f21fc3285e8552c5689345f30506" kindref="member">gDevice</ref>-&gt;CreateCommittedResource(</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;heapProperties,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_HEAP_FLAG_NONE,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;bufferDesc,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_RESOURCE_STATE_COPY_DEST,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IID_PPV_ARGS(&amp;frame.timestampResult)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a18f575ba54d3a910db88287f41308b64" kindref="member">D3DContext::Destroy</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a0a646b521505f15b99d6f5b3a47e90a7" kindref="member">Flush</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>.Destroy();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>frame<sp/>:<sp/><ref refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" kindref="member">frameTimingData</ref>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.timestampHeap.Release();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.timestampResult.Release();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" kindref="member">frameTimingData</ref>.clear();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" kindref="member">deferredResources</ref>.clear();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" kindref="member">deferredDescriptors</ref>.clear();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" kindref="member">deferredRanges</ref>.clear();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a8766e09825031cb0c45e3a42acc6930c" kindref="member">D3DContext::BeginScene</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref><sp/>=<sp/><ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>.BeginFrame();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" kindref="member">deferredResources</ref>[<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>].clear();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" kindref="member">deferredDescriptors</ref>[<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>].clear();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" kindref="member">deferredRanges</ref>[<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>].clear();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Begin<sp/>the<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Record<sp/>profiling<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*auto&amp;<sp/>frameData<sp/>=<sp/>frameTimingData[currentFrameIdx];</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frameData.lastCpuTime<sp/>=<sp/>std::chrono::duration&lt;double,<sp/>std::milli&gt;(frameData.cpuEnd<sp/>-<sp/>frameData.cpuStart).count();</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/>queueFreq<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ThrowIfFailed(mainQueue-&gt;GetTimestampFrequency(&amp;queueFreq));</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(frameData.timestampHeap)</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64*<sp/>timestampData;</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_RANGE<sp/>readRange<sp/>=<sp/>{<sp/>0,<sp/>2<sp/>*<sp/>sizeof(u64)<sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ThrowIfFailed(frameData.timestampResult-&gt;Map(0,<sp/>&amp;readRange,<sp/>(void**)&amp;timestampData));</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frameData.lastGpuTime<sp/>=<sp/>(timestampData[1]<sp/>-<sp/>timestampData[0])<sp/>*<sp/>1000.0<sp/>/<sp/>queueFreq;</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frameData.timestampResult-&gt;Unmap(0,<sp/>nullptr);</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//D3DGpuQueue::CommandFrame&amp;<sp/>cmdFrame<sp/>=<sp/>mainQueue.GetCurrentCommandFrame();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//frameData.cpuStart<sp/>=<sp/>std::chrono::high_resolution_clock::now();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cmdFrame.cmdContexts[0].commandList-&gt;EndQuery(frameData.timestampHeap.p,<sp/>D3D12_QUERY_TYPE_TIMESTAMP,<sp/>0);<sp/>//<sp/>Set<sp/>timestamp<sp/>for<sp/>the<sp/>first<sp/>command<sp/>list,<sp/>as<sp/>the<sp/>first<sp/>command<sp/>list<sp/>is<sp/>the<sp/>one<sp/>that<sp/>will<sp/>be<sp/>submitted<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1aa523c46ddc795688e7e7f43f23043c7e" kindref="member">D3DContext::EndScene</ref>(std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>completionCallback)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//auto&amp;<sp/>frameData<sp/>=<sp/>frameTimingData[currentFrameIdx];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*D3DGpuQueue::CommandFrame&amp;<sp/>cmdFrame<sp/>=<sp/>mainQueue.GetCurrentCommandFrame();</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmdFrame.cmdContexts[mainQueue.GetCommandsPerFrame()<sp/>-<sp/>1].commandList-&gt;EndQuery(frameData.timestampHeap.p,<sp/>D3D12_QUERY_TYPE_TIMESTAMP,<sp/>1);</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmdFrame.cmdContexts[mainQueue.GetCommandsPerFrame()<sp/>-<sp/>1].commandList-&gt;ResolveQueryData(frameData.timestampHeap.p,<sp/>D3D12_QUERY_TYPE_TIMESTAMP,<sp/>0,<sp/>2,<sp/>frameData.timestampResult.p,<sp/>0);</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frameData.cpuEnd<sp/>=<sp/>std::chrono::high_resolution_clock::now();*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//currentFrameIdx<sp/>=<sp/>(currentFrameIdx<sp/>+<sp/>1)<sp/>%<sp/>framesInFlight;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>.EndFrame(completionCallback);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a0a646b521505f15b99d6f5b3a47e90a7" kindref="member">D3DContext::Flush</ref>()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>.Flush();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(u8<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" kindref="member">deferredResources</ref>[i].clear();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" kindref="member">deferredDescriptors</ref>[i].clear();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" kindref="member">deferredRanges</ref>[i].clear();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" kindref="member">D3DContext::Defer</ref>(IUnknown*<sp/>resource)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard<sp/>lock(<ref refid="structtiny_1_1_d3_d_context_1afa4692ec1bf68417b5a9f82c63eb5b00" kindref="member">deferredResourcesMutex</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" kindref="member">deferredResources</ref>[<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>].insert(resource);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" kindref="member">D3DContext::Defer</ref>(<ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/>descriptor)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard<sp/>lock(<ref refid="structtiny_1_1_d3_d_context_1abf4f857783b382898a1e77eae434cdf9" kindref="member">deferredDescriptorsMutex</ref>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" kindref="member">deferredDescriptors</ref>[<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>].insert(descriptor);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" kindref="member">D3DContext::Defer</ref>(<ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref><sp/>range)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::lock_guard<sp/>lock(<ref refid="structtiny_1_1_d3_d_context_1a20a383e5669c61e05bd3cc091b9a4d38" kindref="member">deferredRangesMutex</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" kindref="member">deferredRanges</ref>[<ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>].insert(range);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="graphics/d3dcontext.cpp"/>
+  </compounddef>
+</doxygen>

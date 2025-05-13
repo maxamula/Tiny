@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="gfxglobal_8h" kind="file" language="C++">
+    <compoundname>gfxglobal.h</compoundname>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">dxgi1_6.h</includes>
+    <includedby refid="assets_8cpp" local="yes">content/assets.cpp</includedby>
+    <includedby refid="content_8cpp" local="yes">content/content.cpp</includedby>
+    <includedby refid="application_8cpp" local="yes">engine/application.cpp</includedby>
+    <includedby refid="copyqueue_8cpp" local="yes">graphics/copyqueue.cpp</includedby>
+    <includedby refid="d3dcontext_8cpp" local="yes">graphics/d3dcontext.cpp</includedby>
+    <includedby refid="descriptors_8cpp" local="yes">graphics/descriptors.cpp</includedby>
+    <includedby refid="gfxdebug_8cpp" local="yes">graphics/gfxdebug.cpp</includedby>
+    <includedby refid="gfxglobal_8cpp" local="yes">graphics/gfxglobal.cpp</includedby>
+    <includedby refid="gpuqueue_8cpp" local="yes">graphics/gpuqueue.cpp</includedby>
+    <includedby refid="gpuresource_8cpp" local="yes">graphics/gpuresource.cpp</includedby>
+    <includedby refid="viewport_8cpp" local="yes">graphics/viewport.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>graphics/gfxglobal.h</label>
+        <link refid="gfxglobal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>d3d12.h</label>
+      </node>
+      <node id="3">
+        <label>dxgi1_6.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>content/assets.cpp</label>
+        <link refid="assets_8cpp"/>
+      </node>
+      <node id="3">
+        <label>content/content.cpp</label>
+        <link refid="content_8cpp"/>
+      </node>
+      <node id="4">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="5">
+        <label>graphics/copyqueue.cpp</label>
+        <link refid="copyqueue_8cpp"/>
+      </node>
+      <node id="6">
+        <label>graphics/d3dcontext.cpp</label>
+        <link refid="d3dcontext_8cpp"/>
+      </node>
+      <node id="7">
+        <label>graphics/descriptors.cpp</label>
+        <link refid="descriptors_8cpp"/>
+      </node>
+      <node id="8">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="9">
+        <label>graphics/gfxglobal.cpp</label>
+        <link refid="gfxglobal_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/gfxglobal.h</label>
+        <link refid="gfxglobal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>graphics/gpuqueue.cpp</label>
+        <link refid="gpuqueue_8cpp"/>
+      </node>
+      <node id="11">
+        <label>graphics/gpuresource.cpp</label>
+        <link refid="gpuresource_8cpp"/>
+      </node>
+      <node id="12">
+        <label>graphics/viewport.cpp</label>
+        <link refid="viewport_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dxgi1_6.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C++&quot;</highlight><highlight class="normal"><sp/>TINYFX_API<sp/>ID3D12Device8*<sp/><ref refid="namespacetiny_1a58c4f21fc3285e8552c5689345f30506" kindref="member">gDevice</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C++&quot;</highlight><highlight class="normal"><sp/>TINYFX_API<sp/>IDXGIFactory7*<sp/><ref refid="namespacetiny_1aca87bbc15ade18d6dabbf97f9778b899" kindref="member">gDxgiFactory</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C++&quot;</highlight><highlight class="normal"><sp/>TINYFX_API<sp/>IDXGIAdapter4*<sp/><ref refid="namespacetiny_1adb509f798e96b93ce370e8bc041a69c0" kindref="member">gDxgiAdapter</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1a4bc1a9306f4cf2abc3bb34ed7cae8a88" kindref="member">InitializeGFX</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1a424094a4547ed59fcd1e99062be39ca9" kindref="member">ShutdownGFX</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="graphics/gfxglobal.h"/>
+  </compounddef>
+</doxygen>

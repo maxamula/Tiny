@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_d4bca68bd7b5866353fb03661a783feb" kind="dir">
+    <compoundname>fx</compoundname>
+    <innerfile refid="registry_8cpp">registry.cpp</innerfile>
+    <innerfile refid="registry_8h">registry.h</innerfile>
+    <innerfile refid="registry__internal_8h">registry_internal.h</innerfile>
+    <innerfile refid="shaderfx_8cpp">shaderfx.cpp</innerfile>
+    <innerfile refid="shaderfx_8h">shaderfx.h</innerfile>
+    <innerfile refid="shaderfx__internal_8h">shaderfx_internal.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/"/>
+  </compounddef>
+</doxygen>

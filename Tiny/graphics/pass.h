@@ -3,19 +3,21 @@
 #include "framegraph.h"
 #include "engine/scene.h"
 
-
 namespace tiny
 {
-	class TINYFX_API IRenderPass
+	class TINYFX_API RenderPassBase
 	{
 	public:
-		virtual ~IRenderPass() = default;
+		virtual ~RenderPassBase() = default;
 		virtual void Setup(FrameGraph::Builder& builder) = 0;
 		virtual void Execute(RenderContext& ctx, FrameGraphResources& res) = 0;
-		f64 EstimateCost() { return 450.0; }
+		void ExecuteRecordElapsed(RenderContext& ctx, FrameGraphResources& res);
+		f64 EstimateCost();
+	private:
+		f64 mCost = 0.0;
 	};
 
-	class TINYFX_API SceneFilteredPass : public IRenderPass
+	class TINYFX_API SceneFilteredPass : public RenderPassBase
 	{
 	public:
 		explicit SceneFilteredPass(u16 passId);

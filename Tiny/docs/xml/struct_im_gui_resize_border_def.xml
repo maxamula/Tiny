@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_resize_border_def" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiResizeBorderDef</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_resize_border_def_1ac7561a6f748779d0318a80e6c91cfc10" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiResizeBorderDef::InnerDir</definition>
+        <argsstring></argsstring>
+        <name>InnerDir</name>
+        <qualifiedname>ImGuiResizeBorderDef::InnerDir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.cpp" line="5812" column="13" bodyfile="graphics/imgui/imgui.cpp" bodystart="5812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_resize_border_def_1a89ab538c595c476e055ba33dca3451b9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiResizeBorderDef::SegmentN1</definition>
+        <argsstring></argsstring>
+        <name>SegmentN1</name>
+        <qualifiedname>ImGuiResizeBorderDef::SegmentN1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.cpp" line="5813" column="13" bodyfile="graphics/imgui/imgui.cpp" bodystart="5813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_resize_border_def_1a8f025428a884a2167a504858a79650a2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiResizeBorderDef::SegmentN2</definition>
+        <argsstring></argsstring>
+        <name>SegmentN2</name>
+        <qualifiedname>ImGuiResizeBorderDef::SegmentN2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.cpp" line="5813" column="23" bodyfile="graphics/imgui/imgui.cpp" bodystart="5813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_resize_border_def_1a98a0fd1c91fa782c3c4d5093113b2fa9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiResizeBorderDef::OuterAngle</definition>
+        <argsstring></argsstring>
+        <name>OuterAngle</name>
+        <qualifiedname>ImGuiResizeBorderDef::OuterAngle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.cpp" line="5814" column="13" bodyfile="graphics/imgui/imgui.cpp" bodystart="5814" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiResizeBorderDef</label>
+        <link refid="struct_im_gui_resize_border_def"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>InnerDir</edgelabel>
+          <edgelabel>SegmentN1</edgelabel>
+          <edgelabel>SegmentN2</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.cpp" line="5810" column="1" bodyfile="graphics/imgui/imgui.cpp" bodystart="5811" bodyend="5815"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_resize_border_def_1ac7561a6f748779d0318a80e6c91cfc10" prot="public" virt="non-virtual"><scope>ImGuiResizeBorderDef</scope><name>InnerDir</name></member>
+      <member refid="struct_im_gui_resize_border_def_1a98a0fd1c91fa782c3c4d5093113b2fa9" prot="public" virt="non-virtual"><scope>ImGuiResizeBorderDef</scope><name>OuterAngle</name></member>
+      <member refid="struct_im_gui_resize_border_def_1a89ab538c595c476e055ba33dca3451b9" prot="public" virt="non-virtual"><scope>ImGuiResizeBorderDef</scope><name>SegmentN1</name></member>
+      <member refid="struct_im_gui_resize_border_def_1a8f025428a884a2167a504858a79650a2" prot="public" virt="non-virtual"><scope>ImGuiResizeBorderDef</scope><name>SegmentN2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

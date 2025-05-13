@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="memorystream_8h" kind="file" language="C++">
+    <compoundname>memorystream.h</compoundname>
+    <includes refid="stream_8h" local="yes">stream.h</includes>
+    <includedby refid="document_8h" local="yes">content/cereal/external/rapidjson/document.h</includedby>
+    <includedby refid="encodedstream_8h" local="yes">content/cereal/external/rapidjson/encodedstream.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>encodings.h</label>
+        <link refid="encodings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>content/cereal/external/rapidjson/memorystream.h</label>
+        <link refid="memorystream_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rapidjson.h</label>
+        <link refid="rapidjson_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stream.h</label>
+        <link refid="stream_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>content/cereal/external/rapidjson/document.h</label>
+        <link refid="document_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>content/cereal/external/rapidjson/encodedstream.h</label>
+        <link refid="encodedstream_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>content/cereal/external/rapidjson/memorystream.h</label>
+        <link refid="memorystream_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>content/cereal/external/rapidjson/pointer.h</label>
+        <link refid="pointer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>content/cereal/external/rapidjson/reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>content/cereal/external/rapidjson/schema.h</label>
+        <link refid="schema_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_memory_stream" prot="public">MemoryStream</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Tencent<sp/>is<sp/>pleased<sp/>to<sp/>support<sp/>the<sp/>open<sp/>source<sp/>community<sp/>by<sp/>making<sp/>RapidJSON<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2015<sp/>THL<sp/>A29<sp/>Limited,<sp/>a<sp/>Tencent<sp/>company,<sp/>and<sp/>Milo<sp/>Yip.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>MIT<sp/>License<sp/>(the<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://opensource.org/licenses/MIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software<sp/>distributed<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CEREAL_RAPIDJSON_MEMORYSTREAM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CEREAL_RAPIDJSON_MEMORYSTREAM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stream_8h" kindref="compound">stream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__clang__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_PUSH</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_OFF(unreachable-code)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_OFF(missing-noreturn)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69bf61966c74b09b5d90b386847f39be" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_BEGIN</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="struct_memory_stream" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_memory_stream_1a2472317ef00fcd44e5cc209e04c49756" kindref="member">MemoryStream</ref><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>;<sp/></highlight><highlight class="comment">//<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="struct_memory_stream_1a2472317ef00fcd44e5cc209e04c49756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_memory_stream_1a2472317ef00fcd44e5cc209e04c49756" kindref="member">MemoryStream</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref><sp/>*src,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>:<sp/><ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref>(src),<sp/><ref refid="struct_memory_stream_1a91f0767b4f0ed2476d835e8344848a2f" kindref="member">begin_</ref>(src),<sp/><ref refid="struct_memory_stream_1a55fb302ba0492419757e3ba318c8c654" kindref="member">end_</ref>(src<sp/>+<sp/>size),<sp/><ref refid="struct_memory_stream_1ab26a1b5c6d5e8f52c0f6982feba47f36" kindref="member">size_</ref>(size)<sp/>{}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct_memory_stream_1a707014bbfd303838b6a7b90be24f6adc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref><sp/><ref refid="struct_memory_stream_1a707014bbfd303838b6a7b90be24f6adc" kindref="member">Peek</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga8f8344bc8bcf87c96595b625aa1fe0a7" kindref="member">CEREAL_RAPIDJSON_UNLIKELY</ref>(<ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref><sp/>==<sp/><ref refid="struct_memory_stream_1a55fb302ba0492419757e3ba318c8c654" kindref="member">end_</ref>)<sp/>?<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>:<sp/>*<ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="46" refid="struct_memory_stream_1a14ff92deda5d39c9b166aaa07e82a0ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref><sp/><ref refid="struct_memory_stream_1a14ff92deda5d39c9b166aaa07e82a0ee" kindref="member">Take</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga8f8344bc8bcf87c96595b625aa1fe0a7" kindref="member">CEREAL_RAPIDJSON_UNLIKELY</ref>(<ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref><sp/>==<sp/><ref refid="struct_memory_stream_1a55fb302ba0492419757e3ba318c8c654" kindref="member">end_</ref>)<sp/>?<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>:<sp/>*<ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref>++;<sp/>}</highlight></codeline>
+<codeline lineno="47" refid="struct_memory_stream_1a2de1486742f0d44decda90a56bc43268" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a2de1486742f0d44decda90a56bc43268" kindref="member">Tell</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref><sp/>-<sp/><ref refid="struct_memory_stream_1a91f0767b4f0ed2476d835e8344848a2f" kindref="member">begin_</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="struct_memory_stream_1a4fd6e7a293bd3ec76e649d8e853dd38f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>*<sp/><ref refid="struct_memory_stream_1a4fd6e7a293bd3ec76e649d8e853dd38f" kindref="member">PutBegin</ref>()<sp/>{<sp/><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="struct_memory_stream_1ac445f93c23c9e85f1f5381911c4ed870" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1ac445f93c23c9e85f1f5381911c4ed870" kindref="member">Put</ref>(<ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>)<sp/>{<sp/><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="struct_memory_stream_1a305e141314ae0e3afacb04aaf2d8bcc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a305e141314ae0e3afacb04aaf2d8bcc6" kindref="member">Flush</ref>()<sp/>{<sp/><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="struct_memory_stream_1a74fb36c1f6f95d189502cf7a6be79135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a74fb36c1f6f95d189502cf7a6be79135" kindref="member">PutEnd</ref>(<ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>*)<sp/>{<sp/><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>encoding<sp/>detection<sp/>only.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="struct_memory_stream_1a81dd4a86148b0af9527083cdef3d31d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>*<sp/><ref refid="struct_memory_stream_1a81dd4a86148b0af9527083cdef3d31d8" kindref="member">Peek4</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a2de1486742f0d44decda90a56bc43268" kindref="member">Tell</ref>()<sp/>+<sp/>4<sp/>&lt;=<sp/><ref refid="struct_memory_stream_1ab26a1b5c6d5e8f52c0f6982feba47f36" kindref="member">size_</ref><sp/>?<sp/><ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref><sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>*<sp/><ref refid="struct_memory_stream_1a57cf6cb5766e931a62928b9f92507443" kindref="member">src_</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="struct_memory_stream_1a91f0767b4f0ed2476d835e8344848a2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>*<sp/><ref refid="struct_memory_stream_1a91f0767b4f0ed2476d835e8344848a2f" kindref="member">begin_</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="struct_memory_stream_1a55fb302ba0492419757e3ba318c8c654" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1a62a1cbd052c325c83dbdb387d2f89088" kindref="member">Ch</ref>*<sp/><ref refid="struct_memory_stream_1a55fb302ba0492419757e3ba318c8c654" kindref="member">end_</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="struct_memory_stream_1ab26a1b5c6d5e8f52c0f6982feba47f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct_memory_stream_1ab26a1b5c6d5e8f52c0f6982feba47f36" kindref="member">size_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaddb083c1a6a5beaafbecc3f99973a3ff" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_END</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__clang__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_POP</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CEREAL_RAPIDJSON_MEMORYBUFFER_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="content/cereal/external/rapidjson/memorystream.h"/>
+  </compounddef>
+</doxygen>

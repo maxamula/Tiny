@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_tab_bar_section" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTabBarSection</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_section_1aa9020f621f8429e919c005c9a940b070" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTabBarSection::TabCount</definition>
+        <argsstring></argsstring>
+        <name>TabCount</name>
+        <qualifiedname>ImGuiTabBarSection::TabCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="7753" column="25" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_section_1aad93edbb11bab3bb69a267a4239a7954" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBarSection::Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <qualifiedname>ImGuiTabBarSection::Width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="7754" column="25" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_section_1a6fbf7f96db5e422c0c672a5a0943ba91" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBarSection::Spacing</definition>
+        <argsstring></argsstring>
+        <name>Spacing</name>
+        <qualifiedname>ImGuiTabBarSection::Spacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="7755" column="25" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7755" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_tab_bar_section_1afc668f275240eca04533231081023f33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTabBarSection::ImGuiTabBarSection</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTabBarSection</name>
+        <qualifiedname>ImGuiTabBarSection::ImGuiTabBarSection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="7757" column="5" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7757" bodyend="7757"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_widgets.cpp" line="7751" column="1" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7752" bodyend="7758"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_tab_bar_section_1afc668f275240eca04533231081023f33" prot="public" virt="non-virtual"><scope>ImGuiTabBarSection</scope><name>ImGuiTabBarSection</name></member>
+      <member refid="struct_im_gui_tab_bar_section_1a6fbf7f96db5e422c0c672a5a0943ba91" prot="public" virt="non-virtual"><scope>ImGuiTabBarSection</scope><name>Spacing</name></member>
+      <member refid="struct_im_gui_tab_bar_section_1aa9020f621f8429e919c005c9a940b070" prot="public" virt="non-virtual"><scope>ImGuiTabBarSection</scope><name>TabCount</name></member>
+      <member refid="struct_im_gui_tab_bar_section_1aad93edbb11bab3bb69a267a4239a7954" prot="public" virt="non-virtual"><scope>ImGuiTabBarSection</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

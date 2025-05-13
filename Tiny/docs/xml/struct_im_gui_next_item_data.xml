@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_next_item_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiNextItemData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_next_item_data_1aa05b7c79d02ab92ff23038cede65265b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a24c816e161b249fa062cec22451bd863" kindref="member">ImGuiNextItemDataFlags</ref></type>
+        <definition>ImGuiNextItemDataFlags ImGuiNextItemData::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiNextItemData::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1205" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_item_data_1a5e03e8c7fc3b8492a3fa6abe6d4dfa0f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1abcf9eafab4557e911b2c0d8fe2feeb38" kindref="member">ImGuiItemFlags</ref></type>
+        <definition>ImGuiItemFlags ImGuiNextItemData::ItemFlags</definition>
+        <argsstring></argsstring>
+        <name>ItemFlags</name>
+        <qualifiedname>ImGuiNextItemData::ItemFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1206" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_item_data_1ab4e2f2f28801cc1d449ccaa105168938" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiNextItemData::Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <qualifiedname>ImGuiNextItemData::Width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1208" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_item_data_1af34404b66163c26db7df295130df3e6e" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a1e0ff3187164b75255989a2e0541703b" kindref="member">ImGuiSelectionUserData</ref></type>
+        <definition>ImGuiSelectionUserData ImGuiNextItemData::SelectionUserData</definition>
+        <argsstring></argsstring>
+        <name>SelectionUserData</name>
+        <qualifiedname>ImGuiNextItemData::SelectionUserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1209" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_item_data_1ac9550c80e18abf14a4dffdca9211d719" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aef890d6ac872e12c5804d0b3e4f7f103" kindref="member">ImGuiCond</ref></type>
+        <definition>ImGuiCond ImGuiNextItemData::OpenCond</definition>
+        <argsstring></argsstring>
+        <name>OpenCond</name>
+        <qualifiedname>ImGuiNextItemData::OpenCond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1210" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_item_data_1a72e212148815fefe93e7a7723d5db97b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiNextItemData::OpenVal</definition>
+        <argsstring></argsstring>
+        <name>OpenVal</name>
+        <qualifiedname>ImGuiNextItemData::OpenVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1211" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_next_item_data_1a2226fdff5fce11de421b28f9af4f268a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiNextItemData::ImGuiNextItemData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiNextItemData</name>
+        <qualifiedname>ImGuiNextItemData::ImGuiNextItemData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1213" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1213" bodyend="1213"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_next_item_data_1a0159fd0bdffe71c29271a3dbdde9013b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiNextItemData::ClearFlags</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFlags</name>
+        <qualifiedname>ImGuiNextItemData::ClearFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1214" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1214" bodyend="1214"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1203" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1204" bodyend="1215"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_next_item_data_1a0159fd0bdffe71c29271a3dbdde9013b" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>ClearFlags</name></member>
+      <member refid="struct_im_gui_next_item_data_1aa05b7c79d02ab92ff23038cede65265b" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_next_item_data_1a2226fdff5fce11de421b28f9af4f268a" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>ImGuiNextItemData</name></member>
+      <member refid="struct_im_gui_next_item_data_1a5e03e8c7fc3b8492a3fa6abe6d4dfa0f" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>ItemFlags</name></member>
+      <member refid="struct_im_gui_next_item_data_1ac9550c80e18abf14a4dffdca9211d719" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>OpenCond</name></member>
+      <member refid="struct_im_gui_next_item_data_1a72e212148815fefe93e7a7723d5db97b" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>OpenVal</name></member>
+      <member refid="struct_im_gui_next_item_data_1af34404b66163c26db7df295130df3e6e" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>SelectionUserData</name></member>
+      <member refid="struct_im_gui_next_item_data_1ab4e2f2f28801cc1d449ccaa105168938" prot="public" virt="non-virtual"><scope>ImGuiNextItemData</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

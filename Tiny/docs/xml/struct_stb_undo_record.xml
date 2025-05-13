@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_stb_undo_record" kind="struct" language="C++" prot="public">
+    <compoundname>StbUndoRecord</compoundname>
+    <includes refid="imstb__textedit_8h" local="no">imstb_textedit.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_stb_undo_record_1abd1729d55e4773972a70cbb384aa9a20" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__textedit_8h_1a8689614e35e12ab67f08f097dcef95d0" kindref="member">IMSTB_TEXTEDIT_POSITIONTYPE</ref></type>
+        <definition>IMSTB_TEXTEDIT_POSITIONTYPE StbUndoRecord::where</definition>
+        <argsstring></argsstring>
+        <name>where</name>
+        <qualifiedname>StbUndoRecord::where</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="306" column="33" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_undo_record_1a8ba514254ab05beb68800fcdff591dc5" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__textedit_8h_1a8689614e35e12ab67f08f097dcef95d0" kindref="member">IMSTB_TEXTEDIT_POSITIONTYPE</ref></type>
+        <definition>IMSTB_TEXTEDIT_POSITIONTYPE StbUndoRecord::insert_length</definition>
+        <argsstring></argsstring>
+        <name>insert_length</name>
+        <qualifiedname>StbUndoRecord::insert_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="307" column="33" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_undo_record_1a1292428eb1ed3c0f4a515feb62546307" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__textedit_8h_1a8689614e35e12ab67f08f097dcef95d0" kindref="member">IMSTB_TEXTEDIT_POSITIONTYPE</ref></type>
+        <definition>IMSTB_TEXTEDIT_POSITIONTYPE StbUndoRecord::delete_length</definition>
+        <argsstring></argsstring>
+        <name>delete_length</name>
+        <qualifiedname>StbUndoRecord::delete_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="308" column="33" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_undo_record_1ab317aa50c7a222ece13840a4b65167c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StbUndoRecord::char_storage</definition>
+        <argsstring></argsstring>
+        <name>char_storage</name>
+        <qualifiedname>StbUndoRecord::char_storage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="309" column="31" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imstb_textedit.h" line="303" column="1" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="304" bodyend="310"/>
+    <listofallmembers>
+      <member refid="struct_stb_undo_record_1ab317aa50c7a222ece13840a4b65167c0" prot="public" virt="non-virtual"><scope>StbUndoRecord</scope><name>char_storage</name></member>
+      <member refid="struct_stb_undo_record_1a1292428eb1ed3c0f4a515feb62546307" prot="public" virt="non-virtual"><scope>StbUndoRecord</scope><name>delete_length</name></member>
+      <member refid="struct_stb_undo_record_1a8ba514254ab05beb68800fcdff591dc5" prot="public" virt="non-virtual"><scope>StbUndoRecord</scope><name>insert_length</name></member>
+      <member refid="struct_stb_undo_record_1abd1729d55e4773972a70cbb384aa9a20" prot="public" virt="non-virtual"><scope>StbUndoRecord</scope><name>where</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

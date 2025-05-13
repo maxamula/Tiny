@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_menu_columns" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiMenuColumns</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1a4384d90f9c7974425ad9165eed996297" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImGuiMenuColumns::TotalWidth</definition>
+        <argsstring></argsstring>
+        <name>TotalWidth</name>
+        <qualifiedname>ImGuiMenuColumns::TotalWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1077" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1ab6c94ddd6147a8ef1fc37a20ca0990dd" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImGuiMenuColumns::NextTotalWidth</definition>
+        <argsstring></argsstring>
+        <name>NextTotalWidth</name>
+        <qualifiedname>ImGuiMenuColumns::NextTotalWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1078" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1ad3ff6a7b69d0e73dbe80b949d871fbec" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a788d84b86cbaed7de12d6e58ab630e07" kindref="member">ImU16</ref></type>
+        <definition>ImU16 ImGuiMenuColumns::Spacing</definition>
+        <argsstring></argsstring>
+        <name>Spacing</name>
+        <qualifiedname>ImGuiMenuColumns::Spacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1079" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1079" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1a9f591cacefd793c3f3bbfcee7ccedaf7" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a788d84b86cbaed7de12d6e58ab630e07" kindref="member">ImU16</ref></type>
+        <definition>ImU16 ImGuiMenuColumns::OffsetIcon</definition>
+        <argsstring></argsstring>
+        <name>OffsetIcon</name>
+        <qualifiedname>ImGuiMenuColumns::OffsetIcon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1080" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1aad3c73c88286f0f65abdc9ec56e7f84f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a788d84b86cbaed7de12d6e58ab630e07" kindref="member">ImU16</ref></type>
+        <definition>ImU16 ImGuiMenuColumns::OffsetLabel</definition>
+        <argsstring></argsstring>
+        <name>OffsetLabel</name>
+        <qualifiedname>ImGuiMenuColumns::OffsetLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1081" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1081" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1ab33e02f4291fec8296ebc2bebc86f1a5" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a788d84b86cbaed7de12d6e58ab630e07" kindref="member">ImU16</ref></type>
+        <definition>ImU16 ImGuiMenuColumns::OffsetShortcut</definition>
+        <argsstring></argsstring>
+        <name>OffsetShortcut</name>
+        <qualifiedname>ImGuiMenuColumns::OffsetShortcut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1082" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1082" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1adc12e8f6950487652995fc705459f7fc" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a788d84b86cbaed7de12d6e58ab630e07" kindref="member">ImU16</ref></type>
+        <definition>ImU16 ImGuiMenuColumns::OffsetMark</definition>
+        <argsstring></argsstring>
+        <name>OffsetMark</name>
+        <qualifiedname>ImGuiMenuColumns::OffsetMark</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1083" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1083" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_menu_columns_1a1b977a8fbffb965ba5db5066ff6a7eef" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a788d84b86cbaed7de12d6e58ab630e07" kindref="member">ImU16</ref></type>
+        <definition>ImU16 ImGuiMenuColumns::Widths[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>Widths</name>
+        <qualifiedname>ImGuiMenuColumns::Widths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1084" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1084" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_menu_columns_1ac476e04a9d907280b3ccdfc429845803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiMenuColumns::ImGuiMenuColumns</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiMenuColumns</name>
+        <qualifiedname>ImGuiMenuColumns::ImGuiMenuColumns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1086" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1086" bodyend="1086"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_menu_columns_1aae99240b9c8e9380f829921da5e337f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiMenuColumns::Update</definition>
+        <argsstring>(float spacing, bool window_reappearing)</argsstring>
+        <name>Update</name>
+        <qualifiedname>ImGuiMenuColumns::Update</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>spacing</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>window_reappearing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1087" column="17" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7195" bodyend="7204"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_menu_columns_1a85fedb03fec0c73555220b74ceaa2bb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ImGuiMenuColumns::DeclColumns</definition>
+        <argsstring>(float w_icon, float w_label, float w_shortcut, float w_mark)</argsstring>
+        <name>DeclColumns</name>
+        <qualifiedname>ImGuiMenuColumns::DeclColumns</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>w_icon</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w_label</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w_shortcut</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w_mark</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1088" column="17" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7227" bodyend="7235"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_menu_columns_1a76bf28ca1ad728afce787f48e1645138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiMenuColumns::CalcNextTotalWidth</definition>
+        <argsstring>(bool update_offsets)</argsstring>
+        <name>CalcNextTotalWidth</name>
+        <qualifiedname>ImGuiMenuColumns::CalcNextTotalWidth</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>update_offsets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1089" column="17" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7206" bodyend="7225"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1075" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1076" bodyend="1090"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_menu_columns_1a76bf28ca1ad728afce787f48e1645138" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>CalcNextTotalWidth</name></member>
+      <member refid="struct_im_gui_menu_columns_1a85fedb03fec0c73555220b74ceaa2bb8" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>DeclColumns</name></member>
+      <member refid="struct_im_gui_menu_columns_1ac476e04a9d907280b3ccdfc429845803" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>ImGuiMenuColumns</name></member>
+      <member refid="struct_im_gui_menu_columns_1ab6c94ddd6147a8ef1fc37a20ca0990dd" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>NextTotalWidth</name></member>
+      <member refid="struct_im_gui_menu_columns_1a9f591cacefd793c3f3bbfcee7ccedaf7" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>OffsetIcon</name></member>
+      <member refid="struct_im_gui_menu_columns_1aad3c73c88286f0f65abdc9ec56e7f84f" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>OffsetLabel</name></member>
+      <member refid="struct_im_gui_menu_columns_1adc12e8f6950487652995fc705459f7fc" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>OffsetMark</name></member>
+      <member refid="struct_im_gui_menu_columns_1ab33e02f4291fec8296ebc2bebc86f1a5" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>OffsetShortcut</name></member>
+      <member refid="struct_im_gui_menu_columns_1ad3ff6a7b69d0e73dbe80b949d871fbec" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>Spacing</name></member>
+      <member refid="struct_im_gui_menu_columns_1a4384d90f9c7974425ad9165eed996297" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>TotalWidth</name></member>
+      <member refid="struct_im_gui_menu_columns_1aae99240b9c8e9380f829921da5e337f2" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>Update</name></member>
+      <member refid="struct_im_gui_menu_columns_1a1b977a8fbffb965ba5db5066ff6a7eef" prot="public" virt="non-virtual"><scope>ImGuiMenuColumns</scope><name>Widths</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

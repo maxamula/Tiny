@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_settings_handler" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiSettingsHandler</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a2b2821603e32a669c855dd97757c83c8" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ImGuiSettingsHandler::TypeName</definition>
+        <argsstring></argsstring>
+        <name>TypeName</name>
+        <qualifiedname>ImGuiSettingsHandler::TypeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1728" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1ac2dd47bdb91ae6f50afb5ac14222b552" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiSettingsHandler::TypeHash</definition>
+        <argsstring></argsstring>
+        <name>TypeHash</name>
+        <qualifiedname>ImGuiSettingsHandler::TypeHash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1729" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a36355b915f61f94d90ba3f819fa02df0" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* ImGuiSettingsHandler::ClearAllFn) (ImGuiContext *ctx, ImGuiSettingsHandler *handler)</definition>
+        <argsstring>)(ImGuiContext *ctx, ImGuiSettingsHandler *handler)</argsstring>
+        <name>ClearAllFn</name>
+        <qualifiedname>ImGuiSettingsHandler::ClearAllFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1730" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a27706c3cad4a51af70dc2ebc5d3737d4" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* ImGuiSettingsHandler::ReadInitFn) (ImGuiContext *ctx, ImGuiSettingsHandler *handler)</definition>
+        <argsstring>)(ImGuiContext *ctx, ImGuiSettingsHandler *handler)</argsstring>
+        <name>ReadInitFn</name>
+        <qualifiedname>ImGuiSettingsHandler::ReadInitFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1731" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a461105eb071f511b480695f9915c821b" prot="public" static="no" mutable="no">
+        <type>void *(*</type>
+        <definition>void *(* ImGuiSettingsHandler::ReadOpenFn) (ImGuiContext *ctx, ImGuiSettingsHandler *handler, const char *name)</definition>
+        <argsstring>)(ImGuiContext *ctx, ImGuiSettingsHandler *handler, const char *name)</argsstring>
+        <name>ReadOpenFn</name>
+        <qualifiedname>ImGuiSettingsHandler::ReadOpenFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1732" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a0a02bad8569c2d9f22e1a532d1e2de60" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* ImGuiSettingsHandler::ReadLineFn) (ImGuiContext *ctx, ImGuiSettingsHandler *handler, void *entry, const char *line)</definition>
+        <argsstring>)(ImGuiContext *ctx, ImGuiSettingsHandler *handler, void *entry, const char *line)</argsstring>
+        <name>ReadLineFn</name>
+        <qualifiedname>ImGuiSettingsHandler::ReadLineFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1733" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a65f1fb45621d42fffcdec7dd09312c20" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* ImGuiSettingsHandler::ApplyAllFn) (ImGuiContext *ctx, ImGuiSettingsHandler *handler)</definition>
+        <argsstring>)(ImGuiContext *ctx, ImGuiSettingsHandler *handler)</argsstring>
+        <name>ApplyAllFn</name>
+        <qualifiedname>ImGuiSettingsHandler::ApplyAllFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1734" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a8f9d8923be4df1b5e6c17f9857b955f4" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* ImGuiSettingsHandler::WriteAllFn) (ImGuiContext *ctx, ImGuiSettingsHandler *handler, ImGuiTextBuffer *out_buf)</definition>
+        <argsstring>)(ImGuiContext *ctx, ImGuiSettingsHandler *handler, ImGuiTextBuffer *out_buf)</argsstring>
+        <name>WriteAllFn</name>
+        <qualifiedname>ImGuiSettingsHandler::WriteAllFn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1735" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_settings_handler_1a4e8dc5a10948568680764a3cdaf9b102" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiSettingsHandler::UserData</definition>
+        <argsstring></argsstring>
+        <name>UserData</name>
+        <qualifiedname>ImGuiSettingsHandler::UserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1736" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1736" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_settings_handler_1ab84610a000c843d4e303e41e260fb1df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiSettingsHandler::ImGuiSettingsHandler</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiSettingsHandler</name>
+        <qualifiedname>ImGuiSettingsHandler::ImGuiSettingsHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1738" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1738" bodyend="1738"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1726" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1727" bodyend="1739"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_settings_handler_1a65f1fb45621d42fffcdec7dd09312c20" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>ApplyAllFn</name></member>
+      <member refid="struct_im_gui_settings_handler_1a36355b915f61f94d90ba3f819fa02df0" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>ClearAllFn</name></member>
+      <member refid="struct_im_gui_settings_handler_1ab84610a000c843d4e303e41e260fb1df" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>ImGuiSettingsHandler</name></member>
+      <member refid="struct_im_gui_settings_handler_1a27706c3cad4a51af70dc2ebc5d3737d4" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>ReadInitFn</name></member>
+      <member refid="struct_im_gui_settings_handler_1a0a02bad8569c2d9f22e1a532d1e2de60" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>ReadLineFn</name></member>
+      <member refid="struct_im_gui_settings_handler_1a461105eb071f511b480695f9915c821b" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>ReadOpenFn</name></member>
+      <member refid="struct_im_gui_settings_handler_1ac2dd47bdb91ae6f50afb5ac14222b552" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>TypeHash</name></member>
+      <member refid="struct_im_gui_settings_handler_1a2b2821603e32a669c855dd97757c83c8" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>TypeName</name></member>
+      <member refid="struct_im_gui_settings_handler_1a4e8dc5a10948568680764a3cdaf9b102" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>UserData</name></member>
+      <member refid="struct_im_gui_settings_handler_1a8f9d8923be4df1b5e6c17f9857b955f4" prot="public" virt="non-virtual"><scope>ImGuiSettingsHandler</scope><name>WriteAllFn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

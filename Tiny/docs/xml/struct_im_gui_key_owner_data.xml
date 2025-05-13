@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_key_owner_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiKeyOwnerData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_key_owner_data_1a957b86d9290c4f2655c8ff9e6a7d4a16" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiKeyOwnerData::OwnerCurr</definition>
+        <argsstring></argsstring>
+        <name>OwnerCurr</name>
+        <qualifiedname>ImGuiKeyOwnerData::OwnerCurr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1396" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_key_owner_data_1acb224bc0dee65f2e8b2be7bdba509c26" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiKeyOwnerData::OwnerNext</definition>
+        <argsstring></argsstring>
+        <name>OwnerNext</name>
+        <qualifiedname>ImGuiKeyOwnerData::OwnerNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1397" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_key_owner_data_1a7b1257efe2131c10ba983abcb68f78d4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiKeyOwnerData::LockThisFrame</definition>
+        <argsstring></argsstring>
+        <name>LockThisFrame</name>
+        <qualifiedname>ImGuiKeyOwnerData::LockThisFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1398" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_key_owner_data_1a8f730afbcce2f74be5870967ff5d97ab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiKeyOwnerData::LockUntilRelease</definition>
+        <argsstring></argsstring>
+        <name>LockUntilRelease</name>
+        <qualifiedname>ImGuiKeyOwnerData::LockUntilRelease</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1399" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1399" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_key_owner_data_1a696eb09ca892c6b207e8556919ba2fee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiKeyOwnerData::ImGuiKeyOwnerData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiKeyOwnerData</name>
+        <qualifiedname>ImGuiKeyOwnerData::ImGuiKeyOwnerData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1401" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1401" bodyend="1401"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1394" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1395" bodyend="1402"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_key_owner_data_1a696eb09ca892c6b207e8556919ba2fee" prot="public" virt="non-virtual"><scope>ImGuiKeyOwnerData</scope><name>ImGuiKeyOwnerData</name></member>
+      <member refid="struct_im_gui_key_owner_data_1a7b1257efe2131c10ba983abcb68f78d4" prot="public" virt="non-virtual"><scope>ImGuiKeyOwnerData</scope><name>LockThisFrame</name></member>
+      <member refid="struct_im_gui_key_owner_data_1a8f730afbcce2f74be5870967ff5d97ab" prot="public" virt="non-virtual"><scope>ImGuiKeyOwnerData</scope><name>LockUntilRelease</name></member>
+      <member refid="struct_im_gui_key_owner_data_1a957b86d9290c4f2655c8ff9e6a7d4a16" prot="public" virt="non-virtual"><scope>ImGuiKeyOwnerData</scope><name>OwnerCurr</name></member>
+      <member refid="struct_im_gui_key_owner_data_1acb224bc0dee65f2e8b2be7bdba509c26" prot="public" virt="non-virtual"><scope>ImGuiKeyOwnerData</scope><name>OwnerNext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

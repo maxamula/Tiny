@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_tiny_deferred_renderer" kind="class" language="C++" prot="public">
+    <compoundname>tiny::TinyDeferredRenderer</compoundname>
+    <basecompoundref refid="classtiny_1_1_i_renderer" prot="public" virt="non-virtual">tiny::IRenderer</basecompoundref>
+    <includes refid="renderer_8h" local="no">renderer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_tiny_deferred_renderer_1a5c3acd2c1b36b2843fa0d025f066d2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual tiny::TinyDeferredRenderer::~TinyDeferredRenderer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TinyDeferredRenderer</name>
+        <qualifiedname>tiny::TinyDeferredRenderer::~TinyDeferredRenderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/renderer.h" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_tiny_deferred_renderer_1a3b9e6922fe0be0618bbf1bb0c5983a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref></type>
+        <definition>virtual RenderTextureHandle tiny::TinyDeferredRenderer::Build</definition>
+        <argsstring>(FrameGraph &amp;mFrameGraph) override</argsstring>
+        <name>Build</name>
+        <qualifiedname>tiny::TinyDeferredRenderer::Build</qualifiedname>
+        <reimplements refid="classtiny_1_1_i_renderer_1a4dff3dc1a7b05cbe4379780201ae8aa9">Build</reimplements>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph" kindref="compound">FrameGraph</ref> &amp;</type>
+          <declname>mFrameGraph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/renderer.h" line="26" column="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>tiny::IRenderer</label>
+        <link refid="classtiny_1_1_i_renderer"/>
+      </node>
+      <node id="1">
+        <label>tiny::TinyDeferredRenderer</label>
+        <link refid="classtiny_1_1_tiny_deferred_renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::IRenderer</label>
+        <link refid="classtiny_1_1_i_renderer"/>
+      </node>
+      <node id="1">
+        <label>tiny::TinyDeferredRenderer</label>
+        <link refid="classtiny_1_1_tiny_deferred_renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/renderer.h" line="22" column="1" bodyfile="graphics/renderer.h" bodystart="23" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_tiny_deferred_renderer_1a3b9e6922fe0be0618bbf1bb0c5983a23" prot="public" virt="virtual"><scope>tiny::TinyDeferredRenderer</scope><name>Build</name></member>
+      <member refid="classtiny_1_1_i_renderer_1ae289c7b118debdaeb3e42a0008f4f8dc" prot="public" virt="virtual"><scope>tiny::TinyDeferredRenderer</scope><name>~IRenderer</name></member>
+      <member refid="classtiny_1_1_tiny_deferred_renderer_1a5c3acd2c1b36b2843fa0d025f066d2cc" prot="public" virt="virtual"><scope>tiny::TinyDeferredRenderer</scope><name>~TinyDeferredRenderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

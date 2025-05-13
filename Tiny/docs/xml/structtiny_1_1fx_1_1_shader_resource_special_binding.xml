@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_shader_resource_special_binding" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::ShaderResourceSpecialBinding</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_special_binding_1aaa94612c3044214736ae97ca7d19ccff" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::fx::ShaderResourceSpecialBinding::rootParamIndex</definition>
+        <argsstring></argsstring>
+        <name>rootParamIndex</name>
+        <qualifiedname>tiny::fx::ShaderResourceSpecialBinding::rootParamIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="34" column="5" bodyfile="fx/shaderfx.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_special_binding_1ae32cc530bfc1d33f97c77add2f7fcb51" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34" kindref="member">ShaderSpecialBindType</ref></type>
+        <definition>ShaderSpecialBindType tiny::fx::ShaderResourceSpecialBinding::special</definition>
+        <argsstring></argsstring>
+        <name>special</name>
+        <qualifiedname>tiny::fx::ShaderResourceSpecialBinding::special</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="35" column="23" bodyfile="fx/shaderfx.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="32" column="1" bodyfile="fx/shaderfx.h" bodystart="33" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_special_binding_1aaa94612c3044214736ae97ca7d19ccff" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceSpecialBinding</scope><name>rootParamIndex</name></member>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_special_binding_1ae32cc530bfc1d33f97c77add2f7fcb51" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceSpecialBinding</scope><name>special</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_mesh_technique" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::MeshTechnique</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74d" prot="public" static="no" strong="no">
+        <type>u16</type>
+        <name>RenderPassIds</name>
+        <qualifiedname>tiny::fx::MeshTechnique::RenderPassIds</qualifiedname>
+        <enumvalue id="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74daf9479c0608b5578aa64fed58f0eb427d" prot="public">
+          <name>RenderPassId_Opaque</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da3914c279b9cc1a180fa35b1db4395871" prot="public">
+          <name>RenderPassId_Transparent</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da65f070544692777bae8d0b1621630b53" prot="public">
+          <name>RenderPassId_Deferred</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74dabf8c72999df48799c71b6ee18caf8e20" prot="public">
+          <name>RenderPassId_DeferredLight</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da7e2d3658ccccfcc797e665786f18db50" prot="public">
+          <name>RenderPassId_Shadow</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="143" column="1" bodyfile="fx/shaderfx.h" bodystart="144" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_technique_1a6ed47692bc3a5755b24fa68d02505253" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; u16, std::shared_ptr&lt; <ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">IMeshMaterialInstance</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;u16, std::shared_ptr&lt;IMeshMaterialInstance&gt; &gt; tiny::fx::MeshTechnique::passes</definition>
+        <argsstring></argsstring>
+        <name>passes</name>
+        <qualifiedname>tiny::fx::MeshTechnique::passes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="151" column="20" bodyfile="fx/shaderfx.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="141" column="1" bodyfile="fx/shaderfx.h" bodystart="142" bodyend="152"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a6ed47692bc3a5755b24fa68d02505253" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>passes</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da65f070544692777bae8d0b1621630b53" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>RenderPassId_Deferred</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74dabf8c72999df48799c71b6ee18caf8e20" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>RenderPassId_DeferredLight</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74daf9479c0608b5578aa64fed58f0eb427d" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>RenderPassId_Opaque</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da7e2d3658ccccfcc797e665786f18db50" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>RenderPassId_Shadow</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da3914c279b9cc1a180fa35b1db4395871" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>RenderPassId_Transparent</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74d" prot="public" virt="non-virtual"><scope>tiny::fx::MeshTechnique</scope><name>RenderPassIds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

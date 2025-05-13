@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_stack_level_info" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiStackLevelInfo</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_stack_level_info_1af13bae3a6f0089fdfe30ef93a47f3617" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiStackLevelInfo::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiStackLevelInfo::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1819" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1819" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_level_info_1a54555db636b1247dd9e0ebcdd781f46f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a33644f626f44716357624c2755a9b9d1" kindref="member">ImS8</ref></type>
+        <definition>ImS8 ImGuiStackLevelInfo::QueryFrameCount</definition>
+        <argsstring></argsstring>
+        <name>QueryFrameCount</name>
+        <qualifiedname>ImGuiStackLevelInfo::QueryFrameCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1820" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_level_info_1af73a14a915d748f1ebe5c4a4aedd5325" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiStackLevelInfo::QuerySuccess</definition>
+        <argsstring></argsstring>
+        <name>QuerySuccess</name>
+        <qualifiedname>ImGuiStackLevelInfo::QuerySuccess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1821" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1821" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_level_info_1a07500f6232f21e437a931a1b69805771" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a4cfa8697a3d76722fff83eb18922e9d5" kindref="member">ImGuiDataType</ref></type>
+        <definition>ImGuiDataType ImGuiStackLevelInfo::DataType</definition>
+        <argsstring></argsstring>
+        <name>DataType</name>
+        <qualifiedname>ImGuiStackLevelInfo::DataType</qualifiedname>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1822" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_stack_level_info_1a9111eb5bbd8bdd989210da0453c5f9ff" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ImGuiStackLevelInfo::Desc[57]</definition>
+        <argsstring>[57]</argsstring>
+        <name>Desc</name>
+        <qualifiedname>ImGuiStackLevelInfo::Desc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1823" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1823" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_stack_level_info_1a8d159c0fe04c79e2db144ba668a2f7a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiStackLevelInfo::ImGuiStackLevelInfo</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiStackLevelInfo</name>
+        <qualifiedname>ImGuiStackLevelInfo::ImGuiStackLevelInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1825" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1825" bodyend="1825"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1817" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1818" bodyend="1826"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_stack_level_info_1a07500f6232f21e437a931a1b69805771" prot="public" virt="non-virtual"><scope>ImGuiStackLevelInfo</scope><name>DataType</name></member>
+      <member refid="struct_im_gui_stack_level_info_1a9111eb5bbd8bdd989210da0453c5f9ff" prot="public" virt="non-virtual"><scope>ImGuiStackLevelInfo</scope><name>Desc</name></member>
+      <member refid="struct_im_gui_stack_level_info_1af13bae3a6f0089fdfe30ef93a47f3617" prot="public" virt="non-virtual"><scope>ImGuiStackLevelInfo</scope><name>ID</name></member>
+      <member refid="struct_im_gui_stack_level_info_1a8d159c0fe04c79e2db144ba668a2f7a7" prot="public" virt="non-virtual"><scope>ImGuiStackLevelInfo</scope><name>ImGuiStackLevelInfo</name></member>
+      <member refid="struct_im_gui_stack_level_info_1a54555db636b1247dd9e0ebcdd781f46f" prot="public" virt="non-virtual"><scope>ImGuiStackLevelInfo</scope><name>QueryFrameCount</name></member>
+      <member refid="struct_im_gui_stack_level_info_1af73a14a915d748f1ebe5c4a4aedd5325" prot="public" virt="non-virtual"><scope>ImGuiStackLevelInfo</scope><name>QuerySuccess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

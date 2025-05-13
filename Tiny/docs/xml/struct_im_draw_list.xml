@@ -1,0 +1,2386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_draw_list" kind="struct" language="C++" prot="public">
+    <compoundname>ImDrawList</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_draw_list_1a67a4b5cc4c83bc3b81d96c46cbd38a07" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_draw_cmd" kindref="compound">ImDrawCmd</ref> &gt;</type>
+        <definition>ImVector&lt;ImDrawCmd&gt; ImDrawList::CmdBuffer</definition>
+        <argsstring></argsstring>
+        <name>CmdBuffer</name>
+        <qualifiedname>ImDrawList::CmdBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2674" column="18" bodyfile="graphics/imgui/imgui.h" bodystart="2674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1adf292ff70a954d82daf061c609e75dfc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="imgui_8h_1afdc8744a5ac1a968b1ddfa47e13b2fa1" kindref="member">ImDrawIdx</ref> &gt;</type>
+        <definition>ImVector&lt;ImDrawIdx&gt; ImDrawList::IdxBuffer</definition>
+        <argsstring></argsstring>
+        <name>IdxBuffer</name>
+        <qualifiedname>ImDrawList::IdxBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2675" column="18" bodyfile="graphics/imgui/imgui.h" bodystart="2675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1aa8ff4aee39cf3c3791b7e29a7b4264be" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_draw_vert" kindref="compound">ImDrawVert</ref> &gt;</type>
+        <definition>ImVector&lt;ImDrawVert&gt; ImDrawList::VtxBuffer</definition>
+        <argsstring></argsstring>
+        <name>VtxBuffer</name>
+        <qualifiedname>ImDrawList::VtxBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2676" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="2676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1ada2c004661663ef875f4d4c7ec0b4557" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1adb61806505bf501bb0fbcdf4414360" kindref="member">ImDrawListFlags</ref></type>
+        <definition>ImDrawListFlags ImDrawList::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImDrawList::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2677" column="29" bodyfile="graphics/imgui/imgui.h" bodystart="2677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a2228793183665bc3d8612795555fe505" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ImDrawList::_VtxCurrentIdx</definition>
+        <argsstring></argsstring>
+        <name>_VtxCurrentIdx</name>
+        <qualifiedname>ImDrawList::_VtxCurrentIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2680" column="29" bodyfile="graphics/imgui/imgui.h" bodystart="2680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1ad5a67c6f1487a812410e9979d1cf4a02" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_list_shared_data" kindref="compound">ImDrawListSharedData</ref> *</type>
+        <definition>ImDrawListSharedData* ImDrawList::_Data</definition>
+        <argsstring></argsstring>
+        <name>_Data</name>
+        <qualifiedname>ImDrawList::_Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2681" column="28" bodyfile="graphics/imgui/imgui.h" bodystart="2681" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a643f385fb9d5fc35a431e72a10a212f5" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ImDrawList::_OwnerName</definition>
+        <argsstring></argsstring>
+        <name>_OwnerName</name>
+        <qualifiedname>ImDrawList::_OwnerName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2682" column="28" bodyfile="graphics/imgui/imgui.h" bodystart="2682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a67f870f5140bf1cab14b8515b7386073" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_vert" kindref="compound">ImDrawVert</ref> *</type>
+        <definition>ImDrawVert* ImDrawList::_VtxWritePtr</definition>
+        <argsstring></argsstring>
+        <name>_VtxWritePtr</name>
+        <qualifiedname>ImDrawList::_VtxWritePtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2683" column="28" bodyfile="graphics/imgui/imgui.h" bodystart="2683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a771f4c7f71873852fe030c3e498e5843" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1afdc8744a5ac1a968b1ddfa47e13b2fa1" kindref="member">ImDrawIdx</ref> *</type>
+        <definition>ImDrawIdx* ImDrawList::_IdxWritePtr</definition>
+        <argsstring></argsstring>
+        <name>_IdxWritePtr</name>
+        <qualifiedname>ImDrawList::_IdxWritePtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2684" column="28" bodyfile="graphics/imgui/imgui.h" bodystart="2684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1ae950024f053f3c94dc2c763d20be609d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_vec4" kindref="compound">ImVec4</ref> &gt;</type>
+        <definition>ImVector&lt;ImVec4&gt; ImDrawList::_ClipRectStack</definition>
+        <argsstring></argsstring>
+        <name>_ClipRectStack</name>
+        <qualifiedname>ImDrawList::_ClipRectStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2685" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a848faddd121da050214b8d8159e5e704" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref> &gt;</type>
+        <definition>ImVector&lt;ImTextureID&gt; ImDrawList::_TextureIdStack</definition>
+        <argsstring></argsstring>
+        <name>_TextureIdStack</name>
+        <qualifiedname>ImDrawList::_TextureIdStack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2686" column="16" bodyfile="graphics/imgui/imgui.h" bodystart="2686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a5bdc39abf351360500048628b8dc1b07" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &gt;</type>
+        <definition>ImVector&lt;ImVec2&gt; ImDrawList::_Path</definition>
+        <argsstring></argsstring>
+        <name>_Path</name>
+        <qualifiedname>ImDrawList::_Path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2687" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a87d1ec89ec6a742fd4d097d2b924e92b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_cmd_header" kindref="compound">ImDrawCmdHeader</ref></type>
+        <definition>ImDrawCmdHeader ImDrawList::_CmdHeader</definition>
+        <argsstring></argsstring>
+        <name>_CmdHeader</name>
+        <qualifiedname>ImDrawList::_CmdHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2688" column="29" bodyfile="graphics/imgui/imgui.h" bodystart="2688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1a2893207705100e8a5da8122da56bd162" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_list_splitter" kindref="compound">ImDrawListSplitter</ref></type>
+        <definition>ImDrawListSplitter ImDrawList::_Splitter</definition>
+        <argsstring></argsstring>
+        <name>_Splitter</name>
+        <qualifiedname>ImDrawList::_Splitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2689" column="29" bodyfile="graphics/imgui/imgui.h" bodystart="2689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_1aa667eca45099e5679b161c17ac6ec7e0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImDrawList::_FringeScale</definition>
+        <argsstring></argsstring>
+        <name>_FringeScale</name>
+        <qualifiedname>ImDrawList::_FringeScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2690" column="29" bodyfile="graphics/imgui/imgui.h" bodystart="2690" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_draw_list_1a6360ccc7ce978f1497d6291a4a6f87eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImDrawList::ImDrawList</definition>
+        <argsstring>(ImDrawListSharedData *shared_data)</argsstring>
+        <name>ImDrawList</name>
+        <qualifiedname>ImDrawList::ImDrawList</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_draw_list_shared_data" kindref="compound">ImDrawListSharedData</ref> *</type>
+          <declname>shared_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2693" column="5" bodyfile="graphics/imgui/imgui.h" bodystart="2693" bodyend="2693"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a19fd8d920c202cf8ba5f5c55c43d1d2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImDrawList::~ImDrawList</definition>
+        <argsstring>()</argsstring>
+        <name>~ImDrawList</name>
+        <qualifiedname>ImDrawList::~ImDrawList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2695" column="5" bodyfile="graphics/imgui/imgui.h" bodystart="2695" bodyend="2695"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a608a9d9a83715ba87dced8321ed64329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PushClipRect</definition>
+        <argsstring>(const ImVec2 &amp;clip_rect_min, const ImVec2 &amp;clip_rect_max, bool intersect_with_current_clip_rect=false)</argsstring>
+        <name>PushClipRect</name>
+        <qualifiedname>ImDrawList::PushClipRect</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>clip_rect_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>clip_rect_max</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>intersect_with_current_clip_rect</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2696" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="571" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a0ab1ab409f0e269755e50a77901bae39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PushClipRectFullScreen</definition>
+        <argsstring>()</argsstring>
+        <name>PushClipRectFullScreen</name>
+        <qualifiedname>ImDrawList::PushClipRectFullScreen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2697" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="590" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a44f40c59ca755f559020f5a7fa81103a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PopClipRect</definition>
+        <argsstring>()</argsstring>
+        <name>PopClipRect</name>
+        <qualifiedname>ImDrawList::PopClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2698" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="595" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a7ac41e329a9df911b4823ef0150cee16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PushTextureID</definition>
+        <argsstring>(ImTextureID texture_id)</argsstring>
+        <name>PushTextureID</name>
+        <qualifiedname>ImDrawList::PushTextureID</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref></type>
+          <declname>texture_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2699" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="602" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ade9286c5ca58753f7bd571b30e2ff76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PopTextureID</definition>
+        <argsstring>()</argsstring>
+        <name>PopTextureID</name>
+        <qualifiedname>ImDrawList::PopTextureID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2700" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="609" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a9d83896d3eb434a9e1072d56523a2754" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImDrawList::GetClipRectMin</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClipRectMin</name>
+        <qualifiedname>ImDrawList::GetClipRectMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2701" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2701" bodyend="2701"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a8e484a61eab501c1c1c416a8b45bb08e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImDrawList::GetClipRectMax</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClipRectMax</name>
+        <qualifiedname>ImDrawList::GetClipRectMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2702" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2702" bodyend="2702"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1aa21e5a1c6e00239581f97d344fc0db61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddLine</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, ImU32 col, float thickness=1.0f)</argsstring>
+        <name>AddLine</name>
+        <qualifiedname>ImDrawList::AddLine</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2711" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1388" bodyend="1395"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ad96f10a3e954fe0c5b7c96d4e205af7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddRect</definition>
+        <argsstring>(const ImVec2 &amp;p_min, const ImVec2 &amp;p_max, ImU32 col, float rounding=0.0f, ImDrawFlags flags=0, float thickness=1.0f)</argsstring>
+        <name>AddRect</name>
+        <qualifiedname>ImDrawList::AddRect</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_max</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rounding</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1af2ef7e1341558a1d39aa244c1257780a" kindref="member">ImDrawFlags</ref></type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2712" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1399" bodyend="1408"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a6b16ab764160b0251d2e7b3bd08c1ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddRectFilled</definition>
+        <argsstring>(const ImVec2 &amp;p_min, const ImVec2 &amp;p_max, ImU32 col, float rounding=0.0f, ImDrawFlags flags=0)</argsstring>
+        <name>AddRectFilled</name>
+        <qualifiedname>ImDrawList::AddRectFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_max</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rounding</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1af2ef7e1341558a1d39aa244c1257780a" kindref="member">ImDrawFlags</ref></type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2713" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1410" bodyend="1424"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a6282e85ad78b01ebb74832336e9a2a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddRectFilledMultiColor</definition>
+        <argsstring>(const ImVec2 &amp;p_min, const ImVec2 &amp;p_max, ImU32 col_upr_left, ImU32 col_upr_right, ImU32 col_bot_right, ImU32 col_bot_left)</argsstring>
+        <name>AddRectFilledMultiColor</name>
+        <qualifiedname>ImDrawList::AddRectFilledMultiColor</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_max</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col_upr_left</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col_upr_right</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col_bot_right</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col_bot_left</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2714" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1427" bodyend="1440"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a57b014138de51397db0570d88c770d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddQuad</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, const ImVec2 &amp;p4, ImU32 col, float thickness=1.0f)</argsstring>
+        <name>AddQuad</name>
+        <qualifiedname>ImDrawList::AddQuad</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2715" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1442" bodyend="1452"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a2b982fbad35f8736fdfc9d6e7db2ca94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddQuadFilled</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, const ImVec2 &amp;p4, ImU32 col)</argsstring>
+        <name>AddQuadFilled</name>
+        <qualifiedname>ImDrawList::AddQuadFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2716" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1454" bodyend="1464"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a04bde432891d0392e7d98d957c1fd9b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddTriangle</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, ImU32 col, float thickness=1.0f)</argsstring>
+        <name>AddTriangle</name>
+        <qualifiedname>ImDrawList::AddTriangle</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2717" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1466" bodyend="1475"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1af1dd4a3888034c5f71b66a38e44edf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddTriangleFilled</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, ImU32 col)</argsstring>
+        <name>AddTriangleFilled</name>
+        <qualifiedname>ImDrawList::AddTriangleFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2718" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1477" bodyend="1486"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a9b73eea0ebf7a9f02bc8a104deb7de9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddCircle</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, ImU32 col, int num_segments=0, float thickness=1.0f)</argsstring>
+        <name>AddCircle</name>
+        <qualifiedname>ImDrawList::AddCircle</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2719" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1488" bodyend="1510"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1aef950cf8b0293b2c5e4708af72de045b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddCircleFilled</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, ImU32 col, int num_segments=0)</argsstring>
+        <name>AddCircleFilled</name>
+        <qualifiedname>ImDrawList::AddCircleFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2720" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1512" bodyend="1534"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1abd004dec93d106eb867c9c6554d85989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddNgon</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, ImU32 col, int num_segments, float thickness=1.0f)</argsstring>
+        <name>AddNgon</name>
+        <qualifiedname>ImDrawList::AddNgon</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2721" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1537" bodyend="1546"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a75bf382ddc70429f82a570c2782c4491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddNgonFilled</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, ImU32 col, int num_segments)</argsstring>
+        <name>AddNgonFilled</name>
+        <qualifiedname>ImDrawList::AddNgonFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2722" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1549" bodyend="1558"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a16d98b58032500e4e7e1a555a4b6ffce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddEllipse</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius_x, float radius_y, ImU32 col, float rot=0.0f, int num_segments=0, float thickness=1.0f)</argsstring>
+        <name>AddEllipse</name>
+        <qualifiedname>ImDrawList::AddEllipse</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius_y</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rot</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2723" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1561" bodyend="1573"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ac6ca6eb18ab96e580e7e500a7b8025b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddEllipseFilled</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius_x, float radius_y, ImU32 col, float rot=0.0f, int num_segments=0)</argsstring>
+        <name>AddEllipseFilled</name>
+        <qualifiedname>ImDrawList::AddEllipseFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius_y</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rot</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2724" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1575" bodyend="1587"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ac5221bd86b3429f6d5b6e6ffe454942d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddText</definition>
+        <argsstring>(const ImVec2 &amp;pos, ImU32 col, const char *text_begin, const char *text_end=NULL)</argsstring>
+        <name>AddText</name>
+        <qualifiedname>ImDrawList::AddText</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text_begin</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text_end</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2725" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1640" bodyend="1643"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a0a226cbe9bb1480428e145d8535cda26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddText</definition>
+        <argsstring>(const ImFont *font, float font_size, const ImVec2 &amp;pos, ImU32 col, const char *text_begin, const char *text_end=NULL, float wrap_width=0.0f, const ImVec4 *cpu_fine_clip_rect=NULL)</argsstring>
+        <name>AddText</name>
+        <qualifiedname>ImDrawList::AddText</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>font_size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text_begin</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>text_end</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>wrap_width</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec4" kindref="compound">ImVec4</ref> *</type>
+          <declname>cpu_fine_clip_rect</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2726" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1611" bodyend="1638"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1abc568847b1113e624456436bfab1b307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddPolyline</definition>
+        <argsstring>(const ImVec2 *points, int num_points, ImU32 col, ImDrawFlags flags, float thickness)</argsstring>
+        <name>AddPolyline</name>
+        <qualifiedname>ImDrawList::AddPolyline</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> *</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_points</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1af2ef7e1341558a1d39aa244c1257780a" kindref="member">ImDrawFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2727" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="709" bodyend="963"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ad2accc0a74845b08bd0e6fae6183d6d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddConvexPolyFilled</definition>
+        <argsstring>(const ImVec2 *points, int num_points, ImU32 col)</argsstring>
+        <name>AddConvexPolyFilled</name>
+        <qualifiedname>ImDrawList::AddConvexPolyFilled</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> *</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_points</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2728" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="967" bodyend="1047"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a90ebb3c38b997ef3a3adb4d211a1b2a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddBezierCubic</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, const ImVec2 &amp;p4, ImU32 col, float thickness, int num_segments=0)</argsstring>
+        <name>AddBezierCubic</name>
+        <qualifiedname>ImDrawList::AddBezierCubic</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2729" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1590" bodyend="1598"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a2ca1f97b873778fc53fa4c1f1ca8bb1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddBezierQuadratic</definition>
+        <argsstring>(const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, ImU32 col, float thickness, int num_segments=0)</argsstring>
+        <name>AddBezierQuadratic</name>
+        <qualifiedname>ImDrawList::AddBezierQuadratic</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2730" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1601" bodyend="1609"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ac1f529d53d7ba118484e47e49218c603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddImage</definition>
+        <argsstring>(ImTextureID user_texture_id, const ImVec2 &amp;p_min, const ImVec2 &amp;p_max, const ImVec2 &amp;uv_min=ImVec2(0, 0), const ImVec2 &amp;uv_max=ImVec2(1, 1), ImU32 col=IM_COL32_WHITE)</argsstring>
+        <name>AddImage</name>
+        <qualifiedname>ImDrawList::AddImage</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref></type>
+          <declname>user_texture_id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_max</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_min</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(0, 0)</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_max</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(1, 1)</defval>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+          <defval><ref refid="imgui_8h_1a08fc9855cd3e3fcbb7fcd93b38bd7057" kindref="member">IM_COL32_WHITE</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2736" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1645" bodyend="1659"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1abf9199e08d17fd33736fd67598485341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddImageQuad</definition>
+        <argsstring>(ImTextureID user_texture_id, const ImVec2 &amp;p1, const ImVec2 &amp;p2, const ImVec2 &amp;p3, const ImVec2 &amp;p4, const ImVec2 &amp;uv1=ImVec2(0, 0), const ImVec2 &amp;uv2=ImVec2(1, 0), const ImVec2 &amp;uv3=ImVec2(1, 1), const ImVec2 &amp;uv4=ImVec2(0, 1), ImU32 col=IM_COL32_WHITE)</argsstring>
+        <name>AddImageQuad</name>
+        <qualifiedname>ImDrawList::AddImageQuad</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref></type>
+          <declname>user_texture_id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv1</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(0, 0)</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv2</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(1, 0)</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv3</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(1, 1)</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv4</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(0, 1)</defval>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+          <defval><ref refid="imgui_8h_1a08fc9855cd3e3fcbb7fcd93b38bd7057" kindref="member">IM_COL32_WHITE</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2737" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1661" bodyend="1675"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a864ccce7a012e9c1ffb4d5693311d847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddImageRounded</definition>
+        <argsstring>(ImTextureID user_texture_id, const ImVec2 &amp;p_min, const ImVec2 &amp;p_max, const ImVec2 &amp;uv_min, const ImVec2 &amp;uv_max, ImU32 col, float rounding, ImDrawFlags flags=0)</argsstring>
+        <name>AddImageRounded</name>
+        <qualifiedname>ImDrawList::AddImageRounded</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref></type>
+          <declname>user_texture_id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p_max</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_max</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rounding</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1af2ef7e1341558a1d39aa244c1257780a" kindref="member">ImDrawFlags</ref></type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2738" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1677" bodyend="1701"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ae9ad5f4d638b1bfd9383618dc60e3f18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PathClear</definition>
+        <argsstring>()</argsstring>
+        <name>PathClear</name>
+        <qualifiedname>ImDrawList::PathClear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2742" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2742" bodyend="2742"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a828d944325ed58d8b57abd3647bffaaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PathLineTo</definition>
+        <argsstring>(const ImVec2 &amp;pos)</argsstring>
+        <name>PathLineTo</name>
+        <qualifiedname>ImDrawList::PathLineTo</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2743" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2743" bodyend="2743"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1aa3dd11945fb62495f8b9e1392ed724e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PathLineToMergeDuplicate</definition>
+        <argsstring>(const ImVec2 &amp;pos)</argsstring>
+        <name>PathLineToMergeDuplicate</name>
+        <qualifiedname>ImDrawList::PathLineToMergeDuplicate</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2744" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2744" bodyend="2744"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1aea9301cb99ebf4b27f5d3959017567c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PathFillConvex</definition>
+        <argsstring>(ImU32 col)</argsstring>
+        <name>PathFillConvex</name>
+        <qualifiedname>ImDrawList::PathFillConvex</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2745" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2745" bodyend="2745"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a60bf9040ef3d09b39c4ba8f5a2a68ae9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PathStroke</definition>
+        <argsstring>(ImU32 col, ImDrawFlags flags=0, float thickness=1.0f)</argsstring>
+        <name>PathStroke</name>
+        <qualifiedname>ImDrawList::PathStroke</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1af2ef7e1341558a1d39aa244c1257780a" kindref="member">ImDrawFlags</ref></type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2746" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2746" bodyend="2746"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1af86073403f1557cccb4ff45dfad0a74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PathArcTo</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, float a_min, float a_max, int num_segments=0)</argsstring>
+        <name>PathArcTo</name>
+        <qualifiedname>ImDrawList::PathArcTo</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a_max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2747" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1170" bodyend="1218"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a6d307c6de1a6522e76fa410e8fe96fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PathArcToFast</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, int a_min_of_12, int a_max_of_12)</argsstring>
+        <name>PathArcToFast</name>
+        <qualifiedname>ImDrawList::PathArcToFast</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_min_of_12</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_max_of_12</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2748" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1160" bodyend="1168"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1aa117dcc4f06b62f6988127ba27ff2e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PathEllipticalArcTo</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius_x, float radius_y, float rot, float a_min, float a_max, int num_segments=0)</argsstring>
+        <name>PathEllipticalArcTo</name>
+        <qualifiedname>ImDrawList::PathEllipticalArcTo</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius_x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius_y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rot</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a_max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2749" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1220" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a48358bf6904dfd09906c6bfa3ef88777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PathBezierCubicCurveTo</definition>
+        <argsstring>(const ImVec2 &amp;p2, const ImVec2 &amp;p3, const ImVec2 &amp;p4, int num_segments=0)</argsstring>
+        <name>PathBezierCubicCurveTo</name>
+        <qualifiedname>ImDrawList::PathBezierCubicCurveTo</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2750" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1304" bodyend="1318"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1af48c5212d06ca5967f70da33ffadbc86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PathBezierQuadraticCurveTo</definition>
+        <argsstring>(const ImVec2 &amp;p2, const ImVec2 &amp;p3, int num_segments=0)</argsstring>
+        <name>PathBezierQuadraticCurveTo</name>
+        <qualifiedname>ImDrawList::PathBezierQuadraticCurveTo</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2751" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1320" bodyend="1334"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a2251eb264ed8b17a253c409787375053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PathRect</definition>
+        <argsstring>(const ImVec2 &amp;rect_min, const ImVec2 &amp;rect_max, float rounding=0.0f, ImDrawFlags flags=0)</argsstring>
+        <name>PathRect</name>
+        <qualifiedname>ImDrawList::PathRect</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>rect_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>rect_max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rounding</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1af2ef7e1341558a1d39aa244c1257780a" kindref="member">ImDrawFlags</ref></type>
+          <declname>flags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2752" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1360" bodyend="1386"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a14073d60ef9db9dc663dc7717a4893a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddCallback</definition>
+        <argsstring>(ImDrawCallback callback, void *callback_data)</argsstring>
+        <name>AddCallback</name>
+        <qualifiedname>ImDrawList::AddCallback</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a232a477233f9e3ab7640720bf94674de" kindref="member">ImDrawCallback</ref></type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>callback_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2755" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="461" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a846714bb0321c6f1f908767abc8559e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::AddDrawCmd</definition>
+        <argsstring>()</argsstring>
+        <name>AddDrawCmd</name>
+        <qualifiedname>ImDrawList::AddDrawCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2756" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="436" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a24c853c3976c77e7b361fab39adde686" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_draw_list" kindref="compound">ImDrawList</ref> *</type>
+        <definition>ImDrawList * ImDrawList::CloneOutput</definition>
+        <argsstring>() const</argsstring>
+        <name>CloneOutput</name>
+        <qualifiedname>ImDrawList::CloneOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2757" column="26" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="426" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1acd7bcb6c4c5043876cfc169a98abc24a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::ChannelsSplit</definition>
+        <argsstring>(int count)</argsstring>
+        <name>ChannelsSplit</name>
+        <qualifiedname>ImDrawList::ChannelsSplit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2765" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2765" bodyend="2765"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a2ed82c3f663cda520c90c55b94196274" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::ChannelsMerge</definition>
+        <argsstring>()</argsstring>
+        <name>ChannelsMerge</name>
+        <qualifiedname>ImDrawList::ChannelsMerge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2766" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2766" bodyend="2766"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1aba9e93d0bf1c3884beb726e96360d2e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::ChannelsSetCurrent</definition>
+        <argsstring>(int n)</argsstring>
+        <name>ChannelsSetCurrent</name>
+        <qualifiedname>ImDrawList::ChannelsSetCurrent</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2767" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2767" bodyend="2767"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a879aa38dbfb0344e3e023d65c002c7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PrimReserve</definition>
+        <argsstring>(int idx_count, int vtx_count)</argsstring>
+        <name>PrimReserve</name>
+        <qualifiedname>ImDrawList::PrimReserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idx_count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vtx_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2772" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="619" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a618a5e0efdefce08daa888b45bf8a1d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PrimUnreserve</definition>
+        <argsstring>(int idx_count, int vtx_count)</argsstring>
+        <name>PrimUnreserve</name>
+        <qualifiedname>ImDrawList::PrimUnreserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idx_count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vtx_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2773" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="645" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ae2be093563f1d20b8190b7c423113925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PrimRect</definition>
+        <argsstring>(const ImVec2 &amp;a, const ImVec2 &amp;b, ImU32 col)</argsstring>
+        <name>PrimRect</name>
+        <qualifiedname>ImDrawList::PrimRect</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2774" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="656" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a77d48ed5b33ccdd908824c0a3bebfff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PrimRectUV</definition>
+        <argsstring>(const ImVec2 &amp;a, const ImVec2 &amp;b, const ImVec2 &amp;uv_a, const ImVec2 &amp;uv_b, ImU32 col)</argsstring>
+        <name>PrimRectUV</name>
+        <qualifiedname>ImDrawList::PrimRectUV</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_b</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2775" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="671" bodyend="684"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a9df27414aaca5f34ac3664a8b82582b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::PrimQuadUV</definition>
+        <argsstring>(const ImVec2 &amp;a, const ImVec2 &amp;b, const ImVec2 &amp;c, const ImVec2 &amp;d, const ImVec2 &amp;uv_a, const ImVec2 &amp;uv_b, const ImVec2 &amp;uv_c, const ImVec2 &amp;uv_d, ImU32 col)</argsstring>
+        <name>PrimQuadUV</name>
+        <qualifiedname>ImDrawList::PrimQuadUV</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_b</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_c</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv_d</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2776" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="686" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1af86de4faf6c8e978fb712ea14c5d0c5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PrimWriteVtx</definition>
+        <argsstring>(const ImVec2 &amp;pos, const ImVec2 &amp;uv, ImU32 col)</argsstring>
+        <name>PrimWriteVtx</name>
+        <qualifiedname>ImDrawList::PrimWriteVtx</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2777" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2777" bodyend="2777"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a42b72f87a0084c02f11dcd1560c8bbc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PrimWriteIdx</definition>
+        <argsstring>(ImDrawIdx idx)</argsstring>
+        <name>PrimWriteIdx</name>
+        <qualifiedname>ImDrawList::PrimWriteIdx</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1afdc8744a5ac1a968b1ddfa47e13b2fa1" kindref="member">ImDrawIdx</ref></type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2778" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2778" bodyend="2778"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a405377158f0028ad8b4fb6509eef4532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawList::PrimVtx</definition>
+        <argsstring>(const ImVec2 &amp;pos, const ImVec2 &amp;uv, ImU32 col)</argsstring>
+        <name>PrimVtx</name>
+        <qualifiedname>ImDrawList::PrimVtx</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>uv</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2779" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2779" bodyend="2779"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a5f78fe195b2507e5926560f591141ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_ResetForNewFrame</definition>
+        <argsstring>()</argsstring>
+        <name>_ResetForNewFrame</name>
+        <qualifiedname>ImDrawList::_ResetForNewFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2786" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="386" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a61a886a16655c810e04c0ccebb228f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_ClearFreeMemory</definition>
+        <argsstring>()</argsstring>
+        <name>_ClearFreeMemory</name>
+        <qualifiedname>ImDrawList::_ClearFreeMemory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2787" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="411" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a2cb0295fcd3062bfedbebbad55865455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_PopUnusedDrawCmd</definition>
+        <argsstring>()</argsstring>
+        <name>_PopUnusedDrawCmd</name>
+        <qualifiedname>ImDrawList::_PopUnusedDrawCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2788" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="450" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1abdba85bbdc26a98eac56ed04683d5fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_TryMergeDrawCmds</definition>
+        <argsstring>()</argsstring>
+        <name>_TryMergeDrawCmds</name>
+        <qualifiedname>ImDrawList::_TryMergeDrawCmds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2789" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="484" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a8e51ddbe1f9732bc271ce807bec23f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_OnChangedClipRect</definition>
+        <argsstring>()</argsstring>
+        <name>_OnChangedClipRect</name>
+        <qualifiedname>ImDrawList::_OnChangedClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2790" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="498" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a7c14ae666a0df75214ecb97cdb9bd8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_OnChangedTextureID</definition>
+        <argsstring>()</argsstring>
+        <name>_OnChangedTextureID</name>
+        <qualifiedname>ImDrawList::_OnChangedTextureID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2791" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="521" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a7f2e315f147acd8b555d86d1557659cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_OnChangedVtxOffset</definition>
+        <argsstring>()</argsstring>
+        <name>_OnChangedVtxOffset</name>
+        <qualifiedname>ImDrawList::_OnChangedVtxOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2792" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="544" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a52afa32aaab6d581cda90dc5d8726ed6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> int</type>
+        <definition>int ImDrawList::_CalcCircleAutoSegmentCount</definition>
+        <argsstring>(float radius) const</argsstring>
+        <name>_CalcCircleAutoSegmentCount</name>
+        <qualifiedname>ImDrawList::_CalcCircleAutoSegmentCount</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2793" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="560" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1ac25f3a7693ed13ba2dac455675be8654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_PathArcToFastEx</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, int a_min_sample, int a_max_sample, int a_step)</argsstring>
+        <name>_PathArcToFastEx</name>
+        <qualifiedname>ImDrawList::_PathArcToFastEx</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_min_sample</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_max_sample</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a_step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2794" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1049" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_1a855fcd28cd12b81975e8a61ea2e80e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawList::_PathArcToN</definition>
+        <argsstring>(const ImVec2 &amp;center, float radius, float a_min, float a_max, int num_segments)</argsstring>
+        <name>_PathArcToN</name>
+        <qualifiedname>ImDrawList::_PathArcToN</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a_max</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_segments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2795" column="21" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1141" bodyend="1157"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="28">
+        <label>ImDrawChannel</label>
+        <link refid="struct_im_draw_channel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_IdxBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImDrawCmd</label>
+        <link refid="struct_im_draw_cmd"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>UserCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ImDrawCmdHeader</label>
+        <link refid="struct_im_draw_cmd_header"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImDrawList</label>
+        <link refid="struct_im_draw_list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>IdxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>VtxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_Data</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_VtxWritePtr</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>_ClipRectStack</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>_TextureIdStack</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>_Path</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_CmdHeader</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>_Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ImDrawListSplitter</label>
+        <link refid="struct_im_draw_list_splitter"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>_Channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="20">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="8">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="4">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="27">
+        <label>ImVector&lt; ImDrawChannel &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImDrawCmd &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImVector&lt; ImDrawIdx &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="6">
+        <label>ImVector&lt; ImDrawVert &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ImVector&lt; ImTextureID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="22">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ImVector&lt; ImVec4 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="11">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2671" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2672" bodyend="2796"/>
+    <listofallmembers>
+      <member refid="struct_im_draw_list_1a52afa32aaab6d581cda90dc5d8726ed6" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_CalcCircleAutoSegmentCount</name></member>
+      <member refid="struct_im_draw_list_1a61a886a16655c810e04c0ccebb228f9a" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_ClearFreeMemory</name></member>
+      <member refid="struct_im_draw_list_1ae950024f053f3c94dc2c763d20be609d" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_ClipRectStack</name></member>
+      <member refid="struct_im_draw_list_1a87d1ec89ec6a742fd4d097d2b924e92b" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_CmdHeader</name></member>
+      <member refid="struct_im_draw_list_1ad5a67c6f1487a812410e9979d1cf4a02" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_Data</name></member>
+      <member refid="struct_im_draw_list_1aa667eca45099e5679b161c17ac6ec7e0" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_FringeScale</name></member>
+      <member refid="struct_im_draw_list_1a771f4c7f71873852fe030c3e498e5843" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_IdxWritePtr</name></member>
+      <member refid="struct_im_draw_list_1a8e51ddbe1f9732bc271ce807bec23f54" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_OnChangedClipRect</name></member>
+      <member refid="struct_im_draw_list_1a7c14ae666a0df75214ecb97cdb9bd8f4" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_OnChangedTextureID</name></member>
+      <member refid="struct_im_draw_list_1a7f2e315f147acd8b555d86d1557659cc" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_OnChangedVtxOffset</name></member>
+      <member refid="struct_im_draw_list_1a643f385fb9d5fc35a431e72a10a212f5" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_OwnerName</name></member>
+      <member refid="struct_im_draw_list_1a5bdc39abf351360500048628b8dc1b07" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_Path</name></member>
+      <member refid="struct_im_draw_list_1ac25f3a7693ed13ba2dac455675be8654" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_PathArcToFastEx</name></member>
+      <member refid="struct_im_draw_list_1a855fcd28cd12b81975e8a61ea2e80e96" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_PathArcToN</name></member>
+      <member refid="struct_im_draw_list_1a2cb0295fcd3062bfedbebbad55865455" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_PopUnusedDrawCmd</name></member>
+      <member refid="struct_im_draw_list_1a5f78fe195b2507e5926560f591141ff3" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_ResetForNewFrame</name></member>
+      <member refid="struct_im_draw_list_1a2893207705100e8a5da8122da56bd162" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_Splitter</name></member>
+      <member refid="struct_im_draw_list_1a848faddd121da050214b8d8159e5e704" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_TextureIdStack</name></member>
+      <member refid="struct_im_draw_list_1abdba85bbdc26a98eac56ed04683d5fc7" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_TryMergeDrawCmds</name></member>
+      <member refid="struct_im_draw_list_1a2228793183665bc3d8612795555fe505" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_VtxCurrentIdx</name></member>
+      <member refid="struct_im_draw_list_1a67f870f5140bf1cab14b8515b7386073" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>_VtxWritePtr</name></member>
+      <member refid="struct_im_draw_list_1a90ebb3c38b997ef3a3adb4d211a1b2a8" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddBezierCubic</name></member>
+      <member refid="struct_im_draw_list_1a2ca1f97b873778fc53fa4c1f1ca8bb1f" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddBezierQuadratic</name></member>
+      <member refid="struct_im_draw_list_1a14073d60ef9db9dc663dc7717a4893a5" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddCallback</name></member>
+      <member refid="struct_im_draw_list_1a9b73eea0ebf7a9f02bc8a104deb7de9d" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddCircle</name></member>
+      <member refid="struct_im_draw_list_1aef950cf8b0293b2c5e4708af72de045b" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddCircleFilled</name></member>
+      <member refid="struct_im_draw_list_1ad2accc0a74845b08bd0e6fae6183d6d0" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddConvexPolyFilled</name></member>
+      <member refid="struct_im_draw_list_1a846714bb0321c6f1f908767abc8559e6" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddDrawCmd</name></member>
+      <member refid="struct_im_draw_list_1a16d98b58032500e4e7e1a555a4b6ffce" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddEllipse</name></member>
+      <member refid="struct_im_draw_list_1ac6ca6eb18ab96e580e7e500a7b8025b2" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddEllipseFilled</name></member>
+      <member refid="struct_im_draw_list_1ac1f529d53d7ba118484e47e49218c603" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddImage</name></member>
+      <member refid="struct_im_draw_list_1abf9199e08d17fd33736fd67598485341" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddImageQuad</name></member>
+      <member refid="struct_im_draw_list_1a864ccce7a012e9c1ffb4d5693311d847" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddImageRounded</name></member>
+      <member refid="struct_im_draw_list_1aa21e5a1c6e00239581f97d344fc0db61" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddLine</name></member>
+      <member refid="struct_im_draw_list_1abd004dec93d106eb867c9c6554d85989" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddNgon</name></member>
+      <member refid="struct_im_draw_list_1a75bf382ddc70429f82a570c2782c4491" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddNgonFilled</name></member>
+      <member refid="struct_im_draw_list_1abc568847b1113e624456436bfab1b307" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddPolyline</name></member>
+      <member refid="struct_im_draw_list_1a57b014138de51397db0570d88c770d9f" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddQuad</name></member>
+      <member refid="struct_im_draw_list_1a2b982fbad35f8736fdfc9d6e7db2ca94" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddQuadFilled</name></member>
+      <member refid="struct_im_draw_list_1ad96f10a3e954fe0c5b7c96d4e205af7b" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddRect</name></member>
+      <member refid="struct_im_draw_list_1a6b16ab764160b0251d2e7b3bd08c1ffc" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddRectFilled</name></member>
+      <member refid="struct_im_draw_list_1a6282e85ad78b01ebb74832336e9a2a55" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddRectFilledMultiColor</name></member>
+      <member refid="struct_im_draw_list_1ac5221bd86b3429f6d5b6e6ffe454942d" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddText</name></member>
+      <member refid="struct_im_draw_list_1a0a226cbe9bb1480428e145d8535cda26" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddText</name></member>
+      <member refid="struct_im_draw_list_1a04bde432891d0392e7d98d957c1fd9b3" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddTriangle</name></member>
+      <member refid="struct_im_draw_list_1af1dd4a3888034c5f71b66a38e44edf31" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>AddTriangleFilled</name></member>
+      <member refid="struct_im_draw_list_1a2ed82c3f663cda520c90c55b94196274" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>ChannelsMerge</name></member>
+      <member refid="struct_im_draw_list_1aba9e93d0bf1c3884beb726e96360d2e2" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>ChannelsSetCurrent</name></member>
+      <member refid="struct_im_draw_list_1acd7bcb6c4c5043876cfc169a98abc24a" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>ChannelsSplit</name></member>
+      <member refid="struct_im_draw_list_1a24c853c3976c77e7b361fab39adde686" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>CloneOutput</name></member>
+      <member refid="struct_im_draw_list_1a67a4b5cc4c83bc3b81d96c46cbd38a07" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>CmdBuffer</name></member>
+      <member refid="struct_im_draw_list_1ada2c004661663ef875f4d4c7ec0b4557" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>Flags</name></member>
+      <member refid="struct_im_draw_list_1a8e484a61eab501c1c1c416a8b45bb08e" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>GetClipRectMax</name></member>
+      <member refid="struct_im_draw_list_1a9d83896d3eb434a9e1072d56523a2754" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>GetClipRectMin</name></member>
+      <member refid="struct_im_draw_list_1adf292ff70a954d82daf061c609e75dfc" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>IdxBuffer</name></member>
+      <member refid="struct_im_draw_list_1a6360ccc7ce978f1497d6291a4a6f87eb" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>ImDrawList</name></member>
+      <member refid="struct_im_draw_list_1af86073403f1557cccb4ff45dfad0a74a" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathArcTo</name></member>
+      <member refid="struct_im_draw_list_1a6d307c6de1a6522e76fa410e8fe96fcc" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathArcToFast</name></member>
+      <member refid="struct_im_draw_list_1a48358bf6904dfd09906c6bfa3ef88777" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathBezierCubicCurveTo</name></member>
+      <member refid="struct_im_draw_list_1af48c5212d06ca5967f70da33ffadbc86" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathBezierQuadraticCurveTo</name></member>
+      <member refid="struct_im_draw_list_1ae9ad5f4d638b1bfd9383618dc60e3f18" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathClear</name></member>
+      <member refid="struct_im_draw_list_1aa117dcc4f06b62f6988127ba27ff2e80" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathEllipticalArcTo</name></member>
+      <member refid="struct_im_draw_list_1aea9301cb99ebf4b27f5d3959017567c9" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathFillConvex</name></member>
+      <member refid="struct_im_draw_list_1a828d944325ed58d8b57abd3647bffaaf" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathLineTo</name></member>
+      <member refid="struct_im_draw_list_1aa3dd11945fb62495f8b9e1392ed724e3" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathLineToMergeDuplicate</name></member>
+      <member refid="struct_im_draw_list_1a2251eb264ed8b17a253c409787375053" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathRect</name></member>
+      <member refid="struct_im_draw_list_1a60bf9040ef3d09b39c4ba8f5a2a68ae9" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PathStroke</name></member>
+      <member refid="struct_im_draw_list_1a44f40c59ca755f559020f5a7fa81103a" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PopClipRect</name></member>
+      <member refid="struct_im_draw_list_1ade9286c5ca58753f7bd571b30e2ff76c" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PopTextureID</name></member>
+      <member refid="struct_im_draw_list_1a9df27414aaca5f34ac3664a8b82582b5" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimQuadUV</name></member>
+      <member refid="struct_im_draw_list_1ae2be093563f1d20b8190b7c423113925" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimRect</name></member>
+      <member refid="struct_im_draw_list_1a77d48ed5b33ccdd908824c0a3bebfff8" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimRectUV</name></member>
+      <member refid="struct_im_draw_list_1a879aa38dbfb0344e3e023d65c002c7d7" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimReserve</name></member>
+      <member refid="struct_im_draw_list_1a618a5e0efdefce08daa888b45bf8a1d1" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimUnreserve</name></member>
+      <member refid="struct_im_draw_list_1a405377158f0028ad8b4fb6509eef4532" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimVtx</name></member>
+      <member refid="struct_im_draw_list_1a42b72f87a0084c02f11dcd1560c8bbc7" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimWriteIdx</name></member>
+      <member refid="struct_im_draw_list_1af86de4faf6c8e978fb712ea14c5d0c5f" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PrimWriteVtx</name></member>
+      <member refid="struct_im_draw_list_1a608a9d9a83715ba87dced8321ed64329" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PushClipRect</name></member>
+      <member refid="struct_im_draw_list_1a0ab1ab409f0e269755e50a77901bae39" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PushClipRectFullScreen</name></member>
+      <member refid="struct_im_draw_list_1a7ac41e329a9df911b4823ef0150cee16" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>PushTextureID</name></member>
+      <member refid="struct_im_draw_list_1aa8ff4aee39cf3c3791b7e29a7b4264be" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>VtxBuffer</name></member>
+      <member refid="struct_im_draw_list_1a19fd8d920c202cf8ba5f5c55c43d1d2a" prot="public" virt="non-virtual"><scope>ImDrawList</scope><name>~ImDrawList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

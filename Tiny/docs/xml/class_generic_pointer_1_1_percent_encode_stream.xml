@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_generic_pointer_1_1_percent_encode_stream" kind="class" language="C++" prot="public">
+    <compoundname>GenericPointer::PercentEncodeStream</compoundname>
+    <includes refid="pointer_8h" local="no">pointer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename OutputStream</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_generic_pointer_1_1_percent_encode_stream_1a973de3c4a6b987a4fd301b8266d45d4a" prot="private" static="no" mutable="no">
+        <type>OutputStream &amp;</type>
+        <definition>OutputStream&amp; GenericPointer&lt; ValueType, Allocator &gt;::PercentEncodeStream&lt; OutputStream &gt;::os_</definition>
+        <argsstring></argsstring>
+        <name>os_</name>
+        <qualifiedname>GenericPointer::PercentEncodeStream::os_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/pointer.h" line="1096" column="22" bodyfile="content/cereal/external/rapidjson/pointer.h" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_generic_pointer_1_1_percent_encode_stream_1a8e16af18669e49d0ab528ba0066475d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GenericPointer&lt; ValueType, Allocator &gt;::PercentEncodeStream&lt; OutputStream &gt;::PercentEncodeStream</definition>
+        <argsstring>(OutputStream &amp;os)</argsstring>
+        <name>PercentEncodeStream</name>
+        <qualifiedname>GenericPointer::PercentEncodeStream::PercentEncodeStream</qualifiedname>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/pointer.h" line="1087" column="9" bodyfile="content/cereal/external/rapidjson/pointer.h" bodystart="1087" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="class_generic_pointer_1_1_percent_encode_stream_1ab932ed9ab00c9e0672755133fc8d8c11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GenericPointer&lt; ValueType, Allocator &gt;::PercentEncodeStream&lt; OutputStream &gt;::Put</definition>
+        <argsstring>(char c)</argsstring>
+        <name>Put</name>
+        <qualifiedname>GenericPointer::PercentEncodeStream::Put</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/pointer.h" line="1088" column="14" bodyfile="content/cereal/external/rapidjson/pointer.h" bodystart="1088" bodyend="1094"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A helper stream to encode character (UTF-8 code unit) into percent-encoded sequence. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/pointer.h" line="1085" column="5" bodyfile="content/cereal/external/rapidjson/pointer.h" bodystart="1085" bodyend="1097"/>
+    <listofallmembers>
+      <member refid="class_generic_pointer_1_1_percent_encode_stream_1a973de3c4a6b987a4fd301b8266d45d4a" prot="private" virt="non-virtual"><scope>GenericPointer::PercentEncodeStream</scope><name>os_</name></member>
+      <member refid="class_generic_pointer_1_1_percent_encode_stream_1a8e16af18669e49d0ab528ba0066475d2" prot="public" virt="non-virtual"><scope>GenericPointer::PercentEncodeStream</scope><name>PercentEncodeStream</name></member>
+      <member refid="class_generic_pointer_1_1_percent_encode_stream_1ab932ed9ab00c9e0672755133fc8d8c11" prot="public" virt="non-virtual"><scope>GenericPointer::PercentEncodeStream</scope><name>Put</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

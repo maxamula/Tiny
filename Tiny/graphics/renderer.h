@@ -15,8 +15,10 @@ namespace tiny
 	public:
 		virtual ~TinyForwardRenderer() override = default;
 		virtual RenderTextureHandle Build(FrameGraph& mFrameGraph) override;
+		void SetResolution(u32 width, u32 height);
 	protected:
-
+		u32 mResolutionX;
+		u32 mResolutionY;
 	};
 
 	class TinyDeferredRenderer : public IRenderer

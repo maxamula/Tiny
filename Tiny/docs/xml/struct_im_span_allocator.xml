@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_span_allocator" kind="struct" language="C++" prot="public">
+    <compoundname>ImSpanAllocator</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>int</type>
+        <declname>CHUNKS</declname>
+        <defname>CHUNKS</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_span_allocator_1a13ffffaa95637e4c95d215414f9600fd" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ImSpanAllocator&lt; CHUNKS &gt;::BasePtr</definition>
+        <argsstring></argsstring>
+        <name>BasePtr</name>
+        <qualifiedname>ImSpanAllocator::BasePtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="645" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_span_allocator_1aee84402fdab48c9a6a14994ae525d503" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImSpanAllocator&lt; CHUNKS &gt;::CurrOff</definition>
+        <argsstring></argsstring>
+        <name>CurrOff</name>
+        <qualifiedname>ImSpanAllocator::CurrOff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="646" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_span_allocator_1a5ef3ee2f2ba50bf7fe63c81decfa75e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImSpanAllocator&lt; CHUNKS &gt;::CurrIdx</definition>
+        <argsstring></argsstring>
+        <name>CurrIdx</name>
+        <qualifiedname>ImSpanAllocator::CurrIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="647" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_span_allocator_1a480822668b44faa98ae0363765059c06" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImSpanAllocator&lt; CHUNKS &gt;::Offsets[CHUNKS]</definition>
+        <argsstring>[CHUNKS]</argsstring>
+        <name>Offsets</name>
+        <qualifiedname>ImSpanAllocator::Offsets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="648" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_span_allocator_1afe77e900299427326cd6ba4f2a868897" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImSpanAllocator&lt; CHUNKS &gt;::Sizes[CHUNKS]</definition>
+        <argsstring>[CHUNKS]</argsstring>
+        <name>Sizes</name>
+        <qualifiedname>ImSpanAllocator::Sizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="649" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_span_allocator_1afdf8fba72df5de9e2f42fabb2e8f62b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImSpanAllocator&lt; CHUNKS &gt;::ImSpanAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>ImSpanAllocator</name>
+        <qualifiedname>ImSpanAllocator::ImSpanAllocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="651" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="651" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_allocator_1a89b08935873f324a44642c9be7388004" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImSpanAllocator&lt; CHUNKS &gt;::Reserve</definition>
+        <argsstring>(int n, size_t sz, int a=4)</argsstring>
+        <name>Reserve</name>
+        <qualifiedname>ImSpanAllocator::Reserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="652" column="18" bodyfile="graphics/imgui/imgui_internal.h" bodystart="652" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_allocator_1a6bdfe0539ad0cba8d9cb616ff20ae695" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImSpanAllocator&lt; CHUNKS &gt;::GetArenaSizeInBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetArenaSizeInBytes</name>
+        <qualifiedname>ImSpanAllocator::GetArenaSizeInBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="653" column="18" bodyfile="graphics/imgui/imgui_internal.h" bodystart="653" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_allocator_1af379bb313a9dae91ee56093aa81d83f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImSpanAllocator&lt; CHUNKS &gt;::SetArenaBasePtr</definition>
+        <argsstring>(void *base_ptr)</argsstring>
+        <name>SetArenaBasePtr</name>
+        <qualifiedname>ImSpanAllocator::SetArenaBasePtr</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>base_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="654" column="18" bodyfile="graphics/imgui/imgui_internal.h" bodystart="654" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_allocator_1adbca9351c7f01b3866abe21bc81d33a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * ImSpanAllocator&lt; CHUNKS &gt;::GetSpanPtrBegin</definition>
+        <argsstring>(int n)</argsstring>
+        <name>GetSpanPtrBegin</name>
+        <qualifiedname>ImSpanAllocator::GetSpanPtrBegin</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="655" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="655" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_allocator_1ae28975e7722b5fb3ec23c55e57dc31f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * ImSpanAllocator&lt; CHUNKS &gt;::GetSpanPtrEnd</definition>
+        <argsstring>(int n)</argsstring>
+        <name>GetSpanPtrEnd</name>
+        <qualifiedname>ImSpanAllocator::GetSpanPtrEnd</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="656" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="656" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_allocator_1a47aaeac7a303ec0d3a52e59189c4c627" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ImSpanAllocator&lt; CHUNKS &gt;::GetSpan</definition>
+        <argsstring>(int n, ImSpan&lt; T &gt; *span)</argsstring>
+        <name>GetSpan</name>
+        <qualifiedname>ImSpanAllocator::GetSpan</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_span" kindref="compound">ImSpan</ref>&lt; T &gt; *</type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="658" column="18" bodyfile="graphics/imgui/imgui_internal.h" bodystart="658" bodyend="658"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="643" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="644" bodyend="659"/>
+    <listofallmembers>
+      <member refid="struct_im_span_allocator_1a13ffffaa95637e4c95d215414f9600fd" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>BasePtr</name></member>
+      <member refid="struct_im_span_allocator_1a5ef3ee2f2ba50bf7fe63c81decfa75e7" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>CurrIdx</name></member>
+      <member refid="struct_im_span_allocator_1aee84402fdab48c9a6a14994ae525d503" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>CurrOff</name></member>
+      <member refid="struct_im_span_allocator_1a6bdfe0539ad0cba8d9cb616ff20ae695" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>GetArenaSizeInBytes</name></member>
+      <member refid="struct_im_span_allocator_1a47aaeac7a303ec0d3a52e59189c4c627" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>GetSpan</name></member>
+      <member refid="struct_im_span_allocator_1adbca9351c7f01b3866abe21bc81d33a8" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>GetSpanPtrBegin</name></member>
+      <member refid="struct_im_span_allocator_1ae28975e7722b5fb3ec23c55e57dc31f9" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>GetSpanPtrEnd</name></member>
+      <member refid="struct_im_span_allocator_1afdf8fba72df5de9e2f42fabb2e8f62b6" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>ImSpanAllocator</name></member>
+      <member refid="struct_im_span_allocator_1a480822668b44faa98ae0363765059c06" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>Offsets</name></member>
+      <member refid="struct_im_span_allocator_1a89b08935873f324a44642c9be7388004" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>Reserve</name></member>
+      <member refid="struct_im_span_allocator_1af379bb313a9dae91ee56093aa81d83f3" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>SetArenaBasePtr</name></member>
+      <member refid="struct_im_span_allocator_1afe77e900299427326cd6ba4f2a868897" prot="public" virt="non-virtual"><scope>ImSpanAllocator</scope><name>Sizes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

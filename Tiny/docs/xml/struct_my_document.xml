@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_my_document" kind="struct" language="C++" prot="public">
+    <compoundname>MyDocument</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_my_document_1a2fedfb9783c251ae4d200c686e9e3180" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MyDocument::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>MyDocument::Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8173" column="16" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_document_1abe5ed4d7f257d5a2fe5cf2a1844b22f9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyDocument::Open</definition>
+        <argsstring></argsstring>
+        <name>Open</name>
+        <qualifiedname>MyDocument::Open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8174" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_document_1a1537678ceac13d60a512bf63e2668745" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyDocument::OpenPrev</definition>
+        <argsstring></argsstring>
+        <name>OpenPrev</name>
+        <qualifiedname>MyDocument::OpenPrev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8175" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_document_1a8d239384f0e6d16da96b783a4f14eb55" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyDocument::Dirty</definition>
+        <argsstring></argsstring>
+        <name>Dirty</name>
+        <qualifiedname>MyDocument::Dirty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8176" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_document_1a14044f55bd2f6c6dd43b60150b1de6eb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyDocument::WantClose</definition>
+        <argsstring></argsstring>
+        <name>WantClose</name>
+        <qualifiedname>MyDocument::WantClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8177" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_document_1a38d0b4dc1d4cd036ab39031fbd6d57cc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref></type>
+        <definition>ImVec4 MyDocument::Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <qualifiedname>MyDocument::Color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8178" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8178" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_my_document_1a8fa9b646d5e545976cbbe06e010370bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyDocument::MyDocument</definition>
+        <argsstring>(const char *name, bool open=true, const ImVec4 &amp;color=ImVec4(1.0f, 1.0f, 1.0f, 1.0f))</argsstring>
+        <name>MyDocument</name>
+        <qualifiedname>MyDocument::MyDocument</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>open</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec4" kindref="compound">ImVec4</ref> &amp;</type>
+          <declname>color</declname>
+          <defval><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref>(1.0f, 1.0f, 1.0f, 1.0f)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8180" column="5" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8180" bodyend="8187"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_document_1a43b510961f90f9fb83baa58bf2c771dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyDocument::DoOpen</definition>
+        <argsstring>()</argsstring>
+        <name>DoOpen</name>
+        <qualifiedname>MyDocument::DoOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8188" column="10" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8188" bodyend="8188"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_document_1a2bfae8f35fd62dbad792c7b5d52059b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyDocument::DoQueueClose</definition>
+        <argsstring>()</argsstring>
+        <name>DoQueueClose</name>
+        <qualifiedname>MyDocument::DoQueueClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8189" column="10" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8189" bodyend="8189"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_document_1ab204604930ba2489fb0f1ef2a53206a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyDocument::DoForceClose</definition>
+        <argsstring>()</argsstring>
+        <name>DoForceClose</name>
+        <qualifiedname>MyDocument::DoForceClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8190" column="10" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8190" bodyend="8190"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_document_1a95b8cc478b59e5fc70a187e990506668" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyDocument::DoSave</definition>
+        <argsstring>()</argsstring>
+        <name>DoSave</name>
+        <qualifiedname>MyDocument::DoSave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8191" column="10" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8191" bodyend="8191"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_my_document_1aa04dcc6c889d9a20488a8226d0225ebe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MyDocument::DisplayContents</definition>
+        <argsstring>(ImGuiContext *ctx, MyDocument *doc)</argsstring>
+        <name>DisplayContents</name>
+        <qualifiedname>MyDocument::DisplayContents</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_my_document" kindref="compound">MyDocument</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8194" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8194" bodyend="8208"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_document_1a220c6bdd97f8ab46087dbd168fa84c31" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MyDocument::DisplayContextMenu</definition>
+        <argsstring>(ImGuiContext *ctx, MyDocument *doc)</argsstring>
+        <name>DisplayContextMenu</name>
+        <qualifiedname>MyDocument::DisplayContextMenu</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_my_document" kindref="compound">MyDocument</ref> *</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8211" column="17" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8211" bodyend="8223"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="1">
+        <label>MyDocument</label>
+        <link refid="struct_my_document"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Color</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_demo.cpp" line="8171" column="1" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8172" bodyend="8224"/>
+    <listofallmembers>
+      <member refid="struct_my_document_1a38d0b4dc1d4cd036ab39031fbd6d57cc" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>Color</name></member>
+      <member refid="struct_my_document_1a8d239384f0e6d16da96b783a4f14eb55" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>Dirty</name></member>
+      <member refid="struct_my_document_1aa04dcc6c889d9a20488a8226d0225ebe" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>DisplayContents</name></member>
+      <member refid="struct_my_document_1a220c6bdd97f8ab46087dbd168fa84c31" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>DisplayContextMenu</name></member>
+      <member refid="struct_my_document_1ab204604930ba2489fb0f1ef2a53206a9" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>DoForceClose</name></member>
+      <member refid="struct_my_document_1a43b510961f90f9fb83baa58bf2c771dc" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>DoOpen</name></member>
+      <member refid="struct_my_document_1a2bfae8f35fd62dbad792c7b5d52059b9" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>DoQueueClose</name></member>
+      <member refid="struct_my_document_1a95b8cc478b59e5fc70a187e990506668" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>DoSave</name></member>
+      <member refid="struct_my_document_1a8fa9b646d5e545976cbbe06e010370bc" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>MyDocument</name></member>
+      <member refid="struct_my_document_1a2fedfb9783c251ae4d200c686e9e3180" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>Name</name></member>
+      <member refid="struct_my_document_1abe5ed4d7f257d5a2fe5cf2a1844b22f9" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>Open</name></member>
+      <member refid="struct_my_document_1a1537678ceac13d60a512bf63e2668745" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>OpenPrev</name></member>
+      <member refid="struct_my_document_1a14044f55bd2f6c6dd43b60150b1de6eb" prot="public" virt="non-virtual"><scope>MyDocument</scope><name>WantClose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

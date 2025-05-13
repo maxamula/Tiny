@@ -5,15 +5,15 @@
 
 using namespace entt;
 
-TINY_REGISTER_MATERIAL(InitializeWaterMaterial, WaterMaterialInstance);
+TINY_REGISTER_MATERIAL(InitializeArt1Material, OceanMaterialInstance);
 
-META(WaterMaterialInstance)
+META(OceanMaterialInstance)
 {
-	meta.base<tiny::fx::MaterialInstance<WaterMaterialInstance>>().ctor()
-		.data<&WaterMaterialInstance::ilShaderParams>("ilShaderParams"_hs);
+	meta.base<tiny::fx::MaterialInstance<OceanMaterialInstance>>().ctor()
+		.data<&OceanMaterialInstance::ilShaderParams>("ilShaderParams"_hs);
 }
 
-void InitializeWaterMaterial(ID3D12Device* pDevice, tiny::fx::Material& material)
+void InitializeArt1Material(ID3D12Device* pDevice, tiny::fx::Material& material)
 {
 	tiny::fx::MaterialInitializationDesc desc
 	{

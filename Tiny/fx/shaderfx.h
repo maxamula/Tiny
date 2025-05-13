@@ -22,6 +22,13 @@ namespace tiny::fx
 		ShaderSpecialBind_Environment,
 	};
 
+	enum ShaderCBufferType
+	{
+		ShaderCBufferType_Constants,
+		ShaderCBufferType_CPU,
+		ShaderCBufferType_GPU,
+	};
+
 	struct ShaderResourceSpecialBinding
 	{
 		u32 rootParamIndex;
@@ -33,6 +40,10 @@ namespace tiny::fx
 		D3D_SHADER_INPUT_TYPE type;
 		u64 fieldID;
 		u32 rootParamIndex;
+		union
+		{
+			ShaderCBufferType cbufferType;
+		} details;
 	};
 
 #pragma endregion

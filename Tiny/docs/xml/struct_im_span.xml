@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_span" kind="struct" language="C++" prot="public">
+    <compoundname>ImSpan</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_span_1a9cb5f8d45dff07a275c97b4d07915878" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* ImSpan&lt; T &gt;::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>ImSpan::Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="615" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_span_1a15a821b2ed71c9e447611cb3fe21d16c" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* ImSpan&lt; T &gt;::DataEnd</definition>
+        <argsstring></argsstring>
+        <name>DataEnd</name>
+        <qualifiedname>ImSpan::DataEnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="616" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_span_1a7321bafbe082a57c06851713da41c42d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImSpan&lt; T &gt;::ImSpan</definition>
+        <argsstring>()</argsstring>
+        <name>ImSpan</name>
+        <qualifiedname>ImSpan::ImSpan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="619" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="619" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a504d7469748d2ebf782f3993d8f35ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImSpan&lt; T &gt;::ImSpan</definition>
+        <argsstring>(T *data, int size)</argsstring>
+        <name>ImSpan</name>
+        <qualifiedname>ImSpan::ImSpan</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="620" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="620" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1abc89fdbfad2b87dd044a197983c4eddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImSpan&lt; T &gt;::ImSpan</definition>
+        <argsstring>(T *data, T *data_end)</argsstring>
+        <name>ImSpan</name>
+        <qualifiedname>ImSpan::ImSpan</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="621" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="621" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a0c07dbc18bebd7d02ca1fb866861506a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImSpan&lt; T &gt;::set</definition>
+        <argsstring>(T *data, int size)</argsstring>
+        <name>set</name>
+        <qualifiedname>ImSpan::set</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="623" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="623" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1aa663983a692baf82e44687cc9a373964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImSpan&lt; T &gt;::set</definition>
+        <argsstring>(T *data, T *data_end)</argsstring>
+        <name>set</name>
+        <qualifiedname>ImSpan::set</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="624" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="624" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a88270b885861b27640003f6a8a3effa0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImSpan&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ImSpan::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="625" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="625" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a23a632e44927fde363df6191531591f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImSpan&lt; T &gt;::size_in_bytes</definition>
+        <argsstring>() const</argsstring>
+        <name>size_in_bytes</name>
+        <qualifiedname>ImSpan::size_in_bytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="626" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="626" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a3290bb3b3a0525cd156a68c2b10413c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ImSpan&lt; T &gt;::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ImSpan::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="627" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="627" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1aece61505cbe4789a4423eaabdd5689dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ImSpan&lt; T &gt;::operator[]</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ImSpan::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="628" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="628" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a7ba3b04224a0fb1462e73f7e197bfae3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImSpan&lt; T &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>ImSpan::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="630" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="630" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1abb79a7731eb2fc2c87cf2c162a2af9b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * ImSpan&lt; T &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>ImSpan::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="631" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="631" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a58afe6e42b431f4bed175d36720ec025" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImSpan&lt; T &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>ImSpan::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="632" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="632" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a595471c094072ac34cc318d8ba414f5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * ImSpan&lt; T &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>ImSpan::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="633" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="633" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_span_1a7e80a5146acbfac4bb952f80daf3c305" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImSpan&lt; T &gt;::index_from_ptr</definition>
+        <argsstring>(const T *it) const</argsstring>
+        <name>index_from_ptr</name>
+        <qualifiedname>ImSpan::index_from_ptr</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="636" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="636" bodyend="636"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="613" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="614" bodyend="637"/>
+    <listofallmembers>
+      <member refid="struct_im_span_1a7ba3b04224a0fb1462e73f7e197bfae3" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>begin</name></member>
+      <member refid="struct_im_span_1abb79a7731eb2fc2c87cf2c162a2af9b6" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>begin</name></member>
+      <member refid="struct_im_span_1a9cb5f8d45dff07a275c97b4d07915878" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>Data</name></member>
+      <member refid="struct_im_span_1a15a821b2ed71c9e447611cb3fe21d16c" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>DataEnd</name></member>
+      <member refid="struct_im_span_1a58afe6e42b431f4bed175d36720ec025" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>end</name></member>
+      <member refid="struct_im_span_1a595471c094072ac34cc318d8ba414f5a" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>end</name></member>
+      <member refid="struct_im_span_1a7321bafbe082a57c06851713da41c42d" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>ImSpan</name></member>
+      <member refid="struct_im_span_1a504d7469748d2ebf782f3993d8f35ad2" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>ImSpan</name></member>
+      <member refid="struct_im_span_1abc89fdbfad2b87dd044a197983c4eddb" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>ImSpan</name></member>
+      <member refid="struct_im_span_1a7e80a5146acbfac4bb952f80daf3c305" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>index_from_ptr</name></member>
+      <member refid="struct_im_span_1a3290bb3b3a0525cd156a68c2b10413c1" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>operator[]</name></member>
+      <member refid="struct_im_span_1aece61505cbe4789a4423eaabdd5689dc" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>operator[]</name></member>
+      <member refid="struct_im_span_1a0c07dbc18bebd7d02ca1fb866861506a" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>set</name></member>
+      <member refid="struct_im_span_1aa663983a692baf82e44687cc9a373964" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>set</name></member>
+      <member refid="struct_im_span_1a88270b885861b27640003f6a8a3effa0" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>size</name></member>
+      <member refid="struct_im_span_1a23a632e44927fde363df6191531591f2" prot="public" virt="non-virtual"><scope>ImSpan</scope><name>size_in_bytes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

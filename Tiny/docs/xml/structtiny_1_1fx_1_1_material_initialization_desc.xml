@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_material_initialization_desc" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::MaterialInitializationDesc</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_material_initialization_desc_1a8605f1efaef89305006f910a5ef35673" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" kindref="compound">FxVariantsCompilationDesc</ref></type>
+        <definition>FxVariantsCompilationDesc tiny::fx::MaterialInitializationDesc::fxDesc</definition>
+        <argsstring></argsstring>
+        <name>fxDesc</name>
+        <qualifiedname>tiny::fx::MaterialInitializationDesc::fxDesc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="233" column="27" bodyfile="fx/shaderfx.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_material_initialization_desc_1aa52535effa3e32c02a072306eeec55d4" prot="public" static="no" mutable="no">
+        <type>D3D12_GRAPHICS_PIPELINE_STATE_DESC</type>
+        <definition>D3D12_GRAPHICS_PIPELINE_STATE_DESC tiny::fx::MaterialInitializationDesc::basePsoDesc</definition>
+        <argsstring></argsstring>
+        <name>basePsoDesc</name>
+        <qualifiedname>tiny::fx::MaterialInitializationDesc::basePsoDesc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="234" column="36" bodyfile="fx/shaderfx.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_material_initialization_desc_1a647d8112b3434da566735182c7b715a4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1fx_1_1_static_sampler_desc" kindref="compound">StaticSamplerDesc</ref> &gt;</type>
+        <definition>std::vector&lt;StaticSamplerDesc&gt; tiny::fx::MaterialInitializationDesc::staticSamplers</definition>
+        <argsstring></argsstring>
+        <name>staticSamplers</name>
+        <qualifiedname>tiny::fx::MaterialInitializationDesc::staticSamplers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="235" column="13" bodyfile="fx/shaderfx.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::fx::FxVariantsCompilationDesc</label>
+        <link refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc"/>
+      </node>
+      <node id="1">
+        <label>tiny::fx::MaterialInitializationDesc</label>
+        <link refid="structtiny_1_1fx_1_1_material_initialization_desc"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fxDesc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="fx/shaderfx.h" line="231" column="1" bodyfile="fx/shaderfx.h" bodystart="232" bodyend="236"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_material_initialization_desc_1aa52535effa3e32c02a072306eeec55d4" prot="public" virt="non-virtual"><scope>tiny::fx::MaterialInitializationDesc</scope><name>basePsoDesc</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_initialization_desc_1a8605f1efaef89305006f910a5ef35673" prot="public" virt="non-virtual"><scope>tiny::fx::MaterialInitializationDesc</scope><name>fxDesc</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_initialization_desc_1a647d8112b3434da566735182c7b715a4" prot="public" virt="non-virtual"><scope>tiny::fx::MaterialInitializationDesc</scope><name>staticSamplers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

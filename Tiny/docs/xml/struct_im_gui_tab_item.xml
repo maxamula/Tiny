@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_tab_item" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTabItem</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1aa1a225e6ac0ee4dfa815fe5c7c63fe92" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTabItem::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiTabItem::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2547" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a68c7537c57324068fbca54861eab5c95" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aec9b231c0bca6ab9afc507ccfe60d872" kindref="member">ImGuiTabItemFlags</ref></type>
+        <definition>ImGuiTabItemFlags ImGuiTabItem::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiTabItem::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2548" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a5f386218e311d8c84db72316f686112a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTabItem::LastFrameVisible</definition>
+        <argsstring></argsstring>
+        <name>LastFrameVisible</name>
+        <qualifiedname>ImGuiTabItem::LastFrameVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2549" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1ad57f644ed9813c02a9616711320535ac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTabItem::LastFrameSelected</definition>
+        <argsstring></argsstring>
+        <name>LastFrameSelected</name>
+        <qualifiedname>ImGuiTabItem::LastFrameSelected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2550" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1ac09eeb85bebba09f18ac959bc32b5cef" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabItem::Offset</definition>
+        <argsstring></argsstring>
+        <name>Offset</name>
+        <qualifiedname>ImGuiTabItem::Offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2551" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a215d96577ec4396f224524eb8851ff2a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabItem::Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <qualifiedname>ImGuiTabItem::Width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2552" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a148bdc4a3de82e2b7983e6b4937730bc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabItem::ContentWidth</definition>
+        <argsstring></argsstring>
+        <name>ContentWidth</name>
+        <qualifiedname>ImGuiTabItem::ContentWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2553" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a53a1bf7ee4ffff89df56047037af2a29" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabItem::RequestedWidth</definition>
+        <argsstring></argsstring>
+        <name>RequestedWidth</name>
+        <qualifiedname>ImGuiTabItem::RequestedWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2554" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a6560d6c4fac208037a7ea19fca37e3f9" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1ad8d79c46321c184061544960da4c9424" kindref="member">ImS32</ref></type>
+        <definition>ImS32 ImGuiTabItem::NameOffset</definition>
+        <argsstring></argsstring>
+        <name>NameOffset</name>
+        <qualifiedname>ImGuiTabItem::NameOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2555" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a800f006e83941963238ed132712dbf2c" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTabItem::BeginOrder</definition>
+        <argsstring></argsstring>
+        <name>BeginOrder</name>
+        <qualifiedname>ImGuiTabItem::BeginOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2556" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a5101980b4bec478c8fc7910522a40dc8" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTabItem::IndexDuringLayout</definition>
+        <argsstring></argsstring>
+        <name>IndexDuringLayout</name>
+        <qualifiedname>ImGuiTabItem::IndexDuringLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2557" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_item_1a7feae3ddfc1570b1c13230a0ee040be4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTabItem::WantClose</definition>
+        <argsstring></argsstring>
+        <name>WantClose</name>
+        <qualifiedname>ImGuiTabItem::WantClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2558" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2558" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_tab_item_1a325c1e06aa749d2dece9d0d589f9dfd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTabItem::ImGuiTabItem</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTabItem</name>
+        <qualifiedname>ImGuiTabItem::ImGuiTabItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2560" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2560" bodyend="2560"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="2545" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2546" bodyend="2561"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_tab_item_1a800f006e83941963238ed132712dbf2c" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>BeginOrder</name></member>
+      <member refid="struct_im_gui_tab_item_1a148bdc4a3de82e2b7983e6b4937730bc" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>ContentWidth</name></member>
+      <member refid="struct_im_gui_tab_item_1a68c7537c57324068fbca54861eab5c95" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_tab_item_1aa1a225e6ac0ee4dfa815fe5c7c63fe92" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>ID</name></member>
+      <member refid="struct_im_gui_tab_item_1a325c1e06aa749d2dece9d0d589f9dfd1" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>ImGuiTabItem</name></member>
+      <member refid="struct_im_gui_tab_item_1a5101980b4bec478c8fc7910522a40dc8" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>IndexDuringLayout</name></member>
+      <member refid="struct_im_gui_tab_item_1ad57f644ed9813c02a9616711320535ac" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>LastFrameSelected</name></member>
+      <member refid="struct_im_gui_tab_item_1a5f386218e311d8c84db72316f686112a" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>LastFrameVisible</name></member>
+      <member refid="struct_im_gui_tab_item_1a6560d6c4fac208037a7ea19fca37e3f9" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>NameOffset</name></member>
+      <member refid="struct_im_gui_tab_item_1ac09eeb85bebba09f18ac959bc32b5cef" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>Offset</name></member>
+      <member refid="struct_im_gui_tab_item_1a53a1bf7ee4ffff89df56047037af2a29" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>RequestedWidth</name></member>
+      <member refid="struct_im_gui_tab_item_1a7feae3ddfc1570b1c13230a0ee040be4" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>WantClose</name></member>
+      <member refid="struct_im_gui_tab_item_1a215d96577ec4396f224524eb8851ff2a" prot="public" virt="non-virtual"><scope>ImGuiTabItem</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

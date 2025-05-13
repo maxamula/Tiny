@@ -2,8 +2,10 @@
 #include "graphics/renderctx.h"
 #include "content/content.h"
 #include "taskflow/taskflow.hpp"
+#include "taskflow/algorithm/for_each.hpp"
 #include "scene.h"
 #include <functional>
+#include <windowsx.h>
 
 // For initializing the engine
 #include "engine/window_internal.h"
@@ -14,11 +16,13 @@
 #include "content/stdmat.h"
 
 #include "graphics/pass.h"
-
-#include "cereal/cereal.hpp"
-
+#include "graphics/imgui/imgui.h"
+#include "graphics/imgui/imgui_impl_win32.h"
+#include "graphics/imgui/imgui_impl_dx12.h"
 
 using namespace entt;
+
+extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(ImGuiContext* ctx, HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 namespace tiny
 {
@@ -30,28 +34,55 @@ namespace tiny
 			.data<&Window::vp>("vp"_hs);
 	}
 
-	bool gRunning = false;
-	D3DContext gContext;
-	Dispatcher gMainDispatcher;
-	Dispatcher gDeferDispatcher;
-	FlushDispatcher gFlushDispatcher;
-	std::deque<RenderView> gRenderViews;
-		
-	Scene gScene;	
+	struct LockedBus
+	{
+		entt::dispatcher dispatcher;
+		std::mutex mutex;
+	};
+
+	bool					gRunning = false;
+	bool					gDebugGraphics = false;
+	D3DContext				gContext;
+	Dispatcher				gMainDispatcher;
+	Dispatcher				gDeferDispatcher;
+	std::deque<RenderView>	gRenderViews;
+	std::deque<Scene>		gScenes;
+	std::deque<LockedBus>	gSceneDispatchers;
+	std::mutex				gResizeMutex;
+	std::set<Window*>		gNeedResizeWindows;	
 
 #pragma region Window
 
 	Window::Window(const WindowDesc& desc)
-		: hWnd(CreateWindow(TINY_WINDOW_CLASS, "Quirky Sandbox", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, nullptr, nullptr, GetModuleHandle("Tiny"), nullptr)),
-		vp(gContext, hWnd, D3DViewportFlags_Windowed), proc(desc.proc)
+		: hWnd(CreateWindow(TINY_WINDOW_CLASS, desc.title.c_str(),
+			desc.hParent ? WS_CHILD : WS_OVERLAPPEDWINDOW, desc.posX, desc.posY, desc.width, desc.height, desc.hParent, nullptr, GetModuleHandle("Tiny"), nullptr)),
+		vp(gContext, hWnd, D3DViewportFlags_Windowed), proc(desc.proc), mImContext(nullptr), mDispatcher(gSceneDispatchers.emplace_back())
 	{
 		SetWindowLongPtr(hWnd, GWLP_USERDATA, (LONG_PTR)this);
-		ShowWindow(hWnd, SW_SHOW);
+
+		if (gDebugGraphics)
+		{
+			mImguiSrv = GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV).AllocateDescriptor();
+
+			mImContext = ImGui::CreateContext();
+			ImGui::StyleColorsDark(mImContext);
+			ImGuiIO& io = ImGui::GetIO(mImContext); (void)io;
+			ImGui_ImplWin32_Init(mImContext, hWnd);
+			ImGui_ImplDX12_Init(mImContext, gDevice, gContext.framesInFlight, DXGI_FORMAT_R8G8B8A8_UNORM,
+				*GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV),
+				mImguiSrv.cpu, mImguiSrv.gpu);
+		}
 	}
 
 	Window::~Window()
 	{
-		Destroyed();
+		if (mImContext)
+		{
+			ImGui_ImplDX12_Shutdown(mImContext);
+			ImGui_ImplWin32_Shutdown(mImContext);
+			ImGui::DestroyContext(mImContext);
+		}
+
 		if (hWnd)
 		{
 			SetWindowLongPtr(hWnd, GWLP_USERDATA, NULL);
@@ -64,11 +95,11 @@ namespace tiny
 	{
 		Window* w = reinterpret_cast<Window*>(GetWindowLongPtr(hWnd, GWLP_USERDATA));
 
-		/*if (ImGui_ImplWin32_WndProcHandler(hWnd, message, wParam, lParam))
-			return TRUE;*/
-
 		if (w)
 		{
+			if (gDebugGraphics && w->mImContext && ImGui_ImplWin32_WndProcHandler(w->mImContext, hWnd, message, wParam, lParam))
+				return TRUE;
+
 			switch (message)
 			{
 			case WM_CLOSE:
@@ -78,16 +109,60 @@ namespace tiny
 			{
 				w->width = LOWORD(lParam);
 				w->height = HIWORD(lParam);
-				
-				gFlushDispatcher.PostOnce([w]()
 				{
-					w->vp.ReleaseRenderTargets();
-					u32 flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_TEARING | DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
-					THROW_IF_FAILED(w->vp.swap->ResizeBuffers(w->vp.buffering, 0, 0, DXGI_FORMAT_UNKNOWN, flags));
-					w->vp.CreateRendertargetViews();
-				});
-				w->Resized(w->width, w->height);
+					std::lock_guard lock(gResizeMutex);
+					gNeedResizeWindows.insert(w);
+				}
 			}
+			case WM_KEYDOWN:
+			case WM_SYSKEYDOWN:
+			{
+				std::lock_guard lock(w->mDispatcher.mutex);
+				w->mDispatcher.dispatcher.enqueue<KeyEvent>(u16(wParam), true, ((lParam & 0x40000000) != 0));
+			}
+			break;
+			case WM_KEYUP:
+			case WM_SYSKEYUP:
+			{
+				std::lock_guard lock(w->mDispatcher.mutex);
+				w->mDispatcher.dispatcher.enqueue<KeyEvent>(u16(wParam), false, false);
+			}
+			break;	
+			case WM_MOUSEMOVE:
+			{
+				std::lock_guard lock(w->mDispatcher.mutex);
+				static POINT last; 
+				POINT cur
+				{ 
+					.x = GET_X_LPARAM(lParam),
+					.y = GET_Y_LPARAM(lParam)
+				};
+				w->mDispatcher.dispatcher.enqueue<MouseMoveEvent>(f32(cur.x - last.x), f32(cur.y - last.y));
+				last = cur;
+			}
+			break;
+			case WM_MOUSEWHEEL:
+			{
+				std::lock_guard lock(w->mDispatcher.mutex);
+				w->mDispatcher.dispatcher.enqueue<MouseWheelEvent>(GET_WHEEL_DELTA_WPARAM(wParam) / 120.0f);
+			}
+			break;
+			case WM_LBUTTONDOWN:
+			case WM_RBUTTONDOWN:
+			case WM_MBUTTONDOWN:
+			case WM_LBUTTONUP:
+			case WM_RBUTTONUP:
+			case WM_MBUTTONUP:
+			{
+				std::lock_guard lock(w->mDispatcher.mutex);
+				MouseButtonEvent::MouseButton button = MouseButtonEvent::MouseButton_Left;
+				if (message == WM_RBUTTONDOWN || message == WM_RBUTTONUP)
+					button = MouseButtonEvent::MouseButton_Right;
+				else if (message == WM_MBUTTONDOWN || message == WM_MBUTTONUP)
+					button = MouseButtonEvent::MouseButton_Middle;
+				w->mDispatcher.dispatcher.enqueue<MouseButtonEvent>(button, message == WM_LBUTTONDOWN || message == WM_RBUTTONDOWN || message == WM_MBUTTONDOWN);
+			}
+			break;
 			}
 
 			return w->proc ? w->proc(w, hWnd, message, wParam, lParam) : DefWindowProc(hWnd, message, wParam, lParam);
@@ -95,14 +170,51 @@ namespace tiny
 		return DefWindowProc(hWnd, message, wParam, lParam);
 	}
 
-#pragma endregion
-
-	Scene& GetScene()
+	entt::dispatcher& Window::InputBus()
 	{
-		return gScene;
+		return mDispatcher.dispatcher;
 	}
 
-	class SubmitToSwapchainPass : public IRenderPass
+	void Window::Show()
+	{
+		gMainDispatcher.Post([this]()
+		{
+			ShowWindow(hWnd, SW_SHOW);
+		});
+	}
+
+	void Window::Hide()
+	{
+		gMainDispatcher.Post([this]()
+		{
+			ShowWindow(hWnd, SW_HIDE);
+		});
+	}
+
+	void Window::SetTitle(const std::string& title)
+	{
+		gMainDispatcher.Post([this, title]()
+			{
+				SetWindowTextA(hWnd, title.c_str());
+			});
+	}
+
+	void Window::SetFullscreen(bool fullscreen)
+	{
+		vp.swap->SetFullscreenState(fullscreen, nullptr);
+	}
+
+	void Window::SetRect(u16 x, u16 y, u16 width, u16 height)
+	{
+		gMainDispatcher.Post([this, x, y, width, height]()
+		{
+			SetWindowPos(hWnd, HWND_TOP, x, y, width, height, SWP_NOOWNERZORDER | SWP_FRAMECHANGED);
+		});
+	}
+
+#pragma endregion
+
+	class SubmitToSwapchainPass : public RenderPassBase
 	{
 	public:
 		SubmitToSwapchainPass(RenderTextureHandle targetTexture, Window* pWindow)
@@ -123,7 +235,7 @@ namespace tiny
 			D3D12_CPU_DESCRIPTOR_HANDLE rtv = pWindow->vp.renderTargets[pWindow->vp.swap->GetCurrentBackBufferIndex()].allocation.cpu;
 			cmd->OMSetRenderTargets(1, &rtv, FALSE, nullptr);
 
-			float color[4] = { 0.8f, 0.8f, 0.7f, 1.0f };
+			float color[4] = { 0.01f, 0.01f, 0.01f, 1.0f };
 			cmd->ClearRenderTargetView(rtv, color, 0, nullptr);
 
 			D3D12_VIEWPORT viewport = { 0.0f, 0.0f, pWindow->width, pWindow->height, 0.0f, 1.0f };
@@ -138,6 +250,22 @@ namespace tiny
 			context.BindMaterial(&mat);
 			cmd->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 			cmd->DrawInstanced(6, 1, 0, 0);
+
+			if (gDebugGraphics && pWindow->mImContext)
+			{
+				ImGuiContext* imctx = pWindow->mImContext;
+				ImGui_ImplDX12_NewFrame(imctx);
+				ImGui_ImplWin32_NewFrame(imctx);
+				ImGui::NewFrame(imctx);
+
+				ImGui::SetNextWindowPos(imctx, ImVec2(static_cast<f32>(pWindow->width) - 300.0, 0), ImGuiCond_Always);
+				ImGui::SetNextWindowSize(imctx, ImVec2(300.0f, static_cast<f32>(pWindow->height)), ImGuiCond_Always);
+				ImGui::Begin(imctx, "TINY DEBUGGER", nullptr, ImGuiWindowFlags_NoResize);
+				ImGui::End(imctx);
+
+				ImGui::Render(imctx);
+				ImGui_ImplDX12_RenderDrawData(imctx, ImGui::GetDrawData(imctx), context.cmd);
+			}
 		}
 	private:
 		const Window* 				pWindow;
@@ -150,16 +278,26 @@ namespace tiny
 			THROW_ENGINE_EXCEPTION("Engine is already running");
 		gContext.Flush();
 		gRunning = true;
-
-		entt::entity obj = gScene.CreateObject("test object");
-		gScene.mRegistry.emplace<Mesh>(obj);
-		
-		entt::registry renderRegistry;
+	
 		tf::Taskflow taskflow;
 		tf::Task dispatchJob = taskflow.emplace([]() 
 		{
-				gDeferDispatcher.ProcessDispatchQueue();
-				gFlushDispatcher.ProcessDispatchQueue();
+				gDeferDispatcher.ProcessDispatchQueue();	
+				{
+					std::lock_guard lock(gResizeMutex);
+					if (!gNeedResizeWindows.empty())
+					{
+						gContext.Flush();
+						for (Window* window : gNeedResizeWindows)
+						{
+							window->vp.ReleaseRenderTargets();
+							u32 flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_TEARING | DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
+							THROW_IF_FAILED(window->vp.swap->ResizeBuffers(window->vp.buffering, 0, 0, DXGI_FORMAT_UNKNOWN, flags));
+							window->vp.CreateRendertargetViews();
+						}
+						gNeedResizeWindows.clear();
+					}
+				}
 
 				for (auto& view : gRenderViews)
 				{
@@ -173,68 +311,61 @@ namespace tiny
 					}
 				}
 		}).name("Dispatch Job");
+
+		tf::Task logicJob = taskflow.emplace([]()
+		{
+				for (auto& dispatcher : gSceneDispatchers)
+				{
+					std::lock_guard lock(dispatcher.mutex);
+					dispatcher.dispatcher.update();
+				}
+				for (auto& scene : gScenes)
+				{
+					auto view = scene.mRegistry.view<ComponentScript>();
+					for (auto [entity, script] : view.each())
+					{
+						script.script->OnUpdate(entity, 0.001);
+					}
+				}
+		}).name("Logic Job");
+
 		tf::Task renderJob = taskflow.emplace([](tf::Subflow& sf)
 		{
 				try
 				{
 					gContext.BeginScene();
-					
-					CComPtr<ID3D12GraphicsCommandList6> cmd = gContext.mainQueue.AcquireNextCommandList();
 					std::set<Window*> windows;
-					
 					for (auto& view : gRenderViews)
 					{
-						std::chrono::high_resolution_clock::time_point start = std::chrono::high_resolution_clock::now();
-						auto rt = view.window->vp.renderTargets[view.window->vp.swap->GetCurrentBackBufferIndex()];
+						D3DViewport::RenderTarget rt = view.window->vp.renderTargets[view.window->vp.swap->GetCurrentBackBufferIndex()];
 						gContext.Defer(rt.allocation);
 						gContext.Defer(rt.resource);
-
-						ID3D12DescriptorHeap* heaps[] = { *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV), *GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE_SAMPLER) };
-						cmd->SetDescriptorHeaps(_countof(heaps), heaps);
-						
-						CD3DX12_RESOURCE_BARRIER barrier = CD3DX12_RESOURCE_BARRIER::Transition(rt.resource, D3D12_RESOURCE_STATE_PRESENT, D3D12_RESOURCE_STATE_RENDER_TARGET);
-						cmd->ResourceBarrier(1, &barrier);		
-									
-						view.frameGraph.ExecuteAsync(sf, gContext, gScene.mRegistry);
-												
+						view.frameGraph.ExecuteAsync(sf, gContext, view, rt.resource);
 						windows.insert(view.window);
-						barrier = CD3DX12_RESOURCE_BARRIER::Transition(rt.resource, D3D12_RESOURCE_STATE_RENDER_TARGET, D3D12_RESOURCE_STATE_PRESENT);
-						cmd->ResourceBarrier(1, &barrier);
-						
-						std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
-						std::chrono::duration<double, std::milli> elapsed = end - start;
-						OutputDebugStringA((std::to_string(elapsed.count()) + "\n").c_str());
-					}
-					
+					}			
 					gContext.EndScene([windows]()
 					{
 						for (Window* window : windows)
-							window->vp.Present(0);
+							window->vp.Present(1);
 					});
 				}
 				catch (const EngineException& e)
 				{
 					MessageBoxA(nullptr, e.what(), "Engine Exception", MB_OK | MB_ICONERROR);
 					return;
-				}
-				catch (const std::exception& e)
-				{
-					MessageBoxA(nullptr, e.what(), "Exception", MB_OK | MB_ICONERROR);
-					return;
-				}
-				catch (...)
-				{
-					MessageBoxA(nullptr, "Unknown exception", "Exception", MB_OK | MB_ICONERROR);
-					return;
-				}
-				
-				
-		});
+				}				
+		}).name("RenderJob");
+		
+		tf::Task updateRenderItemsJob = taskflow.for_each(gScenes.begin(), gScenes.end(), [](Scene& scene)
+		{
+			scene.FinalizeLogicfFrame();
+		}).name("Update Render Items Job");
 
 		dispatchJob.precede(renderJob);
+		///logicJob.precede(updateRenderItemsJob);
+		renderJob.precede(updateRenderItemsJob);
 
 		tf::Executor executor;
-
 		executor.run_until(taskflow, [&]() { return !gRunning; });
 
 		MSG msg;
@@ -252,19 +383,25 @@ namespace tiny
 		gContext.Flush();
 	}
 
-	RenderView* CreateRenderView(Window* pWindow, IRenderer* renderer)
+	Scene& CreateScene()
+	{
+		return gScenes.emplace_back(Scene());
+	}
+
+	RenderView& CreateRenderView(Window* pWindow, Scene* pScene, IRenderer* pRenderer)
 	{
 		RenderView& rv = gRenderViews.emplace_back(RenderView
 		{
 			.window = pWindow,
-			.renderer = renderer,
+			.renderer = pRenderer,
+			.scene = pScene,
 			.bMarkedForRebuild = false,
 		});
 
-		RenderTextureHandle renderOutput = renderer->Build(rv.frameGraph);
-		rv.frameGraph.AddPass<SubmitToSwapchainPass>(renderOutput, pWindow);
+		RenderTextureHandle renderOutput = pRenderer->Build(rv.frameGraph);
+		rv.frameGraph.AddPass<SubmitToSwapchainPass>(renderOutput, pWindow);	
 		rv.frameGraph.Compile(gContext);
-		return &rv;
+		return rv;
 	}
 
 	void Initialize()
@@ -282,6 +419,34 @@ namespace tiny
 		wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 		RegisterClassEx(&wc);
 
+		i32 argc;
+		wchar_t** argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+		if (argc > 1)
+		{
+			for (u32 i = 1; i < argc; ++i)
+			{
+				std::wstring arg = argv[i];
+				if (arg == L"-gfxdebug")
+					gDebugGraphics = true;
+			}
+		}
+
+		if (gDebugGraphics)
+		{
+			CComPtr<ID3D12Debug> debugController;
+			if (SUCCEEDED(D3D12GetDebugInterface(IID_PPV_ARGS(&debugController))))
+			{
+				debugController->EnableDebugLayer();
+
+				// Enable GPU based validation
+				CComPtr<ID3D12Debug1> debugController1;
+				if (SUCCEEDED(debugController->QueryInterface(IID_PPV_ARGS(&debugController1))))
+				{
+					debugController1->SetEnableGPUBasedValidation(true);
+				}
+			}
+		}
+
 		InitializeGFX();
 		InitializeGlobalDescriptorHeaps();
 		InitializeGlobalCopyQueue();
@@ -293,6 +458,7 @@ namespace tiny
 	void Shutdown()
 	{
 		gRenderViews.clear();
+		gScenes.clear();
 		gContext.Destroy();
 		fx::ShutdonwnFX();
 		ShutdownGlobalCopyQueue();

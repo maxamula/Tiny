@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_generic_value_1_1_string" kind="struct" language="C++" prot="public">
+    <compoundname>GenericValue::String</compoundname>
+    <includes refid="document_8h" local="no">document.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_generic_value_1_1_string_1ad6ffab0e093aa8db6e415812ff6443bf" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a8f194bfff5bcc5b4b0d483ff0504a336" kindref="member">SizeType</ref></type>
+        <definition>SizeType GenericValue&lt; Encoding, Allocator &gt;::String::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>GenericValue::String::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/document.h" line="1964" column="18" bodyfile="content/cereal/external/rapidjson/document.h" bodystart="1964" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_generic_value_1_1_string_1a73631052aeb72fbabb6eaab0175f858e" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a8f194bfff5bcc5b4b0d483ff0504a336" kindref="member">SizeType</ref></type>
+        <definition>SizeType GenericValue&lt; Encoding, Allocator &gt;::String::hashcode</definition>
+        <argsstring></argsstring>
+        <name>hashcode</name>
+        <qualifiedname>GenericValue::String::hashcode</qualifiedname>
+        <briefdescription>
+<para>reserved </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/document.h" line="1965" column="18" bodyfile="content/cereal/external/rapidjson/document.h" bodystart="1965" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_generic_value_1_1_string_1a4eebc5acf3f93ab833efd82abf3ba84d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_generic_value_1ade0e0ce64ccd5d852da57a35e720bafb" kindref="member">Ch</ref> *</type>
+        <definition>const Ch* GenericValue&lt; Encoding, Allocator &gt;::String::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>GenericValue::String::str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/document.h" line="1966" column="18" bodyfile="content/cereal/external/rapidjson/document.h" bodystart="1966" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/document.h" line="1963" column="5" bodyfile="content/cereal/external/rapidjson/document.h" bodystart="1963" bodyend="1967"/>
+    <listofallmembers>
+      <member refid="struct_generic_value_1_1_string_1a73631052aeb72fbabb6eaab0175f858e" prot="public" virt="non-virtual"><scope>GenericValue::String</scope><name>hashcode</name></member>
+      <member refid="struct_generic_value_1_1_string_1ad6ffab0e093aa8db6e415812ff6443bf" prot="public" virt="non-virtual"><scope>GenericValue::String</scope><name>length</name></member>
+      <member refid="struct_generic_value_1_1_string_1a4eebc5acf3f93ab833efd82abf3ba84d" prot="public" virt="non-virtual"><scope>GenericValue::String</scope><name>str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

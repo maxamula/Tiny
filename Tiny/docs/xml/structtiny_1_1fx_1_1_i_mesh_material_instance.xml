@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_i_mesh_material_instance" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>tiny::fx::IMeshMaterialInstance</compoundname>
+    <derivedcompoundref refid="structtiny_1_1fx_1_1_mesh_material_instance" prot="public" virt="non-virtual">tiny::fx::MeshMaterialInstance&lt; UnlitMaterialInstance &gt;</derivedcompoundref>
+    <derivedcompoundref refid="structtiny_1_1fx_1_1_mesh_material_instance" prot="public" virt="non-virtual">tiny::fx::MeshMaterialInstance&lt; Derived &gt;</derivedcompoundref>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_i_mesh_material_instance_1a49f215dbaef4e9561b3b9b6247204883" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::fx::IMeshMaterialInstance::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::fx::IMeshMaterialInstance::__pad0__</qualifiedname>
+        <bitfield> MeshShaderFX* fx</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="115" column="1" bodyfile="fx/shaderfx.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_i_mesh_material_instance_1a71e4f0754053a10bc45b5088dbb828d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual tiny::fx::IMeshMaterialInstance::~IMeshMaterialInstance</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IMeshMaterialInstance</name>
+        <qualifiedname>tiny::fx::IMeshMaterialInstance::~IMeshMaterialInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="111" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_i_mesh_material_instance_1a07432b0ffb333b9b0de3fcbc382baaa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>u64</type>
+        <definition>virtual u64 tiny::fx::IMeshMaterialInstance::ID</definition>
+        <argsstring>()=0</argsstring>
+        <name>ID</name>
+        <qualifiedname>tiny::fx::IMeshMaterialInstance::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="112" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_i_mesh_material_instance_1aa6291bff6a66e5ef73b91a1558410778" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>entt::meta_any</type>
+        <definition>virtual entt::meta_any tiny::fx::IMeshMaterialInstance::Meta</definition>
+        <argsstring>()=0</argsstring>
+        <name>Meta</name>
+        <qualifiedname>tiny::fx::IMeshMaterialInstance::Meta</qualifiedname>
+        <reimplementedby refid="structtiny_1_1fx_1_1_mesh_material_instance_1a87722b0e4cbc370f0b2178bda4265972">Meta</reimplementedby>
+        <reimplementedby refid="structtiny_1_1fx_1_1_mesh_material_instance_1a87722b0e4cbc370f0b2178bda4265972">Meta</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="113" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_i_mesh_material_instance_1adca24745d74c4e3e33bac44fe9372989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::fx::IMeshMaterialInstance::SetFeatureFlags</definition>
+        <argsstring>(u8 flags)</argsstring>
+        <name>SetFeatureFlags</name>
+        <qualifiedname>tiny::fx::IMeshMaterialInstance::SetFeatureFlags</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="114" column="6" bodyfile="fx/shaderfx.cpp" bodystart="114" bodyend="123"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>tiny::UnlitMaterialInstance</label>
+        <link refid="structtiny_1_1_unlit_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>tiny::fx::IMeshMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_mesh_material_instance"/>
+      </node>
+      <node id="4">
+        <label>tiny::fx::MeshMaterialInstance&lt; Derived &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_mesh_material_instance"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MeshMaterialInstance&lt; UnlitMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_mesh_material_instance"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="fx/shaderfx.h" line="109" column="1" bodyfile="fx/shaderfx.h" bodystart="110" bodyend="117"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a49f215dbaef4e9561b3b9b6247204883" prot="public" virt="non-virtual"><scope>tiny::fx::IMeshMaterialInstance</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a07432b0ffb333b9b0de3fcbc382baaa7" prot="public" virt="pure-virtual"><scope>tiny::fx::IMeshMaterialInstance</scope><name>ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1aa6291bff6a66e5ef73b91a1558410778" prot="public" virt="pure-virtual"><scope>tiny::fx::IMeshMaterialInstance</scope><name>Meta</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1adca24745d74c4e3e33bac44fe9372989" prot="public" virt="non-virtual"><scope>tiny::fx::IMeshMaterialInstance</scope><name>SetFeatureFlags</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a71e4f0754053a10bc45b5088dbb828d9" prot="public" virt="virtual"><scope>tiny::fx::IMeshMaterialInstance</scope><name>~IMeshMaterialInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

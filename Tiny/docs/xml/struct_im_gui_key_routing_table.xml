@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_key_routing_table" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiKeyRoutingTable</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_key_routing_table_1ad17c1d407b883870a1149e294ee173cc" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1aa1c2b8cc2f7ea011254a98c733a0671c" kindref="member">ImGuiKeyRoutingIndex</ref></type>
+        <definition>ImGuiKeyRoutingIndex ImGuiKeyRoutingTable::Index[ImGuiKey_NamedKey_COUNT]</definition>
+        <argsstring>[ImGuiKey_NamedKey_COUNT]</argsstring>
+        <name>Index</name>
+        <qualifiedname>ImGuiKeyRoutingTable::Index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1384" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_key_routing_table_1abe4d175a6b58c3fb2dac9706b4debd92" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_key_routing_data" kindref="compound">ImGuiKeyRoutingData</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiKeyRoutingData&gt; ImGuiKeyRoutingTable::Entries</definition>
+        <argsstring></argsstring>
+        <name>Entries</name>
+        <qualifiedname>ImGuiKeyRoutingTable::Entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1385" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_key_routing_table_1ac176df6b8732d9a4784ab278a0b890c3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_key_routing_data" kindref="compound">ImGuiKeyRoutingData</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiKeyRoutingData&gt; ImGuiKeyRoutingTable::EntriesNext</definition>
+        <argsstring></argsstring>
+        <name>EntriesNext</name>
+        <qualifiedname>ImGuiKeyRoutingTable::EntriesNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1386" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1386" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_key_routing_table_1a5c2c9adf9d1e9e8741d2f0f9334b7664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiKeyRoutingTable::ImGuiKeyRoutingTable</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiKeyRoutingTable</name>
+        <qualifiedname>ImGuiKeyRoutingTable::ImGuiKeyRoutingTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1388" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1388" bodyend="1388"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_key_routing_table_1ae8180926fc30691edcc29d0a74d13d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiKeyRoutingTable::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>ImGuiKeyRoutingTable::Clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1389" column="10" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1389" bodyend="1389"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>ImGuiKeyRoutingData</label>
+        <link refid="struct_im_gui_key_routing_data"/>
+      </node>
+      <node id="1">
+        <label>ImGuiKeyRoutingTable</label>
+        <link refid="struct_im_gui_key_routing_table"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Entries</edgelabel>
+          <edgelabel>EntriesNext</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImGuiKeyRoutingData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1382" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1383" bodyend="1390"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_key_routing_table_1ae8180926fc30691edcc29d0a74d13d24" prot="public" virt="non-virtual"><scope>ImGuiKeyRoutingTable</scope><name>Clear</name></member>
+      <member refid="struct_im_gui_key_routing_table_1abe4d175a6b58c3fb2dac9706b4debd92" prot="public" virt="non-virtual"><scope>ImGuiKeyRoutingTable</scope><name>Entries</name></member>
+      <member refid="struct_im_gui_key_routing_table_1ac176df6b8732d9a4784ab278a0b890c3" prot="public" virt="non-virtual"><scope>ImGuiKeyRoutingTable</scope><name>EntriesNext</name></member>
+      <member refid="struct_im_gui_key_routing_table_1a5c2c9adf9d1e9e8741d2f0f9334b7664" prot="public" virt="non-virtual"><scope>ImGuiKeyRoutingTable</scope><name>ImGuiKeyRoutingTable</name></member>
+      <member refid="struct_im_gui_key_routing_table_1ad17c1d407b883870a1149e294ee173cc" prot="public" virt="non-virtual"><scope>ImGuiKeyRoutingTable</scope><name>Index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

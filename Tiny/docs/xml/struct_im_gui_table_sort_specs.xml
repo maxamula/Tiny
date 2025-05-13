@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_table_sort_specs" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTableSortSpecs</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_table_sort_specs_1ac4699dc1e604ad5be5d8d62f70776847" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_im_gui_table_column_sort_specs" kindref="compound">ImGuiTableColumnSortSpecs</ref> *</type>
+        <definition>const ImGuiTableColumnSortSpecs* ImGuiTableSortSpecs::Specs</definition>
+        <argsstring></argsstring>
+        <name>Specs</name>
+        <qualifiedname>ImGuiTableSortSpecs::Specs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2298" column="37" bodyfile="graphics/imgui/imgui.h" bodystart="2298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_sort_specs_1a479ec858bd7f252a91675487f4e7c202" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTableSortSpecs::SpecsCount</definition>
+        <argsstring></argsstring>
+        <name>SpecsCount</name>
+        <qualifiedname>ImGuiTableSortSpecs::SpecsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2299" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_sort_specs_1a9ecfbcaee92c37003bbb723777358ca3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTableSortSpecs::SpecsDirty</definition>
+        <argsstring></argsstring>
+        <name>SpecsDirty</name>
+        <qualifiedname>ImGuiTableSortSpecs::SpecsDirty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2300" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2300" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_table_sort_specs_1a656480bca4b2c19d3502e4fc6ce28c65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTableSortSpecs::ImGuiTableSortSpecs</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTableSortSpecs</name>
+        <qualifiedname>ImGuiTableSortSpecs::ImGuiTableSortSpecs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2302" column="5" bodyfile="graphics/imgui/imgui.h" bodystart="2302" bodyend="2302"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ImGuiTableColumnSortSpecs</label>
+        <link refid="struct_im_gui_table_column_sort_specs"/>
+      </node>
+      <node id="1">
+        <label>ImGuiTableSortSpecs</label>
+        <link refid="struct_im_gui_table_sort_specs"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Specs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2296" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2297" bodyend="2303"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_table_sort_specs_1a656480bca4b2c19d3502e4fc6ce28c65" prot="public" virt="non-virtual"><scope>ImGuiTableSortSpecs</scope><name>ImGuiTableSortSpecs</name></member>
+      <member refid="struct_im_gui_table_sort_specs_1ac4699dc1e604ad5be5d8d62f70776847" prot="public" virt="non-virtual"><scope>ImGuiTableSortSpecs</scope><name>Specs</name></member>
+      <member refid="struct_im_gui_table_sort_specs_1a479ec858bd7f252a91675487f4e7c202" prot="public" virt="non-virtual"><scope>ImGuiTableSortSpecs</scope><name>SpecsCount</name></member>
+      <member refid="struct_im_gui_table_sort_specs_1a9ecfbcaee92c37003bbb723777358ca3" prot="public" virt="non-virtual"><scope>ImGuiTableSortSpecs</scope><name>SpecsDirty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

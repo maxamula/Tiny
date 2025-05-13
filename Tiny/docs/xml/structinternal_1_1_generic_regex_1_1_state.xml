@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structinternal_1_1_generic_regex_1_1_state" kind="struct" language="C++" prot="private">
+    <compoundname>internal::GenericRegex::State</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structinternal_1_1_generic_regex_1_1_state_1a2db0ecd5296137b4e27a8bdb9b9b3a36" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a8f194bfff5bcc5b4b0d483ff0504a336" kindref="member">SizeType</ref></type>
+        <definition>SizeType internal::GenericRegex&lt; Encoding, Allocator &gt;::State::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <qualifiedname>internal::GenericRegex::State::out</qualifiedname>
+        <briefdescription>
+<para>Equals to kInvalid for matching state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/internal/regex.h" line="160" column="18" bodyfile="content/cereal/external/rapidjson/internal/regex.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_generic_regex_1_1_state_1a018baa62233a52e87df7dac21dcfefc7" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a8f194bfff5bcc5b4b0d483ff0504a336" kindref="member">SizeType</ref></type>
+        <definition>SizeType internal::GenericRegex&lt; Encoding, Allocator &gt;::State::out1</definition>
+        <argsstring></argsstring>
+        <name>out1</name>
+        <qualifiedname>internal::GenericRegex::State::out1</qualifiedname>
+        <briefdescription>
+<para>Equals to non-kInvalid for split. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/internal/regex.h" line="161" column="18" bodyfile="content/cereal/external/rapidjson/internal/regex.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_generic_regex_1_1_state_1a4f994da3eb09d3d86ad7dbfec4dd5c1c" prot="public" static="no" mutable="no">
+        <type><ref refid="rapidjson_8h_1a8f194bfff5bcc5b4b0d483ff0504a336" kindref="member">SizeType</ref></type>
+        <definition>SizeType internal::GenericRegex&lt; Encoding, Allocator &gt;::State::rangeStart</definition>
+        <argsstring></argsstring>
+        <name>rangeStart</name>
+        <qualifiedname>internal::GenericRegex::State::rangeStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/internal/regex.h" line="162" column="18" bodyfile="content/cereal/external/rapidjson/internal/regex.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structinternal_1_1_generic_regex_1_1_state_1ab085a481f7a18c4a70d4cc534a72a23e" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned internal::GenericRegex&lt; Encoding, Allocator &gt;::State::codepoint</definition>
+        <argsstring></argsstring>
+        <name>codepoint</name>
+        <qualifiedname>internal::GenericRegex::State::codepoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/internal/regex.h" line="163" column="18" bodyfile="content/cereal/external/rapidjson/internal/regex.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/internal/regex.h" line="159" column="5" bodyfile="content/cereal/external/rapidjson/internal/regex.h" bodystart="159" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structinternal_1_1_generic_regex_1_1_state_1ab085a481f7a18c4a70d4cc534a72a23e" prot="public" virt="non-virtual"><scope>internal::GenericRegex::State</scope><name>codepoint</name></member>
+      <member refid="structinternal_1_1_generic_regex_1_1_state_1a2db0ecd5296137b4e27a8bdb9b9b3a36" prot="public" virt="non-virtual"><scope>internal::GenericRegex::State</scope><name>out</name></member>
+      <member refid="structinternal_1_1_generic_regex_1_1_state_1a018baa62233a52e87df7dac21dcfefc7" prot="public" virt="non-virtual"><scope>internal::GenericRegex::State</scope><name>out1</name></member>
+      <member refid="structinternal_1_1_generic_regex_1_1_state_1a4f994da3eb09d3d86ad7dbfec4dd5c1c" prot="public" virt="non-virtual"><scope>internal::GenericRegex::State</scope><name>rangeStart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

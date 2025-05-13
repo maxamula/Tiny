@@ -1,0 +1,1135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_font_atlas" kind="struct" language="C++" prot="public">
+    <compoundname>ImFontAtlas</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_font_atlas_1adf2f2d04b46911ad01cfbef0f59e1f11" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a6ac370f8e39385273ab2d0fcc644db6f" kindref="member">ImFontAtlasFlags</ref></type>
+        <definition>ImFontAtlasFlags ImFontAtlas::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImFontAtlas::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2987" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a1d7be9a6190c75706f80bda16c87f28e" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref></type>
+        <definition>ImTextureID ImFontAtlas::TexID</definition>
+        <argsstring></argsstring>
+        <name>TexID</name>
+        <qualifiedname>ImFontAtlas::TexID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2988" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2988" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1aa1d62d7da5633f894dbe881547e9de7c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontAtlas::TexDesiredWidth</definition>
+        <argsstring></argsstring>
+        <name>TexDesiredWidth</name>
+        <qualifiedname>ImFontAtlas::TexDesiredWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2989" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a32034b2aac4616d8c27ee666a1fd1b62" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontAtlas::TexGlyphPadding</definition>
+        <argsstring></argsstring>
+        <name>TexGlyphPadding</name>
+        <qualifiedname>ImFontAtlas::TexGlyphPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2990" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a2222ff64ba974a8ee7a286617f879f9b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImFontAtlas::Locked</definition>
+        <argsstring></argsstring>
+        <name>Locked</name>
+        <qualifiedname>ImFontAtlas::Locked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2991" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1ac848a29825d36edf8629b31b419dc21e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImFontAtlas::UserData</definition>
+        <argsstring></argsstring>
+        <name>UserData</name>
+        <qualifiedname>ImFontAtlas::UserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2992" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="2992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a9d28236e71f9a21a21d8f4f7eac39299" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImFontAtlas::TexReady</definition>
+        <argsstring></argsstring>
+        <name>TexReady</name>
+        <qualifiedname>ImFontAtlas::TexReady</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2996" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2996" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a4bc426a6a9c2fd3ab1ad3893142613ff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImFontAtlas::TexPixelsUseColors</definition>
+        <argsstring></argsstring>
+        <name>TexPixelsUseColors</name>
+        <qualifiedname>ImFontAtlas::TexPixelsUseColors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2997" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a443ea9e7c4cf85ee791ffe891280eff3" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ImFontAtlas::TexPixelsAlpha8</definition>
+        <argsstring></argsstring>
+        <name>TexPixelsAlpha8</name>
+        <qualifiedname>ImFontAtlas::TexPixelsAlpha8</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2998" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="2998" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a41163489a5b8060f405c56e22590cba5" prot="public" static="no" mutable="no">
+        <type>unsigned int *</type>
+        <definition>unsigned int* ImFontAtlas::TexPixelsRGBA32</definition>
+        <argsstring></argsstring>
+        <name>TexPixelsRGBA32</name>
+        <qualifiedname>ImFontAtlas::TexPixelsRGBA32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2999" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="2999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a2d0662502433e7a87b3aa4681ba17aa3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontAtlas::TexWidth</definition>
+        <argsstring></argsstring>
+        <name>TexWidth</name>
+        <qualifiedname>ImFontAtlas::TexWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3000" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3000" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a5ef74d37ec01d9e8aac5c57433296ce3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontAtlas::TexHeight</definition>
+        <argsstring></argsstring>
+        <name>TexHeight</name>
+        <qualifiedname>ImFontAtlas::TexHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3001" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1adbe3a6b1fd501108649fe04f882b8664" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImFontAtlas::TexUvScale</definition>
+        <argsstring></argsstring>
+        <name>TexUvScale</name>
+        <qualifiedname>ImFontAtlas::TexUvScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3002" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1af1d05221e9a1607d7f625df92a4f9b7e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImFontAtlas::TexUvWhitePixel</definition>
+        <argsstring></argsstring>
+        <name>TexUvWhitePixel</name>
+        <qualifiedname>ImFontAtlas::TexUvWhitePixel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3003" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a0198aeb17ef8bb810ccc8db103b93b1f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_font" kindref="compound">ImFont</ref> * &gt;</type>
+        <definition>ImVector&lt;ImFont*&gt; ImFontAtlas::Fonts</definition>
+        <argsstring></argsstring>
+        <name>Fonts</name>
+        <qualifiedname>ImFontAtlas::Fonts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3004" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="3004" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1ae3752e66f7454a42e5ae5ec052af537c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_font_atlas_custom_rect" kindref="compound">ImFontAtlasCustomRect</ref> &gt;</type>
+        <definition>ImVector&lt;ImFontAtlasCustomRect&gt; ImFontAtlas::CustomRects</definition>
+        <argsstring></argsstring>
+        <name>CustomRects</name>
+        <qualifiedname>ImFontAtlas::CustomRects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3005" column="14" bodyfile="graphics/imgui/imgui.h" bodystart="3005" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1afa4f7459807763d032fe2d0022fc0823" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> &gt;</type>
+        <definition>ImVector&lt;ImFontConfig&gt; ImFontAtlas::ConfigData</definition>
+        <argsstring></argsstring>
+        <name>ConfigData</name>
+        <qualifiedname>ImFontAtlas::ConfigData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3006" column="19" bodyfile="graphics/imgui/imgui.h" bodystart="3006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1abf794895d5fb9597bf2a96ab68eb7048" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref></type>
+        <definition>ImVec4 ImFontAtlas::TexUvLines[IM_DRAWLIST_TEX_LINES_WIDTH_MAX+1]</definition>
+        <argsstring>[IM_DRAWLIST_TEX_LINES_WIDTH_MAX+1]</argsstring>
+        <name>TexUvLines</name>
+        <qualifiedname>ImFontAtlas::TexUvLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3007" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a43337693a61cd40ec0110c83da628f09" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_im_font_builder_i_o" kindref="compound">ImFontBuilderIO</ref> *</type>
+        <definition>const ImFontBuilderIO* ImFontAtlas::FontBuilderIO</definition>
+        <argsstring></argsstring>
+        <name>FontBuilderIO</name>
+        <qualifiedname>ImFontAtlas::FontBuilderIO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3010" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="3010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1ad149b9a00b3dd033c0568abaf45256c3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ImFontAtlas::FontBuilderFlags</definition>
+        <argsstring></argsstring>
+        <name>FontBuilderFlags</name>
+        <qualifiedname>ImFontAtlas::FontBuilderFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3011" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3011" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1afc92fd54d52cab4fe787e364e7e4f652" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontAtlas::PackIdMouseCursors</definition>
+        <argsstring></argsstring>
+        <name>PackIdMouseCursors</name>
+        <qualifiedname>ImFontAtlas::PackIdMouseCursors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3014" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3014" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_atlas_1a0964aa42e665dbd423066309b3c7461b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontAtlas::PackIdLines</definition>
+        <argsstring></argsstring>
+        <name>PackIdLines</name>
+        <qualifiedname>ImFontAtlas::PackIdLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3015" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="3015" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_font_atlas_1aa34e7909d30440d5c35aaef990ac741e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref></type>
+        <definition>ImFontAtlas::ImFontAtlas</definition>
+        <argsstring>()</argsstring>
+        <name>ImFontAtlas</name>
+        <qualifiedname>ImFontAtlas::ImFontAtlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2922" column="15" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2070" bodyend="2075"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a950b4f7586ad7786ae251b957d67a268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref></type>
+        <definition>ImFontAtlas::~ImFontAtlas</definition>
+        <argsstring>()</argsstring>
+        <name>~ImFontAtlas</name>
+        <qualifiedname>ImFontAtlas::~ImFontAtlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2923" column="15" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2077" bodyend="2081"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1ad01c0f19a95d37a9e5ebab1e54525625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont * ImFontAtlas::AddFont</definition>
+        <argsstring>(const ImFontConfig *font_cfg)</argsstring>
+        <name>AddFont</name>
+        <qualifiedname>ImFontAtlas::AddFont</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> *</type>
+          <declname>font_cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2924" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2169" bodyend="2201"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a9d2b4a94579bf603a0d2662cd8348cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont * ImFontAtlas::AddFontDefault</definition>
+        <argsstring>(const ImFontConfig *font_cfg=NULL)</argsstring>
+        <name>AddFontDefault</name>
+        <qualifiedname>ImFontAtlas::AddFontDefault</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> *</type>
+          <declname>font_cfg</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2925" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2220" bodyend="2239"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a4613437629eb668ffa2e70d71ea3b734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont * ImFontAtlas::AddFontFromFileTTF</definition>
+        <argsstring>(ImGuiContext *ctx, const char *filename, float size_pixels, const ImFontConfig *font_cfg=NULL, const ImWchar *glyph_ranges=NULL)</argsstring>
+        <name>AddFontFromFileTTF</name>
+        <qualifiedname>ImFontAtlas::AddFontFromFileTTF</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size_pixels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> *</type>
+          <declname>font_cfg</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+          <declname>glyph_ranges</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2926" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2241" bodyend="2260"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a95eec9b791e9c509180030f8176406ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont * ImFontAtlas::AddFontFromMemoryTTF</definition>
+        <argsstring>(void *font_data, int font_data_size, float size_pixels, const ImFontConfig *font_cfg=NULL, const ImWchar *glyph_ranges=NULL)</argsstring>
+        <name>AddFontFromMemoryTTF</name>
+        <qualifiedname>ImFontAtlas::AddFontFromMemoryTTF</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>font_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>font_data_size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size_pixels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> *</type>
+          <declname>font_cfg</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+          <declname>glyph_ranges</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2927" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2263" bodyend="2275"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a478ffa07777bf990ade02889e15a21ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont * ImFontAtlas::AddFontFromMemoryCompressedTTF</definition>
+        <argsstring>(const void *compressed_font_data, int compressed_font_data_size, float size_pixels, const ImFontConfig *font_cfg=NULL, const ImWchar *glyph_ranges=NULL)</argsstring>
+        <name>AddFontFromMemoryCompressedTTF</name>
+        <qualifiedname>ImFontAtlas::AddFontFromMemoryCompressedTTF</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>compressed_font_data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compressed_font_data_size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size_pixels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> *</type>
+          <declname>font_cfg</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+          <declname>glyph_ranges</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2928" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2277" bodyend="2287"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1ab43b930beb57c0b998f42f4586677956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> <ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont * ImFontAtlas::AddFontFromMemoryCompressedBase85TTF</definition>
+        <argsstring>(const char *compressed_font_data_base85, float size_pixels, const ImFontConfig *font_cfg=NULL, const ImWchar *glyph_ranges=NULL)</argsstring>
+        <name>AddFontFromMemoryCompressedBase85TTF</name>
+        <qualifiedname>ImFontAtlas::AddFontFromMemoryCompressedBase85TTF</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>compressed_font_data_base85</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size_pixels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_font_config" kindref="compound">ImFontConfig</ref> *</type>
+          <declname>font_cfg</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+          <declname>glyph_ranges</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2929" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2289" bodyend="2297"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a3f5bcbb7a2683b1af106fcf4e1217662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::ClearInputData</definition>
+        <argsstring>()</argsstring>
+        <name>ClearInputData</name>
+        <qualifiedname>ImFontAtlas::ClearInputData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2930" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2083" bodyend="2104"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a3ede4bd513bec044c77ac392ad9c6e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::ClearTexData</definition>
+        <argsstring>()</argsstring>
+        <name>ClearTexData</name>
+        <qualifiedname>ImFontAtlas::ClearTexData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2931" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2106" bodyend="2117"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1ad5c2560d708bd0c389e9bd9da2d9b055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::ClearFonts</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFonts</name>
+        <qualifiedname>ImFontAtlas::ClearFonts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2932" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2119" bodyend="2124"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a8f6d01c671d8670f991ba651bbaf7e77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>ImFontAtlas::Clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2933" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2126" bodyend="2131"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a81e39e30dffa4dd7e458a53297451e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> bool</type>
+        <definition>bool ImFontAtlas::Build</definition>
+        <argsstring>()</argsstring>
+        <name>Build</name>
+        <qualifiedname>ImFontAtlas::Build</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2940" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2358" bodyend="2385"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1aeff1a1044a1ab68d8f27bb2819cd9f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::GetTexDataAsAlpha8</definition>
+        <argsstring>(unsigned char **out_pixels, int *out_width, int *out_height, int *out_bytes_per_pixel=NULL)</argsstring>
+        <name>GetTexDataAsAlpha8</name>
+        <qualifiedname>ImFontAtlas::GetTexDataAsAlpha8</qualifiedname>
+        <param>
+          <type>unsigned char **</type>
+          <declname>out_pixels</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_width</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_height</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_bytes_per_pixel</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2941" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2133" bodyend="2143"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a8abb0c4e67ebb38249d4df71218c4eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::GetTexDataAsRGBA32</definition>
+        <argsstring>(unsigned char **out_pixels, int *out_width, int *out_height, int *out_bytes_per_pixel=NULL)</argsstring>
+        <name>GetTexDataAsRGBA32</name>
+        <qualifiedname>ImFontAtlas::GetTexDataAsRGBA32</qualifiedname>
+        <param>
+          <type>unsigned char **</type>
+          <declname>out_pixels</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_width</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_height</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>out_bytes_per_pixel</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2942" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2145" bodyend="2167"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a142ba1470099bbd4b67bdb47be92d475" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImFontAtlas::IsBuilt</definition>
+        <argsstring>() const</argsstring>
+        <name>IsBuilt</name>
+        <qualifiedname>ImFontAtlas::IsBuilt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2943" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2943" bodyend="2943"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a96ffd1956c11dac4f79b43c095828445" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImFontAtlas::SetTexID</definition>
+        <argsstring>(ImTextureID id)</argsstring>
+        <name>SetTexID</name>
+        <qualifiedname>ImFontAtlas::SetTexID</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a364f4447ecbc4ca176145ccff9db6286" kindref="member">ImTextureID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2944" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2944" bodyend="2944"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1adec0df140eb1dc01c2a22a5253d62820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesDefault</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesDefault</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesDefault</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2954" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2942" bodyend="2950"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a46d65b05462b548396d3a8ee6644f3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesGreek</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesGreek</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesGreek</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2955" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2952" bodyend="2961"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1ac70e07bd35913661c8fc50413b3bf969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesKorean</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesKorean</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesKorean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2956" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2963" bodyend="2974"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a2654afbbf73835bf08278cdc6c181a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesJapanese</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesJapanese</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesJapanese</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2957" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="3074" bodyend="3162"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1ab32e8e79cc4f3b36ef447f70034e7c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesChineseFull</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesChineseFull</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesChineseFull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2958" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2976" bodyend="2990"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a3a6b1a8afb01ba5e7c4d86957d6d2625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesChineseSimplifiedCommon</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesChineseSimplifiedCommon</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesChineseSimplifiedCommon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2959" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="3006" bodyend="3072"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a5aaff3357d9ed401ce451c39942e869e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesCyrillic</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesCyrillic</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesCyrillic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2960" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="3164" bodyend="3175"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a4985c51d8a5270ff027f13fa44a14371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesThai</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesThai</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesThai</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2961" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="3177" bodyend="3187"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1acc0e66fd4637600ad344c2f415a0ef60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar * ImFontAtlas::GetGlyphRangesVietnamese</definition>
+        <argsstring>()</argsstring>
+        <name>GetGlyphRangesVietnamese</name>
+        <qualifiedname>ImFontAtlas::GetGlyphRangesVietnamese</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2962" column="32" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="3189" bodyend="3204"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1af048760e2d58ec93446e345deb887259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> int</type>
+        <definition>int ImFontAtlas::AddCustomRectRegular</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>AddCustomRectRegular</name>
+        <qualifiedname>ImFontAtlas::AddCustomRectRegular</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2975" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2299" bodyend="2308"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a5643182be4e3f1a442cfa6cdc0321c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> int</type>
+        <definition>int ImFontAtlas::AddCustomRectFontGlyph</definition>
+        <argsstring>(ImFont *font, ImWchar id, int width, int height, float advance_x, const ImVec2 &amp;offset=ImVec2(0, 0))</argsstring>
+        <name>AddCustomRectFontGlyph</name>
+        <qualifiedname>ImFontAtlas::AddCustomRectFontGlyph</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>advance_x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>offset</declname>
+          <defval><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref>(0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2976" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2310" bodyend="2327"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a6a4c5f59c12c88a5c0429d6a6ec06481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_font_atlas_custom_rect" kindref="compound">ImFontAtlasCustomRect</ref> *</type>
+        <definition>ImFontAtlasCustomRect * ImFontAtlas::GetCustomRectByIndex</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetCustomRectByIndex</name>
+        <qualifiedname>ImFontAtlas::GetCustomRectByIndex</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2977" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="2977" bodyend="2977"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a66bb70a3c3dab00bd714fc52e2195882" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImFontAtlas::CalcCustomRectUV</definition>
+        <argsstring>(const ImFontAtlasCustomRect *rect, ImVec2 *out_uv_min, ImVec2 *out_uv_max) const</argsstring>
+        <name>CalcCustomRectUV</name>
+        <qualifiedname>ImFontAtlas::CalcCustomRectUV</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_font_atlas_custom_rect" kindref="compound">ImFontAtlasCustomRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> *</type>
+          <declname>out_uv_min</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> *</type>
+          <declname>out_uv_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2980" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2329" bodyend="2335"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_font_atlas_1a6d27a36fe034851310dd00d7dc5253c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> bool</type>
+        <definition>bool ImFontAtlas::GetMouseCursorTexData</definition>
+        <argsstring>(ImGuiMouseCursor cursor, ImVec2 *out_offset, ImVec2 *out_size, ImVec2 out_uv_border[2], ImVec2 out_uv_fill[2])</argsstring>
+        <name>GetMouseCursorTexData</name>
+        <qualifiedname>ImFontAtlas::GetMouseCursorTexData</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a9223d6c82bb5d12c2eab5f829ca520ef" kindref="member">ImGuiMouseCursor</ref></type>
+          <declname>cursor</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> *</type>
+          <declname>out_offset</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> *</type>
+          <declname>out_size</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+          <declname>out_uv_border</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+          <declname>out_uv_fill</declname>
+          <array>[2]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2981" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2337" bodyend="2356"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="9">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="13">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="3">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="5">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2920" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2921" bodyend="3020"/>
+    <listofallmembers>
+      <member refid="struct_im_font_atlas_1a5643182be4e3f1a442cfa6cdc0321c7c" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddCustomRectFontGlyph</name></member>
+      <member refid="struct_im_font_atlas_1af048760e2d58ec93446e345deb887259" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddCustomRectRegular</name></member>
+      <member refid="struct_im_font_atlas_1ad01c0f19a95d37a9e5ebab1e54525625" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddFont</name></member>
+      <member refid="struct_im_font_atlas_1a9d2b4a94579bf603a0d2662cd8348cbd" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddFontDefault</name></member>
+      <member refid="struct_im_font_atlas_1a4613437629eb668ffa2e70d71ea3b734" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddFontFromFileTTF</name></member>
+      <member refid="struct_im_font_atlas_1ab43b930beb57c0b998f42f4586677956" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddFontFromMemoryCompressedBase85TTF</name></member>
+      <member refid="struct_im_font_atlas_1a478ffa07777bf990ade02889e15a21ab" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddFontFromMemoryCompressedTTF</name></member>
+      <member refid="struct_im_font_atlas_1a95eec9b791e9c509180030f8176406ff" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>AddFontFromMemoryTTF</name></member>
+      <member refid="struct_im_font_atlas_1a81e39e30dffa4dd7e458a53297451e27" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>Build</name></member>
+      <member refid="struct_im_font_atlas_1a66bb70a3c3dab00bd714fc52e2195882" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>CalcCustomRectUV</name></member>
+      <member refid="struct_im_font_atlas_1a8f6d01c671d8670f991ba651bbaf7e77" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>Clear</name></member>
+      <member refid="struct_im_font_atlas_1ad5c2560d708bd0c389e9bd9da2d9b055" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>ClearFonts</name></member>
+      <member refid="struct_im_font_atlas_1a3f5bcbb7a2683b1af106fcf4e1217662" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>ClearInputData</name></member>
+      <member refid="struct_im_font_atlas_1a3ede4bd513bec044c77ac392ad9c6e86" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>ClearTexData</name></member>
+      <member refid="struct_im_font_atlas_1afa4f7459807763d032fe2d0022fc0823" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>ConfigData</name></member>
+      <member refid="struct_im_font_atlas_1ae3752e66f7454a42e5ae5ec052af537c" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>CustomRects</name></member>
+      <member refid="struct_im_font_atlas_1adf2f2d04b46911ad01cfbef0f59e1f11" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>Flags</name></member>
+      <member refid="struct_im_font_atlas_1ad149b9a00b3dd033c0568abaf45256c3" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>FontBuilderFlags</name></member>
+      <member refid="struct_im_font_atlas_1a43337693a61cd40ec0110c83da628f09" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>FontBuilderIO</name></member>
+      <member refid="struct_im_font_atlas_1a0198aeb17ef8bb810ccc8db103b93b1f" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>Fonts</name></member>
+      <member refid="struct_im_font_atlas_1a6a4c5f59c12c88a5c0429d6a6ec06481" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetCustomRectByIndex</name></member>
+      <member refid="struct_im_font_atlas_1ab32e8e79cc4f3b36ef447f70034e7c57" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesChineseFull</name></member>
+      <member refid="struct_im_font_atlas_1a3a6b1a8afb01ba5e7c4d86957d6d2625" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesChineseSimplifiedCommon</name></member>
+      <member refid="struct_im_font_atlas_1a5aaff3357d9ed401ce451c39942e869e" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesCyrillic</name></member>
+      <member refid="struct_im_font_atlas_1adec0df140eb1dc01c2a22a5253d62820" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesDefault</name></member>
+      <member refid="struct_im_font_atlas_1a46d65b05462b548396d3a8ee6644f3ee" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesGreek</name></member>
+      <member refid="struct_im_font_atlas_1a2654afbbf73835bf08278cdc6c181a96" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesJapanese</name></member>
+      <member refid="struct_im_font_atlas_1ac70e07bd35913661c8fc50413b3bf969" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesKorean</name></member>
+      <member refid="struct_im_font_atlas_1a4985c51d8a5270ff027f13fa44a14371" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesThai</name></member>
+      <member refid="struct_im_font_atlas_1acc0e66fd4637600ad344c2f415a0ef60" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetGlyphRangesVietnamese</name></member>
+      <member refid="struct_im_font_atlas_1a6d27a36fe034851310dd00d7dc5253c3" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetMouseCursorTexData</name></member>
+      <member refid="struct_im_font_atlas_1aeff1a1044a1ab68d8f27bb2819cd9f44" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetTexDataAsAlpha8</name></member>
+      <member refid="struct_im_font_atlas_1a8abb0c4e67ebb38249d4df71218c4eec" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>GetTexDataAsRGBA32</name></member>
+      <member refid="struct_im_font_atlas_1aa34e7909d30440d5c35aaef990ac741e" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>ImFontAtlas</name></member>
+      <member refid="struct_im_font_atlas_1a142ba1470099bbd4b67bdb47be92d475" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>IsBuilt</name></member>
+      <member refid="struct_im_font_atlas_1a2222ff64ba974a8ee7a286617f879f9b" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>Locked</name></member>
+      <member refid="struct_im_font_atlas_1a0964aa42e665dbd423066309b3c7461b" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>PackIdLines</name></member>
+      <member refid="struct_im_font_atlas_1afc92fd54d52cab4fe787e364e7e4f652" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>PackIdMouseCursors</name></member>
+      <member refid="struct_im_font_atlas_1a96ffd1956c11dac4f79b43c095828445" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>SetTexID</name></member>
+      <member refid="struct_im_font_atlas_1aa1d62d7da5633f894dbe881547e9de7c" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexDesiredWidth</name></member>
+      <member refid="struct_im_font_atlas_1a32034b2aac4616d8c27ee666a1fd1b62" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexGlyphPadding</name></member>
+      <member refid="struct_im_font_atlas_1a5ef74d37ec01d9e8aac5c57433296ce3" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexHeight</name></member>
+      <member refid="struct_im_font_atlas_1a1d7be9a6190c75706f80bda16c87f28e" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexID</name></member>
+      <member refid="struct_im_font_atlas_1a443ea9e7c4cf85ee791ffe891280eff3" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexPixelsAlpha8</name></member>
+      <member refid="struct_im_font_atlas_1a41163489a5b8060f405c56e22590cba5" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexPixelsRGBA32</name></member>
+      <member refid="struct_im_font_atlas_1a4bc426a6a9c2fd3ab1ad3893142613ff" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexPixelsUseColors</name></member>
+      <member refid="struct_im_font_atlas_1a9d28236e71f9a21a21d8f4f7eac39299" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexReady</name></member>
+      <member refid="struct_im_font_atlas_1abf794895d5fb9597bf2a96ab68eb7048" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexUvLines</name></member>
+      <member refid="struct_im_font_atlas_1adbe3a6b1fd501108649fe04f882b8664" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexUvScale</name></member>
+      <member refid="struct_im_font_atlas_1af1d05221e9a1607d7f625df92a4f9b7e" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexUvWhitePixel</name></member>
+      <member refid="struct_im_font_atlas_1a2d0662502433e7a87b3aa4681ba17aa3" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>TexWidth</name></member>
+      <member refid="struct_im_font_atlas_1ac848a29825d36edf8629b31b419dc21e" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>UserData</name></member>
+      <member refid="struct_im_font_atlas_1a950b4f7586ad7786ae251b957d67a268" prot="public" virt="non-virtual"><scope>ImFontAtlas</scope><name>~ImFontAtlas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -64218,7 +64218,7 @@ public:
     }
 
     /*! @copydoc any::data */
-    [[nodiscard]] [[deprecated("no longer supported, use ::base().data() for const access")]] void *data() noexcept {
+    [[nodiscard]] /*[[deprecated("no longer supported, use ::base().data() for const access")]]*/ void *data() noexcept {
         return storage.data();
     }
 

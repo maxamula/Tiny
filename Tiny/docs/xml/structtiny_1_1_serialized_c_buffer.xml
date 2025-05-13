@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_serialized_c_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::SerializedCBuffer</compoundname>
+    <includes refid="assets_8h" local="no">assets.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_serialized_c_buffer_1a6515d8a5e00ae6cc64108f8aa2ce433d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; u8 &gt;</type>
+        <definition>std::vector&lt;u8&gt; tiny::SerializedCBuffer::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>tiny::SerializedCBuffer::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.h" line="16" column="13" bodyfile="content/assets.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_serialized_c_buffer_1afe905730a92abcbc35dbfda2492b8b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Archive</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tiny::SerializedCBuffer::serialize</definition>
+        <argsstring>(Archive &amp;ar)</argsstring>
+        <name>serialize</name>
+        <qualifiedname>tiny::SerializedCBuffer::serialize</qualifiedname>
+        <param>
+          <type>Archive &amp;</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.h" line="19" column="6" bodyfile="content/assets.h" bodystart="19" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/assets.h" line="14" column="1" bodyfile="content/assets.h" bodystart="15" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_serialized_c_buffer_1a6515d8a5e00ae6cc64108f8aa2ce433d" prot="public" virt="non-virtual"><scope>tiny::SerializedCBuffer</scope><name>data</name></member>
+      <member refid="structtiny_1_1_serialized_c_buffer_1afe905730a92abcbc35dbfda2492b8b20" prot="public" virt="non-virtual"><scope>tiny::SerializedCBuffer</scope><name>serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

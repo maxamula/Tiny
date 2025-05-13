@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classinternal_1_1_i_schema_validator" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>internal::ISchemaValidator</compoundname>
+    <derivedcompoundref refid="class_generic_schema_validator" prot="public" virt="non-virtual">GenericSchemaValidator&lt; SchemaDocument, BaseReaderHandler&lt; UTF8&lt; char &gt;, void &gt;, CrtAllocator &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_generic_schema_validator" prot="public" virt="non-virtual">GenericSchemaValidator&lt; SchemaDocument &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_generic_schema_validator" prot="public" virt="non-virtual">GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;</derivedcompoundref>
+    <includes refid="schema_8h" local="no">schema.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classinternal_1_1_i_schema_validator_1aac77356c7a3f439bc5fb5302f3060c1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual internal::ISchemaValidator::~ISchemaValidator</definition>
+        <argsstring>()</argsstring>
+        <name>~ISchemaValidator</name>
+        <qualifiedname>internal::ISchemaValidator::~ISchemaValidator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/schema.h" line="139" column="13" bodyfile="content/cereal/external/rapidjson/schema.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classinternal_1_1_i_schema_validator_1a94f61f24b1447497279ef12ee0127285" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool internal::ISchemaValidator::IsValid</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsValid</name>
+        <qualifiedname>internal::ISchemaValidator::IsValid</qualifiedname>
+        <reimplementedby refid="class_generic_schema_validator_1a8ebda4da3d8b1fc41e57f15dd62e8f19">IsValid</reimplementedby>
+        <reimplementedby refid="class_generic_schema_validator_1a8ebda4da3d8b1fc41e57f15dd62e8f19">IsValid</reimplementedby>
+        <reimplementedby refid="class_generic_schema_validator_1a8ebda4da3d8b1fc41e57f15dd62e8f19">IsValid</reimplementedby>
+        <reimplementedby refid="class_generic_schema_validator_1a8ebda4da3d8b1fc41e57f15dd62e8f19">IsValid</reimplementedby>
+        <reimplementedby refid="class_generic_schema_validator_1a8ebda4da3d8b1fc41e57f15dd62e8f19">IsValid</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/schema.h" line="140" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;</label>
+        <link refid="class_generic_schema_validator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GenericSchemaValidator&lt; SchemaDocument &gt;</label>
+        <link refid="class_generic_schema_validator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GenericSchemaValidator&lt; SchemaDocument, BaseReaderHandler&lt; UTF8&lt; char &gt;, void &gt;, CrtAllocator &gt;</label>
+        <link refid="class_generic_schema_validator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>internal::ISchemaValidator</label>
+        <link refid="classinternal_1_1_i_schema_validator"/>
+      </node>
+    </inheritancegraph>
+    <location file="content/cereal/external/rapidjson/schema.h" line="137" column="1" bodyfile="content/cereal/external/rapidjson/schema.h" bodystart="137" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classinternal_1_1_i_schema_validator_1a94f61f24b1447497279ef12ee0127285" prot="public" virt="pure-virtual"><scope>internal::ISchemaValidator</scope><name>IsValid</name></member>
+      <member refid="classinternal_1_1_i_schema_validator_1aac77356c7a3f439bc5fb5302f3060c1d" prot="public" virt="virtual"><scope>internal::ISchemaValidator</scope><name>~ISchemaValidator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

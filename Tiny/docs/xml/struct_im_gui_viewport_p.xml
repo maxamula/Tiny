@@ -1,0 +1,610 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_viewport_p" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiViewportP</compoundname>
+    <basecompoundref refid="struct_im_gui_viewport" prot="public" virt="non-virtual">ImGuiViewport</basecompoundref>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1ab992ddc165fe6f9fbacf61f43206232a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiViewportP::BgFgDrawListsLastFrame[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>BgFgDrawListsLastFrame</name>
+        <qualifiedname>ImGuiViewportP::BgFgDrawListsLastFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1682" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1a1c4bd9164298a0166679bb0eceea5978" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_list" kindref="compound">ImDrawList</ref> *</type>
+        <definition>ImDrawList* ImGuiViewportP::BgFgDrawLists[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>BgFgDrawLists</name>
+        <qualifiedname>ImGuiViewportP::BgFgDrawLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1683" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1ac3b300ec36e107ad50e0512b4983d3c8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_data" kindref="compound">ImDrawData</ref></type>
+        <definition>ImDrawData ImGuiViewportP::DrawDataP</definition>
+        <argsstring></argsstring>
+        <name>DrawDataP</name>
+        <qualifiedname>ImGuiViewportP::DrawDataP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1684" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1a2969a07813f0112a37975b2096ee1cc7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_data_builder" kindref="compound">ImDrawDataBuilder</ref></type>
+        <definition>ImDrawDataBuilder ImGuiViewportP::DrawDataBuilder</definition>
+        <argsstring></argsstring>
+        <name>DrawDataBuilder</name>
+        <qualifiedname>ImGuiViewportP::DrawDataBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1685" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1aa01d12e912859fd6edf710ef377ed960" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewportP::WorkOffsetMin</definition>
+        <argsstring></argsstring>
+        <name>WorkOffsetMin</name>
+        <qualifiedname>ImGuiViewportP::WorkOffsetMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1686" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1a7585ac0a2cd88cf8ff77a05567053f2d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewportP::WorkOffsetMax</definition>
+        <argsstring></argsstring>
+        <name>WorkOffsetMax</name>
+        <qualifiedname>ImGuiViewportP::WorkOffsetMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1687" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1af495c815dcd3a5c81d0dc38e91227292" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewportP::BuildWorkOffsetMin</definition>
+        <argsstring></argsstring>
+        <name>BuildWorkOffsetMin</name>
+        <qualifiedname>ImGuiViewportP::BuildWorkOffsetMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1688" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_p_1a31343af32e8e6bdab2649e5e6f5ec812" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewportP::BuildWorkOffsetMax</definition>
+        <argsstring></argsstring>
+        <name>BuildWorkOffsetMax</name>
+        <qualifiedname>ImGuiViewportP::BuildWorkOffsetMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1689" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1689" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1a78fca0422ab2cb3ede3676846d92b6aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiViewportP::ImGuiViewportP</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiViewportP</name>
+        <qualifiedname>ImGuiViewportP::ImGuiViewportP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1691" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1691" bodyend="1691"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1a2110db2d3fff955d9afa36749ca4a90f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiViewportP::~ImGuiViewportP</definition>
+        <argsstring>()</argsstring>
+        <name>~ImGuiViewportP</name>
+        <qualifiedname>ImGuiViewportP::~ImGuiViewportP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1692" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1692" bodyend="1692"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1afcfe97edaa5f795bd691433fe11c6ec9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewportP::CalcWorkRectPos</definition>
+        <argsstring>(const ImVec2 &amp;off_min) const</argsstring>
+        <name>CalcWorkRectPos</name>
+        <qualifiedname>ImGuiViewportP::CalcWorkRectPos</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>off_min</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1695" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1695" bodyend="1695"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1a54aa4cd49edc3d6810c35c1f13d094bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewportP::CalcWorkRectSize</definition>
+        <argsstring>(const ImVec2 &amp;off_min, const ImVec2 &amp;off_max) const</argsstring>
+        <name>CalcWorkRectSize</name>
+        <qualifiedname>ImGuiViewportP::CalcWorkRectSize</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>off_min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>off_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1696" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1696" bodyend="1696"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1a00cd6261263e9637c819908d93580e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiViewportP::UpdateWorkRect</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateWorkRect</name>
+        <qualifiedname>ImGuiViewportP::UpdateWorkRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1697" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1697" bodyend="1697"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1adb4c14f0b0a42bff9c1c0ab1971027f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiViewportP::GetMainRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMainRect</name>
+        <qualifiedname>ImGuiViewportP::GetMainRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1700" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1700" bodyend="1700"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1ae5c3184b73ea080f14e03ecb344b913e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiViewportP::GetWorkRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWorkRect</name>
+        <qualifiedname>ImGuiViewportP::GetWorkRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1701" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1701" bodyend="1701"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_p_1a86bd0e71fac71355b11d49d2ba182009" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiViewportP::GetBuildWorkRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBuildWorkRect</name>
+        <qualifiedname>ImGuiViewportP::GetBuildWorkRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1702" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1702" bodyend="1702"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ImGuiViewport</label>
+        <link refid="struct_im_gui_viewport"/>
+      </node>
+      <node id="1">
+        <label>ImGuiViewportP</label>
+        <link refid="struct_im_gui_viewport_p"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="30">
+        <label>ImDrawChannel</label>
+        <link refid="struct_im_draw_channel"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_IdxBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImDrawCmd</label>
+        <link refid="struct_im_draw_cmd"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>UserCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>ImDrawCmdHeader</label>
+        <link refid="struct_im_draw_cmd_header"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>ImDrawData</label>
+        <link refid="struct_im_draw_data"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>CmdLists</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DisplayPos</edgelabel>
+          <edgelabel>DisplaySize</edgelabel>
+          <edgelabel>FramebufferScale</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>OwnerViewport</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>ImDrawDataBuilder</label>
+        <link refid="struct_im_draw_data_builder"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>LayerData1</edgelabel>
+          <edgelabel>Layers</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImDrawList</label>
+        <link refid="struct_im_draw_list"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>IdxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>VtxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_Data</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_VtxWritePtr</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_ClipRectStack</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>_TextureIdStack</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>_Path</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>_CmdHeader</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>_Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ImDrawListSplitter</label>
+        <link refid="struct_im_draw_list_splitter"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>_Channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="22">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="2">
+        <label>ImGuiViewport</label>
+        <link refid="struct_im_gui_viewport"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Pos</edgelabel>
+          <edgelabel>Size</edgelabel>
+          <edgelabel>WorkPos</edgelabel>
+          <edgelabel>WorkSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImGuiViewportP</label>
+        <link refid="struct_im_gui_viewport_p"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>BgFgDrawLists</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>DrawDataP</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>DrawDataBuilder</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BuildWorkOffsetMax</edgelabel>
+          <edgelabel>BuildWorkOffsetMin</edgelabel>
+          <edgelabel>WorkOffsetMax</edgelabel>
+          <edgelabel>WorkOffsetMin</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="7">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="29">
+        <label>ImVector&lt; ImDrawChannel &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImVector&lt; ImDrawCmd &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImVector&lt; ImDrawIdx &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="32">
+        <label>ImVector&lt; ImDrawList * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ImVector&lt; ImDrawVert &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ImVector&lt; ImTextureID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="24">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ImVector&lt; ImVec4 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="13">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1680" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1681" bodyend="1703"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_viewport_p_1a1c4bd9164298a0166679bb0eceea5978" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>BgFgDrawLists</name></member>
+      <member refid="struct_im_gui_viewport_p_1ab992ddc165fe6f9fbacf61f43206232a" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>BgFgDrawListsLastFrame</name></member>
+      <member refid="struct_im_gui_viewport_p_1a31343af32e8e6bdab2649e5e6f5ec812" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>BuildWorkOffsetMax</name></member>
+      <member refid="struct_im_gui_viewport_p_1af495c815dcd3a5c81d0dc38e91227292" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>BuildWorkOffsetMin</name></member>
+      <member refid="struct_im_gui_viewport_p_1afcfe97edaa5f795bd691433fe11c6ec9" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>CalcWorkRectPos</name></member>
+      <member refid="struct_im_gui_viewport_p_1a54aa4cd49edc3d6810c35c1f13d094bc" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>CalcWorkRectSize</name></member>
+      <member refid="struct_im_gui_viewport_p_1a2969a07813f0112a37975b2096ee1cc7" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>DrawDataBuilder</name></member>
+      <member refid="struct_im_gui_viewport_p_1ac3b300ec36e107ad50e0512b4983d3c8" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>DrawDataP</name></member>
+      <member refid="struct_im_gui_viewport_1a126b1ea962a2f400031aa67a20208350" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_viewport_p_1a86bd0e71fac71355b11d49d2ba182009" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>GetBuildWorkRect</name></member>
+      <member refid="struct_im_gui_viewport_1aecb8b050853aae709f64b82319699bf8" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>GetCenter</name></member>
+      <member refid="struct_im_gui_viewport_p_1adb4c14f0b0a42bff9c1c0ab1971027f7" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>GetMainRect</name></member>
+      <member refid="struct_im_gui_viewport_1a64a278e84f98efbf67fe0d46b29f686a" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>GetWorkCenter</name></member>
+      <member refid="struct_im_gui_viewport_p_1ae5c3184b73ea080f14e03ecb344b913e" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>GetWorkRect</name></member>
+      <member refid="struct_im_gui_viewport_1aa195d9a5b7ba8905c5064195a059868c" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>ImGuiViewport</name></member>
+      <member refid="struct_im_gui_viewport_p_1a78fca0422ab2cb3ede3676846d92b6aa" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>ImGuiViewportP</name></member>
+      <member refid="struct_im_gui_viewport_1ab0c79a0acf985c75f5cadd56ebab8eb5" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>PlatformHandleRaw</name></member>
+      <member refid="struct_im_gui_viewport_1a271ff4e595757a809f237616dd07d525" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>Pos</name></member>
+      <member refid="struct_im_gui_viewport_1ab44a78f37dd56cc7581f715485485787" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>Size</name></member>
+      <member refid="struct_im_gui_viewport_p_1a00cd6261263e9637c819908d93580e0c" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>UpdateWorkRect</name></member>
+      <member refid="struct_im_gui_viewport_p_1a7585ac0a2cd88cf8ff77a05567053f2d" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>WorkOffsetMax</name></member>
+      <member refid="struct_im_gui_viewport_p_1aa01d12e912859fd6edf710ef377ed960" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>WorkOffsetMin</name></member>
+      <member refid="struct_im_gui_viewport_1a9171354583726d867938e93023334d6b" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>WorkPos</name></member>
+      <member refid="struct_im_gui_viewport_1ac4c1ce7d912b72b42a14f00c8cefd8d0" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>WorkSize</name></member>
+      <member refid="struct_im_gui_viewport_p_1a2110db2d3fff955d9afa36749ca4a90f" prot="public" virt="non-virtual"><scope>ImGuiViewportP</scope><name>~ImGuiViewportP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

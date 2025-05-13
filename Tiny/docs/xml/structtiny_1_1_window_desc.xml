@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_window_desc" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::WindowDesc</compoundname>
+    <includes refid="application_8h" local="no">application.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_window_desc_1a1004ee5688fd77cf8e62ed6632f89f9d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::WindowDesc::posX</definition>
+        <argsstring></argsstring>
+        <name>posX</name>
+        <qualifiedname>tiny::WindowDesc::posX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="24" column="5" bodyfile="engine/application.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_window_desc_1a40c3139e4a2a2cc5a12728cc5e2b5ece" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::WindowDesc::posY</definition>
+        <argsstring></argsstring>
+        <name>posY</name>
+        <qualifiedname>tiny::WindowDesc::posY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="24" column="10" bodyfile="engine/application.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_window_desc_1aacfbb7b94c242c358d99e8a7c6fc8d7d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::WindowDesc::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>tiny::WindowDesc::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="24" column="15" bodyfile="engine/application.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_window_desc_1af86ed276291625a536bc1f3b1599e5b8" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::WindowDesc::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>tiny::WindowDesc::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="24" column="21" bodyfile="engine/application.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_window_desc_1a4812d5060a1948d1775815b9e443b528" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetiny_1a72cde6780b07be673b74a0c7a906aad6" kindref="member">WindowProc</ref></type>
+        <definition>WindowProc tiny::WindowDesc::proc</definition>
+        <argsstring></argsstring>
+        <name>proc</name>
+        <qualifiedname>tiny::WindowDesc::proc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="25" column="12" bodyfile="engine/application.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/application.h" line="22" column="1" bodyfile="engine/application.h" bodystart="23" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_window_desc_1af86ed276291625a536bc1f3b1599e5b8" prot="public" virt="non-virtual"><scope>tiny::WindowDesc</scope><name>height</name></member>
+      <member refid="structtiny_1_1_window_desc_1a1004ee5688fd77cf8e62ed6632f89f9d" prot="public" virt="non-virtual"><scope>tiny::WindowDesc</scope><name>posX</name></member>
+      <member refid="structtiny_1_1_window_desc_1a40c3139e4a2a2cc5a12728cc5e2b5ece" prot="public" virt="non-virtual"><scope>tiny::WindowDesc</scope><name>posY</name></member>
+      <member refid="structtiny_1_1_window_desc_1a4812d5060a1948d1775815b9e443b528" prot="public" virt="non-virtual"><scope>tiny::WindowDesc</scope><name>proc</name></member>
+      <member refid="structtiny_1_1_window_desc_1aacfbb7b94c242c358d99e8a7c6fc8d7d" prot="public" virt="non-virtual"><scope>tiny::WindowDesc</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

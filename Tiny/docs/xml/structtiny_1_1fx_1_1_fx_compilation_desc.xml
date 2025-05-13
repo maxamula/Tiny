@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_fx_compilation_desc" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>tiny::fx::FxCompilationDesc</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_fx_compilation_desc_1a115f30753812cac8d7fc44491923d169" prot="public" static="no" mutable="no">
+        <type>LPCSTR</type>
+        <definition>LPCSTR tiny::fx::FxCompilationDesc::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>tiny::fx::FxCompilationDesc::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="165" column="8" bodyfile="fx/shaderfx.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_fx_compilation_desc_1abff5094db1622d23e3ef90a813fe88bb" prot="public" static="no" mutable="no">
+        <type>LPCSTR</type>
+        <definition>LPCSTR tiny::fx::FxCompilationDesc::sourcePath</definition>
+        <argsstring></argsstring>
+        <name>sourcePath</name>
+        <qualifiedname>tiny::fx::FxCompilationDesc::sourcePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="168" column="8" bodyfile="fx/shaderfx.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_fx_compilation_desc_1a20fb32470168501033f73eee7e33b72b" prot="public" static="no" mutable="no">
+        <type>LPCSTR</type>
+        <definition>LPCSTR tiny::fx::FxCompilationDesc::entryPoint</definition>
+        <argsstring></argsstring>
+        <name>entryPoint</name>
+        <qualifiedname>tiny::fx::FxCompilationDesc::entryPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="169" column="8" bodyfile="fx/shaderfx.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_fx_compilation_desc_1ad4045e9c33acf02e31d7ab0fc99dc151" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtiny_1_1fx_1_1_fx_compilation_desc" kindref="compound">tiny::fx::FxCompilationDesc</ref></type>
+        <definition>struct tiny::fx::FxCompilationDesc tiny::fx::FxCompilationDesc::vs</definition>
+        <argsstring></argsstring>
+        <name>vs</name>
+        <qualifiedname>tiny::fx::FxCompilationDesc::vs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="170" column="4"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_fx_compilation_desc_1a303ece28482f06fc0283a445f2217d25" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtiny_1_1fx_1_1_fx_compilation_desc" kindref="compound">tiny::fx::FxCompilationDesc</ref></type>
+        <definition>struct tiny::fx::FxCompilationDesc tiny::fx::FxCompilationDesc::ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>tiny::fx::FxCompilationDesc::ps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="175" column="4"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="163" column="1" bodyfile="fx/shaderfx.h" bodystart="164" bodyend="176"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a20fb32470168501033f73eee7e33b72b" prot="public" virt="non-virtual"><scope>tiny::fx::FxCompilationDesc</scope><name>entryPoint</name></member>
+      <member refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a115f30753812cac8d7fc44491923d169" prot="public" virt="non-virtual"><scope>tiny::fx::FxCompilationDesc</scope><name>name</name></member>
+      <member refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a303ece28482f06fc0283a445f2217d25" prot="public" virt="non-virtual"><scope>tiny::fx::FxCompilationDesc</scope><name>ps</name></member>
+      <member refid="structtiny_1_1fx_1_1_fx_compilation_desc_1abff5094db1622d23e3ef90a813fe88bb" prot="public" virt="non-virtual"><scope>tiny::fx::FxCompilationDesc</scope><name>sourcePath</name></member>
+      <member refid="structtiny_1_1fx_1_1_fx_compilation_desc_1ad4045e9c33acf02e31d7ab0fc99dc151" prot="public" virt="non-virtual"><scope>tiny::fx::FxCompilationDesc</scope><name>vs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -2,10 +2,10 @@
 #define TINY_REVEAL_INTERNALS
 #include <graphics/pass.h>
 
-class OceanFulscreenPass : public tiny::IRenderPass
+class OceanFulscreenPass : public tiny::RenderPassBase
 {
 public:
-	OceanFulscreenPass(tiny::RenderTextureHandle target, WaterMaterialInstance* pMat)
+	OceanFulscreenPass(tiny::RenderTextureHandle target, OceanMaterialInstance* pMat)
 		: mTarget(target), mpMaterial(pMat)
 	{}
 	~OceanFulscreenPass() = default;
@@ -25,7 +25,7 @@ public:
 		ctx.cmd->OMSetRenderTargets(1, &rtv, FALSE, nullptr);
 		ctx.cmd->RSSetViewports(1, &viewport);
 		ctx.cmd->RSSetScissorRects(1, &scissorRect);
-		mpMaterial->ilShaderParams.data.time += 0.01f;
+		mpMaterial->ilShaderParams.time += 0.01f;
 		ctx.BindMaterial(mpMaterial);
 		ctx.cmd->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 		ctx.cmd->DrawInstanced(3, 1, 0, 0);
@@ -33,30 +33,36 @@ public:
 
 private:
 	tiny::RenderTextureHandle mTarget;
-	WaterMaterialInstance* mpMaterial;
+	OceanMaterialInstance* mpMaterial;
 };
 
 
 
 ShaderArtRenderer::ShaderArtRenderer()
 {
-	mWaterMat.SetFeatureFlags(WATER_MAT_DEFAULT_FEATURES);
-	mWaterMat.ilShaderParams.data.width = 1280.0f;
-	mWaterMat.ilShaderParams.data.height = 720.0f;
-	mWaterMat.ilShaderParams.data.time = 0.0f;
+	mMat1.SetFeatureFlags(WATER_MAT_DEFAULT_FEATURES);
+	mMat1.ilShaderParams.time = 0.0f;
 }
 
 tiny::RenderTextureHandle ShaderArtRenderer::Build(tiny::FrameGraph& frameGraph)
 {
 	tiny::RenderTexture::Desc desc
 	{
-		.width = 1280,
-		.height = 720,
+		.width = mResolutionX,
+		.height = mResolutionY,
 		.format = DXGI_FORMAT_R8G8B8A8_UNORM,
 		.clearValue = { DXGI_FORMAT_UNKNOWN, { 0.0f, 0.0f, 0.0f, 1.0f } }
 	};
 
 	tiny::RenderTextureHandle renderTexture = frameGraph.CreateRenderTexture(desc);
-	frameGraph.AddPass<OceanFulscreenPass>(renderTexture, &mWaterMat);
+	frameGraph.AddPass<OceanFulscreenPass>(renderTexture, &mMat1);
 	return renderTexture;
+}
+
+void ShaderArtRenderer::SetResolution(u32 width, u32 height)
+{
+	mResolutionX = width;
+	mResolutionY = height;
+	mMat1.ilShaderParams.width = static_cast<f32>(width);
+	mMat1.ilShaderParams.height = static_cast<f32>(height);
 }

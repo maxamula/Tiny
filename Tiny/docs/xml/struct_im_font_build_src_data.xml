@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_font_build_src_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImFontBuildSrcData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1aa7499553235c2f084be3d2e2e030c3cc" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbtt__fontinfo" kindref="compound">stbtt_fontinfo</ref></type>
+        <definition>stbtt_fontinfo ImFontBuildSrcData::FontInfo</definition>
+        <argsstring></argsstring>
+        <name>FontInfo</name>
+        <qualifiedname>ImFontBuildSrcData::FontInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2410" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a98c6b58804c9be957ea6ce5b1732ad52" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbtt__pack__range" kindref="compound">stbtt_pack_range</ref></type>
+        <definition>stbtt_pack_range ImFontBuildSrcData::PackRange</definition>
+        <argsstring></argsstring>
+        <name>PackRange</name>
+        <qualifiedname>ImFontBuildSrcData::PackRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2411" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a918baffa45001ec6ba866ad18a338969" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbrp__rect" kindref="compound">stbrp_rect</ref> *</type>
+        <definition>stbrp_rect* ImFontBuildSrcData::Rects</definition>
+        <argsstring></argsstring>
+        <name>Rects</name>
+        <qualifiedname>ImFontBuildSrcData::Rects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2412" column="24" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a7c85b2866a23a42357f19c05df2b7f3f" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbtt__packedchar" kindref="compound">stbtt_packedchar</ref> *</type>
+        <definition>stbtt_packedchar* ImFontBuildSrcData::PackedChars</definition>
+        <argsstring></argsstring>
+        <name>PackedChars</name>
+        <qualifiedname>ImFontBuildSrcData::PackedChars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2413" column="24" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a30187b934b16d7bef600887f1cc6614f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar* ImFontBuildSrcData::SrcRanges</definition>
+        <argsstring></argsstring>
+        <name>SrcRanges</name>
+        <qualifiedname>ImFontBuildSrcData::SrcRanges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2414" column="24" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a1fa5c70e2d29e53743557d55050ab912" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontBuildSrcData::DstIndex</definition>
+        <argsstring></argsstring>
+        <name>DstIndex</name>
+        <qualifiedname>ImFontBuildSrcData::DstIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2415" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a40ce6c1a652c3d3c67d094e064691da1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontBuildSrcData::GlyphsHighest</definition>
+        <argsstring></argsstring>
+        <name>GlyphsHighest</name>
+        <qualifiedname>ImFontBuildSrcData::GlyphsHighest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2416" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1a73600dcc4e6c8d6b499c032c4ed0e823" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontBuildSrcData::GlyphsCount</definition>
+        <argsstring></argsstring>
+        <name>GlyphsCount</name>
+        <qualifiedname>ImFontBuildSrcData::GlyphsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2417" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1ad767ca332169ff5df851170eb970b96a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_bit_vector" kindref="compound">ImBitVector</ref></type>
+        <definition>ImBitVector ImFontBuildSrcData::GlyphsSet</definition>
+        <argsstring></argsstring>
+        <name>GlyphsSet</name>
+        <qualifiedname>ImFontBuildSrcData::GlyphsSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2418" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_src_data_1ae4d653fb221fc19a30a2117f73043377" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; int &gt;</type>
+        <definition>ImVector&lt;int&gt; ImFontBuildSrcData::GlyphsList</definition>
+        <argsstring></argsstring>
+        <name>GlyphsList</name>
+        <qualifiedname>ImFontBuildSrcData::GlyphsList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2419" column="20" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2419" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>ImBitVector</label>
+        <link refid="struct_im_bit_vector"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Storage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImFontBuildSrcData</label>
+        <link refid="struct_im_font_build_src_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>FontInfo</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>PackRange</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Rects</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>PackedChars</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>GlyphsSet</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>GlyphsList</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImVector&lt; ImU32 &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="9">
+        <label>ImVector&lt; int &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="6">
+        <label>stbrp_rect</label>
+        <link refid="structstbrp__rect"/>
+      </node>
+      <node id="3">
+        <label>stbtt__buf</label>
+        <link refid="structstbtt____buf"/>
+      </node>
+      <node id="2">
+        <label>stbtt_fontinfo</label>
+        <link refid="structstbtt__fontinfo"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cff</edgelabel>
+          <edgelabel>charstrings</edgelabel>
+          <edgelabel>fdselect</edgelabel>
+          <edgelabel>fontdicts</edgelabel>
+          <edgelabel>gsubrs</edgelabel>
+          <edgelabel>subrs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stbtt_pack_range</label>
+        <link refid="structstbtt__pack__range"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>chardata_for_range</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stbtt_packedchar</label>
+        <link refid="structstbtt__packedchar"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_draw.cpp" line="2408" column="1" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2409" bodyend="2420"/>
+    <listofallmembers>
+      <member refid="struct_im_font_build_src_data_1a1fa5c70e2d29e53743557d55050ab912" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>DstIndex</name></member>
+      <member refid="struct_im_font_build_src_data_1aa7499553235c2f084be3d2e2e030c3cc" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>FontInfo</name></member>
+      <member refid="struct_im_font_build_src_data_1a73600dcc4e6c8d6b499c032c4ed0e823" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>GlyphsCount</name></member>
+      <member refid="struct_im_font_build_src_data_1a40ce6c1a652c3d3c67d094e064691da1" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>GlyphsHighest</name></member>
+      <member refid="struct_im_font_build_src_data_1ae4d653fb221fc19a30a2117f73043377" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>GlyphsList</name></member>
+      <member refid="struct_im_font_build_src_data_1ad767ca332169ff5df851170eb970b96a" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>GlyphsSet</name></member>
+      <member refid="struct_im_font_build_src_data_1a7c85b2866a23a42357f19c05df2b7f3f" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>PackedChars</name></member>
+      <member refid="struct_im_font_build_src_data_1a98c6b58804c9be957ea6ce5b1732ad52" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>PackRange</name></member>
+      <member refid="struct_im_font_build_src_data_1a918baffa45001ec6ba866ad18a338969" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>Rects</name></member>
+      <member refid="struct_im_font_build_src_data_1a30187b934b16d7bef600887f1cc6614f" prot="public" virt="non-virtual"><scope>ImFontBuildSrcData</scope><name>SrcRanges</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

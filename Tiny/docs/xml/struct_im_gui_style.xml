@@ -1,0 +1,847 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_style" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiStyle</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_style_1a993312606e9dcb7ca165245150a4da72" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::Alpha</definition>
+        <argsstring></argsstring>
+        <name>Alpha</name>
+        <qualifiedname>ImGuiStyle::Alpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1940" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1940" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ac497d4a539ff1daf63a8e6a23bd23b0e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::DisabledAlpha</definition>
+        <argsstring></argsstring>
+        <name>DisabledAlpha</name>
+        <qualifiedname>ImGuiStyle::DisabledAlpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1941" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1941" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a37f156b53e6dcc99ff57366ceafe8b50" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::WindowPadding</definition>
+        <argsstring></argsstring>
+        <name>WindowPadding</name>
+        <qualifiedname>ImGuiStyle::WindowPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1942" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1942" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1acd902c2ab4b53d4bb0f64da608320894" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::WindowRounding</definition>
+        <argsstring></argsstring>
+        <name>WindowRounding</name>
+        <qualifiedname>ImGuiStyle::WindowRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1943" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1943" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a4e2af4dd711f57ee841f9c843a18bec2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::WindowBorderSize</definition>
+        <argsstring></argsstring>
+        <name>WindowBorderSize</name>
+        <qualifiedname>ImGuiStyle::WindowBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1944" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a060b2f743a086d0f0fee4cd5b3f372d4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::WindowMinSize</definition>
+        <argsstring></argsstring>
+        <name>WindowMinSize</name>
+        <qualifiedname>ImGuiStyle::WindowMinSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1945" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1945" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a3fc57a15ab8f206045f1e5dfccd8b2e7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::WindowTitleAlign</definition>
+        <argsstring></argsstring>
+        <name>WindowTitleAlign</name>
+        <qualifiedname>ImGuiStyle::WindowTitleAlign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1946" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1946" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ab67a3fe38a4c109fe9de03228fb2c172" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a874086389bc27cc9647118d22a806403" kindref="member">ImGuiDir</ref></type>
+        <definition>ImGuiDir ImGuiStyle::WindowMenuButtonPosition</definition>
+        <argsstring></argsstring>
+        <name>WindowMenuButtonPosition</name>
+        <qualifiedname>ImGuiStyle::WindowMenuButtonPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1947" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1947" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1aba2b4c6be52366ce2ac06b7849cd5cb2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::ChildRounding</definition>
+        <argsstring></argsstring>
+        <name>ChildRounding</name>
+        <qualifiedname>ImGuiStyle::ChildRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1948" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1948" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a5dd4fc33733ac7171d88740eb777f2e3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::ChildBorderSize</definition>
+        <argsstring></argsstring>
+        <name>ChildBorderSize</name>
+        <qualifiedname>ImGuiStyle::ChildBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1949" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1949" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a44b39e666946eea00001b6e38ab6bdc7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::PopupRounding</definition>
+        <argsstring></argsstring>
+        <name>PopupRounding</name>
+        <qualifiedname>ImGuiStyle::PopupRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1950" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1950" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ac3bc5e785e360f72b580d419953c9db4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::PopupBorderSize</definition>
+        <argsstring></argsstring>
+        <name>PopupBorderSize</name>
+        <qualifiedname>ImGuiStyle::PopupBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1951" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1951" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1af58dc4e954ac95fdb3b0df8efb2fa564" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::FramePadding</definition>
+        <argsstring></argsstring>
+        <name>FramePadding</name>
+        <qualifiedname>ImGuiStyle::FramePadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1952" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1952" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a15402cededdef985487e986ccce73ad2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::FrameRounding</definition>
+        <argsstring></argsstring>
+        <name>FrameRounding</name>
+        <qualifiedname>ImGuiStyle::FrameRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1953" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1953" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a21d8f1680e9f897998d726fdf0123bf2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::FrameBorderSize</definition>
+        <argsstring></argsstring>
+        <name>FrameBorderSize</name>
+        <qualifiedname>ImGuiStyle::FrameBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1954" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1954" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a6bc07d81e049cd75e86e6b3753c0da4a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::ItemSpacing</definition>
+        <argsstring></argsstring>
+        <name>ItemSpacing</name>
+        <qualifiedname>ImGuiStyle::ItemSpacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1955" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a1a12021be99583fb491cff2df75d1ae1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::ItemInnerSpacing</definition>
+        <argsstring></argsstring>
+        <name>ItemInnerSpacing</name>
+        <qualifiedname>ImGuiStyle::ItemInnerSpacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1956" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1aada9069c237335c78e2efadca98c74ca" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::CellPadding</definition>
+        <argsstring></argsstring>
+        <name>CellPadding</name>
+        <qualifiedname>ImGuiStyle::CellPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1957" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ab518a0a67df8f14765acc491d7b460f4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::TouchExtraPadding</definition>
+        <argsstring></argsstring>
+        <name>TouchExtraPadding</name>
+        <qualifiedname>ImGuiStyle::TouchExtraPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1958" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1958" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a32ea292dee2b4e178a227acacd061921" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::IndentSpacing</definition>
+        <argsstring></argsstring>
+        <name>IndentSpacing</name>
+        <qualifiedname>ImGuiStyle::IndentSpacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1959" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1959" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a8fed04481e1d75bb95c97819f545e2ba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::ColumnsMinSpacing</definition>
+        <argsstring></argsstring>
+        <name>ColumnsMinSpacing</name>
+        <qualifiedname>ImGuiStyle::ColumnsMinSpacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1960" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1960" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a96623380e624d2f2ec207449e700a226" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::ScrollbarSize</definition>
+        <argsstring></argsstring>
+        <name>ScrollbarSize</name>
+        <qualifiedname>ImGuiStyle::ScrollbarSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1961" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1961" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a00efbadb1ad7daa0ee7384864b147d71" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::ScrollbarRounding</definition>
+        <argsstring></argsstring>
+        <name>ScrollbarRounding</name>
+        <qualifiedname>ImGuiStyle::ScrollbarRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1962" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1962" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a04db033d001b343815cdcd2491576ef7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::GrabMinSize</definition>
+        <argsstring></argsstring>
+        <name>GrabMinSize</name>
+        <qualifiedname>ImGuiStyle::GrabMinSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1963" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1963" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a42369d83032545066803a7db62936e8f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::GrabRounding</definition>
+        <argsstring></argsstring>
+        <name>GrabRounding</name>
+        <qualifiedname>ImGuiStyle::GrabRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1964" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1964" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a6c8674e8aa93236717b36110d7b1f1da" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::LogSliderDeadzone</definition>
+        <argsstring></argsstring>
+        <name>LogSliderDeadzone</name>
+        <qualifiedname>ImGuiStyle::LogSliderDeadzone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1965" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1965" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a22d2fd87b928e639b4d2d1dbbcf805f8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::TabRounding</definition>
+        <argsstring></argsstring>
+        <name>TabRounding</name>
+        <qualifiedname>ImGuiStyle::TabRounding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1966" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1966" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a25858b1cc9234cbb976c934586fc4d88" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::TabBorderSize</definition>
+        <argsstring></argsstring>
+        <name>TabBorderSize</name>
+        <qualifiedname>ImGuiStyle::TabBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1967" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1967" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1add208c22be44e1453575f5bce33fa24b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::TabMinWidthForCloseButton</definition>
+        <argsstring></argsstring>
+        <name>TabMinWidthForCloseButton</name>
+        <qualifiedname>ImGuiStyle::TabMinWidthForCloseButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1968" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1968" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1afa3c451ba8f0d27a0e167d23e161807e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::TabBarBorderSize</definition>
+        <argsstring></argsstring>
+        <name>TabBarBorderSize</name>
+        <qualifiedname>ImGuiStyle::TabBarBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1969" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ae96fdb074684bcff971f43070fe8f354" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::TableAngledHeadersAngle</definition>
+        <argsstring></argsstring>
+        <name>TableAngledHeadersAngle</name>
+        <qualifiedname>ImGuiStyle::TableAngledHeadersAngle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1970" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a64b5fdd495573fa07a80dc0071e99802" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a874086389bc27cc9647118d22a806403" kindref="member">ImGuiDir</ref></type>
+        <definition>ImGuiDir ImGuiStyle::ColorButtonPosition</definition>
+        <argsstring></argsstring>
+        <name>ColorButtonPosition</name>
+        <qualifiedname>ImGuiStyle::ColorButtonPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1971" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1971" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a17246b12f4e069229d21808a87f78514" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::ButtonTextAlign</definition>
+        <argsstring></argsstring>
+        <name>ButtonTextAlign</name>
+        <qualifiedname>ImGuiStyle::ButtonTextAlign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1972" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1972" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1af2dc57060ca88884846dadbf455785c9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::SelectableTextAlign</definition>
+        <argsstring></argsstring>
+        <name>SelectableTextAlign</name>
+        <qualifiedname>ImGuiStyle::SelectableTextAlign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1973" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1973" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a7d32779113a08f74b5654f3069f8a430" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::SeparatorTextBorderSize</definition>
+        <argsstring></argsstring>
+        <name>SeparatorTextBorderSize</name>
+        <qualifiedname>ImGuiStyle::SeparatorTextBorderSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1974" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1974" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ab1d9f91937648409a59c27b1a2463408" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::SeparatorTextAlign</definition>
+        <argsstring></argsstring>
+        <name>SeparatorTextAlign</name>
+        <qualifiedname>ImGuiStyle::SeparatorTextAlign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1975" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1975" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ade414a25409350f02262762eae68454e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::SeparatorTextPadding</definition>
+        <argsstring></argsstring>
+        <name>SeparatorTextPadding</name>
+        <qualifiedname>ImGuiStyle::SeparatorTextPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1976" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1976" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1ab06d6f0c6c5f36ab0c14688448de66f6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::DisplayWindowPadding</definition>
+        <argsstring></argsstring>
+        <name>DisplayWindowPadding</name>
+        <qualifiedname>ImGuiStyle::DisplayWindowPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1977" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1977" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a8dd02a6a031ec8667e76aab1e28755bd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiStyle::DisplaySafeAreaPadding</definition>
+        <argsstring></argsstring>
+        <name>DisplaySafeAreaPadding</name>
+        <qualifiedname>ImGuiStyle::DisplaySafeAreaPadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1978" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1978" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a6448eb2273c8868d7ecccf1152857f68" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::MouseCursorScale</definition>
+        <argsstring></argsstring>
+        <name>MouseCursorScale</name>
+        <qualifiedname>ImGuiStyle::MouseCursorScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1979" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1979" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a0164b54454297971d40f3578b2c1ffeb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiStyle::AntiAliasedLines</definition>
+        <argsstring></argsstring>
+        <name>AntiAliasedLines</name>
+        <qualifiedname>ImGuiStyle::AntiAliasedLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1980" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1980" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1acd4afaf40109ed79815b8bfe9ad6b4f2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiStyle::AntiAliasedLinesUseTex</definition>
+        <argsstring></argsstring>
+        <name>AntiAliasedLinesUseTex</name>
+        <qualifiedname>ImGuiStyle::AntiAliasedLinesUseTex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1981" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1981" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a1fcc22c258a2a73bd61efd18e7ce7e5a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiStyle::AntiAliasedFill</definition>
+        <argsstring></argsstring>
+        <name>AntiAliasedFill</name>
+        <qualifiedname>ImGuiStyle::AntiAliasedFill</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1982" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1982" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a41eb9377b63b8b85ab807c28e00198e9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::CurveTessellationTol</definition>
+        <argsstring></argsstring>
+        <name>CurveTessellationTol</name>
+        <qualifiedname>ImGuiStyle::CurveTessellationTol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1983" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1acc8b73cb356dfad30703f851ec973c65" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::CircleTessellationMaxError</definition>
+        <argsstring></argsstring>
+        <name>CircleTessellationMaxError</name>
+        <qualifiedname>ImGuiStyle::CircleTessellationMaxError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1984" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a2b4941240a38d1300c39a7fa4f03d0a3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref></type>
+        <definition>ImVec4 ImGuiStyle::Colors[ImGuiCol_COUNT]</definition>
+        <argsstring>[ImGuiCol_COUNT]</argsstring>
+        <name>Colors</name>
+        <qualifiedname>ImGuiStyle::Colors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1985" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="1985" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1acc9238d7c4075d17f609ce6330a5cbe6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::HoverStationaryDelay</definition>
+        <argsstring></argsstring>
+        <name>HoverStationaryDelay</name>
+        <qualifiedname>ImGuiStyle::HoverStationaryDelay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1989" column="23" bodyfile="graphics/imgui/imgui.h" bodystart="1989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1af753d08ba372559efadcd919565d5122" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::HoverDelayShort</definition>
+        <argsstring></argsstring>
+        <name>HoverDelayShort</name>
+        <qualifiedname>ImGuiStyle::HoverDelayShort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1990" column="23" bodyfile="graphics/imgui/imgui.h" bodystart="1990" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1aa4fce75908e229801cc51a8ee58de9ee" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStyle::HoverDelayNormal</definition>
+        <argsstring></argsstring>
+        <name>HoverDelayNormal</name>
+        <qualifiedname>ImGuiStyle::HoverDelayNormal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1991" column="23" bodyfile="graphics/imgui/imgui.h" bodystart="1991" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a9b463b2145c1fc619e3fd6dab4786e5a" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3a8f688665e5ea0bd9700e1251580a2c" kindref="member">ImGuiHoveredFlags</ref></type>
+        <definition>ImGuiHoveredFlags ImGuiStyle::HoverFlagsForTooltipMouse</definition>
+        <argsstring></argsstring>
+        <name>HoverFlagsForTooltipMouse</name>
+        <qualifiedname>ImGuiStyle::HoverFlagsForTooltipMouse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1992" column="23" bodyfile="graphics/imgui/imgui.h" bodystart="1992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_style_1a2b7317157e2432d6b091b9a4bfff506f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3a8f688665e5ea0bd9700e1251580a2c" kindref="member">ImGuiHoveredFlags</ref></type>
+        <definition>ImGuiHoveredFlags ImGuiStyle::HoverFlagsForTooltipNav</definition>
+        <argsstring></argsstring>
+        <name>HoverFlagsForTooltipNav</name>
+        <qualifiedname>ImGuiStyle::HoverFlagsForTooltipNav</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1993" column="23" bodyfile="graphics/imgui/imgui.h" bodystart="1993" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_style_1ab0a3ffb3aeec3e6b09b9bde812b28369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref></type>
+        <definition>ImGuiStyle::ImGuiStyle</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiStyle</name>
+        <qualifiedname>ImGuiStyle::ImGuiStyle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1995" column="15" bodyfile="graphics/imgui/imgui.cpp" bodystart="1153" bodyend="1210"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_style_1a7c9d3e0974a239f65e433cc952be0627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImGuiStyle::ScaleAllSizes</definition>
+        <argsstring>(float scale_factor)</argsstring>
+        <name>ScaleAllSizes</name>
+        <qualifiedname>ImGuiStyle::ScaleAllSizes</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>scale_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1996" column="20" bodyfile="graphics/imgui/imgui.cpp" bodystart="1214" bodyend="1240"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiStyle</label>
+        <link refid="struct_im_gui_style"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ButtonTextAlign</edgelabel>
+          <edgelabel>CellPadding</edgelabel>
+          <edgelabel>DisplaySafeAreaPadding</edgelabel>
+          <edgelabel>DisplayWindowPadding</edgelabel>
+          <edgelabel>FramePadding</edgelabel>
+          <edgelabel>ItemInnerSpacing</edgelabel>
+          <edgelabel>ItemSpacing</edgelabel>
+          <edgelabel>SelectableTextAlign</edgelabel>
+          <edgelabel>SeparatorTextAlign</edgelabel>
+          <edgelabel>SeparatorTextPadding</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Colors</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="3">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="1938" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="1939" bodyend="1997"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_style_1a993312606e9dcb7ca165245150a4da72" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>Alpha</name></member>
+      <member refid="struct_im_gui_style_1a1fcc22c258a2a73bd61efd18e7ce7e5a" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>AntiAliasedFill</name></member>
+      <member refid="struct_im_gui_style_1a0164b54454297971d40f3578b2c1ffeb" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>AntiAliasedLines</name></member>
+      <member refid="struct_im_gui_style_1acd4afaf40109ed79815b8bfe9ad6b4f2" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>AntiAliasedLinesUseTex</name></member>
+      <member refid="struct_im_gui_style_1a17246b12f4e069229d21808a87f78514" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ButtonTextAlign</name></member>
+      <member refid="struct_im_gui_style_1aada9069c237335c78e2efadca98c74ca" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>CellPadding</name></member>
+      <member refid="struct_im_gui_style_1a5dd4fc33733ac7171d88740eb777f2e3" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ChildBorderSize</name></member>
+      <member refid="struct_im_gui_style_1aba2b4c6be52366ce2ac06b7849cd5cb2" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ChildRounding</name></member>
+      <member refid="struct_im_gui_style_1acc8b73cb356dfad30703f851ec973c65" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>CircleTessellationMaxError</name></member>
+      <member refid="struct_im_gui_style_1a64b5fdd495573fa07a80dc0071e99802" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ColorButtonPosition</name></member>
+      <member refid="struct_im_gui_style_1a2b4941240a38d1300c39a7fa4f03d0a3" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>Colors</name></member>
+      <member refid="struct_im_gui_style_1a8fed04481e1d75bb95c97819f545e2ba" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ColumnsMinSpacing</name></member>
+      <member refid="struct_im_gui_style_1a41eb9377b63b8b85ab807c28e00198e9" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>CurveTessellationTol</name></member>
+      <member refid="struct_im_gui_style_1ac497d4a539ff1daf63a8e6a23bd23b0e" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>DisabledAlpha</name></member>
+      <member refid="struct_im_gui_style_1a8dd02a6a031ec8667e76aab1e28755bd" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>DisplaySafeAreaPadding</name></member>
+      <member refid="struct_im_gui_style_1ab06d6f0c6c5f36ab0c14688448de66f6" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>DisplayWindowPadding</name></member>
+      <member refid="struct_im_gui_style_1a21d8f1680e9f897998d726fdf0123bf2" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>FrameBorderSize</name></member>
+      <member refid="struct_im_gui_style_1af58dc4e954ac95fdb3b0df8efb2fa564" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>FramePadding</name></member>
+      <member refid="struct_im_gui_style_1a15402cededdef985487e986ccce73ad2" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>FrameRounding</name></member>
+      <member refid="struct_im_gui_style_1a04db033d001b343815cdcd2491576ef7" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>GrabMinSize</name></member>
+      <member refid="struct_im_gui_style_1a42369d83032545066803a7db62936e8f" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>GrabRounding</name></member>
+      <member refid="struct_im_gui_style_1aa4fce75908e229801cc51a8ee58de9ee" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>HoverDelayNormal</name></member>
+      <member refid="struct_im_gui_style_1af753d08ba372559efadcd919565d5122" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>HoverDelayShort</name></member>
+      <member refid="struct_im_gui_style_1a9b463b2145c1fc619e3fd6dab4786e5a" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>HoverFlagsForTooltipMouse</name></member>
+      <member refid="struct_im_gui_style_1a2b7317157e2432d6b091b9a4bfff506f" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>HoverFlagsForTooltipNav</name></member>
+      <member refid="struct_im_gui_style_1acc9238d7c4075d17f609ce6330a5cbe6" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>HoverStationaryDelay</name></member>
+      <member refid="struct_im_gui_style_1ab0a3ffb3aeec3e6b09b9bde812b28369" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ImGuiStyle</name></member>
+      <member refid="struct_im_gui_style_1a32ea292dee2b4e178a227acacd061921" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>IndentSpacing</name></member>
+      <member refid="struct_im_gui_style_1a1a12021be99583fb491cff2df75d1ae1" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ItemInnerSpacing</name></member>
+      <member refid="struct_im_gui_style_1a6bc07d81e049cd75e86e6b3753c0da4a" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ItemSpacing</name></member>
+      <member refid="struct_im_gui_style_1a6c8674e8aa93236717b36110d7b1f1da" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>LogSliderDeadzone</name></member>
+      <member refid="struct_im_gui_style_1a6448eb2273c8868d7ecccf1152857f68" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>MouseCursorScale</name></member>
+      <member refid="struct_im_gui_style_1ac3bc5e785e360f72b580d419953c9db4" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>PopupBorderSize</name></member>
+      <member refid="struct_im_gui_style_1a44b39e666946eea00001b6e38ab6bdc7" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>PopupRounding</name></member>
+      <member refid="struct_im_gui_style_1a7c9d3e0974a239f65e433cc952be0627" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ScaleAllSizes</name></member>
+      <member refid="struct_im_gui_style_1a00efbadb1ad7daa0ee7384864b147d71" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ScrollbarRounding</name></member>
+      <member refid="struct_im_gui_style_1a96623380e624d2f2ec207449e700a226" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>ScrollbarSize</name></member>
+      <member refid="struct_im_gui_style_1af2dc57060ca88884846dadbf455785c9" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>SelectableTextAlign</name></member>
+      <member refid="struct_im_gui_style_1ab1d9f91937648409a59c27b1a2463408" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>SeparatorTextAlign</name></member>
+      <member refid="struct_im_gui_style_1a7d32779113a08f74b5654f3069f8a430" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>SeparatorTextBorderSize</name></member>
+      <member refid="struct_im_gui_style_1ade414a25409350f02262762eae68454e" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>SeparatorTextPadding</name></member>
+      <member refid="struct_im_gui_style_1afa3c451ba8f0d27a0e167d23e161807e" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>TabBarBorderSize</name></member>
+      <member refid="struct_im_gui_style_1a25858b1cc9234cbb976c934586fc4d88" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>TabBorderSize</name></member>
+      <member refid="struct_im_gui_style_1ae96fdb074684bcff971f43070fe8f354" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>TableAngledHeadersAngle</name></member>
+      <member refid="struct_im_gui_style_1add208c22be44e1453575f5bce33fa24b" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>TabMinWidthForCloseButton</name></member>
+      <member refid="struct_im_gui_style_1a22d2fd87b928e639b4d2d1dbbcf805f8" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>TabRounding</name></member>
+      <member refid="struct_im_gui_style_1ab518a0a67df8f14765acc491d7b460f4" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>TouchExtraPadding</name></member>
+      <member refid="struct_im_gui_style_1a4e2af4dd711f57ee841f9c843a18bec2" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>WindowBorderSize</name></member>
+      <member refid="struct_im_gui_style_1ab67a3fe38a4c109fe9de03228fb2c172" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>WindowMenuButtonPosition</name></member>
+      <member refid="struct_im_gui_style_1a060b2f743a086d0f0fee4cd5b3f372d4" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>WindowMinSize</name></member>
+      <member refid="struct_im_gui_style_1a37f156b53e6dcc99ff57366ceafe8b50" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>WindowPadding</name></member>
+      <member refid="struct_im_gui_style_1acd902c2ab4b53d4bb0f64da608320894" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>WindowRounding</name></member>
+      <member refid="struct_im_gui_style_1a3fc57a15ab8f206045f1e5dfccd8b2e7" prot="public" virt="non-virtual"><scope>ImGuiStyle</scope><name>WindowTitleAlign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

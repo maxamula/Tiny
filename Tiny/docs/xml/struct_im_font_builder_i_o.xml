@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_font_builder_i_o" kind="struct" language="C++" prot="public">
+    <compoundname>ImFontBuilderIO</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_font_builder_i_o_1a81018973af73c727705382fe8c4155b5" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* ImFontBuilderIO::FontBuilder_Build) (ImFontAtlas *atlas)</definition>
+        <argsstring>)(ImFontAtlas *atlas)</argsstring>
+        <name>FontBuilder_Build</name>
+        <qualifiedname>ImFontBuilderIO::FontBuilder_Build</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="3432" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="3432" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="3430" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="3431" bodyend="3433"/>
+    <listofallmembers>
+      <member refid="struct_im_font_builder_i_o_1a81018973af73c727705382fe8c4155b5" prot="public" virt="non-virtual"><scope>ImFontBuilderIO</scope><name>FontBuilder_Build</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -182,8 +182,8 @@ namespace tiny
 	{
 		D3D12_STATIC_SAMPLER_DESC linearClampSampler = {};
 		linearClampSampler.Filter = D3D12_FILTER_MIN_MAG_MIP_LINEAR;
-		linearClampSampler.AddressU = D3D12_TEXTURE_ADDRESS_MODE_CLAMP;
-		linearClampSampler.AddressV = D3D12_TEXTURE_ADDRESS_MODE_CLAMP;
+		linearClampSampler.AddressU = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
+		linearClampSampler.AddressV = D3D12_TEXTURE_ADDRESS_MODE_WRAP;
 		linearClampSampler.AddressW = D3D12_TEXTURE_ADDRESS_MODE_CLAMP;
 		linearClampSampler.MipLODBias = 0;
 		linearClampSampler.MaxAnisotropy = 1;
@@ -192,6 +192,14 @@ namespace tiny
 		linearClampSampler.MinLOD = 0.0f;
 		linearClampSampler.MaxLOD = D3D12_FLOAT32_MAX;
 		linearClampSampler.ShaderVisibility = D3D12_SHADER_VISIBILITY_PIXEL;
+
+		const D3D12_DEPTH_STENCIL_DESC depthDesc
+		{
+			.DepthEnable = TRUE,
+			.DepthWriteMask = D3D12_DEPTH_WRITE_MASK_ALL,
+			.DepthFunc = D3D12_COMPARISON_FUNC_LESS_EQUAL,
+			.StencilEnable = FALSE,
+		};
 
 		fx::MaterialInitializationDesc desc
 		{
@@ -207,11 +215,12 @@ namespace tiny
 				.BlendState = CD3DX12_BLEND_DESC(D3D12_DEFAULT),
 				.SampleMask = UINT_MAX,
 				.RasterizerState = RASTERIZER_STATE.NO_CULL,
-				.DepthStencilState = DEPTH_STATE.DISABLED,
+				.DepthStencilState = depthDesc,
 				.InputLayout = { nullptr, 0 },
 				.PrimitiveTopologyType = D3D12_PRIMITIVE_TOPOLOGY_TYPE_TRIANGLE,
 				.NumRenderTargets = 1,
 				.RTVFormats = { DXGI_FORMAT_R8G8B8A8_UNORM },
+				.DSVFormat = DXGI_FORMAT_D24_UNORM_S8_UINT,
 				.SampleDesc = { 1, 0 }
 			},
 			.staticSamplers

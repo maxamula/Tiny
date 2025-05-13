@@ -1,0 +1,3156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_table" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTable</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_table_1a1f7e5dd488328d3a78de80e7ccc64036" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTable::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiTable::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2701" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ac232807fd66991e640579fb3b02ae051" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1ad3032e379f8aba2cb5c31b05cd40858d" kindref="member">ImGuiTableFlags</ref></type>
+        <definition>ImGuiTableFlags ImGuiTable::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiTable::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2702" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a7e661eeaca53f374216bf0f45dff29e4" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiTable::RawData</definition>
+        <argsstring></argsstring>
+        <name>RawData</name>
+        <qualifiedname>ImGuiTable::RawData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2703" column="32" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a89db69966920e938cdf67f23164c3a80" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_table_temp_data" kindref="compound">ImGuiTableTempData</ref> *</type>
+        <definition>ImGuiTableTempData* ImGuiTable::TempData</definition>
+        <argsstring></argsstring>
+        <name>TempData</name>
+        <qualifiedname>ImGuiTable::TempData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2704" column="32" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6b39e1812dd524fe2dd4a04b613588cf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_span" kindref="compound">ImSpan</ref>&lt; <ref refid="struct_im_gui_table_column" kindref="compound">ImGuiTableColumn</ref> &gt;</type>
+        <definition>ImSpan&lt;ImGuiTableColumn&gt; ImGuiTable::Columns</definition>
+        <argsstring></argsstring>
+        <name>Columns</name>
+        <qualifiedname>ImGuiTable::Columns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2705" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a4fca96eb35902fcfa166694087814edd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_span" kindref="compound">ImSpan</ref>&lt; <ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref> &gt;</type>
+        <definition>ImSpan&lt;ImGuiTableColumnIdx&gt; ImGuiTable::DisplayOrderToIndex</definition>
+        <argsstring></argsstring>
+        <name>DisplayOrderToIndex</name>
+        <qualifiedname>ImGuiTable::DisplayOrderToIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2706" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2706" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a686734156d60378e2c792c93b554d327" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_span" kindref="compound">ImSpan</ref>&lt; <ref refid="struct_im_gui_table_cell_data" kindref="compound">ImGuiTableCellData</ref> &gt;</type>
+        <definition>ImSpan&lt;ImGuiTableCellData&gt; ImGuiTable::RowCellData</definition>
+        <argsstring></argsstring>
+        <name>RowCellData</name>
+        <qualifiedname>ImGuiTable::RowCellData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2707" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a2bfcf66ae07b035488357acae6353d23" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a50698b5f0feef98c52898068b9a22293" kindref="member">ImBitArrayPtr</ref></type>
+        <definition>ImBitArrayPtr ImGuiTable::EnabledMaskByDisplayOrder</definition>
+        <argsstring></argsstring>
+        <name>EnabledMaskByDisplayOrder</name>
+        <qualifiedname>ImGuiTable::EnabledMaskByDisplayOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2708" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a36ec18d9c4c297098101580c255e94b7" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a50698b5f0feef98c52898068b9a22293" kindref="member">ImBitArrayPtr</ref></type>
+        <definition>ImBitArrayPtr ImGuiTable::EnabledMaskByIndex</definition>
+        <argsstring></argsstring>
+        <name>EnabledMaskByIndex</name>
+        <qualifiedname>ImGuiTable::EnabledMaskByIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2709" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a076c23b1ad25cb17474ae2a8926205b9" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a50698b5f0feef98c52898068b9a22293" kindref="member">ImBitArrayPtr</ref></type>
+        <definition>ImBitArrayPtr ImGuiTable::VisibleMaskByIndex</definition>
+        <argsstring></argsstring>
+        <name>VisibleMaskByIndex</name>
+        <qualifiedname>ImGuiTable::VisibleMaskByIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2710" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a099a9fc8ad83bf0338221463848315b2" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1ad3032e379f8aba2cb5c31b05cd40858d" kindref="member">ImGuiTableFlags</ref></type>
+        <definition>ImGuiTableFlags ImGuiTable::SettingsLoadedFlags</definition>
+        <argsstring></argsstring>
+        <name>SettingsLoadedFlags</name>
+        <qualifiedname>ImGuiTable::SettingsLoadedFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2711" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1af300d599c6b3ff9e43ee714da21aac1d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTable::SettingsOffset</definition>
+        <argsstring></argsstring>
+        <name>SettingsOffset</name>
+        <qualifiedname>ImGuiTable::SettingsOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2712" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6be35e3ea6e5ae9f63949f86aa2a6216" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTable::LastFrameActive</definition>
+        <argsstring></argsstring>
+        <name>LastFrameActive</name>
+        <qualifiedname>ImGuiTable::LastFrameActive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2713" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aff0ebae8e79edf5268133b644fb01ee9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTable::ColumnsCount</definition>
+        <argsstring></argsstring>
+        <name>ColumnsCount</name>
+        <qualifiedname>ImGuiTable::ColumnsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2714" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a1e188a304ad3d2d30e7defe542bda5d6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTable::CurrentRow</definition>
+        <argsstring></argsstring>
+        <name>CurrentRow</name>
+        <qualifiedname>ImGuiTable::CurrentRow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2715" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a944e033f46b7729d15b8946d06dbe682" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTable::CurrentColumn</definition>
+        <argsstring></argsstring>
+        <name>CurrentColumn</name>
+        <qualifiedname>ImGuiTable::CurrentColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2716" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a79fe77ae5bb4b1280fcfbbd2e98ad882" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTable::InstanceCurrent</definition>
+        <argsstring></argsstring>
+        <name>InstanceCurrent</name>
+        <qualifiedname>ImGuiTable::InstanceCurrent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2717" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ac0ff33b9c82c9405189c4130a165cfdc" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTable::InstanceInteracted</definition>
+        <argsstring></argsstring>
+        <name>InstanceInteracted</name>
+        <qualifiedname>ImGuiTable::InstanceInteracted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2718" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1af9b476f4a6582468c0ed0a019548d022" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RowPosY1</definition>
+        <argsstring></argsstring>
+        <name>RowPosY1</name>
+        <qualifiedname>ImGuiTable::RowPosY1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2719" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a48403ef1b4c11fe3c7d4df835b2f7a82" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RowPosY2</definition>
+        <argsstring></argsstring>
+        <name>RowPosY2</name>
+        <qualifiedname>ImGuiTable::RowPosY2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2720" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1af23ea5ea747d5c2daffc7954cf4df66c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RowMinHeight</definition>
+        <argsstring></argsstring>
+        <name>RowMinHeight</name>
+        <qualifiedname>ImGuiTable::RowMinHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2721" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ab450ef6433de5aa446804b5809159995" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RowCellPaddingY</definition>
+        <argsstring></argsstring>
+        <name>RowCellPaddingY</name>
+        <qualifiedname>ImGuiTable::RowCellPaddingY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2722" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1af517dd5ce92ebaf84982083485507634" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RowTextBaseline</definition>
+        <argsstring></argsstring>
+        <name>RowTextBaseline</name>
+        <qualifiedname>ImGuiTable::RowTextBaseline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2723" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1abac804d6f3bd10e7920924eb3bf9067c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RowIndentOffsetX</definition>
+        <argsstring></argsstring>
+        <name>RowIndentOffsetX</name>
+        <qualifiedname>ImGuiTable::RowIndentOffsetX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2724" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ae5b7b9728836e1928cc1b838f9aa74ef" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1acff5083d4dbfa7a898927046008598c1" kindref="member">ImGuiTableRowFlags</ref></type>
+        <definition>ImGuiTableRowFlags ImGuiTable::RowFlags</definition>
+        <argsstring></argsstring>
+        <name>RowFlags</name>
+        <qualifiedname>ImGuiTable::RowFlags</qualifiedname>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2725" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1adccfcf7b8e9670d762f9df1df0c5d6b6" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1acff5083d4dbfa7a898927046008598c1" kindref="member">ImGuiTableRowFlags</ref></type>
+        <definition>ImGuiTableRowFlags ImGuiTable::LastRowFlags</definition>
+        <argsstring></argsstring>
+        <name>LastRowFlags</name>
+        <qualifiedname>ImGuiTable::LastRowFlags</qualifiedname>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2726" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6e6aa2309557862d7da9d6970c0f2f0b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTable::RowBgColorCounter</definition>
+        <argsstring></argsstring>
+        <name>RowBgColorCounter</name>
+        <qualifiedname>ImGuiTable::RowBgColorCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2727" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a252e602ec807bf532edd501110bdc7b1" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImGuiTable::RowBgColor[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RowBgColor</name>
+        <qualifiedname>ImGuiTable::RowBgColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2728" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a936d4880c94acaaf59a1bdaafd4fb9cf" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImGuiTable::BorderColorStrong</definition>
+        <argsstring></argsstring>
+        <name>BorderColorStrong</name>
+        <qualifiedname>ImGuiTable::BorderColorStrong</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2729" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ac79c118ebe0c19a00fd0e6a83c7fcfd5" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImGuiTable::BorderColorLight</definition>
+        <argsstring></argsstring>
+        <name>BorderColorLight</name>
+        <qualifiedname>ImGuiTable::BorderColorLight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2730" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a5e3562f22a0b19142111c8c5c297dc69" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::BorderX1</definition>
+        <argsstring></argsstring>
+        <name>BorderX1</name>
+        <qualifiedname>ImGuiTable::BorderX1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2731" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a01d72b316dbb8d9af031f0f139ce65f3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::BorderX2</definition>
+        <argsstring></argsstring>
+        <name>BorderX2</name>
+        <qualifiedname>ImGuiTable::BorderX2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2732" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ad568622dbcfc53bef54e644a74a6abdc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::HostIndentX</definition>
+        <argsstring></argsstring>
+        <name>HostIndentX</name>
+        <qualifiedname>ImGuiTable::HostIndentX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2733" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a4eb7492114618b5c15abdeec7d71ad2f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::MinColumnWidth</definition>
+        <argsstring></argsstring>
+        <name>MinColumnWidth</name>
+        <qualifiedname>ImGuiTable::MinColumnWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2734" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a05c1d38368970a409eaaf83fb06292cc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::OuterPaddingX</definition>
+        <argsstring></argsstring>
+        <name>OuterPaddingX</name>
+        <qualifiedname>ImGuiTable::OuterPaddingX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2735" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a66d3dd51b20c89305d736fdcd0e7a701" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::CellPaddingX</definition>
+        <argsstring></argsstring>
+        <name>CellPaddingX</name>
+        <qualifiedname>ImGuiTable::CellPaddingX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2736" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a3e07bf133695e0131dcf608aa9ec1143" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::CellSpacingX1</definition>
+        <argsstring></argsstring>
+        <name>CellSpacingX1</name>
+        <qualifiedname>ImGuiTable::CellSpacingX1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2737" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a5f6b9f6696fa8a32296ee6d859356fcc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::CellSpacingX2</definition>
+        <argsstring></argsstring>
+        <name>CellSpacingX2</name>
+        <qualifiedname>ImGuiTable::CellSpacingX2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2738" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2738" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1acc6781cae73928ba8dca19cae61dccb1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::InnerWidth</definition>
+        <argsstring></argsstring>
+        <name>InnerWidth</name>
+        <qualifiedname>ImGuiTable::InnerWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2739" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aefc860a8a1fdc36347d1d4224aae810f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::ColumnsGivenWidth</definition>
+        <argsstring></argsstring>
+        <name>ColumnsGivenWidth</name>
+        <qualifiedname>ImGuiTable::ColumnsGivenWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2740" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a7c42c7caf5a05ac02305aa356f29a9a4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::ColumnsAutoFitWidth</definition>
+        <argsstring></argsstring>
+        <name>ColumnsAutoFitWidth</name>
+        <qualifiedname>ImGuiTable::ColumnsAutoFitWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2741" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a3f24cf9f90a85c11dcfb742d157e31ea" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::ColumnsStretchSumWeights</definition>
+        <argsstring></argsstring>
+        <name>ColumnsStretchSumWeights</name>
+        <qualifiedname>ImGuiTable::ColumnsStretchSumWeights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2742" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ab1f45cc1c2eca4d78a2c8eaf202a651a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::ResizedColumnNextWidth</definition>
+        <argsstring></argsstring>
+        <name>ResizedColumnNextWidth</name>
+        <qualifiedname>ImGuiTable::ResizedColumnNextWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2743" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2743" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a92324407723470ac6b102e2201b09ce2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::ResizeLockMinContentsX2</definition>
+        <argsstring></argsstring>
+        <name>ResizeLockMinContentsX2</name>
+        <qualifiedname>ImGuiTable::ResizeLockMinContentsX2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2744" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a21f1ccb2537abbf1fd8ba5f5ddcae612" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::RefScale</definition>
+        <argsstring></argsstring>
+        <name>RefScale</name>
+        <qualifiedname>ImGuiTable::RefScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2745" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aea73b144a783c37607d1d0df228be60a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::AngledHeadersHeight</definition>
+        <argsstring></argsstring>
+        <name>AngledHeadersHeight</name>
+        <qualifiedname>ImGuiTable::AngledHeadersHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2746" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6e35d7f538c9d2a2c78525917e5c358d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTable::AngledHeadersSlope</definition>
+        <argsstring></argsstring>
+        <name>AngledHeadersSlope</name>
+        <qualifiedname>ImGuiTable::AngledHeadersSlope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2747" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6f98734a1abb8f866ffd9fc69d35b2a3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::OuterRect</definition>
+        <argsstring></argsstring>
+        <name>OuterRect</name>
+        <qualifiedname>ImGuiTable::OuterRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2748" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2748" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6d2deeb579e5caff1a9fce372003a68c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::InnerRect</definition>
+        <argsstring></argsstring>
+        <name>InnerRect</name>
+        <qualifiedname>ImGuiTable::InnerRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2749" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a4e0fd51349a7bedc8321f3977ff9e48c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::WorkRect</definition>
+        <argsstring></argsstring>
+        <name>WorkRect</name>
+        <qualifiedname>ImGuiTable::WorkRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2750" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a695a8cfb51a47bf557de0a2fd10744d2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::InnerClipRect</definition>
+        <argsstring></argsstring>
+        <name>InnerClipRect</name>
+        <qualifiedname>ImGuiTable::InnerClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2751" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a07e838bd92bd6531121bfde156b23e7d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::BgClipRect</definition>
+        <argsstring></argsstring>
+        <name>BgClipRect</name>
+        <qualifiedname>ImGuiTable::BgClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2752" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a15d1df65b26a440ffbb941f30b11b948" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::Bg0ClipRectForDrawCmd</definition>
+        <argsstring></argsstring>
+        <name>Bg0ClipRectForDrawCmd</name>
+        <qualifiedname>ImGuiTable::Bg0ClipRectForDrawCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2753" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2753" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a166018c1f957586c14bc0ee081cc3125" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::Bg2ClipRectForDrawCmd</definition>
+        <argsstring></argsstring>
+        <name>Bg2ClipRectForDrawCmd</name>
+        <qualifiedname>ImGuiTable::Bg2ClipRectForDrawCmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2754" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a478781580df4716cfe31e8d639c6f2c5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::HostClipRect</definition>
+        <argsstring></argsstring>
+        <name>HostClipRect</name>
+        <qualifiedname>ImGuiTable::HostClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2755" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2755" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a3a35f7340d466bac8239fd8f3c626ac2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTable::HostBackupInnerClipRect</definition>
+        <argsstring></argsstring>
+        <name>HostBackupInnerClipRect</name>
+        <qualifiedname>ImGuiTable::HostBackupInnerClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2756" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ab5a28e3ba666fece11feb5cdee2e1104" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_window" kindref="compound">ImGuiWindow</ref> *</type>
+        <definition>ImGuiWindow* ImGuiTable::OuterWindow</definition>
+        <argsstring></argsstring>
+        <name>OuterWindow</name>
+        <qualifiedname>ImGuiTable::OuterWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2757" column="32" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ad4cac002e07c96d3df71e37e3e81485e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_window" kindref="compound">ImGuiWindow</ref> *</type>
+        <definition>ImGuiWindow* ImGuiTable::InnerWindow</definition>
+        <argsstring></argsstring>
+        <name>InnerWindow</name>
+        <qualifiedname>ImGuiTable::InnerWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2758" column="32" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1afb12197bd1ad6ae7317b6b0843eb3a60" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_text_buffer" kindref="compound">ImGuiTextBuffer</ref></type>
+        <definition>ImGuiTextBuffer ImGuiTable::ColumnsNames</definition>
+        <argsstring></argsstring>
+        <name>ColumnsNames</name>
+        <qualifiedname>ImGuiTable::ColumnsNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2759" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2759" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1afeda8864273e89f4094a763398652d2a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_list_splitter" kindref="compound">ImDrawListSplitter</ref> *</type>
+        <definition>ImDrawListSplitter* ImGuiTable::DrawSplitter</definition>
+        <argsstring></argsstring>
+        <name>DrawSplitter</name>
+        <qualifiedname>ImGuiTable::DrawSplitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2760" column="32" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2760" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a0511f834ebfb52d3ace661fc1f6e82a6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_table_instance_data" kindref="compound">ImGuiTableInstanceData</ref></type>
+        <definition>ImGuiTableInstanceData ImGuiTable::InstanceDataFirst</definition>
+        <argsstring></argsstring>
+        <name>InstanceDataFirst</name>
+        <qualifiedname>ImGuiTable::InstanceDataFirst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2761" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ae68a68cd4308506c90b3eebf535f388a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_table_instance_data" kindref="compound">ImGuiTableInstanceData</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiTableInstanceData&gt; ImGuiTable::InstanceDataExtra</definition>
+        <argsstring></argsstring>
+        <name>InstanceDataExtra</name>
+        <qualifiedname>ImGuiTable::InstanceDataExtra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2762" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ad111a9b0073e5061f2a847e9ad99519f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_table_column_sort_specs" kindref="compound">ImGuiTableColumnSortSpecs</ref></type>
+        <definition>ImGuiTableColumnSortSpecs ImGuiTable::SortSpecsSingle</definition>
+        <argsstring></argsstring>
+        <name>SortSpecsSingle</name>
+        <qualifiedname>ImGuiTable::SortSpecsSingle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2763" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aba33a5c466948cb483b0b50c840dd422" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_table_column_sort_specs" kindref="compound">ImGuiTableColumnSortSpecs</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiTableColumnSortSpecs&gt; ImGuiTable::SortSpecsMulti</definition>
+        <argsstring></argsstring>
+        <name>SortSpecsMulti</name>
+        <qualifiedname>ImGuiTable::SortSpecsMulti</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2764" column="14" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a8770e95686f57cfc9b61a037e95cc5b1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_table_sort_specs" kindref="compound">ImGuiTableSortSpecs</ref></type>
+        <definition>ImGuiTableSortSpecs ImGuiTable::SortSpecs</definition>
+        <argsstring></argsstring>
+        <name>SortSpecs</name>
+        <qualifiedname>ImGuiTable::SortSpecs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2765" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a72d50758681cecf127e6c9a44883ccfd" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::SortSpecsCount</definition>
+        <argsstring></argsstring>
+        <name>SortSpecsCount</name>
+        <qualifiedname>ImGuiTable::SortSpecsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2766" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a51e7f9180f9739e52406c2192aa627f9" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::ColumnsEnabledCount</definition>
+        <argsstring></argsstring>
+        <name>ColumnsEnabledCount</name>
+        <qualifiedname>ImGuiTable::ColumnsEnabledCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2767" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aedc6edf409c9668781496fe16d19958b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::ColumnsEnabledFixedCount</definition>
+        <argsstring></argsstring>
+        <name>ColumnsEnabledFixedCount</name>
+        <qualifiedname>ImGuiTable::ColumnsEnabledFixedCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2768" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a8f405d885f74a82872edd0dab5790789" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::DeclColumnsCount</definition>
+        <argsstring></argsstring>
+        <name>DeclColumnsCount</name>
+        <qualifiedname>ImGuiTable::DeclColumnsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2769" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ae8800f537d7078e54f0cdbc511af9e02" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::AngledHeadersCount</definition>
+        <argsstring></argsstring>
+        <name>AngledHeadersCount</name>
+        <qualifiedname>ImGuiTable::AngledHeadersCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2770" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a3a94c100bab9cb7a01a02360aaf3b323" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::HoveredColumnBody</definition>
+        <argsstring></argsstring>
+        <name>HoveredColumnBody</name>
+        <qualifiedname>ImGuiTable::HoveredColumnBody</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2771" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a1c47654491f288507621e4b2231b4f89" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::HoveredColumnBorder</definition>
+        <argsstring></argsstring>
+        <name>HoveredColumnBorder</name>
+        <qualifiedname>ImGuiTable::HoveredColumnBorder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2772" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aa7936fe7cd0374917ade9c0cabdf451c" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::HighlightColumnHeader</definition>
+        <argsstring></argsstring>
+        <name>HighlightColumnHeader</name>
+        <qualifiedname>ImGuiTable::HighlightColumnHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2773" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a393160a00b60d647071b9f2925e5161e" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::AutoFitSingleColumn</definition>
+        <argsstring></argsstring>
+        <name>AutoFitSingleColumn</name>
+        <qualifiedname>ImGuiTable::AutoFitSingleColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2774" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1af1ef3df199510dd5210d6501ce6c3996" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::ResizedColumn</definition>
+        <argsstring></argsstring>
+        <name>ResizedColumn</name>
+        <qualifiedname>ImGuiTable::ResizedColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2775" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2775" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ad5ceb30e1aef45ce269fc661c5e89281" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::LastResizedColumn</definition>
+        <argsstring></argsstring>
+        <name>LastResizedColumn</name>
+        <qualifiedname>ImGuiTable::LastResizedColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2776" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1af90fbb7f2d6eba59a140c7dc9e163615" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::HeldHeaderColumn</definition>
+        <argsstring></argsstring>
+        <name>HeldHeaderColumn</name>
+        <qualifiedname>ImGuiTable::HeldHeaderColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2777" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1afe40dc28725db705210bd3a920aea591" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::ReorderColumn</definition>
+        <argsstring></argsstring>
+        <name>ReorderColumn</name>
+        <qualifiedname>ImGuiTable::ReorderColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2778" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a39d9e079bb8f4073e5b02806d890b59b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::ReorderColumnDir</definition>
+        <argsstring></argsstring>
+        <name>ReorderColumnDir</name>
+        <qualifiedname>ImGuiTable::ReorderColumnDir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2779" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aaf5f34705f41f958a897d211168f083f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::LeftMostEnabledColumn</definition>
+        <argsstring></argsstring>
+        <name>LeftMostEnabledColumn</name>
+        <qualifiedname>ImGuiTable::LeftMostEnabledColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2780" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a8f297cc1ad1839a3039adf00e9f29047" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::RightMostEnabledColumn</definition>
+        <argsstring></argsstring>
+        <name>RightMostEnabledColumn</name>
+        <qualifiedname>ImGuiTable::RightMostEnabledColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2781" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a0e6b930bc9743fa9fe1067adf1d66830" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::LeftMostStretchedColumn</definition>
+        <argsstring></argsstring>
+        <name>LeftMostStretchedColumn</name>
+        <qualifiedname>ImGuiTable::LeftMostStretchedColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2782" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a40e26ce4a610b6688c956ffa374ad0dc" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::RightMostStretchedColumn</definition>
+        <argsstring></argsstring>
+        <name>RightMostStretchedColumn</name>
+        <qualifiedname>ImGuiTable::RightMostStretchedColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2783" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aeda01405560dc7f5ba2a26081bf5499d" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::ContextPopupColumn</definition>
+        <argsstring></argsstring>
+        <name>ContextPopupColumn</name>
+        <qualifiedname>ImGuiTable::ContextPopupColumn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2784" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aa90d00342e8c46396854b44101c7355d" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::FreezeRowsRequest</definition>
+        <argsstring></argsstring>
+        <name>FreezeRowsRequest</name>
+        <qualifiedname>ImGuiTable::FreezeRowsRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2785" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ad982334f307fbe429c1de62ef9da8caf" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::FreezeRowsCount</definition>
+        <argsstring></argsstring>
+        <name>FreezeRowsCount</name>
+        <qualifiedname>ImGuiTable::FreezeRowsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2786" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a75f70ed643a861d05a22c566664e0eaf" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::FreezeColumnsRequest</definition>
+        <argsstring></argsstring>
+        <name>FreezeColumnsRequest</name>
+        <qualifiedname>ImGuiTable::FreezeColumnsRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2787" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1add0b2bf413de36eab591d5e376d2f0b4" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::FreezeColumnsCount</definition>
+        <argsstring></argsstring>
+        <name>FreezeColumnsCount</name>
+        <qualifiedname>ImGuiTable::FreezeColumnsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2788" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a3b2630067aff7df6e9111de94fcc5e3b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTable::RowCellDataCurrent</definition>
+        <argsstring></argsstring>
+        <name>RowCellDataCurrent</name>
+        <qualifiedname>ImGuiTable::RowCellDataCurrent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2789" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a1daad01c8bb3bc4194401c658b61a667" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a94a155e39a8421d368cc9c9d70d5c3b4" kindref="member">ImGuiTableDrawChannelIdx</ref></type>
+        <definition>ImGuiTableDrawChannelIdx ImGuiTable::DummyDrawChannel</definition>
+        <argsstring></argsstring>
+        <name>DummyDrawChannel</name>
+        <qualifiedname>ImGuiTable::DummyDrawChannel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2790" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a2963b4f92f924de8c1ef1fcb43a9e597" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a94a155e39a8421d368cc9c9d70d5c3b4" kindref="member">ImGuiTableDrawChannelIdx</ref></type>
+        <definition>ImGuiTableDrawChannelIdx ImGuiTable::Bg2DrawChannelCurrent</definition>
+        <argsstring></argsstring>
+        <name>Bg2DrawChannelCurrent</name>
+        <qualifiedname>ImGuiTable::Bg2DrawChannelCurrent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2791" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aefc8289f98d409d303517159c521a4b0" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a94a155e39a8421d368cc9c9d70d5c3b4" kindref="member">ImGuiTableDrawChannelIdx</ref></type>
+        <definition>ImGuiTableDrawChannelIdx ImGuiTable::Bg2DrawChannelUnfrozen</definition>
+        <argsstring></argsstring>
+        <name>Bg2DrawChannelUnfrozen</name>
+        <qualifiedname>ImGuiTable::Bg2DrawChannelUnfrozen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2792" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a1596be40e96bb5faa7aad3fd50291e33" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsLayoutLocked</definition>
+        <argsstring></argsstring>
+        <name>IsLayoutLocked</name>
+        <qualifiedname>ImGuiTable::IsLayoutLocked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2793" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a32f59376aae5cbe008c49605be3cd007" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsInsideRow</definition>
+        <argsstring></argsstring>
+        <name>IsInsideRow</name>
+        <qualifiedname>ImGuiTable::IsInsideRow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2794" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a28cdc6e10e4295c6548660b2c31ad593" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsInitializing</definition>
+        <argsstring></argsstring>
+        <name>IsInitializing</name>
+        <qualifiedname>ImGuiTable::IsInitializing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2795" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a066141fe3c9b74ec5492d4acd4f1a21a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsSortSpecsDirty</definition>
+        <argsstring></argsstring>
+        <name>IsSortSpecsDirty</name>
+        <qualifiedname>ImGuiTable::IsSortSpecsDirty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2796" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2796" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aa24819d7de86a33a491b909cfb00251c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsUsingHeaders</definition>
+        <argsstring></argsstring>
+        <name>IsUsingHeaders</name>
+        <qualifiedname>ImGuiTable::IsUsingHeaders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2797" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2797" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a5345136b8044075f539c4fbe7cc4b53b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsContextPopupOpen</definition>
+        <argsstring></argsstring>
+        <name>IsContextPopupOpen</name>
+        <qualifiedname>ImGuiTable::IsContextPopupOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2798" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a6675686e4c58ae853db3f62d339d192e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::DisableDefaultContextMenu</definition>
+        <argsstring></argsstring>
+        <name>DisableDefaultContextMenu</name>
+        <qualifiedname>ImGuiTable::DisableDefaultContextMenu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2799" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ab1f0c3a1a1c500cb5b3a3e1cd2761519" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsSettingsRequestLoad</definition>
+        <argsstring></argsstring>
+        <name>IsSettingsRequestLoad</name>
+        <qualifiedname>ImGuiTable::IsSettingsRequestLoad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2800" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a4c0a3b840b7a5c111551e1e8a6ad6c3a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsSettingsDirty</definition>
+        <argsstring></argsstring>
+        <name>IsSettingsDirty</name>
+        <qualifiedname>ImGuiTable::IsSettingsDirty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2801" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aa7f7e814cd813fd5de652ae315c8c135" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsDefaultDisplayOrder</definition>
+        <argsstring></argsstring>
+        <name>IsDefaultDisplayOrder</name>
+        <qualifiedname>ImGuiTable::IsDefaultDisplayOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2802" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a2d066ad49460272713bd6c9beba4a1cc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsResetAllRequest</definition>
+        <argsstring></argsstring>
+        <name>IsResetAllRequest</name>
+        <qualifiedname>ImGuiTable::IsResetAllRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2803" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ab1e0c549a7c1de0ffbd14c18ae7bb402" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsResetDisplayOrderRequest</definition>
+        <argsstring></argsstring>
+        <name>IsResetDisplayOrderRequest</name>
+        <qualifiedname>ImGuiTable::IsResetDisplayOrderRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2804" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a011cb090506f53f6fed0a395b1ac1c22" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsUnfrozenRows</definition>
+        <argsstring></argsstring>
+        <name>IsUnfrozenRows</name>
+        <qualifiedname>ImGuiTable::IsUnfrozenRows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2805" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a84bfdcc0efeb85cf6f103ddf166e4c65" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsDefaultSizingPolicy</definition>
+        <argsstring></argsstring>
+        <name>IsDefaultSizingPolicy</name>
+        <qualifiedname>ImGuiTable::IsDefaultSizingPolicy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2806" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2806" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a9ef8fc61d71a09ff2550bae7cf9fa065" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsActiveIdAliveBeforeTable</definition>
+        <argsstring></argsstring>
+        <name>IsActiveIdAliveBeforeTable</name>
+        <qualifiedname>ImGuiTable::IsActiveIdAliveBeforeTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2807" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a0b1d1eaeac2d85cfcdd916ca7efd85b8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::IsActiveIdInTable</definition>
+        <argsstring></argsstring>
+        <name>IsActiveIdInTable</name>
+        <qualifiedname>ImGuiTable::IsActiveIdInTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2808" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a7c1826bfb454ce6b72ca910570a0f319" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::HasScrollbarYCurr</definition>
+        <argsstring></argsstring>
+        <name>HasScrollbarYCurr</name>
+        <qualifiedname>ImGuiTable::HasScrollbarYCurr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2809" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1ab3160cf8f571c580c7fa9e6c2e0115a1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::HasScrollbarYPrev</definition>
+        <argsstring></argsstring>
+        <name>HasScrollbarYPrev</name>
+        <qualifiedname>ImGuiTable::HasScrollbarYPrev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2810" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1aa6825c0891fe234c20d5f92e33725d0d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::MemoryCompacted</definition>
+        <argsstring></argsstring>
+        <name>MemoryCompacted</name>
+        <qualifiedname>ImGuiTable::MemoryCompacted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2811" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2811" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_1a202de697d7aabc75e0d06d4b700cacdd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTable::HostSkipItems</definition>
+        <argsstring></argsstring>
+        <name>HostSkipItems</name>
+        <qualifiedname>ImGuiTable::HostSkipItems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2812" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2812" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_table_1ad9cfd8be1defebf32b2b2d7fcd5fd152" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTable::ImGuiTable</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTable</name>
+        <qualifiedname>ImGuiTable::ImGuiTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2814" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2814" bodyend="2814"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_table_1ac9e489ed577c125c930364a4c903132c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTable::~ImGuiTable</definition>
+        <argsstring>()</argsstring>
+        <name>~ImGuiTable</name>
+        <qualifiedname>ImGuiTable::~ImGuiTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2815" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2815" bodyend="2815"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="118">
+        <label>ImChunkStream&lt; ImGuiTableSettings &gt;</label>
+        <link refid="struct_im_chunk_stream"/>
+        <childnode refid="99" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="117">
+        <label>ImChunkStream&lt; ImGuiWindowSettings &gt;</label>
+        <link refid="struct_im_chunk_stream"/>
+        <childnode refid="99" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImDrawChannel</label>
+        <link refid="struct_im_draw_channel"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>_IdxBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImDrawCmd</label>
+        <link refid="struct_im_draw_cmd"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>UserCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ImDrawCmdHeader</label>
+        <link refid="struct_im_draw_cmd_header"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>ImDrawData</label>
+        <link refid="struct_im_draw_data"/>
+        <childnode refid="82" relation="usage">
+          <edgelabel>CmdLists</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DisplayPos</edgelabel>
+          <edgelabel>DisplaySize</edgelabel>
+          <edgelabel>FramebufferScale</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>OwnerViewport</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>ImDrawDataBuilder</label>
+        <link refid="struct_im_draw_data_builder"/>
+        <childnode refid="82" relation="usage">
+          <edgelabel>LayerData1</edgelabel>
+          <edgelabel>Layers</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImDrawList</label>
+        <link refid="struct_im_draw_list"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>IdxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>VtxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>_Data</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_VtxWritePtr</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>_ClipRectStack</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>_TextureIdStack</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>_Path</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>_CmdHeader</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImDrawListSplitter</label>
+        <link refid="struct_im_draw_list_splitter"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_Channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="25">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="67">
+        <label>ImGuiColorMod</label>
+        <link refid="struct_im_gui_color_mod"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>BackupValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>ImGuiComboPreviewData</label>
+        <link refid="struct_im_gui_combo_preview_data"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>PreviewRect</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BackupCursorMaxPos</edgelabel>
+          <edgelabel>BackupCursorPos</edgelabel>
+          <edgelabel>BackupCursorPosPrevLine</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>ImGuiContext</label>
+        <link refid="struct_im_gui_context"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>IO</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>Style</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Font</edgelabel>
+          <edgelabel>InputTextPasswordFont</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>DrawListSharedData</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>InputEventsQueue</edgelabel>
+          <edgelabel>InputEventsTrail</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>Windows</edgelabel>
+          <edgelabel>WindowsFocusOrder</edgelabel>
+          <edgelabel>WindowsTempSortBuffer</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>CurrentWindowStack</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>WindowsById</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ActiveIdClickOffset</edgelabel>
+          <edgelabel>MouseLastValidPos</edgelabel>
+          <edgelabel>NavWindowingAccumDeltaPos</edgelabel>
+          <edgelabel>NavWindowingAccumDeltaSize</edgelabel>
+          <edgelabel>WheelingAxisAvg</edgelabel>
+          <edgelabel>WheelingWindowRefMousePos</edgelabel>
+          <edgelabel>WheelingWindowWheelRemainder</edgelabel>
+          <edgelabel>WindowsHoverPadding</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>ActiveIdPreviousFrameWindow</edgelabel>
+          <edgelabel>ActiveIdWindow</edgelabel>
+          <edgelabel>CurrentWindow</edgelabel>
+          <edgelabel>HoveredWindow</edgelabel>
+          <edgelabel>HoveredWindowUnderMovingWindow</edgelabel>
+          <edgelabel>MovingWindow</edgelabel>
+          <edgelabel>NavWindow</edgelabel>
+          <edgelabel>NavWindowingListWindow</edgelabel>
+          <edgelabel>NavWindowingTarget</edgelabel>
+          <edgelabel>NavWindowingTargetAnim</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="59" relation="usage">
+          <edgelabel>KeysOwnerData</edgelabel>
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>KeysRoutingTable</edgelabel>
+        </childnode>
+        <childnode refid="63" relation="usage">
+          <edgelabel>NextItemData</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>LastItemData</edgelabel>
+        </childnode>
+        <childnode refid="64" relation="usage">
+          <edgelabel>NextWindowData</edgelabel>
+        </childnode>
+        <childnode refid="66" relation="usage">
+          <edgelabel>ColorStack</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>StyleVarStack</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>FontStack</edgelabel>
+        </childnode>
+        <childnode refid="70" relation="usage">
+          <edgelabel>FocusScopeStack</edgelabel>
+          <edgelabel>MenusIdSubmittedThisFrame</edgelabel>
+        </childnode>
+        <childnode refid="71" relation="usage">
+          <edgelabel>ItemFlagsStack</edgelabel>
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>GroupStack</edgelabel>
+        </childnode>
+        <childnode refid="74" relation="usage">
+          <edgelabel>BeginPopupStack</edgelabel>
+          <edgelabel>OpenPopupStack</edgelabel>
+        </childnode>
+        <childnode refid="76" relation="usage">
+          <edgelabel>NavTreeNodeStack</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>Viewports</edgelabel>
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>NavInitResult</edgelabel>
+          <edgelabel>NavMoveResultLocal</edgelabel>
+          <edgelabel>NavMoveResultLocalVisible</edgelabel>
+          <edgelabel>NavMoveResultOther</edgelabel>
+          <edgelabel>NavTabbingResultFirst</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>DragDropTargetClipRect</edgelabel>
+          <edgelabel>DragDropTargetRect</edgelabel>
+          <edgelabel>NavScoringNoClipRect</edgelabel>
+          <edgelabel>NavScoringRect</edgelabel>
+          <edgelabel>WindowResizeBorderExpectedRect</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>DragDropPayload</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>DragDropPayloadBufHeap</edgelabel>
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>ClipperTempData</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>CurrentTable</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>TablesTempData</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>Tables</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>TablesLastTimeActive</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>DrawChannelsTempMergeBuffer</edgelabel>
+        </childnode>
+        <childnode refid="95" relation="usage">
+          <edgelabel>CurrentTabBar</edgelabel>
+        </childnode>
+        <childnode refid="100" relation="usage">
+          <edgelabel>TabBars</edgelabel>
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>CurrentTabBarStack</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>ShrinkWidthBuffer</edgelabel>
+        </childnode>
+        <childnode refid="106" relation="usage">
+          <edgelabel>InputTextState</edgelabel>
+        </childnode>
+        <childnode refid="110" relation="usage">
+          <edgelabel>InputTextDeactivatedState</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ColorPickerRef</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>ComboPreviewData</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>ClipboardHandlerData</edgelabel>
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+        <childnode refid="112" relation="usage">
+          <edgelabel>TypingSelectState</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>PlatformImeData</edgelabel>
+          <edgelabel>PlatformImeDataPrev</edgelabel>
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>DebugLogBuf</edgelabel>
+          <edgelabel>LogBuffer</edgelabel>
+          <edgelabel>SettingsIniData</edgelabel>
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>SettingsHandlers</edgelabel>
+        </childnode>
+        <childnode refid="117" relation="usage">
+          <edgelabel>SettingsWindows</edgelabel>
+        </childnode>
+        <childnode refid="118" relation="usage">
+          <edgelabel>SettingsTables</edgelabel>
+        </childnode>
+        <childnode refid="119" relation="usage">
+          <edgelabel>Hooks</edgelabel>
+        </childnode>
+        <childnode refid="121" relation="usage">
+          <edgelabel>DebugLogIndex</edgelabel>
+        </childnode>
+        <childnode refid="123" relation="usage">
+          <edgelabel>DebugMetricsConfig</edgelabel>
+        </childnode>
+        <childnode refid="124" relation="usage">
+          <edgelabel>DebugIDStackTool</edgelabel>
+        </childnode>
+        <childnode refid="127" relation="usage">
+          <edgelabel>DebugAllocInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="120">
+        <label>ImGuiContextHook</label>
+        <link refid="struct_im_gui_context_hook"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Callback</edgelabel>
+        </childnode>
+      </node>
+      <node id="128">
+        <label>ImGuiDebugAllocEntry</label>
+        <link refid="struct_im_gui_debug_alloc_entry"/>
+      </node>
+      <node id="127">
+        <label>ImGuiDebugAllocInfo</label>
+        <link refid="struct_im_gui_debug_alloc_info"/>
+        <childnode refid="128" relation="usage">
+          <edgelabel>LastEntriesBuf</edgelabel>
+        </childnode>
+      </node>
+      <node id="73">
+        <label>ImGuiGroupData</label>
+        <link refid="struct_im_gui_group_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BackupCurrLineSize</edgelabel>
+          <edgelabel>BackupCursorMaxPos</edgelabel>
+          <edgelabel>BackupCursorPos</edgelabel>
+          <edgelabel>BackupCursorPosPrevLine</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>BackupGroupOffset</edgelabel>
+          <edgelabel>BackupIndent</edgelabel>
+        </childnode>
+      </node>
+      <node id="124">
+        <label>ImGuiIDStackTool</label>
+        <link refid="struct_im_gui_i_d_stack_tool"/>
+        <childnode refid="125" relation="usage">
+          <edgelabel>Results</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>ImGuiIO</label>
+        <link refid="struct_im_gui_i_o"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DisplayFramebufferScale</edgelabel>
+          <edgelabel>DisplaySize</edgelabel>
+          <edgelabel>MouseClickedPos</edgelabel>
+          <edgelabel>MouseDelta</edgelabel>
+          <edgelabel>MousePos</edgelabel>
+          <edgelabel>MousePosPrev</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>FontDefault</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Ctx</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>KeysData</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>InputQueueCharacters</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>ImGuiInputEvent</label>
+        <link refid="struct_im_gui_input_event"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>MousePos</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>MouseWheel</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>MouseButton</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>Key</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>Text</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>AppFocused</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>ImGuiInputEventAppFocused</label>
+        <link refid="struct_im_gui_input_event_app_focused"/>
+      </node>
+      <node id="48">
+        <label>ImGuiInputEventKey</label>
+        <link refid="struct_im_gui_input_event_key"/>
+      </node>
+      <node id="47">
+        <label>ImGuiInputEventMouseButton</label>
+        <link refid="struct_im_gui_input_event_mouse_button"/>
+      </node>
+      <node id="45">
+        <label>ImGuiInputEventMousePos</label>
+        <link refid="struct_im_gui_input_event_mouse_pos"/>
+      </node>
+      <node id="46">
+        <label>ImGuiInputEventMouseWheel</label>
+        <link refid="struct_im_gui_input_event_mouse_wheel"/>
+      </node>
+      <node id="49">
+        <label>ImGuiInputEventText</label>
+        <link refid="struct_im_gui_input_event_text"/>
+      </node>
+      <node id="110">
+        <label>ImGuiInputTextDeactivatedState</label>
+        <link refid="struct_im_gui_input_text_deactivated_state"/>
+        <childnode refid="99" relation="usage">
+          <edgelabel>TextA</edgelabel>
+        </childnode>
+      </node>
+      <node id="106">
+        <label>ImGuiInputTextState</label>
+        <link refid="struct_im_gui_input_text_state"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Ctx</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>TextW</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>InitialTextA</edgelabel>
+          <edgelabel>TextA</edgelabel>
+        </childnode>
+        <childnode refid="107" relation="usage">
+          <edgelabel>Stb</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>ImGuiKeyData</label>
+        <link refid="struct_im_gui_key_data"/>
+      </node>
+      <node id="59">
+        <label>ImGuiKeyOwnerData</label>
+        <link refid="struct_im_gui_key_owner_data"/>
+      </node>
+      <node id="62">
+        <label>ImGuiKeyRoutingData</label>
+        <link refid="struct_im_gui_key_routing_data"/>
+      </node>
+      <node id="60">
+        <label>ImGuiKeyRoutingTable</label>
+        <link refid="struct_im_gui_key_routing_table"/>
+        <childnode refid="61" relation="usage">
+          <edgelabel>Entries</edgelabel>
+          <edgelabel>EntriesNext</edgelabel>
+        </childnode>
+      </node>
+      <node id="54">
+        <label>ImGuiLastItemData</label>
+        <link refid="struct_im_gui_last_item_data"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+          <edgelabel>DisplayRect</edgelabel>
+          <edgelabel>NavRect</edgelabel>
+          <edgelabel>Rect</edgelabel>
+        </childnode>
+      </node>
+      <node id="89">
+        <label>ImGuiListClipper</label>
+        <link refid="struct_im_gui_list_clipper"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Ctx</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>ImGuiListClipperData</label>
+        <link refid="struct_im_gui_list_clipper_data"/>
+        <childnode refid="89" relation="usage">
+          <edgelabel>ListClipper</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>Ranges</edgelabel>
+        </childnode>
+      </node>
+      <node id="91">
+        <label>ImGuiListClipperRange</label>
+        <link refid="struct_im_gui_list_clipper_range"/>
+      </node>
+      <node id="130">
+        <label>ImGuiMenuColumns</label>
+        <link refid="struct_im_gui_menu_columns"/>
+      </node>
+      <node id="123">
+        <label>ImGuiMetricsConfig</label>
+        <link refid="struct_im_gui_metrics_config"/>
+      </node>
+      <node id="84">
+        <label>ImGuiNavItemData</label>
+        <link refid="struct_im_gui_nav_item_data"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>Window</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>RectRel</edgelabel>
+        </childnode>
+      </node>
+      <node id="77">
+        <label>ImGuiNavTreeNodeData</label>
+        <link refid="struct_im_gui_nav_tree_node_data"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>NavRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="63">
+        <label>ImGuiNextItemData</label>
+        <link refid="struct_im_gui_next_item_data"/>
+      </node>
+      <node id="64">
+        <label>ImGuiNextWindowData</label>
+        <link refid="struct_im_gui_next_window_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ContentSizeVal</edgelabel>
+          <edgelabel>MenuBarOffsetMinVal</edgelabel>
+          <edgelabel>PosPivotVal</edgelabel>
+          <edgelabel>PosVal</edgelabel>
+          <edgelabel>ScrollVal</edgelabel>
+          <edgelabel>SizeVal</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>SizeConstraintRect</edgelabel>
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>SizeCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="133">
+        <label>ImGuiOldColumnData</label>
+        <link refid="struct_im_gui_old_column_data"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="131">
+        <label>ImGuiOldColumns</label>
+        <link refid="struct_im_gui_old_columns"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>HostBackupClipRect</edgelabel>
+          <edgelabel>HostBackupParentWorkRect</edgelabel>
+          <edgelabel>HostInitialClipRect</edgelabel>
+        </childnode>
+        <childnode refid="132" relation="usage">
+          <edgelabel>Columns</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>ImGuiPayload</label>
+        <link refid="struct_im_gui_payload"/>
+      </node>
+      <node id="114">
+        <label>ImGuiPlatformImeData</label>
+        <link refid="struct_im_gui_platform_ime_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>InputPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="75">
+        <label>ImGuiPopupData</label>
+        <link refid="struct_im_gui_popup_data"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>BackupNavWindow</edgelabel>
+          <edgelabel>Window</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>OpenMousePos</edgelabel>
+          <edgelabel>OpenPopupPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="103">
+        <label>ImGuiPtrOrIndex</label>
+        <link refid="struct_im_gui_ptr_or_index"/>
+      </node>
+      <node id="116">
+        <label>ImGuiSettingsHandler</label>
+        <link refid="struct_im_gui_settings_handler"/>
+      </node>
+      <node id="105">
+        <label>ImGuiShrinkWidthItem</label>
+        <link refid="struct_im_gui_shrink_width_item"/>
+      </node>
+      <node id="65">
+        <label>ImGuiSizeCallbackData</label>
+        <link refid="struct_im_gui_size_callback_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CurrentSize</edgelabel>
+          <edgelabel>DesiredSize</edgelabel>
+          <edgelabel>Pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="126">
+        <label>ImGuiStackLevelInfo</label>
+        <link refid="struct_im_gui_stack_level_info"/>
+      </node>
+      <node id="55">
+        <label>ImGuiStackSizes</label>
+        <link refid="struct_im_gui_stack_sizes"/>
+      </node>
+      <node id="56">
+        <label>ImGuiStorage</label>
+        <link refid="struct_im_gui_storage"/>
+        <childnode refid="57" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="58">
+        <label>ImGuiStorage::ImGuiStoragePair</label>
+        <link refid="struct_im_gui_storage_1_1_im_gui_storage_pair"/>
+      </node>
+      <node id="42">
+        <label>ImGuiStyle</label>
+        <link refid="struct_im_gui_style"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ButtonTextAlign</edgelabel>
+          <edgelabel>CellPadding</edgelabel>
+          <edgelabel>DisplaySafeAreaPadding</edgelabel>
+          <edgelabel>DisplayWindowPadding</edgelabel>
+          <edgelabel>FramePadding</edgelabel>
+          <edgelabel>ItemInnerSpacing</edgelabel>
+          <edgelabel>ItemSpacing</edgelabel>
+          <edgelabel>SelectableTextAlign</edgelabel>
+          <edgelabel>SeparatorTextAlign</edgelabel>
+          <edgelabel>SeparatorTextPadding</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Colors</edgelabel>
+        </childnode>
+      </node>
+      <node id="69">
+        <label>ImGuiStyleMod</label>
+        <link refid="struct_im_gui_style_mod"/>
+      </node>
+      <node id="95">
+        <label>ImGuiTabBar</label>
+        <link refid="struct_im_gui_tab_bar"/>
+        <childnode refid="96" relation="usage">
+          <edgelabel>Tabs</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>BarRect</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BackupCursorPos</edgelabel>
+          <edgelabel>FramePadding</edgelabel>
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>TabsNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="97">
+        <label>ImGuiTabItem</label>
+        <link refid="struct_im_gui_tab_item"/>
+      </node>
+      <node id="1">
+        <label>ImGuiTable</label>
+        <link refid="struct_im_gui_table"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TempData</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>Columns</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>DisplayOrderToIndex</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>RowCellData</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>Bg0ClipRectForDrawCmd</edgelabel>
+          <edgelabel>Bg2ClipRectForDrawCmd</edgelabel>
+          <edgelabel>BgClipRect</edgelabel>
+          <edgelabel>HostBackupInnerClipRect</edgelabel>
+          <edgelabel>HostClipRect</edgelabel>
+          <edgelabel>InnerClipRect</edgelabel>
+          <edgelabel>InnerRect</edgelabel>
+          <edgelabel>OuterRect</edgelabel>
+          <edgelabel>WorkRect</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>InnerWindow</edgelabel>
+          <edgelabel>OuterWindow</edgelabel>
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>ColumnsNames</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>DrawSplitter</edgelabel>
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>InstanceDataFirst</edgelabel>
+        </childnode>
+        <childnode refid="137" relation="usage">
+          <edgelabel>InstanceDataExtra</edgelabel>
+        </childnode>
+        <childnode refid="138" relation="usage">
+          <edgelabel>SortSpecsSingle</edgelabel>
+        </childnode>
+        <childnode refid="139" relation="usage">
+          <edgelabel>SortSpecsMulti</edgelabel>
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>SortSpecs</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>ImGuiTableCellData</label>
+        <link refid="struct_im_gui_table_cell_data"/>
+      </node>
+      <node id="34">
+        <label>ImGuiTableColumn</label>
+        <link refid="struct_im_gui_table_column"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="138">
+        <label>ImGuiTableColumnSortSpecs</label>
+        <link refid="struct_im_gui_table_column_sort_specs"/>
+      </node>
+      <node id="136">
+        <label>ImGuiTableInstanceData</label>
+        <link refid="struct_im_gui_table_instance_data"/>
+      </node>
+      <node id="140">
+        <label>ImGuiTableSortSpecs</label>
+        <link refid="struct_im_gui_table_sort_specs"/>
+        <childnode refid="138" relation="usage">
+          <edgelabel>Specs</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImGuiTableTempData</label>
+        <link refid="struct_im_gui_table_temp_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>HostBackupCurrLineSize</edgelabel>
+          <edgelabel>HostBackupCursorMaxPos</edgelabel>
+          <edgelabel>HostBackupPrevLineSize</edgelabel>
+          <edgelabel>UserOuterSize</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>DrawSplitter</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>HostBackupParentWorkRect</edgelabel>
+          <edgelabel>HostBackupWorkRect</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>HostBackupColumnsOffset</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>ImGuiTextBuffer</label>
+        <link refid="struct_im_gui_text_buffer"/>
+        <childnode refid="99" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="121">
+        <label>ImGuiTextIndex</label>
+        <link refid="struct_im_gui_text_index"/>
+        <childnode refid="122" relation="usage">
+          <edgelabel>LineOffsets</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>ImGuiTypingSelectRequest</label>
+        <link refid="struct_im_gui_typing_select_request"/>
+      </node>
+      <node id="112">
+        <label>ImGuiTypingSelectState</label>
+        <link refid="struct_im_gui_typing_select_state"/>
+        <childnode refid="113" relation="usage">
+          <edgelabel>Request</edgelabel>
+        </childnode>
+      </node>
+      <node id="80">
+        <label>ImGuiViewport</label>
+        <link refid="struct_im_gui_viewport"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Pos</edgelabel>
+          <edgelabel>Size</edgelabel>
+          <edgelabel>WorkPos</edgelabel>
+          <edgelabel>WorkSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>ImGuiViewportP</label>
+        <link refid="struct_im_gui_viewport_p"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>BgFgDrawLists</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>DrawDataP</edgelabel>
+        </childnode>
+        <childnode refid="83" relation="usage">
+          <edgelabel>DrawDataBuilder</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BuildWorkOffsetMax</edgelabel>
+          <edgelabel>BuildWorkOffsetMin</edgelabel>
+          <edgelabel>WorkOffsetMax</edgelabel>
+          <edgelabel>WorkOffsetMin</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>ImGuiWindow</label>
+        <link refid="struct_im_gui_window"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>Ctx</edgelabel>
+        </childnode>
+        <childnode refid="79" relation="usage">
+          <edgelabel>Viewport</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ContentSize</edgelabel>
+          <edgelabel>ContentSizeExplicit</edgelabel>
+          <edgelabel>ContentSizeIdeal</edgelabel>
+          <edgelabel>NavPreferredScoringPosRel</edgelabel>
+          <edgelabel>Pos</edgelabel>
+          <edgelabel>Scroll</edgelabel>
+          <edgelabel>ScrollMax</edgelabel>
+          <edgelabel>ScrollTarget</edgelabel>
+          <edgelabel>ScrollTargetCenterRatio</edgelabel>
+          <edgelabel>ScrollTargetEdgeSnapDist</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="70" relation="usage">
+          <edgelabel>IDStack</edgelabel>
+        </childnode>
+        <childnode refid="129" relation="usage">
+          <edgelabel>DC</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+          <edgelabel>ContentRegionRect</edgelabel>
+          <edgelabel>InnerClipRect</edgelabel>
+          <edgelabel>InnerRect</edgelabel>
+          <edgelabel>NavRectRel</edgelabel>
+          <edgelabel>OuterRectClipped</edgelabel>
+          <edgelabel>ParentWorkRect</edgelabel>
+          <edgelabel>WorkRect</edgelabel>
+        </childnode>
+        <childnode refid="134" relation="usage">
+          <edgelabel>HitTestHoleOffset</edgelabel>
+          <edgelabel>HitTestHoleSize</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>StateStorage</edgelabel>
+        </childnode>
+        <childnode refid="135" relation="usage">
+          <edgelabel>ColumnsStorage</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>DrawList</edgelabel>
+          <edgelabel>DrawListInst</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>NavLastChildNavWindow</edgelabel>
+          <edgelabel>ParentWindow</edgelabel>
+          <edgelabel>ParentWindowInBeginStack</edgelabel>
+          <edgelabel>RootWindow</edgelabel>
+          <edgelabel>RootWindowForNav</edgelabel>
+          <edgelabel>RootWindowForTitleBarHighlight</edgelabel>
+          <edgelabel>RootWindowPopupTree</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>ImGuiWindowStackData</label>
+        <link refid="struct_im_gui_window_stack_data"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>Window</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>ParentLastItemDataBackup</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>StackSizesOnBegin</edgelabel>
+        </childnode>
+      </node>
+      <node id="129">
+        <label>ImGuiWindowTempData</label>
+        <link refid="struct_im_gui_window_temp_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>CurrLineSize</edgelabel>
+          <edgelabel>CursorMaxPos</edgelabel>
+          <edgelabel>CursorPos</edgelabel>
+          <edgelabel>CursorPosPrevLine</edgelabel>
+          <edgelabel>CursorStartPos</edgelabel>
+          <edgelabel>CursorStartPosLossyness</edgelabel>
+          <edgelabel>IdealMaxPos</edgelabel>
+          <edgelabel>MenuBarOffset</edgelabel>
+          <edgelabel>PrevLineSize</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>ColumnsOffset</edgelabel>
+          <edgelabel>GroupOffset</edgelabel>
+          <edgelabel>Indent</edgelabel>
+        </childnode>
+        <childnode refid="130" relation="usage">
+          <edgelabel>MenuColumns</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>ChildWindows</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>StateStorage</edgelabel>
+        </childnode>
+        <childnode refid="131" relation="usage">
+          <edgelabel>CurrentColumns</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>ItemWidthStack</edgelabel>
+          <edgelabel>TextWrapPosStack</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>ImPool&lt; ImGuiTabBar &gt;</label>
+        <link refid="struct_im_pool"/>
+        <childnode refid="101" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>Map</edgelabel>
+        </childnode>
+      </node>
+      <node id="93">
+        <label>ImPool&lt; ImGuiTable &gt;</label>
+        <link refid="struct_im_pool"/>
+        <childnode refid="94" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>Map</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>ImSpan&lt; ImGuiTableCellData &gt;</label>
+        <link refid="struct_im_span"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>Data</edgelabel>
+          <edgelabel>DataEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>ImSpan&lt; ImGuiTableColumn &gt;</label>
+        <link refid="struct_im_span"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>Data</edgelabel>
+          <edgelabel>DataEnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>ImSpan&lt; ImGuiTableColumnIdx &gt;</label>
+        <link refid="struct_im_span"/>
+      </node>
+      <node id="107">
+        <label>ImStb::STB_TexteditState</label>
+        <link refid="struct_im_stb_1_1_s_t_b___textedit_state"/>
+        <childnode refid="108" relation="usage">
+          <edgelabel>undostate</edgelabel>
+        </childnode>
+      </node>
+      <node id="109">
+        <label>ImStb::StbUndoRecord</label>
+        <link refid="struct_im_stb_1_1_stb_undo_record"/>
+      </node>
+      <node id="108">
+        <label>ImStb::StbUndoState</label>
+        <link refid="struct_im_stb_1_1_stb_undo_state"/>
+        <childnode refid="109" relation="usage">
+          <edgelabel>undo_rec</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>ImVec1</label>
+        <link refid="struct_im_vec1"/>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="134">
+        <label>ImVec2ih</label>
+        <link refid="struct_im_vec2ih"/>
+      </node>
+      <node id="9">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="5">
+        <label>ImVector&lt; ImDrawChannel &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImVector&lt; ImDrawCmd &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ImVector&lt; ImDrawIdx &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="82">
+        <label>ImVector&lt; ImDrawList * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImVector&lt; ImDrawVert &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="66">
+        <label>ImVector&lt; ImGuiColorMod &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="67" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="119">
+        <label>ImVector&lt; ImGuiContextHook &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="120" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="72">
+        <label>ImVector&lt; ImGuiGroupData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>ImVector&lt; ImGuiID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="43">
+        <label>ImVector&lt; ImGuiInputEvent &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>ImVector&lt; ImGuiItemFlags &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="61">
+        <label>ImVector&lt; ImGuiKeyRoutingData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="62" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>ImVector&lt; ImGuiListClipperData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="88" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="90">
+        <label>ImVector&lt; ImGuiListClipperRange &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="91" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="76">
+        <label>ImVector&lt; ImGuiNavTreeNodeData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="77" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="132">
+        <label>ImVector&lt; ImGuiOldColumnData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="133" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="135">
+        <label>ImVector&lt; ImGuiOldColumns &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="131" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="74">
+        <label>ImVector&lt; ImGuiPopupData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="75" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="102">
+        <label>ImVector&lt; ImGuiPtrOrIndex &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="103" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="115">
+        <label>ImVector&lt; ImGuiSettingsHandler &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="116" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="104">
+        <label>ImVector&lt; ImGuiShrinkWidthItem &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="105" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="125">
+        <label>ImVector&lt; ImGuiStackLevelInfo &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="126" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>ImVector&lt; ImGuiStorage::ImGuiStoragePair &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="58" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="68">
+        <label>ImVector&lt; ImGuiStyleMod &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>ImVector&lt; ImGuiTabBar &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="95" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>ImVector&lt; ImGuiTabItem &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="97" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="94">
+        <label>ImVector&lt; ImGuiTable &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="139">
+        <label>ImVector&lt; ImGuiTableColumnSortSpecs &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="138" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="137">
+        <label>ImVector&lt; ImGuiTableInstanceData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="136" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="92">
+        <label>ImVector&lt; ImGuiTableTempData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="78">
+        <label>ImVector&lt; ImGuiViewportP * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="79" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>ImVector&lt; ImGuiWindow * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>ImVector&lt; ImGuiWindowStackData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>ImVector&lt; ImTextureID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="27">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ImVector&lt; ImVec4 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="99">
+        <label>ImVector&lt; char &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="16">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="122">
+        <label>ImVector&lt; int &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="86">
+        <label>ImVector&lt; unsigned char &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="2699" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2700" bodyend="2816"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_table_1ae8800f537d7078e54f0cdbc511af9e02" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>AngledHeadersCount</name></member>
+      <member refid="struct_im_gui_table_1aea73b144a783c37607d1d0df228be60a" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>AngledHeadersHeight</name></member>
+      <member refid="struct_im_gui_table_1a6e35d7f538c9d2a2c78525917e5c358d" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>AngledHeadersSlope</name></member>
+      <member refid="struct_im_gui_table_1a393160a00b60d647071b9f2925e5161e" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>AutoFitSingleColumn</name></member>
+      <member refid="struct_im_gui_table_1a15d1df65b26a440ffbb941f30b11b948" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>Bg0ClipRectForDrawCmd</name></member>
+      <member refid="struct_im_gui_table_1a166018c1f957586c14bc0ee081cc3125" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>Bg2ClipRectForDrawCmd</name></member>
+      <member refid="struct_im_gui_table_1a2963b4f92f924de8c1ef1fcb43a9e597" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>Bg2DrawChannelCurrent</name></member>
+      <member refid="struct_im_gui_table_1aefc8289f98d409d303517159c521a4b0" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>Bg2DrawChannelUnfrozen</name></member>
+      <member refid="struct_im_gui_table_1a07e838bd92bd6531121bfde156b23e7d" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>BgClipRect</name></member>
+      <member refid="struct_im_gui_table_1ac79c118ebe0c19a00fd0e6a83c7fcfd5" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>BorderColorLight</name></member>
+      <member refid="struct_im_gui_table_1a936d4880c94acaaf59a1bdaafd4fb9cf" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>BorderColorStrong</name></member>
+      <member refid="struct_im_gui_table_1a5e3562f22a0b19142111c8c5c297dc69" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>BorderX1</name></member>
+      <member refid="struct_im_gui_table_1a01d72b316dbb8d9af031f0f139ce65f3" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>BorderX2</name></member>
+      <member refid="struct_im_gui_table_1a66d3dd51b20c89305d736fdcd0e7a701" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>CellPaddingX</name></member>
+      <member refid="struct_im_gui_table_1a3e07bf133695e0131dcf608aa9ec1143" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>CellSpacingX1</name></member>
+      <member refid="struct_im_gui_table_1a5f6b9f6696fa8a32296ee6d859356fcc" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>CellSpacingX2</name></member>
+      <member refid="struct_im_gui_table_1a6b39e1812dd524fe2dd4a04b613588cf" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>Columns</name></member>
+      <member refid="struct_im_gui_table_1a7c42c7caf5a05ac02305aa356f29a9a4" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsAutoFitWidth</name></member>
+      <member refid="struct_im_gui_table_1aff0ebae8e79edf5268133b644fb01ee9" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsCount</name></member>
+      <member refid="struct_im_gui_table_1a51e7f9180f9739e52406c2192aa627f9" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsEnabledCount</name></member>
+      <member refid="struct_im_gui_table_1aedc6edf409c9668781496fe16d19958b" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsEnabledFixedCount</name></member>
+      <member refid="struct_im_gui_table_1aefc860a8a1fdc36347d1d4224aae810f" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsGivenWidth</name></member>
+      <member refid="struct_im_gui_table_1afb12197bd1ad6ae7317b6b0843eb3a60" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsNames</name></member>
+      <member refid="struct_im_gui_table_1a3f24cf9f90a85c11dcfb742d157e31ea" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ColumnsStretchSumWeights</name></member>
+      <member refid="struct_im_gui_table_1aeda01405560dc7f5ba2a26081bf5499d" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ContextPopupColumn</name></member>
+      <member refid="struct_im_gui_table_1a944e033f46b7729d15b8946d06dbe682" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>CurrentColumn</name></member>
+      <member refid="struct_im_gui_table_1a1e188a304ad3d2d30e7defe542bda5d6" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>CurrentRow</name></member>
+      <member refid="struct_im_gui_table_1a8f405d885f74a82872edd0dab5790789" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>DeclColumnsCount</name></member>
+      <member refid="struct_im_gui_table_1a6675686e4c58ae853db3f62d339d192e" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>DisableDefaultContextMenu</name></member>
+      <member refid="struct_im_gui_table_1a4fca96eb35902fcfa166694087814edd" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>DisplayOrderToIndex</name></member>
+      <member refid="struct_im_gui_table_1afeda8864273e89f4094a763398652d2a" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>DrawSplitter</name></member>
+      <member refid="struct_im_gui_table_1a1daad01c8bb3bc4194401c658b61a667" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>DummyDrawChannel</name></member>
+      <member refid="struct_im_gui_table_1a2bfcf66ae07b035488357acae6353d23" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>EnabledMaskByDisplayOrder</name></member>
+      <member refid="struct_im_gui_table_1a36ec18d9c4c297098101580c255e94b7" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>EnabledMaskByIndex</name></member>
+      <member refid="struct_im_gui_table_1ac232807fd66991e640579fb3b02ae051" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_table_1add0b2bf413de36eab591d5e376d2f0b4" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>FreezeColumnsCount</name></member>
+      <member refid="struct_im_gui_table_1a75f70ed643a861d05a22c566664e0eaf" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>FreezeColumnsRequest</name></member>
+      <member refid="struct_im_gui_table_1ad982334f307fbe429c1de62ef9da8caf" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>FreezeRowsCount</name></member>
+      <member refid="struct_im_gui_table_1aa90d00342e8c46396854b44101c7355d" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>FreezeRowsRequest</name></member>
+      <member refid="struct_im_gui_table_1a7c1826bfb454ce6b72ca910570a0f319" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HasScrollbarYCurr</name></member>
+      <member refid="struct_im_gui_table_1ab3160cf8f571c580c7fa9e6c2e0115a1" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HasScrollbarYPrev</name></member>
+      <member refid="struct_im_gui_table_1af90fbb7f2d6eba59a140c7dc9e163615" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HeldHeaderColumn</name></member>
+      <member refid="struct_im_gui_table_1aa7936fe7cd0374917ade9c0cabdf451c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HighlightColumnHeader</name></member>
+      <member refid="struct_im_gui_table_1a3a35f7340d466bac8239fd8f3c626ac2" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HostBackupInnerClipRect</name></member>
+      <member refid="struct_im_gui_table_1a478781580df4716cfe31e8d639c6f2c5" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HostClipRect</name></member>
+      <member refid="struct_im_gui_table_1ad568622dbcfc53bef54e644a74a6abdc" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HostIndentX</name></member>
+      <member refid="struct_im_gui_table_1a202de697d7aabc75e0d06d4b700cacdd" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HostSkipItems</name></member>
+      <member refid="struct_im_gui_table_1a3a94c100bab9cb7a01a02360aaf3b323" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HoveredColumnBody</name></member>
+      <member refid="struct_im_gui_table_1a1c47654491f288507621e4b2231b4f89" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>HoveredColumnBorder</name></member>
+      <member refid="struct_im_gui_table_1a1f7e5dd488328d3a78de80e7ccc64036" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ID</name></member>
+      <member refid="struct_im_gui_table_1ad9cfd8be1defebf32b2b2d7fcd5fd152" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ImGuiTable</name></member>
+      <member refid="struct_im_gui_table_1a695a8cfb51a47bf557de0a2fd10744d2" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InnerClipRect</name></member>
+      <member refid="struct_im_gui_table_1a6d2deeb579e5caff1a9fce372003a68c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InnerRect</name></member>
+      <member refid="struct_im_gui_table_1acc6781cae73928ba8dca19cae61dccb1" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InnerWidth</name></member>
+      <member refid="struct_im_gui_table_1ad4cac002e07c96d3df71e37e3e81485e" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InnerWindow</name></member>
+      <member refid="struct_im_gui_table_1a79fe77ae5bb4b1280fcfbbd2e98ad882" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InstanceCurrent</name></member>
+      <member refid="struct_im_gui_table_1ae68a68cd4308506c90b3eebf535f388a" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InstanceDataExtra</name></member>
+      <member refid="struct_im_gui_table_1a0511f834ebfb52d3ace661fc1f6e82a6" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InstanceDataFirst</name></member>
+      <member refid="struct_im_gui_table_1ac0ff33b9c82c9405189c4130a165cfdc" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>InstanceInteracted</name></member>
+      <member refid="struct_im_gui_table_1a9ef8fc61d71a09ff2550bae7cf9fa065" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsActiveIdAliveBeforeTable</name></member>
+      <member refid="struct_im_gui_table_1a0b1d1eaeac2d85cfcdd916ca7efd85b8" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsActiveIdInTable</name></member>
+      <member refid="struct_im_gui_table_1a5345136b8044075f539c4fbe7cc4b53b" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsContextPopupOpen</name></member>
+      <member refid="struct_im_gui_table_1aa7f7e814cd813fd5de652ae315c8c135" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsDefaultDisplayOrder</name></member>
+      <member refid="struct_im_gui_table_1a84bfdcc0efeb85cf6f103ddf166e4c65" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsDefaultSizingPolicy</name></member>
+      <member refid="struct_im_gui_table_1a28cdc6e10e4295c6548660b2c31ad593" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsInitializing</name></member>
+      <member refid="struct_im_gui_table_1a32f59376aae5cbe008c49605be3cd007" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsInsideRow</name></member>
+      <member refid="struct_im_gui_table_1a1596be40e96bb5faa7aad3fd50291e33" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsLayoutLocked</name></member>
+      <member refid="struct_im_gui_table_1a2d066ad49460272713bd6c9beba4a1cc" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsResetAllRequest</name></member>
+      <member refid="struct_im_gui_table_1ab1e0c549a7c1de0ffbd14c18ae7bb402" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsResetDisplayOrderRequest</name></member>
+      <member refid="struct_im_gui_table_1a4c0a3b840b7a5c111551e1e8a6ad6c3a" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsSettingsDirty</name></member>
+      <member refid="struct_im_gui_table_1ab1f0c3a1a1c500cb5b3a3e1cd2761519" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsSettingsRequestLoad</name></member>
+      <member refid="struct_im_gui_table_1a066141fe3c9b74ec5492d4acd4f1a21a" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsSortSpecsDirty</name></member>
+      <member refid="struct_im_gui_table_1a011cb090506f53f6fed0a395b1ac1c22" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsUnfrozenRows</name></member>
+      <member refid="struct_im_gui_table_1aa24819d7de86a33a491b909cfb00251c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>IsUsingHeaders</name></member>
+      <member refid="struct_im_gui_table_1a6be35e3ea6e5ae9f63949f86aa2a6216" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>LastFrameActive</name></member>
+      <member refid="struct_im_gui_table_1ad5ceb30e1aef45ce269fc661c5e89281" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>LastResizedColumn</name></member>
+      <member refid="struct_im_gui_table_1adccfcf7b8e9670d762f9df1df0c5d6b6" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>LastRowFlags</name></member>
+      <member refid="struct_im_gui_table_1aaf5f34705f41f958a897d211168f083f" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>LeftMostEnabledColumn</name></member>
+      <member refid="struct_im_gui_table_1a0e6b930bc9743fa9fe1067adf1d66830" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>LeftMostStretchedColumn</name></member>
+      <member refid="struct_im_gui_table_1aa6825c0891fe234c20d5f92e33725d0d" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>MemoryCompacted</name></member>
+      <member refid="struct_im_gui_table_1a4eb7492114618b5c15abdeec7d71ad2f" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>MinColumnWidth</name></member>
+      <member refid="struct_im_gui_table_1a05c1d38368970a409eaaf83fb06292cc" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>OuterPaddingX</name></member>
+      <member refid="struct_im_gui_table_1a6f98734a1abb8f866ffd9fc69d35b2a3" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>OuterRect</name></member>
+      <member refid="struct_im_gui_table_1ab5a28e3ba666fece11feb5cdee2e1104" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>OuterWindow</name></member>
+      <member refid="struct_im_gui_table_1a7e661eeaca53f374216bf0f45dff29e4" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RawData</name></member>
+      <member refid="struct_im_gui_table_1a21f1ccb2537abbf1fd8ba5f5ddcae612" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RefScale</name></member>
+      <member refid="struct_im_gui_table_1afe40dc28725db705210bd3a920aea591" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ReorderColumn</name></member>
+      <member refid="struct_im_gui_table_1a39d9e079bb8f4073e5b02806d890b59b" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ReorderColumnDir</name></member>
+      <member refid="struct_im_gui_table_1af1ef3df199510dd5210d6501ce6c3996" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ResizedColumn</name></member>
+      <member refid="struct_im_gui_table_1ab1f45cc1c2eca4d78a2c8eaf202a651a" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ResizedColumnNextWidth</name></member>
+      <member refid="struct_im_gui_table_1a92324407723470ac6b102e2201b09ce2" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>ResizeLockMinContentsX2</name></member>
+      <member refid="struct_im_gui_table_1a8f297cc1ad1839a3039adf00e9f29047" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RightMostEnabledColumn</name></member>
+      <member refid="struct_im_gui_table_1a40e26ce4a610b6688c956ffa374ad0dc" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RightMostStretchedColumn</name></member>
+      <member refid="struct_im_gui_table_1a252e602ec807bf532edd501110bdc7b1" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowBgColor</name></member>
+      <member refid="struct_im_gui_table_1a6e6aa2309557862d7da9d6970c0f2f0b" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowBgColorCounter</name></member>
+      <member refid="struct_im_gui_table_1a686734156d60378e2c792c93b554d327" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowCellData</name></member>
+      <member refid="struct_im_gui_table_1a3b2630067aff7df6e9111de94fcc5e3b" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowCellDataCurrent</name></member>
+      <member refid="struct_im_gui_table_1ab450ef6433de5aa446804b5809159995" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowCellPaddingY</name></member>
+      <member refid="struct_im_gui_table_1ae5b7b9728836e1928cc1b838f9aa74ef" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowFlags</name></member>
+      <member refid="struct_im_gui_table_1abac804d6f3bd10e7920924eb3bf9067c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowIndentOffsetX</name></member>
+      <member refid="struct_im_gui_table_1af23ea5ea747d5c2daffc7954cf4df66c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowMinHeight</name></member>
+      <member refid="struct_im_gui_table_1af9b476f4a6582468c0ed0a019548d022" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowPosY1</name></member>
+      <member refid="struct_im_gui_table_1a48403ef1b4c11fe3c7d4df835b2f7a82" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowPosY2</name></member>
+      <member refid="struct_im_gui_table_1af517dd5ce92ebaf84982083485507634" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>RowTextBaseline</name></member>
+      <member refid="struct_im_gui_table_1a099a9fc8ad83bf0338221463848315b2" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>SettingsLoadedFlags</name></member>
+      <member refid="struct_im_gui_table_1af300d599c6b3ff9e43ee714da21aac1d" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>SettingsOffset</name></member>
+      <member refid="struct_im_gui_table_1a8770e95686f57cfc9b61a037e95cc5b1" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>SortSpecs</name></member>
+      <member refid="struct_im_gui_table_1a72d50758681cecf127e6c9a44883ccfd" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>SortSpecsCount</name></member>
+      <member refid="struct_im_gui_table_1aba33a5c466948cb483b0b50c840dd422" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>SortSpecsMulti</name></member>
+      <member refid="struct_im_gui_table_1ad111a9b0073e5061f2a847e9ad99519f" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>SortSpecsSingle</name></member>
+      <member refid="struct_im_gui_table_1a89db69966920e938cdf67f23164c3a80" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>TempData</name></member>
+      <member refid="struct_im_gui_table_1a076c23b1ad25cb17474ae2a8926205b9" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>VisibleMaskByIndex</name></member>
+      <member refid="struct_im_gui_table_1a4e0fd51349a7bedc8321f3977ff9e48c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>WorkRect</name></member>
+      <member refid="struct_im_gui_table_1ac9e489ed577c125c930364a4c903132c" prot="public" virt="non-virtual"><scope>ImGuiTable</scope><name>~ImGuiTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

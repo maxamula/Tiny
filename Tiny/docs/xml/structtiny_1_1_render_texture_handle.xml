@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_render_texture_handle" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::RenderTextureHandle</compoundname>
+    <includes refid="framegraph_8h" local="no">framegraph.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_render_texture_handle_1a5c3ca657051bc6c72b27d307f5eb4e37" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t tiny::RenderTextureHandle::Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>tiny::RenderTextureHandle::Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="26" column="18" bodyfile="graphics/framegraph.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_render_texture_handle_1a0a1f5ab52cdd6128714a3288aa1d4bca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::RenderTextureHandle::RenderTextureHandle</definition>
+        <argsstring>()</argsstring>
+        <name>RenderTextureHandle</name>
+        <qualifiedname>tiny::RenderTextureHandle::RenderTextureHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="28" column="9" bodyfile="graphics/framegraph.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_render_texture_handle_1a3e5c6aa006d27aeb61429191ca125ba3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::RenderTextureHandle::RenderTextureHandle</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>RenderTextureHandle</name>
+        <qualifiedname>tiny::RenderTextureHandle::RenderTextureHandle</qualifiedname>
+        <param>
+          <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="33" column="18" bodyfile="graphics/framegraph.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/framegraph.h" line="24" column="5" bodyfile="graphics/framegraph.h" bodystart="25" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_render_texture_handle_1a5c3ca657051bc6c72b27d307f5eb4e37" prot="public" virt="non-virtual"><scope>tiny::RenderTextureHandle</scope><name>Id</name></member>
+      <member refid="structtiny_1_1_render_texture_handle_1a0a1f5ab52cdd6128714a3288aa1d4bca" prot="public" virt="non-virtual"><scope>tiny::RenderTextureHandle</scope><name>RenderTextureHandle</name></member>
+      <member refid="structtiny_1_1_render_texture_handle_1a3e5c6aa006d27aeb61429191ca125ba3" prot="public" virt="non-virtual"><scope>tiny::RenderTextureHandle</scope><name>RenderTextureHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e" kind="struct" language="C++" prot="private">
+    <compoundname>tiny::CopyQueue::COPY_FRAME</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1aea35f51402d448f8382693478c23a5b3" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12CommandAllocator &gt;</type>
+        <definition>CComPtr&lt;ID3D12CommandAllocator&gt; tiny::CopyQueue::COPY_FRAME::commandAllocator</definition>
+        <argsstring></argsstring>
+        <name>commandAllocator</name>
+        <qualifiedname>tiny::CopyQueue::COPY_FRAME::commandAllocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="32" column="8" bodyfile="graphics/copyqueue.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1a8579f87993b639a13d29f1ac2d0d8b42" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12GraphicsCommandList &gt;</type>
+        <definition>CComPtr&lt;ID3D12GraphicsCommandList&gt; tiny::CopyQueue::COPY_FRAME::commandList</definition>
+        <argsstring></argsstring>
+        <name>commandList</name>
+        <qualifiedname>tiny::CopyQueue::COPY_FRAME::commandList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="33" column="8" bodyfile="graphics/copyqueue.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1a5308676e5b508aab4cabf50b30e8aa87" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 tiny::CopyQueue::COPY_FRAME::fenceValue</definition>
+        <argsstring></argsstring>
+        <name>fenceValue</name>
+        <qualifiedname>tiny::CopyQueue::COPY_FRAME::fenceValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="34" column="4" bodyfile="graphics/copyqueue.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1ae89fdb9b13db51286984eba03bd89e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::CopyQueue::COPY_FRAME::COPY_FRAME</definition>
+        <argsstring>()</argsstring>
+        <name>COPY_FRAME</name>
+        <qualifiedname>tiny::CopyQueue::COPY_FRAME::COPY_FRAME</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="28" column="1" bodyfile="graphics/copyqueue.h" bodystart="28" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/copyqueue.h" line="26" column="1" bodyfile="graphics/copyqueue.h" bodystart="27" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1aea35f51402d448f8382693478c23a5b3" prot="public" virt="non-virtual"><scope>tiny::CopyQueue::COPY_FRAME</scope><name>commandAllocator</name></member>
+      <member refid="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1a8579f87993b639a13d29f1ac2d0d8b42" prot="public" virt="non-virtual"><scope>tiny::CopyQueue::COPY_FRAME</scope><name>commandList</name></member>
+      <member refid="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1ae89fdb9b13db51286984eba03bd89e28" prot="public" virt="non-virtual"><scope>tiny::CopyQueue::COPY_FRAME</scope><name>COPY_FRAME</name></member>
+      <member refid="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e_1a5308676e5b508aab4cabf50b30e8aa87" prot="public" virt="non-virtual"><scope>tiny::CopyQueue::COPY_FRAME</scope><name>fenceValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

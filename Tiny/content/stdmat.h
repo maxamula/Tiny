@@ -15,7 +15,7 @@ namespace tiny
 			float time;
 		};
 
-		CBufferInline<ShaderParams> ilShaderParams;
+		ShaderParams ilShaderParams;
 	};
 
 	struct TINYFX_API TextureStretcherMaterialInstance : 

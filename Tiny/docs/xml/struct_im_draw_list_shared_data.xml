@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_draw_list_shared_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImDrawListSharedData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a8dff5fc643cab17128012383d75d9ad8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImDrawListSharedData::TexUvWhitePixel</definition>
+        <argsstring></argsstring>
+        <name>TexUvWhitePixel</name>
+        <qualifiedname>ImDrawListSharedData::TexUvWhitePixel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="767" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a4542431d4afe5320a965fbe52a3cc39f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont* ImDrawListSharedData::Font</definition>
+        <argsstring></argsstring>
+        <name>Font</name>
+        <qualifiedname>ImDrawListSharedData::Font</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="768" column="20" bodyfile="graphics/imgui/imgui_internal.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a189a412fcd4f66a1d60501ad758d04bd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImDrawListSharedData::FontSize</definition>
+        <argsstring></argsstring>
+        <name>FontSize</name>
+        <qualifiedname>ImDrawListSharedData::FontSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="769" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a5b5bb46f5fd714b43e4b73a131b7f6f7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImDrawListSharedData::CurveTessellationTol</definition>
+        <argsstring></argsstring>
+        <name>CurveTessellationTol</name>
+        <qualifiedname>ImDrawListSharedData::CurveTessellationTol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="770" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a2343a659b6e750ab09401615b967df10" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImDrawListSharedData::CircleSegmentMaxError</definition>
+        <argsstring></argsstring>
+        <name>CircleSegmentMaxError</name>
+        <qualifiedname>ImDrawListSharedData::CircleSegmentMaxError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="771" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1ac8737a7aae92c55d75998a6c9f6f3882" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref></type>
+        <definition>ImVec4 ImDrawListSharedData::ClipRectFullscreen</definition>
+        <argsstring></argsstring>
+        <name>ClipRectFullscreen</name>
+        <qualifiedname>ImDrawListSharedData::ClipRectFullscreen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="772" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a7e00a317793f4ed3ff592b050dfee450" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1adb61806505bf501bb0fbcdf4414360" kindref="member">ImDrawListFlags</ref></type>
+        <definition>ImDrawListFlags ImDrawListSharedData::InitialFlags</definition>
+        <argsstring></argsstring>
+        <name>InitialFlags</name>
+        <qualifiedname>ImDrawListSharedData::InitialFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="773" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="773" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a1f58df8c68099f8ab1e00c2d4040af5d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &gt;</type>
+        <definition>ImVector&lt;ImVec2&gt; ImDrawListSharedData::TempBuffer</definition>
+        <argsstring></argsstring>
+        <name>TempBuffer</name>
+        <qualifiedname>ImDrawListSharedData::TempBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="776" column="14" bodyfile="graphics/imgui/imgui_internal.h" bodystart="776" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1ab0c46ef010a2a9d20c0995def13abfe8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImDrawListSharedData::ArcFastVtx[IM_DRAWLIST_ARCFAST_TABLE_SIZE]</definition>
+        <argsstring>[IM_DRAWLIST_ARCFAST_TABLE_SIZE]</argsstring>
+        <name>ArcFastVtx</name>
+        <qualifiedname>ImDrawListSharedData::ArcFastVtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="779" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1aef9a6fbf913823bd0b22aafb7f797c05" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImDrawListSharedData::ArcFastRadiusCutoff</definition>
+        <argsstring></argsstring>
+        <name>ArcFastRadiusCutoff</name>
+        <qualifiedname>ImDrawListSharedData::ArcFastRadiusCutoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="780" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1addb4f657df1c707b878e90e86ac776e0" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3834dc55ff790956b09b4baf387e2fe5" kindref="member">ImU8</ref></type>
+        <definition>ImU8 ImDrawListSharedData::CircleSegmentCounts[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>CircleSegmentCounts</name>
+        <qualifiedname>ImDrawListSharedData::CircleSegmentCounts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="781" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_shared_data_1a188daa23d26c80699041dee094254754" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_im_vec4" kindref="compound">ImVec4</ref> *</type>
+        <definition>const ImVec4* ImDrawListSharedData::TexUvLines</definition>
+        <argsstring></argsstring>
+        <name>TexUvLines</name>
+        <qualifiedname>ImDrawListSharedData::TexUvLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="782" column="20" bodyfile="graphics/imgui/imgui_internal.h" bodystart="782" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_draw_list_shared_data_1a3fe9d30c0df68cce4db9d2033ba9a589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImDrawListSharedData::ImDrawListSharedData</definition>
+        <argsstring>()</argsstring>
+        <name>ImDrawListSharedData</name>
+        <qualifiedname>ImDrawListSharedData::ImDrawListSharedData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="784" column="5" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="359" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_shared_data_1adc947304370a6d5ee55a44190e923c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawListSharedData::SetCircleTessellationMaxError</definition>
+        <argsstring>(float max_error)</argsstring>
+        <name>SetCircleTessellationMaxError</name>
+        <qualifiedname>ImDrawListSharedData::SetCircleTessellationMaxError</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>max_error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="785" column="10" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="370" bodyend="383"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="13">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="14">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="9">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="4">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="765" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="766" bodyend="786"/>
+    <listofallmembers>
+      <member refid="struct_im_draw_list_shared_data_1aef9a6fbf913823bd0b22aafb7f797c05" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>ArcFastRadiusCutoff</name></member>
+      <member refid="struct_im_draw_list_shared_data_1ab0c46ef010a2a9d20c0995def13abfe8" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>ArcFastVtx</name></member>
+      <member refid="struct_im_draw_list_shared_data_1addb4f657df1c707b878e90e86ac776e0" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>CircleSegmentCounts</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a2343a659b6e750ab09401615b967df10" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>CircleSegmentMaxError</name></member>
+      <member refid="struct_im_draw_list_shared_data_1ac8737a7aae92c55d75998a6c9f6f3882" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>ClipRectFullscreen</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a5b5bb46f5fd714b43e4b73a131b7f6f7" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>CurveTessellationTol</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a4542431d4afe5320a965fbe52a3cc39f" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>Font</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a189a412fcd4f66a1d60501ad758d04bd" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>FontSize</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a3fe9d30c0df68cce4db9d2033ba9a589" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>ImDrawListSharedData</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a7e00a317793f4ed3ff592b050dfee450" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>InitialFlags</name></member>
+      <member refid="struct_im_draw_list_shared_data_1adc947304370a6d5ee55a44190e923c8d" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>SetCircleTessellationMaxError</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a1f58df8c68099f8ab1e00c2d4040af5d" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>TempBuffer</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a188daa23d26c80699041dee094254754" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>TexUvLines</name></member>
+      <member refid="struct_im_draw_list_shared_data_1a8dff5fc643cab17128012383d75d9ad8" prot="public" virt="non-virtual"><scope>ImDrawListSharedData</scope><name>TexUvWhitePixel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

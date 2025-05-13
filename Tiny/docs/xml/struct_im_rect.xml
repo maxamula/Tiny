@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_rect" kind="struct" language="C++" prot="public">
+    <compoundname>ImRect</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_rect_1af8f3fbf7ec983e03548b88e14ba68aa8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::Min</definition>
+        <argsstring></argsstring>
+        <name>Min</name>
+        <qualifiedname>ImRect::Min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="523" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_rect_1aad58c13340d320b350a72a037e3f7628" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::Max</definition>
+        <argsstring></argsstring>
+        <name>Max</name>
+        <qualifiedname>ImRect::Max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="524" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_rect_1a1e9548c8a334dfd32eaf4d399aa740e9" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImRect::ImRect</definition>
+        <argsstring>()</argsstring>
+        <name>ImRect</name>
+        <qualifiedname>ImRect::ImRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="526" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="526" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1af7bfb620fd01ea1f7c62c7c04e880ec4" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImRect::ImRect</definition>
+        <argsstring>(const ImVec2 &amp;min, const ImVec2 &amp;max)</argsstring>
+        <name>ImRect</name>
+        <qualifiedname>ImRect::ImRect</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="527" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="527" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a79261b2cf06a797515ff63332762748a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImRect::ImRect</definition>
+        <argsstring>(const ImVec4 &amp;v)</argsstring>
+        <name>ImRect</name>
+        <qualifiedname>ImRect::ImRect</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec4" kindref="compound">ImVec4</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="528" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="528" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a8293a024ed727cf2873e51742ca629b2" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImRect::ImRect</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>ImRect</name>
+        <qualifiedname>ImRect::ImRect</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="529" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="529" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1aae13f8003184fd84f29d27c3c074cf43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::GetCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCenter</name>
+        <qualifiedname>ImRect::GetCenter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="531" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="531" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ae459d9c50003058cfb34519a571aaf33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::GetSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSize</name>
+        <qualifiedname>ImRect::GetSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="532" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="532" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1afa75cb8491f20901c96166d17dcddac4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ImRect::GetWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWidth</name>
+        <qualifiedname>ImRect::GetWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="533" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="533" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a748d8ae9cb26508951ec6e2f2df0625b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ImRect::GetHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeight</name>
+        <qualifiedname>ImRect::GetHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="534" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="534" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1acb166afad83795305190598a7b92a185" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float ImRect::GetArea</definition>
+        <argsstring>() const</argsstring>
+        <name>GetArea</name>
+        <qualifiedname>ImRect::GetArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="535" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="535" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a1d4d972329722b51dca4499cb5931b4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::GetTL</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTL</name>
+        <qualifiedname>ImRect::GetTL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="536" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="536" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1acae90248a96be4acf1524071fca1c3f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::GetTR</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTR</name>
+        <qualifiedname>ImRect::GetTR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="537" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="537" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a59d9751bc7be6745dddf5b83b9155669" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::GetBL</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBL</name>
+        <qualifiedname>ImRect::GetBL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="538" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="538" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ad2f2687254beed5a9b19bde0d6fa14f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImRect::GetBR</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBR</name>
+        <qualifiedname>ImRect::GetBR</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="539" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="539" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ac583156fd0e9306181fff5d120b262ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImRect::Contains</definition>
+        <argsstring>(const ImVec2 &amp;p) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>ImRect::Contains</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="540" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="540" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ad6043344d8ac30d5f342c71641cfe24b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImRect::Contains</definition>
+        <argsstring>(const ImRect &amp;r) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>ImRect::Contains</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_rect" kindref="compound">ImRect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="541" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="541" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a8dbab244f4e5b786faa9684eb85110fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImRect::ContainsWithPad</definition>
+        <argsstring>(const ImVec2 &amp;p, const ImVec2 &amp;pad) const</argsstring>
+        <name>ContainsWithPad</name>
+        <qualifiedname>ImRect::ContainsWithPad</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>pad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="542" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="542" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a0af3bade3781e5e7c6afdf71ccfb0d43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImRect::Overlaps</definition>
+        <argsstring>(const ImRect &amp;r) const</argsstring>
+        <name>Overlaps</name>
+        <qualifiedname>ImRect::Overlaps</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_rect" kindref="compound">ImRect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="543" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="543" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a68996cb6b16a023f0a051981cd5be89e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::Add</definition>
+        <argsstring>(const ImVec2 &amp;p)</argsstring>
+        <name>Add</name>
+        <qualifiedname>ImRect::Add</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="544" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="544" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ab07f581cc78eee99b42f40f77d9fac8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::Add</definition>
+        <argsstring>(const ImRect &amp;r)</argsstring>
+        <name>Add</name>
+        <qualifiedname>ImRect::Add</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_rect" kindref="compound">ImRect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="545" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="545" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1af33a7424c3341d08acd69da30c27c753" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::Expand</definition>
+        <argsstring>(const float amount)</argsstring>
+        <name>Expand</name>
+        <qualifiedname>ImRect::Expand</qualifiedname>
+        <param>
+          <type>const float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="546" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="546" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ac0b0b88fe65725b4694cd7d91d42d382" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::Expand</definition>
+        <argsstring>(const ImVec2 &amp;amount)</argsstring>
+        <name>Expand</name>
+        <qualifiedname>ImRect::Expand</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="547" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="547" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a7f799afba3d1c61212448709d9e1a79b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::Translate</definition>
+        <argsstring>(const ImVec2 &amp;d)</argsstring>
+        <name>Translate</name>
+        <qualifiedname>ImRect::Translate</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="548" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="548" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a20c399583fc60a1f73715b3c6468a89d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::TranslateX</definition>
+        <argsstring>(float dx)</argsstring>
+        <name>TranslateX</name>
+        <qualifiedname>ImRect::TranslateX</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="549" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="549" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1abb777eaa8fd13ad6b7d6dab56d29fe52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::TranslateY</definition>
+        <argsstring>(float dy)</argsstring>
+        <name>TranslateY</name>
+        <qualifiedname>ImRect::TranslateY</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="550" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="550" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1ac02d5cf6ce0358aea9ed9df43d368f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::ClipWith</definition>
+        <argsstring>(const ImRect &amp;r)</argsstring>
+        <name>ClipWith</name>
+        <qualifiedname>ImRect::ClipWith</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_rect" kindref="compound">ImRect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="551" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="551" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a32a5aaca4161b5ffa3f352d293a449ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::ClipWithFull</definition>
+        <argsstring>(const ImRect &amp;r)</argsstring>
+        <name>ClipWithFull</name>
+        <qualifiedname>ImRect::ClipWithFull</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_rect" kindref="compound">ImRect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="552" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="552" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a8fdf75a0c64ff29f65113cd9f8be77ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImRect::Floor</definition>
+        <argsstring>()</argsstring>
+        <name>Floor</name>
+        <qualifiedname>ImRect::Floor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="553" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="553" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a140efca57832182e2483e5fe4ba50422" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImRect::IsInverted</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInverted</name>
+        <qualifiedname>ImRect::IsInverted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="554" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="554" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_rect_1a2afeb24632fae3848977ff2772036200" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref></type>
+        <definition>ImVec4 ImRect::ToVec4</definition>
+        <argsstring>() const</argsstring>
+        <name>ToVec4</name>
+        <qualifiedname>ImRect::ToVec4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="555" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="555" bodyend="555"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="521" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="522" bodyend="556"/>
+    <listofallmembers>
+      <member refid="struct_im_rect_1a68996cb6b16a023f0a051981cd5be89e" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Add</name></member>
+      <member refid="struct_im_rect_1ab07f581cc78eee99b42f40f77d9fac8e" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Add</name></member>
+      <member refid="struct_im_rect_1ac02d5cf6ce0358aea9ed9df43d368f3f" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ClipWith</name></member>
+      <member refid="struct_im_rect_1a32a5aaca4161b5ffa3f352d293a449ff" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ClipWithFull</name></member>
+      <member refid="struct_im_rect_1ac583156fd0e9306181fff5d120b262ea" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Contains</name></member>
+      <member refid="struct_im_rect_1ad6043344d8ac30d5f342c71641cfe24b" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Contains</name></member>
+      <member refid="struct_im_rect_1a8dbab244f4e5b786faa9684eb85110fc" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ContainsWithPad</name></member>
+      <member refid="struct_im_rect_1af33a7424c3341d08acd69da30c27c753" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Expand</name></member>
+      <member refid="struct_im_rect_1ac0b0b88fe65725b4694cd7d91d42d382" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Expand</name></member>
+      <member refid="struct_im_rect_1a8fdf75a0c64ff29f65113cd9f8be77ab" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Floor</name></member>
+      <member refid="struct_im_rect_1acb166afad83795305190598a7b92a185" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetArea</name></member>
+      <member refid="struct_im_rect_1a59d9751bc7be6745dddf5b83b9155669" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetBL</name></member>
+      <member refid="struct_im_rect_1ad2f2687254beed5a9b19bde0d6fa14f5" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetBR</name></member>
+      <member refid="struct_im_rect_1aae13f8003184fd84f29d27c3c074cf43" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetCenter</name></member>
+      <member refid="struct_im_rect_1a748d8ae9cb26508951ec6e2f2df0625b" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetHeight</name></member>
+      <member refid="struct_im_rect_1ae459d9c50003058cfb34519a571aaf33" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetSize</name></member>
+      <member refid="struct_im_rect_1a1d4d972329722b51dca4499cb5931b4b" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetTL</name></member>
+      <member refid="struct_im_rect_1acae90248a96be4acf1524071fca1c3f3" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetTR</name></member>
+      <member refid="struct_im_rect_1afa75cb8491f20901c96166d17dcddac4" prot="public" virt="non-virtual"><scope>ImRect</scope><name>GetWidth</name></member>
+      <member refid="struct_im_rect_1a1e9548c8a334dfd32eaf4d399aa740e9" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ImRect</name></member>
+      <member refid="struct_im_rect_1af7bfb620fd01ea1f7c62c7c04e880ec4" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ImRect</name></member>
+      <member refid="struct_im_rect_1a79261b2cf06a797515ff63332762748a" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ImRect</name></member>
+      <member refid="struct_im_rect_1a8293a024ed727cf2873e51742ca629b2" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ImRect</name></member>
+      <member refid="struct_im_rect_1a140efca57832182e2483e5fe4ba50422" prot="public" virt="non-virtual"><scope>ImRect</scope><name>IsInverted</name></member>
+      <member refid="struct_im_rect_1aad58c13340d320b350a72a037e3f7628" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Max</name></member>
+      <member refid="struct_im_rect_1af8f3fbf7ec983e03548b88e14ba68aa8" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Min</name></member>
+      <member refid="struct_im_rect_1a0af3bade3781e5e7c6afdf71ccfb0d43" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Overlaps</name></member>
+      <member refid="struct_im_rect_1a2afeb24632fae3848977ff2772036200" prot="public" virt="non-virtual"><scope>ImRect</scope><name>ToVec4</name></member>
+      <member refid="struct_im_rect_1a7f799afba3d1c61212448709d9e1a79b" prot="public" virt="non-virtual"><scope>ImRect</scope><name>Translate</name></member>
+      <member refid="struct_im_rect_1a20c399583fc60a1f73715b3c6468a89d" prot="public" virt="non-virtual"><scope>ImRect</scope><name>TranslateX</name></member>
+      <member refid="struct_im_rect_1abb777eaa8fd13ad6b7d6dab56d29fe52" prot="public" virt="non-virtual"><scope>ImRect</scope><name>TranslateY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="content__internal_8h" kind="file" language="C++">
+    <compoundname>content_internal.h</compoundname>
+    <includes refid="content_8h" local="yes">content.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>content.h</label>
+        <link refid="content_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>content/content_internal.h</label>
+        <link refid="content__internal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>graphics/copyqueue.h</label>
+        <link refid="copyqueue_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>graphics/descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>atlbase.h</label>
+      </node>
+      <node id="3">
+        <label>d3d12.h</label>
+      </node>
+      <node id="13">
+        <label>entt.hpp</label>
+      </node>
+      <node id="12">
+        <label>future</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>mutex</label>
+      </node>
+      <node id="5">
+        <label>tuple</label>
+      </node>
+      <node id="9">
+        <label>unordered_map</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="content_8h" kindref="compound">content.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="namespacetiny_1a0143a5f01c1028b59e871850b46cc554" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref>&amp;<sp/><ref refid="namespacetiny_1a0143a5f01c1028b59e871850b46cc554" kindref="member">GetCachedFrameGraphResource</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_render_texture_1_1_desc" kindref="compound">RenderTexture::Desc</ref>&amp;<sp/>d);</highlight></codeline>
+<codeline lineno="7" refid="namespacetiny_1a4a2204b60de532609ad486b60eb4861c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1a4a2204b60de532609ad486b60eb4861c" kindref="member">ReleaseCachedFrameGraphResource</ref>(<ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="8" refid="namespacetiny_1ab9db93974be8c9a260ae8ecd3770b187" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1ab9db93974be8c9a260ae8ecd3770b187" kindref="member">InvalidateCachedFrameGraphResources</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="content/content_internal.h"/>
+  </compounddef>
+</doxygen>

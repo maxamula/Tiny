@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_storage_1_1_im_gui_storage_pair" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiStorage::ImGuiStoragePair</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1a12f78b9d0f5de30615c9493f58f69e71" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiStorage::ImGuiStoragePair::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2378" column="17" bodyfile="graphics/imgui/imgui.h" bodystart="2378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1ada14150f288132afbf2138ad8d9f721a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiStorage::ImGuiStoragePair::val_i</definition>
+        <argsstring></argsstring>
+        <name>val_i</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::val_i</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2379" column="19" bodyfile="graphics/imgui/imgui.h" bodystart="2379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1a600368daba0ffede52def40b10bdbd4f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiStorage::ImGuiStoragePair::val_f</definition>
+        <argsstring></argsstring>
+        <name>val_f</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::val_f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2379" column="31" bodyfile="graphics/imgui/imgui.h" bodystart="2379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1a9b0963410770bb225b1eef58d89ba2ec" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiStorage::ImGuiStoragePair::val_p</definition>
+        <argsstring></argsstring>
+        <name>val_p</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::val_p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2379" column="42" bodyfile="graphics/imgui/imgui.h" bodystart="2379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1a2decb51e7db2e8e05c79c32be5a70f9b" prot="public" static="no" mutable="no">
+        <type>union <ref refid="struct_im_gui_storage_1_1_im_gui_storage_pair" kindref="compound">ImGuiStorage::ImGuiStoragePair</ref></type>
+        <definition>union ImGuiStorage::ImGuiStoragePair ImGuiStorage::ImGuiStoragePair</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2379" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1a2c59d9810699a7f3d921703e9b81875d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiStorage::ImGuiStoragePair::ImGuiStoragePair</definition>
+        <argsstring>(ImGuiID _key, int _val)</argsstring>
+        <name>ImGuiStoragePair</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::ImGuiStoragePair</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2380" column="9" bodyfile="graphics/imgui/imgui.h" bodystart="2380" bodyend="2380"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1aa07e1d80dafeb819f69266b52ac1bc46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiStorage::ImGuiStoragePair::ImGuiStoragePair</definition>
+        <argsstring>(ImGuiID _key, float _val)</argsstring>
+        <name>ImGuiStoragePair</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::ImGuiStoragePair</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2381" column="9" bodyfile="graphics/imgui/imgui.h" bodystart="2381" bodyend="2381"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_storage_1_1_im_gui_storage_pair_1aff1ed49910b4f28351c7f63e74746e85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiStorage::ImGuiStoragePair::ImGuiStoragePair</definition>
+        <argsstring>(ImGuiID _key, void *_val)</argsstring>
+        <name>ImGuiStoragePair</name>
+        <qualifiedname>ImGuiStorage::ImGuiStoragePair::ImGuiStoragePair</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+          <declname>_key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>_val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2382" column="9" bodyfile="graphics/imgui/imgui.h" bodystart="2382" bodyend="2382"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui.h" line="2376" column="5" bodyfile="graphics/imgui/imgui.h" bodystart="2377" bodyend="2383"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1a2c59d9810699a7f3d921703e9b81875d" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>ImGuiStoragePair</name></member>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1aa07e1d80dafeb819f69266b52ac1bc46" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>ImGuiStoragePair</name></member>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1aff1ed49910b4f28351c7f63e74746e85" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>ImGuiStoragePair</name></member>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1a12f78b9d0f5de30615c9493f58f69e71" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>key</name></member>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1a600368daba0ffede52def40b10bdbd4f" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>val_f</name></member>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1ada14150f288132afbf2138ad8d9f721a" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>val_i</name></member>
+      <member refid="struct_im_gui_storage_1_1_im_gui_storage_pair_1a9b0963410770bb225b1eef58d89ba2ec" prot="public" virt="non-virtual"><scope>ImGuiStorage::ImGuiStoragePair</scope><name>val_p</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

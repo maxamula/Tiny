@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_shader_resource_binding" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::ShaderResourceBinding</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_binding_1a164a9ff04e885eecb986753d22b7fec5" prot="public" static="no" mutable="no">
+        <type>D3D_SHADER_INPUT_TYPE</type>
+        <definition>D3D_SHADER_INPUT_TYPE tiny::fx::ShaderResourceBinding::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>tiny::fx::ShaderResourceBinding::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="40" column="23" bodyfile="fx/shaderfx.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_binding_1a11c2c50a81d6e29847fe6333922daded" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 tiny::fx::ShaderResourceBinding::fieldID</definition>
+        <argsstring></argsstring>
+        <name>fieldID</name>
+        <qualifiedname>tiny::fx::ShaderResourceBinding::fieldID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="41" column="5" bodyfile="fx/shaderfx.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_binding_1a24a7fdccf7ce3d3dad4ff1fe1a0ab937" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::fx::ShaderResourceBinding::rootParamIndex</definition>
+        <argsstring></argsstring>
+        <name>rootParamIndex</name>
+        <qualifiedname>tiny::fx::ShaderResourceBinding::rootParamIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="42" column="5" bodyfile="fx/shaderfx.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_binding_1a2b4b8432438172ac1e4c5654b082621c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0c" kindref="member">ShaderCBufferType</ref></type>
+        <definition>ShaderCBufferType tiny::fx::ShaderResourceBinding::cbufferType</definition>
+        <argsstring></argsstring>
+        <name>cbufferType</name>
+        <qualifiedname>tiny::fx::ShaderResourceBinding::cbufferType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="45" column="19" bodyfile="fx/shaderfx.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_shader_resource_binding_1a89192014a50e460003f4f7fbba15559f" prot="public" static="no" mutable="no">
+        <type>union <ref refid="structtiny_1_1fx_1_1_shader_resource_binding" kindref="compound">tiny::fx::ShaderResourceBinding</ref></type>
+        <definition>union tiny::fx::ShaderResourceBinding tiny::fx::ShaderResourceBinding::details</definition>
+        <argsstring></argsstring>
+        <name>details</name>
+        <qualifiedname>tiny::fx::ShaderResourceBinding::details</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="46" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="38" column="1" bodyfile="fx/shaderfx.h" bodystart="39" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_binding_1a2b4b8432438172ac1e4c5654b082621c" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceBinding</scope><name>cbufferType</name></member>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_binding_1a89192014a50e460003f4f7fbba15559f" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceBinding</scope><name>details</name></member>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_binding_1a11c2c50a81d6e29847fe6333922daded" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceBinding</scope><name>fieldID</name></member>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_binding_1a24a7fdccf7ce3d3dad4ff1fe1a0ab937" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceBinding</scope><name>rootParamIndex</name></member>
+      <member refid="structtiny_1_1fx_1_1_shader_resource_binding_1a164a9ff04e885eecb986753d22b7fec5" prot="public" virt="non-virtual"><scope>tiny::fx::ShaderResourceBinding</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

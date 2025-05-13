@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_shrink_width_item" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiShrinkWidthItem</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_shrink_width_item_1a5cd3b72ecdf53f6cb6c85f9064a4e256" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiShrinkWidthItem::Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <qualifiedname>ImGuiShrinkWidthItem::Index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1269" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_shrink_width_item_1a29ba0dc283a3f57b0725b371f73fe1ed" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiShrinkWidthItem::Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <qualifiedname>ImGuiShrinkWidthItem::Width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1270" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_shrink_width_item_1ac9a3ca20449e58374963f32db20bbd87" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiShrinkWidthItem::InitialWidth</definition>
+        <argsstring></argsstring>
+        <name>InitialWidth</name>
+        <qualifiedname>ImGuiShrinkWidthItem::InitialWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1271" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1271" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1267" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1268" bodyend="1272"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_shrink_width_item_1a5cd3b72ecdf53f6cb6c85f9064a4e256" prot="public" virt="non-virtual"><scope>ImGuiShrinkWidthItem</scope><name>Index</name></member>
+      <member refid="struct_im_gui_shrink_width_item_1ac9a3ca20449e58374963f32db20bbd87" prot="public" virt="non-virtual"><scope>ImGuiShrinkWidthItem</scope><name>InitialWidth</name></member>
+      <member refid="struct_im_gui_shrink_width_item_1a29ba0dc283a3f57b0725b371f73fe1ed" prot="public" virt="non-virtual"><scope>ImGuiShrinkWidthItem</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_beam_material_instance_1_1_shader_params" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::BeamMaterialInstance::ShaderParams</compoundname>
+    <includes refid="stdmat_8h" local="no">stdmat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_beam_material_instance_1_1_shader_params_1a2663888c299a4aba5cc6c148d191ed27" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tiny::BeamMaterialInstance::ShaderParams::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>tiny::BeamMaterialInstance::ShaderParams::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="13" column="7" bodyfile="content/stdmat.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_beam_material_instance_1_1_shader_params_1ac53e1501eb96168e71f6eb4c9f4b8cdc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tiny::BeamMaterialInstance::ShaderParams::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>tiny::BeamMaterialInstance::ShaderParams::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="14" column="7" bodyfile="content/stdmat.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_beam_material_instance_1_1_shader_params_1afdd3ef5bbafb82819915afff8724ba72" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float tiny::BeamMaterialInstance::ShaderParams::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <qualifiedname>tiny::BeamMaterialInstance::ShaderParams::time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="15" column="7" bodyfile="content/stdmat.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/stdmat.h" line="11" column="1" bodyfile="content/stdmat.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_beam_material_instance_1_1_shader_params_1ac53e1501eb96168e71f6eb4c9f4b8cdc" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance::ShaderParams</scope><name>height</name></member>
+      <member refid="structtiny_1_1_beam_material_instance_1_1_shader_params_1afdd3ef5bbafb82819915afff8724ba72" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance::ShaderParams</scope><name>time</name></member>
+      <member refid="structtiny_1_1_beam_material_instance_1_1_shader_params_1a2663888c299a4aba5cc6c148d191ed27" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance::ShaderParams</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

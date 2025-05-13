@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_frame_ring_buffer_1_1_allocation" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::FrameRingBuffer::Allocation</compoundname>
+    <includes refid="cbringbuffer_8h" local="no">cbringbuffer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_frame_ring_buffer_1_1_allocation_1aacf65e377e30f88f4629fd3a2bf9acfe" prot="public" static="no" mutable="no">
+        <type>D3D12_GPU_VIRTUAL_ADDRESS</type>
+        <definition>D3D12_GPU_VIRTUAL_ADDRESS tiny::FrameRingBuffer::Allocation::gpuAddress</definition>
+        <argsstring></argsstring>
+        <name>gpuAddress</name>
+        <qualifiedname>tiny::FrameRingBuffer::Allocation::gpuAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="18" column="41" bodyfile="graphics/cbringbuffer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_ring_buffer_1_1_allocation_1abcaf6ac4fbdbb97e0fbeea256d793bf8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tiny::FrameRingBuffer::Allocation::cpuAddress</definition>
+        <argsstring></argsstring>
+        <name>cpuAddress</name>
+        <qualifiedname>tiny::FrameRingBuffer::Allocation::cpuAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="19" column="40" bodyfile="graphics/cbringbuffer.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_ring_buffer_1_1_allocation_1a0e52fcf7ddb5f089102341aa730986b2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t tiny::FrameRingBuffer::Allocation::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>tiny::FrameRingBuffer::Allocation::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="20" column="41" bodyfile="graphics/cbringbuffer.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_ring_buffer_1_1_allocation_1a164212e967136e8ff7d8aafbb0e055be" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t tiny::FrameRingBuffer::Allocation::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>tiny::FrameRingBuffer::Allocation::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="21" column="41" bodyfile="graphics/cbringbuffer.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/cbringbuffer.h" line="16" column="9" bodyfile="graphics/cbringbuffer.h" bodystart="17" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_frame_ring_buffer_1_1_allocation_1abcaf6ac4fbdbb97e0fbeea256d793bf8" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer::Allocation</scope><name>cpuAddress</name></member>
+      <member refid="structtiny_1_1_frame_ring_buffer_1_1_allocation_1aacf65e377e30f88f4629fd3a2bf9acfe" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer::Allocation</scope><name>gpuAddress</name></member>
+      <member refid="structtiny_1_1_frame_ring_buffer_1_1_allocation_1a0e52fcf7ddb5f089102341aa730986b2" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer::Allocation</scope><name>offset</name></member>
+      <member refid="structtiny_1_1_frame_ring_buffer_1_1_allocation_1a164212e967136e8ff7d8aafbb0e055be" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer::Allocation</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

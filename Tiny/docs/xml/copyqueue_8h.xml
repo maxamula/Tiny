@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="copyqueue_8h" kind="file" language="C++">
+    <compoundname>copyqueue.h</compoundname>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">atlbase.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">future</includes>
+    <includedby refid="assets_8cpp" local="yes">content/assets.cpp</includedby>
+    <includedby refid="content_8h" local="yes">content/content.h</includedby>
+    <includedby refid="application_8cpp" local="yes">engine/application.cpp</includedby>
+    <includedby refid="copyqueue_8cpp" local="yes">graphics/copyqueue.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>graphics/copyqueue.h</label>
+        <link refid="copyqueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>atlbase.h</label>
+      </node>
+      <node id="2">
+        <label>d3d12.h</label>
+      </node>
+      <node id="5">
+        <label>future</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>content/assets.cpp</label>
+        <link refid="assets_8cpp"/>
+      </node>
+      <node id="4">
+        <label>content/assets.h</label>
+        <link refid="assets_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>content/content.cpp</label>
+        <link refid="content_8cpp"/>
+      </node>
+      <node id="3">
+        <label>content/content.h</label>
+        <link refid="content_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>content/content_internal.h</label>
+        <link refid="content__internal_8h"/>
+      </node>
+      <node id="9">
+        <label>content/stdmat.cpp</label>
+        <link refid="stdmat_8cpp"/>
+      </node>
+      <node id="8">
+        <label>content/stdmat.h</label>
+        <link refid="stdmat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>content/techniques.cpp</label>
+        <link refid="techniques_8cpp"/>
+      </node>
+      <node id="10">
+        <label>content/techniques.h</label>
+        <link refid="techniques_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="14">
+        <label>engine/application.h</label>
+        <link refid="application_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>engine/scene.cpp</label>
+        <link refid="scene_8cpp"/>
+      </node>
+      <node id="13">
+        <label>engine/scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>fx/shaderfx.cpp</label>
+        <link refid="shaderfx_8cpp"/>
+      </node>
+      <node id="28">
+        <label>graphics/copyqueue.cpp</label>
+        <link refid="copyqueue_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/copyqueue.h</label>
+        <link refid="copyqueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>graphics/framegraph.cpp</label>
+        <link refid="framegraph_8cpp"/>
+      </node>
+      <node id="22">
+        <label>graphics/framegraph.h</label>
+        <link refid="framegraph_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="18">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>graphics/gpuresource.cpp</label>
+        <link refid="gpuresource_8cpp"/>
+      </node>
+      <node id="24">
+        <label>graphics/gpuresource.h</label>
+        <link refid="gpuresource_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>graphics/pass.cpp</label>
+        <link refid="pass_8cpp"/>
+      </node>
+      <node id="16">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>graphics/renderctx.cpp</label>
+        <link refid="renderctx_8cpp"/>
+      </node>
+      <node id="26">
+        <label>graphics/renderctx.h</label>
+        <link refid="renderctx_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>graphics/renderer.cpp</label>
+        <link refid="renderer_8cpp"/>
+      </node>
+      <node id="23">
+        <label>graphics/renderer.h</label>
+        <link refid="renderer_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtiny_1_1_copy_queue" prot="public">tiny::CopyQueue</innerclass>
+    <innerclass refid="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e" prot="private">tiny::CopyQueue::COPY_FRAME</innerclass>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atlbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;future&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="classtiny_1_1_copy_queue" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>(u8<sp/>bufferCount);</highlight></codeline>
+<codeline lineno="13" refid="classtiny_1_1_copy_queue_1ab0dd42d658edcf86c158e760d37119d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_copy_queue_1ab0dd42d658edcf86c158e760d37119d0" kindref="member">CopyQueue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14" refid="classtiny_1_1_copy_queue_1a7bb61e9953858d4da33be5b2e0a10b74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_copy_queue_1a7bb61e9953858d4da33be5b2e0a10b74" kindref="member">CopyQueue</ref>(<ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15" refid="classtiny_1_1_copy_queue_1a1934639916a937a13ab1ca0439f0c59c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>&amp;<sp/><ref refid="classtiny_1_1_copy_queue_1a1934639916a937a13ab1ca0439f0c59c" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16" refid="classtiny_1_1_copy_queue_1a474069225a0b153f8d610dc761f8bccb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>&amp;<sp/><ref refid="classtiny_1_1_copy_queue_1a474069225a0b153f8d610dc761f8bccb" kindref="member">operator=</ref>(<ref refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" kindref="member">CopyQueue</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17" refid="classtiny_1_1_copy_queue_1a7436aff325e6f6c1b31d81a82c71f36a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_copy_queue_1a7436aff325e6f6c1b31d81a82c71f36a" kindref="member">~CopyQueue</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::future&lt;void&gt;<sp/><ref refid="classtiny_1_1_copy_queue_1a7a9550bce453992c7da69014ce0c6f0d" kindref="member">CopyResource</ref>(ID3D12Resource*<sp/>pDstResource,<sp/>ID3D12Resource*<sp/>pSrcResource);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::future&lt;void&gt;<sp/><ref refid="classtiny_1_1_copy_queue_1ab727b4768dab8c68bccf904f043b7733" kindref="member">UpdateSubresource</ref>(ID3D12Resource*<sp/>pDstResource,<sp/>ID3D12Resource*<sp/>pIntermediateResource,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>intermediateOffset,<sp/>UINT<sp/>firstSubresource,<sp/>UINT<sp/>numSubresources,<sp/>D3D12_SUBRESOURCE_DATA*<sp/>pSrcData,<sp/>D3D12_RESOURCE_STATES<sp/>state);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_copy_queue_1aef691c0a04d4fbeacb8389d617b74f96" kindref="member">Flush</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classtiny_1_1_copy_queue_1a64bb23c84fb02e53ac78e06b6cb1e64e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ID3D12CommandQueue*<sp/><ref refid="classtiny_1_1_copy_queue_1a64bb23c84fb02e53ac78e06b6cb1e64e" kindref="member">operator*</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mCommandQueue.p;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">COPY_FRAME</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COPY_FRAME()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>commandAllocator(nullptr),<sp/>commandList(nullptr),<sp/>fenceValue(0)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12CommandAllocator&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>commandAllocator;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12GraphicsCommandList&gt;<sp/><sp/><sp/><sp/><sp/><sp/>commandList;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fenceValue;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_WaitForFrame(u8<sp/>frameIndex);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12CommandQueue&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mCommandQueue;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;COPY_FRAME&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mCopyFrames;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Fence&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mFence;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mFenceEvent;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mFrameIndex;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mNextFenceValue;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mFramesInFlight;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1a371fa067c4057771eb6331c0d98ebe49" kindref="member">InitializeGlobalCopyQueue</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1abf2d9a157f9d87a5c6f8bbd10499ebe0" kindref="member">ShutdownGlobalCopyQueue</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>TINY_API<sp/><ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref>&amp;<sp/><ref refid="namespacetiny_1a423cd2e63d7e81775ce1a88bf813b434" kindref="member">GetEngineCopyQueue</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>TINY_API<sp/>CComPtr&lt;ID3D12Resource&gt;<sp/><ref refid="namespacetiny_1a9abbe2d311bde0bce32725b6a86cf37e" kindref="member">CreateGPUBuffer</ref>(u32<sp/>bufferSize,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data,<sp/>D3D12_RESOURCE_STATES<sp/>state<sp/>=<sp/>D3D12_RESOURCE_STATE_COMMON,<sp/>D3D12_RESOURCE_FLAGS<sp/>flags<sp/>=<sp/>D3D12_RESOURCE_FLAG_NONE);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="graphics/copyqueue.h"/>
+  </compounddef>
+</doxygen>

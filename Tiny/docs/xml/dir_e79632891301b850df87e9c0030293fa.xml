@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_e79632891301b850df87e9c0030293fa" kind="dir">
+    <compoundname>graphics</compoundname>
+    <innerdir refid="dir_0222df0a5b11561265bd348ae782878e">graphics/imgui</innerdir>
+    <innerfile refid="cbringbuffer_8cpp">cbringbuffer.cpp</innerfile>
+    <innerfile refid="cbringbuffer_8h">cbringbuffer.h</innerfile>
+    <innerfile refid="copyqueue_8cpp">copyqueue.cpp</innerfile>
+    <innerfile refid="copyqueue_8h">copyqueue.h</innerfile>
+    <innerfile refid="d3dcontext_8cpp">d3dcontext.cpp</innerfile>
+    <innerfile refid="d3dcontext_8h">d3dcontext.h</innerfile>
+    <innerfile refid="descriptors_8cpp">descriptors.cpp</innerfile>
+    <innerfile refid="descriptors_8h">descriptors.h</innerfile>
+    <innerfile refid="framegraph_8cpp">framegraph.cpp</innerfile>
+    <innerfile refid="framegraph_8h">framegraph.h</innerfile>
+    <innerfile refid="gfxcommon_8h">gfxcommon.h</innerfile>
+    <innerfile refid="gfxdebug_8cpp">gfxdebug.cpp</innerfile>
+    <innerfile refid="gfxdebug_8h">gfxdebug.h</innerfile>
+    <innerfile refid="gfxglobal_8cpp">gfxglobal.cpp</innerfile>
+    <innerfile refid="gfxglobal_8h">gfxglobal.h</innerfile>
+    <innerfile refid="gpuqueue_8cpp">gpuqueue.cpp</innerfile>
+    <innerfile refid="gpuqueue_8h">gpuqueue.h</innerfile>
+    <innerfile refid="gpuresource_8cpp">gpuresource.cpp</innerfile>
+    <innerfile refid="gpuresource_8h">gpuresource.h</innerfile>
+    <innerfile refid="pass_8cpp">pass.cpp</innerfile>
+    <innerfile refid="pass_8h">pass.h</innerfile>
+    <innerfile refid="renderctx_8cpp">renderctx.cpp</innerfile>
+    <innerfile refid="renderctx_8h">renderctx.h</innerfile>
+    <innerfile refid="renderer_8cpp">renderer.cpp</innerfile>
+    <innerfile refid="renderer_8h">renderer.h</innerfile>
+    <innerfile refid="viewport_8cpp">viewport.cpp</innerfile>
+    <innerfile refid="viewport_8h">viewport.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/"/>
+  </compounddef>
+</doxygen>

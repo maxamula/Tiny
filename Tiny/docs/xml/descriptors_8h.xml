@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="descriptors_8h" kind="file" language="C++">
+    <compoundname>descriptors.h</compoundname>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">atlbase.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">unordered_map</includes>
+    <includedby refid="content_8h" local="yes">content/content.h</includedby>
+    <includedby refid="application_8cpp" local="yes">engine/application.cpp</includedby>
+    <includedby refid="d3dcontext_8h" local="yes">graphics/d3dcontext.h</includedby>
+    <includedby refid="descriptors_8cpp" local="yes">graphics/descriptors.cpp</includedby>
+    <includedby refid="gfxdebug_8h" local="yes">graphics/gfxdebug.h</includedby>
+    <includedby refid="viewport_8h" local="yes">graphics/viewport.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>graphics/descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>atlbase.h</label>
+      </node>
+      <node id="2">
+        <label>d3d12.h</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>mutex</label>
+      </node>
+      <node id="6">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>content/assets.cpp</label>
+        <link refid="assets_8cpp"/>
+      </node>
+      <node id="4">
+        <label>content/assets.h</label>
+        <link refid="assets_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>content/content.cpp</label>
+        <link refid="content_8cpp"/>
+      </node>
+      <node id="2">
+        <label>content/content.h</label>
+        <link refid="content_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>content/content_internal.h</label>
+        <link refid="content__internal_8h"/>
+      </node>
+      <node id="9">
+        <label>content/stdmat.cpp</label>
+        <link refid="stdmat_8cpp"/>
+      </node>
+      <node id="8">
+        <label>content/stdmat.h</label>
+        <link refid="stdmat_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>content/techniques.cpp</label>
+        <link refid="techniques_8cpp"/>
+      </node>
+      <node id="10">
+        <label>content/techniques.h</label>
+        <link refid="techniques_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="14">
+        <label>engine/application.h</label>
+        <link refid="application_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>engine/scene.cpp</label>
+        <link refid="scene_8cpp"/>
+      </node>
+      <node id="13">
+        <label>engine/scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>fx/shaderfx.cpp</label>
+        <link refid="shaderfx_8cpp"/>
+      </node>
+      <node id="29">
+        <label>graphics/d3dcontext.cpp</label>
+        <link refid="d3dcontext_8cpp"/>
+      </node>
+      <node id="28">
+        <label>graphics/d3dcontext.h</label>
+        <link refid="d3dcontext_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>graphics/descriptors.cpp</label>
+        <link refid="descriptors_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>graphics/framegraph.cpp</label>
+        <link refid="framegraph_8cpp"/>
+      </node>
+      <node id="22">
+        <label>graphics/framegraph.h</label>
+        <link refid="framegraph_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="18">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>graphics/gpuresource.cpp</label>
+        <link refid="gpuresource_8cpp"/>
+      </node>
+      <node id="24">
+        <label>graphics/gpuresource.h</label>
+        <link refid="gpuresource_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>graphics/pass.cpp</label>
+        <link refid="pass_8cpp"/>
+      </node>
+      <node id="16">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>graphics/renderctx.cpp</label>
+        <link refid="renderctx_8cpp"/>
+      </node>
+      <node id="26">
+        <label>graphics/renderctx.h</label>
+        <link refid="renderctx_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>graphics/renderer.cpp</label>
+        <link refid="renderer_8cpp"/>
+      </node>
+      <node id="23">
+        <label>graphics/renderer.h</label>
+        <link refid="renderer_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>graphics/viewport.cpp</label>
+        <link refid="viewport_8cpp"/>
+      </node>
+      <node id="30">
+        <label>graphics/viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>misc/dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtiny_1_1_descriptor_handle" prot="public">tiny::DescriptorHandle</innerclass>
+    <innerclass refid="classtiny_1_1_descriptor_range" prot="public">tiny::DescriptorRange</innerclass>
+    <innerclass refid="classtiny_1_1_d3_d_descriptor_heap" prot="public">tiny::D3DDescriptorHeap</innerclass>
+    <innerclass refid="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info" prot="private">tiny::D3DDescriptorHeap::AllocationInfo</innerclass>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atlbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classtiny_1_1_descriptor_handle" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref><sp/>final</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="classtiny_1_1_descriptor_handle_1a45b2fa354081f2834f6664cd95807ada" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtiny_1_1_descriptor_handle_1a45b2fa354081f2834f6664cd95807ada" kindref="member">D3DDescriptorHeap</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>&amp;)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>&amp;<sp/><ref refid="classtiny_1_1_descriptor_handle_1a7a286b5660f44631c9ca864e7bf92ea8" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>&amp;)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>(<ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>&amp;&amp;)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>&amp;<sp/>operator=(<ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>&amp;&amp;)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classtiny_1_1_descriptor_handle_1aa6247c6de7efffd2a19b6faea8d39674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(<ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref><sp/>const&amp;<sp/>o)<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mHeap<sp/>!=<sp/>o.mHeap)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mHeap<sp/>&lt;<sp/>o.mHeap;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mIndex<sp/>&lt;<sp/>o.mIndex;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Release();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>GetCpuHandle()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>GetGpuHandle()<sp/>const<sp/>noexcept;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classtiny_1_1_descriptor_handle_1aee7f67e65788fbdecb44c3135a184782" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1aee7f67e65788fbdecb44c3135a184782" kindref="member">__declspec</ref>(property(get<sp/>=<sp/><ref refid="classtiny_1_1_descriptor_handle_1ad7b4d849165d7d4c57eca3443d5bb992" kindref="member">GetCpuHandle</ref>))<sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>cpu;</highlight></codeline>
+<codeline lineno="38" refid="classtiny_1_1_descriptor_handle_1a4a642a32c97df543ef7c585ae027d6e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1aee7f67e65788fbdecb44c3135a184782" kindref="member">__declspec</ref>(property(get<sp/>=<sp/><ref refid="classtiny_1_1_descriptor_handle_1a3bab910ef5bf9f02d4156e255365f2b2" kindref="member">GetGpuHandle</ref>))<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>gpu;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>private:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1ad92637db50880ded8adca78e8dffeb54" kindref="member">DescriptorHandle</ref>(<ref refid="classtiny_1_1_descriptor_handle_1a45b2fa354081f2834f6664cd95807ada" kindref="member">D3DDescriptorHeap</ref>*<sp/>heap,<sp/>u32<sp/>index,<sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>cpu,<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>gpu);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle_1a45b2fa354081f2834f6664cd95807ada" kindref="member">D3DDescriptorHeap</ref>*<sp/>mHeap;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mIndex;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/><sp/><sp/><sp/><sp/>mCpu;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/><sp/><sp/><sp/><sp/>mGpu;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classtiny_1_1_descriptor_range" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/>class<sp/>TINYFX_API<sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref><sp/>final</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50" refid="classtiny_1_1_descriptor_range_1a45b2fa354081f2834f6664cd95807ada" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtiny_1_1_descriptor_range_1a45b2fa354081f2834f6664cd95807ada" kindref="member">D3DDescriptorHeap</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>&amp;)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>&amp;<sp/><ref refid="classtiny_1_1_descriptor_range_1abdaa56b3e425b425687c1898f429d3ed" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>&amp;)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>(<ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>&amp;&amp;)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>&amp;<sp/>operator=(<ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>&amp;&amp;)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classtiny_1_1_descriptor_range_1a9d402d6dd13a9a4cd2c8f2b472e94482" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(<ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref><sp/>const&amp;<sp/>o)<sp/>const<sp/>noexcept</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mHeap<sp/>!=<sp/>o.mHeap)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mHeap<sp/>&lt;<sp/>o.mHeap;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mIndex<sp/>&lt;<sp/>o.mIndex;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>GetCpuHandle(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>GetGpuHandle(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classtiny_1_1_descriptor_range_1ae95543384665cf08398155703ca1ad5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ae95543384665cf08398155703ca1ad5d" kindref="member">__declspec</ref>(property(get<sp/>=<sp/><ref refid="classtiny_1_1_descriptor_range_1ae9bdd3c9f3afbc73867562c96f0c8256" kindref="member">GetCpuHandle</ref>))<sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>cpu[];</highlight></codeline>
+<codeline lineno="70" refid="classtiny_1_1_descriptor_range_1a2609e2e0c4f26c06a65cd70c3047fda6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1a2609e2e0c4f26c06a65cd70c3047fda6" kindref="member">__declspec</ref>(property(get<sp/>=<sp/><ref refid="classtiny_1_1_descriptor_range_1a403a48ff7e76d014ede9053543b5ae6e" kindref="member">GetGpuHandle</ref>))<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>gpu[];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" kindref="member">DescriptorRange</ref>(<ref refid="classtiny_1_1_descriptor_range_1a45b2fa354081f2834f6664cd95807ada" kindref="member">D3DDescriptorHeap</ref>*<sp/>heap,<sp/>u32<sp/>index,<sp/>u32<sp/>length,<sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>cpu,<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>gpu);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_range_1a45b2fa354081f2834f6664cd95807ada" kindref="member">D3DDescriptorHeap</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mHeap;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mIndex;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mLength;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>mSartCpu;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>mStartGpu;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classtiny_1_1_d3_d_descriptor_heap" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref><sp/>final</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">AllocationInfo</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>refCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/>length<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>(D3D12_DESCRIPTOR_HEAP_TYPE<sp/>type,<sp/>u32<sp/>numDescriptors);</highlight></codeline>
+<codeline lineno="90" refid="classtiny_1_1_d3_d_descriptor_heap_1a5c12630070bc2114d7a42f8f3b623d8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1a5c12630070bc2114d7a42f8f3b623d8d" kindref="member">D3DDescriptorHeap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91" refid="classtiny_1_1_d3_d_descriptor_heap_1aa3292eb6a425a823156decb96e2585e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>&amp;<sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa3292eb6a425a823156decb96e2585e9" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92" refid="classtiny_1_1_d3_d_descriptor_heap_1a53607c6e8c2f38bc63908c3e27de4ca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1a53607c6e8c2f38bc63908c3e27de4ca1" kindref="member">D3DDescriptorHeap</ref>(<ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93" refid="classtiny_1_1_d3_d_descriptor_heap_1afdcba53fee02d1d55d2a8d8b85fbc1d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>&amp;<sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1afdcba53fee02d1d55d2a8d8b85fbc1d9" kindref="member">operator=</ref>(<ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" kindref="member">D3DDescriptorHeap</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94" refid="classtiny_1_1_d3_d_descriptor_heap_1a12069a1945dc6b546f8a1b402e9f5826" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1a12069a1945dc6b546f8a1b402e9f5826" kindref="member">~D3DDescriptorHeap</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95" refid="classtiny_1_1_d3_d_descriptor_heap_1ab9549b3996bbb128785225d153005ce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1ab9549b3996bbb128785225d153005ce8" kindref="member">IsShaderVisible</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mShaderVisible;<sp/>}</highlight></codeline>
+<codeline lineno="96" refid="classtiny_1_1_d3_d_descriptor_heap_1aa7d07eeef9bb09304f6ad17e1966ab63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>D3D12_DESCRIPTOR_HEAP_TYPE<sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1aa7d07eeef9bb09304f6ad17e1966ab63" kindref="member">GetType</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mType;<sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/>AllocateDescriptor();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref><sp/>AllocateRange(u32<sp/>length);</highlight></codeline>
+<codeline lineno="99" refid="classtiny_1_1_d3_d_descriptor_heap_1ace0a882fe06ced9e04b008b8d19a57ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>ID3D12DescriptorHeap*<sp/><ref refid="classtiny_1_1_d3_d_descriptor_heap_1ace0a882fe06ced9e04b008b8d19a57ae" kindref="member">operator*</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mDescriptorHeap;<sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddRef(u32<sp/>index);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Release(u32<sp/>index);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Release(u32<sp/>index,<sp/>u32<sp/>len);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>u32<sp/>AllocateInternal(u32<sp/>length);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ReleaseInternal(u32<sp/>startIndex,<sp/>u32<sp/>length);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MergeFreeRanges(u32<sp/>freedStart,<sp/>u32<sp/>freedLength);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_DESCRIPTOR_HEAP_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mType;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mNumDescriptors;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mDescriptorSize;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mShaderVisible;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12DescriptorHeap&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mDescriptorHeap;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mCpuStart;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mGpuStart;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;u32,<sp/>u32&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mFreeRanges;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;u32,<sp/>AllocationInfo&gt;<sp/>mAllocations;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mMutex;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitializeGlobalDescriptorHeaps();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ShutdownGlobalDescriptorHeaps();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/>[[nodiscard]]<sp/>D3DDescriptorHeap&amp;<sp/>GetEngineDescriptorHeap(D3D12_DESCRIPTOR_HEAP_TYPE<sp/>type);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="graphics/descriptors.h"/>
+  </compounddef>
+</doxygen>

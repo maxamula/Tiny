@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="imconfig_8h" kind="file" language="C++">
+    <compoundname>imconfig.h</compoundname>
+    <includedby refid="imgui_8h" local="yes">graphics/imgui/imgui.h</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="5">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="3">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>graphics/imgui/imconfig.h</label>
+        <link refid="imconfig_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>graphics/imgui/imgui.cpp</label>
+        <link refid="imgui_8cpp"/>
+      </node>
+      <node id="2">
+        <label>graphics/imgui/imgui.h</label>
+        <link refid="imgui_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>graphics/imgui/imgui_demo.cpp</label>
+        <link refid="imgui__demo_8cpp"/>
+      </node>
+      <node id="8">
+        <label>graphics/imgui/imgui_draw.cpp</label>
+        <link refid="imgui__draw_8cpp"/>
+      </node>
+      <node id="9">
+        <label>graphics/imgui/imgui_impl_dx12.cpp</label>
+        <link refid="imgui__impl__dx12_8cpp"/>
+      </node>
+      <node id="10">
+        <label>graphics/imgui/imgui_impl_dx12.h</label>
+        <link refid="imgui__impl__dx12_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>graphics/imgui/imgui_impl_win32.cpp</label>
+        <link refid="imgui__impl__win32_8cpp"/>
+      </node>
+      <node id="12">
+        <label>graphics/imgui/imgui_impl_win32.h</label>
+        <link refid="imgui__impl__win32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>graphics/imgui/imgui_internal.h</label>
+        <link refid="imgui__internal_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>graphics/imgui/imgui_tables.cpp</label>
+        <link refid="imgui__tables_8cpp"/>
+      </node>
+      <node id="15">
+        <label>graphics/imgui/imgui_widgets.cpp</label>
+        <link refid="imgui__widgets_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DEAR<sp/>IMGUI<sp/>COMPILE-TIME<sp/>OPTIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Runtime<sp/>options<sp/>(clipboard<sp/>callbacks,<sp/>enabling<sp/>various<sp/>features,<sp/>etc.)<sp/>can<sp/>generally<sp/>be<sp/>set<sp/>via<sp/>the<sp/>ImGuiIO<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>can<sp/>use<sp/>ImGui::SetAllocatorFunctions()<sp/>before<sp/>calling<sp/>ImGui::CreateContext()<sp/>to<sp/>rewire<sp/>memory<sp/>allocation<sp/>functions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A)<sp/>You<sp/>may<sp/>edit<sp/>imconfig.h<sp/>(and<sp/>not<sp/>overwrite<sp/>it<sp/>when<sp/>updating<sp/>Dear<sp/>ImGui,<sp/>or<sp/>maintain<sp/>a<sp/>patch/rebased<sp/>branch<sp/>with<sp/>your<sp/>modifications<sp/>to<sp/>it)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>B)<sp/>or<sp/>&apos;#define<sp/>IMGUI_USER_CONFIG<sp/>&quot;my_imgui_config.h&quot;&apos;<sp/>in<sp/>your<sp/>project<sp/>and<sp/>then<sp/>add<sp/>directives<sp/>in<sp/>your<sp/>own<sp/>file<sp/>without<sp/>touching<sp/>this<sp/>template.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>need<sp/>to<sp/>make<sp/>sure<sp/>that<sp/>configuration<sp/>settings<sp/>are<sp/>defined<sp/>consistently<sp/>_everywhere_<sp/>Dear<sp/>ImGui<sp/>is<sp/>used,<sp/>which<sp/>include<sp/>the<sp/>imgui*.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>files<sp/>but<sp/>also<sp/>_any_<sp/>of<sp/>your<sp/>code<sp/>that<sp/>uses<sp/>Dear<sp/>ImGui.<sp/>This<sp/>is<sp/>because<sp/>some<sp/>compile-time<sp/>options<sp/>have<sp/>an<sp/>affect<sp/>on<sp/>data<sp/>structures.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defining<sp/>those<sp/>options<sp/>in<sp/>imconfig.h<sp/>will<sp/>ensure<sp/>every<sp/>compilation<sp/>unit<sp/>gets<sp/>to<sp/>see<sp/>the<sp/>same<sp/>data<sp/>structure<sp/>layouts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Call<sp/>IMGUI_CHECKVERSION()<sp/>from<sp/>your<sp/>.cpp<sp/>file<sp/>to<sp/>verify<sp/>that<sp/>the<sp/>data<sp/>structures<sp/>your<sp/>files<sp/>are<sp/>using<sp/>are<sp/>matching<sp/>the<sp/>ones<sp/>imgui.cpp<sp/>is<sp/>using.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Define<sp/>assertion<sp/>handler.<sp/>Defaults<sp/>to<sp/>calling<sp/>assert().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>your<sp/>macro<sp/>uses<sp/>multiple<sp/>statements,<sp/>make<sp/>sure<sp/>is<sp/>enclosed<sp/>in<sp/>a<sp/>&apos;do<sp/>{<sp/>..<sp/>}<sp/>while<sp/>(0)&apos;<sp/>block<sp/>so<sp/>it<sp/>can<sp/>be<sp/>used<sp/>as<sp/>a<sp/>single<sp/>statement.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IM_ASSERT(_EXPR)<sp/><sp/>MyAssert(_EXPR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IM_ASSERT(_EXPR)<sp/><sp/>((void)(_EXPR))<sp/><sp/><sp/><sp/><sp/>//<sp/>Disable<sp/>asserts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Define<sp/>attributes<sp/>of<sp/>all<sp/>API<sp/>symbols<sp/>declarations,<sp/>e.g.<sp/>for<sp/>DLL<sp/>under<sp/>Windows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Using<sp/>Dear<sp/>ImGui<sp/>via<sp/>a<sp/>shared<sp/>library<sp/>is<sp/>not<sp/>recommended,<sp/>because<sp/>of<sp/>function<sp/>call<sp/>overhead<sp/>and<sp/>because<sp/>we<sp/>don&apos;t<sp/>guarantee<sp/>backward<sp/>nor<sp/>forward<sp/>ABI<sp/>compatibility.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DLL<sp/>users:<sp/>heaps<sp/>and<sp/>globals<sp/>are<sp/>not<sp/>shared<sp/>across<sp/>DLL<sp/>boundaries!<sp/>You<sp/>will<sp/>need<sp/>to<sp/>call<sp/>SetCurrentContext()<sp/>+<sp/>SetAllocatorFunctions()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>each<sp/>static/DLL<sp/>boundary<sp/>you<sp/>are<sp/>calling<sp/>from.<sp/>Read<sp/>&quot;Context<sp/>and<sp/>Memory<sp/>Allocators&quot;<sp/>section<sp/>of<sp/>imgui.cpp<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_API<sp/>__declspec(<sp/>dllexport<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_API<sp/>__declspec(<sp/>dllimport<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Don&apos;t<sp/>define<sp/>obsolete<sp/>functions/enums/behaviors.<sp/>Consider<sp/>enabling<sp/>from<sp/>time<sp/>to<sp/>time<sp/>after<sp/>updating<sp/>to<sp/>clean<sp/>your<sp/>code<sp/>of<sp/>obsolete<sp/>function/names.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_OBSOLETE_FUNCTIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_OBSOLETE_KEYIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>1.87+<sp/>disable<sp/>legacy<sp/>io.KeyMap[]+io.KeysDown[]<sp/>in<sp/>favor<sp/>io.AddKeyEvent().<sp/>This<sp/>is<sp/>automatically<sp/>done<sp/>by<sp/>IMGUI_DISABLE_OBSOLETE_FUNCTIONS.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Disable<sp/>all<sp/>of<sp/>Dear<sp/>ImGui<sp/>or<sp/>don&apos;t<sp/>implement<sp/>standard<sp/>windows/tools.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>It<sp/>is<sp/>very<sp/>strongly<sp/>recommended<sp/>to<sp/>NOT<sp/>disable<sp/>the<sp/>demo<sp/>windows<sp/>and<sp/>debug<sp/>tool<sp/>during<sp/>development.<sp/>They<sp/>are<sp/>extremely<sp/>useful<sp/>in<sp/>day<sp/>to<sp/>day<sp/>work.<sp/>Please<sp/>read<sp/>comments<sp/>in<sp/>imgui_demo.cpp.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Disable<sp/>everything:<sp/>all<sp/>headers<sp/>and<sp/>source<sp/>files<sp/>will<sp/>be<sp/>empty.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_DEMO_WINDOWS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Disable<sp/>demo<sp/>windows:<sp/>ShowDemoWindow()/ShowStyleEditor()<sp/>will<sp/>be<sp/>empty.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_DEBUG_TOOLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Disable<sp/>metrics/debugger<sp/>and<sp/>other<sp/>debug<sp/>tools:<sp/>ShowMetricsWindow(),<sp/>ShowDebugLogWindow()<sp/>and<sp/>ShowIDStackToolWindow()<sp/>will<sp/>be<sp/>empty.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Don&apos;t<sp/>implement<sp/>some<sp/>functions<sp/>to<sp/>reduce<sp/>linkage<sp/>requirements.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_WIN32_DEFAULT_CLIPBOARD_FUNCTIONS<sp/><sp/><sp/>//<sp/>[Win32]<sp/>Don&apos;t<sp/>implement<sp/>default<sp/>clipboard<sp/>handler.<sp/>Won&apos;t<sp/>use<sp/>and<sp/>link<sp/>with<sp/>OpenClipboard/GetClipboardData/CloseClipboard<sp/>etc.<sp/>(user32.lib/.a,<sp/>kernel32.lib/.a)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_ENABLE_WIN32_DEFAULT_IME_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>[Win32]<sp/>[Default<sp/>with<sp/>Visual<sp/>Studio]<sp/>Implement<sp/>default<sp/>IME<sp/>handler<sp/>(require<sp/>imm32.lib/.a,<sp/>auto-link<sp/>for<sp/>Visual<sp/>Studio,<sp/>-limm32<sp/>on<sp/>command-line<sp/>for<sp/>MinGW)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>[Win32]<sp/>[Default<sp/>with<sp/>non-Visual<sp/>Studio<sp/>compilers]<sp/>Don&apos;t<sp/>implement<sp/>default<sp/>IME<sp/>handler<sp/>(won&apos;t<sp/>require<sp/>imm32.lib/.a)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_WIN32_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>[Win32]<sp/>Won&apos;t<sp/>use<sp/>and<sp/>link<sp/>with<sp/>any<sp/>Win32<sp/>function<sp/>(clipboard,<sp/>IME).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_ENABLE_OSX_DEFAULT_CLIPBOARD_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>[OSX]<sp/>Implement<sp/>default<sp/>OSX<sp/>clipboard<sp/>handler<sp/>(need<sp/>to<sp/>link<sp/>with<sp/>&apos;-framework<sp/>ApplicationServices&apos;,<sp/>this<sp/>is<sp/>why<sp/>this<sp/>is<sp/>not<sp/>the<sp/>default).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_DEFAULT_FORMAT_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Don&apos;t<sp/>implement<sp/>ImFormatString/ImFormatStringV<sp/>so<sp/>you<sp/>can<sp/>implement<sp/>them<sp/>yourself<sp/>(e.g.<sp/>if<sp/>you<sp/>don&apos;t<sp/>want<sp/>to<sp/>link<sp/>with<sp/>vsnprintf)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_DEFAULT_MATH_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Don&apos;t<sp/>implement<sp/>ImFabs/ImSqrt/ImPow/ImFmod/ImCos/ImSin/ImAcos/ImAtan2<sp/>so<sp/>you<sp/>can<sp/>implement<sp/>them<sp/>yourself.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_FILE_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Don&apos;t<sp/>implement<sp/>ImFileOpen/ImFileClose/ImFileRead/ImFileWrite<sp/>and<sp/>ImFileHandle<sp/>at<sp/>all<sp/>(replace<sp/>them<sp/>with<sp/>dummies)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_DEFAULT_FILE_FUNCTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Don&apos;t<sp/>implement<sp/>ImFileOpen/ImFileClose/ImFileRead/ImFileWrite<sp/>and<sp/>ImFileHandle<sp/>so<sp/>you<sp/>can<sp/>implement<sp/>them<sp/>yourself<sp/>if<sp/>you<sp/>don&apos;t<sp/>want<sp/>to<sp/>link<sp/>with<sp/>fopen/fclose/fread/fwrite.<sp/>This<sp/>will<sp/>also<sp/>disable<sp/>the<sp/>LogToTTY()<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_DEFAULT_ALLOCATORS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Don&apos;t<sp/>implement<sp/>default<sp/>allocators<sp/>calling<sp/>malloc()/free()<sp/>to<sp/>avoid<sp/>linking<sp/>with<sp/>them.<sp/>You<sp/>will<sp/>need<sp/>to<sp/>call<sp/>ImGui::SetAllocatorFunctions().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_SSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Disable<sp/>use<sp/>of<sp/>SSE<sp/>intrinsics<sp/>even<sp/>if<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Include<sp/>imgui_user.h<sp/>at<sp/>the<sp/>end<sp/>of<sp/>imgui.h<sp/>as<sp/>a<sp/>convenience</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_INCLUDE_IMGUI_USER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Pack<sp/>colors<sp/>to<sp/>BGRA8<sp/>instead<sp/>of<sp/>RGBA8<sp/>(to<sp/>avoid<sp/>converting<sp/>from<sp/>one<sp/>to<sp/>another)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_USE_BGRA_PACKED_COLOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Use<sp/>32-bit<sp/>for<sp/>ImWchar<sp/>(default<sp/>is<sp/>16-bit)<sp/>to<sp/>support<sp/>unicode<sp/>planes<sp/>1-16.<sp/>(e.g.<sp/>point<sp/>beyond<sp/>0xFFFF<sp/>like<sp/>emoticons,<sp/>dingbats,<sp/>symbols,<sp/>shapes,<sp/>ancient<sp/>languages,<sp/>etc...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_USE_WCHAR32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Avoid<sp/>multiple<sp/>STB<sp/>libraries<sp/>implementations,<sp/>or<sp/>redefine<sp/>path/filenames<sp/>to<sp/>prioritize<sp/>another<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>By<sp/>default<sp/>the<sp/>embedded<sp/>implementations<sp/>are<sp/>declared<sp/>static<sp/>and<sp/>not<sp/>available<sp/>outside<sp/>of<sp/>Dear<sp/>ImGui<sp/>sources<sp/>files.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_STB_TRUETYPE_FILENAME<sp/><sp/><sp/>&quot;my_folder/stb_truetype.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_STB_RECT_PACK_FILENAME<sp/><sp/>&quot;my_folder/stb_rect_pack.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_STB_SPRINTF_FILENAME<sp/><sp/><sp/><sp/>&quot;my_folder/stb_sprintf.h&quot;<sp/><sp/><sp/><sp/>//<sp/>only<sp/>used<sp/>if<sp/>IMGUI_USE_STB_SPRINTF<sp/>is<sp/>defined.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_STB_TRUETYPE_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_STB_RECT_PACK_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DISABLE_STB_SPRINTF_IMPLEMENTATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>only<sp/>disabled<sp/>if<sp/>IMGUI_USE_STB_SPRINTF<sp/>is<sp/>defined.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Use<sp/>stb_sprintf.h<sp/>for<sp/>a<sp/>faster<sp/>implementation<sp/>of<sp/>vsnprintf<sp/>instead<sp/>of<sp/>the<sp/>one<sp/>from<sp/>libc<sp/>(unless<sp/>IMGUI_DISABLE_DEFAULT_FORMAT_FUNCTIONS<sp/>is<sp/>defined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Compatibility<sp/>checks<sp/>of<sp/>arguments<sp/>and<sp/>formats<sp/>done<sp/>by<sp/>clang<sp/>and<sp/>GCC<sp/>will<sp/>be<sp/>disabled<sp/>in<sp/>order<sp/>to<sp/>support<sp/>the<sp/>extra<sp/>formats<sp/>provided<sp/>by<sp/>stb_sprintf.h.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_USE_STB_SPRINTF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Use<sp/>FreeType<sp/>to<sp/>build<sp/>and<sp/>rasterize<sp/>the<sp/>font<sp/>atlas<sp/>(instead<sp/>of<sp/>stb_truetype<sp/>which<sp/>is<sp/>embedded<sp/>by<sp/>default<sp/>in<sp/>Dear<sp/>ImGui)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Requires<sp/>FreeType<sp/>headers<sp/>to<sp/>be<sp/>available<sp/>in<sp/>the<sp/>include<sp/>path.<sp/>Requires<sp/>program<sp/>to<sp/>be<sp/>compiled<sp/>with<sp/>&apos;misc/freetype/imgui_freetype.cpp&apos;<sp/>(in<sp/>this<sp/>repository)<sp/>+<sp/>the<sp/>FreeType<sp/>library<sp/>(not<sp/>provided).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>Windows<sp/>you<sp/>may<sp/>use<sp/>vcpkg<sp/>with<sp/>&apos;vcpkg<sp/>install<sp/>freetype<sp/>--triplet=x64-windows&apos;<sp/>+<sp/>&apos;vcpkg<sp/>integrate<sp/>install&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_ENABLE_FREETYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Use<sp/>FreeType+lunasvg<sp/>library<sp/>to<sp/>render<sp/>OpenType<sp/>SVG<sp/>fonts<sp/>(SVGinOT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Requires<sp/>lunasvg<sp/>headers<sp/>to<sp/>be<sp/>available<sp/>in<sp/>the<sp/>include<sp/>path<sp/>+<sp/>program<sp/>to<sp/>be<sp/>linked<sp/>with<sp/>the<sp/>lunasvg<sp/>library<sp/>(not<sp/>provided).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Only<sp/>works<sp/>in<sp/>combination<sp/>with<sp/>IMGUI_ENABLE_FREETYPE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(implementation<sp/>is<sp/>based<sp/>on<sp/>Freetype&apos;s<sp/>rsvg-port.c<sp/>which<sp/>is<sp/>licensed<sp/>under<sp/>CeCILL-C<sp/>Free<sp/>Software<sp/>License<sp/>Agreement)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_ENABLE_FREETYPE_LUNASVG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Use<sp/>stb_truetype<sp/>to<sp/>build<sp/>and<sp/>rasterize<sp/>the<sp/>font<sp/>atlas<sp/>(default)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>only<sp/>purpose<sp/>of<sp/>this<sp/>define<sp/>is<sp/>if<sp/>you<sp/>want<sp/>force<sp/>compilation<sp/>of<sp/>the<sp/>stb_truetype<sp/>backend<sp/>ALONG<sp/>with<sp/>the<sp/>FreeType<sp/>backend.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_ENABLE_STB_TRUETYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Define<sp/>constructor<sp/>and<sp/>implicit<sp/>cast<sp/>operators<sp/>to<sp/>convert<sp/>back&lt;&gt;forth<sp/>between<sp/>your<sp/>math<sp/>types<sp/>and<sp/>ImVec2/ImVec4.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>will<sp/>be<sp/>inlined<sp/>as<sp/>part<sp/>of<sp/>ImVec2<sp/>and<sp/>ImVec4<sp/>class<sp/>declarations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">#define<sp/>IM_VEC2_CLASS_EXTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/>ImVec2(const<sp/>MyVec2&amp;<sp/>f)<sp/>:<sp/>x(f.x),<sp/>y(f.y)<sp/>{}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>operator<sp/>MyVec2()<sp/>const<sp/>{<sp/>return<sp/>MyVec2(x,y);<sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight></codeline>
+<codeline lineno="96"><highlight class="comment">#define<sp/>IM_VEC4_CLASS_EXTRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>constexpr<sp/>ImVec4(const<sp/>MyVec4&amp;<sp/>f)<sp/>:<sp/>x(f.x),<sp/>y(f.y),<sp/>z(f.z),<sp/>w(f.w)<sp/>{}<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>operator<sp/>MyVec4()<sp/>const<sp/>{<sp/>return<sp/>MyVec4(x,y,z,w);<sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>...Or<sp/>use<sp/>Dear<sp/>ImGui&apos;s<sp/>own<sp/>very<sp/>basic<sp/>math<sp/>operators.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DEFINE_MATH_OPERATORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Use<sp/>32-bit<sp/>vertex<sp/>indices<sp/>(default<sp/>is<sp/>16-bit)<sp/>is<sp/>one<sp/>way<sp/>to<sp/>allow<sp/>large<sp/>meshes<sp/>with<sp/>more<sp/>than<sp/>64K<sp/>vertices.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Your<sp/>renderer<sp/>backend<sp/>will<sp/>need<sp/>to<sp/>support<sp/>it<sp/>(most<sp/>example<sp/>renderer<sp/>backends<sp/>support<sp/>both<sp/>16/32-bit<sp/>indices).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Another<sp/>way<sp/>to<sp/>allow<sp/>large<sp/>meshes<sp/>while<sp/>keeping<sp/>16-bit<sp/>indices<sp/>is<sp/>to<sp/>handle<sp/>ImDrawCmd::VtxOffset<sp/>in<sp/>your<sp/>renderer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Read<sp/>about<sp/>ImGuiBackendFlags_RendererHasVtxOffset<sp/>for<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ImDrawIdx<sp/>unsigned<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Override<sp/>ImDrawCallback<sp/>signature<sp/>(will<sp/>need<sp/>to<sp/>modify<sp/>renderer<sp/>backends<sp/>accordingly)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//struct<sp/>ImDrawList;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//struct<sp/>ImDrawCmd;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>void<sp/>(*MyImDrawCallback)(const<sp/>ImDrawList*<sp/>draw_list,<sp/>const<sp/>ImDrawCmd*<sp/>cmd,<sp/>void*<sp/>my_renderer_user_data);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ImDrawCallback<sp/>MyImDrawCallback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Debug<sp/>Tools:<sp/>Macro<sp/>to<sp/>break<sp/>in<sp/>Debugger<sp/>(we<sp/>provide<sp/>a<sp/>default<sp/>implementation<sp/>of<sp/>this<sp/>in<sp/>the<sp/>codebase)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(use<sp/>&apos;Metrics-&gt;Tools-&gt;Item<sp/>Picker&apos;<sp/>to<sp/>pick<sp/>widgets<sp/>with<sp/>the<sp/>mouse<sp/>and<sp/>break<sp/>into<sp/>them<sp/>for<sp/>easy<sp/>debugging.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IM_DEBUG_BREAK<sp/><sp/>IM_ASSERT(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IM_DEBUG_BREAK<sp/><sp/>__debugbreak()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Debug<sp/>Tools:<sp/>Enable<sp/>slower<sp/>asserts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>IMGUI_DEBUG_PARANOID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//----<sp/>Tip:<sp/>You<sp/>can<sp/>add<sp/>extra<sp/>functions<sp/>within<sp/>the<sp/>ImGui::<sp/>namespace<sp/>from<sp/>anywhere<sp/>(e.g.<sp/>your<sp/>own<sp/>sources/header<sp/>files)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">namespace<sp/>ImGui</highlight></codeline>
+<codeline lineno="126"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>MyFunction(const<sp/>char*<sp/>name,<sp/>MyMatrix44*<sp/>mtx);</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="graphics/imgui/imconfig.h"/>
+  </compounddef>
+</doxygen>

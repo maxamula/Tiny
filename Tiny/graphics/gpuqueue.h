@@ -46,6 +46,7 @@ namespace tiny
 
 		CComPtr<ID3D12CommandQueue>			mCommandQueue;
 		std::vector<CommandFrame>			mCommandFrames;
+		std::mutex							mAcquireMutex;
 		CComPtr<ID3D12Fence>				mFence;
 		HANDLE								mFenceEvent;
 		std::atomic<u8>						mLastSubmittedFrame;

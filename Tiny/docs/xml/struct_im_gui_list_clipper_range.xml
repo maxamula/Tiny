@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_list_clipper_range" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiListClipperRange</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_list_clipper_range_1a5d0f961e00fadc1aa57fb72c197e6bf4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiListClipperRange::Min</definition>
+        <argsstring></argsstring>
+        <name>Min</name>
+        <qualifiedname>ImGuiListClipperRange::Min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1459" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_list_clipper_range_1a4086dae7cf99d5fba97956acc3a2263b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiListClipperRange::Max</definition>
+        <argsstring></argsstring>
+        <name>Max</name>
+        <qualifiedname>ImGuiListClipperRange::Max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1460" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_list_clipper_range_1ad78789e655a72bcf19d33a77c09dfe6d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiListClipperRange::PosToIndexConvert</definition>
+        <argsstring></argsstring>
+        <name>PosToIndexConvert</name>
+        <qualifiedname>ImGuiListClipperRange::PosToIndexConvert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1461" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_list_clipper_range_1a7ea08ac3ce07bf99b1579ef29d911dba" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a33644f626f44716357624c2755a9b9d1" kindref="member">ImS8</ref></type>
+        <definition>ImS8 ImGuiListClipperRange::PosToIndexOffsetMin</definition>
+        <argsstring></argsstring>
+        <name>PosToIndexOffsetMin</name>
+        <qualifiedname>ImGuiListClipperRange::PosToIndexOffsetMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1462" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_list_clipper_range_1a263e4c13cf54c0f5c402af04f3e84a30" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a33644f626f44716357624c2755a9b9d1" kindref="member">ImS8</ref></type>
+        <definition>ImS8 ImGuiListClipperRange::PosToIndexOffsetMax</definition>
+        <argsstring></argsstring>
+        <name>PosToIndexOffsetMax</name>
+        <qualifiedname>ImGuiListClipperRange::PosToIndexOffsetMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1463" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1463" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_im_gui_list_clipper_range_1ae04d9b8993b4fafcbf416fbaeed316b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_gui_list_clipper_range" kindref="compound">ImGuiListClipperRange</ref></type>
+        <definition>static ImGuiListClipperRange ImGuiListClipperRange::FromIndices</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>FromIndices</name>
+        <qualifiedname>ImGuiListClipperRange::FromIndices</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1465" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1465" bodyend="1465"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_list_clipper_range_1a3aa356015543dd8c9096e412390aacf0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_gui_list_clipper_range" kindref="compound">ImGuiListClipperRange</ref></type>
+        <definition>static ImGuiListClipperRange ImGuiListClipperRange::FromPositions</definition>
+        <argsstring>(float y1, float y2, int off_min, int off_max)</argsstring>
+        <name>FromPositions</name>
+        <qualifiedname>ImGuiListClipperRange::FromPositions</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>off_min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>off_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1466" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1466" bodyend="1466"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1457" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1458" bodyend="1467"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_list_clipper_range_1ae04d9b8993b4fafcbf416fbaeed316b1" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>FromIndices</name></member>
+      <member refid="struct_im_gui_list_clipper_range_1a3aa356015543dd8c9096e412390aacf0" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>FromPositions</name></member>
+      <member refid="struct_im_gui_list_clipper_range_1a4086dae7cf99d5fba97956acc3a2263b" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>Max</name></member>
+      <member refid="struct_im_gui_list_clipper_range_1a5d0f961e00fadc1aa57fb72c197e6bf4" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>Min</name></member>
+      <member refid="struct_im_gui_list_clipper_range_1ad78789e655a72bcf19d33a77c09dfe6d" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>PosToIndexConvert</name></member>
+      <member refid="struct_im_gui_list_clipper_range_1a263e4c13cf54c0f5c402af04f3e84a30" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>PosToIndexOffsetMax</name></member>
+      <member refid="struct_im_gui_list_clipper_range_1a7ea08ac3ce07bf99b1579ef29d911dba" prot="public" virt="non-virtual"><scope>ImGuiListClipperRange</scope><name>PosToIndexOffsetMin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structstbtt__bakedchar" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_bakedchar</compoundname>
+    <includes refid="imstb__truetype_8h" local="no">imstb_truetype.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__bakedchar_1a8011a0ed0410de9fa405c9cb1ab43da2" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <qualifiedname>stbtt_bakedchar::x0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="534" column="19" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1aec4def12c086e0038ba32ff33ee78644" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::y0</definition>
+        <argsstring></argsstring>
+        <name>y0</name>
+        <qualifiedname>stbtt_bakedchar::y0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="534" column="21" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1a72c22c32abde95a5ba02925b8bd892bf" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::x1</definition>
+        <argsstring></argsstring>
+        <name>x1</name>
+        <qualifiedname>stbtt_bakedchar::x1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="534" column="23" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1ac831dc667f6c39b5d22740c6cbd5bc3f" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short stbtt_bakedchar::y1</definition>
+        <argsstring></argsstring>
+        <name>y1</name>
+        <qualifiedname>stbtt_bakedchar::y1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="534" column="25" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1a0708a6588a2768b68a3ae59002944b7c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_bakedchar::xoff</definition>
+        <argsstring></argsstring>
+        <name>xoff</name>
+        <qualifiedname>stbtt_bakedchar::xoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="535" column="10" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1aba01393e52d1c6f4ce86a8b51e498bb4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_bakedchar::yoff</definition>
+        <argsstring></argsstring>
+        <name>yoff</name>
+        <qualifiedname>stbtt_bakedchar::yoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="535" column="14" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__bakedchar_1ad77b35d1a849d9eb7edb91df05b10536" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_bakedchar::xadvance</definition>
+        <argsstring></argsstring>
+        <name>xadvance</name>
+        <qualifiedname>stbtt_bakedchar::xadvance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="535" column="18" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imstb_truetype.h" line="532" column="1" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="533" bodyend="536"/>
+    <listofallmembers>
+      <member refid="structstbtt__bakedchar_1a8011a0ed0410de9fa405c9cb1ab43da2" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>x0</name></member>
+      <member refid="structstbtt__bakedchar_1a72c22c32abde95a5ba02925b8bd892bf" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>x1</name></member>
+      <member refid="structstbtt__bakedchar_1ad77b35d1a849d9eb7edb91df05b10536" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>xadvance</name></member>
+      <member refid="structstbtt__bakedchar_1a0708a6588a2768b68a3ae59002944b7c" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>xoff</name></member>
+      <member refid="structstbtt__bakedchar_1aec4def12c086e0038ba32ff33ee78644" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>y0</name></member>
+      <member refid="structstbtt__bakedchar_1ac831dc667f6c39b5d22740c6cbd5bc3f" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>y1</name></member>
+      <member refid="structstbtt__bakedchar_1aba01393e52d1c6f4ce86a8b51e498bb4" prot="public" virt="non-virtual"><scope>stbtt_bakedchar</scope><name>yoff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

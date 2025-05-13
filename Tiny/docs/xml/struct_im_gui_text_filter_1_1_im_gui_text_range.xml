@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_text_filter_1_1_im_gui_text_range" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTextFilter::ImGuiTextRange</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_text_filter_1_1_im_gui_text_range_1a18a2df587336eecc6ba62c4275a4b7c8" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ImGuiTextFilter::ImGuiTextRange::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>ImGuiTextFilter::ImGuiTextRange::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2330" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="2330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_text_filter_1_1_im_gui_text_range_1aa522cbb493ad3e02646938661c37ec0e" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ImGuiTextFilter::ImGuiTextRange::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <qualifiedname>ImGuiTextFilter::ImGuiTextRange::e</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2331" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="2331" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_text_filter_1_1_im_gui_text_range_1a39c1ebebef36566bfec95d2cc4fccc4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTextFilter::ImGuiTextRange::ImGuiTextRange</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTextRange</name>
+        <qualifiedname>ImGuiTextFilter::ImGuiTextRange::ImGuiTextRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2333" column="9" bodyfile="graphics/imgui/imgui.h" bodystart="2333" bodyend="2333"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_filter_1_1_im_gui_text_range_1aa6912a579ec0907976635b89a9a23da0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTextFilter::ImGuiTextRange::ImGuiTextRange</definition>
+        <argsstring>(const char *_b, const char *_e)</argsstring>
+        <name>ImGuiTextRange</name>
+        <qualifiedname>ImGuiTextFilter::ImGuiTextRange::ImGuiTextRange</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>_b</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>_e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2334" column="9" bodyfile="graphics/imgui/imgui.h" bodystart="2334" bodyend="2334"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_filter_1_1_im_gui_text_range_1a1861f25905e1f19f979998faf5349b5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImGuiTextFilter::ImGuiTextRange::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ImGuiTextFilter::ImGuiTextRange::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2335" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="2335" bodyend="2335"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_filter_1_1_im_gui_text_range_1ace58f9b4795033f695344a0e660ee2af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImGuiTextFilter::ImGuiTextRange::split</definition>
+        <argsstring>(char separator, ImVector&lt; ImGuiTextRange &gt; *out) const</argsstring>
+        <name>split</name>
+        <qualifiedname>ImGuiTextFilter::ImGuiTextRange::split</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>separator</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_text_filter_1_1_im_gui_text_range" kindref="compound">ImGuiTextRange</ref> &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2336" column="25" bodyfile="graphics/imgui/imgui.cpp" bodystart="2545" bodyend="2561"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui.h" line="2328" column="5" bodyfile="graphics/imgui/imgui.h" bodystart="2329" bodyend="2337"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_text_filter_1_1_im_gui_text_range_1a18a2df587336eecc6ba62c4275a4b7c8" prot="public" virt="non-virtual"><scope>ImGuiTextFilter::ImGuiTextRange</scope><name>b</name></member>
+      <member refid="struct_im_gui_text_filter_1_1_im_gui_text_range_1aa522cbb493ad3e02646938661c37ec0e" prot="public" virt="non-virtual"><scope>ImGuiTextFilter::ImGuiTextRange</scope><name>e</name></member>
+      <member refid="struct_im_gui_text_filter_1_1_im_gui_text_range_1a1861f25905e1f19f979998faf5349b5a" prot="public" virt="non-virtual"><scope>ImGuiTextFilter::ImGuiTextRange</scope><name>empty</name></member>
+      <member refid="struct_im_gui_text_filter_1_1_im_gui_text_range_1a39c1ebebef36566bfec95d2cc4fccc4c" prot="public" virt="non-virtual"><scope>ImGuiTextFilter::ImGuiTextRange</scope><name>ImGuiTextRange</name></member>
+      <member refid="struct_im_gui_text_filter_1_1_im_gui_text_range_1aa6912a579ec0907976635b89a9a23da0" prot="public" virt="non-virtual"><scope>ImGuiTextFilter::ImGuiTextRange</scope><name>ImGuiTextRange</name></member>
+      <member refid="struct_im_gui_text_filter_1_1_im_gui_text_range_1ace58f9b4795033f695344a0e660ee2af" prot="public" virt="non-virtual"><scope>ImGuiTextFilter::ImGuiTextRange</scope><name>split</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

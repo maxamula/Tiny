@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame" kind="struct" language="C++" prot="private">
+    <compoundname>tiny::D3DGpuQueue::CommandFrame</compoundname>
+    <innerclass refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context" prot="public">tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1a7da15af85bfc54d0842239f26a7ce696" prot="public" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context" kindref="compound">CommandFrameThreadContext</ref>, TINY_COMMAND_LIST_POOL_SIZE &gt;</type>
+        <definition>std::array&lt;CommandFrameThreadContext, TINY_COMMAND_LIST_POOL_SIZE&gt; tiny::D3DGpuQueue::CommandFrame::commandListContexts</definition>
+        <argsstring></argsstring>
+        <name>commandListContexts</name>
+        <qualifiedname>tiny::D3DGpuQueue::CommandFrame::commandListContexts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="40" column="12" bodyfile="graphics/gpuqueue.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1aa4ec49e403c159eb0568be41f18fa58f" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::D3DGpuQueue::CommandFrame::allocatedCommandListCount</definition>
+        <argsstring></argsstring>
+        <name>allocatedCommandListCount</name>
+        <qualifiedname>tiny::D3DGpuQueue::CommandFrame::allocatedCommandListCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="41" column="4" bodyfile="graphics/gpuqueue.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1a2f276508dda4bd3d24425124b74c05b0" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 tiny::D3DGpuQueue::CommandFrame::fenceValue</definition>
+        <argsstring></argsstring>
+        <name>fenceValue</name>
+        <qualifiedname>tiny::D3DGpuQueue::CommandFrame::fenceValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="42" column="4" bodyfile="graphics/gpuqueue.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/gpuqueue.h" line="33" column="1" bodyfile="graphics/gpuqueue.h" bodystart="34" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1aa4ec49e403c159eb0568be41f18fa58f" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue::CommandFrame</scope><name>allocatedCommandListCount</name></member>
+      <member refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1a7da15af85bfc54d0842239f26a7ce696" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue::CommandFrame</scope><name>commandListContexts</name></member>
+      <member refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1a2f276508dda4bd3d24425124b74c05b0" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue::CommandFrame</scope><name>fenceValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

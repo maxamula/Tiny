@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui___impl_win32___data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGui_ImplWin32_Data</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a73c8b66f6315225a32f5143165d61df4" prot="public" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND ImGui_ImplWin32_Data::hWnd</definition>
+        <argsstring></argsstring>
+        <name>hWnd</name>
+        <qualifiedname>ImGui_ImplWin32_Data::hWnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="96" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1adb9a1c9aec249e376290c7ae37ebca8a" prot="public" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND ImGui_ImplWin32_Data::MouseHwnd</definition>
+        <argsstring></argsstring>
+        <name>MouseHwnd</name>
+        <qualifiedname>ImGui_ImplWin32_Data::MouseHwnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="97" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a8e4cc11ebc1b86988195fab10dff3c38" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGui_ImplWin32_Data::MouseTrackedArea</definition>
+        <argsstring></argsstring>
+        <name>MouseTrackedArea</name>
+        <qualifiedname>ImGui_ImplWin32_Data::MouseTrackedArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="98" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a56520b5fef030910fe4fe9af03a31bf8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGui_ImplWin32_Data::MouseButtonsDown</definition>
+        <argsstring></argsstring>
+        <name>MouseButtonsDown</name>
+        <qualifiedname>ImGui_ImplWin32_Data::MouseButtonsDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="99" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a0315351258bfd91d5263214c2549b8ce" prot="public" static="no" mutable="no">
+        <type>INT64</type>
+        <definition>INT64 ImGui_ImplWin32_Data::Time</definition>
+        <argsstring></argsstring>
+        <name>Time</name>
+        <qualifiedname>ImGui_ImplWin32_Data::Time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="100" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a5972f4dac8c637341fd4ef430b197e40" prot="public" static="no" mutable="no">
+        <type>INT64</type>
+        <definition>INT64 ImGui_ImplWin32_Data::TicksPerSecond</definition>
+        <argsstring></argsstring>
+        <name>TicksPerSecond</name>
+        <qualifiedname>ImGui_ImplWin32_Data::TicksPerSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="101" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1abe5e7a0c85bcc474f44efc6b2238fdc0" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a9223d6c82bb5d12c2eab5f829ca520ef" kindref="member">ImGuiMouseCursor</ref></type>
+        <definition>ImGuiMouseCursor ImGui_ImplWin32_Data::LastMouseCursor</definition>
+        <argsstring></argsstring>
+        <name>LastMouseCursor</name>
+        <qualifiedname>ImGui_ImplWin32_Data::LastMouseCursor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="102" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a47341927f3324620368575f0888b32d6" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 ImGui_ImplWin32_Data::KeyboardCodePage</definition>
+        <argsstring></argsstring>
+        <name>KeyboardCodePage</name>
+        <qualifiedname>ImGui_ImplWin32_Data::KeyboardCodePage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="103" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a3ebc71caf46955c90bb8d6f4f94c08ce" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGui_ImplWin32_Data::HasGamepad</definition>
+        <argsstring></argsstring>
+        <name>HasGamepad</name>
+        <qualifiedname>ImGui_ImplWin32_Data::HasGamepad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="106" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a8ef3569b604731a30016d042121f30e0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGui_ImplWin32_Data::WantUpdateHasGamepad</definition>
+        <argsstring></argsstring>
+        <name>WantUpdateHasGamepad</name>
+        <qualifiedname>ImGui_ImplWin32_Data::WantUpdateHasGamepad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="107" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1a7d7d8913825fdbb5d02784e3b6bb13d4" prot="public" static="no" mutable="no">
+        <type>HMODULE</type>
+        <definition>HMODULE ImGui_ImplWin32_Data::XInputDLL</definition>
+        <argsstring></argsstring>
+        <name>XInputDLL</name>
+        <qualifiedname>ImGui_ImplWin32_Data::XInputDLL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="108" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1ae895ba0fc430d1641a8d2ca2e97ef6fa" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__impl__win32_8cpp_1ab894020cfaceec8e0a7e24a2b8cf003a" kindref="member">PFN_XInputGetCapabilities</ref></type>
+        <definition>PFN_XInputGetCapabilities ImGui_ImplWin32_Data::XInputGetCapabilities</definition>
+        <argsstring></argsstring>
+        <name>XInputGetCapabilities</name>
+        <qualifiedname>ImGui_ImplWin32_Data::XInputGetCapabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="109" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_win32___data_1aa2964c950cda44c731557c5b1fb5e278" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__impl__win32_8cpp_1a0554b333dae0845c369b9d7234c695e9" kindref="member">PFN_XInputGetState</ref></type>
+        <definition>PFN_XInputGetState ImGui_ImplWin32_Data::XInputGetState</definition>
+        <argsstring></argsstring>
+        <name>XInputGetState</name>
+        <qualifiedname>ImGui_ImplWin32_Data::XInputGetState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="110" column="33" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui___impl_win32___data_1aa490709a4e589c87a70df8aa7e97fea4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGui_ImplWin32_Data::ImGui_ImplWin32_Data</definition>
+        <argsstring>()</argsstring>
+        <name>ImGui_ImplWin32_Data</name>
+        <qualifiedname>ImGui_ImplWin32_Data::ImGui_ImplWin32_Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.cpp" line="113" column="5" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_impl_win32.cpp" line="94" column="1" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="95" bodyend="114"/>
+    <listofallmembers>
+      <member refid="struct_im_gui___impl_win32___data_1a3ebc71caf46955c90bb8d6f4f94c08ce" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>HasGamepad</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a73c8b66f6315225a32f5143165d61df4" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>hWnd</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1aa490709a4e589c87a70df8aa7e97fea4" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>ImGui_ImplWin32_Data</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a47341927f3324620368575f0888b32d6" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>KeyboardCodePage</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1abe5e7a0c85bcc474f44efc6b2238fdc0" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>LastMouseCursor</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a56520b5fef030910fe4fe9af03a31bf8" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>MouseButtonsDown</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1adb9a1c9aec249e376290c7ae37ebca8a" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>MouseHwnd</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a8e4cc11ebc1b86988195fab10dff3c38" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>MouseTrackedArea</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a5972f4dac8c637341fd4ef430b197e40" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>TicksPerSecond</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a0315351258bfd91d5263214c2549b8ce" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>Time</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a8ef3569b604731a30016d042121f30e0" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>WantUpdateHasGamepad</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1a7d7d8913825fdbb5d02784e3b6bb13d4" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>XInputDLL</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1ae895ba0fc430d1641a8d2ca2e97ef6fa" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>XInputGetCapabilities</name></member>
+      <member refid="struct_im_gui___impl_win32___data_1aa2964c950cda44c731557c5b1fb5e278" prot="public" virt="non-virtual"><scope>ImGui_ImplWin32_Data</scope><name>XInputGetState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

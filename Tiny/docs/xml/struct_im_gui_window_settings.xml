@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_window_settings" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiWindowSettings</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1a5ae7316219230c82a05618c227e5a7b7" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiWindowSettings::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiWindowSettings::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1714" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1afe2e8f97751166b10042bfd537e77c89" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2ih" kindref="compound">ImVec2ih</ref></type>
+        <definition>ImVec2ih ImGuiWindowSettings::Pos</definition>
+        <argsstring></argsstring>
+        <name>Pos</name>
+        <qualifiedname>ImGuiWindowSettings::Pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1715" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1a7e4a26f4e4bfaf97a379641dcdbb6d14" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2ih" kindref="compound">ImVec2ih</ref></type>
+        <definition>ImVec2ih ImGuiWindowSettings::Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <qualifiedname>ImGuiWindowSettings::Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1716" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1a79308182bdab97cb87b3d6284f22c1d2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiWindowSettings::Collapsed</definition>
+        <argsstring></argsstring>
+        <name>Collapsed</name>
+        <qualifiedname>ImGuiWindowSettings::Collapsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1717" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1af82c14a41e90d62cbd6d8d5177cbe5a5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiWindowSettings::IsChild</definition>
+        <argsstring></argsstring>
+        <name>IsChild</name>
+        <qualifiedname>ImGuiWindowSettings::IsChild</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1718" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1a4426a1fdde8c99e0bb2b155a9073de93" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiWindowSettings::WantApply</definition>
+        <argsstring></argsstring>
+        <name>WantApply</name>
+        <qualifiedname>ImGuiWindowSettings::WantApply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1719" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_window_settings_1a438bfa18932d7eafb67bf0894d13c762" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiWindowSettings::WantDelete</definition>
+        <argsstring></argsstring>
+        <name>WantDelete</name>
+        <qualifiedname>ImGuiWindowSettings::WantDelete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1720" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1720" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_window_settings_1a694e496dba59b5aaabe14cce66309acd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiWindowSettings::ImGuiWindowSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiWindowSettings</name>
+        <qualifiedname>ImGuiWindowSettings::ImGuiWindowSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1722" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1722" bodyend="1722"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_window_settings_1a7a480e4ccc61ce5b8a4ac92d28ff5fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * ImGuiWindowSettings::GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <qualifiedname>ImGuiWindowSettings::GetName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1723" column="10" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1723" bodyend="1723"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiWindowSettings</label>
+        <link refid="struct_im_gui_window_settings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Pos</edgelabel>
+          <edgelabel>Size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2ih</label>
+        <link refid="struct_im_vec2ih"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1712" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1713" bodyend="1724"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_window_settings_1a79308182bdab97cb87b3d6284f22c1d2" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>Collapsed</name></member>
+      <member refid="struct_im_gui_window_settings_1a7a480e4ccc61ce5b8a4ac92d28ff5fd1" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>GetName</name></member>
+      <member refid="struct_im_gui_window_settings_1a5ae7316219230c82a05618c227e5a7b7" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>ID</name></member>
+      <member refid="struct_im_gui_window_settings_1a694e496dba59b5aaabe14cce66309acd" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>ImGuiWindowSettings</name></member>
+      <member refid="struct_im_gui_window_settings_1af82c14a41e90d62cbd6d8d5177cbe5a5" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>IsChild</name></member>
+      <member refid="struct_im_gui_window_settings_1afe2e8f97751166b10042bfd537e77c89" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>Pos</name></member>
+      <member refid="struct_im_gui_window_settings_1a7e4a26f4e4bfaf97a379641dcdbb6d14" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>Size</name></member>
+      <member refid="struct_im_gui_window_settings_1a4426a1fdde8c99e0bb2b155a9073de93" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>WantApply</name></member>
+      <member refid="struct_im_gui_window_settings_1a438bfa18932d7eafb67bf0894d13c762" prot="public" virt="non-virtual"><scope>ImGuiWindowSettings</scope><name>WantDelete</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

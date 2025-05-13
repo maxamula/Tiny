@@ -105,6 +105,18 @@ namespace tiny
 #define THROW_ENGINE_EXCEPTION(formatStr, ...) \
     throw tiny::EngineException(__LINE__, __FILE__, std::format((formatStr), __VA_ARGS__))
 
+#ifdef _DEBUG
+#define SET_OBJECT_NAME(obj, name, ...) \
+    do { \
+        if (obj) { \
+            std::wstring wName = std::format((name), __VA_ARGS__); \
+            obj->SetName(wName.c_str()); \
+        } \
+    } while(0)
+#else
+#define SET_OBJECT_NAME(obj, name, ...)
+#endif
+
 
 #define SAFE_RELEASE(p) \
     do { \

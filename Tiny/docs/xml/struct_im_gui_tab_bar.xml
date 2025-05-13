@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_tab_bar" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTabBar</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a4d6d0ae42c1189fcdcec50c1e1e9b057" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_tab_item" kindref="compound">ImGuiTabItem</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiTabItem&gt; ImGuiTabBar::Tabs</definition>
+        <argsstring></argsstring>
+        <name>Tabs</name>
+        <qualifiedname>ImGuiTabBar::Tabs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2566" column="14" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1aa528c4c6a2b733caf8f4d83828077d87" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a60ced774e9c7a4f73c41ef4feb91a30a" kindref="member">ImGuiTabBarFlags</ref></type>
+        <definition>ImGuiTabBarFlags ImGuiTabBar::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiTabBar::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2567" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a05b16eabc366d306e18d433ae9a741cc" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTabBar::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiTabBar::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2568" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a42fa6a88e4533103420edf6095d6c2aa" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTabBar::SelectedTabId</definition>
+        <argsstring></argsstring>
+        <name>SelectedTabId</name>
+        <qualifiedname>ImGuiTabBar::SelectedTabId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2569" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1aba7b1f0157f85df2acc09bc107d6dfa0" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTabBar::NextSelectedTabId</definition>
+        <argsstring></argsstring>
+        <name>NextSelectedTabId</name>
+        <qualifiedname>ImGuiTabBar::NextSelectedTabId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2570" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a1716495ecb746feb37f0b736edb50c89" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTabBar::VisibleTabId</definition>
+        <argsstring></argsstring>
+        <name>VisibleTabId</name>
+        <qualifiedname>ImGuiTabBar::VisibleTabId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2571" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a78e5cbb7a8a793e964397f85fca07432" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTabBar::CurrFrameVisible</definition>
+        <argsstring></argsstring>
+        <name>CurrFrameVisible</name>
+        <qualifiedname>ImGuiTabBar::CurrFrameVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2572" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1ac95b0b476d7545e74adc6a6472dc1f14" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTabBar::PrevFrameVisible</definition>
+        <argsstring></argsstring>
+        <name>PrevFrameVisible</name>
+        <qualifiedname>ImGuiTabBar::PrevFrameVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2573" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a6cfe603b0077e3ae0dfeec093acce320" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiTabBar::BarRect</definition>
+        <argsstring></argsstring>
+        <name>BarRect</name>
+        <qualifiedname>ImGuiTabBar::BarRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2574" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1ab95ee8e47a23b1a837d8db6d84bb174f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::CurrTabsContentsHeight</definition>
+        <argsstring></argsstring>
+        <name>CurrTabsContentsHeight</name>
+        <qualifiedname>ImGuiTabBar::CurrTabsContentsHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2575" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a00abffebf4f6b8e025cf1dc910a13674" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::PrevTabsContentsHeight</definition>
+        <argsstring></argsstring>
+        <name>PrevTabsContentsHeight</name>
+        <qualifiedname>ImGuiTabBar::PrevTabsContentsHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2576" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a399daf37a3468ef8311a2093a575e263" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::WidthAllTabs</definition>
+        <argsstring></argsstring>
+        <name>WidthAllTabs</name>
+        <qualifiedname>ImGuiTabBar::WidthAllTabs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2577" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1ad096f5f78c82eed61281b41c6d065f0a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::WidthAllTabsIdeal</definition>
+        <argsstring></argsstring>
+        <name>WidthAllTabsIdeal</name>
+        <qualifiedname>ImGuiTabBar::WidthAllTabsIdeal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2578" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a0f8c0995a150b9f9439e2f02afc3936f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ScrollingAnim</definition>
+        <argsstring></argsstring>
+        <name>ScrollingAnim</name>
+        <qualifiedname>ImGuiTabBar::ScrollingAnim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2579" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a1b7c74460402870d7ba50a798ba66365" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ScrollingTarget</definition>
+        <argsstring></argsstring>
+        <name>ScrollingTarget</name>
+        <qualifiedname>ImGuiTabBar::ScrollingTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2580" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1abc96e776c9f9d14b3f1fb6bdb8b5e5ac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ScrollingTargetDistToVisibility</definition>
+        <argsstring></argsstring>
+        <name>ScrollingTargetDistToVisibility</name>
+        <qualifiedname>ImGuiTabBar::ScrollingTargetDistToVisibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2581" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a402f9de25e4323587d9f289678896fca" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ScrollingSpeed</definition>
+        <argsstring></argsstring>
+        <name>ScrollingSpeed</name>
+        <qualifiedname>ImGuiTabBar::ScrollingSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2582" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1acce137ab8e247117d97cf10e3d1df9ae" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ScrollingRectMinX</definition>
+        <argsstring></argsstring>
+        <name>ScrollingRectMinX</name>
+        <qualifiedname>ImGuiTabBar::ScrollingRectMinX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2583" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a0d1248e9b1c325c590084e119e3268a0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ScrollingRectMaxX</definition>
+        <argsstring></argsstring>
+        <name>ScrollingRectMaxX</name>
+        <qualifiedname>ImGuiTabBar::ScrollingRectMaxX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2584" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a0951102b6070b66eb3f06f2489cc6ff4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::SeparatorMinX</definition>
+        <argsstring></argsstring>
+        <name>SeparatorMinX</name>
+        <qualifiedname>ImGuiTabBar::SeparatorMinX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2585" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1adee54762315f131541f482456d9835d1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::SeparatorMaxX</definition>
+        <argsstring></argsstring>
+        <name>SeparatorMaxX</name>
+        <qualifiedname>ImGuiTabBar::SeparatorMaxX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2586" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a63b10062043a569efbb55462602d7b27" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTabBar::ReorderRequestTabId</definition>
+        <argsstring></argsstring>
+        <name>ReorderRequestTabId</name>
+        <qualifiedname>ImGuiTabBar::ReorderRequestTabId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2587" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1af719bc9df71e0472f4ce4fb11615b53f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTabBar::ReorderRequestOffset</definition>
+        <argsstring></argsstring>
+        <name>ReorderRequestOffset</name>
+        <qualifiedname>ImGuiTabBar::ReorderRequestOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2588" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1ae8ab845e23ad911c3a4c45880acfb64f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a33644f626f44716357624c2755a9b9d1" kindref="member">ImS8</ref></type>
+        <definition>ImS8 ImGuiTabBar::BeginCount</definition>
+        <argsstring></argsstring>
+        <name>BeginCount</name>
+        <qualifiedname>ImGuiTabBar::BeginCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2589" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1acf92c2132df97eae310b391d894d261d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTabBar::WantLayout</definition>
+        <argsstring></argsstring>
+        <name>WantLayout</name>
+        <qualifiedname>ImGuiTabBar::WantLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2590" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a9112067953a14bc707d2660dc1cf93b0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTabBar::VisibleTabWasSubmitted</definition>
+        <argsstring></argsstring>
+        <name>VisibleTabWasSubmitted</name>
+        <qualifiedname>ImGuiTabBar::VisibleTabWasSubmitted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2591" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a616acfd5a38deb934c5a079b458ca5a9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiTabBar::TabsAddedNew</definition>
+        <argsstring></argsstring>
+        <name>TabsAddedNew</name>
+        <qualifiedname>ImGuiTabBar::TabsAddedNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2592" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a577cacc6ee39195b59a48f347549c4e2" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTabBar::TabsActiveCount</definition>
+        <argsstring></argsstring>
+        <name>TabsActiveCount</name>
+        <qualifiedname>ImGuiTabBar::TabsActiveCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2593" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a552e9e99f0e46873b43db1859a5df452" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aaeddc1534022a5078cb5ff793d404991" kindref="member">ImS16</ref></type>
+        <definition>ImS16 ImGuiTabBar::LastTabItemIdx</definition>
+        <argsstring></argsstring>
+        <name>LastTabItemIdx</name>
+        <qualifiedname>ImGuiTabBar::LastTabItemIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2594" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1afaa62d532c31dded8f5102e8c504ab7e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTabBar::ItemSpacingY</definition>
+        <argsstring></argsstring>
+        <name>ItemSpacingY</name>
+        <qualifiedname>ImGuiTabBar::ItemSpacingY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2595" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1aa0319aebb5c59e026486f60b68642ee6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiTabBar::FramePadding</definition>
+        <argsstring></argsstring>
+        <name>FramePadding</name>
+        <qualifiedname>ImGuiTabBar::FramePadding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2596" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1a075db95c9c1e0cb223c4ed050b47e9ab" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiTabBar::BackupCursorPos</definition>
+        <argsstring></argsstring>
+        <name>BackupCursorPos</name>
+        <qualifiedname>ImGuiTabBar::BackupCursorPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2597" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_tab_bar_1afe5bda8cfea073a5d51a1d2bc023ef74" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_text_buffer" kindref="compound">ImGuiTextBuffer</ref></type>
+        <definition>ImGuiTextBuffer ImGuiTabBar::TabsNames</definition>
+        <argsstring></argsstring>
+        <name>TabsNames</name>
+        <qualifiedname>ImGuiTabBar::TabsNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2598" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2598" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_tab_bar_1a7d04467b887730a184365fdb3cb5bb17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTabBar::ImGuiTabBar</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTabBar</name>
+        <qualifiedname>ImGuiTabBar::ImGuiTabBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2600" column="5" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="7771" bodyend="7776"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiTabBar</label>
+        <link refid="struct_im_gui_tab_bar"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Tabs</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>BarRect</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>BackupCursorPos</edgelabel>
+          <edgelabel>FramePadding</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>TabsNames</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImGuiTabItem</label>
+        <link refid="struct_im_gui_tab_item"/>
+      </node>
+      <node id="6">
+        <label>ImGuiTextBuffer</label>
+        <link refid="struct_im_gui_text_buffer"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImGuiTabItem &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImVector&lt; char &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="2564" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2565" bodyend="2601"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_tab_bar_1a075db95c9c1e0cb223c4ed050b47e9ab" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>BackupCursorPos</name></member>
+      <member refid="struct_im_gui_tab_bar_1a6cfe603b0077e3ae0dfeec093acce320" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>BarRect</name></member>
+      <member refid="struct_im_gui_tab_bar_1ae8ab845e23ad911c3a4c45880acfb64f" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>BeginCount</name></member>
+      <member refid="struct_im_gui_tab_bar_1a78e5cbb7a8a793e964397f85fca07432" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>CurrFrameVisible</name></member>
+      <member refid="struct_im_gui_tab_bar_1ab95ee8e47a23b1a837d8db6d84bb174f" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>CurrTabsContentsHeight</name></member>
+      <member refid="struct_im_gui_tab_bar_1aa528c4c6a2b733caf8f4d83828077d87" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_tab_bar_1aa0319aebb5c59e026486f60b68642ee6" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>FramePadding</name></member>
+      <member refid="struct_im_gui_tab_bar_1a05b16eabc366d306e18d433ae9a741cc" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ID</name></member>
+      <member refid="struct_im_gui_tab_bar_1a7d04467b887730a184365fdb3cb5bb17" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ImGuiTabBar</name></member>
+      <member refid="struct_im_gui_tab_bar_1afaa62d532c31dded8f5102e8c504ab7e" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ItemSpacingY</name></member>
+      <member refid="struct_im_gui_tab_bar_1a552e9e99f0e46873b43db1859a5df452" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>LastTabItemIdx</name></member>
+      <member refid="struct_im_gui_tab_bar_1aba7b1f0157f85df2acc09bc107d6dfa0" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>NextSelectedTabId</name></member>
+      <member refid="struct_im_gui_tab_bar_1ac95b0b476d7545e74adc6a6472dc1f14" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>PrevFrameVisible</name></member>
+      <member refid="struct_im_gui_tab_bar_1a00abffebf4f6b8e025cf1dc910a13674" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>PrevTabsContentsHeight</name></member>
+      <member refid="struct_im_gui_tab_bar_1af719bc9df71e0472f4ce4fb11615b53f" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ReorderRequestOffset</name></member>
+      <member refid="struct_im_gui_tab_bar_1a63b10062043a569efbb55462602d7b27" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ReorderRequestTabId</name></member>
+      <member refid="struct_im_gui_tab_bar_1a0f8c0995a150b9f9439e2f02afc3936f" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ScrollingAnim</name></member>
+      <member refid="struct_im_gui_tab_bar_1a0d1248e9b1c325c590084e119e3268a0" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ScrollingRectMaxX</name></member>
+      <member refid="struct_im_gui_tab_bar_1acce137ab8e247117d97cf10e3d1df9ae" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ScrollingRectMinX</name></member>
+      <member refid="struct_im_gui_tab_bar_1a402f9de25e4323587d9f289678896fca" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ScrollingSpeed</name></member>
+      <member refid="struct_im_gui_tab_bar_1a1b7c74460402870d7ba50a798ba66365" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ScrollingTarget</name></member>
+      <member refid="struct_im_gui_tab_bar_1abc96e776c9f9d14b3f1fb6bdb8b5e5ac" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>ScrollingTargetDistToVisibility</name></member>
+      <member refid="struct_im_gui_tab_bar_1a42fa6a88e4533103420edf6095d6c2aa" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>SelectedTabId</name></member>
+      <member refid="struct_im_gui_tab_bar_1adee54762315f131541f482456d9835d1" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>SeparatorMaxX</name></member>
+      <member refid="struct_im_gui_tab_bar_1a0951102b6070b66eb3f06f2489cc6ff4" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>SeparatorMinX</name></member>
+      <member refid="struct_im_gui_tab_bar_1a4d6d0ae42c1189fcdcec50c1e1e9b057" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>Tabs</name></member>
+      <member refid="struct_im_gui_tab_bar_1a577cacc6ee39195b59a48f347549c4e2" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>TabsActiveCount</name></member>
+      <member refid="struct_im_gui_tab_bar_1a616acfd5a38deb934c5a079b458ca5a9" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>TabsAddedNew</name></member>
+      <member refid="struct_im_gui_tab_bar_1afe5bda8cfea073a5d51a1d2bc023ef74" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>TabsNames</name></member>
+      <member refid="struct_im_gui_tab_bar_1a1716495ecb746feb37f0b736edb50c89" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>VisibleTabId</name></member>
+      <member refid="struct_im_gui_tab_bar_1a9112067953a14bc707d2660dc1cf93b0" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>VisibleTabWasSubmitted</name></member>
+      <member refid="struct_im_gui_tab_bar_1acf92c2132df97eae310b391d894d261d" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>WantLayout</name></member>
+      <member refid="struct_im_gui_tab_bar_1a399daf37a3468ef8311a2093a575e263" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>WidthAllTabs</name></member>
+      <member refid="struct_im_gui_tab_bar_1ad096f5f78c82eed61281b41c6d065f0a" prot="public" virt="non-virtual"><scope>ImGuiTabBar</scope><name>WidthAllTabsIdeal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

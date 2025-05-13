@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_size_callback_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiSizeCallbackData</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_size_callback_data_1ae16a4a1b916810b2f69925c527430a39" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiSizeCallbackData::UserData</definition>
+        <argsstring></argsstring>
+        <name>UserData</name>
+        <qualifiedname>ImGuiSizeCallbackData::UserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2253" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="2253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_size_callback_data_1a64fc0959664ddba84e051baaeaa9a042" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiSizeCallbackData::Pos</definition>
+        <argsstring></argsstring>
+        <name>Pos</name>
+        <qualifiedname>ImGuiSizeCallbackData::Pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2254" column="13" bodyfile="graphics/imgui/imgui.h" bodystart="2254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_size_callback_data_1ac26746d231819ccb5a274ff78c6fa64e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiSizeCallbackData::CurrentSize</definition>
+        <argsstring></argsstring>
+        <name>CurrentSize</name>
+        <qualifiedname>ImGuiSizeCallbackData::CurrentSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2255" column="13" bodyfile="graphics/imgui/imgui.h" bodystart="2255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_size_callback_data_1a42be6d99a279942b4f2019a4416f65ba" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiSizeCallbackData::DesiredSize</definition>
+        <argsstring></argsstring>
+        <name>DesiredSize</name>
+        <qualifiedname>ImGuiSizeCallbackData::DesiredSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2256" column="13" bodyfile="graphics/imgui/imgui.h" bodystart="2256" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiSizeCallbackData</label>
+        <link refid="struct_im_gui_size_callback_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CurrentSize</edgelabel>
+          <edgelabel>DesiredSize</edgelabel>
+          <edgelabel>Pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2251" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2252" bodyend="2257"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_size_callback_data_1ac26746d231819ccb5a274ff78c6fa64e" prot="public" virt="non-virtual"><scope>ImGuiSizeCallbackData</scope><name>CurrentSize</name></member>
+      <member refid="struct_im_gui_size_callback_data_1a42be6d99a279942b4f2019a4416f65ba" prot="public" virt="non-virtual"><scope>ImGuiSizeCallbackData</scope><name>DesiredSize</name></member>
+      <member refid="struct_im_gui_size_callback_data_1a64fc0959664ddba84e051baaeaa9a042" prot="public" virt="non-virtual"><scope>ImGuiSizeCallbackData</scope><name>Pos</name></member>
+      <member refid="struct_im_gui_size_callback_data_1ae16a4a1b916810b2f69925c527430a39" prot="public" virt="non-virtual"><scope>ImGuiSizeCallbackData</scope><name>UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

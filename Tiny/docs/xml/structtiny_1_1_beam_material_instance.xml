@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_beam_material_instance" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::BeamMaterialInstance</compoundname>
+    <basecompoundref refid="structtiny_1_1fx_1_1_material_instance" prot="public" virt="non-virtual">tiny::fx::MaterialInstance&lt; BeamMaterialInstance &gt;</basecompoundref>
+    <includes refid="stdmat_8h" local="no">stdmat.h</includes>
+    <innerclass refid="structtiny_1_1_beam_material_instance_1_1_shader_params" prot="public">tiny::BeamMaterialInstance::ShaderParams</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_beam_material_instance_1a9b6187ecedcd679bc871ec849375468e" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_beam_material_instance_1_1_shader_params" kindref="compound">ShaderParams</ref></type>
+        <definition>ShaderParams tiny::BeamMaterialInstance::ilShaderParams</definition>
+        <argsstring></argsstring>
+        <name>ilShaderParams</name>
+        <qualifiedname>tiny::BeamMaterialInstance::ilShaderParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="18" column="14" bodyfile="content/stdmat.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_beam_material_instance_1ae8580e1e3a544f0aa50eb8111b5f1844" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::BeamMaterialInstance::TINY_DECLARE_MAT_ID</definition>
+        <argsstring>(BeamMaterialInstance)</argsstring>
+        <name>TINY_DECLARE_MAT_ID</name>
+        <qualifiedname>tiny::BeamMaterialInstance::TINY_DECLARE_MAT_ID</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_beam_material_instance" kindref="compound">BeamMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="10" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tiny::BeamMaterialInstance</label>
+        <link refid="structtiny_1_1_beam_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::fx::IMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_material_instance"/>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MaterialInstance&lt; BeamMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_material_instance"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>tiny::BeamMaterialInstance</label>
+        <link refid="structtiny_1_1_beam_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ilShaderParams</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>tiny::BeamMaterialInstance::ShaderParams</label>
+        <link refid="structtiny_1_1_beam_material_instance_1_1_shader_params"/>
+      </node>
+      <node id="3">
+        <label>tiny::fx::IMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_material_instance"/>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MaterialInstance&lt; BeamMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_material_instance"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="content/stdmat.h" line="8" column="1" bodyfile="content/stdmat.h" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1ae199273fae25acfa98e365227a6f98cc" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1ac26b1e181a2f5bf19f2eaa8a4094b8ad" prot="public" virt="pure-virtual"><scope>tiny::BeamMaterialInstance</scope><name>ID</name></member>
+      <member refid="structtiny_1_1_beam_material_instance_1a9b6187ecedcd679bc871ec849375468e" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance</scope><name>ilShaderParams</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1a9ed5b453ff7baf2bf60d654dd0003769" prot="public" virt="virtual"><scope>tiny::BeamMaterialInstance</scope><name>Meta</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1aff7547c0e338911a14c21ad22f710302" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance</scope><name>SetFeatureFlags</name></member>
+      <member refid="structtiny_1_1_beam_material_instance_1ae8580e1e3a544f0aa50eb8111b5f1844" prot="public" virt="non-virtual"><scope>tiny::BeamMaterialInstance</scope><name>TINY_DECLARE_MAT_ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1a988aa75e0b9ab8762d2b232e81c62e5c" prot="public" virt="virtual"><scope>tiny::BeamMaterialInstance</scope><name>~IMaterialInstance</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1ab85a4a133f5e17b5265c6a78443791c0" prot="public" virt="virtual"><scope>tiny::BeamMaterialInstance</scope><name>~MaterialInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

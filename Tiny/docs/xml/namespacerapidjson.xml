@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacerapidjson" kind="namespace" language="C++">
+    <compoundname>rapidjson</compoundname>
+    <briefdescription>
+<para>main RapidJSON namespace </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69baa088bbe0adf30ab398c59e0b7fd4" kindref="member">CEREAL_RAPIDJSON_NAMESPACE</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/rapidjson.h" line="637" column="1"/>
+  </compounddef>
+</doxygen>

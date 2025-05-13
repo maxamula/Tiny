@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structstbtt__pack__range" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_pack_range</compoundname>
+    <includes refid="imstb__truetype_8h" local="no">imstb_truetype.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__pack__range_1a296916dc971e5e7627822fe98dc42828" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float stbtt_pack_range::font_size</definition>
+        <argsstring></argsstring>
+        <name>font_size</name>
+        <qualifiedname>stbtt_pack_range::font_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="626" column="10" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a3b414cbee1e164c29dd138e0ae3d5759" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_pack_range::first_unicode_codepoint_in_range</definition>
+        <argsstring></argsstring>
+        <name>first_unicode_codepoint_in_range</name>
+        <qualifiedname>stbtt_pack_range::first_unicode_codepoint_in_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="627" column="8" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a1567aa5455e1251529a91b46261368cf" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stbtt_pack_range::array_of_unicode_codepoints</definition>
+        <argsstring></argsstring>
+        <name>array_of_unicode_codepoints</name>
+        <qualifiedname>stbtt_pack_range::array_of_unicode_codepoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="628" column="8" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a046d65b6ffb65fb998d471ba098e2e23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_pack_range::num_chars</definition>
+        <argsstring></argsstring>
+        <name>num_chars</name>
+        <qualifiedname>stbtt_pack_range::num_chars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="629" column="8" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1aa8f7ddd637ed341ea39b08466fab9284" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbtt__packedchar" kindref="compound">stbtt_packedchar</ref> *</type>
+        <definition>stbtt_packedchar* stbtt_pack_range::chardata_for_range</definition>
+        <argsstring></argsstring>
+        <name>chardata_for_range</name>
+        <qualifiedname>stbtt_pack_range::chardata_for_range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="630" column="21" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a7a642139ce446c58fde5c48553bcf008" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_pack_range::h_oversample</definition>
+        <argsstring></argsstring>
+        <name>h_oversample</name>
+        <qualifiedname>stbtt_pack_range::h_oversample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="631" column="18" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__pack__range_1a6288f14006e257544db3d015c32b4113" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_pack_range::v_oversample</definition>
+        <argsstring></argsstring>
+        <name>v_oversample</name>
+        <qualifiedname>stbtt_pack_range::v_oversample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="631" column="31" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>stbtt_pack_range</label>
+        <link refid="structstbtt__pack__range"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>chardata_for_range</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stbtt_packedchar</label>
+        <link refid="structstbtt__packedchar"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imstb_truetype.h" line="624" column="1" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="625" bodyend="632"/>
+    <listofallmembers>
+      <member refid="structstbtt__pack__range_1a1567aa5455e1251529a91b46261368cf" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>array_of_unicode_codepoints</name></member>
+      <member refid="structstbtt__pack__range_1aa8f7ddd637ed341ea39b08466fab9284" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>chardata_for_range</name></member>
+      <member refid="structstbtt__pack__range_1a3b414cbee1e164c29dd138e0ae3d5759" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>first_unicode_codepoint_in_range</name></member>
+      <member refid="structstbtt__pack__range_1a296916dc971e5e7627822fe98dc42828" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>font_size</name></member>
+      <member refid="structstbtt__pack__range_1a7a642139ce446c58fde5c48553bcf008" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>h_oversample</name></member>
+      <member refid="structstbtt__pack__range_1a046d65b6ffb65fb998d471ba098e2e23" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>num_chars</name></member>
+      <member refid="structstbtt__pack__range_1a6288f14006e257544db3d015c32b4113" prot="public" virt="non-virtual"><scope>stbtt_pack_range</scope><name>v_oversample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

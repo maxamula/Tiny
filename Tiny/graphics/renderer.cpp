@@ -27,8 +27,6 @@ namespace tiny
 			RenderTexture& rt = res.GetRenderTexture(mRenderTexture);
 			DepthTexture& dt = res.GetDepthTexture(mDepthTexture);
 
-			context.cmd->ClearDepthStencilView(dt.dsv.cpu, D3D12_CLEAR_FLAG_DEPTH, 1.0f, 0, 0, nullptr);
-
 			D3D12_VIEWPORT viewport = { 0.0f, 0.0f, rt.width, rt.height, 0.0f, 1.0f };
 			D3D12_RECT scissorRect = { 0, 0, rt.width, rt.height };
 			auto rtv = rt.rtv.cpu;
@@ -46,12 +44,55 @@ namespace tiny
 		RenderTextureHandle mRenderTexture;
 	};
 
+	class ClearRenderPass : public RenderPassBase
+	{
+	public:
+		ClearRenderPass(RenderTextureHandle renderTexture)
+			: mRenderTexture(renderTexture)
+		{}
+
+		void Setup(FrameGraph::Builder& builder) override
+		{
+			builder.Write(mRenderTexture);
+		}
+
+		void Execute(RenderContext& context, FrameGraphResources& res) override
+		{
+			RenderTexture& rt = res.GetRenderTexture(mRenderTexture);
+			f32 color[4] = { 0.0f, 0.0f, 0.0f, 1.0f };
+			context.cmd->ClearRenderTargetView(rt.rtv.cpu, color, 0, nullptr);
+		}
+
+	private:
+		RenderTextureHandle mRenderTexture;
+	};
+
+	class ClearDepthPass : public RenderPassBase
+	{
+	public:
+		ClearDepthPass(DepthTextureHandle depthTexture)
+			: mDepthTexture(depthTexture)
+		{
+		}
+		void Setup(FrameGraph::Builder& builder) override
+		{
+			builder.Write(mDepthTexture);
+		}
+		void Execute(RenderContext& context, FrameGraphResources& res) override
+		{
+			DepthTexture& dt = res.GetDepthTexture(mDepthTexture);
+			context.cmd->ClearDepthStencilView(dt.dsv.cpu, D3D12_CLEAR_FLAG_DEPTH, 1.0f, 0, 0, nullptr);
+		}
+	private:
+		DepthTextureHandle mDepthTexture;
+	};
+
 	RenderTextureHandle TinyForwardRenderer::Build(FrameGraph& frameGraph)
 	{
 		RenderTexture::Desc desc
 		{
-			.width = 1280,
-			.height = 720,
+			.width = mResolutionX,
+			.height = mResolutionY,
 			.format = DXGI_FORMAT_R8G8B8A8_UNORM,
 			.clearValue = { DXGI_FORMAT_UNKNOWN, { 0.0f, 0.0f, 0.0f, 1.0f } }
 		};
@@ -60,13 +101,21 @@ namespace tiny
 
 		DepthTexture::Desc depthDesc
 		{
-			.width = 1280,
-			.height = 720,
+			.width = mResolutionX,
+			.height = mResolutionY,
 		};
 		DepthTextureHandle depthTexture = frameGraph.CreateDepthTexture(depthDesc);
 
+		frameGraph.AddPass<ClearRenderPass>(renderTexture);
+		frameGraph.AddPass<ClearDepthPass>(depthTexture);
 		frameGraph.AddPass<OpaquePass>(fx::MeshTechnique::RenderPassId_Opaque, depthTexture, renderTexture);
 
 		return renderTexture;
+	}
+
+	void TinyForwardRenderer::SetResolution(u32 width, u32 height)
+	{
+		mResolutionX = width;
+		mResolutionY = height;
 	}
 }

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_v_e_r_t_e_x___c_o_n_s_t_a_n_t___b_u_f_f_e_r___d_x12" kind="struct" language="C++" prot="public">
+    <compoundname>VERTEX_CONSTANT_BUFFER_DX12</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_v_e_r_t_e_x___c_o_n_s_t_a_n_t___b_u_f_f_e_r___d_x12_1af977128a020d49a3a5478a59e4229274" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VERTEX_CONSTANT_BUFFER_DX12::mvp[4][4]</definition>
+        <argsstring>[4][4]</argsstring>
+        <name>mvp</name>
+        <qualifiedname>VERTEX_CONSTANT_BUFFER_DX12::mvp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.cpp" line="94" column="13" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_impl_dx12.cpp" line="92" column="1" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="93" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct_v_e_r_t_e_x___c_o_n_s_t_a_n_t___b_u_f_f_e_r___d_x12_1af977128a020d49a3a5478a59e4229274" prot="public" virt="non-virtual"><scope>VERTEX_CONSTANT_BUFFER_DX12</scope><name>mvp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

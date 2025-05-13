@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_d3_d_descriptor_heap" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>tiny::D3DDescriptorHeap</compoundname>
+    <includes refid="descriptors_8h" local="no">descriptors.h</includes>
+    <innerclass refid="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info" prot="private">tiny::D3DDescriptorHeap::AllocationInfo</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1adaafc3db6143783d864328e8161d67a2" prot="private" static="no" mutable="no">
+        <type>D3D12_DESCRIPTOR_HEAP_TYPE</type>
+        <definition>D3D12_DESCRIPTOR_HEAP_TYPE tiny::D3DDescriptorHeap::mType</definition>
+        <argsstring></argsstring>
+        <name>mType</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="108" column="27" bodyfile="graphics/descriptors.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1a2be99b676033558e9a6c26f692bd7a8b" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::D3DDescriptorHeap::mNumDescriptors</definition>
+        <argsstring></argsstring>
+        <name>mNumDescriptors</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mNumDescriptors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="109" column="4" bodyfile="graphics/descriptors.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1adaa63b512545fae463d2d201c815b033" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::D3DDescriptorHeap::mDescriptorSize</definition>
+        <argsstring></argsstring>
+        <name>mDescriptorSize</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mDescriptorSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="110" column="4" bodyfile="graphics/descriptors.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1a3f18f55f4497a180bc7d90734fcd7cb9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tiny::D3DDescriptorHeap::mShaderVisible</definition>
+        <argsstring></argsstring>
+        <name>mShaderVisible</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mShaderVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="111" column="5" bodyfile="graphics/descriptors.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1afd1fc37034dd7f4817c73df1659ae4a7" prot="private" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12DescriptorHeap &gt;</type>
+        <definition>CComPtr&lt;ID3D12DescriptorHeap&gt; tiny::D3DDescriptorHeap::mDescriptorHeap</definition>
+        <argsstring></argsstring>
+        <name>mDescriptorHeap</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mDescriptorHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="112" column="8" bodyfile="graphics/descriptors.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1a983c0ebb8ef9e03c3bfb0ffdce0a2859" prot="private" static="no" mutable="no">
+        <type>D3D12_CPU_DESCRIPTOR_HANDLE</type>
+        <definition>D3D12_CPU_DESCRIPTOR_HANDLE tiny::D3DDescriptorHeap::mCpuStart</definition>
+        <argsstring></argsstring>
+        <name>mCpuStart</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mCpuStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="113" column="28" bodyfile="graphics/descriptors.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1a98fa82aeb774061a2e0fd77d3c6d0d59" prot="private" static="no" mutable="no">
+        <type>D3D12_GPU_DESCRIPTOR_HANDLE</type>
+        <definition>D3D12_GPU_DESCRIPTOR_HANDLE tiny::D3DDescriptorHeap::mGpuStart</definition>
+        <argsstring></argsstring>
+        <name>mGpuStart</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mGpuStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="114" column="28" bodyfile="graphics/descriptors.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1aa1d51e65ed28cc61725ca3e234cb9ce6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; u32, u32 &gt;</type>
+        <definition>std::map&lt;u32, u32&gt; tiny::D3DDescriptorHeap::mFreeRanges</definition>
+        <argsstring></argsstring>
+        <name>mFreeRanges</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mFreeRanges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="115" column="9" bodyfile="graphics/descriptors.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1a581586706199880c7ae4d0fe99c01490" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; u32, AllocationInfo &gt;</type>
+        <definition>std::unordered_map&lt;u32, AllocationInfo&gt; tiny::D3DDescriptorHeap::mAllocations</definition>
+        <argsstring></argsstring>
+        <name>mAllocations</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mAllocations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="116" column="20" bodyfile="graphics/descriptors.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_d3_d_descriptor_heap_1a264eda663b218d2612036d5c8732c2c0" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::D3DDescriptorHeap::mMutex</definition>
+        <argsstring></argsstring>
+        <name>mMutex</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::mMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="117" column="11" bodyfile="graphics/descriptors.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DDescriptorHeap::D3DDescriptorHeap</definition>
+        <argsstring>(D3D12_DESCRIPTOR_HEAP_TYPE type, u32 numDescriptors)</argsstring>
+        <name>D3DDescriptorHeap</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::D3DDescriptorHeap</qualifiedname>
+        <param>
+          <type>D3D12_DESCRIPTOR_HEAP_TYPE</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>numDescriptors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="89" column="1" bodyfile="graphics/descriptors.cpp" bodystart="6" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a5c12630070bc2114d7a42f8f3b623d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DDescriptorHeap::D3DDescriptorHeap</definition>
+        <argsstring>(const D3DDescriptorHeap &amp;)=delete</argsstring>
+        <name>D3DDescriptorHeap</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::D3DDescriptorHeap</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1aa3292eb6a425a823156decb96e2585e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;</type>
+        <definition>D3DDescriptorHeap &amp; tiny::D3DDescriptorHeap::operator=</definition>
+        <argsstring>(const D3DDescriptorHeap &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="91" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a53607c6e8c2f38bc63908c3e27de4ca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DDescriptorHeap::D3DDescriptorHeap</definition>
+        <argsstring>(D3DDescriptorHeap &amp;&amp;)=delete</argsstring>
+        <name>D3DDescriptorHeap</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::D3DDescriptorHeap</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1afdcba53fee02d1d55d2a8d8b85fbc1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;</type>
+        <definition>D3DDescriptorHeap &amp; tiny::D3DDescriptorHeap::operator=</definition>
+        <argsstring>(D3DDescriptorHeap &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="93" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a12069a1945dc6b546f8a1b402e9f5826" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DDescriptorHeap::~D3DDescriptorHeap</definition>
+        <argsstring>()=default</argsstring>
+        <name>~D3DDescriptorHeap</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::~D3DDescriptorHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1ab9549b3996bbb128785225d153005ce8" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tiny::D3DDescriptorHeap::IsShaderVisible</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsShaderVisible</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::IsShaderVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="95" column="14" bodyfile="graphics/descriptors.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1aa7d07eeef9bb09304f6ad17e1966ab63" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>D3D12_DESCRIPTOR_HEAP_TYPE</type>
+        <definition>D3D12_DESCRIPTOR_HEAP_TYPE tiny::D3DDescriptorHeap::GetType</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>GetType</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::GetType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="96" column="36" bodyfile="graphics/descriptors.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a50377a8feedaf68f4b83e53e9094a28f" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref></type>
+        <definition>DescriptorHandle tiny::D3DDescriptorHeap::AllocateDescriptor</definition>
+        <argsstring>()</argsstring>
+        <name>AllocateDescriptor</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::AllocateDescriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="97" column="19" bodyfile="graphics/descriptors.cpp" bodystart="25" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a7883f626705bb69760a8a06c2f86c303" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref></type>
+        <definition>DescriptorRange tiny::D3DDescriptorHeap::AllocateRange</definition>
+        <argsstring>(u32 length)</argsstring>
+        <name>AllocateRange</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::AllocateRange</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="98" column="18" bodyfile="graphics/descriptors.cpp" bodystart="42" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1ace0a882fe06ced9e04b008b8d19a57ae" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>ID3D12DescriptorHeap *</type>
+        <definition>ID3D12DescriptorHeap * tiny::D3DDescriptorHeap::operator*</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator*</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="99" column="23" bodyfile="graphics/descriptors.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a248a2240213be20414663d00c9d2763e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DDescriptorHeap::AddRef</definition>
+        <argsstring>(u32 index)</argsstring>
+        <name>AddRef</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::AddRef</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="100" column="6" bodyfile="graphics/descriptors.cpp" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1aebf77286c5384b07bae1ccd8def6ed98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DDescriptorHeap::Release</definition>
+        <argsstring>(u32 index)</argsstring>
+        <name>Release</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::Release</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="101" column="6" bodyfile="graphics/descriptors.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1af1e4e7f37d2efa0537ad4bd66f823d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DDescriptorHeap::Release</definition>
+        <argsstring>(u32 index, u32 len)</argsstring>
+        <name>Release</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::Release</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="102" column="6" bodyfile="graphics/descriptors.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1ac665b7e73d90823af8c3f38a77da8725" prot="private" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>u32 tiny::D3DDescriptorHeap::AllocateInternal</definition>
+        <argsstring>(u32 length)</argsstring>
+        <name>AllocateInternal</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::AllocateInternal</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="104" column="6" bodyfile="graphics/descriptors.cpp" bodystart="59" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1a8eecf44e9aded6241793ff7e0319c83a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DDescriptorHeap::ReleaseInternal</definition>
+        <argsstring>(u32 startIndex, u32 length)</argsstring>
+        <name>ReleaseInternal</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::ReleaseInternal</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>startIndex</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="105" column="6" bodyfile="graphics/descriptors.cpp" bodystart="111" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_d3_d_descriptor_heap_1afdfd0426705d50c9519e420782ab0165" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DDescriptorHeap::MergeFreeRanges</definition>
+        <argsstring>(u32 freedStart, u32 freedLength)</argsstring>
+        <name>MergeFreeRanges</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::MergeFreeRanges</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>freedStart</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>freedLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="106" column="6" bodyfile="graphics/descriptors.cpp" bodystart="130" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/descriptors.h" line="81" column="1" bodyfile="graphics/descriptors.h" bodystart="82" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a248a2240213be20414663d00c9d2763e" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>AddRef</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a50377a8feedaf68f4b83e53e9094a28f" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>AllocateDescriptor</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1ac665b7e73d90823af8c3f38a77da8725" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>AllocateInternal</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a7883f626705bb69760a8a06c2f86c303" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>AllocateRange</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1aa64c2e0626f7f59da23d3d202fd1ff55" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>D3DDescriptorHeap</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a5c12630070bc2114d7a42f8f3b623d8d" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>D3DDescriptorHeap</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a53607c6e8c2f38bc63908c3e27de4ca1" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>D3DDescriptorHeap</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1aa7d07eeef9bb09304f6ad17e1966ab63" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>GetType</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1ab9549b3996bbb128785225d153005ce8" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>IsShaderVisible</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a581586706199880c7ae4d0fe99c01490" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mAllocations</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a983c0ebb8ef9e03c3bfb0ffdce0a2859" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mCpuStart</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1afd1fc37034dd7f4817c73df1659ae4a7" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mDescriptorHeap</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1adaa63b512545fae463d2d201c815b033" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mDescriptorSize</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1afdfd0426705d50c9519e420782ab0165" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>MergeFreeRanges</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1aa1d51e65ed28cc61725ca3e234cb9ce6" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mFreeRanges</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a98fa82aeb774061a2e0fd77d3c6d0d59" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mGpuStart</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a264eda663b218d2612036d5c8732c2c0" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mMutex</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a2be99b676033558e9a6c26f692bd7a8b" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mNumDescriptors</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a3f18f55f4497a180bc7d90734fcd7cb9" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mShaderVisible</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1adaafc3db6143783d864328e8161d67a2" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>mType</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1ace0a882fe06ced9e04b008b8d19a57ae" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>operator*</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1aa3292eb6a425a823156decb96e2585e9" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1afdcba53fee02d1d55d2a8d8b85fbc1d9" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1aebf77286c5384b07bae1ccd8def6ed98" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>Release</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1af1e4e7f37d2efa0537ad4bd66f823d85" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>Release</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a8eecf44e9aded6241793ff7e0319c83a" prot="private" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>ReleaseInternal</name></member>
+      <member refid="classtiny_1_1_d3_d_descriptor_heap_1a12069a1945dc6b546f8a1b402e9f5826" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap</scope><name>~D3DDescriptorHeap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

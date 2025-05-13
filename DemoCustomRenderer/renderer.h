@@ -8,6 +8,9 @@ public:
 	ShaderArtRenderer();
 	~ShaderArtRenderer() = default;
 	tiny::RenderTextureHandle Build(tiny::FrameGraph& mFrameGraph) override;
+	void SetResolution(u32 width, u32 height);
 private:
-	WaterMaterialInstance mWaterMat;
+	OceanMaterialInstance mMat1;
+	u32 mResolutionX;
+	u32 mResolutionY;
 };

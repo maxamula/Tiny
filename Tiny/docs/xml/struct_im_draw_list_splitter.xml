@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_draw_list_splitter" kind="struct" language="C++" prot="public">
+    <compoundname>ImDrawListSplitter</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_draw_list_splitter_1a99a46d62e09810f31d0a6efd4a0d2b09" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImDrawListSplitter::_Current</definition>
+        <argsstring></argsstring>
+        <name>_Current</name>
+        <qualifiedname>ImDrawListSplitter::_Current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2618" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_splitter_1ae3a1593ee05bc52e6284943eab3c97a2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImDrawListSplitter::_Count</definition>
+        <argsstring></argsstring>
+        <name>_Count</name>
+        <qualifiedname>ImDrawListSplitter::_Count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2619" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_list_splitter_1ab3b0bdddacaa7b347c41735c2d9952dc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_draw_channel" kindref="compound">ImDrawChannel</ref> &gt;</type>
+        <definition>ImVector&lt;ImDrawChannel&gt; ImDrawListSplitter::_Channels</definition>
+        <argsstring></argsstring>
+        <name>_Channels</name>
+        <qualifiedname>ImDrawListSplitter::_Channels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2620" column="18" bodyfile="graphics/imgui/imgui.h" bodystart="2620" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1a2f832d1adedde7663c991af366847c75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImDrawListSplitter::ImDrawListSplitter</definition>
+        <argsstring>()</argsstring>
+        <name>ImDrawListSplitter</name>
+        <qualifiedname>ImDrawListSplitter::ImDrawListSplitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2622" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="2622" bodyend="2622"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1a712b8ba85de1e4095db67a86a3b80e21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImDrawListSplitter::~ImDrawListSplitter</definition>
+        <argsstring>()</argsstring>
+        <name>~ImDrawListSplitter</name>
+        <qualifiedname>ImDrawListSplitter::~ImDrawListSplitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2623" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="2623" bodyend="2623"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1ac6865e5a2f180419fa282b681bf08c9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImDrawListSplitter::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>ImDrawListSplitter::Clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2624" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="2624" bodyend="2624"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1a95dbdaa7ea2a0328a85732ed210a549b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawListSplitter::ClearFreeMemory</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFreeMemory</name>
+        <qualifiedname>ImDrawListSplitter::ClearFreeMemory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2625" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1710" bodyend="1722"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1aa491c5b1e10b2f5340e7db4949d31255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawListSplitter::Split</definition>
+        <argsstring>(ImDrawList *draw_list, int count)</argsstring>
+        <name>Split</name>
+        <qualifiedname>ImDrawListSplitter::Split</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_draw_list" kindref="compound">ImDrawList</ref> *</type>
+          <declname>draw_list</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2626" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1724" bodyend="1752"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1af3fc4bad2abca9e481d476d1877ba5be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawListSplitter::Merge</definition>
+        <argsstring>(ImDrawList *draw_list)</argsstring>
+        <name>Merge</name>
+        <qualifiedname>ImDrawListSplitter::Merge</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_draw_list" kindref="compound">ImDrawList</ref> *</type>
+          <declname>draw_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2627" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1754" bodyend="1823"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_draw_list_splitter_1ad3797b0755caa07f3d69a9e3566eb0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref> void</type>
+        <definition>void ImDrawListSplitter::SetCurrentChannel</definition>
+        <argsstring>(ImDrawList *draw_list, int channel_idx)</argsstring>
+        <name>SetCurrentChannel</name>
+        <qualifiedname>ImDrawListSplitter::SetCurrentChannel</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_draw_list" kindref="compound">ImDrawList</ref> *</type>
+          <declname>draw_list</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2628" column="33" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="1825" bodyend="1847"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>ImDrawChannel</label>
+        <link refid="struct_im_draw_channel"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_IdxBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImDrawCmd</label>
+        <link refid="struct_im_draw_cmd"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>UserCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ImDrawCmdHeader</label>
+        <link refid="struct_im_draw_cmd_header"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImDrawList</label>
+        <link refid="struct_im_draw_list"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>IdxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>VtxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_Data</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_VtxWritePtr</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>_ClipRectStack</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>_TextureIdStack</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_Path</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>_CmdHeader</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImDrawListSplitter</label>
+        <link refid="struct_im_draw_list_splitter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_Channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="23">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="11">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="6">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImDrawChannel &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImVector&lt; ImDrawCmd &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImVector&lt; ImDrawIdx &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="9">
+        <label>ImVector&lt; ImDrawVert &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>ImVector&lt; ImTextureID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="25">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ImVector&lt; ImVec4 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="14">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2616" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2617" bodyend="2629"/>
+    <listofallmembers>
+      <member refid="struct_im_draw_list_splitter_1ab3b0bdddacaa7b347c41735c2d9952dc" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>_Channels</name></member>
+      <member refid="struct_im_draw_list_splitter_1ae3a1593ee05bc52e6284943eab3c97a2" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>_Count</name></member>
+      <member refid="struct_im_draw_list_splitter_1a99a46d62e09810f31d0a6efd4a0d2b09" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>_Current</name></member>
+      <member refid="struct_im_draw_list_splitter_1ac6865e5a2f180419fa282b681bf08c9c" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>Clear</name></member>
+      <member refid="struct_im_draw_list_splitter_1a95dbdaa7ea2a0328a85732ed210a549b" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>ClearFreeMemory</name></member>
+      <member refid="struct_im_draw_list_splitter_1a2f832d1adedde7663c991af366847c75" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>ImDrawListSplitter</name></member>
+      <member refid="struct_im_draw_list_splitter_1af3fc4bad2abca9e481d476d1877ba5be" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>Merge</name></member>
+      <member refid="struct_im_draw_list_splitter_1ad3797b0755caa07f3d69a9e3566eb0e5" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>SetCurrentChannel</name></member>
+      <member refid="struct_im_draw_list_splitter_1aa491c5b1e10b2f5340e7db4949d31255" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>Split</name></member>
+      <member refid="struct_im_draw_list_splitter_1a712b8ba85de1e4095db67a86a3b80e21" prot="public" virt="non-virtual"><scope>ImDrawListSplitter</scope><name>~ImDrawListSplitter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

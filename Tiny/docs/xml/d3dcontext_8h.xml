@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d3dcontext_8h" kind="file" language="C++">
+    <compoundname>d3dcontext.h</compoundname>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">atlbase.h</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">set</includes>
+    <includes local="no">mutex</includes>
+    <includes refid="descriptors_8h" local="yes">descriptors.h</includes>
+    <includes refid="gpuqueue_8h" local="yes">gpuqueue.h</includes>
+    <includes refid="cbringbuffer_8h" local="yes">cbringbuffer.h</includes>
+    <includedby refid="application_8h" local="yes">engine/application.h</includedby>
+    <includedby refid="d3dcontext_8cpp" local="yes">graphics/d3dcontext.cpp</includedby>
+    <includedby refid="renderctx_8h" local="yes">graphics/renderctx.h</includedby>
+    <includedby refid="viewport_8h" local="yes">graphics/viewport.h</includedby>
+    <includedby refid="dispatcher_8h" local="yes">misc/dispatcher.h</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>cbringbuffer.h</label>
+        <link refid="cbringbuffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>graphics/d3dcontext.h</label>
+        <link refid="d3dcontext_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gpuqueue.h</label>
+        <link refid="gpuqueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>atlbase.h</label>
+      </node>
+      <node id="17">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>chrono</label>
+      </node>
+      <node id="2">
+        <label>d3d12.h</label>
+      </node>
+      <node id="16">
+        <label>deque</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="12">
+        <label>future</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>mutex</label>
+      </node>
+      <node id="6">
+        <label>set</label>
+      </node>
+      <node id="10">
+        <label>unordered_map</label>
+      </node>
+      <node id="18">
+        <label>windows.h</label>
+      </node>
+      <node id="15">
+        <label>wrl.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="2">
+        <label>engine/application.h</label>
+        <link refid="application_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>graphics/d3dcontext.cpp</label>
+        <link refid="d3dcontext_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/d3dcontext.h</label>
+        <link refid="d3dcontext_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>graphics/framegraph.cpp</label>
+        <link refid="framegraph_8cpp"/>
+      </node>
+      <node id="6">
+        <label>graphics/framegraph.h</label>
+        <link refid="framegraph_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="9">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>graphics/pass.cpp</label>
+        <link refid="pass_8cpp"/>
+      </node>
+      <node id="8">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>graphics/renderctx.cpp</label>
+        <link refid="renderctx_8cpp"/>
+      </node>
+      <node id="5">
+        <label>graphics/renderctx.h</label>
+        <link refid="renderctx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>graphics/renderer.cpp</label>
+        <link refid="renderer_8cpp"/>
+      </node>
+      <node id="13">
+        <label>graphics/renderer.h</label>
+        <link refid="renderer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>graphics/viewport.cpp</label>
+        <link refid="viewport_8cpp"/>
+      </node>
+      <node id="15">
+        <label>graphics/viewport.h</label>
+        <link refid="viewport_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>misc/dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtiny_1_1_d3_d_context" prot="public">tiny::D3DContext</innerclass>
+    <innerclass refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data" prot="public">tiny::D3DContext::FrameTimingData</innerclass>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atlbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="descriptors_8h" kindref="compound">descriptors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpuqueue_8h" kindref="compound">gpuqueue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cbringbuffer_8h" kindref="compound">cbringbuffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="structtiny_1_1_d3_d_context" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data" kindref="compound">FrameTimingData</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1aa38b47daaee07d4d5fd98203881848e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12QueryHeap&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1aa38b47daaee07d4d5fd98203881848e8" kindref="member">timestampHeap</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1af325a2cd57c5ebbecfacbcb7a664ebcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Resource&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1af325a2cd57c5ebbecfacbcb7a664ebcb" kindref="member">timestampResult</ref>;</highlight></codeline>
+<codeline lineno="21" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1acef7b5e99d8faa829ae3982e111f2a5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt;<sp/><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1acef7b5e99d8faa829ae3982e111f2a5b" kindref="member">cpuStart</ref>;</highlight></codeline>
+<codeline lineno="22" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1a7b37545dffacdb62abf425c047bdd655" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt;<sp/><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1a7b37545dffacdb62abf425c047bdd655" kindref="member">cpuEnd</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1a5f2f6d33425899be1a5253d445ffa00d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1a5f2f6d33425899be1a5253d445ffa00d" kindref="member">lastGpuTime</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1ab27936dfd1b26ae2db79167cb3d8c8eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data_1ab27936dfd1b26ae2db79167cb3d8c8eb" kindref="member">lastCpuTime</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28" refid="structtiny_1_1_d3_d_context_1a1b7f259bafef626fe9c2e7b52803cddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a1b7f259bafef626fe9c2e7b52803cddd" kindref="member">D3DContext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29" refid="structtiny_1_1_d3_d_context_1af1f2f75a728570c5a7e954d17fd64a6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>&amp;<sp/><ref refid="structtiny_1_1_d3_d_context_1af1f2f75a728570c5a7e954d17fd64a6b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30" refid="structtiny_1_1_d3_d_context_1a1290f44d00721bfac8ecd0c162c325c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a1290f44d00721bfac8ecd0c162c325c8" kindref="member">D3DContext</ref>(<ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31" refid="structtiny_1_1_d3_d_context_1a6725859f70859769f41fa1a02b83303f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>&amp;<sp/><ref refid="structtiny_1_1_d3_d_context_1a6725859f70859769f41fa1a02b83303f" kindref="member">operator=</ref>(<ref refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" kindref="member">D3DContext</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32" refid="structtiny_1_1_d3_d_context_1a8286e4a93e6e418fcd4b31fbc8bf5f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a8286e4a93e6e418fcd4b31fbc8bf5f09" kindref="member">~D3DContext</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a8e81bdca6f7aae15da12bcb5d9d4fa0f" kindref="member">Create</ref>(u8<sp/><ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a18f575ba54d3a910db88287f41308b64" kindref="member">Destroy</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a8766e09825031cb0c45e3a42acc6930c" kindref="member">BeginScene</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1aa523c46ddc795688e7e7f43f23043c7e" kindref="member">EndScene</ref>(std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>completionCallback);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1a0a646b521505f15b99d6f5b3a47e90a7" kindref="member">Flush</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" kindref="member">Defer</ref>(IUnknown*<sp/>resource);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" kindref="member">Defer</ref>(<ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/>descriptor);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" kindref="member">Defer</ref>(<ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref><sp/>range);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_d3_d_gpu_queue" kindref="compound">D3DGpuQueue</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" kindref="member">mainQueue</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structtiny_1_1_d3_d_context_1a13fdab4c8168a3fb21c161e638b67b63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_frame_ring_buffer" kindref="compound">FrameRingBuffer</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a13fdab4c8168a3fb21c161e638b67b63" kindref="member">frameRingBuffer</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" kindref="member">framesInFlight</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::atomic&lt;u8&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" kindref="member">currentFrameIdx</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::set&lt;CComPtr&lt;IUnknown&gt;&gt;&gt;<sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" kindref="member">deferredResources</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structtiny_1_1_d3_d_context_1afa4692ec1bf68417b5a9f82c63eb5b00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1afa4692ec1bf68417b5a9f82c63eb5b00" kindref="member">deferredResourcesMutex</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::set&lt;DescriptorHandle&gt;&gt;<sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" kindref="member">deferredDescriptors</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structtiny_1_1_d3_d_context_1abf4f857783b382898a1e77eae434cdf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abf4f857783b382898a1e77eae434cdf9" kindref="member">deferredDescriptorsMutex</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::set&lt;DescriptorRange&gt;&gt;<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" kindref="member">deferredRanges</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structtiny_1_1_d3_d_context_1a20a383e5669c61e05bd3cc091b9a4d38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::mutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a20a383e5669c61e05bd3cc091b9a4d38" kindref="member">deferredRangesMutex</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;FrameTimingData&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" kindref="member">frameTimingData</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="graphics/d3dcontext.h"/>
+  </compounddef>
+</doxygen>

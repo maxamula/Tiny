@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_last_item_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiLastItemData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1a0d2baf2d2e0933f1006bb47c105c356a" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiLastItemData::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiLastItemData::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1220" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1a3aa559c1c783c295b48cacdf22a56d1e" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1abcf9eafab4557e911b2c0d8fe2feeb38" kindref="member">ImGuiItemFlags</ref></type>
+        <definition>ImGuiItemFlags ImGuiLastItemData::InFlags</definition>
+        <argsstring></argsstring>
+        <name>InFlags</name>
+        <qualifiedname>ImGuiLastItemData::InFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1221" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1a31712c73aac65b9ecd049308c511ed3b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a86b8f9e2fd4084fb2112f003070b53fa" kindref="member">ImGuiItemStatusFlags</ref></type>
+        <definition>ImGuiItemStatusFlags ImGuiLastItemData::StatusFlags</definition>
+        <argsstring></argsstring>
+        <name>StatusFlags</name>
+        <qualifiedname>ImGuiLastItemData::StatusFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1222" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1ad6ff8db4173ff40874ef015e58d726ae" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiLastItemData::Rect</definition>
+        <argsstring></argsstring>
+        <name>Rect</name>
+        <qualifiedname>ImGuiLastItemData::Rect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1223" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1a3cc19e619fb0f0ac5f410e32a0ff34ca" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiLastItemData::NavRect</definition>
+        <argsstring></argsstring>
+        <name>NavRect</name>
+        <qualifiedname>ImGuiLastItemData::NavRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1224" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1ae4b3a4f52ea710910ef8c2365fdab79e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiLastItemData::DisplayRect</definition>
+        <argsstring></argsstring>
+        <name>DisplayRect</name>
+        <qualifiedname>ImGuiLastItemData::DisplayRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1226" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_last_item_data_1a21ed10f8c8945aeb72c760981460c07b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiLastItemData::ClipRect</definition>
+        <argsstring></argsstring>
+        <name>ClipRect</name>
+        <qualifiedname>ImGuiLastItemData::ClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1227" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1227" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_last_item_data_1aa613ef14a952dd56b5056c5f7087cc7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiLastItemData::ImGuiLastItemData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiLastItemData</name>
+        <qualifiedname>ImGuiLastItemData::ImGuiLastItemData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1229" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1229" bodyend="1229"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiLastItemData</label>
+        <link refid="struct_im_gui_last_item_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+          <edgelabel>DisplayRect</edgelabel>
+          <edgelabel>NavRect</edgelabel>
+          <edgelabel>Rect</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1218" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1219" bodyend="1230"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_last_item_data_1a21ed10f8c8945aeb72c760981460c07b" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>ClipRect</name></member>
+      <member refid="struct_im_gui_last_item_data_1ae4b3a4f52ea710910ef8c2365fdab79e" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>DisplayRect</name></member>
+      <member refid="struct_im_gui_last_item_data_1a0d2baf2d2e0933f1006bb47c105c356a" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>ID</name></member>
+      <member refid="struct_im_gui_last_item_data_1aa613ef14a952dd56b5056c5f7087cc7f" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>ImGuiLastItemData</name></member>
+      <member refid="struct_im_gui_last_item_data_1a3aa559c1c783c295b48cacdf22a56d1e" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>InFlags</name></member>
+      <member refid="struct_im_gui_last_item_data_1a3cc19e619fb0f0ac5f410e32a0ff34ca" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>NavRect</name></member>
+      <member refid="struct_im_gui_last_item_data_1ad6ff8db4173ff40874ef015e58d726ae" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>Rect</name></member>
+      <member refid="struct_im_gui_last_item_data_1a31712c73aac65b9ecd049308c511ed3b" prot="public" virt="non-virtual"><scope>ImGuiLastItemData</scope><name>StatusFlags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

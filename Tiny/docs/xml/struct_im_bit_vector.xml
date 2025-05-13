@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_bit_vector" kind="struct" language="C++" prot="public">
+    <compoundname>ImBitVector</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_bit_vector_1a419abda300de5270b4475eac6ce250c2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref> &gt;</type>
+        <definition>ImVector&lt;ImU32&gt; ImBitVector::Storage</definition>
+        <argsstring></argsstring>
+        <name>Storage</name>
+        <qualifiedname>ImBitVector::Storage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="601" column="14" bodyfile="graphics/imgui/imgui_internal.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_bit_vector_1a2e25a0809000ad27bfc3fb89f3d04829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImBitVector::Create</definition>
+        <argsstring>(int sz)</argsstring>
+        <name>Create</name>
+        <qualifiedname>ImBitVector::Create</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="602" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="602" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_bit_vector_1a6486ac9a357400a42af07909f937a659" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImBitVector::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>ImBitVector::Clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="603" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="603" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_bit_vector_1ac472600d0eb12fabafae58db68ab7e2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImBitVector::TestBit</definition>
+        <argsstring>(int n) const</argsstring>
+        <name>TestBit</name>
+        <qualifiedname>ImBitVector::TestBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="604" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="604" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_bit_vector_1afab0abbd320b1f33d1988760be7cd39b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImBitVector::SetBit</definition>
+        <argsstring>(int n)</argsstring>
+        <name>SetBit</name>
+        <qualifiedname>ImBitVector::SetBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="605" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="605" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_bit_vector_1aeca31d497bf4ceb032dfb92bf5515a40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImBitVector::ClearBit</definition>
+        <argsstring>(int n)</argsstring>
+        <name>ClearBit</name>
+        <qualifiedname>ImBitVector::ClearBit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="606" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="606" bodyend="606"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImBitVector</label>
+        <link refid="struct_im_bit_vector"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Storage</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImU32 &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="599" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="600" bodyend="607"/>
+    <listofallmembers>
+      <member refid="struct_im_bit_vector_1a6486ac9a357400a42af07909f937a659" prot="public" virt="non-virtual"><scope>ImBitVector</scope><name>Clear</name></member>
+      <member refid="struct_im_bit_vector_1aeca31d497bf4ceb032dfb92bf5515a40" prot="public" virt="non-virtual"><scope>ImBitVector</scope><name>ClearBit</name></member>
+      <member refid="struct_im_bit_vector_1a2e25a0809000ad27bfc3fb89f3d04829" prot="public" virt="non-virtual"><scope>ImBitVector</scope><name>Create</name></member>
+      <member refid="struct_im_bit_vector_1afab0abbd320b1f33d1988760be7cd39b" prot="public" virt="non-virtual"><scope>ImBitVector</scope><name>SetBit</name></member>
+      <member refid="struct_im_bit_vector_1a419abda300de5270b4475eac6ce250c2" prot="public" virt="non-virtual"><scope>ImBitVector</scope><name>Storage</name></member>
+      <member refid="struct_im_bit_vector_1ac472600d0eb12fabafae58db68ab7e2b" prot="public" virt="non-virtual"><scope>ImBitVector</scope><name>TestBit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

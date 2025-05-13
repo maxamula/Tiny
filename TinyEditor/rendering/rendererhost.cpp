@@ -11,6 +11,8 @@ namespace tiny
 	RendererHost::RendererHost(HWND hwnd)
 		: mHostedRederer(std::make_unique<TinyForwardRenderer>())
 	{
+		static_cast<TinyForwardRenderer*>(mHostedRederer.get())->SetResolution(1264, 681);
+
 		IMGUI_CHECKVERSION();
 		mImGuiContext = ImGui::CreateContext();
 		ImGui::SetCurrentContext(mImGuiContext);

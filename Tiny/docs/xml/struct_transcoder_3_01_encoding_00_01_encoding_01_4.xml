@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_transcoder_3_01_encoding_00_01_encoding_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>Transcoder&lt; Encoding, Encoding &gt;</compoundname>
+    <includes refid="encodings_8h" local="no">encodings.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="classrapidjson_1_1_encoding" kindref="compound">Encoding</ref></type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1ab7106c7b04a908f5e472aaa7bd4521ca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>CEREAL_RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static CEREAL_RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::Transcode</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Transcode</name>
+        <qualifiedname>Transcoder&lt; Encoding, Encoding &gt;::Transcode</qualifiedname>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/encodings.h" line="693" column="46" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="693" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1a0f190d9db245b2ae79c6abd306534f11" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>CEREAL_RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static CEREAL_RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::TranscodeUnsafe</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>TranscodeUnsafe</name>
+        <qualifiedname>Transcoder&lt; Encoding, Encoding &gt;::TranscodeUnsafe</qualifiedname>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/encodings.h" line="699" column="46" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="699" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1a6af7a417419ceb4157846bb99e4d1ee8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputStream</type>
+          </param>
+          <param>
+            <type>typename OutputStream</type>
+          </param>
+        </templateparamlist>
+        <type>CEREAL_RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static CEREAL_RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::Validate</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Validate</name>
+        <qualifiedname>Transcoder&lt; Encoding, Encoding &gt;::Validate</qualifiedname>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/encodings.h" line="705" column="46" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="705" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_1aee2481e2f20e7dba3ca9373a4c54d8df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CEREAL_RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static CEREAL_RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::Transcode</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Transcode</name>
+        <qualifiedname>Transcoder&lt; Encoding, Encoding &gt;::Transcode</qualifiedname>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Take one Unicode codepoint from source encoding, convert it to target encoding and put it to the output stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/encodings.h" line="661" column="46" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="661" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_1ac85a190d1de2a79d89a1301e8d82f0b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CEREAL_RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static CEREAL_RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::TranscodeUnsafe</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>TranscodeUnsafe</name>
+        <qualifiedname>Transcoder&lt; Encoding, Encoding &gt;::TranscodeUnsafe</qualifiedname>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/encodings.h" line="670" column="46" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="670" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_transcoder_1a9ce6f592f1197c4cb69920713e4acf4d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CEREAL_RAPIDJSON_FORCEINLINE bool</type>
+        <definition>static CEREAL_RAPIDJSON_FORCEINLINE bool Transcoder&lt; Encoding, Encoding &gt;::Validate</definition>
+        <argsstring>(InputStream &amp;is, OutputStream &amp;os)</argsstring>
+        <name>Validate</name>
+        <qualifiedname>Transcoder&lt; Encoding, Encoding &gt;::Validate</qualifiedname>
+        <param>
+          <type>InputStream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>OutputStream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Validate one Unicode codepoint from an encoded stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/encodings.h" line="680" column="46" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="680" bodyend="682"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Specialization of <ref refid="struct_transcoder" kindref="compound">Transcoder</ref> with same source and target encoding. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/encodings.h" line="691" column="1" bodyfile="content/cereal/external/rapidjson/encodings.h" bodystart="691" bodyend="708"/>
+    <listofallmembers>
+      <member refid="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1ab7106c7b04a908f5e472aaa7bd4521ca" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>Transcode</name></member>
+      <member refid="struct_transcoder_1aee2481e2f20e7dba3ca9373a4c54d8df" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>Transcode</name></member>
+      <member refid="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1a0f190d9db245b2ae79c6abd306534f11" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>TranscodeUnsafe</name></member>
+      <member refid="struct_transcoder_1ac85a190d1de2a79d89a1301e8d82f0b1" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>TranscodeUnsafe</name></member>
+      <member refid="struct_transcoder_3_01_encoding_00_01_encoding_01_4_1a6af7a417419ceb4157846bb99e4d1ee8" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>Validate</name></member>
+      <member refid="struct_transcoder_1a9ce6f592f1197c4cb69920713e4acf4d" prot="public" virt="non-virtual"><scope>Transcoder&lt; Encoding, Encoding &gt;</scope><name>Validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_loc_entry" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiLocEntry</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_loc_entry_1aa2b09f545209e39a8487ab135c1d8af6" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a406a60adaf5a5b3938cb0d755b76502c" kindref="member">ImGuiLocKey</ref></type>
+        <definition>ImGuiLocKey ImGuiLocEntry::Key</definition>
+        <argsstring></argsstring>
+        <name>Key</name>
+        <qualifiedname>ImGuiLocEntry::Key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1761" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_loc_entry_1a95c97c84b714ad6f9a72a949be01d374" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ImGuiLocEntry::Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <qualifiedname>ImGuiLocEntry::Text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1762" column="20" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1762" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1759" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1760" bodyend="1763"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_loc_entry_1aa2b09f545209e39a8487ab135c1d8af6" prot="public" virt="non-virtual"><scope>ImGuiLocEntry</scope><name>Key</name></member>
+      <member refid="struct_im_gui_loc_entry_1a95c97c84b714ad6f9a72a949be01d374" prot="public" virt="non-virtual"><scope>ImGuiLocEntry</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

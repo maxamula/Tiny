@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_texture2_d" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::Texture2D</compoundname>
+    <includes refid="content_8h" local="no">content.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_texture2_d_1a153c41219c60eaf38665b78a05b5e61d" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::Texture2D::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::Texture2D::__pad0__</qualifiedname>
+        <bitfield> CComPtr&lt;ID3D12Resource&gt; resource</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="28" column="1" bodyfile="content/content.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_texture2_d_1a4dbefaa77e1ef0c6b48783befaa227ed" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref></type>
+        <definition>DescriptorHandle tiny::Texture2D::srv</definition>
+        <argsstring></argsstring>
+        <name>srv</name>
+        <qualifiedname>tiny::Texture2D::srv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="30" column="18" bodyfile="content/content.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_texture2_d_1a3535c446c67479b08de3d3e841162201" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::Texture2D::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>tiny::Texture2D::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="31" column="5" bodyfile="content/content.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_texture2_d_1ab9787cef8ca5abedc7d589eb7822adaa" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::Texture2D::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>tiny::Texture2D::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="31" column="11" bodyfile="content/content.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::DescriptorHandle</label>
+        <link refid="classtiny_1_1_descriptor_handle"/>
+      </node>
+      <node id="1">
+        <label>tiny::Texture2D</label>
+        <link refid="structtiny_1_1_texture2_d"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>srv</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="content/content.h" line="26" column="1" bodyfile="content/content.h" bodystart="27" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_texture2_d_1a153c41219c60eaf38665b78a05b5e61d" prot="public" virt="non-virtual"><scope>tiny::Texture2D</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_texture2_d_1ab9787cef8ca5abedc7d589eb7822adaa" prot="public" virt="non-virtual"><scope>tiny::Texture2D</scope><name>height</name></member>
+      <member refid="structtiny_1_1_texture2_d_1a4dbefaa77e1ef0c6b48783befaa227ed" prot="public" virt="non-virtual"><scope>tiny::Texture2D</scope><name>srv</name></member>
+      <member refid="structtiny_1_1_texture2_d_1a3535c446c67479b08de3d3e841162201" prot="public" virt="non-virtual"><scope>tiny::Texture2D</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

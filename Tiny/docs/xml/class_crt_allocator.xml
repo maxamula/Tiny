@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_crt_allocator" kind="class" language="C++" prot="public">
+    <compoundname>CrtAllocator</compoundname>
+    <includes refid="allocators_8h" local="no">allocators.h</includes>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_crt_allocator_1ac7df8398c529290f0cd5950d9492f524" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool CrtAllocator::kNeedFree</definition>
+        <argsstring></argsstring>
+        <name>kNeedFree</name>
+        <qualifiedname>CrtAllocator::kNeedFree</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="77" column="23" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_crt_allocator_1ae9b348831bee2b1b52b736c2d3921bad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * CrtAllocator::Malloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Malloc</name>
+        <qualifiedname>CrtAllocator::Malloc</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="78" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_crt_allocator_1a54b9a20354ba249613d332a7b445575d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * CrtAllocator::Realloc</definition>
+        <argsstring>(void *originalPtr, size_t originalSize, size_t newSize)</argsstring>
+        <name>Realloc</name>
+        <qualifiedname>CrtAllocator::Realloc</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>originalPtr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>originalSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="84" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="84" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_crt_allocator_1a5043907058d906dcb1291e9491560373" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CrtAllocator::Free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>Free</name>
+        <qualifiedname>CrtAllocator::Free</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="92" column="17" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>C-runtime library allocator. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is just wrapper for standard C library memory routines. <simplesect kind="note"><para>implements <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref> concept </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/allocators.h" line="75" column="1" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="75" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_crt_allocator_1a5043907058d906dcb1291e9491560373" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>Free</name></member>
+      <member refid="class_crt_allocator_1ac7df8398c529290f0cd5950d9492f524" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>kNeedFree</name></member>
+      <member refid="class_crt_allocator_1ae9b348831bee2b1b52b736c2d3921bad" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>Malloc</name></member>
+      <member refid="class_crt_allocator_1a54b9a20354ba249613d332a7b445575d" prot="public" virt="non-virtual"><scope>CrtAllocator</scope><name>Realloc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

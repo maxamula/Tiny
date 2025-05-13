@@ -1,0 +1,1039 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespace_im_stb" kind="namespace" language="C++">
+    <compoundname>ImStb</compoundname>
+    <innerclass refid="struct_im_stb_1_1_s_t_b___textedit_state" prot="public">ImStb::STB_TexteditState</innerclass>
+    <innerclass refid="struct_im_stb_1_1_stb_find_state" prot="public">ImStb::StbFindState</innerclass>
+    <innerclass refid="struct_im_stb_1_1_stb_textedit_row" prot="public">ImStb::StbTexteditRow</innerclass>
+    <innerclass refid="struct_im_stb_1_1_stb_undo_record" prot="public">ImStb::StbUndoRecord</innerclass>
+    <innerclass refid="struct_im_stb_1_1_stb_undo_state" prot="public">ImStb::StbUndoState</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_im_stb_1aecd41aa4f75eaef7549c506d202181ce" prot="public" static="yes" mutable="no">
+        <type><ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref></type>
+        <definition>ImWchar ImStb::STB_TEXTEDIT_NEWLINE</definition>
+        <argsstring></argsstring>
+        <name>STB_TEXTEDIT_NEWLINE</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_NEWLINE</qualifiedname>
+        <initializer>= &apos;\n&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3715" column="16" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3715" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_im_stb_1a145e13c813b64de1d6b124fbdb0a8911" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::STB_TEXTEDIT_STRINGLEN</definition>
+        <argsstring>(const ImGuiInputTextState *obj)</argsstring>
+        <name>STB_TEXTEDIT_STRINGLEN</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_STRINGLEN</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3711" column="16" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3711" bodyend="3711"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a6b8da9e495d9edcbe283793fb81b2c23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref></type>
+        <definition>static ImWchar ImStb::STB_TEXTEDIT_GETCHAR</definition>
+        <argsstring>(const ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>STB_TEXTEDIT_GETCHAR</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_GETCHAR</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3712" column="16" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3712" bodyend="3712"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a0f7912ed04140f7deb98a81163ca919d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float ImStb::STB_TEXTEDIT_GETWIDTH</definition>
+        <argsstring>(ImGuiInputTextState *obj, int line_start_idx, int char_idx)</argsstring>
+        <name>STB_TEXTEDIT_GETWIDTH</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_GETWIDTH</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line_start_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>char_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3713" column="16" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3713" bodyend="3713"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a294857d9864178e0005adf73a76f1820" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::STB_TEXTEDIT_KEYTOTEXT</definition>
+        <argsstring>(int key)</argsstring>
+        <name>STB_TEXTEDIT_KEYTOTEXT</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_KEYTOTEXT</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3714" column="16" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3714" bodyend="3714"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ab4b8a7af0c0063874a6f7ed7e6d0bec9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::STB_TEXTEDIT_LAYOUTROW</definition>
+        <argsstring>(StbTexteditRow *r, ImGuiInputTextState *obj, int line_start_idx)</argsstring>
+        <name>STB_TEXTEDIT_LAYOUTROW</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_LAYOUTROW</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_textedit_row" kindref="compound">StbTexteditRow</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line_start_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3716" column="16" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3716" bodyend="3727"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a2884d6bcfd0fba8eb8e322c2507aed5a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool ImStb::is_separator</definition>
+        <argsstring>(unsigned int c)</argsstring>
+        <name>is_separator</name>
+        <qualifiedname>ImStb::is_separator</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3729" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3729" bodyend="3732"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ab7f998a5fc7a1f6cab073a2392e786c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::is_word_boundary_from_right</definition>
+        <argsstring>(ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>is_word_boundary_from_right</name>
+        <qualifiedname>ImStb::is_word_boundary_from_right</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3734" column="12" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3734" bodyend="3745"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a6625118253ca25ee5849aae59cd47c88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::is_word_boundary_from_left</definition>
+        <argsstring>(ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>is_word_boundary_from_left</name>
+        <qualifiedname>ImStb::is_word_boundary_from_left</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3746" column="12" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3746" bodyend="3756"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aa17450e2c20f846067d1aee8dbaaf976" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::STB_TEXTEDIT_MOVEWORDLEFT_IMPL</definition>
+        <argsstring>(ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>STB_TEXTEDIT_MOVEWORDLEFT_IMPL</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_MOVEWORDLEFT_IMPL</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3757" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3757" bodyend="3757"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a1c32d6fc2251c9168d5ce133104110d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::STB_TEXTEDIT_MOVEWORDRIGHT_MAC</definition>
+        <argsstring>(ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>STB_TEXTEDIT_MOVEWORDRIGHT_MAC</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_MOVEWORDRIGHT_MAC</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3758" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3758" bodyend="3758"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aaadd38b7c62661755d9205493a834f1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::STB_TEXTEDIT_MOVEWORDRIGHT_WIN</definition>
+        <argsstring>(ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>STB_TEXTEDIT_MOVEWORDRIGHT_WIN</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_MOVEWORDRIGHT_WIN</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3759" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3759" bodyend="3759"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a591af6c724a8088d03687aba81098ae9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::STB_TEXTEDIT_MOVEWORDRIGHT_IMPL</definition>
+        <argsstring>(ImGuiInputTextState *obj, int idx)</argsstring>
+        <name>STB_TEXTEDIT_MOVEWORDRIGHT_IMPL</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_MOVEWORDRIGHT_IMPL</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3760" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3760" bodyend="3760"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a46ef9d2dbe0c4a1a8b98792c496289db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::STB_TEXTEDIT_DELETECHARS</definition>
+        <argsstring>(ImGuiInputTextState *obj, int pos, int n)</argsstring>
+        <name>STB_TEXTEDIT_DELETECHARS</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_DELETECHARS</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3764" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3764" bodyend="3778"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a863995f7025cdc7ecbd7d7f382844b06" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool ImStb::STB_TEXTEDIT_INSERTCHARS</definition>
+        <argsstring>(ImGuiInputTextState *obj, int pos, const ImWchar *new_text, int new_text_len)</argsstring>
+        <name>STB_TEXTEDIT_INSERTCHARS</name>
+        <qualifiedname>ImStb::STB_TEXTEDIT_INSERTCHARS</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+          <declname>new_text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new_text_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3780" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3780" bodyend="3810"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a6d923db2f0b9249d461b9f03a8d1c9de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::stb_text_locate_coord</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, float x, float y)</argsstring>
+        <name>stb_text_locate_coord</name>
+        <qualifiedname>ImStb::stb_text_locate_coord</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="403" column="12" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="403" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a9fe36b03512ff57083dc169622db2e8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_click</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, float x, float y)</argsstring>
+        <name>stb_textedit_click</name>
+        <qualifiedname>ImStb::stb_textedit_click</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="463" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="463" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ac2ac9aaf5ec7fe5eb88b4628bff55d02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_drag</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, float x, float y)</argsstring>
+        <name>stb_textedit_drag</name>
+        <qualifiedname>ImStb::stb_textedit_drag</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="481" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="481" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a1c2015f5870f0d92bd6ffd31621933e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_text_undo</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state)</argsstring>
+        <name>stb_text_undo</name>
+        <qualifiedname>ImStb::stb_text_undo</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1218" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1218" bodyend="1284" declfile="graphics/imgui/imstb_textedit.h" declline="507" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aec3e5aa2ce42b9316d1dc353a7909c57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_text_redo</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state)</argsstring>
+        <name>stb_text_redo</name>
+        <qualifiedname>ImStb::stb_text_redo</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1286" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1286" bodyend="1335" declfile="graphics/imgui/imstb_textedit.h" declline="508" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a24a842dd05013e295c7627289708bf26" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_text_makeundo_delete</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, int where, int length)</argsstring>
+        <name>stb_text_makeundo_delete</name>
+        <qualifiedname>ImStb::stb_text_makeundo_delete</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1342" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1342" bodyend="1350" declfile="graphics/imgui/imstb_textedit.h" declline="509" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ab88592247c999379cfc94451d6cea9c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_text_makeundo_insert</definition>
+        <argsstring>(STB_TexteditState *state, int where, int length)</argsstring>
+        <name>stb_text_makeundo_insert</name>
+        <qualifiedname>ImStb::stb_text_makeundo_insert</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1337" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1337" bodyend="1340" declfile="graphics/imgui/imstb_textedit.h" declline="510" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a3c2418e004c19e5a38ff12a1aeaa72ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_text_makeundo_replace</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, int where, int old_length, int new_length)</argsstring>
+        <name>stb_text_makeundo_replace</name>
+        <qualifiedname>ImStb::stb_text_makeundo_replace</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>old_length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1352" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1352" bodyend="1360" declfile="graphics/imgui/imstb_textedit.h" declline="511" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a290ff94811bba1a8517596bcc2519e25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_find_charpos</definition>
+        <argsstring>(StbFindState *find, IMSTB_TEXTEDIT_STRING *str, int n, int single_line)</argsstring>
+        <name>stb_textedit_find_charpos</name>
+        <qualifiedname>ImStb::stb_textedit_find_charpos</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_find_state" kindref="compound">StbFindState</ref> *</type>
+          <declname>find</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>single_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="523" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="523" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a70d80ea9420155c14d0de7e9ec3f80a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_clamp</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_clamp</name>
+        <qualifiedname>ImStb::stb_textedit_clamp</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="574" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="574" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ad2a600da6eca416d8df5a239659d8d13" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_delete</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, int where, int len)</argsstring>
+        <name>stb_textedit_delete</name>
+        <qualifiedname>ImStb::stb_textedit_delete</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>where</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="588" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="588" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a403320fa7df6f2d738c6948c49269ae8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_delete_selection</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_delete_selection</name>
+        <qualifiedname>ImStb::stb_textedit_delete_selection</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="596" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="596" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a8320d9c75b34a5f71f4856976e32b56d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_sortselection</definition>
+        <argsstring>(STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_sortselection</name>
+        <qualifiedname>ImStb::stb_textedit_sortselection</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="612" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="612" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a257a81b957fa21b1d33bf6b2ae468f4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_move_to_first</definition>
+        <argsstring>(STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_move_to_first</name>
+        <qualifiedname>ImStb::stb_textedit_move_to_first</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="622" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="622" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a39e887955f8e771528ee95caa3e1b63b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_move_to_last</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_move_to_last</name>
+        <qualifiedname>ImStb::stb_textedit_move_to_last</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="633" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="633" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ab0f823b741073bd9c6235922f1030a29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_prep_selection_at_cursor</definition>
+        <argsstring>(STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_prep_selection_at_cursor</name>
+        <qualifiedname>ImStb::stb_textedit_prep_selection_at_cursor</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="684" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="684" bodyend="690"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1add857819cde3ab2601e7dddcaea36084" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::stb_textedit_cut</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state)</argsstring>
+        <name>stb_textedit_cut</name>
+        <qualifiedname>ImStb::stb_textedit_cut</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="693" column="12" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="693" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aa79b0e9d161ecc9ed85a4e91089d9bcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::stb_textedit_paste_internal</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, IMSTB_TEXTEDIT_CHARTYPE *text, int len)</argsstring>
+        <name>stb_textedit_paste_internal</name>
+        <qualifiedname>ImStb::stb_textedit_paste_internal</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a123969d1a111b15825eaa9d2b989cecc" kindref="member">IMSTB_TEXTEDIT_CHARTYPE</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="704" column="12" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="704" bodyend="718"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a8444f891980589ca7a0bad0af83a4031" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_key</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, STB_TEXTEDIT_KEYTYPE key)</argsstring>
+        <name>stb_textedit_key</name>
+        <qualifiedname>ImStb::stb_textedit_key</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui__widgets_8cpp_1a010ea37f20ef02d3c9909c59a87f3639" kindref="member">STB_TEXTEDIT_KEYTYPE</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="725" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="725" bodyend="1107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a07aba7466acfbc99a6cbb6a162401699" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_flush_redo</definition>
+        <argsstring>(StbUndoState *state)</argsstring>
+        <name>stb_textedit_flush_redo</name>
+        <qualifiedname>ImStb::stb_textedit_flush_redo</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_undo_state" kindref="compound">StbUndoState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1115" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1115" bodyend="1119"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aec2610757dcc28299cc856d01d43210d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_discard_undo</definition>
+        <argsstring>(StbUndoState *state)</argsstring>
+        <name>stb_textedit_discard_undo</name>
+        <qualifiedname>ImStb::stb_textedit_discard_undo</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_undo_state" kindref="compound">StbUndoState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1122" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1122" bodyend="1138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a0400a946ee19e69ea2ba3b8100de33f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_discard_redo</definition>
+        <argsstring>(StbUndoState *state)</argsstring>
+        <name>stb_textedit_discard_redo</name>
+        <qualifiedname>ImStb::stb_textedit_discard_redo</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_undo_state" kindref="compound">StbUndoState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1144" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1144" bodyend="1172"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a86457236b16d15485b58767ad86f1580" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_im_stb_1_1_stb_undo_record" kindref="compound">StbUndoRecord</ref> *</type>
+        <definition>static StbUndoRecord * ImStb::stb_text_create_undo_record</definition>
+        <argsstring>(StbUndoState *state, int numchars)</argsstring>
+        <name>stb_text_create_undo_record</name>
+        <qualifiedname>ImStb::stb_text_create_undo_record</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_undo_state" kindref="compound">StbUndoState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numchars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1174" column="22" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1174" bodyend="1196"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aae3d715ff8d2a8c3cee25de3cd169976" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui__internal_8h_1a123969d1a111b15825eaa9d2b989cecc" kindref="member">IMSTB_TEXTEDIT_CHARTYPE</ref> *</type>
+        <definition>static IMSTB_TEXTEDIT_CHARTYPE * ImStb::stb_text_createundo</definition>
+        <argsstring>(StbUndoState *state, int pos, int insert_len, int delete_len)</argsstring>
+        <name>stb_text_createundo</name>
+        <qualifiedname>ImStb::stb_text_createundo</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_stb_undo_state" kindref="compound">StbUndoState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>insert_len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delete_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1198" column="32" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1198" bodyend="1216"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1aba8f6ee7754cba73f3601858375bf141" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_clear_state</definition>
+        <argsstring>(STB_TexteditState *state, int is_single_line)</argsstring>
+        <name>stb_textedit_clear_state</name>
+        <qualifiedname>ImStb::stb_textedit_clear_state</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>is_single_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1363" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1363" bodyend="1378"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a785f6da25dd84d418e27498f54f599cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_initialize_state</definition>
+        <argsstring>(STB_TexteditState *state, int is_single_line)</argsstring>
+        <name>stb_textedit_initialize_state</name>
+        <qualifiedname>ImStb::stb_textedit_initialize_state</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>is_single_line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1381" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1381" bodyend="1384"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1a51118a0438edc84ef0dff5d7e4b4b882" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ImStb::stb_textedit_paste</definition>
+        <argsstring>(IMSTB_TEXTEDIT_STRING *str, STB_TexteditState *state, IMSTB_TEXTEDIT_CHARTYPE const *ctext, int len)</argsstring>
+        <name>stb_textedit_paste</name>
+        <qualifiedname>ImStb::stb_textedit_paste</qualifiedname>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a5d698ba521f4de0fa95680c1a8514118" kindref="member">IMSTB_TEXTEDIT_STRING</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type><ref refid="imgui__internal_8h_1a123969d1a111b15825eaa9d2b989cecc" kindref="member">IMSTB_TEXTEDIT_CHARTYPE</ref> const *</type>
+          <declname>ctext</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="1391" column="12" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1391" bodyend="1394"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_im_stb_1ae245ee4392b26d481ee10f0fa37fb525" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ImStb::stb_textedit_replace</definition>
+        <argsstring>(ImGuiInputTextState *str, STB_TexteditState *state, const IMSTB_TEXTEDIT_CHARTYPE *text, int text_len)</argsstring>
+        <name>stb_textedit_replace</name>
+        <qualifiedname>ImStb::stb_textedit_replace</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_gui_input_text_state" kindref="compound">ImGuiInputTextState</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_stb_1_1_s_t_b___textedit_state" kindref="compound">STB_TexteditState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="imgui__internal_8h_1a123969d1a111b15825eaa9d2b989cecc" kindref="member">IMSTB_TEXTEDIT_CHARTYPE</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>text_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="3837" column="13" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="3837" bodyend="3851"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="196" column="1"/>
+  </compounddef>
+</doxygen>

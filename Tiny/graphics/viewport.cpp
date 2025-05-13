@@ -45,20 +45,9 @@ namespace tiny
 				.Texture2D = { 0, 0 }
 			};
 			gDevice->CreateRenderTargetView(renderTargets[i].resource, &rtvDesc, renderTargets[i].allocation.GetCpuHandle());
+			SET_OBJECT_NAME(renderTargets[i].resource, L"RenderTarget {}", i);
 		}
 	}
-
-	/*void D3DViewport::SetResolution(u16 width, u16 height)
-	{
-		if (!swap)
-			THROW_ENGINE_EXCEPTION("D3DWindow - Swapchain is null");
-		context->Flush();
-		for (u8 i = 0; i < buffering; i++)
-			renderTargets[i].resource.Release();
-		u32 flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_TEARING | DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
-		THROW_IF_FAILED(swap->ResizeBuffers(buffering, width, height, DXGI_FORMAT_UNKNOWN, flags));
-		CreateRendertargetViews();
-	}*/
 
 	void D3DViewport::Present(u32 sync)
 	{
@@ -88,6 +77,7 @@ namespace tiny
 				.Texture2D = { 0, 0 }
 			};
 			gDevice->CreateRenderTargetView(renderTargets[i].resource, &rtvDesc, renderTargets[i].allocation.GetCpuHandle());
+			SET_OBJECT_NAME(renderTargets[i].resource, L"RenderTarget {}", i);
 		}
 	}
 }

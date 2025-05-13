@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_color" kind="struct" language="C++" prot="public">
+    <compoundname>ImColor</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_color_1a4cf43bd58e30decaa0248f839fc85e95" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec4" kindref="compound">ImVec4</ref></type>
+        <definition>ImVec4 ImColor::Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>ImColor::Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2519" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2519" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_color_1afcac85caf0653c8c73048b79f98a1933" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImColor::ImColor</definition>
+        <argsstring>()</argsstring>
+        <name>ImColor</name>
+        <qualifiedname>ImColor::ImColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2521" column="15" bodyfile="graphics/imgui/imgui.h" bodystart="2521" bodyend="2521"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1af43ef7c778b4eb6cd43285379026929b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImColor::ImColor</definition>
+        <argsstring>(float r, float g, float b, float a=1.0f)</argsstring>
+        <name>ImColor</name>
+        <qualifiedname>ImColor::ImColor</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2522" column="15" bodyfile="graphics/imgui/imgui.h" bodystart="2522" bodyend="2522"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1ab013c0baa756972b6ad5c01b8f3159ab" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImColor::ImColor</definition>
+        <argsstring>(const ImVec4 &amp;col)</argsstring>
+        <name>ImColor</name>
+        <qualifiedname>ImColor::ImColor</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec4" kindref="compound">ImVec4</ref> &amp;</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2523" column="15" bodyfile="graphics/imgui/imgui.h" bodystart="2523" bodyend="2523"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1a4134d15305bf349209ddd6571d727848" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImColor::ImColor</definition>
+        <argsstring>(int r, int g, int b, int a=255)</argsstring>
+        <name>ImColor</name>
+        <qualifiedname>ImColor::ImColor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2524" column="15" bodyfile="graphics/imgui/imgui.h" bodystart="2524" bodyend="2524"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1a6edcd5171dea150d74d3c1d2e3d99bfc" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImColor::ImColor</definition>
+        <argsstring>(ImU32 rgba)</argsstring>
+        <name>ImColor</name>
+        <qualifiedname>ImColor::ImColor</qualifiedname>
+        <param>
+          <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+          <declname>rgba</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2525" column="15" bodyfile="graphics/imgui/imgui.h" bodystart="2525" bodyend="2525"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1a4f4fc53e0676d50404d6d5ffcf16637f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImColor::operator ImU32</definition>
+        <argsstring>() const</argsstring>
+        <name>operator ImU32</name>
+        <qualifiedname>ImColor::operator ImU32</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2526" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="2526" bodyend="2526"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1a10f1de242f13c93f8be64545e4cbcb0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImColor::operator ImVec4</definition>
+        <argsstring>() const</argsstring>
+        <name>operator ImVec4</name>
+        <qualifiedname>ImColor::operator ImVec4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2527" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="2527" bodyend="2527"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_color_1afcff20160db703b956d56e5a9fa88e24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImColor::SetHSV</definition>
+        <argsstring>(float h, float s, float v, float a=1.0f)</argsstring>
+        <name>SetHSV</name>
+        <qualifiedname>ImColor::SetHSV</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2530" column="20" bodyfile="graphics/imgui/imgui.h" bodystart="2530" bodyend="2530"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_im_color_1ac8cb52119648523038818a613becf010" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_color" kindref="compound">ImColor</ref></type>
+        <definition>static ImColor ImColor::HSV</definition>
+        <argsstring>(float h, float s, float v, float a=1.0f)</argsstring>
+        <name>HSV</name>
+        <qualifiedname>ImColor::HSV</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2531" column="20" bodyfile="graphics/imgui/imgui.h" bodystart="2531" bodyend="2531"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImColor</label>
+        <link refid="struct_im_color"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2517" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2518" bodyend="2532"/>
+    <listofallmembers>
+      <member refid="struct_im_color_1ac8cb52119648523038818a613becf010" prot="public" virt="non-virtual"><scope>ImColor</scope><name>HSV</name></member>
+      <member refid="struct_im_color_1afcac85caf0653c8c73048b79f98a1933" prot="public" virt="non-virtual"><scope>ImColor</scope><name>ImColor</name></member>
+      <member refid="struct_im_color_1af43ef7c778b4eb6cd43285379026929b" prot="public" virt="non-virtual"><scope>ImColor</scope><name>ImColor</name></member>
+      <member refid="struct_im_color_1ab013c0baa756972b6ad5c01b8f3159ab" prot="public" virt="non-virtual"><scope>ImColor</scope><name>ImColor</name></member>
+      <member refid="struct_im_color_1a4134d15305bf349209ddd6571d727848" prot="public" virt="non-virtual"><scope>ImColor</scope><name>ImColor</name></member>
+      <member refid="struct_im_color_1a6edcd5171dea150d74d3c1d2e3d99bfc" prot="public" virt="non-virtual"><scope>ImColor</scope><name>ImColor</name></member>
+      <member refid="struct_im_color_1a4f4fc53e0676d50404d6d5ffcf16637f" prot="public" virt="non-virtual"><scope>ImColor</scope><name>operator ImU32</name></member>
+      <member refid="struct_im_color_1a10f1de242f13c93f8be64545e4cbcb0a" prot="public" virt="non-virtual"><scope>ImColor</scope><name>operator ImVec4</name></member>
+      <member refid="struct_im_color_1afcff20160db703b956d56e5a9fa88e24" prot="public" virt="non-virtual"><scope>ImColor</scope><name>SetHSV</name></member>
+      <member refid="struct_im_color_1a4cf43bd58e30decaa0248f839fc85e95" prot="public" virt="non-virtual"><scope>ImColor</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

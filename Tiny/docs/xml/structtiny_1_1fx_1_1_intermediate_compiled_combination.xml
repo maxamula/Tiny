@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_intermediate_compiled_combination" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::IntermediateCompiledCombination</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_compiled_combination_1abb22f9723db957d4b49e258047a65b19" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::fx::IntermediateCompiledCombination::combinationId</definition>
+        <argsstring></argsstring>
+        <name>combinationId</name>
+        <qualifiedname>tiny::fx::IntermediateCompiledCombination::combinationId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="198" column="4" bodyfile="fx/shaderfx.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aa48c7c9b2104b3206773af08f44109fe" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; IDxcBlob &gt;</type>
+        <definition>CComPtr&lt;IDxcBlob&gt; tiny::fx::IntermediateCompiledCombination::vs</definition>
+        <argsstring></argsstring>
+        <name>vs</name>
+        <qualifiedname>tiny::fx::IntermediateCompiledCombination::vs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="199" column="9" bodyfile="fx/shaderfx.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aab0852a0e19025c9a742bd2c3560de50" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; IDxcBlob &gt;</type>
+        <definition>CComPtr&lt;IDxcBlob&gt; tiny::fx::IntermediateCompiledCombination::ps</definition>
+        <argsstring></argsstring>
+        <name>ps</name>
+        <qualifiedname>tiny::fx::IntermediateCompiledCombination::ps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="200" column="9" bodyfile="fx/shaderfx.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="196" column="1" bodyfile="fx/shaderfx.h" bodystart="197" bodyend="201"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1abb22f9723db957d4b49e258047a65b19" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateCompiledCombination</scope><name>combinationId</name></member>
+      <member refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aab0852a0e19025c9a742bd2c3560de50" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateCompiledCombination</scope><name>ps</name></member>
+      <member refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aa48c7c9b2104b3206773af08f44109fe" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateCompiledCombination</scope><name>vs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

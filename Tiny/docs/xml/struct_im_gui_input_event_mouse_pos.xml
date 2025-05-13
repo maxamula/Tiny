@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_input_event_mouse_pos" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiInputEventMousePos</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_pos_1a74df17b1a446071618fcd868a32102d8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiInputEventMousePos::PosX</definition>
+        <argsstring></argsstring>
+        <name>PosX</name>
+        <qualifiedname>ImGuiInputEventMousePos::PosX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1336" column="36" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_pos_1a515eb4e5c6cb604fabdb26dc99d14c6f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiInputEventMousePos::PosY</definition>
+        <argsstring></argsstring>
+        <name>PosY</name>
+        <qualifiedname>ImGuiInputEventMousePos::PosY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1336" column="41" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_pos_1aaa1e69e32820cd2fcc824c99bb869c6f" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3a993a8d676ceae7ca25c4957be9600b" kindref="member">ImGuiMouseSource</ref></type>
+        <definition>ImGuiMouseSource ImGuiInputEventMousePos::MouseSource</definition>
+        <argsstring></argsstring>
+        <name>MouseSource</name>
+        <qualifiedname>ImGuiInputEventMousePos::MouseSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1336" column="63" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1336" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1336" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1336" bodyend="1336"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_input_event_mouse_pos_1aaa1e69e32820cd2fcc824c99bb869c6f" prot="public" virt="non-virtual"><scope>ImGuiInputEventMousePos</scope><name>MouseSource</name></member>
+      <member refid="struct_im_gui_input_event_mouse_pos_1a74df17b1a446071618fcd868a32102d8" prot="public" virt="non-virtual"><scope>ImGuiInputEventMousePos</scope><name>PosX</name></member>
+      <member refid="struct_im_gui_input_event_mouse_pos_1a515eb4e5c6cb604fabdb26dc99d14c6f" prot="public" virt="non-virtual"><scope>ImGuiInputEventMousePos</scope><name>PosY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

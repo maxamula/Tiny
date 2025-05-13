@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="content_8h" kind="file" language="C++">
+    <compoundname>content.h</compoundname>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">atlbase.h</includes>
+    <includes local="no">tuple</includes>
+    <includes refid="descriptors_8h" local="yes">graphics/descriptors.h</includes>
+    <includes refid="copyqueue_8h" local="yes">graphics/copyqueue.h</includes>
+    <includes local="yes">entt.hpp</includes>
+    <includedby refid="assets_8cpp" local="yes">content/assets.cpp</includedby>
+    <includedby refid="assets_8h" local="yes">content/assets.h</includedby>
+    <includedby refid="content_8cpp" local="yes">content/content.cpp</includedby>
+    <includedby refid="content__internal_8h" local="yes">content/content_internal.h</includedby>
+    <includedby refid="stdmat_8h" local="yes">content/stdmat.h</includedby>
+    <includedby refid="application_8cpp" local="yes">engine/application.cpp</includedby>
+    <includedby refid="scene_8h" local="yes">engine/scene.h</includedby>
+    <includedby refid="shaderfx_8cpp" local="yes">fx/shaderfx.cpp</includedby>
+    <includedby refid="framegraph_8h" local="yes">graphics/framegraph.h</includedby>
+    <includedby refid="gpuresource_8h" local="yes">graphics/gpuresource.h</includedby>
+    <includedby refid="renderctx_8h" local="yes">graphics/renderctx.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>content/content.h</label>
+        <link refid="content_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>graphics/copyqueue.h</label>
+        <link refid="copyqueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>graphics/descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>atlbase.h</label>
+      </node>
+      <node id="2">
+        <label>d3d12.h</label>
+      </node>
+      <node id="12">
+        <label>entt.hpp</label>
+      </node>
+      <node id="11">
+        <label>future</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>mutex</label>
+      </node>
+      <node id="4">
+        <label>tuple</label>
+      </node>
+      <node id="8">
+        <label>unordered_map</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>content/assets.cpp</label>
+        <link refid="assets_8cpp"/>
+      </node>
+      <node id="3">
+        <label>content/assets.h</label>
+        <link refid="assets_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>content/content.cpp</label>
+        <link refid="content_8cpp"/>
+      </node>
+      <node id="1">
+        <label>content/content.h</label>
+        <link refid="content_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>content/content_internal.h</label>
+        <link refid="content__internal_8h"/>
+      </node>
+      <node id="8">
+        <label>content/stdmat.cpp</label>
+        <link refid="stdmat_8cpp"/>
+      </node>
+      <node id="7">
+        <label>content/stdmat.h</label>
+        <link refid="stdmat_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>content/techniques.cpp</label>
+        <link refid="techniques_8cpp"/>
+      </node>
+      <node id="9">
+        <label>content/techniques.h</label>
+        <link refid="techniques_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="13">
+        <label>engine/application.h</label>
+        <link refid="application_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>engine/scene.cpp</label>
+        <link refid="scene_8cpp"/>
+      </node>
+      <node id="12">
+        <label>engine/scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>fx/shaderfx.cpp</label>
+        <link refid="shaderfx_8cpp"/>
+      </node>
+      <node id="16">
+        <label>graphics/framegraph.cpp</label>
+        <link refid="framegraph_8cpp"/>
+      </node>
+      <node id="21">
+        <label>graphics/framegraph.h</label>
+        <link refid="framegraph_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="17">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>graphics/gpuresource.cpp</label>
+        <link refid="gpuresource_8cpp"/>
+      </node>
+      <node id="23">
+        <label>graphics/gpuresource.h</label>
+        <link refid="gpuresource_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>graphics/pass.cpp</label>
+        <link refid="pass_8cpp"/>
+      </node>
+      <node id="15">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>graphics/renderctx.cpp</label>
+        <link refid="renderctx_8cpp"/>
+      </node>
+      <node id="25">
+        <label>graphics/renderctx.h</label>
+        <link refid="renderctx_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>graphics/renderer.cpp</label>
+        <link refid="renderer_8cpp"/>
+      </node>
+      <node id="22">
+        <label>graphics/renderer.h</label>
+        <link refid="renderer_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtiny_1_1_texture2_d" prot="public">tiny::Texture2D</innerclass>
+    <innerclass refid="structtiny_1_1_render_texture" prot="public">tiny::RenderTexture</innerclass>
+    <innerclass refid="structtiny_1_1_render_texture_1_1_desc" prot="public">tiny::RenderTexture::Desc</innerclass>
+    <innerclass refid="structtiny_1_1_depth_texture" prot="public">tiny::DepthTexture</innerclass>
+    <innerclass refid="structtiny_1_1_depth_texture_1_1_desc" prot="public">tiny::DepthTexture::Desc</innerclass>
+    <innerclass refid="structtiny_1_1_mesh" prot="public">tiny::Mesh</innerclass>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atlbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tuple&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="descriptors_8h" kindref="compound">graphics/descriptors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="copyqueue_8h" kindref="compound">graphics/copyqueue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;entt.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;graphics/renderctx.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">entt;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfeda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfeda" kindref="member">InputAttributes</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa7dfba07f8cf7989d66e9e6f0d5af6096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa7dfba07f8cf7989d66e9e6f0d5af6096" kindref="member">InputAttribute_Position</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="17" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaaf2c13bf13c79b3965d918c04909581e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaaf2c13bf13c79b3965d918c04909581e7" kindref="member">InputAttribute_Normal</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0,</highlight></codeline>
+<codeline lineno="18" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa8e5eca6e85d6bd76243f53e2473b1b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa8e5eca6e85d6bd76243f53e2473b1b70" kindref="member">InputAttribute_Tangent</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>1,</highlight></codeline>
+<codeline lineno="19" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa6fc78866edf98580b331612c0e914761" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa6fc78866edf98580b331612c0e914761" kindref="member">InputAttribute_UV</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>2,</highlight></codeline>
+<codeline lineno="20" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaae4289859a57142e92758b72c9b259329" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaae4289859a57142e92758b72c9b259329" kindref="member">InputAttribute_Color</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>3,</highlight></codeline>
+<codeline lineno="21" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaadbfbc12a8bc4a0d92f22863781c62267" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaadbfbc12a8bc4a0d92f22863781c62267" kindref="member">InputAttribute_BoneWeights</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>4,</highlight></codeline>
+<codeline lineno="22" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa1171c000b5dd375695392c80f7aa6285" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa1171c000b5dd375695392c80f7aa6285" kindref="member">InputAttributes_BoneIndices</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>5,</highlight></codeline>
+<codeline lineno="23" refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaaf79716a724e27a0f7024e39b9cb041d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaaf79716a724e27a0f7024e39b9cb041d5" kindref="member">NumInputAttributes</ref><sp/>=<sp/>7</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structtiny_1_1_texture2_d" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1_texture2_d" kindref="compound">Texture2D</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="structtiny_1_1_texture2_d_1a153c41219c60eaf38665b78a05b5e61d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>_internal:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Resource&gt;<sp/>resource;</highlight></codeline>
+<codeline lineno="30" refid="structtiny_1_1_texture2_d_1a4dbefaa77e1ef0c6b48783befaa227ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/><ref refid="structtiny_1_1_texture2_d_1a4dbefaa77e1ef0c6b48783befaa227ed" kindref="member">srv</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structtiny_1_1_texture2_d_1ab9787cef8ca5abedc7d589eb7822adaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_texture2_d_1a3535c446c67479b08de3d3e841162201" kindref="member">width</ref>,<sp/><ref refid="structtiny_1_1_texture2_d_1ab9787cef8ca5abedc7d589eb7822adaa" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structtiny_1_1_render_texture" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="structtiny_1_1_render_texture_1_1_desc" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1_render_texture_1_1_desc" kindref="compound">Desc</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38" refid="structtiny_1_1_render_texture_1_1_desc_1ac363deeb6b7b2b8ce4dd3aa031b4b0d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_render_texture_1_1_desc_1ac363deeb6b7b2b8ce4dd3aa031b4b0d6" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="39" refid="structtiny_1_1_render_texture_1_1_desc_1adfe571d536ab0a90dccc52a8cddccec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_render_texture_1_1_desc_1adfe571d536ab0a90dccc52a8cddccec5" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structtiny_1_1_render_texture_1_1_desc_1a8eee2f114378d1ef869e1d6c0606e8a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DXGI_FORMAT<sp/><ref refid="structtiny_1_1_render_texture_1_1_desc_1a8eee2f114378d1ef869e1d6c0606e8a0" kindref="member">format</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structtiny_1_1_render_texture_1_1_desc_1ac7b7a70789bd4dc925168fc4fea8f168" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_CLEAR_VALUE<sp/><ref refid="structtiny_1_1_render_texture_1_1_desc_1ac7b7a70789bd4dc925168fc4fea8f168" kindref="member">clearValue</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref><sp/><ref refid="structtiny_1_1_render_texture_1a33a5c53c25e38a10bafab46e85791c0f" kindref="member">Create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_render_texture_1_1_desc" kindref="compound">Desc</ref>&amp;<sp/>desc);</highlight></codeline>
+<codeline lineno="44" refid="structtiny_1_1_render_texture_1a8d5a19c762ab138bf56c35c58eb8588a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>_internal:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Resource&gt;<sp/>resource;</highlight></codeline>
+<codeline lineno="46" refid="structtiny_1_1_render_texture_1a995d13fcb571066d3e6ef8a9f39ff23a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/><ref refid="structtiny_1_1_render_texture_1a995d13fcb571066d3e6ef8a9f39ff23a" kindref="member">rtv</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structtiny_1_1_render_texture_1af5b87d7b7845bb273de6b2dcc1394b67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/><ref refid="structtiny_1_1_render_texture_1af5b87d7b7845bb273de6b2dcc1394b67" kindref="member">srv</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structtiny_1_1_render_texture_1ab32b2ad56572364d2afb09db205e1e1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_render_texture_1a8af6aa333d493e0a68b6ea7087554162" kindref="member">width</ref>,<sp/><ref refid="structtiny_1_1_render_texture_1ab32b2ad56572364d2afb09db205e1e1e" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structtiny_1_1_depth_texture" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1_depth_texture" kindref="compound">DepthTexture</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="structtiny_1_1_depth_texture_1_1_desc" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1_depth_texture_1_1_desc" kindref="compound">Desc</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55" refid="structtiny_1_1_depth_texture_1_1_desc_1a427f64dfcdffe13a27be5fc47e7f3380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_depth_texture_1_1_desc_1a427f64dfcdffe13a27be5fc47e7f3380" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structtiny_1_1_depth_texture_1_1_desc_1aad798d55bf69bfebd62dad60caf173ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_depth_texture_1_1_desc_1aad798d55bf69bfebd62dad60caf173ab" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_depth_texture" kindref="compound">DepthTexture</ref><sp/><ref refid="structtiny_1_1_depth_texture_1a9dd986bbe9a346e80b4627348dd7fbab" kindref="member">Create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1_depth_texture_1_1_desc" kindref="compound">Desc</ref>&amp;<sp/>desc);</highlight></codeline>
+<codeline lineno="59" refid="structtiny_1_1_depth_texture_1a6d640022b791dff516576fcce6e71426" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>_internal:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Resource&gt;<sp/>resource;</highlight></codeline>
+<codeline lineno="61" refid="structtiny_1_1_depth_texture_1afbe331cb57a69a7e52f7bc788b445b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/><ref refid="structtiny_1_1_depth_texture_1afbe331cb57a69a7e52f7bc788b445b7e" kindref="member">dsv</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structtiny_1_1_depth_texture_1ae603118d9cd89f66841255231dd0ec19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref><sp/><ref refid="structtiny_1_1_depth_texture_1ae603118d9cd89f66841255231dd0ec19" kindref="member">srv</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structtiny_1_1_depth_texture_1aef77704ff915c1610bec9a396b006cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_depth_texture_1a2edbe23cd8da5dc6bda26e418b234d82" kindref="member">width</ref>,<sp/><ref refid="structtiny_1_1_depth_texture_1aef77704ff915c1610bec9a396b006cb2" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structtiny_1_1_mesh" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1_mesh" kindref="compound">Mesh</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68" refid="structtiny_1_1_mesh_1a65097d2b18a9ccd45e47cf7b5b76e5e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>_internal:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Resource&gt;<sp/>vertexBuffer;</highlight></codeline>
+<codeline lineno="70" refid="structtiny_1_1_mesh_1aeef7072675261ee4e352f85b9ddfd220" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12Resource&gt;<sp/><ref refid="structtiny_1_1_mesh_1aeef7072675261ee4e352f85b9ddfd220" kindref="member">indexBuffer</ref>;</highlight></codeline>
+<codeline lineno="71" refid="structtiny_1_1_mesh_1a1d44fc80a14b9de16eb6f645e7c3c49f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_INDEX_BUFFER_VIEW<sp/><ref refid="structtiny_1_1_mesh_1a1d44fc80a14b9de16eb6f645e7c3c49f" kindref="member">indexBufferView</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structtiny_1_1_mesh_1adf4e518c96a0ebba28ad95d9d886f2c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_VERTEX_BUFFER_VIEW<sp/><ref refid="structtiny_1_1_mesh_1adf4e518c96a0ebba28ad95d9d886f2c2" kindref="member">vertexBufferView</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structtiny_1_1_mesh_1a474eac931969eff5b116d46101d88d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_mesh_1a474eac931969eff5b116d46101d88d7f" kindref="member">numIndices</ref>;</highlight></codeline>
+<codeline lineno="74" refid="structtiny_1_1_mesh_1adc68a1d38c3dd04c5c13ddf584a351a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1_mesh_1adc68a1d38c3dd04c5c13ddf584a351a3" kindref="member">numVertices</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structtiny_1_1_mesh_1a9839c79a2dfce3dde71f335024427613" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtiny_1_1_mesh_1a9839c79a2dfce3dde71f335024427613" kindref="member">inputAttributes</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;D3D12_INPUT_ELEMENT_DESC&gt;<sp/><ref refid="namespacetiny_1aacbb04a2490d52f07bc9dd2a665ed179" kindref="member">ConstructInputLayout</ref>(u8<sp/>attributes);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/>u32<sp/><ref refid="namespacetiny_1a9b8dc9fb28c4e04f9f9eae8d99a97733" kindref="member">GetVertexStride</ref>(u8<sp/>attributes);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="content/content.h"/>
+  </compounddef>
+</doxygen>

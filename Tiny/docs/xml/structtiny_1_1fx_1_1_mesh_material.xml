@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_mesh_material" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>tiny::fx::MeshMaterial</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_material_1a59643607d99c6736868b35424d33fa47" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; u64, <ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x" kindref="compound">MeshShaderFX</ref> &gt;</type>
+        <definition>std::unordered_map&lt;u64, MeshShaderFX&gt; tiny::fx::MeshMaterial::fx</definition>
+        <argsstring></argsstring>
+        <name>fx</name>
+        <qualifiedname>tiny::fx::MeshMaterial::fx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="138" column="20" bodyfile="fx/shaderfx.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_mesh_material_1a19a1f1d9eab6bb4ae4971d6d197f705f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual tiny::fx::MeshMaterial::~MeshMaterial</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MeshMaterial</name>
+        <qualifiedname>tiny::fx::MeshMaterial::~MeshMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="137" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="135" column="1" bodyfile="fx/shaderfx.h" bodystart="136" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_1a59643607d99c6736868b35424d33fa47" prot="public" virt="non-virtual"><scope>tiny::fx::MeshMaterial</scope><name>fx</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_1a19a1f1d9eab6bb4ae4971d6d197f705f" prot="public" virt="virtual"><scope>tiny::fx::MeshMaterial</scope><name>~MeshMaterial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

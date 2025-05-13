@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_draw_channel" kind="struct" language="C++" prot="public">
+    <compoundname>ImDrawChannel</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_draw_channel_1a8bb018bc09e2a1f4389c78390a437f78" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_draw_cmd" kindref="compound">ImDrawCmd</ref> &gt;</type>
+        <definition>ImVector&lt;ImDrawCmd&gt; ImDrawChannel::_CmdBuffer</definition>
+        <argsstring></argsstring>
+        <name>_CmdBuffer</name>
+        <qualifiedname>ImDrawChannel::_CmdBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2609" column="22" bodyfile="graphics/imgui/imgui.h" bodystart="2609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_channel_1abf48aaacbb4908d4b1ff8b54ee85a45f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="imgui_8h_1afdc8744a5ac1a968b1ddfa47e13b2fa1" kindref="member">ImDrawIdx</ref> &gt;</type>
+        <definition>ImVector&lt;ImDrawIdx&gt; ImDrawChannel::_IdxBuffer</definition>
+        <argsstring></argsstring>
+        <name>_IdxBuffer</name>
+        <qualifiedname>ImDrawChannel::_IdxBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2610" column="22" bodyfile="graphics/imgui/imgui.h" bodystart="2610" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImDrawChannel</label>
+        <link refid="struct_im_draw_channel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_IdxBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImDrawCmd</label>
+        <link refid="struct_im_draw_cmd"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>UserCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ImDrawCmdHeader</label>
+        <link refid="struct_im_draw_cmd_header"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImDrawList</label>
+        <link refid="struct_im_draw_list"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>IdxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>VtxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_Data</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_VtxWritePtr</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>_ClipRectStack</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>_TextureIdStack</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>_Path</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>_CmdHeader</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>_Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>ImDrawListSplitter</label>
+        <link refid="struct_im_draw_list_splitter"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>_Channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="21">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="9">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="4">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="28">
+        <label>ImVector&lt; ImDrawChannel &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImDrawCmd &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImVector&lt; ImDrawIdx &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="7">
+        <label>ImVector&lt; ImDrawVert &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ImVector&lt; ImTextureID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="23">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ImVector&lt; ImVec4 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="12">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2607" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2608" bodyend="2611"/>
+    <listofallmembers>
+      <member refid="struct_im_draw_channel_1a8bb018bc09e2a1f4389c78390a437f78" prot="public" virt="non-virtual"><scope>ImDrawChannel</scope><name>_CmdBuffer</name></member>
+      <member refid="struct_im_draw_channel_1abf48aaacbb4908d4b1ff8b54ee85a45f" prot="public" virt="non-virtual"><scope>ImDrawChannel</scope><name>_IdxBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

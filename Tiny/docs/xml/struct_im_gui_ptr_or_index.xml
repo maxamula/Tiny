@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_ptr_or_index" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiPtrOrIndex</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_ptr_or_index_1a9171d3539aed08cc1ffd543c63ce2891" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiPtrOrIndex::Ptr</definition>
+        <argsstring></argsstring>
+        <name>Ptr</name>
+        <qualifiedname>ImGuiPtrOrIndex::Ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1276" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_ptr_or_index_1a72a74b99b115fd7de626170dd918e64a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiPtrOrIndex::Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <qualifiedname>ImGuiPtrOrIndex::Index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1277" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1277" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_ptr_or_index_1a4dd680dd14b154bf7ad6b2c8a2ef508c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiPtrOrIndex::ImGuiPtrOrIndex</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>ImGuiPtrOrIndex</name>
+        <qualifiedname>ImGuiPtrOrIndex::ImGuiPtrOrIndex</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1279" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1279" bodyend="1279"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_ptr_or_index_1a9a7f7991864bc7fa1447d36fc4eb5a3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiPtrOrIndex::ImGuiPtrOrIndex</definition>
+        <argsstring>(int index)</argsstring>
+        <name>ImGuiPtrOrIndex</name>
+        <qualifiedname>ImGuiPtrOrIndex::ImGuiPtrOrIndex</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1280" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1280" bodyend="1280"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1274" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1275" bodyend="1281"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_ptr_or_index_1a4dd680dd14b154bf7ad6b2c8a2ef508c" prot="public" virt="non-virtual"><scope>ImGuiPtrOrIndex</scope><name>ImGuiPtrOrIndex</name></member>
+      <member refid="struct_im_gui_ptr_or_index_1a9a7f7991864bc7fa1447d36fc4eb5a3a" prot="public" virt="non-virtual"><scope>ImGuiPtrOrIndex</scope><name>ImGuiPtrOrIndex</name></member>
+      <member refid="struct_im_gui_ptr_or_index_1a72a74b99b115fd7de626170dd918e64a" prot="public" virt="non-virtual"><scope>ImGuiPtrOrIndex</scope><name>Index</name></member>
+      <member refid="struct_im_gui_ptr_or_index_1a9171d3539aed08cc1ffd543c63ce2891" prot="public" virt="non-virtual"><scope>ImGuiPtrOrIndex</scope><name>Ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

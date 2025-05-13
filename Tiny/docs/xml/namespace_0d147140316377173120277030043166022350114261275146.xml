@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespace_0d147140316377173120277030043166022350114261275146" kind="namespace" language="C++">
+    <compoundname></compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_0d147140316377173120277030043166022350114261275146_1a6d8c949a17eca8364caf39b12fbe5f2e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MyItemColumnID</name>
+        <qualifiedname>::MyItemColumnID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="3864" column="1" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="3865" bodyend="3871"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_demo.cpp" line="3858" column="1"/>
+  </compounddef>
+</doxygen>

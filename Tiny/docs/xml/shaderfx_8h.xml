@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="shaderfx_8h" kind="file" language="C++">
+    <compoundname>shaderfx.h</compoundname>
+    <includes local="no">d3d12.h</includes>
+    <includes local="no">dxcapi.h</includes>
+    <includes local="no">atlbase.h</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">DirectXMath.h</includes>
+    <includes local="yes">../entt.hpp</includes>
+    <includes local="yes">d3dx12.hpp</includes>
+    <includes local="no">variant</includes>
+    <includedby refid="assets_8h" local="yes">content/assets.h</includedby>
+    <includedby refid="stdmat_8cpp" local="yes">content/stdmat.cpp</includedby>
+    <includedby refid="stdmat_8h" local="yes">content/stdmat.h</includedby>
+    <includedby refid="scene_8h" local="yes">engine/scene.h</includedby>
+    <includedby refid="registry_8h" local="yes">fx/registry.h</includedby>
+    <includedby refid="registry__internal_8h" local="yes">fx/registry_internal.h</includedby>
+    <includedby refid="shaderfx_8cpp" local="yes">fx/shaderfx.cpp</includedby>
+    <includedby refid="renderctx_8h" local="yes">graphics/renderctx.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>../entt.hpp</label>
+      </node>
+      <node id="1">
+        <label>fx/shaderfx.h</label>
+        <link refid="shaderfx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>DirectXMath.h</label>
+      </node>
+      <node id="4">
+        <label>atlbase.h</label>
+      </node>
+      <node id="2">
+        <label>d3d12.h</label>
+      </node>
+      <node id="9">
+        <label>d3dx12.hpp</label>
+      </node>
+      <node id="3">
+        <label>dxcapi.h</label>
+      </node>
+      <node id="6">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>unordered_map</label>
+      </node>
+      <node id="10">
+        <label>variant</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>content/assets.cpp</label>
+        <link refid="assets_8cpp"/>
+      </node>
+      <node id="2">
+        <label>content/assets.h</label>
+        <link refid="assets_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>content/stdmat.cpp</label>
+        <link refid="stdmat_8cpp"/>
+      </node>
+      <node id="6">
+        <label>content/stdmat.h</label>
+        <link refid="stdmat_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>content/techniques.cpp</label>
+        <link refid="techniques_8cpp"/>
+      </node>
+      <node id="7">
+        <label>content/techniques.h</label>
+        <link refid="techniques_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="11">
+        <label>engine/application.h</label>
+        <link refid="application_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>engine/scene.cpp</label>
+        <link refid="scene_8cpp"/>
+      </node>
+      <node id="10">
+        <label>engine/scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>fx/registry.cpp</label>
+        <link refid="registry_8cpp"/>
+      </node>
+      <node id="18">
+        <label>fx/registry.h</label>
+        <link refid="registry_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>fx/registry_internal.h</label>
+        <link refid="registry__internal_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>fx/shaderfx.cpp</label>
+        <link refid="shaderfx_8cpp"/>
+      </node>
+      <node id="1">
+        <label>fx/shaderfx.h</label>
+        <link refid="shaderfx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>graphics/framegraph.cpp</label>
+        <link refid="framegraph_8cpp"/>
+      </node>
+      <node id="24">
+        <label>graphics/framegraph.h</label>
+        <link refid="framegraph_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="15">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>graphics/pass.cpp</label>
+        <link refid="pass_8cpp"/>
+      </node>
+      <node id="13">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>graphics/renderctx.cpp</label>
+        <link refid="renderctx_8cpp"/>
+      </node>
+      <node id="23">
+        <label>graphics/renderctx.h</label>
+        <link refid="renderctx_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>graphics/renderer.cpp</label>
+        <link refid="renderer_8cpp"/>
+      </node>
+      <node id="25">
+        <label>graphics/renderer.h</label>
+        <link refid="renderer_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtiny_1_1fx_1_1_shader_resource_special_binding" prot="public">tiny::fx::ShaderResourceSpecialBinding</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_shader_resource_binding" prot="public">tiny::fx::ShaderResourceBinding</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_shader_f_x" prot="public">tiny::fx::ShaderFX</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_i_material_instance" prot="public">tiny::fx::IMaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material_instance" prot="public">tiny::fx::MaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material" prot="public">tiny::fx::Material</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_shader_f_x" prot="public">tiny::fx::MeshShaderFX</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_i_mesh_material_instance" prot="public">tiny::fx::IMeshMaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_material_instance" prot="public">tiny::fx::MeshMaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_material" prot="public">tiny::fx::MeshMaterial</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_technique" prot="public">tiny::fx::MeshTechnique</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_fx_compilation_desc" prot="public">tiny::fx::FxCompilationDesc</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" prot="public">tiny::fx::FxVariantsCompilationDesc</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" prot="public">tiny::fx::IntermediateCompiledCombination</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_intermediate_shader_resource" prot="public">tiny::fx::IntermediateShaderResource</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection" prot="public">tiny::fx::IntermediateCompiledReflection</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_static_sampler_desc" prot="public">tiny::fx::StaticSamplerDesc</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material_initialization_desc" prot="public">tiny::fx::MaterialInitializationDesc</innerclass>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <innernamespace refid="namespacetiny_1_1fx">tiny::fx</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="shaderfx_8h_1ad6451b99b827eced3209d6db1f0ffba1" prot="public" static="no">
+        <name>TINY_DECLARE_MAT_ID</name>
+        <param><defname>name</defname></param>
+        <initializer>u64 ID() override { return #name##_hs; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="13" column="9" bodyfile="fx/shaderfx.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;d3d12.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dxcapi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atlbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DirectXMath.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../entt.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;d3dx12.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="shaderfx_8h_1ad6451b99b827eced3209d6db1f0ffba1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TINY_DECLARE_MAT_ID(name)<sp/>u64<sp/>ID()<sp/>override<sp/>{<sp/>return<sp/>#name##_hs;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny_1_1fx" kindref="compound">tiny::fx</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Common</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34" kindref="member">ShaderSpecialBindType</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34ae927a508aadc6568d7387ef7174a6f79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34ae927a508aadc6568d7387ef7174a6f79" kindref="member">ShaderSpecialBind_World</ref>,</highlight></codeline>
+<codeline lineno="21" refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34a2e2170bb4c50771df410914861c4391b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34a2e2170bb4c50771df410914861c4391b" kindref="member">ShaderSpecialBind_Light</ref>,</highlight></codeline>
+<codeline lineno="22" refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34a890c29f9c139dfdc1b07a8abd5ac558d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34a890c29f9c139dfdc1b07a8abd5ac558d" kindref="member">ShaderSpecialBind_Environment</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0c" kindref="member">ShaderCBufferType</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0caa8dd43c57e5920528e5cc8901c67515f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0caa8dd43c57e5920528e5cc8901c67515f" kindref="member">ShaderCBufferType_Constants</ref>,</highlight></codeline>
+<codeline lineno="28" refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0cadb6f41cc1f6254568c0f78024b1ddb44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0cadb6f41cc1f6254568c0f78024b1ddb44" kindref="member">ShaderCBufferType_CPU</ref>,</highlight></codeline>
+<codeline lineno="29" refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0ca8c67b5f1dc4b4cad2e0b3d9b063d8d16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0ca8c67b5f1dc4b4cad2e0b3d9b063d8d16" kindref="member">ShaderCBufferType_GPU</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structtiny_1_1fx_1_1_shader_resource_special_binding" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_shader_resource_special_binding" kindref="compound">ShaderResourceSpecialBinding</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="structtiny_1_1fx_1_1_shader_resource_special_binding_1aaa94612c3044214736ae97ca7d19ccff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_special_binding_1aaa94612c3044214736ae97ca7d19ccff" kindref="member">rootParamIndex</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structtiny_1_1fx_1_1_shader_resource_special_binding_1ae32cc530bfc1d33f97c77add2f7fcb51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34" kindref="member">ShaderSpecialBindType</ref><sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_special_binding_1ae32cc530bfc1d33f97c77add2f7fcb51" kindref="member">special</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structtiny_1_1fx_1_1_shader_resource_binding" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_shader_resource_binding" kindref="compound">ShaderResourceBinding</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="structtiny_1_1fx_1_1_shader_resource_binding_1a164a9ff04e885eecb986753d22b7fec5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D_SHADER_INPUT_TYPE<sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_binding_1a164a9ff04e885eecb986753d22b7fec5" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structtiny_1_1fx_1_1_shader_resource_binding_1a11c2c50a81d6e29847fe6333922daded" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_binding_1a11c2c50a81d6e29847fe6333922daded" kindref="member">fieldID</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structtiny_1_1fx_1_1_shader_resource_binding_1a24a7fdccf7ce3d3dad4ff1fe1a0ab937" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_binding_1a24a7fdccf7ce3d3dad4ff1fe1a0ab937" kindref="member">rootParamIndex</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="structtiny_1_1fx_1_1_shader_resource_binding_1a2b4b8432438172ac1e4c5654b082621c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0c" kindref="member">ShaderCBufferType</ref><sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_binding_1a2b4b8432438172ac1e4c5654b082621c" kindref="member">cbufferType</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structtiny_1_1fx_1_1_shader_resource_binding_1a89192014a50e460003f4f7fbba15559f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="structtiny_1_1fx_1_1_shader_resource_binding_1a89192014a50e460003f4f7fbba15559f" kindref="member">details</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Default<sp/>Material<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structtiny_1_1fx_1_1_shader_f_x" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_shader_f_x" kindref="compound">ShaderFX</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54" refid="structtiny_1_1fx_1_1_shader_f_x_1a8d66b928ec4c1f5cd96cc51b2988f7f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;IDxcBlob&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1a8d66b928ec4c1f5cd96cc51b2988f7f8" kindref="member">vs</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structtiny_1_1fx_1_1_shader_f_x_1a78b36098d9ba495a33a9307ad304d27f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;IDxcBlob&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1a78b36098d9ba495a33a9307ad304d27f" kindref="member">ps</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structtiny_1_1fx_1_1_shader_f_x_1a9bfce9e4125f96a3d27d70eca82dba6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12RootSignature&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1a9bfce9e4125f96a3d27d70eca82dba6a" kindref="member">rootSig</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structtiny_1_1fx_1_1_shader_f_x_1a1fac7d6e988c4b66abd36c18b3e89564" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3DBlob&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1a1fac7d6e988c4b66abd36c18b3e89564" kindref="member">rootSigBlob</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structtiny_1_1fx_1_1_shader_f_x_1a0a4343cfdcab7abecb14ae1908ce1924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12PipelineState&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1a0a4343cfdcab7abecb14ae1908ce1924" kindref="member">pso</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structtiny_1_1fx_1_1_shader_f_x_1a48b62d515a5420d6cff3521aa50180b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;ShaderResourceBinding&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1a48b62d515a5420d6cff3521aa50180b9" kindref="member">bindings</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structtiny_1_1fx_1_1_shader_f_x_1abc9a9780d94614ed51c4699e65c4af62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;ShaderResourceSpecialBinding&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x_1abc9a9780d94614ed51c4699e65c4af62" kindref="member">specialBindings</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="structtiny_1_1fx_1_1_i_material_instance" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1fx_1_1_i_material_instance" kindref="compound">IMaterialInstance</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65" refid="structtiny_1_1fx_1_1_i_material_instance_1a988aa75e0b9ab8762d2b232e81c62e5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_i_material_instance_1a988aa75e0b9ab8762d2b232e81c62e5c" kindref="member">~IMaterialInstance</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66" refid="structtiny_1_1fx_1_1_i_material_instance_1ac26b1e181a2f5bf19f2eaa8a4094b8ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>u64<sp/><ref refid="structtiny_1_1fx_1_1_i_material_instance_1ac26b1e181a2f5bf19f2eaa8a4094b8ad" kindref="member">ID</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67" refid="structtiny_1_1fx_1_1_i_material_instance_1ace165be76a64bd174366b978df20f714" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>entt::meta_any<sp/><ref refid="structtiny_1_1fx_1_1_i_material_instance_1ace165be76a64bd174366b978df20f714" kindref="member">Meta</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_i_material_instance_1aff7547c0e338911a14c21ad22f710302" kindref="member">SetFeatureFlags</ref>(u8<sp/>flags);</highlight></codeline>
+<codeline lineno="69" refid="structtiny_1_1fx_1_1_i_material_instance_1ae199273fae25acfa98e365227a6f98cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>_internal:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_shader_f_x" kindref="compound">ShaderFX</ref>*<sp/><ref refid="namespacetiny_1_1fx" kindref="compound">fx</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CRTP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Derived&gt;</highlight></codeline>
+<codeline lineno="75" refid="structtiny_1_1fx_1_1_material_instance" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_material_instance" kindref="compound">MaterialInstance</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_i_material_instance" kindref="compound">IMaterialInstance</ref></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77" refid="structtiny_1_1fx_1_1_material_instance_1ab85a4a133f5e17b5265c6a78443791c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_material_instance_1ab85a4a133f5e17b5265c6a78443791c0" kindref="member">~MaterialInstance</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78" refid="structtiny_1_1fx_1_1_material_instance_1a9ed5b453ff7baf2bf60d654dd0003769" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entt::meta_any<sp/><ref refid="structtiny_1_1fx_1_1_material_instance_1a9ed5b453ff7baf2bf60d654dd0003769" kindref="member">Meta</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>entt::forward_as_meta(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">Derived&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">));}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_sRegisterType()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entt::meta_factory&lt;MaterialInstance&lt;Derived&gt;&gt;()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.type(entt::hashed_string{<sp/>(</highlight><highlight class="stringliteral">&quot;MaterialInstance&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(Derived).name())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">).c_str()<sp/>})</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.base&lt;IMaterialInstance&gt;();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_sReg<sp/>=<sp/>_sRegisterType();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="structtiny_1_1fx_1_1_material" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_material" kindref="compound">Material</ref><sp/>final</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92" refid="structtiny_1_1fx_1_1_material_1ac776a785716e9bf706f910b368165131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_material_1ac776a785716e9bf706f910b368165131" kindref="member">~Material</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93" refid="structtiny_1_1fx_1_1_material_1a92111fa253ecfdcb2bb04e42543577d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;u64,<sp/>ShaderFX&gt;<sp/><ref refid="structtiny_1_1fx_1_1_material_1a92111fa253ecfdcb2bb04e42543577d1" kindref="member">fx</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Mesh<sp/>Material</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="structtiny_1_1fx_1_1_mesh_shader_f_x" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x" kindref="compound">MeshShaderFX</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a1ee4bdd90d1255eb3a34ad24fd5074c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;IDxcBlob&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a1ee4bdd90d1255eb3a34ad24fd5074c0" kindref="member">vs</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a3309927ae2e61205dd050243fa930bda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;IDxcBlob&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a3309927ae2e61205dd050243fa930bda" kindref="member">ps</ref>;</highlight></codeline>
+<codeline lineno="102" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a96f40db5b556276bde62197a306e3bc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3D12RootSignature&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a96f40db5b556276bde62197a306e3bc5" kindref="member">rootSig</ref>;</highlight></codeline>
+<codeline lineno="103" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a5c4a7dcdc839dfd794f81d665a8b9b72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;ID3DBlob&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a5c4a7dcdc839dfd794f81d665a8b9b72" kindref="member">rootSigBlob</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a8a2684a207b09cb8fa091f77ab249fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;u64,<sp/>CComPtr&lt;ID3D12PipelineState&gt;&gt;<sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a8a2684a207b09cb8fa091f77ab249fcc" kindref="member">pso</ref>;</highlight></codeline>
+<codeline lineno="105" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1aa72e5d7b668241244de3d686d6ec158a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;ShaderResourceBinding&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1aa72e5d7b668241244de3d686d6ec158a" kindref="member">bindings</ref>;</highlight></codeline>
+<codeline lineno="106" refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a54e77eff44a4c1a0c5aa892430ac75e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;ShaderResourceSpecialBinding&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x_1a54e77eff44a4c1a0c5aa892430ac75e9" kindref="member">specialBindings</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="structtiny_1_1fx_1_1_i_mesh_material_instance" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">IMeshMaterialInstance</ref></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111" refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a71e4f0754053a10bc45b5088dbb828d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a71e4f0754053a10bc45b5088dbb828d9" kindref="member">~IMeshMaterialInstance</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112" refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a07432b0ffb333b9b0de3fcbc382baaa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>u64<sp/><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a07432b0ffb333b9b0de3fcbc382baaa7" kindref="member">ID</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113" refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1aa6291bff6a66e5ef73b91a1558410778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>entt::meta_any<sp/><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1aa6291bff6a66e5ef73b91a1558410778" kindref="member">Meta</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1adca24745d74c4e3e33bac44fe9372989" kindref="member">SetFeatureFlags</ref>(u8<sp/>flags);</highlight></codeline>
+<codeline lineno="115" refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a49f215dbaef4e9561b3b9b6247204883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>_internal:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_shader_f_x" kindref="compound">MeshShaderFX</ref>*<sp/><ref refid="namespacetiny_1_1fx" kindref="compound">fx</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Derived&gt;</highlight></codeline>
+<codeline lineno="120" refid="structtiny_1_1fx_1_1_mesh_material_instance" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1fx_1_1_mesh_material_instance" kindref="compound">MeshMaterialInstance</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">IMeshMaterialInstance</ref></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122" refid="structtiny_1_1fx_1_1_mesh_material_instance_1aa66cbb7a5ed228d77cff864254f82d56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_mesh_material_instance_1aa66cbb7a5ed228d77cff864254f82d56" kindref="member">~MeshMaterialInstance</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123" refid="structtiny_1_1fx_1_1_mesh_material_instance_1a87722b0e4cbc370f0b2178bda4265972" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entt::meta_any<sp/><ref refid="structtiny_1_1fx_1_1_mesh_material_instance_1a87722b0e4cbc370f0b2178bda4265972" kindref="member">Meta</ref>()</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>entt::forward_as_meta(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">Derived&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_sRegisterType()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entt::meta_factory&lt;MeshMaterialInstance&lt;Derived&gt;&gt;()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.type(entt::hashed_string{<sp/>(</highlight><highlight class="stringliteral">&quot;MeshMaterialInstance&lt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(Derived).name())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">).c_str()<sp/>})</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.base&lt;IMeshMaterialInstance&gt;();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_sReg<sp/>=<sp/>_sRegisterType();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="structtiny_1_1fx_1_1_mesh_material" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_mesh_material" kindref="compound">MeshMaterial</ref><sp/>final</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137" refid="structtiny_1_1fx_1_1_mesh_material_1a19a1f1d9eab6bb4ae4971d6d197f705f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_mesh_material_1a19a1f1d9eab6bb4ae4971d6d197f705f" kindref="member">~MeshMaterial</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138" refid="structtiny_1_1fx_1_1_mesh_material_1a59643607d99c6736868b35424d33fa47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;u64,<sp/>MeshShaderFX&gt;<sp/><ref refid="structtiny_1_1fx_1_1_mesh_material_1a59643607d99c6736868b35424d33fa47" kindref="member">fx</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="structtiny_1_1fx_1_1_mesh_technique" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_mesh_technique" kindref="compound">MeshTechnique</ref></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143" refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74d" kindref="member">RenderPassIds</ref><sp/>:<sp/>u16</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145" refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74daf9479c0608b5578aa64fed58f0eb427d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74daf9479c0608b5578aa64fed58f0eb427d" kindref="member">RenderPassId_Opaque</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="146" refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da3914c279b9cc1a180fa35b1db4395871" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da3914c279b9cc1a180fa35b1db4395871" kindref="member">RenderPassId_Transparent</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="147" refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da65f070544692777bae8d0b1621630b53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da65f070544692777bae8d0b1621630b53" kindref="member">RenderPassId_Deferred</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="148" refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74dabf8c72999df48799c71b6ee18caf8e20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74dabf8c72999df48799c71b6ee18caf8e20" kindref="member">RenderPassId_DeferredLight</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="149" refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da7e2d3658ccccfcc797e665786f18db50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a3a98b6ef6d9426cbd0157bb079fbd74da7e2d3658ccccfcc797e665786f18db50" kindref="member">RenderPassId_Shadow</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="151" refid="structtiny_1_1fx_1_1_mesh_technique_1a6ed47692bc3a5755b24fa68d02505253" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;u16,<sp/>std::shared_ptr&lt;IMeshMaterialInstance&gt;&gt;<sp/><ref refid="structtiny_1_1fx_1_1_mesh_technique_1a6ed47692bc3a5755b24fa68d02505253" kindref="member">passes</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Material<sp/>Creation<sp/>Tools</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13" kindref="member">MacroRules</ref><sp/>:<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158" refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13a255d04c49e0988b2c9dbfb6c8349fe7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13a255d04c49e0988b2c9dbfb6c8349fe7b" kindref="member">MacroRule_None</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="159" refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13aceae30f103e04bd0defe1b9dc8ee1ad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13aceae30f103e04bd0defe1b9dc8ee1ad8" kindref="member">MacroRule_Conflict</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="160" refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13ad30c06c45d5a21e7401ff1bf4dcda9be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13ad30c06c45d5a21e7401ff1bf4dcda9be" kindref="member">MacroRule_Dependency</ref><sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="structtiny_1_1fx_1_1_fx_compilation_desc" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1fx_1_1_fx_compilation_desc" kindref="compound">FxCompilationDesc</ref><sp/>final</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165" refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a115f30753812cac8d7fc44491923d169" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a115f30753812cac8d7fc44491923d169" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168" refid="structtiny_1_1fx_1_1_fx_compilation_desc_1abff5094db1622d23e3ef90a813fe88bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="structtiny_1_1fx_1_1_fx_compilation_desc_1abff5094db1622d23e3ef90a813fe88bb" kindref="member">sourcePath</ref>;</highlight></codeline>
+<codeline lineno="169" refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a20fb32470168501033f73eee7e33b72b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a20fb32470168501033f73eee7e33b72b" kindref="member">entryPoint</ref>;</highlight></codeline>
+<codeline lineno="170" refid="structtiny_1_1fx_1_1_fx_compilation_desc_1ad4045e9c33acf02e31d7ab0fc99dc151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>vs;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/>sourcePath;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/>entryPoint;</highlight></codeline>
+<codeline lineno="175" refid="structtiny_1_1fx_1_1_fx_compilation_desc_1a303ece28482f06fc0283a445f2217d25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>ps;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" kindref="compound">FxVariantsCompilationDesc</ref><sp/>final</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="182" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1aaf7f057cf9618f5d30de53229e499fda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1aaf7f057cf9618f5d30de53229e499fda" kindref="member">sourcePath</ref>;</highlight></codeline>
+<codeline lineno="183" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1ad47cd9eec12f622701a3f5d16d8afdf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1ad47cd9eec12f622701a3f5d16d8afdf8" kindref="member">entryPoint</ref>;</highlight></codeline>
+<codeline lineno="184" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1ae4f60007560279fc08c14d552bf5f59b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>vs;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/>sourcePath;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/>entryPoint;</highlight></codeline>
+<codeline lineno="189" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1a81856c75b5455dab478669611fe0a740" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>ps;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1ac2d35fb78d317b0033e011ef98f27a49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCSTR<sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1ac2d35fb78d317b0033e011ef98f27a49" kindref="member">defines</ref>[MAX_CONDITIONAL_COMPILATIONS];</highlight></codeline>
+<codeline lineno="192" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1a5eb42cb910fa0400c738895b0a05dfe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1a5eb42cb910fa0400c738895b0a05dfe5" kindref="member">numConditionalCompilations</ref>;</highlight></codeline>
+<codeline lineno="193" refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1a2c428845be4ae783f8defe78d9f9f1a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13" kindref="member">MacroRules</ref><sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc_1a2c428845be4ae783f8defe78d9f9f1a8" kindref="member">rules</ref>[MAX_CONDITIONAL_COMPILATIONS][MAX_CONDITIONAL_COMPILATIONS];</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" kindref="compound">IntermediateCompiledCombination</ref></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198" refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1abb22f9723db957d4b49e258047a65b19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1abb22f9723db957d4b49e258047a65b19" kindref="member">combinationId</ref>;</highlight></codeline>
+<codeline lineno="199" refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aa48c7c9b2104b3206773af08f44109fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;IDxcBlob&gt;<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aa48c7c9b2104b3206773af08f44109fe" kindref="member">vs</ref>;</highlight></codeline>
+<codeline lineno="200" refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aab0852a0e19025c9a742bd2c3560de50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CComPtr&lt;IDxcBlob&gt;<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination_1aab0852a0e19025c9a742bd2c3560de50" kindref="member">ps</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="structtiny_1_1fx_1_1_intermediate_shader_resource" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource" kindref="compound">IntermediateShaderResource</ref></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205" refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a8f956d44162648b5efe907c8ca543f93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a8f956d44162648b5efe907c8ca543f93" kindref="member">name</ref>[TINY_MAX_SHADER_RESOURCE_NAME];</highlight></codeline>
+<codeline lineno="206" refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1ae5c9429bf7071a7a329fd08c6554d634" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D_SHADER_INPUT_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1ae5c9429bf7071a7a329fd08c6554d634" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="207" refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a5221f81c42bd2b4bf064ea185338b5c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a5221f81c42bd2b4bf064ea185338b5c5" kindref="member">bindPoint</ref>;</highlight></codeline>
+<codeline lineno="208" refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a71779b358f49379912e7e5b2acf82e78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a71779b358f49379912e7e5b2acf82e78" kindref="member">bindCount</ref>;</highlight></codeline>
+<codeline lineno="209" refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a3d35f2597d490d89b75fdd4d8b33f487" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a3d35f2597d490d89b75fdd4d8b33f487" kindref="member">cbufferSize</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection" kindref="compound">IntermediateCompiledReflection</ref></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214" refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection_1a09aec975e1a670ddc6716b55c50bff64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;IntermediateShaderResource&gt;<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection_1a09aec975e1a670ddc6716b55c50bff64" kindref="member">resources</ref>;</highlight></codeline>
+<codeline lineno="215" refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection_1a0bea61ce537b0f842f8c614dc3a28cab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u8<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection_1a0bea61ce537b0f842f8c614dc3a28cab" kindref="member">mandatoryInputAttributes</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1a25011dc9757c882014aaf62a94050ad0" kindref="member">CompileFx</ref>(<ref refid="structtiny_1_1fx_1_1_fx_compilation_desc" kindref="compound">FxCompilationDesc</ref>&amp;<sp/>desc,<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" kindref="compound">IntermediateCompiledCombination</ref>&amp;<sp/>oCompiled);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1aed96e11898a69cd467bd4d3e87bd5323" kindref="member">CompileFxVariants</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" kindref="compound">FxVariantsCompilationDesc</ref>&amp;<sp/>desc,<sp/>std::vector&lt;IntermediateCompiledCombination&gt;&amp;<sp/>oCompiled);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1abcfb7cca21846fcc44f770d93ed3fb0c" kindref="member">GetReflectionInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" kindref="compound">IntermediateCompiledCombination</ref>&amp;<sp/>combination,<sp/><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection" kindref="compound">IntermediateCompiledReflection</ref>&amp;<sp/>oReflection);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1abbf8772f466f8e39a6f59ae8e8c32067" kindref="member">InitializeRootParameter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource" kindref="compound">IntermediateShaderResource</ref>&amp;<sp/>resource,<sp/>CD3DX12_ROOT_PARAMETER&amp;<sp/>oRootParameter);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1a74d4aae6efb5f5f5530d549b08597593" kindref="member">ProcessSpecialBindings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource" kindref="compound">IntermediateShaderResource</ref>&amp;<sp/>resource,<sp/>u32<sp/>rootIndex,<sp/>u64<sp/>propertyID,<sp/>std::vector&lt;ShaderResourceSpecialBinding&gt;&amp;<sp/>bindings);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1ad54440dbbebbcfe3c92d3d7d87d815b8" kindref="member">GenInputVariantsPSOs</ref>(D3D12_GRAPHICS_PIPELINE_STATE_DESC&amp;<sp/>baseDesc,<sp/>ID3D12Device*<sp/>pDevice,<sp/>u8<sp/>mandatoryAttributes,<sp/>std::unordered_map&lt;u64,<sp/>CComPtr&lt;ID3D12PipelineState&gt;&gt;&amp;<sp/>oPso);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="structtiny_1_1fx_1_1_static_sampler_desc" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_static_sampler_desc" kindref="compound">StaticSamplerDesc</ref></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="227" refid="structtiny_1_1fx_1_1_static_sampler_desc_1a050d6af2e528daedc3a9a1c562db49e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u64<sp/><ref refid="structtiny_1_1fx_1_1_static_sampler_desc_1a050d6af2e528daedc3a9a1c562db49e9" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="228" refid="structtiny_1_1fx_1_1_static_sampler_desc_1abb126844713df240c949101b7fc17b02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_STATIC_SAMPLER_DESC<sp/><ref refid="structtiny_1_1fx_1_1_static_sampler_desc_1abb126844713df240c949101b7fc17b02" kindref="member">desc</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="structtiny_1_1fx_1_1_material_initialization_desc" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtiny_1_1fx_1_1_material_initialization_desc" kindref="compound">MaterialInitializationDesc</ref></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233" refid="structtiny_1_1fx_1_1_material_initialization_desc_1a8605f1efaef89305006f910a5ef35673" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" kindref="compound">FxVariantsCompilationDesc</ref><sp/><ref refid="structtiny_1_1fx_1_1_material_initialization_desc_1a8605f1efaef89305006f910a5ef35673" kindref="member">fxDesc</ref>;</highlight></codeline>
+<codeline lineno="234" refid="structtiny_1_1fx_1_1_material_initialization_desc_1aa52535effa3e32c02a072306eeec55d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_GRAPHICS_PIPELINE_STATE_DESC<sp/><ref refid="structtiny_1_1fx_1_1_material_initialization_desc_1aa52535effa3e32c02a072306eeec55d4" kindref="member">basePsoDesc</ref>;</highlight></codeline>
+<codeline lineno="235" refid="structtiny_1_1fx_1_1_material_initialization_desc_1a647d8112b3434da566735182c7b715a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;StaticSamplerDesc&gt;<sp/><ref refid="structtiny_1_1fx_1_1_material_initialization_desc_1a647d8112b3434da566735182c7b715a4" kindref="member">staticSamplers</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1aaa53f1142b9d644fd8c08928de7c7a17" kindref="member">MaterialDefaultInitialize</ref>(ID3D12Device*<sp/>pDevice,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_material_initialization_desc" kindref="compound">MaterialInitializationDesc</ref>&amp;<sp/>desc,<sp/><ref refid="structtiny_1_1fx_1_1_material" kindref="compound">Material</ref>&amp;<sp/>material);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>TINYFX_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1_1fx_1a1ae7a5ded60737109875a1096fe8096c" kindref="member">MeshMaterialDefaultInitialize</ref>(ID3D12Device*<sp/>pDevice,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtiny_1_1fx_1_1_material_initialization_desc" kindref="compound">MaterialInitializationDesc</ref>&amp;<sp/>desc,<sp/><ref refid="structtiny_1_1fx_1_1_mesh_material" kindref="compound">MeshMaterial</ref>&amp;<sp/>material);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="fx/shaderfx.h"/>
+  </compounddef>
+</doxygen>

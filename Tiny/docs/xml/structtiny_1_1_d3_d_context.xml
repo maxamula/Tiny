@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_d3_d_context" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::D3DContext</compoundname>
+    <includes refid="d3dcontext_8h" local="no">d3dcontext.h</includes>
+    <innerclass refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data" prot="public">tiny::D3DContext::FrameTimingData</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_d3_d_gpu_queue" kindref="compound">D3DGpuQueue</ref></type>
+        <definition>D3DGpuQueue tiny::D3DContext::mainQueue</definition>
+        <argsstring></argsstring>
+        <name>mainQueue</name>
+        <qualifiedname>tiny::D3DContext::mainQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="45" column="12" bodyfile="graphics/d3dcontext.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a13fdab4c8168a3fb21c161e638b67b63" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_frame_ring_buffer" kindref="compound">FrameRingBuffer</ref></type>
+        <definition>FrameRingBuffer tiny::D3DContext::frameRingBuffer</definition>
+        <argsstring></argsstring>
+        <name>frameRingBuffer</name>
+        <qualifiedname>tiny::D3DContext::frameRingBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="46" column="16" bodyfile="graphics/d3dcontext.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::D3DContext::framesInFlight</definition>
+        <argsstring></argsstring>
+        <name>framesInFlight</name>
+        <qualifiedname>tiny::D3DContext::framesInFlight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="47" column="3" bodyfile="graphics/d3dcontext.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; u8 &gt;</type>
+        <definition>std::atomic&lt;u8&gt; tiny::D3DContext::currentFrameIdx</definition>
+        <argsstring></argsstring>
+        <name>currentFrameIdx</name>
+        <qualifiedname>tiny::D3DContext::currentFrameIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="48" column="12" bodyfile="graphics/d3dcontext.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::set&lt; CComPtr&lt; IUnknown &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::set&lt;CComPtr&lt;IUnknown&gt; &gt; &gt; tiny::D3DContext::deferredResources</definition>
+        <argsstring></argsstring>
+        <name>deferredResources</name>
+        <qualifiedname>tiny::D3DContext::deferredResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="49" column="12" bodyfile="graphics/d3dcontext.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1afa4692ec1bf68417b5a9f82c63eb5b00" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::D3DContext::deferredResourcesMutex</definition>
+        <argsstring></argsstring>
+        <name>deferredResourcesMutex</name>
+        <qualifiedname>tiny::D3DContext::deferredResourcesMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="50" column="11" bodyfile="graphics/d3dcontext.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::set&lt; <ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::set&lt;DescriptorHandle&gt; &gt; tiny::D3DContext::deferredDescriptors</definition>
+        <argsstring></argsstring>
+        <name>deferredDescriptors</name>
+        <qualifiedname>tiny::D3DContext::deferredDescriptors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="51" column="12" bodyfile="graphics/d3dcontext.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1abf4f857783b382898a1e77eae434cdf9" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::D3DContext::deferredDescriptorsMutex</definition>
+        <argsstring></argsstring>
+        <name>deferredDescriptorsMutex</name>
+        <qualifiedname>tiny::D3DContext::deferredDescriptorsMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="52" column="11" bodyfile="graphics/d3dcontext.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::set&lt; <ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::set&lt;DescriptorRange&gt; &gt; tiny::D3DContext::deferredRanges</definition>
+        <argsstring></argsstring>
+        <name>deferredRanges</name>
+        <qualifiedname>tiny::D3DContext::deferredRanges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="53" column="12" bodyfile="graphics/d3dcontext.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a20a383e5669c61e05bd3cc091b9a4d38" prot="public" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::D3DContext::deferredRangesMutex</definition>
+        <argsstring></argsstring>
+        <name>deferredRangesMutex</name>
+        <qualifiedname>tiny::D3DContext::deferredRangesMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="54" column="11" bodyfile="graphics/d3dcontext.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1_d3_d_context_1_1_frame_timing_data" kindref="compound">FrameTimingData</ref> &gt;</type>
+        <definition>std::vector&lt;FrameTimingData&gt; tiny::D3DContext::frameTimingData</definition>
+        <argsstring></argsstring>
+        <name>frameTimingData</name>
+        <qualifiedname>tiny::D3DContext::frameTimingData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="55" column="12" bodyfile="graphics/d3dcontext.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DContext::D3DContext</definition>
+        <argsstring>()=default</argsstring>
+        <name>D3DContext</name>
+        <qualifiedname>tiny::D3DContext::D3DContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a1b7f259bafef626fe9c2e7b52803cddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DContext::D3DContext</definition>
+        <argsstring>(const D3DContext &amp;)=delete</argsstring>
+        <name>D3DContext</name>
+        <qualifiedname>tiny::D3DContext::D3DContext</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1af1f2f75a728570c5a7e954d17fd64a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;</type>
+        <definition>D3DContext &amp; tiny::D3DContext::operator=</definition>
+        <argsstring>(const D3DContext &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::D3DContext::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="29" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a1290f44d00721bfac8ecd0c162c325c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DContext::D3DContext</definition>
+        <argsstring>(D3DContext &amp;&amp;)=delete</argsstring>
+        <name>D3DContext</name>
+        <qualifiedname>tiny::D3DContext::D3DContext</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a6725859f70859769f41fa1a02b83303f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;</type>
+        <definition>D3DContext &amp; tiny::D3DContext::operator=</definition>
+        <argsstring>(D3DContext &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::D3DContext::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="31" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a8286e4a93e6e418fcd4b31fbc8bf5f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DContext::~D3DContext</definition>
+        <argsstring>()=default</argsstring>
+        <name>~D3DContext</name>
+        <qualifiedname>tiny::D3DContext::~D3DContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a8e81bdca6f7aae15da12bcb5d9d4fa0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::Create</definition>
+        <argsstring>(u8 framesInFlight)</argsstring>
+        <name>Create</name>
+        <qualifiedname>tiny::D3DContext::Create</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>framesInFlight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="34" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="7" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a18f575ba54d3a910db88287f41308b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <qualifiedname>tiny::D3DContext::Destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="35" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="50" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a8766e09825031cb0c45e3a42acc6930c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::BeginScene</definition>
+        <argsstring>()</argsstring>
+        <name>BeginScene</name>
+        <qualifiedname>tiny::D3DContext::BeginScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="37" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="65" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1aa523c46ddc795688e7e7f43f23043c7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::EndScene</definition>
+        <argsstring>(std::function&lt; void()&gt; completionCallback)</argsstring>
+        <name>EndScene</name>
+        <qualifiedname>tiny::D3DContext::EndScene</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>completionCallback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="38" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="97" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a0a646b521505f15b99d6f5b3a47e90a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <qualifiedname>tiny::D3DContext::Flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="39" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="111" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::Defer</definition>
+        <argsstring>(IUnknown *resource)</argsstring>
+        <name>Defer</name>
+        <qualifiedname>tiny::D3DContext::Defer</qualifiedname>
+        <param>
+          <type>IUnknown *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="41" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1a5b6646a0928918c86728184c95af8ad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::Defer</definition>
+        <argsstring>(DescriptorHandle descriptor)</argsstring>
+        <name>Defer</name>
+        <qualifiedname>tiny::D3DContext::Defer</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref></type>
+          <declname>descriptor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="42" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_context_1ac72bf040049913a5973dd1a8eeaf10fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DContext::Defer</definition>
+        <argsstring>(DescriptorRange range)</argsstring>
+        <name>Defer</name>
+        <qualifiedname>tiny::D3DContext::Defer</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref></type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/d3dcontext.h" line="43" column="6" bodyfile="graphics/d3dcontext.cpp" bodystart="138" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>tiny::D3DContext</label>
+        <link refid="structtiny_1_1_d3_d_context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mainQueue</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>frameRingBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tiny::D3DGpuQueue</label>
+        <link refid="classtiny_1_1_d3_d_gpu_queue"/>
+      </node>
+      <node id="3">
+        <label>tiny::FrameRingBuffer</label>
+        <link refid="classtiny_1_1_frame_ring_buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/d3dcontext.h" line="15" column="1" bodyfile="graphics/d3dcontext.h" bodystart="16" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_d3_d_context_1a8766e09825031cb0c45e3a42acc6930c" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>BeginScene</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a8e81bdca6f7aae15da12bcb5d9d4fa0f" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>Create</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a627f0cbfc6293ebffee247e2901d0e50" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>currentFrameIdx</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a77c581114fa0e6367316c61763feb081" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>D3DContext</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a1b7f259bafef626fe9c2e7b52803cddd" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>D3DContext</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a1290f44d00721bfac8ecd0c162c325c8" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>D3DContext</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1adf49aff699f20bfbb38490ef6745ef2c" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>Defer</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a5b6646a0928918c86728184c95af8ad0" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>Defer</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1ac72bf040049913a5973dd1a8eeaf10fd" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>Defer</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a5fa5e789350f6d20bd3887feb8e72a4c" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>deferredDescriptors</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1abf4f857783b382898a1e77eae434cdf9" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>deferredDescriptorsMutex</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1abb90f6c0af9b7289a723ac5988fdb021" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>deferredRanges</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a20a383e5669c61e05bd3cc091b9a4d38" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>deferredRangesMutex</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1abe5dd240fe523b85297e8eb09738e90c" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>deferredResources</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1afa4692ec1bf68417b5a9f82c63eb5b00" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>deferredResourcesMutex</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a18f575ba54d3a910db88287f41308b64" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>Destroy</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1aa523c46ddc795688e7e7f43f23043c7e" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>EndScene</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a0a646b521505f15b99d6f5b3a47e90a7" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>Flush</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a13fdab4c8168a3fb21c161e638b67b63" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>frameRingBuffer</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a633b1046cbd0f8f11c6defee7a93fbb4" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>framesInFlight</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a1c32e890c1612f7d3af9b6f8abec0c53" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>frameTimingData</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a7d3b580190352ecb833d2b749f71858b" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>mainQueue</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1af1f2f75a728570c5a7e954d17fd64a6b" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>operator=</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a6725859f70859769f41fa1a02b83303f" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>operator=</name></member>
+      <member refid="structtiny_1_1_d3_d_context_1a8286e4a93e6e418fcd4b31fbc8bf5f09" prot="public" virt="non-virtual"><scope>tiny::D3DContext</scope><name>~D3DContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

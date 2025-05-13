@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g" kind="group">
+    <compoundname>CEREAL_RAPIDJSON_CONFIG</compoundname>
+    <title>RapidJSON configuration</title>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gafc9f261644a83884e025727f2090eb99" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_ALLOCATOR_DEFAULT_CHUNK_CAPACITY</name>
+        <initializer>(64 * 1024)</initializer>
+        <briefdescription>
+<para>User-defined kDefaultChunkCapacity definition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>User can define this as any <computeroutput>size</computeroutput> that is a power of 2. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="64" column="9" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga8be107db8e97f441b550dead74904089" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_MAJOR_VERSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Major version of RapidJSON in integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="75" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga3335117d4c7a1b7b57136da6695c108f" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_MINOR_VERSION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Minor version of RapidJSON in integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="76" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaeb6649b931e55ac0e63e16d96e290248" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_PATCH_VERSION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Patch version of RapidJSON in integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="77" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaac3485eef9ab25b5aa112d7d60511e94" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_VERSION_STRING</name>
+        <initializer>    CEREAL_RAPIDJSON_STRINGIFY(<ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaeb6649b931e55ac0e63e16d96e290248" kindref="member">CEREAL_RAPIDJSON_MAJOR_VERSION.CEREAL_RAPIDJSON_MINOR_VERSION.CEREAL_RAPIDJSON_PATCH_VERSION</ref>)</initializer>
+        <briefdescription>
+<para>Version of RapidJSON in &quot;&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;&quot; string format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="78" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="78" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69baa088bbe0adf30ab398c59e0b7fd4" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_NAMESPACE</name>
+        <initializer>rapidjson</initializer>
+        <briefdescription>
+<para>provide custom rapidjson namespace </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In order to avoid symbol clashes and/or &quot;One Definition Rule&quot; errors between multiple inclusions of (different versions of) RapidJSON in a single binary, users can customize the name of the main RapidJSON namespace.</para>
+<para>In case of a single nesting level, defining <computeroutput>CEREAL_RAPIDJSON_NAMESPACE</computeroutput> to a custom name (e.g. <computeroutput>MyRapidJSON</computeroutput>) is sufficient. If multiple levels are needed, both <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69bf61966c74b09b5d90b386847f39be" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_BEGIN</ref> and <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaddb083c1a6a5beaafbecc3f99973a3ff" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_END</ref> need to be defined as well:</para>
+<para><programlisting><codeline><highlight class="normal">//<sp/>in<sp/>some<sp/>.cpp<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>CEREAL_RAPIDJSON_NAMESPACE<sp/>my::rapidjson</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>CEREAL_RAPIDJSON_NAMESPACE_BEGIN<sp/>namespace<sp/>my<sp/>{<sp/>namespace<sp/>rapidjson<sp/>{</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>CEREAL_RAPIDJSON_NAMESPACE_END<sp/><sp/><sp/>}<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;rapidjson/...&quot;</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="see"><para><ref refid="namespacerapidjson" kindref="compound">rapidjson</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="118" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69bf61966c74b09b5d90b386847f39be" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_NAMESPACE_BEGIN</name>
+        <initializer>namespace <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69baa088bbe0adf30ab398c59e0b7fd4" kindref="member">CEREAL_RAPIDJSON_NAMESPACE</ref> {</initializer>
+        <briefdescription>
+<para>provide custom rapidjson namespace (opening expression) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69baa088bbe0adf30ab398c59e0b7fd4" kindref="member">CEREAL_RAPIDJSON_NAMESPACE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="121" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaddb083c1a6a5beaafbecc3f99973a3ff" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_NAMESPACE_END</name>
+        <initializer>}</initializer>
+        <briefdescription>
+<para>provide custom rapidjson namespace (closing expression) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69baa088bbe0adf30ab398c59e0b7fd4" kindref="member">CEREAL_RAPIDJSON_NAMESPACE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="124" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga91dd5ded6ceaee0b0aa19a8ef3df179d" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_HAS_STDSTRING</name>
+        <briefdescription>
+<para>Enable RapidJSON support for <computeroutput>std::string</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By defining this preprocessor symbol to <computeroutput>1</computeroutput>, several convenience functions for using rapidjson::GenericValue with <computeroutput>std::string</computeroutput> are enabled, especially for construction and comparison. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="134" column="10" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga462b56c1940cab4a9387ec5f2ae4efe9" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_ALIGN</name>
+        <param><defname>x</defname></param>
+        <initializer>(((x) + static_cast&lt;size_t&gt;(7u)) &amp; ~static_cast&lt;size_t&gt;(7u))</initializer>
+        <briefdescription>
+<para>Data alignment of the machine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to align</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Some machines require strict data alignment. The default is 8 bytes. User can customize by defining the CEREAL_RAPIDJSON_ALIGN function macro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="276" column="9" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga4b55c9350156c760145bd7dea7969c0b" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_48BITPOINTER_OPTIMIZATION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Use only lower 48-bit address for some pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This optimization uses the fact that current X86-64 architecture only implement lower 48-bit virtual address. The higher 16-bit can be used for storing other data. <computeroutput><ref refid="class_generic_value" kindref="compound">GenericValue</ref></computeroutput> uses this optimization to reduce its size form 24 bytes to 16 bytes in 64-bit architecture. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="307" column="10" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_ASSERT</name>
+        <param><defname>x</defname></param>
+        <initializer>assert(x)</initializer>
+        <briefdescription>
+<para>Assertion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default, rapidjson uses C <computeroutput>assert()</computeroutput> for internal assertions. User can override it by defining <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT(x)</ref> macro.</para>
+<para><simplesect kind="note"><para>Parsing errors are handled and can be customized by the <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s" kindref="compound">RapidJSON error handling</ref> APIs. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="406" column="10" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaab27cdd99aeb6cf058720f9258f0c5f6" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_LIKELY</name>
+        <param><defname>x</defname></param>
+        <initializer>(x)</initializer>
+        <briefdescription>
+<para>Compiler branching hint for expression with high probability to be true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean expression likely to be true. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="463" column="10" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga8f8344bc8bcf87c96595b625aa1fe0a7" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_UNLIKELY</name>
+        <param><defname>x</defname></param>
+        <initializer>(x)</initializer>
+        <briefdescription>
+<para>Compiler branching hint for expression with low probability to be true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean expression unlikely to be true. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="476" column="10" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga327942f48d5408b72ede2422351c1a6c" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_NOEXCEPT_ASSERT</name>
+        <param><defname>x</defname></param>
+        <initializer><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>(x)</initializer>
+        <briefdescription>
+<para>Assertion (in non-throwing contexts). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some functions provide a <computeroutput>noexcept</computeroutput> guarantee, if the compiler supports it. In these cases, the <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref> macro cannot be overridden to throw an exception. This macro adds a separate customization point for such cases.</para>
+<para>Defaults to C <computeroutput>assert()</computeroutput> (as <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>), if <computeroutput>noexcept</computeroutput> is supported, and to <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref> otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/rapidjson.h" line="618" column="10" bodyfile="content/cereal/external/rapidjson/rapidjson.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration macros for library features. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Some RapidJSON features are configurable to adapt the library to a wide variety of platforms, environments and usage scenarios. Most of the features can be configured in terms of overridden or predefined preprocessor macros at compile-time.</para>
+<para>Some additional customization is available in the <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s" kindref="compound">RapidJSON error handling</ref> APIs.</para>
+<para><simplesect kind="note"><para>These macros should be given on the compiler command-line (where applicable) to avoid inconsistent values when compiling different translation units of a single application. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

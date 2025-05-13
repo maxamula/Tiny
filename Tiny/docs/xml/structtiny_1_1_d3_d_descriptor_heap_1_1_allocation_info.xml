@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info" kind="struct" language="C++" prot="private">
+    <compoundname>tiny::D3DDescriptorHeap::AllocationInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info_1a54ebef9269379d128f48afeddbabee67" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::D3DDescriptorHeap::AllocationInfo::refCount</definition>
+        <argsstring></argsstring>
+        <name>refCount</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::AllocationInfo::refCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="85" column="5" bodyfile="graphics/descriptors.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info_1add82e21d9390fb5fc2f68881e2c52c97" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::D3DDescriptorHeap::AllocationInfo::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>tiny::D3DDescriptorHeap::AllocationInfo::length</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="86" column="5" bodyfile="graphics/descriptors.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/descriptors.h" line="83" column="1" bodyfile="graphics/descriptors.h" bodystart="84" bodyend="87"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info_1add82e21d9390fb5fc2f68881e2c52c97" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap::AllocationInfo</scope><name>length</name></member>
+      <member refid="structtiny_1_1_d3_d_descriptor_heap_1_1_allocation_info_1a54ebef9269379d128f48afeddbabee67" prot="public" virt="non-virtual"><scope>tiny::D3DDescriptorHeap::AllocationInfo</scope><name>refCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

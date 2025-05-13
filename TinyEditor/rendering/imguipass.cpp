@@ -79,6 +79,8 @@ namespace tiny
 		ImGui::End();
 		ImGui::Begin("Scene Viewport");
 		ImVec2 region = ImGui::GetContentRegionAvail();
+		
+		
 		ImGui::Image((ImTextureID)vpTexture.srv.gpu.ptr, region);
 		ImGui::End();
 		ImGui::Begin("Entity Components");

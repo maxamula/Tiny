@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_vec2ih" kind="struct" language="C++" prot="public">
+    <compoundname>ImVec2ih</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_vec2ih_1a0963e82728b3ea68d882089e1f5e231b" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImVec2ih::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>ImVec2ih::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="513" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_vec2ih_1af8489174701c9070f3874cce8c1e514f" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short ImVec2ih::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>ImVec2ih::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="513" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_vec2ih_1ac20cf588ef0083368ec9c9db8dcf3991" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImVec2ih::ImVec2ih</definition>
+        <argsstring>()</argsstring>
+        <name>ImVec2ih</name>
+        <qualifiedname>ImVec2ih::ImVec2ih</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="514" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="514" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vec2ih_1a949d670852c030a496109290b62fb98b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImVec2ih::ImVec2ih</definition>
+        <argsstring>(short _x, short _y)</argsstring>
+        <name>ImVec2ih</name>
+        <qualifiedname>ImVec2ih::ImVec2ih</qualifiedname>
+        <param>
+          <type>short</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="515" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="515" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vec2ih_1a4ff068f147001fc898e28068d1bee03c" prot="public" static="no" constexpr="yes" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>ImVec2ih::ImVec2ih</definition>
+        <argsstring>(const ImVec2 &amp;rhs)</argsstring>
+        <name>ImVec2ih</name>
+        <qualifiedname>ImVec2ih::ImVec2ih</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vec2" kindref="compound">ImVec2</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="516" column="24" bodyfile="graphics/imgui/imgui_internal.h" bodystart="516" bodyend="516"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="511" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="512" bodyend="517"/>
+    <listofallmembers>
+      <member refid="struct_im_vec2ih_1ac20cf588ef0083368ec9c9db8dcf3991" prot="public" virt="non-virtual"><scope>ImVec2ih</scope><name>ImVec2ih</name></member>
+      <member refid="struct_im_vec2ih_1a949d670852c030a496109290b62fb98b" prot="public" virt="non-virtual"><scope>ImVec2ih</scope><name>ImVec2ih</name></member>
+      <member refid="struct_im_vec2ih_1a4ff068f147001fc898e28068d1bee03c" prot="public" virt="non-virtual"><scope>ImVec2ih</scope><name>ImVec2ih</name></member>
+      <member refid="struct_im_vec2ih_1a0963e82728b3ea68d882089e1f5e231b" prot="public" virt="non-virtual"><scope>ImVec2ih</scope><name>x</name></member>
+      <member refid="struct_im_vec2ih_1af8489174701c9070f3874cce8c1e514f" prot="public" virt="non-virtual"><scope>ImVec2ih</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

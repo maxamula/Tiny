@@ -1,0 +1,11 @@
+digraph "misc"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  dir_a52f4d3d586a58b02f3a4ddf0a992157 [label="misc", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_a52f4d3d586a58b02f3a4ddf0a992157.html",tooltip=""];
+  dir_e79632891301b850df87e9c0030293fa [label="graphics", fillcolor="#edf0f7", color="red", style="filled", URL="dir_e79632891301b850df87e9c0030293fa.html",tooltip=""];
+  dir_a52f4d3d586a58b02f3a4ddf0a992157->dir_e79632891301b850df87e9c0030293fa [headlabel="1", labeldistance=1.5 headhref="dir_000009_000006.html" href="dir_000009_000006.html" color="steelblue1" fontcolor="steelblue1"];
+}

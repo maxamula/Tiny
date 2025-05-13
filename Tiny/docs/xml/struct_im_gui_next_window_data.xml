@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_next_window_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiNextWindowData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a9c92b3e6b1c0c89a9d9ec8430c58af88" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a55b45c183ddf8a1b8a70fbce77fa5d26" kindref="member">ImGuiNextWindowDataFlags</ref></type>
+        <definition>ImGuiNextWindowDataFlags ImGuiNextWindowData::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiNextWindowData::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1171" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1adb6dfd7cba17293b0610afa0d16d9491" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aef890d6ac872e12c5804d0b3e4f7f103" kindref="member">ImGuiCond</ref></type>
+        <definition>ImGuiCond ImGuiNextWindowData::PosCond</definition>
+        <argsstring></argsstring>
+        <name>PosCond</name>
+        <qualifiedname>ImGuiNextWindowData::PosCond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1172" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a2a34b7d39111d51f8309eb886575d47d" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aef890d6ac872e12c5804d0b3e4f7f103" kindref="member">ImGuiCond</ref></type>
+        <definition>ImGuiCond ImGuiNextWindowData::SizeCond</definition>
+        <argsstring></argsstring>
+        <name>SizeCond</name>
+        <qualifiedname>ImGuiNextWindowData::SizeCond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1173" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a864d3d1bf0dbf81ba4cf9cefd75fe06b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aef890d6ac872e12c5804d0b3e4f7f103" kindref="member">ImGuiCond</ref></type>
+        <definition>ImGuiCond ImGuiNextWindowData::CollapsedCond</definition>
+        <argsstring></argsstring>
+        <name>CollapsedCond</name>
+        <qualifiedname>ImGuiNextWindowData::CollapsedCond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1174" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1aacc1478ee81850d0d6aff6569469911d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiNextWindowData::PosVal</definition>
+        <argsstring></argsstring>
+        <name>PosVal</name>
+        <qualifiedname>ImGuiNextWindowData::PosVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1175" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a334b4a364e72d96277a1d7d9d3c5474c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiNextWindowData::PosPivotVal</definition>
+        <argsstring></argsstring>
+        <name>PosPivotVal</name>
+        <qualifiedname>ImGuiNextWindowData::PosPivotVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1176" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1af399c9c679b8f9c315af8583bf63aa68" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiNextWindowData::SizeVal</definition>
+        <argsstring></argsstring>
+        <name>SizeVal</name>
+        <qualifiedname>ImGuiNextWindowData::SizeVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1177" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a050058f58709d637bc6a0468ee48548f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiNextWindowData::ContentSizeVal</definition>
+        <argsstring></argsstring>
+        <name>ContentSizeVal</name>
+        <qualifiedname>ImGuiNextWindowData::ContentSizeVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1178" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1ae6b6651b219549de2844261363be5d75" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiNextWindowData::ScrollVal</definition>
+        <argsstring></argsstring>
+        <name>ScrollVal</name>
+        <qualifiedname>ImGuiNextWindowData::ScrollVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1179" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a707d9e7a1d21b6f133478d8e06a59906" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1aa08bedfb80be3701d8c8d7b218c5a5d0" kindref="member">ImGuiChildFlags</ref></type>
+        <definition>ImGuiChildFlags ImGuiNextWindowData::ChildFlags</definition>
+        <argsstring></argsstring>
+        <name>ChildFlags</name>
+        <qualifiedname>ImGuiNextWindowData::ChildFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1180" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a0c4c81bf78a6ac094f794d2cf318037a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiNextWindowData::CollapsedVal</definition>
+        <argsstring></argsstring>
+        <name>CollapsedVal</name>
+        <qualifiedname>ImGuiNextWindowData::CollapsedVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1181" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a63e7f1aa93d6bf9eed7452d57d3930c9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiNextWindowData::SizeConstraintRect</definition>
+        <argsstring></argsstring>
+        <name>SizeConstraintRect</name>
+        <qualifiedname>ImGuiNextWindowData::SizeConstraintRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1182" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1acab3905da227922b52f03943b355b27a" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1cccf55557c2153a9d4af6db73dc3a91" kindref="member">ImGuiSizeCallback</ref></type>
+        <definition>ImGuiSizeCallback ImGuiNextWindowData::SizeCallback</definition>
+        <argsstring></argsstring>
+        <name>SizeCallback</name>
+        <qualifiedname>ImGuiNextWindowData::SizeCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1183" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a3b80639b573e9a009da8aa9f9ca1a250" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiNextWindowData::SizeCallbackUserData</definition>
+        <argsstring></argsstring>
+        <name>SizeCallbackUserData</name>
+        <qualifiedname>ImGuiNextWindowData::SizeCallbackUserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1184" column="32" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1a3597005fb1cdd4d3fa06296bbbb5a2c2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiNextWindowData::BgAlphaVal</definition>
+        <argsstring></argsstring>
+        <name>BgAlphaVal</name>
+        <qualifiedname>ImGuiNextWindowData::BgAlphaVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1185" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_next_window_data_1ab2b226f215bfdf2639f620e6d84157f6" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiNextWindowData::MenuBarOffsetMinVal</definition>
+        <argsstring></argsstring>
+        <name>MenuBarOffsetMinVal</name>
+        <qualifiedname>ImGuiNextWindowData::MenuBarOffsetMinVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1186" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1186" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_next_window_data_1a0471ae42c04fce2e38c9cd8c37690b09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiNextWindowData::ImGuiNextWindowData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiNextWindowData</name>
+        <qualifiedname>ImGuiNextWindowData::ImGuiNextWindowData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1188" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1188" bodyend="1188"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_next_window_data_1a9543431fafe3d0627fdecc5fa839487c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiNextWindowData::ClearFlags</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFlags</name>
+        <qualifiedname>ImGuiNextWindowData::ClearFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1189" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1189" bodyend="1189"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiNextWindowData</label>
+        <link refid="struct_im_gui_next_window_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ContentSizeVal</edgelabel>
+          <edgelabel>MenuBarOffsetMinVal</edgelabel>
+          <edgelabel>PosPivotVal</edgelabel>
+          <edgelabel>PosVal</edgelabel>
+          <edgelabel>ScrollVal</edgelabel>
+          <edgelabel>SizeVal</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>SizeConstraintRect</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SizeCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImGuiSizeCallbackData</label>
+        <link refid="struct_im_gui_size_callback_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>CurrentSize</edgelabel>
+          <edgelabel>DesiredSize</edgelabel>
+          <edgelabel>Pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1169" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1170" bodyend="1190"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_next_window_data_1a3597005fb1cdd4d3fa06296bbbb5a2c2" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>BgAlphaVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1a707d9e7a1d21b6f133478d8e06a59906" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>ChildFlags</name></member>
+      <member refid="struct_im_gui_next_window_data_1a9543431fafe3d0627fdecc5fa839487c" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>ClearFlags</name></member>
+      <member refid="struct_im_gui_next_window_data_1a864d3d1bf0dbf81ba4cf9cefd75fe06b" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>CollapsedCond</name></member>
+      <member refid="struct_im_gui_next_window_data_1a0c4c81bf78a6ac094f794d2cf318037a" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>CollapsedVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1a050058f58709d637bc6a0468ee48548f" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>ContentSizeVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1a9c92b3e6b1c0c89a9d9ec8430c58af88" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_next_window_data_1a0471ae42c04fce2e38c9cd8c37690b09" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>ImGuiNextWindowData</name></member>
+      <member refid="struct_im_gui_next_window_data_1ab2b226f215bfdf2639f620e6d84157f6" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>MenuBarOffsetMinVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1adb6dfd7cba17293b0610afa0d16d9491" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>PosCond</name></member>
+      <member refid="struct_im_gui_next_window_data_1a334b4a364e72d96277a1d7d9d3c5474c" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>PosPivotVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1aacc1478ee81850d0d6aff6569469911d" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>PosVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1ae6b6651b219549de2844261363be5d75" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>ScrollVal</name></member>
+      <member refid="struct_im_gui_next_window_data_1acab3905da227922b52f03943b355b27a" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>SizeCallback</name></member>
+      <member refid="struct_im_gui_next_window_data_1a3b80639b573e9a009da8aa9f9ca1a250" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>SizeCallbackUserData</name></member>
+      <member refid="struct_im_gui_next_window_data_1a2a34b7d39111d51f8309eb886575d47d" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>SizeCond</name></member>
+      <member refid="struct_im_gui_next_window_data_1a63e7f1aa93d6bf9eed7452d57d3930c9" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>SizeConstraintRect</name></member>
+      <member refid="struct_im_gui_next_window_data_1af399c9c679b8f9c315af8583bf63aa68" prot="public" virt="non-virtual"><scope>ImGuiNextWindowData</scope><name>SizeVal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

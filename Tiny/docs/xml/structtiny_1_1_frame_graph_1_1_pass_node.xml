@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_frame_graph_1_1_pass_node" kind="struct" language="C++" prot="private">
+    <compoundname>tiny::FrameGraph::PassNode</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_pass_node_1a0afa40fa232dfb64a8ca47d8b8b7ef51" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classtiny_1_1_i_render_pass" kindref="compound">IRenderPass</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IRenderPass&gt; tiny::FrameGraph::PassNode::Pass</definition>
+        <argsstring></argsstring>
+        <name>Pass</name>
+        <qualifiedname>tiny::FrameGraph::PassNode::Pass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="134" column="29" bodyfile="graphics/framegraph.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_pass_node_1ad48ecb43fffdf5a6389b07d3cab44f41" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref> &gt;</type>
+        <definition>std::vector&lt;RenderTextureHandle&gt; tiny::FrameGraph::PassNode::ReadsRender</definition>
+        <argsstring></argsstring>
+        <name>ReadsRender</name>
+        <qualifiedname>tiny::FrameGraph::PassNode::ReadsRender</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="135" column="25" bodyfile="graphics/framegraph.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_pass_node_1a0e7d8bc854b8b7914e9b85dbd74cea58" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1_depth_texture_handle" kindref="compound">DepthTextureHandle</ref> &gt;</type>
+        <definition>std::vector&lt;DepthTextureHandle&gt; tiny::FrameGraph::PassNode::ReadsDepth</definition>
+        <argsstring></argsstring>
+        <name>ReadsDepth</name>
+        <qualifiedname>tiny::FrameGraph::PassNode::ReadsDepth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="136" column="25" bodyfile="graphics/framegraph.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_pass_node_1ae4ec5b82859a78341786a65af8ff02b6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref> &gt;</type>
+        <definition>std::vector&lt;RenderTextureHandle&gt; tiny::FrameGraph::PassNode::WritesRender</definition>
+        <argsstring></argsstring>
+        <name>WritesRender</name>
+        <qualifiedname>tiny::FrameGraph::PassNode::WritesRender</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="137" column="25" bodyfile="graphics/framegraph.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_pass_node_1a6303e644aec080cca4d33ab9cedd394a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structtiny_1_1_depth_texture_handle" kindref="compound">DepthTextureHandle</ref> &gt;</type>
+        <definition>std::vector&lt;DepthTextureHandle&gt; tiny::FrameGraph::PassNode::WritesDepth</definition>
+        <argsstring></argsstring>
+        <name>WritesDepth</name>
+        <qualifiedname>tiny::FrameGraph::PassNode::WritesDepth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="138" column="25" bodyfile="graphics/framegraph.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/framegraph.h" line="132" column="9" bodyfile="graphics/framegraph.h" bodystart="133" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_frame_graph_1_1_pass_node_1a0afa40fa232dfb64a8ca47d8b8b7ef51" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::PassNode</scope><name>Pass</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_pass_node_1a0e7d8bc854b8b7914e9b85dbd74cea58" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::PassNode</scope><name>ReadsDepth</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_pass_node_1ad48ecb43fffdf5a6389b07d3cab44f41" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::PassNode</scope><name>ReadsRender</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_pass_node_1a6303e644aec080cca4d33ab9cedd394a" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::PassNode</scope><name>WritesDepth</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_pass_node_1ae4ec5b82859a78341786a65af8ff02b6" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::PassNode</scope><name>WritesRender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

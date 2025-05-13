@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_d3_d_viewport" kind="struct" language="C++" prot="public" final="yes">
+    <compoundname>tiny::D3DViewport</compoundname>
+    <includes refid="viewport_8h" local="no">viewport.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_viewport_1addf8ab010445fd7d9c1a1f68dd07ca79" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::D3DViewport::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::D3DViewport::__pad0__</qualifiedname>
+        <bitfield> struct RenderTarget { CComPtr&lt;ID3D12Resource&gt; resource</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="25" column="1" bodyfile="graphics/viewport.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_viewport_1ae49466383c517126b8158f11cdd47606" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref></type>
+        <definition>DescriptorHandle tiny::D3DViewport::allocation</definition>
+        <argsstring></argsstring>
+        <name>allocation</name>
+        <qualifiedname>tiny::D3DViewport::allocation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="29" column="17" bodyfile="graphics/viewport.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_viewport_1ae67a38c412e5030a927e1266e119af72" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; IDXGISwapChain4 &gt;</type>
+        <definition>CComPtr&lt;IDXGISwapChain4&gt; tiny::D3DViewport::swap</definition>
+        <argsstring></argsstring>
+        <name>swap</name>
+        <qualifiedname>tiny::D3DViewport::swap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="38" column="8" bodyfile="graphics/viewport.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_viewport_1a431316ab2aa36e4dc42c0471970ed2d4" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::D3DViewport::buffering</definition>
+        <argsstring></argsstring>
+        <name>buffering</name>
+        <qualifiedname>tiny::D3DViewport::buffering</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="39" column="3" bodyfile="graphics/viewport.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_viewport_1ae176880642dbd394ea3d2445694c3ed5" prot="public" static="no" mutable="no">
+        <type>RenderTarget</type>
+        <definition>RenderTarget tiny::D3DViewport::renderTargets[TINY_MAX_SWAPCHAIN_BUFFERS]</definition>
+        <argsstring>[TINY_MAX_SWAPCHAIN_BUFFERS]</argsstring>
+        <name>renderTargets</name>
+        <qualifiedname>tiny::D3DViewport::renderTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="40" column="13" bodyfile="graphics/viewport.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_d3_d_viewport_1a5f648e98638c0204bb4e11e18a81466f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DViewport::D3DViewport</definition>
+        <argsstring>()=default</argsstring>
+        <name>D3DViewport</name>
+        <qualifiedname>tiny::D3DViewport::D3DViewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_viewport_1a879acf00edf407a92c696321fb079048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DViewport::~D3DViewport</definition>
+        <argsstring>()=default</argsstring>
+        <name>~D3DViewport</name>
+        <qualifiedname>tiny::D3DViewport::~D3DViewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_viewport_1ac72abeb861af1b8538a4aeb54a76ec50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::D3DViewport::D3DViewport</definition>
+        <argsstring>(const D3DContext &amp;context, HWND hWnd, u8 flags)</argsstring>
+        <name>D3DViewport</name>
+        <qualifiedname>tiny::D3DViewport::D3DViewport</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="32" column="1" bodyfile="graphics/viewport.cpp" bodystart="6" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_viewport_1a285c590a6534fc56a3d140bc865001aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DViewport::ReleaseRenderTargets</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseRenderTargets</name>
+        <qualifiedname>tiny::D3DViewport::ReleaseRenderTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="34" column="6" bodyfile="graphics/viewport.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_viewport_1aa5514018b4a209688c3c254e22dfa901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DViewport::CreateRendertargetViews</definition>
+        <argsstring>()</argsstring>
+        <name>CreateRendertargetViews</name>
+        <qualifiedname>tiny::D3DViewport::CreateRendertargetViews</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="35" column="6" bodyfile="graphics/viewport.cpp" bodystart="74" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_d3_d_viewport_1a6029a05f1d9cec39ccd2cc75780f7246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::D3DViewport::Present</definition>
+        <argsstring>(u32 sync)</argsstring>
+        <name>Present</name>
+        <qualifiedname>tiny::D3DViewport::Present</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>sync</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="36" column="6" bodyfile="graphics/viewport.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>tiny::D3DViewport</label>
+        <link refid="structtiny_1_1_d3_d_viewport"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>allocation</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tiny::DescriptorHandle</label>
+        <link refid="classtiny_1_1_descriptor_handle"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/viewport.h" line="21" column="1" bodyfile="graphics/viewport.h" bodystart="22" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_d3_d_viewport_1addf8ab010445fd7d9c1a1f68dd07ca79" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1ae49466383c517126b8158f11cdd47606" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>allocation</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1a431316ab2aa36e4dc42c0471970ed2d4" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>buffering</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1aa5514018b4a209688c3c254e22dfa901" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>CreateRendertargetViews</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1a5f648e98638c0204bb4e11e18a81466f" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>D3DViewport</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1ac72abeb861af1b8538a4aeb54a76ec50" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>D3DViewport</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1a6029a05f1d9cec39ccd2cc75780f7246" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>Present</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1a285c590a6534fc56a3d140bc865001aa" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>ReleaseRenderTargets</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1ae176880642dbd394ea3d2445694c3ed5" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>renderTargets</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1ae67a38c412e5030a927e1266e119af72" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>swap</name></member>
+      <member refid="structtiny_1_1_d3_d_viewport_1a879acf00edf407a92c696321fb079048" prot="public" virt="non-virtual"><scope>tiny::D3DViewport</scope><name>~D3DViewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

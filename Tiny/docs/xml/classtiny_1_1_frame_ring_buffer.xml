@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_frame_ring_buffer" kind="class" language="C++" prot="public">
+    <compoundname>tiny::FrameRingBuffer</compoundname>
+    <includes refid="cbringbuffer_8h" local="no">cbringbuffer.h</includes>
+    <innerclass refid="structtiny_1_1_frame_ring_buffer_1_1_allocation" prot="public">tiny::FrameRingBuffer::Allocation</innerclass>
+    <innerclass refid="structtiny_1_1_frame_ring_buffer_1_1_pending" prot="private">tiny::FrameRingBuffer::Pending</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1ae2661c8ea618b88599494e031a554f67" prot="private" static="no" mutable="no">
+        <type>ComPtr&lt; ID3D12Resource &gt;</type>
+        <definition>ComPtr&lt;ID3D12Resource&gt; tiny::FrameRingBuffer::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="36" column="16" bodyfile="graphics/cbringbuffer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1a6f23201ddceb94ca9fa53ae3adf3da7e" prot="private" static="no" mutable="no">
+        <type>UINT8 *</type>
+        <definition>UINT8* tiny::FrameRingBuffer::m_mappedData</definition>
+        <argsstring></argsstring>
+        <name>m_mappedData</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_mappedData</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="37" column="15" bodyfile="graphics/cbringbuffer.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1abed2c5f799f1838b1a27f61a97eff180" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t tiny::FrameRingBuffer::m_bufferSize</definition>
+        <argsstring></argsstring>
+        <name>m_bufferSize</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_bufferSize</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="38" column="32" bodyfile="graphics/cbringbuffer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1af64482c73339682a5ea9d81cd9714ea2" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t tiny::FrameRingBuffer::m_head</definition>
+        <argsstring></argsstring>
+        <name>m_head</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_head</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="39" column="32" bodyfile="graphics/cbringbuffer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1a6d12b7ae7513840f562bb63945b23255" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; Pending &gt;</type>
+        <definition>std::deque&lt;Pending&gt; tiny::FrameRingBuffer::m_pending</definition>
+        <argsstring></argsstring>
+        <name>m_pending</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_pending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="41" column="23" bodyfile="graphics/cbringbuffer.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1a25617c005fdd38213dd72b8edfa5f661" prot="private" static="no" mutable="no">
+        <type>ComPtr&lt; ID3D12Fence &gt;</type>
+        <definition>ComPtr&lt;ID3D12Fence&gt; tiny::FrameRingBuffer::m_fence</definition>
+        <argsstring></argsstring>
+        <name>m_fence</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_fence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="42" column="19" bodyfile="graphics/cbringbuffer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1afb8b052ddda4af6747fcf9682d90ce7c" prot="private" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 tiny::FrameRingBuffer::m_fenceValue</definition>
+        <argsstring></argsstring>
+        <name>m_fenceValue</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_fenceValue</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="43" column="32" bodyfile="graphics/cbringbuffer.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1a0e03cf2162a47ae0760dd2c9d749d8cc" prot="private" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE tiny::FrameRingBuffer::m_fenceEvent</definition>
+        <argsstring></argsstring>
+        <name>m_fenceEvent</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_fenceEvent</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="44" column="32" bodyfile="graphics/cbringbuffer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1a54e996208d8907d9142b7c02ed6f7779" prot="private" static="no" mutable="no">
+        <type>ID3D12CommandQueue *</type>
+        <definition>ID3D12CommandQueue* tiny::FrameRingBuffer::m_queue</definition>
+        <argsstring></argsstring>
+        <name>m_queue</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_queue</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="45" column="28" bodyfile="graphics/cbringbuffer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_ring_buffer_1ac0cd35f9795edb5386fb8a4d3c7d26f1" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::FrameRingBuffer::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <qualifiedname>tiny::FrameRingBuffer::m_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="46" column="32" bodyfile="graphics/cbringbuffer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_frame_ring_buffer_1a7fe8162d0a7b62ccfa412daa30f20b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::FrameRingBuffer::FrameRingBuffer</definition>
+        <argsstring>()=default</argsstring>
+        <name>FrameRingBuffer</name>
+        <qualifiedname>tiny::FrameRingBuffer::FrameRingBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_ring_buffer_1aaa997984908d1fa420705627dcd475bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::FrameRingBuffer::~FrameRingBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~FrameRingBuffer</name>
+        <qualifiedname>tiny::FrameRingBuffer::~FrameRingBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="25" column="9" bodyfile="graphics/cbringbuffer.cpp" bodystart="10" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_ring_buffer_1a2a04577f6fed1c9d799ab2a3cd80704a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FrameRingBuffer::Initialize</definition>
+        <argsstring>(ID3D12Device *device, ID3D12CommandQueue *queue, size_t bufferSize)</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>tiny::FrameRingBuffer::Initialize</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>ID3D12CommandQueue *</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="26" column="14" bodyfile="graphics/cbringbuffer.cpp" bodystart="24" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_ring_buffer_1acea481e02f5b7df5dcea4a995bfbadaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_frame_ring_buffer_1_1_allocation" kindref="compound">Allocation</ref></type>
+        <definition>FrameRingBuffer::Allocation tiny::FrameRingBuffer::Allocate</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Allocate</name>
+        <qualifiedname>tiny::FrameRingBuffer::Allocate</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="27" column="20" bodyfile="graphics/cbringbuffer.cpp" bodystart="75" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtiny_1_1_frame_ring_buffer_1a22e6722f9fdb5d5e2a867207fc20a49e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FrameRingBuffer::DiscardCompleted</definition>
+        <argsstring>()</argsstring>
+        <name>DiscardCompleted</name>
+        <qualifiedname>tiny::FrameRingBuffer::DiscardCompleted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.h" line="48" column="14" bodyfile="graphics/cbringbuffer.cpp" bodystart="66" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/cbringbuffer.h" line="13" column="5" bodyfile="graphics/cbringbuffer.h" bodystart="14" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_frame_ring_buffer_1acea481e02f5b7df5dcea4a995bfbadaa" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>Allocate</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a22e6722f9fdb5d5e2a867207fc20a49e" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>DiscardCompleted</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a7fe8162d0a7b62ccfa412daa30f20b67" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>FrameRingBuffer</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a2a04577f6fed1c9d799ab2a3cd80704a" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>Initialize</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1ae2661c8ea618b88599494e031a554f67" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_buffer</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1abed2c5f799f1838b1a27f61a97eff180" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_bufferSize</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a25617c005fdd38213dd72b8edfa5f661" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_fence</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a0e03cf2162a47ae0760dd2c9d749d8cc" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_fenceEvent</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1afb8b052ddda4af6747fcf9682d90ce7c" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_fenceValue</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1af64482c73339682a5ea9d81cd9714ea2" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_head</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a6f23201ddceb94ca9fa53ae3adf3da7e" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_mappedData</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1ac0cd35f9795edb5386fb8a4d3c7d26f1" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_mutex</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a6d12b7ae7513840f562bb63945b23255" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_pending</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1a54e996208d8907d9142b7c02ed6f7779" prot="private" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>m_queue</name></member>
+      <member refid="classtiny_1_1_frame_ring_buffer_1aaa997984908d1fa420705627dcd475bc" prot="public" virt="non-virtual"><scope>tiny::FrameRingBuffer</scope><name>~FrameRingBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

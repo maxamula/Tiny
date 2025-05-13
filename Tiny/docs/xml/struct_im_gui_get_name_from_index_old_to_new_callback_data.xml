@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_get_name_from_index_old_to_new_callback_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiGetNameFromIndexOldToNewCallbackData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_get_name_from_index_old_to_new_callback_data_1ab5145665995e4fd93266c2b14ae4d199" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiGetNameFromIndexOldToNewCallbackData::UserData</definition>
+        <argsstring></argsstring>
+        <name>UserData</name>
+        <qualifiedname>ImGuiGetNameFromIndexOldToNewCallbackData::UserData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="1960" column="53" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1960" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_get_name_from_index_old_to_new_callback_data_1a0f4f47e5e5bd3423af79a2aed4487c76" prot="public" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* ImGuiGetNameFromIndexOldToNewCallbackData::OldCallback) (void *, int, const char **)</definition>
+        <argsstring>)(void *, int, const char **)</argsstring>
+        <name>OldCallback</name>
+        <qualifiedname>ImGuiGetNameFromIndexOldToNewCallbackData::OldCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_widgets.cpp" line="1960" column="62" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1960" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_widgets.cpp" line="1960" column="1" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="1960" bodyend="1960"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_get_name_from_index_old_to_new_callback_data_1a0f4f47e5e5bd3423af79a2aed4487c76" prot="public" virt="non-virtual"><scope>ImGuiGetNameFromIndexOldToNewCallbackData</scope><name>OldCallback</name></member>
+      <member refid="struct_im_gui_get_name_from_index_old_to_new_callback_data_1ab5145665995e4fd93266c2b14ae4d199" prot="public" virt="non-virtual"><scope>ImGuiGetNameFromIndexOldToNewCallbackData</scope><name>UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

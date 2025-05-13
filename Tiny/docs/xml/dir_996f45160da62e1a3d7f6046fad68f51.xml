@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_996f45160da62e1a3d7f6046fad68f51" kind="dir">
+    <compoundname>engine</compoundname>
+    <innerfile refid="application_8cpp">application.cpp</innerfile>
+    <innerfile refid="application_8h">application.h</innerfile>
+    <innerfile refid="camera_8cpp">camera.cpp</innerfile>
+    <innerfile refid="camera_8h">camera.h</innerfile>
+    <innerfile refid="scene_8cpp">scene.cpp</innerfile>
+    <innerfile refid="scene_8h">scene.h</innerfile>
+    <innerfile refid="window__internal_8h">window_internal.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_copy_queue" kind="class" language="C++" prot="public">
+    <compoundname>tiny::CopyQueue</compoundname>
+    <includes refid="copyqueue_8h" local="no">copyqueue.h</includes>
+    <innerclass refid="structtiny_1_1_copy_queue_1_1_c_o_p_y___f_r_a_m_e" prot="private">tiny::CopyQueue::COPY_FRAME</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1a1204f6c26b0d51ca4c3aaee04935e990" prot="private" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12CommandQueue &gt;</type>
+        <definition>CComPtr&lt;ID3D12CommandQueue&gt; tiny::CopyQueue::mCommandQueue</definition>
+        <argsstring></argsstring>
+        <name>mCommandQueue</name>
+        <qualifiedname>tiny::CopyQueue::mCommandQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="39" column="17" bodyfile="graphics/copyqueue.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1a975559439782070dc1b6f3271cc11d55" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; COPY_FRAME &gt;</type>
+        <definition>std::vector&lt;COPY_FRAME&gt; tiny::CopyQueue::mCopyFrames</definition>
+        <argsstring></argsstring>
+        <name>mCopyFrames</name>
+        <qualifiedname>tiny::CopyQueue::mCopyFrames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="40" column="25" bodyfile="graphics/copyqueue.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1ae62f9350d2bc28b79033629f89049f64" prot="private" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12Fence &gt;</type>
+        <definition>CComPtr&lt;ID3D12Fence&gt; tiny::CopyQueue::mFence</definition>
+        <argsstring></argsstring>
+        <name>mFence</name>
+        <qualifiedname>tiny::CopyQueue::mFence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="41" column="24" bodyfile="graphics/copyqueue.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1a47a555a463d06f1a4a9641a16abf62d9" prot="private" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE tiny::CopyQueue::mFenceEvent</definition>
+        <argsstring></argsstring>
+        <name>mFenceEvent</name>
+        <qualifiedname>tiny::CopyQueue::mFenceEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="42" column="7" bodyfile="graphics/copyqueue.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1a8431b135a015e2e33082dbe9992ecb91" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::CopyQueue::mFrameIndex</definition>
+        <argsstring></argsstring>
+        <name>mFrameIndex</name>
+        <qualifiedname>tiny::CopyQueue::mFrameIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="43" column="3" bodyfile="graphics/copyqueue.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1ae68d9bebe207ebead6af8d392209c17a" prot="private" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 tiny::CopyQueue::mNextFenceValue</definition>
+        <argsstring></argsstring>
+        <name>mNextFenceValue</name>
+        <qualifiedname>tiny::CopyQueue::mNextFenceValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="44" column="4" bodyfile="graphics/copyqueue.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_copy_queue_1acfb336d4fe448779ee63933b9d3dcf89" prot="private" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::CopyQueue::mFramesInFlight</definition>
+        <argsstring></argsstring>
+        <name>mFramesInFlight</name>
+        <qualifiedname>tiny::CopyQueue::mFramesInFlight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="45" column="3" bodyfile="graphics/copyqueue.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::CopyQueue::CopyQueue</definition>
+        <argsstring>(u8 bufferCount)</argsstring>
+        <name>CopyQueue</name>
+        <qualifiedname>tiny::CopyQueue::CopyQueue</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>bufferCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="12" column="1" bodyfile="graphics/copyqueue.cpp" bodystart="8" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1ab0dd42d658edcf86c158e760d37119d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::CopyQueue::CopyQueue</definition>
+        <argsstring>(const CopyQueue &amp;)=delete</argsstring>
+        <name>CopyQueue</name>
+        <qualifiedname>tiny::CopyQueue::CopyQueue</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a7bb61e9953858d4da33be5b2e0a10b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::CopyQueue::CopyQueue</definition>
+        <argsstring>(CopyQueue &amp;&amp;)=delete</argsstring>
+        <name>CopyQueue</name>
+        <qualifiedname>tiny::CopyQueue::CopyQueue</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a1934639916a937a13ab1ca0439f0c59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;</type>
+        <definition>CopyQueue &amp; tiny::CopyQueue::operator=</definition>
+        <argsstring>(const CopyQueue &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::CopyQueue::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="15" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a474069225a0b153f8d610dc761f8bccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;</type>
+        <definition>CopyQueue &amp; tiny::CopyQueue::operator=</definition>
+        <argsstring>(CopyQueue &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::CopyQueue::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="16" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a7436aff325e6f6c1b31d81a82c71f36a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::CopyQueue::~CopyQueue</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CopyQueue</name>
+        <qualifiedname>tiny::CopyQueue::~CopyQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a7a9550bce453992c7da69014ce0c6f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::future&lt; void &gt;</type>
+        <definition>std::future&lt; void &gt; tiny::CopyQueue::CopyResource</definition>
+        <argsstring>(ID3D12Resource *pDstResource, ID3D12Resource *pSrcResource)</argsstring>
+        <name>CopyResource</name>
+        <qualifiedname>tiny::CopyQueue::CopyResource</qualifiedname>
+        <param>
+          <type>ID3D12Resource *</type>
+          <declname>pDstResource</declname>
+        </param>
+        <param>
+          <type>ID3D12Resource *</type>
+          <declname>pSrcResource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="19" column="13" bodyfile="graphics/copyqueue.cpp" bodystart="33" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1ab727b4768dab8c68bccf904f043b7733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::future&lt; void &gt;</type>
+        <definition>std::future&lt; void &gt; tiny::CopyQueue::UpdateSubresource</definition>
+        <argsstring>(ID3D12Resource *pDstResource, ID3D12Resource *pIntermediateResource, UINT64 intermediateOffset, UINT firstSubresource, UINT numSubresources, D3D12_SUBRESOURCE_DATA *pSrcData, D3D12_RESOURCE_STATES state)</argsstring>
+        <name>UpdateSubresource</name>
+        <qualifiedname>tiny::CopyQueue::UpdateSubresource</qualifiedname>
+        <param>
+          <type>ID3D12Resource *</type>
+          <declname>pDstResource</declname>
+        </param>
+        <param>
+          <type>ID3D12Resource *</type>
+          <declname>pIntermediateResource</declname>
+        </param>
+        <param>
+          <type>UINT64</type>
+          <declname>intermediateOffset</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>firstSubresource</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>numSubresources</declname>
+        </param>
+        <param>
+          <type>D3D12_SUBRESOURCE_DATA *</type>
+          <declname>pSrcData</declname>
+        </param>
+        <param>
+          <type>D3D12_RESOURCE_STATES</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="20" column="13" bodyfile="graphics/copyqueue.cpp" bodystart="58" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1aef691c0a04d4fbeacb8389d617b74f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::CopyQueue::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <qualifiedname>tiny::CopyQueue::Flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="22" column="6" bodyfile="graphics/copyqueue.cpp" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1a64bb23c84fb02e53ac78e06b6cb1e64e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>ID3D12CommandQueue *</type>
+        <definition>ID3D12CommandQueue * tiny::CopyQueue::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>tiny::CopyQueue::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="24" column="28" bodyfile="graphics/copyqueue.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtiny_1_1_copy_queue_1ae92989405bfb60fe519ddab112e1643a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::CopyQueue::_WaitForFrame</definition>
+        <argsstring>(u8 frameIndex)</argsstring>
+        <name>_WaitForFrame</name>
+        <qualifiedname>tiny::CopyQueue::_WaitForFrame</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>frameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.h" line="37" column="6" bodyfile="graphics/copyqueue.cpp" bodystart="98" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/copyqueue.h" line="9" column="1" bodyfile="graphics/copyqueue.h" bodystart="10" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_copy_queue_1ae92989405bfb60fe519ddab112e1643a" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>_WaitForFrame</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a0f6737e487ef9ca204432c013d42604a" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>CopyQueue</name></member>
+      <member refid="classtiny_1_1_copy_queue_1ab0dd42d658edcf86c158e760d37119d0" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>CopyQueue</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a7bb61e9953858d4da33be5b2e0a10b74" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>CopyQueue</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a7a9550bce453992c7da69014ce0c6f0d" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>CopyResource</name></member>
+      <member refid="classtiny_1_1_copy_queue_1aef691c0a04d4fbeacb8389d617b74f96" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>Flush</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a1204f6c26b0d51ca4c3aaee04935e990" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mCommandQueue</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a975559439782070dc1b6f3271cc11d55" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mCopyFrames</name></member>
+      <member refid="classtiny_1_1_copy_queue_1ae62f9350d2bc28b79033629f89049f64" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mFence</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a47a555a463d06f1a4a9641a16abf62d9" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mFenceEvent</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a8431b135a015e2e33082dbe9992ecb91" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mFrameIndex</name></member>
+      <member refid="classtiny_1_1_copy_queue_1acfb336d4fe448779ee63933b9d3dcf89" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mFramesInFlight</name></member>
+      <member refid="classtiny_1_1_copy_queue_1ae68d9bebe207ebead6af8d392209c17a" prot="private" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>mNextFenceValue</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a64bb23c84fb02e53ac78e06b6cb1e64e" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>operator*</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a1934639916a937a13ab1ca0439f0c59c" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a474069225a0b153f8d610dc761f8bccb" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_copy_queue_1ab727b4768dab8c68bccf904f043b7733" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>UpdateSubresource</name></member>
+      <member refid="classtiny_1_1_copy_queue_1a7436aff325e6f6c1b31d81a82c71f36a" prot="public" virt="non-virtual"><scope>tiny::CopyQueue</scope><name>~CopyQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

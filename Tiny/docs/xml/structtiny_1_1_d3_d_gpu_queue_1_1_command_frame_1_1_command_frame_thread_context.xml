@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext</compoundname>
+    <includes refid="gpuqueue_8h" local="no">gpuqueue.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context_1a9c4c2c80f90d92f78c9078e5a342087d" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12CommandAllocator &gt;</type>
+        <definition>CComPtr&lt;ID3D12CommandAllocator&gt; tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext::commandAllocator</definition>
+        <argsstring></argsstring>
+        <name>commandAllocator</name>
+        <qualifiedname>tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext::commandAllocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="37" column="8" bodyfile="graphics/gpuqueue.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context_1a4f989a07bb52e76ccee7dd4aace59f6e" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12GraphicsCommandList6 &gt;</type>
+        <definition>CComPtr&lt;ID3D12GraphicsCommandList6&gt; tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext::commandList</definition>
+        <argsstring></argsstring>
+        <name>commandList</name>
+        <qualifiedname>tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext::commandList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuqueue.h" line="38" column="8" bodyfile="graphics/gpuqueue.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/gpuqueue.h" line="35" column="1" bodyfile="graphics/gpuqueue.h" bodystart="36" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context_1a9c4c2c80f90d92f78c9078e5a342087d" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext</scope><name>commandAllocator</name></member>
+      <member refid="structtiny_1_1_d3_d_gpu_queue_1_1_command_frame_1_1_command_frame_thread_context_1a4f989a07bb52e76ccee7dd4aace59f6e" prot="public" virt="non-virtual"><scope>tiny::D3DGpuQueue::CommandFrame::CommandFrameThreadContext</scope><name>commandList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

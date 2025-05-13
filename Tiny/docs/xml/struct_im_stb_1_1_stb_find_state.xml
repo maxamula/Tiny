@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_stb_1_1_stb_find_state" kind="struct" language="C++" prot="public">
+    <compoundname>ImStb::StbFindState</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_stb_1_1_stb_find_state_1a2233226b708f6673b179494a73cfca3d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImStb::StbFindState::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>ImStb::StbFindState::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="515" column="10" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_stb_1_1_stb_find_state_1a7e9bfd008e13aae14cd9cfc7cf9436d1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImStb::StbFindState::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>ImStb::StbFindState::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="515" column="11" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_stb_1_1_stb_find_state_1ac11400edb330bb6170922acf04649798" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImStb::StbFindState::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>ImStb::StbFindState::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="516" column="10" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_stb_1_1_stb_find_state_1a247e22da771844f21e43be8c06dc8069" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImStb::StbFindState::first_char</definition>
+        <argsstring></argsstring>
+        <name>first_char</name>
+        <qualifiedname>ImStb::StbFindState::first_char</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="517" column="8" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_stb_1_1_stb_find_state_1ad5660b469b14d6c8b63bb70af2a4e9eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImStb::StbFindState::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>ImStb::StbFindState::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="517" column="19" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_stb_1_1_stb_find_state_1afd38f31789989cf51f7b6bc358009d15" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImStb::StbFindState::prev_first</definition>
+        <argsstring></argsstring>
+        <name>prev_first</name>
+        <qualifiedname>ImStb::StbFindState::prev_first</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="518" column="8" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="518" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imstb_textedit.h" line="513" column="1" bodyfile="graphics/imgui/imgui_widgets.cpp" bodystart="514" bodyend="519"/>
+    <listofallmembers>
+      <member refid="struct_im_stb_1_1_stb_find_state_1a247e22da771844f21e43be8c06dc8069" prot="public" virt="non-virtual"><scope>ImStb::StbFindState</scope><name>first_char</name></member>
+      <member refid="struct_im_stb_1_1_stb_find_state_1ac11400edb330bb6170922acf04649798" prot="public" virt="non-virtual"><scope>ImStb::StbFindState</scope><name>height</name></member>
+      <member refid="struct_im_stb_1_1_stb_find_state_1ad5660b469b14d6c8b63bb70af2a4e9eb" prot="public" virt="non-virtual"><scope>ImStb::StbFindState</scope><name>length</name></member>
+      <member refid="struct_im_stb_1_1_stb_find_state_1afd38f31789989cf51f7b6bc358009d15" prot="public" virt="non-virtual"><scope>ImStb::StbFindState</scope><name>prev_first</name></member>
+      <member refid="struct_im_stb_1_1_stb_find_state_1a2233226b708f6673b179494a73cfca3d" prot="public" virt="non-virtual"><scope>ImStb::StbFindState</scope><name>x</name></member>
+      <member refid="struct_im_stb_1_1_stb_find_state_1a7e9bfd008e13aae14cd9cfc7cf9436d1" prot="public" virt="non-virtual"><scope>ImStb::StbFindState</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

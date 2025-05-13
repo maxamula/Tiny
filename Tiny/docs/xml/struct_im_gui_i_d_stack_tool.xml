@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_i_d_stack_tool" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiIDStackTool</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_i_d_stack_tool_1ae1069839914addfc1dd8bbab099dfd3e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiIDStackTool::LastActiveFrame</definition>
+        <argsstring></argsstring>
+        <name>LastActiveFrame</name>
+        <qualifiedname>ImGuiIDStackTool::LastActiveFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1831" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_i_d_stack_tool_1a85337ea4972ddb26e3cd3bad5ccc3258" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiIDStackTool::StackLevel</definition>
+        <argsstring></argsstring>
+        <name>StackLevel</name>
+        <qualifiedname>ImGuiIDStackTool::StackLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1832" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_i_d_stack_tool_1ae826b9b0aa19cedbdeded02fff54c08a" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiIDStackTool::QueryId</definition>
+        <argsstring></argsstring>
+        <name>QueryId</name>
+        <qualifiedname>ImGuiIDStackTool::QueryId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1833" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_i_d_stack_tool_1a1aa81f4825d92fc4d752ebbafd4beb63" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_stack_level_info" kindref="compound">ImGuiStackLevelInfo</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiStackLevelInfo&gt; ImGuiIDStackTool::Results</definition>
+        <argsstring></argsstring>
+        <name>Results</name>
+        <qualifiedname>ImGuiIDStackTool::Results</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1834" column="14" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_i_d_stack_tool_1aaebb6e969588c693a99e80063fd49922" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiIDStackTool::CopyToClipboardOnCtrlC</definition>
+        <argsstring></argsstring>
+        <name>CopyToClipboardOnCtrlC</name>
+        <qualifiedname>ImGuiIDStackTool::CopyToClipboardOnCtrlC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1835" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_i_d_stack_tool_1a680d15ba9625192974411c5ef072d0e4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiIDStackTool::CopyToClipboardLastTime</definition>
+        <argsstring></argsstring>
+        <name>CopyToClipboardLastTime</name>
+        <qualifiedname>ImGuiIDStackTool::CopyToClipboardLastTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1836" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1836" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_i_d_stack_tool_1a599f9f74c1728c5b35b05e18f4c81049" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiIDStackTool::ImGuiIDStackTool</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiIDStackTool</name>
+        <qualifiedname>ImGuiIDStackTool::ImGuiIDStackTool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1838" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1838" bodyend="1838"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiIDStackTool</label>
+        <link refid="struct_im_gui_i_d_stack_tool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Results</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImGuiStackLevelInfo</label>
+        <link refid="struct_im_gui_stack_level_info"/>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; ImGuiStackLevelInfo &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1829" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1830" bodyend="1839"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_i_d_stack_tool_1a680d15ba9625192974411c5ef072d0e4" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>CopyToClipboardLastTime</name></member>
+      <member refid="struct_im_gui_i_d_stack_tool_1aaebb6e969588c693a99e80063fd49922" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>CopyToClipboardOnCtrlC</name></member>
+      <member refid="struct_im_gui_i_d_stack_tool_1a599f9f74c1728c5b35b05e18f4c81049" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>ImGuiIDStackTool</name></member>
+      <member refid="struct_im_gui_i_d_stack_tool_1ae1069839914addfc1dd8bbab099dfd3e" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>LastActiveFrame</name></member>
+      <member refid="struct_im_gui_i_d_stack_tool_1ae826b9b0aa19cedbdeded02fff54c08a" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>QueryId</name></member>
+      <member refid="struct_im_gui_i_d_stack_tool_1a1aa81f4825d92fc4d752ebbafd4beb63" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>Results</name></member>
+      <member refid="struct_im_gui_i_d_stack_tool_1a85337ea4972ddb26e3cd3bad5ccc3258" prot="public" virt="non-virtual"><scope>ImGuiIDStackTool</scope><name>StackLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_combo_preview_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiComboPreviewData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_combo_preview_data_1a1a3c9147f5b869275d7a6d51fd6c9ba2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiComboPreviewData::PreviewRect</definition>
+        <argsstring></argsstring>
+        <name>PreviewRect</name>
+        <qualifiedname>ImGuiComboPreviewData::PreviewRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1046" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1046" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_combo_preview_data_1a590261014878e7fd5ef3926ed4877d06" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiComboPreviewData::BackupCursorPos</definition>
+        <argsstring></argsstring>
+        <name>BackupCursorPos</name>
+        <qualifiedname>ImGuiComboPreviewData::BackupCursorPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1047" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_combo_preview_data_1af0bb3913110d97fa885b1c0062b5a224" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiComboPreviewData::BackupCursorMaxPos</definition>
+        <argsstring></argsstring>
+        <name>BackupCursorMaxPos</name>
+        <qualifiedname>ImGuiComboPreviewData::BackupCursorMaxPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1048" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_combo_preview_data_1a4953f30f667c2988a54f627bd36523af" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiComboPreviewData::BackupCursorPosPrevLine</definition>
+        <argsstring></argsstring>
+        <name>BackupCursorPosPrevLine</name>
+        <qualifiedname>ImGuiComboPreviewData::BackupCursorPosPrevLine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1049" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_combo_preview_data_1a5563d91e33a46488ba26d2cfc5576bb4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiComboPreviewData::BackupPrevLineTextBaseOffset</definition>
+        <argsstring></argsstring>
+        <name>BackupPrevLineTextBaseOffset</name>
+        <qualifiedname>ImGuiComboPreviewData::BackupPrevLineTextBaseOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1050" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_combo_preview_data_1a0f923b567fb82135b4980c4a5e9ea0ab" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a86d7bb2ee8297d38b131d8ea7e6430c6" kindref="member">ImGuiLayoutType</ref></type>
+        <definition>ImGuiLayoutType ImGuiComboPreviewData::BackupLayout</definition>
+        <argsstring></argsstring>
+        <name>BackupLayout</name>
+        <qualifiedname>ImGuiComboPreviewData::BackupLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1051" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1051" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_combo_preview_data_1a52eb1c065997a765a30d18ad369e7c2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiComboPreviewData::ImGuiComboPreviewData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiComboPreviewData</name>
+        <qualifiedname>ImGuiComboPreviewData::ImGuiComboPreviewData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1053" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1053" bodyend="1053"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiComboPreviewData</label>
+        <link refid="struct_im_gui_combo_preview_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>PreviewRect</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BackupCursorMaxPos</edgelabel>
+          <edgelabel>BackupCursorPos</edgelabel>
+          <edgelabel>BackupCursorPosPrevLine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1044" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1045" bodyend="1054"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_combo_preview_data_1af0bb3913110d97fa885b1c0062b5a224" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>BackupCursorMaxPos</name></member>
+      <member refid="struct_im_gui_combo_preview_data_1a590261014878e7fd5ef3926ed4877d06" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>BackupCursorPos</name></member>
+      <member refid="struct_im_gui_combo_preview_data_1a4953f30f667c2988a54f627bd36523af" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>BackupCursorPosPrevLine</name></member>
+      <member refid="struct_im_gui_combo_preview_data_1a0f923b567fb82135b4980c4a5e9ea0ab" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>BackupLayout</name></member>
+      <member refid="struct_im_gui_combo_preview_data_1a5563d91e33a46488ba26d2cfc5576bb4" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>BackupPrevLineTextBaseOffset</name></member>
+      <member refid="struct_im_gui_combo_preview_data_1a52eb1c065997a765a30d18ad369e7c2c" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>ImGuiComboPreviewData</name></member>
+      <member refid="struct_im_gui_combo_preview_data_1a1a3c9147f5b869275d7a6d51fd6c9ba2" prot="public" virt="non-virtual"><scope>ImGuiComboPreviewData</scope><name>PreviewRect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

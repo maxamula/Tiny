@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_vector" kind="struct" language="C++" prot="public">
+    <compoundname>ImVector</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="struct_im_vector_1a8bd77e4e7581d8e5f9e98d7c2f3c2a80" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T ImVector&lt; T &gt;::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>ImVector::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1873" column="33" bodyfile="graphics/imgui/imgui.h" bodystart="1873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct_im_vector_1a74b5478f1f6fd471cc71219bce483db6" prot="public" static="no">
+        <type><ref refid="struct_im_vector_1a8bd77e4e7581d8e5f9e98d7c2f3c2a80" kindref="member">value_type</ref> *</type>
+        <definition>typedef value_type* ImVector&lt; T &gt;::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>ImVector::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1874" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="1874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct_im_vector_1aedeac9c5080f9d6ce96ae837768ee4c4" prot="public" static="no">
+        <type>const <ref refid="struct_im_vector_1a8bd77e4e7581d8e5f9e98d7c2f3c2a80" kindref="member">value_type</ref> *</type>
+        <definition>typedef const value_type* ImVector&lt; T &gt;::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>ImVector::const_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1875" column="32" bodyfile="graphics/imgui/imgui.h" bodystart="1875" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_vector_1abbfd157947f66280d27b21d70a16df8d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <qualifiedname>ImVector::Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1868" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_vector_1abd24482b4d30d22e37582e521e5bfb33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::Capacity</definition>
+        <argsstring></argsstring>
+        <name>Capacity</name>
+        <qualifiedname>ImVector::Capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1869" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_vector_1ac0e46e8b30cb079d93c8f0aad7d7cbd0" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* ImVector&lt; T &gt;::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <qualifiedname>ImVector::Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1870" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1870" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_vector_1a547fff373659fd848c3ecc6b25a83f25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImVector&lt; T &gt;::ImVector</definition>
+        <argsstring>()</argsstring>
+        <name>ImVector</name>
+        <qualifiedname>ImVector::ImVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1878" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="1878" bodyend="1878"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a6e2ee59d8b2fa1583617a2110a56aed4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImVector&lt; T &gt;::ImVector</definition>
+        <argsstring>(const ImVector&lt; T &gt; &amp;src)</argsstring>
+        <name>ImVector</name>
+        <qualifiedname>ImVector::ImVector</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; T &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1879" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="1879" bodyend="1879"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1aa616055e1c04b4b1026ecdb67ce839e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; T &gt; &amp;</type>
+        <definition>ImVector&lt; T &gt; &amp; ImVector&lt; T &gt;::operator=</definition>
+        <argsstring>(const ImVector&lt; T &gt; &amp;src)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ImVector::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; T &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1880" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="1880" bodyend="1880"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a9b782359ca26eaa1a6a6138fcf341c54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImVector&lt; T &gt;::~ImVector</definition>
+        <argsstring>()</argsstring>
+        <name>~ImVector</name>
+        <qualifiedname>ImVector::~ImVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1881" column="12" bodyfile="graphics/imgui/imgui.h" bodystart="1881" bodyend="1881"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ae2d401b4ec5f1113cdb8edb5a61a38f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>ImVector::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1883" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1883" bodyend="1883"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1aed9c986ef3cd59fabbd89355d0023122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::clear_delete</definition>
+        <argsstring>()</argsstring>
+        <name>clear_delete</name>
+        <qualifiedname>ImVector::clear_delete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1884" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1884" bodyend="1884"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ac1ed34eac753156e87e8a92f78dbbe3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::clear_destruct</definition>
+        <argsstring>()</argsstring>
+        <name>clear_destruct</name>
+        <qualifiedname>ImVector::clear_destruct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1885" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1885" bodyend="1885"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1aa53e48a5272f4bad1099368769514ff1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImVector&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ImVector::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1887" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1887" bodyend="1887"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a8c903ecb1aaee0601b6a8ad835a4a435" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ImVector::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1888" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1888" bodyend="1888"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ade9f2e937e47b0e0f9970dcfba038204" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::size_in_bytes</definition>
+        <argsstring>() const</argsstring>
+        <name>size_in_bytes</name>
+        <qualifiedname>ImVector::size_in_bytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1889" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1889" bodyend="1889"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a6df36345c5943c83cf11b8e827584bf9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::max_size</definition>
+        <argsstring>() const</argsstring>
+        <name>max_size</name>
+        <qualifiedname>ImVector::max_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1890" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1890" bodyend="1890"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ac17681baa8b9b5cd97e556da29f9ef73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>capacity</name>
+        <qualifiedname>ImVector::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1891" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1891" bodyend="1891"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1aec87a57a48b7c07e636f338b6113935b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ImVector&lt; T &gt;::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ImVector::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1892" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1892" bodyend="1892"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a1aac88ee8dded24c94801a41ed41b793" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ImVector&lt; T &gt;::operator[]</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ImVector::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1893" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1893" bodyend="1893"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ab48ae48675fa779e29c9ae5892bb99f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>ImVector::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1895" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1895" bodyend="1895"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a1e10cf9afeb244d7d42131682531f865" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * ImVector&lt; T &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>ImVector::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1896" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1896" bodyend="1896"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a278ca772697b2b2139d3b8add336a249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>ImVector::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1897" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1897" bodyend="1897"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a457ca3fb7345e1b21c59fc196dd08607" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * ImVector&lt; T &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>ImVector::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1898" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1898" bodyend="1898"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a5a21f508086337de2f6739701d22f721" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ImVector&lt; T &gt;::front</definition>
+        <argsstring>()</argsstring>
+        <name>front</name>
+        <qualifiedname>ImVector::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1899" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1899" bodyend="1899"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a6f55b8b7351295c06eeb4f4f28af14ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ImVector&lt; T &gt;::front</definition>
+        <argsstring>() const</argsstring>
+        <name>front</name>
+        <qualifiedname>ImVector::front</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1900" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1900" bodyend="1900"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a2d80e87e81b1b01143c8d8be93e6fde1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ImVector&lt; T &gt;::back</definition>
+        <argsstring>()</argsstring>
+        <name>back</name>
+        <qualifiedname>ImVector::back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1901" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1901" bodyend="1901"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ab46e61c71932385c2ee96d1dfc94546a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ImVector&lt; T &gt;::back</definition>
+        <argsstring>() const</argsstring>
+        <name>back</name>
+        <qualifiedname>ImVector::back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1902" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1902" bodyend="1902"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1afcec0d2a1e28aebe412b6efd06f0a77a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::swap</definition>
+        <argsstring>(ImVector&lt; T &gt; &amp;rhs)</argsstring>
+        <name>swap</name>
+        <qualifiedname>ImVector::swap</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1903" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1903" bodyend="1903"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a3a097635d464b1b70dc7d59996a88b28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::_grow_capacity</definition>
+        <argsstring>(int sz) const</argsstring>
+        <name>_grow_capacity</name>
+        <qualifiedname>ImVector::_grow_capacity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1905" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1905" bodyend="1905"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1ac371dd62e56ae486b1a5038cf07eee56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::resize</definition>
+        <argsstring>(int new_size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>ImVector::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1906" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1906" bodyend="1906"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1abe7f21776ecfb7d0214963fd8c0689f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::resize</definition>
+        <argsstring>(int new_size, const T &amp;v)</argsstring>
+        <name>resize</name>
+        <qualifiedname>ImVector::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_size</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1907" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1907" bodyend="1907"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a8dafcce1e393244890f52ef1aa490876" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::shrink</definition>
+        <argsstring>(int new_size)</argsstring>
+        <name>shrink</name>
+        <qualifiedname>ImVector::shrink</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1908" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1908" bodyend="1908"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a0f14f5736c3372157856eebb67123b75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::reserve</definition>
+        <argsstring>(int new_capacity)</argsstring>
+        <name>reserve</name>
+        <qualifiedname>ImVector::reserve</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1909" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1909" bodyend="1909"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a4120d4da7804ae0a34aa521dbb8e1994" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::reserve_discard</definition>
+        <argsstring>(int new_capacity)</argsstring>
+        <name>reserve_discard</name>
+        <qualifiedname>ImVector::reserve_discard</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1910" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1910" bodyend="1910"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1aab5df48e0711a48bd12f3206e08c4108" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::push_back</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>ImVector::push_back</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1913" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1913" bodyend="1913"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a3db7ce62d3c429effdb893fbf7148c1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::pop_back</definition>
+        <argsstring>()</argsstring>
+        <name>pop_back</name>
+        <qualifiedname>ImVector::pop_back</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1914" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1914" bodyend="1914"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a168658df8e0e1df5698ebe7a69946389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImVector&lt; T &gt;::push_front</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>push_front</name>
+        <qualifiedname>ImVector::push_front</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1915" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1915" bodyend="1915"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a2f88ac70791f2da6d4168d7b29f38f1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::erase</definition>
+        <argsstring>(const T *it)</argsstring>
+        <name>erase</name>
+        <qualifiedname>ImVector::erase</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1916" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1916" bodyend="1916"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a8feb96da4eb8ef13a48dbd2e18cb641d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::erase</definition>
+        <argsstring>(const T *it, const T *it_last)</argsstring>
+        <name>erase</name>
+        <qualifiedname>ImVector::erase</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>it_last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1917" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1917" bodyend="1917"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a87a4cae517c156b73823c5cd5e86378a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::erase_unsorted</definition>
+        <argsstring>(const T *it)</argsstring>
+        <name>erase_unsorted</name>
+        <qualifiedname>ImVector::erase_unsorted</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1918" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1918" bodyend="1918"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a541c8cd4b844f5276f10d160cb500533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::insert</definition>
+        <argsstring>(const T *it, const T &amp;v)</argsstring>
+        <name>insert</name>
+        <qualifiedname>ImVector::insert</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1919" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1919" bodyend="1919"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a2e7860fbde1c721f168b6262d8f14aec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImVector&lt; T &gt;::contains</definition>
+        <argsstring>(const T &amp;v) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>ImVector::contains</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1920" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1920" bodyend="1920"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a406417c3efef769d4bee47df2188831a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImVector&lt; T &gt;::find</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>find</name>
+        <qualifiedname>ImVector::find</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1921" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1921" bodyend="1921"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a1fb6def3d26d7efeae0881e8dffb3f79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T * ImVector&lt; T &gt;::find</definition>
+        <argsstring>(const T &amp;v) const</argsstring>
+        <name>find</name>
+        <qualifiedname>ImVector::find</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1922" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="1922" bodyend="1922"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a374b32265297839b0cd8e2b4c827112a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::find_index</definition>
+        <argsstring>(const T &amp;v) const</argsstring>
+        <name>find_index</name>
+        <qualifiedname>ImVector::find_index</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1923" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1923" bodyend="1923"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a4e9214ecaa413240f76223500dbed912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImVector&lt; T &gt;::find_erase</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>find_erase</name>
+        <qualifiedname>ImVector::find_erase</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1924" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1924" bodyend="1924"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a07f501e40783436616156682ec668327" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImVector&lt; T &gt;::find_erase_unsorted</definition>
+        <argsstring>(const T &amp;v)</argsstring>
+        <name>find_erase_unsorted</name>
+        <qualifiedname>ImVector::find_erase_unsorted</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1925" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1925" bodyend="1925"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_vector_1a3fd48379f807eeb01fb9da39afa30dc7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImVector&lt; T &gt;::index_from_ptr</definition>
+        <argsstring>(const T *it) const</argsstring>
+        <name>index_from_ptr</name>
+        <qualifiedname>ImVector::index_from_ptr</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="1926" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="1926" bodyend="1926"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui.h" line="1866" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="1867" bodyend="1927"/>
+    <listofallmembers>
+      <member refid="struct_im_vector_1a3a097635d464b1b70dc7d59996a88b28" prot="public" virt="non-virtual"><scope>ImVector</scope><name>_grow_capacity</name></member>
+      <member refid="struct_im_vector_1a2d80e87e81b1b01143c8d8be93e6fde1" prot="public" virt="non-virtual"><scope>ImVector</scope><name>back</name></member>
+      <member refid="struct_im_vector_1ab46e61c71932385c2ee96d1dfc94546a" prot="public" virt="non-virtual"><scope>ImVector</scope><name>back</name></member>
+      <member refid="struct_im_vector_1ab48ae48675fa779e29c9ae5892bb99f4" prot="public" virt="non-virtual"><scope>ImVector</scope><name>begin</name></member>
+      <member refid="struct_im_vector_1a1e10cf9afeb244d7d42131682531f865" prot="public" virt="non-virtual"><scope>ImVector</scope><name>begin</name></member>
+      <member refid="struct_im_vector_1abd24482b4d30d22e37582e521e5bfb33" prot="public" virt="non-virtual"><scope>ImVector</scope><name>Capacity</name></member>
+      <member refid="struct_im_vector_1ac17681baa8b9b5cd97e556da29f9ef73" prot="public" virt="non-virtual"><scope>ImVector</scope><name>capacity</name></member>
+      <member refid="struct_im_vector_1ae2d401b4ec5f1113cdb8edb5a61a38f7" prot="public" virt="non-virtual"><scope>ImVector</scope><name>clear</name></member>
+      <member refid="struct_im_vector_1aed9c986ef3cd59fabbd89355d0023122" prot="public" virt="non-virtual"><scope>ImVector</scope><name>clear_delete</name></member>
+      <member refid="struct_im_vector_1ac1ed34eac753156e87e8a92f78dbbe3f" prot="public" virt="non-virtual"><scope>ImVector</scope><name>clear_destruct</name></member>
+      <member refid="struct_im_vector_1aedeac9c5080f9d6ce96ae837768ee4c4" prot="public" virt="non-virtual"><scope>ImVector</scope><name>const_iterator</name></member>
+      <member refid="struct_im_vector_1a2e7860fbde1c721f168b6262d8f14aec" prot="public" virt="non-virtual"><scope>ImVector</scope><name>contains</name></member>
+      <member refid="struct_im_vector_1ac0e46e8b30cb079d93c8f0aad7d7cbd0" prot="public" virt="non-virtual"><scope>ImVector</scope><name>Data</name></member>
+      <member refid="struct_im_vector_1aa53e48a5272f4bad1099368769514ff1" prot="public" virt="non-virtual"><scope>ImVector</scope><name>empty</name></member>
+      <member refid="struct_im_vector_1a278ca772697b2b2139d3b8add336a249" prot="public" virt="non-virtual"><scope>ImVector</scope><name>end</name></member>
+      <member refid="struct_im_vector_1a457ca3fb7345e1b21c59fc196dd08607" prot="public" virt="non-virtual"><scope>ImVector</scope><name>end</name></member>
+      <member refid="struct_im_vector_1a2f88ac70791f2da6d4168d7b29f38f1e" prot="public" virt="non-virtual"><scope>ImVector</scope><name>erase</name></member>
+      <member refid="struct_im_vector_1a8feb96da4eb8ef13a48dbd2e18cb641d" prot="public" virt="non-virtual"><scope>ImVector</scope><name>erase</name></member>
+      <member refid="struct_im_vector_1a87a4cae517c156b73823c5cd5e86378a" prot="public" virt="non-virtual"><scope>ImVector</scope><name>erase_unsorted</name></member>
+      <member refid="struct_im_vector_1a406417c3efef769d4bee47df2188831a" prot="public" virt="non-virtual"><scope>ImVector</scope><name>find</name></member>
+      <member refid="struct_im_vector_1a1fb6def3d26d7efeae0881e8dffb3f79" prot="public" virt="non-virtual"><scope>ImVector</scope><name>find</name></member>
+      <member refid="struct_im_vector_1a4e9214ecaa413240f76223500dbed912" prot="public" virt="non-virtual"><scope>ImVector</scope><name>find_erase</name></member>
+      <member refid="struct_im_vector_1a07f501e40783436616156682ec668327" prot="public" virt="non-virtual"><scope>ImVector</scope><name>find_erase_unsorted</name></member>
+      <member refid="struct_im_vector_1a374b32265297839b0cd8e2b4c827112a" prot="public" virt="non-virtual"><scope>ImVector</scope><name>find_index</name></member>
+      <member refid="struct_im_vector_1a5a21f508086337de2f6739701d22f721" prot="public" virt="non-virtual"><scope>ImVector</scope><name>front</name></member>
+      <member refid="struct_im_vector_1a6f55b8b7351295c06eeb4f4f28af14ae" prot="public" virt="non-virtual"><scope>ImVector</scope><name>front</name></member>
+      <member refid="struct_im_vector_1a547fff373659fd848c3ecc6b25a83f25" prot="public" virt="non-virtual"><scope>ImVector</scope><name>ImVector</name></member>
+      <member refid="struct_im_vector_1a6e2ee59d8b2fa1583617a2110a56aed4" prot="public" virt="non-virtual"><scope>ImVector</scope><name>ImVector</name></member>
+      <member refid="struct_im_vector_1a3fd48379f807eeb01fb9da39afa30dc7" prot="public" virt="non-virtual"><scope>ImVector</scope><name>index_from_ptr</name></member>
+      <member refid="struct_im_vector_1a541c8cd4b844f5276f10d160cb500533" prot="public" virt="non-virtual"><scope>ImVector</scope><name>insert</name></member>
+      <member refid="struct_im_vector_1a74b5478f1f6fd471cc71219bce483db6" prot="public" virt="non-virtual"><scope>ImVector</scope><name>iterator</name></member>
+      <member refid="struct_im_vector_1a6df36345c5943c83cf11b8e827584bf9" prot="public" virt="non-virtual"><scope>ImVector</scope><name>max_size</name></member>
+      <member refid="struct_im_vector_1aa616055e1c04b4b1026ecdb67ce839e7" prot="public" virt="non-virtual"><scope>ImVector</scope><name>operator=</name></member>
+      <member refid="struct_im_vector_1aec87a57a48b7c07e636f338b6113935b" prot="public" virt="non-virtual"><scope>ImVector</scope><name>operator[]</name></member>
+      <member refid="struct_im_vector_1a1aac88ee8dded24c94801a41ed41b793" prot="public" virt="non-virtual"><scope>ImVector</scope><name>operator[]</name></member>
+      <member refid="struct_im_vector_1a3db7ce62d3c429effdb893fbf7148c1c" prot="public" virt="non-virtual"><scope>ImVector</scope><name>pop_back</name></member>
+      <member refid="struct_im_vector_1aab5df48e0711a48bd12f3206e08c4108" prot="public" virt="non-virtual"><scope>ImVector</scope><name>push_back</name></member>
+      <member refid="struct_im_vector_1a168658df8e0e1df5698ebe7a69946389" prot="public" virt="non-virtual"><scope>ImVector</scope><name>push_front</name></member>
+      <member refid="struct_im_vector_1a0f14f5736c3372157856eebb67123b75" prot="public" virt="non-virtual"><scope>ImVector</scope><name>reserve</name></member>
+      <member refid="struct_im_vector_1a4120d4da7804ae0a34aa521dbb8e1994" prot="public" virt="non-virtual"><scope>ImVector</scope><name>reserve_discard</name></member>
+      <member refid="struct_im_vector_1ac371dd62e56ae486b1a5038cf07eee56" prot="public" virt="non-virtual"><scope>ImVector</scope><name>resize</name></member>
+      <member refid="struct_im_vector_1abe7f21776ecfb7d0214963fd8c0689f0" prot="public" virt="non-virtual"><scope>ImVector</scope><name>resize</name></member>
+      <member refid="struct_im_vector_1a8dafcce1e393244890f52ef1aa490876" prot="public" virt="non-virtual"><scope>ImVector</scope><name>shrink</name></member>
+      <member refid="struct_im_vector_1abbfd157947f66280d27b21d70a16df8d" prot="public" virt="non-virtual"><scope>ImVector</scope><name>Size</name></member>
+      <member refid="struct_im_vector_1a8c903ecb1aaee0601b6a8ad835a4a435" prot="public" virt="non-virtual"><scope>ImVector</scope><name>size</name></member>
+      <member refid="struct_im_vector_1ade9f2e937e47b0e0f9970dcfba038204" prot="public" virt="non-virtual"><scope>ImVector</scope><name>size_in_bytes</name></member>
+      <member refid="struct_im_vector_1afcec0d2a1e28aebe412b6efd06f0a77a" prot="public" virt="non-virtual"><scope>ImVector</scope><name>swap</name></member>
+      <member refid="struct_im_vector_1a8bd77e4e7581d8e5f9e98d7c2f3c2a80" prot="public" virt="non-virtual"><scope>ImVector</scope><name>value_type</name></member>
+      <member refid="struct_im_vector_1a9b782359ca26eaa1a6a6138fcf341c54" prot="public" virt="non-virtual"><scope>ImVector</scope><name>~ImVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

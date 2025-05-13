@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_memory_pool_allocator" kind="class" language="C++" prot="public">
+    <compoundname>MemoryPoolAllocator</compoundname>
+    <includes refid="allocators_8h" local="no">allocators.h</includes>
+    <innerclass refid="struct_memory_pool_allocator_1_1_chunk_header" prot="private">MemoryPoolAllocator::ChunkHeader</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename BaseAllocator</type>
+        <defval><ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_memory_pool_allocator_1ab4c7c5c631e451689bc9da392a65194f" prot="public" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool MemoryPoolAllocator&lt; BaseAllocator &gt;::kNeedFree</definition>
+        <argsstring></argsstring>
+        <name>kNeedFree</name>
+        <qualifiedname>MemoryPoolAllocator::kNeedFree</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Tell users that no need to call <ref refid="class_memory_pool_allocator_1a6b180eb150451b4df8b70d827cd1191c" kindref="member">Free()</ref> with this allocator. (concept <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="117" column="23" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_memory_pool_allocator_1aa6db3ea4fb9c40174d77b3fe9b1cccf1" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int MemoryPoolAllocator&lt; BaseAllocator &gt;::kDefaultChunkCapacity</definition>
+        <argsstring></argsstring>
+        <name>kDefaultChunkCapacity</name>
+        <qualifiedname>MemoryPoolAllocator::kDefaultChunkCapacity</qualifiedname>
+        <initializer>= <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gafc9f261644a83884e025727f2090eb99" kindref="member">CEREAL_RAPIDJSON_ALLOCATOR_DEFAULT_CHUNK_CAPACITY</ref></initializer>
+        <briefdescription>
+<para>Default chunk capacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="264" column="22" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a576a6419b3153d1649b36b3f0c74d8b0" prot="private" static="no" mutable="no">
+        <type>ChunkHeader *</type>
+        <definition>ChunkHeader* MemoryPoolAllocator&lt; BaseAllocator &gt;::chunkHead_</definition>
+        <argsstring></argsstring>
+        <name>chunkHead_</name>
+        <qualifiedname>MemoryPoolAllocator::chunkHead_</qualifiedname>
+        <briefdescription>
+<para>Head of the chunk linked-list. Only the head chunk serves allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="275" column="17" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a67909468c193d429a227a74d35c4d8cb" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t MemoryPoolAllocator&lt; BaseAllocator &gt;::chunk_capacity_</definition>
+        <argsstring></argsstring>
+        <name>chunk_capacity_</name>
+        <qualifiedname>MemoryPoolAllocator::chunk_capacity_</qualifiedname>
+        <briefdescription>
+<para>The minimum capacity of chunk when they are allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="276" column="12" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1aa3c4d2503b12acc7d14e4a5da67ac46e" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* MemoryPoolAllocator&lt; BaseAllocator &gt;::userBuffer_</definition>
+        <argsstring></argsstring>
+        <name>userBuffer_</name>
+        <qualifiedname>MemoryPoolAllocator::userBuffer_</qualifiedname>
+        <briefdescription>
+<para>User supplied buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="277" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a628cd7f46e838fb37ceccf65dd17bce6" prot="private" static="no" mutable="no">
+        <type>BaseAllocator *</type>
+        <definition>BaseAllocator* MemoryPoolAllocator&lt; BaseAllocator &gt;::baseAllocator_</definition>
+        <argsstring></argsstring>
+        <name>baseAllocator_</name>
+        <qualifiedname>MemoryPoolAllocator::baseAllocator_</qualifiedname>
+        <briefdescription>
+<para>base allocator for allocating memory chunks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="278" column="19" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_memory_pool_allocator_1a3e1e1bf108de2e6985c6d38964f8e3b9" prot="private" static="no" mutable="no">
+        <type>BaseAllocator *</type>
+        <definition>BaseAllocator* MemoryPoolAllocator&lt; BaseAllocator &gt;::ownBaseAllocator_</definition>
+        <argsstring></argsstring>
+        <name>ownBaseAllocator_</name>
+        <qualifiedname>MemoryPoolAllocator::ownBaseAllocator_</qualifiedname>
+        <briefdescription>
+<para>base allocator created by this object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="279" column="19" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_memory_pool_allocator_1aeec85ac657f242ac5620115141be5209" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::MemoryPoolAllocator</definition>
+        <argsstring>(size_t chunkSize=kDefaultChunkCapacity, BaseAllocator *baseAllocator=0)</argsstring>
+        <name>MemoryPoolAllocator</name>
+        <qualifiedname>MemoryPoolAllocator::MemoryPoolAllocator</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+          <defval>kDefaultChunkCapacity</defval>
+        </param>
+        <param>
+          <type>BaseAllocator *</type>
+          <declname>baseAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with chunkSize. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chunkSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of memory chunk. The default is kDefaultChunkSize. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The allocator for allocating memory chunks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="123" column="5" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a1f0d865093fdb955d956b7a445a8ddbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::MemoryPoolAllocator</definition>
+        <argsstring>(void *buffer, size_t size, size_t chunkSize=kDefaultChunkCapacity, BaseAllocator *baseAllocator=0)</argsstring>
+        <name>MemoryPoolAllocator</name>
+        <qualifiedname>MemoryPoolAllocator::MemoryPoolAllocator</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chunkSize</declname>
+          <defval>kDefaultChunkCapacity</defval>
+        </param>
+        <param>
+          <type>BaseAllocator *</type>
+          <declname>baseAllocator</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with user-supplied buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The user buffer will be used firstly. When it is full, memory pool allocates new chunk with chunk size.</para>
+<para>The user buffer will not be deallocated when this allocator is destructed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User supplied buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the buffer in bytes. It must at least larger than sizeof(ChunkHeader). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chunkSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of memory chunk. The default is kDefaultChunkSize. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The allocator for allocating memory chunks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="138" column="5" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="138" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1ad4eee0ef3cfe8cda31034fbce98b7a9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::~MemoryPoolAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>~MemoryPoolAllocator</name>
+        <qualifiedname>MemoryPoolAllocator::~MemoryPoolAllocator</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This deallocates all memory chunks, excluding the user-supplied buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="152" column="5" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a57bbc80e570db6110901b9a7e36dbda0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MemoryPoolAllocator&lt; BaseAllocator &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>MemoryPoolAllocator::Clear</qualifiedname>
+        <briefdescription>
+<para>Deallocates all memory chunks, excluding the user-supplied buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="158" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="158" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a5672e0833fda2e71ce987911397489ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MemoryPoolAllocator&lt; BaseAllocator &gt;::Capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>Capacity</name>
+        <qualifiedname>MemoryPoolAllocator::Capacity</qualifiedname>
+        <briefdescription>
+<para>Computes the total capacity of allocated memory chunks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>total capacity in bytes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="171" column="12" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1ae7fcf0341c13e899cf488bc7c8949956" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t MemoryPoolAllocator&lt; BaseAllocator &gt;::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <qualifiedname>MemoryPoolAllocator::Size</qualifiedname>
+        <briefdescription>
+<para>Computes the memory blocks allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>total used bytes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="181" column="12" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="181" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a8d300531c1f556172aef1259ff55cb48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * MemoryPoolAllocator&lt; BaseAllocator &gt;::Malloc</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>Malloc</name>
+        <qualifiedname>MemoryPoolAllocator::Malloc</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Allocates a memory block. (concept <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="189" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="189" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a7c273279d361b207ff622d4bdfc63074" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * MemoryPoolAllocator&lt; BaseAllocator &gt;::Realloc</definition>
+        <argsstring>(void *originalPtr, size_t originalSize, size_t newSize)</argsstring>
+        <name>Realloc</name>
+        <qualifiedname>MemoryPoolAllocator::Realloc</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>originalPtr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>originalSize</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+<para>Resizes a memory block (concept <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="204" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="204" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_memory_pool_allocator_1a6b180eb150451b4df8b70d827cd1191c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MemoryPoolAllocator&lt; BaseAllocator &gt;::Free</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>Free</name>
+        <qualifiedname>MemoryPoolAllocator::Free</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Frees a memory block (concept <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="238" column="17" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="238" bodyend="238"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_memory_pool_allocator_1a7b1a55162ad268e8f9e9c4b77e44fe8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MemoryPoolAllocator&lt; BaseAllocator &gt;::MemoryPoolAllocator</definition>
+        <argsstring>(const MemoryPoolAllocator &amp;rhs)</argsstring>
+        <name>MemoryPoolAllocator</name>
+        <qualifiedname>MemoryPoolAllocator::MemoryPoolAllocator</qualifiedname>
+        <param>
+          <type>const <ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor is not permitted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="242" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1adc200f162a774820fcd5ea73107c6c15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref> &amp;</type>
+        <definition>MemoryPoolAllocator &amp; MemoryPoolAllocator&lt; BaseAllocator &gt;::operator=</definition>
+        <argsstring>(const MemoryPoolAllocator &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>MemoryPoolAllocator::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_memory_pool_allocator" kindref="compound">MemoryPoolAllocator</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator is not permitted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="244" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_memory_pool_allocator_1a41bebe49979dc69921519c7556af18fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MemoryPoolAllocator&lt; BaseAllocator &gt;::AddChunk</definition>
+        <argsstring>(size_t capacity)</argsstring>
+        <name>AddChunk</name>
+        <qualifiedname>MemoryPoolAllocator::AddChunk</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new chunk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capacity of the chunk in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if success. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/allocators.h" line="250" column="10" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="250" bodyend="262"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Default memory allocator used by the parser and DOM. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This allocator allocate memory blocks from pre-allocated memory chunks.</para>
+<para>It does not free memory blocks. And <ref refid="class_memory_pool_allocator_1a7c273279d361b207ff622d4bdfc63074" kindref="member">Realloc()</ref> only allocate new memory.</para>
+<para>The memory chunks are allocated by BaseAllocator, which is <ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref> by default.</para>
+<para>User may also supply a buffer as the first chunk.</para>
+<para>If the user-buffer is full then additional chunks are allocated by BaseAllocator.</para>
+<para>The user-buffer is not deallocated by this allocator.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BaseAllocator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the allocator type for allocating memory chunks. Default is <ref refid="class_crt_allocator" kindref="compound">CrtAllocator</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>implements <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref> concept </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="content/cereal/external/rapidjson/allocators.h" line="115" column="1" bodyfile="content/cereal/external/rapidjson/allocators.h" bodystart="115" bodyend="280"/>
+    <listofallmembers>
+      <member refid="class_memory_pool_allocator_1a41bebe49979dc69921519c7556af18fc" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>AddChunk</name></member>
+      <member refid="class_memory_pool_allocator_1a628cd7f46e838fb37ceccf65dd17bce6" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>baseAllocator_</name></member>
+      <member refid="class_memory_pool_allocator_1a5672e0833fda2e71ce987911397489ed" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Capacity</name></member>
+      <member refid="class_memory_pool_allocator_1a67909468c193d429a227a74d35c4d8cb" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>chunk_capacity_</name></member>
+      <member refid="class_memory_pool_allocator_1a576a6419b3153d1649b36b3f0c74d8b0" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>chunkHead_</name></member>
+      <member refid="class_memory_pool_allocator_1a57bbc80e570db6110901b9a7e36dbda0" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Clear</name></member>
+      <member refid="class_memory_pool_allocator_1a6b180eb150451b4df8b70d827cd1191c" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Free</name></member>
+      <member refid="class_memory_pool_allocator_1aa6db3ea4fb9c40174d77b3fe9b1cccf1" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>kDefaultChunkCapacity</name></member>
+      <member refid="class_memory_pool_allocator_1ab4c7c5c631e451689bc9da392a65194f" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>kNeedFree</name></member>
+      <member refid="class_memory_pool_allocator_1a8d300531c1f556172aef1259ff55cb48" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Malloc</name></member>
+      <member refid="class_memory_pool_allocator_1aeec85ac657f242ac5620115141be5209" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>MemoryPoolAllocator</name></member>
+      <member refid="class_memory_pool_allocator_1a1f0d865093fdb955d956b7a445a8ddbf" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>MemoryPoolAllocator</name></member>
+      <member refid="class_memory_pool_allocator_1a7b1a55162ad268e8f9e9c4b77e44fe8a" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>MemoryPoolAllocator</name></member>
+      <member refid="class_memory_pool_allocator_1adc200f162a774820fcd5ea73107c6c15" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>operator=</name></member>
+      <member refid="class_memory_pool_allocator_1a3e1e1bf108de2e6985c6d38964f8e3b9" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>ownBaseAllocator_</name></member>
+      <member refid="class_memory_pool_allocator_1a7c273279d361b207ff622d4bdfc63074" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Realloc</name></member>
+      <member refid="class_memory_pool_allocator_1ae7fcf0341c13e899cf488bc7c8949956" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>Size</name></member>
+      <member refid="class_memory_pool_allocator_1aa3c4d2503b12acc7d14e4a5da67ac46e" prot="private" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>userBuffer_</name></member>
+      <member refid="class_memory_pool_allocator_1ad4eee0ef3cfe8cda31034fbce98b7a9b" prot="public" virt="non-virtual"><scope>MemoryPoolAllocator</scope><name>~MemoryPoolAllocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

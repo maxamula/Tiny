@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_mesh" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::Mesh</compoundname>
+    <includes refid="content_8h" local="no">content.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1a65097d2b18a9ccd45e47cf7b5b76e5e0" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::Mesh::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::Mesh::__pad0__</qualifiedname>
+        <bitfield> CComPtr&lt;ID3D12Resource&gt; vertexBuffer</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="68" column="1" bodyfile="content/content.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1aeef7072675261ee4e352f85b9ddfd220" prot="public" static="no" mutable="no">
+        <type>CComPtr&lt; ID3D12Resource &gt;</type>
+        <definition>CComPtr&lt;ID3D12Resource&gt; tiny::Mesh::indexBuffer</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer</name>
+        <qualifiedname>tiny::Mesh::indexBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="70" column="9" bodyfile="content/content.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1a1d44fc80a14b9de16eb6f645e7c3c49f" prot="public" static="no" mutable="no">
+        <type>D3D12_INDEX_BUFFER_VIEW</type>
+        <definition>D3D12_INDEX_BUFFER_VIEW tiny::Mesh::indexBufferView</definition>
+        <argsstring></argsstring>
+        <name>indexBufferView</name>
+        <qualifiedname>tiny::Mesh::indexBufferView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="71" column="25" bodyfile="content/content.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1adf4e518c96a0ebba28ad95d9d886f2c2" prot="public" static="no" mutable="no">
+        <type>D3D12_VERTEX_BUFFER_VIEW</type>
+        <definition>D3D12_VERTEX_BUFFER_VIEW tiny::Mesh::vertexBufferView</definition>
+        <argsstring></argsstring>
+        <name>vertexBufferView</name>
+        <qualifiedname>tiny::Mesh::vertexBufferView</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="72" column="26" bodyfile="content/content.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1a474eac931969eff5b116d46101d88d7f" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::Mesh::numIndices</definition>
+        <argsstring></argsstring>
+        <name>numIndices</name>
+        <qualifiedname>tiny::Mesh::numIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="73" column="5" bodyfile="content/content.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1adc68a1d38c3dd04c5c13ddf584a351a3" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::Mesh::numVertices</definition>
+        <argsstring></argsstring>
+        <name>numVertices</name>
+        <qualifiedname>tiny::Mesh::numVertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="74" column="5" bodyfile="content/content.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_mesh_1a9839c79a2dfce3dde71f335024427613" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 tiny::Mesh::inputAttributes</definition>
+        <argsstring></argsstring>
+        <name>inputAttributes</name>
+        <qualifiedname>tiny::Mesh::inputAttributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="75" column="4" bodyfile="content/content.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="content/content.h" line="66" column="1" bodyfile="content/content.h" bodystart="67" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_mesh_1a65097d2b18a9ccd45e47cf7b5b76e5e0" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_mesh_1aeef7072675261ee4e352f85b9ddfd220" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>indexBuffer</name></member>
+      <member refid="structtiny_1_1_mesh_1a1d44fc80a14b9de16eb6f645e7c3c49f" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>indexBufferView</name></member>
+      <member refid="structtiny_1_1_mesh_1a9839c79a2dfce3dde71f335024427613" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>inputAttributes</name></member>
+      <member refid="structtiny_1_1_mesh_1a474eac931969eff5b116d46101d88d7f" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>numIndices</name></member>
+      <member refid="structtiny_1_1_mesh_1adc68a1d38c3dd04c5c13ddf584a351a3" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>numVertices</name></member>
+      <member refid="structtiny_1_1_mesh_1adf4e518c96a0ebba28ad95d9d886f2c2" prot="public" virt="non-virtual"><scope>tiny::Mesh</scope><name>vertexBufferView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

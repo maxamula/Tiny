@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui___impl_d_x12___render_buffers" kind="struct" language="C++" prot="public">
+    <compoundname>ImGui_ImplDX12_RenderBuffers</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui___impl_d_x12___render_buffers_1adea8d9622af0a5c6376f4b98840b0812" prot="public" static="no" mutable="no">
+        <type>ID3D12Resource *</type>
+        <definition>ID3D12Resource* ImGui_ImplDX12_RenderBuffers::IndexBuffer</definition>
+        <argsstring></argsstring>
+        <name>IndexBuffer</name>
+        <qualifiedname>ImGui_ImplDX12_RenderBuffers::IndexBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.cpp" line="86" column="24" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_d_x12___render_buffers_1a5ffee1b7a7d728d15dfd33739819101c" prot="public" static="no" mutable="no">
+        <type>ID3D12Resource *</type>
+        <definition>ID3D12Resource* ImGui_ImplDX12_RenderBuffers::VertexBuffer</definition>
+        <argsstring></argsstring>
+        <name>VertexBuffer</name>
+        <qualifiedname>ImGui_ImplDX12_RenderBuffers::VertexBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.cpp" line="87" column="24" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_d_x12___render_buffers_1a29214b15eceea549928373591e877640" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGui_ImplDX12_RenderBuffers::IndexBufferSize</definition>
+        <argsstring></argsstring>
+        <name>IndexBufferSize</name>
+        <qualifiedname>ImGui_ImplDX12_RenderBuffers::IndexBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.cpp" line="88" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui___impl_d_x12___render_buffers_1a6643010c24e4046769271a36d596398a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGui_ImplDX12_RenderBuffers::VertexBufferSize</definition>
+        <argsstring></argsstring>
+        <name>VertexBufferSize</name>
+        <qualifiedname>ImGui_ImplDX12_RenderBuffers::VertexBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.cpp" line="89" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_impl_dx12.cpp" line="84" column="1" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="85" bodyend="90"/>
+    <listofallmembers>
+      <member refid="struct_im_gui___impl_d_x12___render_buffers_1adea8d9622af0a5c6376f4b98840b0812" prot="public" virt="non-virtual"><scope>ImGui_ImplDX12_RenderBuffers</scope><name>IndexBuffer</name></member>
+      <member refid="struct_im_gui___impl_d_x12___render_buffers_1a29214b15eceea549928373591e877640" prot="public" virt="non-virtual"><scope>ImGui_ImplDX12_RenderBuffers</scope><name>IndexBufferSize</name></member>
+      <member refid="struct_im_gui___impl_d_x12___render_buffers_1a5ffee1b7a7d728d15dfd33739819101c" prot="public" virt="non-virtual"><scope>ImGui_ImplDX12_RenderBuffers</scope><name>VertexBuffer</name></member>
+      <member refid="struct_im_gui___impl_d_x12___render_buffers_1a6643010c24e4046769271a36d596398a" prot="public" virt="non-virtual"><scope>ImGui_ImplDX12_RenderBuffers</scope><name>VertexBufferSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

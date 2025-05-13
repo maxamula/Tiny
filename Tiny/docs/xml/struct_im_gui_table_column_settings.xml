@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_table_column_settings" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTableColumnSettings</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1aebe7c9f3741414220444af5bc9515244" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTableColumnSettings::WidthOrWeight</definition>
+        <argsstring></argsstring>
+        <name>WidthOrWeight</name>
+        <qualifiedname>ImGuiTableColumnSettings::WidthOrWeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2846" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1a8b68ca3c4df704ce887e11e9b2a4ac8b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTableColumnSettings::UserID</definition>
+        <argsstring></argsstring>
+        <name>UserID</name>
+        <qualifiedname>ImGuiTableColumnSettings::UserID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2847" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1aaead6c42b6af8f565fbc8c927f944cec" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTableColumnSettings::Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <qualifiedname>ImGuiTableColumnSettings::Index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2848" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1aabe71d9f937cfc3dc75c29510ee4c528" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTableColumnSettings::DisplayOrder</definition>
+        <argsstring></argsstring>
+        <name>DisplayOrder</name>
+        <qualifiedname>ImGuiTableColumnSettings::DisplayOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2849" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1a02bbac8295bbbdc8e5d7b53925340c9e" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1ae77491f08fc0762c8a390c9ea8e2a7e7" kindref="member">ImGuiTableColumnIdx</ref></type>
+        <definition>ImGuiTableColumnIdx ImGuiTableColumnSettings::SortOrder</definition>
+        <argsstring></argsstring>
+        <name>SortOrder</name>
+        <qualifiedname>ImGuiTableColumnSettings::SortOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2850" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1ac080684798a74d8c0a52e5ee383f5f4c" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3834dc55ff790956b09b4baf387e2fe5" kindref="member">ImU8</ref></type>
+        <definition>ImU8 ImGuiTableColumnSettings::SortDirection</definition>
+        <argsstring></argsstring>
+        <name>SortDirection</name>
+        <qualifiedname>ImGuiTableColumnSettings::SortDirection</qualifiedname>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2851" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1a0da1644ba45d3b5df029afa27568b8af" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3834dc55ff790956b09b4baf387e2fe5" kindref="member">ImU8</ref></type>
+        <definition>ImU8 ImGuiTableColumnSettings::IsEnabled</definition>
+        <argsstring></argsstring>
+        <name>IsEnabled</name>
+        <qualifiedname>ImGuiTableColumnSettings::IsEnabled</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2852" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_column_settings_1aba294c8530cde8eaaafc15423c5ad45b" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3834dc55ff790956b09b4baf387e2fe5" kindref="member">ImU8</ref></type>
+        <definition>ImU8 ImGuiTableColumnSettings::IsStretch</definition>
+        <argsstring></argsstring>
+        <name>IsStretch</name>
+        <qualifiedname>ImGuiTableColumnSettings::IsStretch</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2853" column="29" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2853" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_table_column_settings_1ac45c9010562d52674cce08cf2cc41568" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTableColumnSettings::ImGuiTableColumnSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTableColumnSettings</name>
+        <qualifiedname>ImGuiTableColumnSettings::ImGuiTableColumnSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2855" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2855" bodyend="2864"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="2844" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2845" bodyend="2865"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_table_column_settings_1aabe71d9f937cfc3dc75c29510ee4c528" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>DisplayOrder</name></member>
+      <member refid="struct_im_gui_table_column_settings_1ac45c9010562d52674cce08cf2cc41568" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>ImGuiTableColumnSettings</name></member>
+      <member refid="struct_im_gui_table_column_settings_1aaead6c42b6af8f565fbc8c927f944cec" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>Index</name></member>
+      <member refid="struct_im_gui_table_column_settings_1a0da1644ba45d3b5df029afa27568b8af" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>IsEnabled</name></member>
+      <member refid="struct_im_gui_table_column_settings_1aba294c8530cde8eaaafc15423c5ad45b" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>IsStretch</name></member>
+      <member refid="struct_im_gui_table_column_settings_1ac080684798a74d8c0a52e5ee383f5f4c" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>SortDirection</name></member>
+      <member refid="struct_im_gui_table_column_settings_1a02bbac8295bbbdc8e5d7b53925340c9e" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>SortOrder</name></member>
+      <member refid="struct_im_gui_table_column_settings_1a8b68ca3c4df704ce887e11e9b2a4ac8b" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>UserID</name></member>
+      <member refid="struct_im_gui_table_column_settings_1aebe7c9f3741414220444af5bc9515244" prot="public" virt="non-virtual"><scope>ImGuiTableColumnSettings</scope><name>WidthOrWeight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_draw_vert" kind="struct" language="C++" prot="public">
+    <compoundname>ImDrawVert</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_draw_vert_1aedc578bbf364ddea71be12b4f177a5b4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImDrawVert::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <qualifiedname>ImDrawVert::pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2586" column="13" bodyfile="graphics/imgui/imgui.h" bodystart="2586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_vert_1abdf3183529055a6c3f709b23a4bf06b1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImDrawVert::uv</definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <qualifiedname>ImDrawVert::uv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2587" column="13" bodyfile="graphics/imgui/imgui.h" bodystart="2587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_draw_vert_1ab98ba53ce2690b56f5ba94682ed83940" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImDrawVert::col</definition>
+        <argsstring></argsstring>
+        <name>col</name>
+        <qualifiedname>ImDrawVert::col</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2588" column="13" bodyfile="graphics/imgui/imgui.h" bodystart="2588" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2584" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2585" bodyend="2589"/>
+    <listofallmembers>
+      <member refid="struct_im_draw_vert_1ab98ba53ce2690b56f5ba94682ed83940" prot="public" virt="non-virtual"><scope>ImDrawVert</scope><name>col</name></member>
+      <member refid="struct_im_draw_vert_1aedc578bbf364ddea71be12b4f177a5b4" prot="public" virt="non-virtual"><scope>ImDrawVert</scope><name>pos</name></member>
+      <member refid="struct_im_draw_vert_1abdf3183529055a6c3f709b23a4bf06b1" prot="public" virt="non-virtual"><scope>ImDrawVert</scope><name>uv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

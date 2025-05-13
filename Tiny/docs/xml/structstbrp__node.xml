@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structstbrp__node" kind="struct" language="C++" prot="public">
+    <compoundname>stbrp_node</compoundname>
+    <includes refid="imstb__rectpack_8h" local="no">imstb_rectpack.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbrp__node_1a45ab31a88025db27d08040d715b129ea" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__rectpack_8h_1a4a396a45893c12de32e2d598abd6b302" kindref="member">stbrp_coord</ref></type>
+        <definition>stbrp_coord stbrp_node::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>stbrp_node::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="181" column="17" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__node_1ad0415cb102a4f37aa45073653307e67e" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__rectpack_8h_1a4a396a45893c12de32e2d598abd6b302" kindref="member">stbrp_coord</ref></type>
+        <definition>stbrp_coord stbrp_node::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>stbrp_node::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="181" column="18" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__node_1a933cb2dd6cddc4fcaf10e3b40634bed4" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbrp__node" kindref="compound">stbrp_node</ref> *</type>
+        <definition>stbrp_node* stbrp_node::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>stbrp_node::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="182" column="16" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>stbrp_node</label>
+        <link refid="structstbrp__node"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imstb_rectpack.h" line="179" column="1" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="180" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structstbrp__node_1a933cb2dd6cddc4fcaf10e3b40634bed4" prot="public" virt="non-virtual"><scope>stbrp_node</scope><name>next</name></member>
+      <member refid="structstbrp__node_1a45ab31a88025db27d08040d715b129ea" prot="public" virt="non-virtual"><scope>stbrp_node</scope><name>x</name></member>
+      <member refid="structstbrp__node_1ad0415cb102a4f37aa45073653307e67e" prot="public" virt="non-virtual"><scope>stbrp_node</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

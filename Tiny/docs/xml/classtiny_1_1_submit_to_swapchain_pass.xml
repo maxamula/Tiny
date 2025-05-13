@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_submit_to_swapchain_pass" kind="class" language="C++" prot="public">
+    <compoundname>tiny::SubmitToSwapchainPass</compoundname>
+    <basecompoundref refid="classtiny_1_1_i_render_pass" prot="public" virt="non-virtual">tiny::IRenderPass</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_submit_to_swapchain_pass_1a596de4b24d14d8033ff332859c1c4fc2" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtiny_1_1_window" kindref="compound">Window</ref> *</type>
+        <definition>const Window* tiny::SubmitToSwapchainPass::pWindow</definition>
+        <argsstring></argsstring>
+        <name>pWindow</name>
+        <qualifiedname>tiny::SubmitToSwapchainPass::pWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="143" column="14" bodyfile="engine/application.cpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_submit_to_swapchain_pass_1a68c2e8ce067fdcc09273f4874a1679e2" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref></type>
+        <definition>const RenderTextureHandle tiny::SubmitToSwapchainPass::targetTexture</definition>
+        <argsstring></argsstring>
+        <name>targetTexture</name>
+        <qualifiedname>tiny::SubmitToSwapchainPass::targetTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="144" column="26" bodyfile="engine/application.cpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_submit_to_swapchain_pass_1a42abef52d71477265300eacc74789e14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::SubmitToSwapchainPass::SubmitToSwapchainPass</definition>
+        <argsstring>(RenderTextureHandle targetTexture, Window *pWindow)</argsstring>
+        <name>SubmitToSwapchainPass</name>
+        <qualifiedname>tiny::SubmitToSwapchainPass::SubmitToSwapchainPass</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref></type>
+          <declname>targetTexture</declname>
+        </param>
+        <param>
+          <type><ref refid="classtiny_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="108" column="1" bodyfile="engine/application.cpp" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_submit_to_swapchain_pass_1ab6573978f10f04e52556855217a5154a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::SubmitToSwapchainPass::~SubmitToSwapchainPass</definition>
+        <argsstring>()=default</argsstring>
+        <name>~SubmitToSwapchainPass</name>
+        <qualifiedname>tiny::SubmitToSwapchainPass::~SubmitToSwapchainPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_submit_to_swapchain_pass_1a4b0621ae6430da16b06c8571f9d9c60f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void tiny::SubmitToSwapchainPass::Setup</definition>
+        <argsstring>(FrameGraph::Builder &amp;builder) override</argsstring>
+        <name>Setup</name>
+        <qualifiedname>tiny::SubmitToSwapchainPass::Setup</qualifiedname>
+        <reimplements refid="classtiny_1_1_i_render_pass_1a1bb24bef78077a26beb2b3e049e85a71">Setup</reimplements>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph_1_1_builder" kindref="compound">FrameGraph::Builder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="113" column="6" bodyfile="engine/application.cpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_submit_to_swapchain_pass_1afd4f679db6ea7e2764d39b47f58e1454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void tiny::SubmitToSwapchainPass::Execute</definition>
+        <argsstring>(RenderContext &amp;context, FrameGraphResources &amp;resources) override</argsstring>
+        <name>Execute</name>
+        <qualifiedname>tiny::SubmitToSwapchainPass::Execute</qualifiedname>
+        <reimplements refid="classtiny_1_1_i_render_pass_1a3cbbca0afaaa0c644c81d3e4c6e9524d">Execute</reimplements>
+        <param>
+          <type><ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref> &amp;</type>
+          <declname>resources</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="118" column="6" bodyfile="engine/application.cpp" bodystart="118" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>tiny::IRenderPass</label>
+        <link refid="classtiny_1_1_i_render_pass"/>
+      </node>
+      <node id="1">
+        <label>tiny::SubmitToSwapchainPass</label>
+        <link refid="classtiny_1_1_submit_to_swapchain_pass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::IRenderPass</label>
+        <link refid="classtiny_1_1_i_render_pass"/>
+      </node>
+      <node id="1">
+        <label>tiny::SubmitToSwapchainPass</label>
+        <link refid="classtiny_1_1_submit_to_swapchain_pass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/application.cpp" line="105" column="1" bodyfile="engine/application.cpp" bodystart="106" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_i_render_pass_1ac9144bdb0b89038daf768d7a978b592a" prot="public" virt="non-virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>EstimateCost</name></member>
+      <member refid="classtiny_1_1_submit_to_swapchain_pass_1afd4f679db6ea7e2764d39b47f58e1454" prot="public" virt="virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>Execute</name></member>
+      <member refid="classtiny_1_1_submit_to_swapchain_pass_1a596de4b24d14d8033ff332859c1c4fc2" prot="private" virt="non-virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>pWindow</name></member>
+      <member refid="classtiny_1_1_submit_to_swapchain_pass_1a4b0621ae6430da16b06c8571f9d9c60f" prot="public" virt="virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>Setup</name></member>
+      <member refid="classtiny_1_1_submit_to_swapchain_pass_1a42abef52d71477265300eacc74789e14" prot="public" virt="non-virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>SubmitToSwapchainPass</name></member>
+      <member refid="classtiny_1_1_submit_to_swapchain_pass_1a68c2e8ce067fdcc09273f4874a1679e2" prot="private" virt="non-virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>targetTexture</name></member>
+      <member refid="classtiny_1_1_i_render_pass_1acdc0504e7a298aa148112b0e4b33d9eb" prot="public" virt="virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>~IRenderPass</name></member>
+      <member refid="classtiny_1_1_submit_to_swapchain_pass_1ab6573978f10f04e52556855217a5154a" prot="public" virt="non-virtual"><scope>tiny::SubmitToSwapchainPass</scope><name>~SubmitToSwapchainPass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_viewport" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiViewport</compoundname>
+    <derivedcompoundref refid="struct_im_gui_viewport_p" prot="public" virt="non-virtual">ImGuiViewportP</derivedcompoundref>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_viewport_1a126b1ea962a2f400031aa67a20208350" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a061453babf70cd864059856178eb8e50" kindref="member">ImGuiViewportFlags</ref></type>
+        <definition>ImGuiViewportFlags ImGuiViewport::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiViewport::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3099" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_1a271ff4e595757a809f237616dd07d525" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewport::Pos</definition>
+        <argsstring></argsstring>
+        <name>Pos</name>
+        <qualifiedname>ImGuiViewport::Pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3100" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_1ab44a78f37dd56cc7581f715485485787" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewport::Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <qualifiedname>ImGuiViewport::Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3101" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_1a9171354583726d867938e93023334d6b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewport::WorkPos</definition>
+        <argsstring></argsstring>
+        <name>WorkPos</name>
+        <qualifiedname>ImGuiViewport::WorkPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3102" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_1ac4c1ce7d912b72b42a14f00c8cefd8d0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewport::WorkSize</definition>
+        <argsstring></argsstring>
+        <name>WorkSize</name>
+        <qualifiedname>ImGuiViewport::WorkSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3103" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_viewport_1ab0c79a0acf985c75f5cadd56ebab8eb5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImGuiViewport::PlatformHandleRaw</definition>
+        <argsstring></argsstring>
+        <name>PlatformHandleRaw</name>
+        <qualifiedname>ImGuiViewport::PlatformHandleRaw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3106" column="24" bodyfile="graphics/imgui/imgui.h" bodystart="3106" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_viewport_1aa195d9a5b7ba8905c5064195a059868c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiViewport::ImGuiViewport</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiViewport</name>
+        <qualifiedname>ImGuiViewport::ImGuiViewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3108" column="5" bodyfile="graphics/imgui/imgui.h" bodystart="3108" bodyend="3108"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_1aecb8b050853aae709f64b82319699bf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewport::GetCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCenter</name>
+        <qualifiedname>ImGuiViewport::GetCenter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3111" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3111" bodyend="3111"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_viewport_1a64a278e84f98efbf67fe0d46b29f686a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImGuiViewport::GetWorkCenter</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWorkCenter</name>
+        <qualifiedname>ImGuiViewport::GetWorkCenter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="3112" column="25" bodyfile="graphics/imgui/imgui.h" bodystart="3112" bodyend="3112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ImGuiViewport</label>
+        <link refid="struct_im_gui_viewport"/>
+      </node>
+      <node id="2">
+        <label>ImGuiViewportP</label>
+        <link refid="struct_im_gui_viewport_p"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiViewport</label>
+        <link refid="struct_im_gui_viewport"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Pos</edgelabel>
+          <edgelabel>Size</edgelabel>
+          <edgelabel>WorkPos</edgelabel>
+          <edgelabel>WorkSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="3097" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="3098" bodyend="3113"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_viewport_1a126b1ea962a2f400031aa67a20208350" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_viewport_1aecb8b050853aae709f64b82319699bf8" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>GetCenter</name></member>
+      <member refid="struct_im_gui_viewport_1a64a278e84f98efbf67fe0d46b29f686a" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>GetWorkCenter</name></member>
+      <member refid="struct_im_gui_viewport_1aa195d9a5b7ba8905c5064195a059868c" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>ImGuiViewport</name></member>
+      <member refid="struct_im_gui_viewport_1ab0c79a0acf985c75f5cadd56ebab8eb5" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>PlatformHandleRaw</name></member>
+      <member refid="struct_im_gui_viewport_1a271ff4e595757a809f237616dd07d525" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>Pos</name></member>
+      <member refid="struct_im_gui_viewport_1ab44a78f37dd56cc7581f715485485787" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>Size</name></member>
+      <member refid="struct_im_gui_viewport_1a9171354583726d867938e93023334d6b" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>WorkPos</name></member>
+      <member refid="struct_im_gui_viewport_1ac4c1ce7d912b72b42a14f00c8cefd8d0" prot="public" virt="non-virtual"><scope>ImGuiViewport</scope><name>WorkSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

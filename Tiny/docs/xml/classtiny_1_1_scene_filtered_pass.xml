@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_scene_filtered_pass" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>tiny::SceneFilteredPass</compoundname>
+    <basecompoundref refid="classtiny_1_1_i_render_pass" prot="public" virt="non-virtual">tiny::IRenderPass</basecompoundref>
+    <derivedcompoundref refid="classtiny_1_1_opaque_pass" prot="public" virt="non-virtual">tiny::OpaquePass</derivedcompoundref>
+    <includes refid="pass_8h" local="no">pass.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_scene_filtered_pass_1a3a39f0fc311c0560e17c4a335341baf4" prot="protected" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::SceneFilteredPass::mPassId</definition>
+        <argsstring></argsstring>
+        <name>mPassId</name>
+        <qualifiedname>tiny::SceneFilteredPass::mPassId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="25" column="5" bodyfile="graphics/pass.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_scene_filtered_pass_1a9f8ac5c51059336dafbd9790fa251ed8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::SceneFilteredPass::SceneFilteredPass</definition>
+        <argsstring>(u16 passId)</argsstring>
+        <name>SceneFilteredPass</name>
+        <qualifiedname>tiny::SceneFilteredPass::SceneFilteredPass</qualifiedname>
+        <param>
+          <type>u16</type>
+          <declname>passId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="20" column="10" bodyfile="graphics/pass.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_scene_filtered_pass_1a70db56082e2e40f078d1d2f8940327dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::SceneFilteredPass::~SceneFilteredPass</definition>
+        <argsstring>()=default</argsstring>
+        <name>~SceneFilteredPass</name>
+        <qualifiedname>tiny::SceneFilteredPass::~SceneFilteredPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_scene_filtered_pass_1a8e6104c9a8b4d6611317e2a9158ec55c" prot="public" static="no" const="no" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void tiny::SceneFilteredPass::Execute</definition>
+        <argsstring>(RenderContext &amp;ctx, FrameGraphResources &amp;res) override final</argsstring>
+        <name>Execute</name>
+        <qualifiedname>tiny::SceneFilteredPass::Execute</qualifiedname>
+        <reimplements refid="classtiny_1_1_i_render_pass_1a3cbbca0afaaa0c644c81d3e4c6e9524d">Execute</reimplements>
+        <param>
+          <type><ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="22" column="6" bodyfile="graphics/pass.cpp" bodystart="10" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_scene_filtered_pass_1a2dfd368fab207bb868b6f1de9ca61d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tiny::SceneFilteredPass::OnRenderItem</definition>
+        <argsstring>(RenderContext &amp;context, FrameGraphResources &amp;res, const ComponentMaterial &amp;material, const ComponentGeometry &amp;geometry)=0</argsstring>
+        <name>OnRenderItem</name>
+        <qualifiedname>tiny::SceneFilteredPass::OnRenderItem</qualifiedname>
+        <reimplementedby refid="classtiny_1_1_opaque_pass_1a12750f63f0b72d3ae7d7c8126946c075">OnRenderItem</reimplementedby>
+        <param>
+          <type><ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref> &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetiny_1a54ce7b4e2aa9ad7c0ffd7544d0be1c1a" kindref="member">ComponentMaterial</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetiny_1ab0b0d86cdc01a22d8bfdf65ded78a834" kindref="member">ComponentGeometry</ref> &amp;</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/pass.h" line="23" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>tiny::IRenderPass</label>
+        <link refid="classtiny_1_1_i_render_pass"/>
+      </node>
+      <node id="3">
+        <label>tiny::OpaquePass</label>
+        <link refid="classtiny_1_1_opaque_pass"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>tiny::SceneFilteredPass</label>
+        <link refid="classtiny_1_1_scene_filtered_pass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::IRenderPass</label>
+        <link refid="classtiny_1_1_i_render_pass"/>
+      </node>
+      <node id="1">
+        <label>tiny::SceneFilteredPass</label>
+        <link refid="classtiny_1_1_scene_filtered_pass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/pass.h" line="17" column="1" bodyfile="graphics/pass.h" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_i_render_pass_1ac9144bdb0b89038daf768d7a978b592a" prot="public" virt="non-virtual"><scope>tiny::SceneFilteredPass</scope><name>EstimateCost</name></member>
+      <member refid="classtiny_1_1_scene_filtered_pass_1a8e6104c9a8b4d6611317e2a9158ec55c" prot="public" virt="virtual"><scope>tiny::SceneFilteredPass</scope><name>Execute</name></member>
+      <member refid="classtiny_1_1_scene_filtered_pass_1a3a39f0fc311c0560e17c4a335341baf4" prot="protected" virt="non-virtual"><scope>tiny::SceneFilteredPass</scope><name>mPassId</name></member>
+      <member refid="classtiny_1_1_scene_filtered_pass_1a2dfd368fab207bb868b6f1de9ca61d47" prot="public" virt="pure-virtual"><scope>tiny::SceneFilteredPass</scope><name>OnRenderItem</name></member>
+      <member refid="classtiny_1_1_scene_filtered_pass_1a9f8ac5c51059336dafbd9790fa251ed8" prot="public" virt="non-virtual"><scope>tiny::SceneFilteredPass</scope><name>SceneFilteredPass</name></member>
+      <member refid="classtiny_1_1_i_render_pass_1a1bb24bef78077a26beb2b3e049e85a71" prot="public" virt="pure-virtual"><scope>tiny::SceneFilteredPass</scope><name>Setup</name></member>
+      <member refid="classtiny_1_1_i_render_pass_1acdc0504e7a298aa148112b0e4b33d9eb" prot="public" virt="virtual"><scope>tiny::SceneFilteredPass</scope><name>~IRenderPass</name></member>
+      <member refid="classtiny_1_1_scene_filtered_pass_1a70db56082e2e40f078d1d2f8940327dc" prot="public" virt="non-virtual"><scope>tiny::SceneFilteredPass</scope><name>~SceneFilteredPass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

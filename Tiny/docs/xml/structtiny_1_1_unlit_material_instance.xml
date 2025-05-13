@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_unlit_material_instance" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::UnlitMaterialInstance</compoundname>
+    <basecompoundref refid="structtiny_1_1fx_1_1_mesh_material_instance" prot="public" virt="non-virtual">tiny::fx::MeshMaterialInstance&lt; UnlitMaterialInstance &gt;</basecompoundref>
+    <includes refid="stdmat_8h" local="no">stdmat.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_unlit_material_instance_1a0a80a993b0d815cc21aa6fc4ba9169b2" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_texture2_d" kindref="compound">Texture2D</ref></type>
+        <definition>Texture2D tiny::UnlitMaterialInstance::diffuseTexture</definition>
+        <argsstring></argsstring>
+        <name>diffuseTexture</name>
+        <qualifiedname>tiny::UnlitMaterialInstance::diffuseTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="32" column="11" bodyfile="content/stdmat.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_unlit_material_instance_1a2b145ceee23acdf52f6e76cfeb3f572b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::UnlitMaterialInstance::TINY_DECLARE_MAT_ID</definition>
+        <argsstring>(UnlitMaterialInstance)</argsstring>
+        <name>TINY_DECLARE_MAT_ID</name>
+        <qualifiedname>tiny::UnlitMaterialInstance::TINY_DECLARE_MAT_ID</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_unlit_material_instance" kindref="compound">UnlitMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.h" line="31" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>tiny::UnlitMaterialInstance</label>
+        <link refid="structtiny_1_1_unlit_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::fx::IMeshMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_mesh_material_instance"/>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MeshMaterialInstance&lt; UnlitMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_mesh_material_instance"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>tiny::DescriptorHandle</label>
+        <link refid="classtiny_1_1_descriptor_handle"/>
+      </node>
+      <node id="4">
+        <label>tiny::Texture2D</label>
+        <link refid="structtiny_1_1_texture2_d"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>srv</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>tiny::UnlitMaterialInstance</label>
+        <link refid="structtiny_1_1_unlit_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>diffuseTexture</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::fx::IMeshMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_mesh_material_instance"/>
+      </node>
+      <node id="2">
+        <label>tiny::fx::MeshMaterialInstance&lt; UnlitMaterialInstance &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_mesh_material_instance"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="content/stdmat.h" line="28" column="1" bodyfile="content/stdmat.h" bodystart="30" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a49f215dbaef4e9561b3b9b6247204883" prot="public" virt="non-virtual"><scope>tiny::UnlitMaterialInstance</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_unlit_material_instance_1a0a80a993b0d815cc21aa6fc4ba9169b2" prot="public" virt="non-virtual"><scope>tiny::UnlitMaterialInstance</scope><name>diffuseTexture</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a07432b0ffb333b9b0de3fcbc382baaa7" prot="public" virt="pure-virtual"><scope>tiny::UnlitMaterialInstance</scope><name>ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_instance_1a87722b0e4cbc370f0b2178bda4265972" prot="public" virt="virtual"><scope>tiny::UnlitMaterialInstance</scope><name>Meta</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1adca24745d74c4e3e33bac44fe9372989" prot="public" virt="non-virtual"><scope>tiny::UnlitMaterialInstance</scope><name>SetFeatureFlags</name></member>
+      <member refid="structtiny_1_1_unlit_material_instance_1a2b145ceee23acdf52f6e76cfeb3f572b" prot="public" virt="non-virtual"><scope>tiny::UnlitMaterialInstance</scope><name>TINY_DECLARE_MAT_ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_mesh_material_instance_1a71e4f0754053a10bc45b5088dbb828d9" prot="public" virt="virtual"><scope>tiny::UnlitMaterialInstance</scope><name>~IMeshMaterialInstance</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_instance_1aa66cbb7a5ed228d77cff864254f82d56" prot="public" virt="virtual"><scope>tiny::UnlitMaterialInstance</scope><name>~MeshMaterialInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

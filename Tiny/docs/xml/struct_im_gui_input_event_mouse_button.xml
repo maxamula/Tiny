@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_input_event_mouse_button" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiInputEventMouseButton</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_button_1a6ecd75641eda3da1c42f977cd705ff03" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiInputEventMouseButton::Button</definition>
+        <argsstring></argsstring>
+        <name>Button</name>
+        <qualifiedname>ImGuiInputEventMouseButton::Button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1338" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_button_1a9a669f2168a719da17c26dc3ad154d65" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiInputEventMouseButton::Down</definition>
+        <argsstring></argsstring>
+        <name>Down</name>
+        <qualifiedname>ImGuiInputEventMouseButton::Down</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1338" column="49" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_button_1accf7f8b2b5e686537cbc1959a36631a6" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3a993a8d676ceae7ca25c4957be9600b" kindref="member">ImGuiMouseSource</ref></type>
+        <definition>ImGuiMouseSource ImGuiInputEventMouseButton::MouseSource</definition>
+        <argsstring></argsstring>
+        <name>MouseSource</name>
+        <qualifiedname>ImGuiInputEventMouseButton::MouseSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1338" column="71" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1338" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1338" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1338" bodyend="1338"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_input_event_mouse_button_1a6ecd75641eda3da1c42f977cd705ff03" prot="public" virt="non-virtual"><scope>ImGuiInputEventMouseButton</scope><name>Button</name></member>
+      <member refid="struct_im_gui_input_event_mouse_button_1a9a669f2168a719da17c26dc3ad154d65" prot="public" virt="non-virtual"><scope>ImGuiInputEventMouseButton</scope><name>Down</name></member>
+      <member refid="struct_im_gui_input_event_mouse_button_1accf7f8b2b5e686537cbc1959a36631a6" prot="public" virt="non-virtual"><scope>ImGuiInputEventMouseButton</scope><name>MouseSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

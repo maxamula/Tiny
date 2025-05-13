@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_stb_textedit_row" kind="struct" language="C++" prot="public">
+    <compoundname>StbTexteditRow</compoundname>
+    <includes refid="imstb__textedit_8h" local="no">imstb_textedit.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_stb_textedit_row_1af30b3e1d61d1acea26d3e0ebec2cb81d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StbTexteditRow::x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <qualifiedname>StbTexteditRow::x0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="370" column="10" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_textedit_row_1a3a3e1a506030c871a1b3d09bf26e341f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StbTexteditRow::x1</definition>
+        <argsstring></argsstring>
+        <name>x1</name>
+        <qualifiedname>StbTexteditRow::x1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="370" column="12" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_textedit_row_1ad2d72b74b1a61e331949c7f7ec311880" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StbTexteditRow::baseline_y_delta</definition>
+        <argsstring></argsstring>
+        <name>baseline_y_delta</name>
+        <qualifiedname>StbTexteditRow::baseline_y_delta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="371" column="10" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_textedit_row_1a707d331bd9dc99d64c81f71106b75eed" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StbTexteditRow::ymin</definition>
+        <argsstring></argsstring>
+        <name>ymin</name>
+        <qualifiedname>StbTexteditRow::ymin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="372" column="10" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_textedit_row_1aab290e15f6a3b4a96ab2c2472cc8a7a5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StbTexteditRow::ymax</definition>
+        <argsstring></argsstring>
+        <name>ymax</name>
+        <qualifiedname>StbTexteditRow::ymax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="372" column="14" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_stb_textedit_row_1a1a19bebadb3f82b4f86ea29698d77084" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StbTexteditRow::num_chars</definition>
+        <argsstring></argsstring>
+        <name>num_chars</name>
+        <qualifiedname>StbTexteditRow::num_chars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_textedit.h" line="373" column="8" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imstb_textedit.h" line="368" column="1" bodyfile="graphics/imgui/imstb_textedit.h" bodystart="369" bodyend="374"/>
+    <listofallmembers>
+      <member refid="struct_stb_textedit_row_1ad2d72b74b1a61e331949c7f7ec311880" prot="public" virt="non-virtual"><scope>StbTexteditRow</scope><name>baseline_y_delta</name></member>
+      <member refid="struct_stb_textedit_row_1a1a19bebadb3f82b4f86ea29698d77084" prot="public" virt="non-virtual"><scope>StbTexteditRow</scope><name>num_chars</name></member>
+      <member refid="struct_stb_textedit_row_1af30b3e1d61d1acea26d3e0ebec2cb81d" prot="public" virt="non-virtual"><scope>StbTexteditRow</scope><name>x0</name></member>
+      <member refid="struct_stb_textedit_row_1a3a3e1a506030c871a1b3d09bf26e341f" prot="public" virt="non-virtual"><scope>StbTexteditRow</scope><name>x1</name></member>
+      <member refid="struct_stb_textedit_row_1aab290e15f6a3b4a96ab2c2472cc8a7a5" prot="public" virt="non-virtual"><scope>StbTexteditRow</scope><name>ymax</name></member>
+      <member refid="struct_stb_textedit_row_1a707d331bd9dc99d64c81f71106b75eed" prot="public" virt="non-virtual"><scope>StbTexteditRow</scope><name>ymin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

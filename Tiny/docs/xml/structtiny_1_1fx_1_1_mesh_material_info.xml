@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_mesh_material_info" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::MeshMaterialInfo</compoundname>
+    <includes refid="registry__internal_8h" local="no">registry_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_material_info_1a292ef586957fca0bae940006c2d304b1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetiny_1_1fx_1ae87e351d57ff1333afe1f08ae2bd1be2" kindref="member">fnMeshMaterialInitializer</ref></type>
+        <definition>fnMeshMaterialInitializer tiny::fx::MeshMaterialInfo::initializer</definition>
+        <argsstring></argsstring>
+        <name>initializer</name>
+        <qualifiedname>tiny::fx::MeshMaterialInfo::initializer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry_internal.h" line="16" column="26" bodyfile="fx/registry_internal.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_material_info_1ab2e3a7d831b9045a33e59f0137e6de13" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetiny_1_1fx_1ad23ba76794ce90cd692edc000db902ec" kindref="member">fnMeshMaterialFactory</ref></type>
+        <definition>fnMeshMaterialFactory tiny::fx::MeshMaterialInfo::factory</definition>
+        <argsstring></argsstring>
+        <name>factory</name>
+        <qualifiedname>tiny::fx::MeshMaterialInfo::factory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry_internal.h" line="17" column="22" bodyfile="fx/registry_internal.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_mesh_material_info_1a7a1e851b63edd939136e380dd1ce5451" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1fx_1_1_mesh_material" kindref="compound">MeshMaterial</ref></type>
+        <definition>MeshMaterial tiny::fx::MeshMaterialInfo::material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <qualifiedname>tiny::fx::MeshMaterialInfo::material</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry_internal.h" line="18" column="13" bodyfile="fx/registry_internal.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::fx::MeshMaterial</label>
+        <link refid="structtiny_1_1fx_1_1_mesh_material"/>
+      </node>
+      <node id="1">
+        <label>tiny::fx::MeshMaterialInfo</label>
+        <link refid="structtiny_1_1fx_1_1_mesh_material_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>initializer</edgelabel>
+          <edgelabel>material</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="fx/registry_internal.h" line="14" column="1" bodyfile="fx/registry_internal.h" bodystart="15" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_info_1ab2e3a7d831b9045a33e59f0137e6de13" prot="public" virt="non-virtual"><scope>tiny::fx::MeshMaterialInfo</scope><name>factory</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_info_1a292ef586957fca0bae940006c2d304b1" prot="public" virt="non-virtual"><scope>tiny::fx::MeshMaterialInfo</scope><name>initializer</name></member>
+      <member refid="structtiny_1_1fx_1_1_mesh_material_info_1a7a1e851b63edd939136e380dd1ce5451" prot="public" virt="non-virtual"><scope>tiny::fx::MeshMaterialInfo</scope><name>material</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

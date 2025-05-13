@@ -17,7 +17,7 @@
 
 namespace tiny
 {
-	class IRenderPass;
+	class RenderPassBase;
 
     constexpr uint32_t InvalidResourceId = UINT32_MAX;
 
@@ -27,13 +27,11 @@ namespace tiny
 
         RenderTextureHandle()
             : Id(InvalidResourceId)
-        {
-        }
+        {}
 
         explicit RenderTextureHandle(uint32_t id)
             : Id(id)
-        {
-        }
+        {}
     };
 
     struct DepthTextureHandle
@@ -42,13 +40,11 @@ namespace tiny
 
         DepthTextureHandle()
             : Id(InvalidResourceId)
-        {
-        }
+        {}
 
         explicit DepthTextureHandle(uint32_t id)
             : Id(id)
-        {
-        }
+        {}
     };
 
     class FrameGraphResources;
@@ -72,10 +68,8 @@ namespace tiny
             friend class FrameGraph;
         };
     public:
-        // States for resource barriers
         enum class ResourceState { Undefined, Read, Write };
 
-        // Register resources before setup
         RenderTextureHandle CreateRenderTexture(const RenderTexture::Desc& desc);
         DepthTextureHandle CreateDepthTexture(const DepthTexture::Desc& desc);
         void Reset();
@@ -102,10 +96,17 @@ namespace tiny
         }
 
         void Compile(D3DContext& d3d);
-        void Execute(ID3D12GraphicsCommandList6* cmd, D3DContext& d3d);
-        void ExecuteAsync(tf::Subflow& sf, D3DContext& d3d, entt::registry& scene);
-
+        void ExecuteAsync(tf::Subflow& sf, D3DContext& d3d, RenderView& view, ID3D12Resource* pBackBuf);
     private:
+        struct FrameTimingData
+        {
+            CComPtr<ID3D12QueryHeap>									timestampHeap;
+            CComPtr<ID3D12Resource>										timestampResult;
+            f64															lastGpuTime;
+        };
+
+        FrameTimingData mFrameTimingData;
+
         void AddDependency(int src, int dst);
         struct RenderResourceInfo
         {
@@ -116,6 +117,7 @@ namespace tiny
             int FirstUseIndex;
             int LastUseIndex;
             int PhysAllocationIndex;
+            D3D12_RESOURCE_STATES      InitialState;
         };
 
         struct DepthResourceInfo
@@ -127,11 +129,12 @@ namespace tiny
             int FirstUseIndex;
             int LastUseIndex;
             int PhysAllocationIndex;
+            D3D12_RESOURCE_STATES      InitialState;
         };
 
         struct PassNode
         {
-            std::shared_ptr<IRenderPass> Pass;
+            std::shared_ptr<RenderPassBase> Pass;
             std::vector<RenderTextureHandle> ReadsRender;
             std::vector<DepthTextureHandle> ReadsDepth;
             std::vector<RenderTextureHandle> WritesRender;
@@ -156,6 +159,10 @@ namespace tiny
         std::vector<RenderTexture> mRenderInstances;
         std::vector<DepthTexture> mDepthInstances;
 
+        std::vector<D3D12_RESOURCE_STATES> mRenderStates;
+        std::vector<D3D12_RESOURCE_STATES> mDepthStates;
+        std::vector<std::vector<CD3DX12_RESOURCE_BARRIER>> mFrameBarriers;
+
     public:
         friend class FrameGraphResources;
     };
@@ -174,8 +181,6 @@ namespace tiny
 
         friend class FrameGraph;
     };
-
-    // Inline template helper
 
     template<typename HandleType>
     bool FrameGraph::Builder::IsHandleInList(const HandleType& handle, const std::vector<HandleType>& list)

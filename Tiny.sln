@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoUnlit", "DemoUnlit\Demo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoCustomRenderer", "DemoCustomRenderer\DemoCustomRenderer.vcxproj", "{989260F0-9020-4189-9484-A90CFC2B5238}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoShaderArtGallery", "DemoShaderArtGallery\DemoShaderArtGallery.vcxproj", "{5864AAFE-D443-482E-A69F-5780CC1E0123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -63,6 +65,14 @@ Global
 		{989260F0-9020-4189-9484-A90CFC2B5238}.Release|x64.Build.0 = Release|x64
 		{989260F0-9020-4189-9484-A90CFC2B5238}.Release|x86.ActiveCfg = Release|Win32
 		{989260F0-9020-4189-9484-A90CFC2B5238}.Release|x86.Build.0 = Release|Win32
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Debug|x64.ActiveCfg = Debug|x64
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Debug|x64.Build.0 = Debug|x64
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Debug|x86.ActiveCfg = Debug|Win32
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Debug|x86.Build.0 = Debug|Win32
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Release|x64.ActiveCfg = Release|x64
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Release|x64.Build.0 = Release|x64
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Release|x86.ActiveCfg = Release|Win32
+		{5864AAFE-D443-482E-A69F-5780CC1E0123}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +80,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{941FA7A8-233E-4DD9-82AD-8240BDAADBFB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{989260F0-9020-4189-9484-A90CFC2B5238} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5864AAFE-D443-482E-A69F-5780CC1E0123} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A763F21-79DF-4204-B98D-FC5212BBEB40}

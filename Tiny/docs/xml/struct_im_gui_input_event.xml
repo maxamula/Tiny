@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_input_event" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiInputEvent</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_input_event_1a21d31c722ff155e2e8896a8012850acd" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a8baf1d40f4b383b021ecbc6719a69aec" kindref="member">ImGuiInputEventType</ref></type>
+        <definition>ImGuiInputEventType ImGuiInputEvent::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>ImGuiInputEvent::Type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1345" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1a8780562e8dbed9ae613760399e8be8df" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a8ee603a145a3a4f4ab5c93c8c8333b78" kindref="member">ImGuiInputSource</ref></type>
+        <definition>ImGuiInputSource ImGuiInputEvent::Source</definition>
+        <argsstring></argsstring>
+        <name>Source</name>
+        <qualifiedname>ImGuiInputEvent::Source</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1346" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1ab508aea0f8dcdbc3f1d5812742b0a459" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a118cff4eeb8d00e7d07ce3d6460eed36" kindref="member">ImU32</ref></type>
+        <definition>ImU32 ImGuiInputEvent::EventId</definition>
+        <argsstring></argsstring>
+        <name>EventId</name>
+        <qualifiedname>ImGuiInputEvent::EventId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1347" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1aa5259390b6478192287966a5f87dd311" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_input_event_mouse_pos" kindref="compound">ImGuiInputEventMousePos</ref></type>
+        <definition>ImGuiInputEventMousePos ImGuiInputEvent::MousePos</definition>
+        <argsstring></argsstring>
+        <name>MousePos</name>
+        <qualifiedname>ImGuiInputEvent::MousePos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1350" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1aa0d1ebe2404e336b61d44fa95874093f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_input_event_mouse_wheel" kindref="compound">ImGuiInputEventMouseWheel</ref></type>
+        <definition>ImGuiInputEventMouseWheel ImGuiInputEvent::MouseWheel</definition>
+        <argsstring></argsstring>
+        <name>MouseWheel</name>
+        <qualifiedname>ImGuiInputEvent::MouseWheel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1351" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1a7e75a2c5682fc93bcded186ddb5ccfab" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_input_event_mouse_button" kindref="compound">ImGuiInputEventMouseButton</ref></type>
+        <definition>ImGuiInputEventMouseButton ImGuiInputEvent::MouseButton</definition>
+        <argsstring></argsstring>
+        <name>MouseButton</name>
+        <qualifiedname>ImGuiInputEvent::MouseButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1352" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1a7739f48af4f0fbad1ca79b5d9f82707e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_input_event_key" kindref="compound">ImGuiInputEventKey</ref></type>
+        <definition>ImGuiInputEventKey ImGuiInputEvent::Key</definition>
+        <argsstring></argsstring>
+        <name>Key</name>
+        <qualifiedname>ImGuiInputEvent::Key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1353" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1aae5e3f7f631cef154a0831e89f608655" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_input_event_text" kindref="compound">ImGuiInputEventText</ref></type>
+        <definition>ImGuiInputEventText ImGuiInputEvent::Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <qualifiedname>ImGuiInputEvent::Text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1354" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1a74fbb441887d8a49f07df0d6dac48692" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_gui_input_event_app_focused" kindref="compound">ImGuiInputEventAppFocused</ref></type>
+        <definition>ImGuiInputEventAppFocused ImGuiInputEvent::AppFocused</definition>
+        <argsstring></argsstring>
+        <name>AppFocused</name>
+        <qualifiedname>ImGuiInputEvent::AppFocused</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1355" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1aa76fead5c7e170cf0ff51091d994400d" prot="public" static="no" mutable="no">
+        <type>union <ref refid="struct_im_gui_input_event" kindref="compound">ImGuiInputEvent</ref></type>
+        <definition>union ImGuiInputEvent ImGuiInputEvent</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>ImGuiInputEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1356" column="5"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_1a87ff836d8c98d03adc91cdd592a13e0d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiInputEvent::AddedByTestEngine</definition>
+        <argsstring></argsstring>
+        <name>AddedByTestEngine</name>
+        <qualifiedname>ImGuiInputEvent::AddedByTestEngine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1357" column="37" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1357" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_input_event_1a0245c48f5f48b23defb78940c3a4a5ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiInputEvent::ImGuiInputEvent</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiInputEvent</name>
+        <qualifiedname>ImGuiInputEvent::ImGuiInputEvent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1359" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1359" bodyend="1359"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiInputEvent</label>
+        <link refid="struct_im_gui_input_event"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>MousePos</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>MouseWheel</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>MouseButton</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Key</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Text</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>AppFocused</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImGuiInputEventAppFocused</label>
+        <link refid="struct_im_gui_input_event_app_focused"/>
+      </node>
+      <node id="5">
+        <label>ImGuiInputEventKey</label>
+        <link refid="struct_im_gui_input_event_key"/>
+      </node>
+      <node id="4">
+        <label>ImGuiInputEventMouseButton</label>
+        <link refid="struct_im_gui_input_event_mouse_button"/>
+      </node>
+      <node id="2">
+        <label>ImGuiInputEventMousePos</label>
+        <link refid="struct_im_gui_input_event_mouse_pos"/>
+      </node>
+      <node id="3">
+        <label>ImGuiInputEventMouseWheel</label>
+        <link refid="struct_im_gui_input_event_mouse_wheel"/>
+      </node>
+      <node id="6">
+        <label>ImGuiInputEventText</label>
+        <link refid="struct_im_gui_input_event_text"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1343" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1344" bodyend="1360"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_input_event_1a87ff836d8c98d03adc91cdd592a13e0d" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>AddedByTestEngine</name></member>
+      <member refid="struct_im_gui_input_event_1a74fbb441887d8a49f07df0d6dac48692" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>AppFocused</name></member>
+      <member refid="struct_im_gui_input_event_1ab508aea0f8dcdbc3f1d5812742b0a459" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>EventId</name></member>
+      <member refid="struct_im_gui_input_event_1a0245c48f5f48b23defb78940c3a4a5ba" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>ImGuiInputEvent</name></member>
+      <member refid="struct_im_gui_input_event_1a7739f48af4f0fbad1ca79b5d9f82707e" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>Key</name></member>
+      <member refid="struct_im_gui_input_event_1a7e75a2c5682fc93bcded186ddb5ccfab" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>MouseButton</name></member>
+      <member refid="struct_im_gui_input_event_1aa5259390b6478192287966a5f87dd311" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>MousePos</name></member>
+      <member refid="struct_im_gui_input_event_1aa0d1ebe2404e336b61d44fa95874093f" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>MouseWheel</name></member>
+      <member refid="struct_im_gui_input_event_1a8780562e8dbed9ae613760399e8be8df" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>Source</name></member>
+      <member refid="struct_im_gui_input_event_1aae5e3f7f631cef154a0831e89f608655" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>Text</name></member>
+      <member refid="struct_im_gui_input_event_1a21d31c722ff155e2e8896a8012850acd" prot="public" virt="non-virtual"><scope>ImGuiInputEvent</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

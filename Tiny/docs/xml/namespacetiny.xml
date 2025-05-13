@@ -1,0 +1,1452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacetiny" kind="namespace" language="C++">
+    <compoundname>tiny</compoundname>
+    <innerclass refid="structtiny_1_1_beam_material_instance" prot="public">tiny::BeamMaterialInstance</innerclass>
+    <innerclass refid="classtiny_1_1_camera" prot="public">tiny::Camera</innerclass>
+    <innerclass refid="structtiny_1_1_component_hierarchy" prot="public">tiny::ComponentHierarchy</innerclass>
+    <innerclass refid="structtiny_1_1_component_transform" prot="public">tiny::ComponentTransform</innerclass>
+    <innerclass refid="classtiny_1_1_copy_queue" prot="public">tiny::CopyQueue</innerclass>
+    <innerclass refid="structtiny_1_1_d3_d_context" prot="public">tiny::D3DContext</innerclass>
+    <innerclass refid="classtiny_1_1_d3_d_descriptor_heap" prot="public">tiny::D3DDescriptorHeap</innerclass>
+    <innerclass refid="classtiny_1_1_d3_d_gpu_queue" prot="public">tiny::D3DGpuQueue</innerclass>
+    <innerclass refid="structtiny_1_1_d3_d_viewport" prot="public">tiny::D3DViewport</innerclass>
+    <innerclass refid="structtiny_1_1_depth_texture" prot="public">tiny::DepthTexture</innerclass>
+    <innerclass refid="structtiny_1_1_depth_texture_handle" prot="public">tiny::DepthTextureHandle</innerclass>
+    <innerclass refid="classtiny_1_1_descriptor_handle" prot="public">tiny::DescriptorHandle</innerclass>
+    <innerclass refid="classtiny_1_1_descriptor_range" prot="public">tiny::DescriptorRange</innerclass>
+    <innerclass refid="classtiny_1_1_dispatcher" prot="public">tiny::Dispatcher</innerclass>
+    <innerclass refid="classtiny_1_1_flush_dispatcher" prot="public">tiny::FlushDispatcher</innerclass>
+    <innerclass refid="classtiny_1_1_frame_graph" prot="public">tiny::FrameGraph</innerclass>
+    <innerclass refid="classtiny_1_1_frame_graph_resources" prot="public">tiny::FrameGraphResources</innerclass>
+    <innerclass refid="classtiny_1_1_frame_ring_buffer" prot="public">tiny::FrameRingBuffer</innerclass>
+    <innerclass refid="classtiny_1_1_im_gui_debug_pass" prot="public">tiny::ImGuiDebugPass</innerclass>
+    <innerclass refid="classtiny_1_1_i_renderer" prot="public">tiny::IRenderer</innerclass>
+    <innerclass refid="classtiny_1_1_i_render_pass" prot="public">tiny::IRenderPass</innerclass>
+    <innerclass refid="structtiny_1_1_mesh" prot="public">tiny::Mesh</innerclass>
+    <innerclass refid="classtiny_1_1_opaque_pass" prot="public">tiny::OpaquePass</innerclass>
+    <innerclass refid="structtiny_1_1_render_context" prot="public">tiny::RenderContext</innerclass>
+    <innerclass refid="structtiny_1_1_render_texture" prot="public">tiny::RenderTexture</innerclass>
+    <innerclass refid="structtiny_1_1_render_texture_handle" prot="public">tiny::RenderTextureHandle</innerclass>
+    <innerclass refid="structtiny_1_1_render_view" prot="public">tiny::RenderView</innerclass>
+    <innerclass refid="structtiny_1_1_scene" prot="public">tiny::Scene</innerclass>
+    <innerclass refid="classtiny_1_1_scene_filtered_pass" prot="public">tiny::SceneFilteredPass</innerclass>
+    <innerclass refid="structtiny_1_1_serialized_c_buffer" prot="public">tiny::SerializedCBuffer</innerclass>
+    <innerclass refid="structtiny_1_1_serialized_material" prot="public">tiny::SerializedMaterial</innerclass>
+    <innerclass refid="structtiny_1_1_serialized_material_property" prot="public">tiny::SerializedMaterialProperty</innerclass>
+    <innerclass refid="structtiny_1_1_serialized_mesh" prot="public">tiny::SerializedMesh</innerclass>
+    <innerclass refid="structtiny_1_1_serialized_technique" prot="public">tiny::SerializedTechnique</innerclass>
+    <innerclass refid="structtiny_1_1_serialized_texture" prot="public">tiny::SerializedTexture</innerclass>
+    <innerclass refid="classtiny_1_1_submit_to_swapchain_pass" prot="public">tiny::SubmitToSwapchainPass</innerclass>
+    <innerclass refid="structtiny_1_1_texture2_d" prot="public">tiny::Texture2D</innerclass>
+    <innerclass refid="structtiny_1_1_texture_stretcher_material_instance" prot="public">tiny::TextureStretcherMaterialInstance</innerclass>
+    <innerclass refid="classtiny_1_1_tiny_deferred_renderer" prot="public">tiny::TinyDeferredRenderer</innerclass>
+    <innerclass refid="classtiny_1_1_tiny_forward_renderer" prot="public">tiny::TinyForwardRenderer</innerclass>
+    <innerclass refid="structtiny_1_1_unlit_material_instance" prot="public">tiny::UnlitMaterialInstance</innerclass>
+    <innerclass refid="classtiny_1_1_window" prot="public">tiny::Window</innerclass>
+    <innerclass refid="structtiny_1_1_window_desc" prot="public">tiny::WindowDesc</innerclass>
+    <innernamespace refid="namespacetiny_1_1fx">tiny::fx</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetiny_1a916cf5c853e628855339c94ae2bbfeda" prot="public" static="no" strong="no">
+        <type></type>
+        <name>InputAttributes</name>
+        <qualifiedname>tiny::InputAttributes</qualifiedname>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa7dfba07f8cf7989d66e9e6f0d5af6096" prot="public">
+          <name>InputAttribute_Position</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaaf2c13bf13c79b3965d918c04909581e7" prot="public">
+          <name>InputAttribute_Normal</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa8e5eca6e85d6bd76243f53e2473b1b70" prot="public">
+          <name>InputAttribute_Tangent</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa6fc78866edf98580b331612c0e914761" prot="public">
+          <name>InputAttribute_UV</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaae4289859a57142e92758b72c9b259329" prot="public">
+          <name>InputAttribute_Color</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaadbfbc12a8bc4a0d92f22863781c62267" prot="public">
+          <name>InputAttribute_BoneWeights</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaa1171c000b5dd375695392c80f7aa6285" prot="public">
+          <name>InputAttributes_BoneIndices</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a916cf5c853e628855339c94ae2bbfedaaf79716a724e27a0f7024e39b9cb041d5" prot="public">
+          <name>NumInputAttributes</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="14" column="1" bodyfile="content/content.h" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetiny_1a6cee7d9ee7de5c5f39950878c63c341c" prot="public" static="no" strong="no">
+        <type>u8</type>
+        <name>D3DViewportFlags</name>
+        <qualifiedname>tiny::D3DViewportFlags</qualifiedname>
+        <enumvalue id="namespacetiny_1a6cee7d9ee7de5c5f39950878c63c341ca9bc98f67f9b610765dc38d6454d7563b" prot="public">
+          <name>D3DViewportFlags_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a6cee7d9ee7de5c5f39950878c63c341ca2f6b073eeca0b170c27516ddc04bd709" prot="public">
+          <name>D3DViewportFlags_TrippleBuffering</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1a6cee7d9ee7de5c5f39950878c63c341ca4456a48faca36878a51258a6abf3a4d2" prot="public">
+          <name>D3DViewportFlags_Windowed</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/viewport.h" line="13" column="1" bodyfile="graphics/viewport.h" bodystart="14" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetiny_1a72cde6780b07be673b74a0c7a906aad6" prot="public" static="no">
+        <type>std::function&lt; LRESULT(<ref refid="classtiny_1_1_window" kindref="compound">Window</ref> *pWindow, HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)&gt;</type>
+        <definition>using tiny::WindowProc =  std::function&lt;LRESULT(Window* pWindow, HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)&gt;</definition>
+        <argsstring></argsstring>
+        <name>WindowProc</name>
+        <qualifiedname>tiny::WindowProc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="20" column="1" bodyfile="engine/application.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetiny_1ab0b0d86cdc01a22d8bfdf65ded78a834" prot="public" static="no">
+        <type><ref refid="structtiny_1_1_mesh" kindref="compound">Mesh</ref></type>
+        <definition>using tiny::ComponentGeometry =  Mesh</definition>
+        <argsstring></argsstring>
+        <name>ComponentGeometry</name>
+        <qualifiedname>tiny::ComponentGeometry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/scene.h" line="12" column="1" bodyfile="engine/scene.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetiny_1a54ce7b4e2aa9ad7c0ffd7544d0be1c1a" prot="public" static="no">
+        <type><ref refid="structtiny_1_1fx_1_1_mesh_technique" kindref="compound">fx::MeshTechnique</ref></type>
+        <definition>using tiny::ComponentMaterial =  fx::MeshTechnique</definition>
+        <argsstring></argsstring>
+        <name>ComponentMaterial</name>
+        <qualifiedname>tiny::ComponentMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/scene.h" line="13" column="1" bodyfile="engine/scene.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetiny_1a9a49a01cf610059ebabb01a0af9f0c16" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tiny::gRunning</definition>
+        <argsstring></argsstring>
+        <name>gRunning</name>
+        <qualifiedname>tiny::gRunning</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="33" column="6" bodyfile="engine/application.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1ae050ac589cf171b26aa0c5801b7b7225" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_d3_d_context" kindref="compound">D3DContext</ref></type>
+        <definition>D3DContext tiny::gContext</definition>
+        <argsstring></argsstring>
+        <name>gContext</name>
+        <qualifiedname>tiny::gContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="34" column="12" bodyfile="engine/application.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1acde3aff98607605fdfee131a81247fc4" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_dispatcher" kindref="compound">Dispatcher</ref></type>
+        <definition>Dispatcher tiny::gMainDispatcher</definition>
+        <argsstring></argsstring>
+        <name>gMainDispatcher</name>
+        <qualifiedname>tiny::gMainDispatcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="35" column="12" bodyfile="engine/application.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1ad324e1e18f9c0f49e8ef12f0e9d7d69f" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_dispatcher" kindref="compound">Dispatcher</ref></type>
+        <definition>Dispatcher tiny::gDeferDispatcher</definition>
+        <argsstring></argsstring>
+        <name>gDeferDispatcher</name>
+        <qualifiedname>tiny::gDeferDispatcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="36" column="12" bodyfile="engine/application.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a8c17867bd39347f11441f6189db76d89" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_flush_dispatcher" kindref="compound">FlushDispatcher</ref></type>
+        <definition>FlushDispatcher tiny::gFlushDispatcher</definition>
+        <argsstring></argsstring>
+        <name>gFlushDispatcher</name>
+        <qualifiedname>tiny::gFlushDispatcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="37" column="17" bodyfile="engine/application.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a12992689b89bea91601c946deb27b4be" prot="public" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structtiny_1_1_render_view" kindref="compound">RenderView</ref> &gt;</type>
+        <definition>std::deque&lt;RenderView&gt; tiny::gRenderViews</definition>
+        <argsstring></argsstring>
+        <name>gRenderViews</name>
+        <qualifiedname>tiny::gRenderViews</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="38" column="12" bodyfile="engine/application.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1af487d896583998d9e0afaa5058feab63" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_scene" kindref="compound">Scene</ref></type>
+        <definition>Scene tiny::gScene</definition>
+        <argsstring></argsstring>
+        <name>gScene</name>
+        <qualifiedname>tiny::gScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="40" column="7" bodyfile="engine/application.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1aa3b8eaddb1564eb7f6e6b8dbf9ad76d0" prot="public" static="yes" mutable="no">
+        <type>std::aligned_storage_t&lt; sizeof(<ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref>), alignof(<ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref>)&gt;</type>
+        <definition>std::aligned_storage_t&lt;sizeof(CopyQueue), alignof(CopyQueue)&gt; tiny::gGlobalCopyQueue</definition>
+        <argsstring></argsstring>
+        <name>gGlobalCopyQueue</name>
+        <qualifiedname>tiny::gGlobalCopyQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.cpp" line="109" column="39" bodyfile="graphics/copyqueue.cpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1ab7ce503da57a184c16fb1b42b13fcb98" prot="public" static="yes" mutable="no">
+        <type>std::aligned_storage_t&lt; sizeof(<ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref>), alignof(<ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref>)&gt;</type>
+        <definition>std::aligned_storage_t&lt;sizeof(D3DDescriptorHeap), alignof(D3DDescriptorHeap)&gt; tiny::gGlobalDescriptorHeaps[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>gGlobalDescriptorHeaps</name>
+        <qualifiedname>tiny::gGlobalDescriptorHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.cpp" line="348" column="39" bodyfile="graphics/descriptors.cpp" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a311a4ae3491328cd5f6008f2e92d9d50" prot="public" static="no" constexpr="yes" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t tiny::InvalidResourceId</definition>
+        <argsstring></argsstring>
+        <name>InvalidResourceId</name>
+        <qualifiedname>tiny::InvalidResourceId</qualifiedname>
+        <initializer>= <ref refid="stdint_8h_1ab5eb23180f7cc12b7d6c04a8ec067fdd" kindref="member">UINT32_MAX</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="22" column="24" bodyfile="graphics/framegraph.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a7920dde101c0f596fccc33d9c2c1c3b2" prot="public" static="no" mutable="no">
+        <type>const D3D12_RASTERIZER_DESC</type>
+        <definition>const D3D12_RASTERIZER_DESC tiny::NO_CULL</definition>
+        <argsstring></argsstring>
+        <name>NO_CULL</name>
+        <qualifiedname>tiny::NO_CULL</qualifiedname>
+        <initializer>{
+			D3D12_FILL_MODE_SOLID,						
+			D3D12_CULL_MODE_NONE,						
+			0,											
+			0,											
+			0,											
+			0,											
+			1,											
+			1,											
+			0,											
+			0,											
+			D3D12_CONSERVATIVE_RASTERIZATION_MODE_OFF,	
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="8" column="29" bodyfile="graphics/gfxcommon.h" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1aad71889d2385b2cedf1b030a3696b9f5" prot="public" static="no" mutable="no">
+        <type>const D3D12_RASTERIZER_DESC</type>
+        <definition>const D3D12_RASTERIZER_DESC tiny::BACKFACE_CULL</definition>
+        <argsstring></argsstring>
+        <name>BACKFACE_CULL</name>
+        <qualifiedname>tiny::BACKFACE_CULL</qualifiedname>
+        <initializer>{
+			D3D12_FILL_MODE_SOLID,						
+			D3D12_CULL_MODE_BACK,						
+			0,											
+			0,											
+			0,											
+			0,											
+			1,											
+			1,											
+			0,											
+			0,											
+			D3D12_CONSERVATIVE_RASTERIZATION_MODE_OFF,	
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="23" column="29" bodyfile="graphics/gfxcommon.h" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a50d6ad19432ca7738a919d3df20896a3" prot="public" static="no" mutable="no">
+        <type>const D3D12_RASTERIZER_DESC</type>
+        <definition>const D3D12_RASTERIZER_DESC tiny::FRONTFACE_CULL</definition>
+        <argsstring></argsstring>
+        <name>FRONTFACE_CULL</name>
+        <qualifiedname>tiny::FRONTFACE_CULL</qualifiedname>
+        <initializer>{
+			D3D12_FILL_MODE_SOLID,						
+			D3D12_CULL_MODE_FRONT,						
+			0,											
+			0,											
+			0,											
+			0,											
+			1,											
+			1,											
+			0,											
+			0,											
+			D3D12_CONSERVATIVE_RASTERIZATION_MODE_OFF,	
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="38" column="29" bodyfile="graphics/gfxcommon.h" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a336633e25b21a282f150a6c588061db4" prot="public" static="no" mutable="no">
+        <type>const D3D12_RASTERIZER_DESC</type>
+        <definition>const D3D12_RASTERIZER_DESC tiny::WIREFRAME</definition>
+        <argsstring></argsstring>
+        <name>WIREFRAME</name>
+        <qualifiedname>tiny::WIREFRAME</qualifiedname>
+        <initializer>{
+			D3D12_FILL_MODE_WIREFRAME,						
+			D3D12_CULL_MODE_NONE,						
+			0,											
+			0,											
+			0,											
+			0,											
+			1,											
+			1,											
+			0,											
+			0,											
+			D3D12_CONSERVATIVE_RASTERIZATION_MODE_OFF,	
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="53" column="29" bodyfile="graphics/gfxcommon.h" bodystart="54" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1aa1ad45ff6635a34b4f87a7796dc57a78" prot="public" static="no" mutable="no">
+        <type>const struct tiny</type>
+        <definition>const struct tiny tiny::RASTERIZER_STATE</definition>
+        <argsstring></argsstring>
+        <name>RASTERIZER_STATE</name>
+        <qualifiedname>tiny::RASTERIZER_STATE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="67" column="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a7e29c4120258555fb9cdd84c68cf3194" prot="public" static="no" mutable="no">
+        <type>const D3D12_DEPTH_STENCIL_DESC</type>
+        <definition>const D3D12_DEPTH_STENCIL_DESC tiny::DISABLED</definition>
+        <argsstring></argsstring>
+        <name>DISABLED</name>
+        <qualifiedname>tiny::DISABLED</qualifiedname>
+        <initializer>{
+			0,									
+			D3D12_DEPTH_WRITE_MASK_ZERO,		
+			D3D12_COMPARISON_FUNC_LESS_EQUAL,	
+			0,									
+			0,									
+			0,									
+			{},									
+			{},									
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="71" column="32" bodyfile="graphics/gfxcommon.h" bodystart="72" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a3bcc0bbe6da3955d329be9fb63e7d782" prot="public" static="no" mutable="no">
+        <type>const struct tiny</type>
+        <definition>const struct tiny tiny::DEPTH_STATE</definition>
+        <argsstring></argsstring>
+        <name>DEPTH_STATE</name>
+        <qualifiedname>tiny::DEPTH_STATE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="82" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a9bd68b404233c7d10b5ff9b35535de39" prot="public" static="no" mutable="no">
+        <type>const D3D12_HEAP_PROPERTIES</type>
+        <definition>const D3D12_HEAP_PROPERTIES tiny::DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT</name>
+        <qualifiedname>tiny::DEFAULT</qualifiedname>
+        <initializer>{
+			D3D12_HEAP_TYPE_DEFAULT,
+			D3D12_CPU_PAGE_PROPERTY_UNKNOWN,
+			D3D12_MEMORY_POOL_UNKNOWN,
+			0,
+			0
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="86" column="29" bodyfile="graphics/gfxcommon.h" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a138216113bb0a46e045120c926a20fa4" prot="public" static="no" mutable="no">
+        <type>const D3D12_HEAP_PROPERTIES</type>
+        <definition>const D3D12_HEAP_PROPERTIES tiny::UPLOAD</definition>
+        <argsstring></argsstring>
+        <name>UPLOAD</name>
+        <qualifiedname>tiny::UPLOAD</qualifiedname>
+        <initializer>{
+			D3D12_HEAP_TYPE_UPLOAD,
+			D3D12_CPU_PAGE_PROPERTY_UNKNOWN,
+			D3D12_MEMORY_POOL_UNKNOWN,
+			0,
+			0
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="95" column="29" bodyfile="graphics/gfxcommon.h" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1accabb578da8e8e09ca22592298406681" prot="public" static="no" mutable="no">
+        <type>const struct tiny</type>
+        <definition>const struct tiny tiny::HEAP</definition>
+        <argsstring></argsstring>
+        <name>HEAP</name>
+        <qualifiedname>tiny::HEAP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxcommon.h" line="103" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1a58c4f21fc3285e8552c5689345f30506" prot="public" static="no" mutable="no">
+        <type>ID3D12Device8 *</type>
+        <definition>TINYFX_API ID3D12Device8 * tiny::gDevice</definition>
+        <argsstring></argsstring>
+        <name>gDevice</name>
+        <qualifiedname>tiny::gDevice</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxglobal.cpp" line="11" column="15" bodyfile="graphics/gfxglobal.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1aca87bbc15ade18d6dabbf97f9778b899" prot="public" static="no" mutable="no">
+        <type>IDXGIFactory7 *</type>
+        <definition>TINYFX_API IDXGIFactory7 * tiny::gDxgiFactory</definition>
+        <argsstring></argsstring>
+        <name>gDxgiFactory</name>
+        <qualifiedname>tiny::gDxgiFactory</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxglobal.cpp" line="12" column="15" bodyfile="graphics/gfxglobal.cpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetiny_1adb509f798e96b93ce370e8bc041a69c0" prot="public" static="no" mutable="no">
+        <type>IDXGIAdapter4 *</type>
+        <definition>TINYFX_API IDXGIAdapter4 * tiny::gDxgiAdapter</definition>
+        <argsstring></argsstring>
+        <name>gDxgiAdapter</name>
+        <qualifiedname>tiny::gDxgiAdapter</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxglobal.cpp" line="13" column="15" bodyfile="graphics/gfxglobal.cpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetiny_1a093e0c4fa4e139bcee28dab57e688d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::META</definition>
+        <argsstring>(Window)</argsstring>
+        <name>META</name>
+        <qualifiedname>tiny::META</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_window" kindref="compound">Window</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="25" column="1" bodyfile="engine/application.cpp" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a78a2f633a7096f277a001f8625e8def5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>LRESULT CALLBACK tiny::EngineWndProc</definition>
+        <argsstring>(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>EngineWndProc</name>
+        <qualifiedname>tiny::EngineWndProc</qualifiedname>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="63" column="18" bodyfile="engine/application.cpp" bodystart="63" bodyend="96" declfile="engine/window_internal.h" declline="6" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1acb24128fbae7fe70d41305604fd1f104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_scene" kindref="compound">Scene</ref> &amp;</type>
+        <definition>TINYFX_API Scene &amp; tiny::GetScene</definition>
+        <argsstring>()</argsstring>
+        <name>GetScene</name>
+        <qualifiedname>tiny::GetScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="100" column="7" bodyfile="engine/application.cpp" bodystart="100" bodyend="103" declfile="engine/application.h" declline="62" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1af7e3755af9222012b1dc3d043bb846cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::RunEngine</definition>
+        <argsstring>()</argsstring>
+        <name>RunEngine</name>
+        <qualifiedname>tiny::RunEngine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="147" column="6" bodyfile="engine/application.cpp" bodystart="147" bodyend="251" declfile="engine/application.h" declline="63" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ac9ee0012303fd5af52274736cd279dde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_render_view" kindref="compound">RenderView</ref> *</type>
+        <definition>TINYFX_API RenderView * tiny::CreateRenderView</definition>
+        <argsstring>(Window *pWindow, IRenderer *renderer)</argsstring>
+        <name>CreateRenderView</name>
+        <qualifiedname>tiny::CreateRenderView</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_window" kindref="compound">Window</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <param>
+          <type><ref refid="classtiny_1_1_i_renderer" kindref="compound">IRenderer</ref> *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="253" column="12" bodyfile="engine/application.cpp" bodystart="253" bodyend="267" declfile="engine/application.h" declline="64" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a226e9f48c37b249a6ee92e991b263744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>tiny::Initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="269" column="6" bodyfile="engine/application.cpp" bodystart="269" bodyend="290" declfile="engine/application.h" declline="65" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a4bf3408d152177f35104a68ae7c21a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <qualifiedname>tiny::Shutdown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.cpp" line="292" column="6" bodyfile="engine/application.cpp" bodystart="292" bodyend="302" declfile="engine/application.h" declline="66" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a3db4dd19f1272b34c9e919ba0e971d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TINYFX_API void</type>
+        <definition>TINYFX_API void tiny::LoadScene</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>LoadScene</name>
+        <qualifiedname>tiny::LoadScene</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="61" column="17" declfile="engine/application.h" declline="61" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ae81805ae822de51aaba81e50e98c2029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TINYFX_API <ref refid="structtiny_1_1_mesh" kindref="compound">Mesh</ref></type>
+        <definition>TINYFX_API Mesh tiny::AssetCreateMesh</definition>
+        <argsstring>(const SerializedMesh &amp;mesh)</argsstring>
+        <name>AssetCreateMesh</name>
+        <qualifiedname>tiny::AssetCreateMesh</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_mesh" kindref="compound">SerializedMesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="21" column="17" bodyfile="content/assets.cpp" bodystart="21" bodyend="44" declfile="content/assets.h" declline="90" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1acfef0fda6e6a0ad912ef80ab24d7855f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TINYFX_API <ref refid="structtiny_1_1_texture2_d" kindref="compound">Texture2D</ref></type>
+        <definition>TINYFX_API Texture2D tiny::AssetCreateTexture</definition>
+        <argsstring>(const SerializedTexture &amp;texture)</argsstring>
+        <name>AssetCreateTexture</name>
+        <qualifiedname>tiny::AssetCreateTexture</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_texture" kindref="compound">SerializedTexture</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="46" column="22" bodyfile="content/assets.cpp" bodystart="46" bodyend="124" declfile="content/assets.h" declline="91" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a1df5ce64cddd5b6ea37b0838ff8ac9f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">fx::IMeshMaterialInstance</ref> &gt;</type>
+        <definition>TINYFX_API std::shared_ptr&lt; fx::IMeshMaterialInstance &gt; tiny::AssetCreateMeshMaterial</definition>
+        <argsstring>(const SerializedMaterial &amp;material)</argsstring>
+        <name>AssetCreateMeshMaterial</name>
+        <qualifiedname>tiny::AssetCreateMeshMaterial</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_material" kindref="compound">SerializedMaterial</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="126" column="17" bodyfile="content/assets.cpp" bodystart="126" bodyend="175" declfile="content/assets.h" declline="92" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a00ac019fb3711afbb8080bec75ee1e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1fx_1_1_mesh_technique" kindref="compound">fx::MeshTechnique</ref></type>
+        <definition>TINYFX_API fx::MeshTechnique tiny::AssetCreateTechnique</definition>
+        <argsstring>(const SerializedTechnique &amp;texture)</argsstring>
+        <name>AssetCreateTechnique</name>
+        <qualifiedname>tiny::AssetCreateTechnique</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_technique" kindref="compound">SerializedTechnique</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="177" column="19" bodyfile="content/assets.cpp" bodystart="177" bodyend="183" declfile="content/assets.h" declline="93" declcolumn="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a438d5de13f702f6649db4bcb73c1697d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::AssetSaveTechnique</definition>
+        <argsstring>(const std::string &amp;path, const SerializedTechnique &amp;technique)</argsstring>
+        <name>AssetSaveTechnique</name>
+        <qualifiedname>tiny::AssetSaveTechnique</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_technique" kindref="compound">SerializedTechnique</ref> &amp;</type>
+          <declname>technique</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="185" column="6" bodyfile="content/assets.cpp" bodystart="185" bodyend="192" declfile="content/assets.h" declline="96" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ac0a1d4dc42828aedac3744606c604145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::AssetSaveMaterial</definition>
+        <argsstring>(const std::string &amp;path, SerializedMaterial material)</argsstring>
+        <name>AssetSaveMaterial</name>
+        <qualifiedname>tiny::AssetSaveMaterial</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1_serialized_material" kindref="compound">SerializedMaterial</ref></type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="194" column="6" bodyfile="content/assets.cpp" bodystart="194" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a18cb35ceb230a86ebe7abdfd6e3603cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::AssetSaveMesh</definition>
+        <argsstring>(const std::string &amp;path, const SerializedMesh &amp;mesh)</argsstring>
+        <name>AssetSaveMesh</name>
+        <qualifiedname>tiny::AssetSaveMesh</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_mesh" kindref="compound">SerializedMesh</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="203" column="6" bodyfile="content/assets.cpp" bodystart="203" bodyend="210" declfile="content/assets.h" declline="97" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a0a1a1220701fead7bacb7a81af6f9db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_serialized_mesh" kindref="compound">SerializedMesh</ref></type>
+        <definition>TINYFX_API SerializedMesh tiny::AssetLoadMesh</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>AssetLoadMesh</name>
+        <qualifiedname>tiny::AssetLoadMesh</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="212" column="16" bodyfile="content/assets.cpp" bodystart="212" bodyend="221" declfile="content/assets.h" declline="98" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ab1ae34b49c83a7696b941fd211563e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_serialized_technique" kindref="compound">SerializedTechnique</ref></type>
+        <definition>TINYFX_API SerializedTechnique tiny::AssetLoadTechnique</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>AssetLoadTechnique</name>
+        <qualifiedname>tiny::AssetLoadTechnique</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.cpp" line="223" column="21" bodyfile="content/assets.cpp" bodystart="223" bodyend="232" declfile="content/assets.h" declline="99" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1aed7056ea1d6c9817cd89b58c36b2c9a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TINYFX_API void</type>
+        <definition>TINYFX_API void tiny::AssetSaveMaterial</definition>
+        <argsstring>(const std::string &amp;path, const SerializedMaterial &amp;material)</argsstring>
+        <name>AssetSaveMaterial</name>
+        <qualifiedname>tiny::AssetSaveMaterial</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtiny_1_1_serialized_material" kindref="compound">SerializedMaterial</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/assets.h" line="95" column="17" declfile="content/assets.h" declline="95" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1aacbb04a2490d52f07bc9dd2a665ed179" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; D3D12_INPUT_ELEMENT_DESC &gt;</type>
+        <definition>std::vector&lt; D3D12_INPUT_ELEMENT_DESC &gt; tiny::ConstructInputLayout</definition>
+        <argsstring>(u8 attributes)</argsstring>
+        <name>ConstructInputLayout</name>
+        <qualifiedname>tiny::ConstructInputLayout</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>attributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.cpp" line="7" column="13" bodyfile="content/content.cpp" bodystart="7" bodyend="46" declfile="content/content.h" declline="78" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a9b8dc9fb28c4e04f9f9eae8d99a97733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u32</type>
+        <definition>TINYFX_API u32 tiny::GetVertexStride</definition>
+        <argsstring>(u8 attributes)</argsstring>
+        <name>GetVertexStride</name>
+        <qualifiedname>tiny::GetVertexStride</qualifiedname>
+        <param>
+          <type>u8</type>
+          <declname>attributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.cpp" line="48" column="5" bodyfile="content/content.cpp" bodystart="48" bodyend="64" declfile="content/content.h" declline="79" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a0143a5f01c1028b59e871850b46cc554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref> &amp;</type>
+        <definition>RenderTexture &amp; tiny::GetCachedFrameGraphResource</definition>
+        <argsstring>(const RenderTexture::Desc &amp;d)</argsstring>
+        <name>GetCachedFrameGraphResource</name>
+        <qualifiedname>tiny::GetCachedFrameGraphResource</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_render_texture_1_1_desc" kindref="compound">RenderTexture::Desc</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content_internal.h" line="6" column="15" declfile="content/content_internal.h" declline="6" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a4a2204b60de532609ad486b60eb4861c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::ReleaseCachedFrameGraphResource</definition>
+        <argsstring>(RenderTexture &amp;t)</argsstring>
+        <name>ReleaseCachedFrameGraphResource</name>
+        <qualifiedname>tiny::ReleaseCachedFrameGraphResource</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content_internal.h" line="7" column="6" declfile="content/content_internal.h" declline="7" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ab9db93974be8c9a260ae8ecd3770b187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InvalidateCachedFrameGraphResources</definition>
+        <argsstring>()</argsstring>
+        <name>InvalidateCachedFrameGraphResources</name>
+        <qualifiedname>tiny::InvalidateCachedFrameGraphResources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content_internal.h" line="8" column="6" declfile="content/content_internal.h" declline="8" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ab6a6c2847aea2c9f4829c17819ccc9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::TINY_REGISTER_MATERIAL</definition>
+        <argsstring>(InitializeBeamMaterial, BeamMaterialInstance)</argsstring>
+        <name>TINY_REGISTER_MATERIAL</name>
+        <qualifiedname>tiny::TINY_REGISTER_MATERIAL</qualifiedname>
+        <param>
+          <type><ref refid="namespacetiny_1ad322c0ec300ca9dc98c67a6e9b28ea6e" kindref="member">InitializeBeamMaterial</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1_beam_material_instance" kindref="compound">BeamMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="12" column="1" declfile="content/stdmat.cpp" declline="12" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ab3a5fb1f984e185efc6edd4e6c9e1d53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::TINY_REGISTER_MATERIAL</definition>
+        <argsstring>(InitializeTextureStretcherMaterial, TextureStretcherMaterialInstance)</argsstring>
+        <name>TINY_REGISTER_MATERIAL</name>
+        <qualifiedname>tiny::TINY_REGISTER_MATERIAL</qualifiedname>
+        <param>
+          <type><ref refid="namespacetiny_1a3eaf3a582f3fd80895037e94f0ca179f" kindref="member">InitializeTextureStretcherMaterial</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1_texture_stretcher_material_instance" kindref="compound">TextureStretcherMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="13" column="1" declfile="content/stdmat.cpp" declline="13" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a29488ac091544dfe4762fa255ab883de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::TINY_REGISTER_MESH_MATERIAL</definition>
+        <argsstring>(InitializeUnlitMaterial, UnlitMaterialInstance)</argsstring>
+        <name>TINY_REGISTER_MESH_MATERIAL</name>
+        <qualifiedname>tiny::TINY_REGISTER_MESH_MATERIAL</qualifiedname>
+        <param>
+          <type><ref refid="namespacetiny_1a6591dbe500f470720388dd0b260ec936" kindref="member">InitializeUnlitMaterial</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1_unlit_material_instance" kindref="compound">UnlitMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="14" column="1" declfile="content/stdmat.cpp" declline="14" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ac4fcb205644b56e702d3e83d628af1ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::META</definition>
+        <argsstring>(BeamMaterialInstance)</argsstring>
+        <name>META</name>
+        <qualifiedname>tiny::META</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_beam_material_instance" kindref="compound">BeamMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="16" column="1" bodyfile="content/stdmat.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1abe628742644481dbc3d9da71558436f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::META</definition>
+        <argsstring>(TextureStretcherMaterialInstance)</argsstring>
+        <name>META</name>
+        <qualifiedname>tiny::META</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_texture_stretcher_material_instance" kindref="compound">TextureStretcherMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="22" column="1" bodyfile="content/stdmat.cpp" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ad3e9382c9063e6a5a662a4c1b6dfca0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::META</definition>
+        <argsstring>(UnlitMaterialInstance)</argsstring>
+        <name>META</name>
+        <qualifiedname>tiny::META</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1_unlit_material_instance" kindref="compound">UnlitMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="28" column="1" bodyfile="content/stdmat.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ad322c0ec300ca9dc98c67a6e9b28ea6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InitializeBeamMaterial</definition>
+        <argsstring>(ID3D12Device *pDevice, Material &amp;material)</argsstring>
+        <name>InitializeBeamMaterial</name>
+        <qualifiedname>tiny::InitializeBeamMaterial</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="36" column="6" bodyfile="content/stdmat.cpp" bodystart="36" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a3eaf3a582f3fd80895037e94f0ca179f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InitializeTextureStretcherMaterial</definition>
+        <argsstring>(ID3D12Device *pDevice, Material &amp;material)</argsstring>
+        <name>InitializeTextureStretcherMaterial</name>
+        <qualifiedname>tiny::InitializeTextureStretcherMaterial</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="92" column="6" bodyfile="content/stdmat.cpp" bodystart="92" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a6591dbe500f470720388dd0b260ec936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InitializeUnlitMaterial</definition>
+        <argsstring>(ID3D12Device *pDevice, MeshMaterial &amp;material)</argsstring>
+        <name>InitializeUnlitMaterial</name>
+        <qualifiedname>tiny::InitializeUnlitMaterial</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_mesh_material" kindref="compound">MeshMaterial</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/stdmat.cpp" line="181" column="6" bodyfile="content/stdmat.cpp" bodystart="181" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a67f802698770657872f05c743f4c8dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::CreateUnlitTechnique</definition>
+        <argsstring>()</argsstring>
+        <name>CreateUnlitTechnique</name>
+        <qualifiedname>tiny::CreateUnlitTechnique</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/techniques.cpp" line="6" column="6" bodyfile="content/techniques.cpp" bodystart="6" bodyend="13" declfile="content/techniques.h" declline="6" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1adf7e073069686f373347e1272da1d6d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t tiny::Align256</definition>
+        <argsstring>(size_t x)</argsstring>
+        <name>Align256</name>
+        <qualifiedname>tiny::Align256</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/cbringbuffer.cpp" line="5" column="19" bodyfile="graphics/cbringbuffer.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a371fa067c4057771eb6331c0d98ebe49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InitializeGlobalCopyQueue</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeGlobalCopyQueue</name>
+        <qualifiedname>tiny::InitializeGlobalCopyQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.cpp" line="111" column="6" bodyfile="graphics/copyqueue.cpp" bodystart="111" bodyend="114" declfile="graphics/copyqueue.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1abf2d9a157f9d87a5c6f8bbd10499ebe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::ShutdownGlobalCopyQueue</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdownGlobalCopyQueue</name>
+        <qualifiedname>tiny::ShutdownGlobalCopyQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.cpp" line="116" column="6" bodyfile="graphics/copyqueue.cpp" bodystart="116" bodyend="119" declfile="graphics/copyqueue.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a423cd2e63d7e81775ce1a88bf813b434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_copy_queue" kindref="compound">CopyQueue</ref> &amp;</type>
+        <definition>TINY_API CopyQueue &amp; tiny::GetEngineCopyQueue</definition>
+        <argsstring>()</argsstring>
+        <name>GetEngineCopyQueue</name>
+        <qualifiedname>tiny::GetEngineCopyQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.cpp" line="121" column="11" bodyfile="graphics/copyqueue.cpp" bodystart="121" bodyend="124" declfile="graphics/copyqueue.h" declline="50" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a9abbe2d311bde0bce32725b6a86cf37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CComPtr&lt; ID3D12Resource &gt;</type>
+        <definition>TINY_API CComPtr&lt; ID3D12Resource &gt; tiny::CreateGPUBuffer</definition>
+        <argsstring>(u32 bufferSize, void *data, D3D12_RESOURCE_STATES state, D3D12_RESOURCE_FLAGS flags)</argsstring>
+        <name>CreateGPUBuffer</name>
+        <qualifiedname>tiny::CreateGPUBuffer</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>D3D12_RESOURCE_STATES</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>D3D12_RESOURCE_FLAGS</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/copyqueue.cpp" line="126" column="9" bodyfile="graphics/copyqueue.cpp" bodystart="126" bodyend="167" declfile="graphics/copyqueue.h" declline="51" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ab2fe7ee142751b74662c566ccf321301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InitializeGlobalDescriptorHeaps</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeGlobalDescriptorHeaps</name>
+        <qualifiedname>tiny::InitializeGlobalDescriptorHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.cpp" line="350" column="6" bodyfile="graphics/descriptors.cpp" bodystart="350" bodyend="356" declfile="graphics/descriptors.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a6bd5c2cb8d9a9b982750c4e4a3238cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::ShutdownGlobalDescriptorHeaps</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdownGlobalDescriptorHeaps</name>
+        <qualifiedname>tiny::ShutdownGlobalDescriptorHeaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.cpp" line="358" column="6" bodyfile="graphics/descriptors.cpp" bodystart="358" bodyend="364" declfile="graphics/descriptors.h" declline="121" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a6b7719b5a4ff4527fa27d220ce78a130" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> &amp;</type>
+        <definition>TINYFX_API D3DDescriptorHeap &amp; tiny::GetEngineDescriptorHeap</definition>
+        <argsstring>(D3D12_DESCRIPTOR_HEAP_TYPE type)</argsstring>
+        <name>GetEngineDescriptorHeap</name>
+        <qualifiedname>tiny::GetEngineDescriptorHeap</qualifiedname>
+        <param>
+          <type>D3D12_DESCRIPTOR_HEAP_TYPE</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.cpp" line="366" column="19" bodyfile="graphics/descriptors.cpp" bodystart="366" bodyend="369" declfile="graphics/descriptors.h" declline="122" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a519bdf23319662624ba27e3b35b8a757" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; int &gt; &gt; tiny::makeContiguousBatches</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;sortedPassIndices, const std::vector&lt; double &gt; &amp;costs, int batchCount)</argsstring>
+        <name>makeContiguousBatches</name>
+        <qualifiedname>tiny::makeContiguousBatches</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>sortedPassIndices</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>costs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batchCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.cpp" line="323" column="17" bodyfile="graphics/framegraph.cpp" bodystart="323" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a4bc1a9306f4cf2abc3bb34ed7cae8a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::InitializeGFX</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeGFX</name>
+        <qualifiedname>tiny::InitializeGFX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxglobal.cpp" line="15" column="6" bodyfile="graphics/gfxglobal.cpp" bodystart="15" bodyend="46" declfile="graphics/gfxglobal.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1a424094a4547ed59fcd1e99062be39ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::ShutdownGFX</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdownGFX</name>
+        <qualifiedname>tiny::ShutdownGFX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gfxglobal.cpp" line="48" column="6" bodyfile="graphics/gfxglobal.cpp" bodystart="48" bodyend="53" declfile="graphics/gfxglobal.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1ab23d68297c33d0b34b30d8d4eb082197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref></type>
+        <definition>RenderTexture tiny::CreateRenderTexture</definition>
+        <argsstring>(u32 width, u32 height, DXGI_FORMAT format)</argsstring>
+        <name>CreateRenderTexture</name>
+        <qualifiedname>tiny::CreateRenderTexture</qualifiedname>
+        <param>
+          <type>u32</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>DXGI_FORMAT</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/gpuresource.cpp" line="9" column="15" bodyfile="graphics/gpuresource.cpp" bodystart="9" bodyend="79" declfile="graphics/gpuresource.h" declline="6" declcolumn="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/registry.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

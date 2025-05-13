@@ -5,7 +5,7 @@
 
 namespace tiny
 {
-	class ImGuiPass : public IRenderPass
+	class ImGuiPass : public RenderPassBase
 	{
 	public:
 		ImGuiPass(RenderTextureHandle outputTexture, RenderTextureHandle hostedTexture);

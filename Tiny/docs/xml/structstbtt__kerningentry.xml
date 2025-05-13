@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structstbtt__kerningentry" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_kerningentry</compoundname>
+    <includes refid="imstb__truetype_8h" local="no">imstb_truetype.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__kerningentry_1a395848ac004ad9193c532ebc08b07f91" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_kerningentry::glyph1</definition>
+        <argsstring></argsstring>
+        <name>glyph1</name>
+        <qualifiedname>stbtt_kerningentry::glyph1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="811" column="8" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="811" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__kerningentry_1a9d5a83a93bb6a40bed5c166c5f295c61" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_kerningentry::glyph2</definition>
+        <argsstring></argsstring>
+        <name>glyph2</name>
+        <qualifiedname>stbtt_kerningentry::glyph2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="812" column="8" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__kerningentry_1a1924543c84b2abbdbac1a951f441d8aa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbtt_kerningentry::advance</definition>
+        <argsstring></argsstring>
+        <name>advance</name>
+        <qualifiedname>stbtt_kerningentry::advance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="813" column="8" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="813" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imstb_truetype.h" line="809" column="1" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="810" bodyend="814"/>
+    <listofallmembers>
+      <member refid="structstbtt__kerningentry_1a1924543c84b2abbdbac1a951f441d8aa" prot="public" virt="non-virtual"><scope>stbtt_kerningentry</scope><name>advance</name></member>
+      <member refid="structstbtt__kerningentry_1a395848ac004ad9193c532ebc08b07f91" prot="public" virt="non-virtual"><scope>stbtt_kerningentry</scope><name>glyph1</name></member>
+      <member refid="structstbtt__kerningentry_1a9d5a83a93bb6a40bed5c166c5f295c61" prot="public" virt="non-virtual"><scope>stbtt_kerningentry</scope><name>glyph2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

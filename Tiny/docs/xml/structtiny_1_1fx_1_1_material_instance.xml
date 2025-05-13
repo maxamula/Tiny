@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_material_instance" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::MaterialInstance</compoundname>
+    <basecompoundref refid="structtiny_1_1fx_1_1_i_material_instance" prot="public" virt="non-virtual">tiny::fx::IMaterialInstance</basecompoundref>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Derived</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_material_instance_1ab57371ecc2ec7e75da5cfb6d647d6809" prot="private" static="yes" mutable="no">
+        <type>const bool</type>
+        <definition>const bool tiny::fx::MaterialInstance&lt; Derived &gt;::_sReg</definition>
+        <argsstring></argsstring>
+        <name>_sReg</name>
+        <qualifiedname>tiny::fx::MaterialInstance::_sReg</qualifiedname>
+        <initializer>= _sRegisterType()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="87" column="26" bodyfile="fx/shaderfx.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_material_instance_1ab85a4a133f5e17b5265c6a78443791c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual tiny::fx::MaterialInstance&lt; Derived &gt;::~MaterialInstance</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MaterialInstance</name>
+        <qualifiedname>tiny::fx::MaterialInstance::~MaterialInstance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="77" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_material_instance_1a9ed5b453ff7baf2bf60d654dd0003769" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>entt::meta_any</type>
+        <definition>entt::meta_any tiny::fx::MaterialInstance&lt; Derived &gt;::Meta</definition>
+        <argsstring>() override</argsstring>
+        <name>Meta</name>
+        <qualifiedname>tiny::fx::MaterialInstance::Meta</qualifiedname>
+        <reimplements refid="structtiny_1_1fx_1_1_i_material_instance_1ace165be76a64bd174366b978df20f714">Meta</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="78" column="16" bodyfile="fx/shaderfx.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="structtiny_1_1fx_1_1_material_instance_1a33ef2942ac0982e294f25591ef5c2140" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool tiny::fx::MaterialInstance&lt; Derived &gt;::_sRegisterType</definition>
+        <argsstring>()</argsstring>
+        <name>_sRegisterType</name>
+        <qualifiedname>tiny::fx::MaterialInstance::_sRegisterType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="80" column="13" bodyfile="fx/shaderfx.h" bodystart="80" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>tiny::fx::IMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_material_instance"/>
+      </node>
+      <node id="1">
+        <label>tiny::fx::MaterialInstance&lt; Derived &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::fx::IMaterialInstance</label>
+        <link refid="structtiny_1_1fx_1_1_i_material_instance"/>
+      </node>
+      <node id="1">
+        <label>tiny::fx::MaterialInstance&lt; Derived &gt;</label>
+        <link refid="structtiny_1_1fx_1_1_material_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="fx/shaderfx.h" line="75" column="1" bodyfile="fx/shaderfx.h" bodystart="76" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1ae199273fae25acfa98e365227a6f98cc" prot="public" virt="non-virtual"><scope>tiny::fx::MaterialInstance</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1ab57371ecc2ec7e75da5cfb6d647d6809" prot="private" virt="non-virtual"><scope>tiny::fx::MaterialInstance</scope><name>_sReg</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1a33ef2942ac0982e294f25591ef5c2140" prot="private" virt="non-virtual"><scope>tiny::fx::MaterialInstance</scope><name>_sRegisterType</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1ac26b1e181a2f5bf19f2eaa8a4094b8ad" prot="public" virt="pure-virtual"><scope>tiny::fx::MaterialInstance</scope><name>ID</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1a9ed5b453ff7baf2bf60d654dd0003769" prot="public" virt="virtual"><scope>tiny::fx::MaterialInstance</scope><name>Meta</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1aff7547c0e338911a14c21ad22f710302" prot="public" virt="non-virtual"><scope>tiny::fx::MaterialInstance</scope><name>SetFeatureFlags</name></member>
+      <member refid="structtiny_1_1fx_1_1_i_material_instance_1a988aa75e0b9ab8762d2b232e81c62e5c" prot="public" virt="virtual"><scope>tiny::fx::MaterialInstance</scope><name>~IMaterialInstance</name></member>
+      <member refid="structtiny_1_1fx_1_1_material_instance_1ab85a4a133f5e17b5265c6a78443791c0" prot="public" virt="virtual"><scope>tiny::fx::MaterialInstance</scope><name>~MaterialInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

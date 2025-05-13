@@ -18,6 +18,7 @@
     <ClCompile Include="imgui\ImSequencer.cpp" />
     <ClCompile Include="gui\gui.cpp" />
     <ClCompile Include="rendering\materials.cpp" />
+    <ClCompile Include="project.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rendering\rendererhost.h" />
@@ -122,6 +123,7 @@
     <ClInclude Include="gui\gui.h" />
     <ClInclude Include="rendering\materials.h" />
     <ClInclude Include="stb_image.h" />
+    <ClInclude Include="project.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assimp\.editorconfig" />

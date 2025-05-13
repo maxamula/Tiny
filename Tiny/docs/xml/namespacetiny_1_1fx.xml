@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacetiny_1_1fx" kind="namespace" language="C++">
+    <compoundname>tiny::fx</compoundname>
+    <innerclass refid="structtiny_1_1fx_1_1_fx_compilation_desc" prot="public">tiny::fx::FxCompilationDesc</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" prot="public">tiny::fx::FxVariantsCompilationDesc</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_i_material_instance" prot="public">tiny::fx::IMaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_i_mesh_material_instance" prot="public">tiny::fx::IMeshMaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" prot="public">tiny::fx::IntermediateCompiledCombination</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection" prot="public">tiny::fx::IntermediateCompiledReflection</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_intermediate_shader_resource" prot="public">tiny::fx::IntermediateShaderResource</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material" prot="public">tiny::fx::Material</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material_info" prot="public">tiny::fx::MaterialInfo</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material_initialization_desc" prot="public">tiny::fx::MaterialInitializationDesc</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_material_instance" prot="public">tiny::fx::MaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_material" prot="public">tiny::fx::MeshMaterial</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_material_info" prot="public">tiny::fx::MeshMaterialInfo</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_material_instance" prot="public">tiny::fx::MeshMaterialInstance</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_shader_f_x" prot="public">tiny::fx::MeshShaderFX</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_mesh_technique" prot="public">tiny::fx::MeshTechnique</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_shader_f_x" prot="public">tiny::fx::ShaderFX</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_shader_resource_binding" prot="public">tiny::fx::ShaderResourceBinding</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_shader_resource_special_binding" prot="public">tiny::fx::ShaderResourceSpecialBinding</innerclass>
+    <innerclass refid="structtiny_1_1fx_1_1_static_sampler_desc" prot="public">tiny::fx::StaticSamplerDesc</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ShaderSpecialBindType</name>
+        <qualifiedname>tiny::fx::ShaderSpecialBindType</qualifiedname>
+        <enumvalue id="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34ae927a508aadc6568d7387ef7174a6f79" prot="public">
+          <name>ShaderSpecialBind_World</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34a2e2170bb4c50771df410914861c4391b" prot="public">
+          <name>ShaderSpecialBind_Light</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1_1fx_1a15b0741e8e86a4b4f87aa5dfbfb0da34a890c29f9c139dfdc1b07a8abd5ac558d" prot="public">
+          <name>ShaderSpecialBind_Environment</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="18" column="1" bodyfile="fx/shaderfx.h" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ShaderCBufferType</name>
+        <qualifiedname>tiny::fx::ShaderCBufferType</qualifiedname>
+        <enumvalue id="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0caa8dd43c57e5920528e5cc8901c67515f" prot="public">
+          <name>ShaderCBufferType_Constants</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0cadb6f41cc1f6254568c0f78024b1ddb44" prot="public">
+          <name>ShaderCBufferType_CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1_1fx_1ac5771566790a835c55493c0bca75ac0ca8c67b5f1dc4b4cad2e0b3d9b063d8d16" prot="public">
+          <name>ShaderCBufferType_GPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="25" column="1" bodyfile="fx/shaderfx.h" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13" prot="public" static="no" strong="no">
+        <type>unsigned char</type>
+        <name>MacroRules</name>
+        <qualifiedname>tiny::fx::MacroRules</qualifiedname>
+        <enumvalue id="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13a255d04c49e0988b2c9dbfb6c8349fe7b" prot="public">
+          <name>MacroRule_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13aceae30f103e04bd0defe1b9dc8ee1ad8" prot="public">
+          <name>MacroRule_Conflict</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetiny_1_1fx_1aea84260f6be3254a948ec52eb592bd13ad30c06c45d5a21e7401ff1bf4dcda9be" prot="public">
+          <name>MacroRule_Dependency</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="156" column="1" bodyfile="fx/shaderfx.h" bodystart="157" bodyend="161"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetiny_1_1fx_1a6bd9a295b6079d943cd9af9b51e44422" prot="public" static="no">
+        <type>void(*)(ID3D12Device *pDevice, <ref refid="structtiny_1_1fx_1_1_material" kindref="compound">Material</ref> &amp;mat)</type>
+        <definition>using tiny::fx::fnMaterialInitializer =  void(*)(ID3D12Device* pDevice, Material&amp; mat)</definition>
+        <argsstring></argsstring>
+        <name>fnMaterialInitializer</name>
+        <qualifiedname>tiny::fx::fnMaterialInitializer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.h" line="12" column="1" bodyfile="fx/registry.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetiny_1_1fx_1ae87e351d57ff1333afe1f08ae2bd1be2" prot="public" static="no">
+        <type>void(*)(ID3D12Device *pDevice, <ref refid="structtiny_1_1fx_1_1_mesh_material" kindref="compound">MeshMaterial</ref> &amp;mat)</type>
+        <definition>using tiny::fx::fnMeshMaterialInitializer =  void(*)(ID3D12Device* pDevice, MeshMaterial&amp; mat)</definition>
+        <argsstring></argsstring>
+        <name>fnMeshMaterialInitializer</name>
+        <qualifiedname>tiny::fx::fnMeshMaterialInitializer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.h" line="13" column="1" bodyfile="fx/registry.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetiny_1_1fx_1a3600761e86b5350b1e6429bb740dc3f4" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="structtiny_1_1fx_1_1_i_material_instance" kindref="compound">fx::IMaterialInstance</ref> &gt;(*)()</type>
+        <definition>using tiny::fx::fnMaterialFactory =  std::shared_ptr&lt;fx::IMaterialInstance&gt;(*)()</definition>
+        <argsstring></argsstring>
+        <name>fnMaterialFactory</name>
+        <qualifiedname>tiny::fx::fnMaterialFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.h" line="14" column="1" bodyfile="fx/registry.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetiny_1_1fx_1ad23ba76794ce90cd692edc000db902ec" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">fx::IMeshMaterialInstance</ref> &gt;(*)()</type>
+        <definition>using tiny::fx::fnMeshMaterialFactory =  std::shared_ptr&lt;fx::IMeshMaterialInstance&gt;(*)()</definition>
+        <argsstring></argsstring>
+        <name>fnMeshMaterialFactory</name>
+        <qualifiedname>tiny::fx::fnMeshMaterialFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.h" line="15" column="1" bodyfile="fx/registry.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a6e7da883a5a2cde178fd00b3bdc309d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; u64, <ref refid="structtiny_1_1fx_1_1_material_info" kindref="compound">MaterialInfo</ref> &gt; &amp;</type>
+        <definition>std::unordered_map&lt; u64, MaterialInfo &gt; &amp; tiny::fx::GetMaterialsRegistry</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaterialsRegistry</name>
+        <qualifiedname>tiny::fx::GetMaterialsRegistry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.cpp" line="7" column="20" bodyfile="fx/registry.cpp" bodystart="7" bodyend="11" declfile="fx/registry_internal.h" declline="21" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a5dcdac73bc93a023477acf1423dfde21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; u64, <ref refid="structtiny_1_1fx_1_1_mesh_material_info" kindref="compound">MeshMaterialInfo</ref> &gt; &amp;</type>
+        <definition>std::unordered_map&lt; u64, MeshMaterialInfo &gt; &amp; tiny::fx::GetMeshMaterialsRegistry</definition>
+        <argsstring>()</argsstring>
+        <name>GetMeshMaterialsRegistry</name>
+        <qualifiedname>tiny::fx::GetMeshMaterialsRegistry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.cpp" line="12" column="20" bodyfile="fx/registry.cpp" bodystart="12" bodyend="16" declfile="fx/registry_internal.h" declline="22" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a4c111c317a63b98bf44782ae3b0451d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>TINYFX_API u8 tiny::fx::RegisterMaterial</definition>
+        <argsstring>(u64 instanceId, fnMaterialInitializer initializer, fnMaterialFactory factory)</argsstring>
+        <name>RegisterMaterial</name>
+        <qualifiedname>tiny::fx::RegisterMaterial</qualifiedname>
+        <param>
+          <type>u64</type>
+          <declname>instanceId</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetiny_1_1fx_1a6bd9a295b6079d943cd9af9b51e44422" kindref="member">fnMaterialInitializer</ref></type>
+          <declname>initializer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetiny_1_1fx_1a3600761e86b5350b1e6429bb740dc3f4" kindref="member">fnMaterialFactory</ref></type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.cpp" line="18" column="4" bodyfile="fx/registry.cpp" bodystart="18" bodyend="30" declfile="fx/registry.h" declline="17" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a449f348d799f8a645180aa5224fae42c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8</type>
+        <definition>TINYFX_API u8 tiny::fx::RegisterMeshMaterial</definition>
+        <argsstring>(u64 instanceId, fnMeshMaterialInitializer initializer, fnMeshMaterialFactory factory)</argsstring>
+        <name>RegisterMeshMaterial</name>
+        <qualifiedname>tiny::fx::RegisterMeshMaterial</qualifiedname>
+        <param>
+          <type>u64</type>
+          <declname>instanceId</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetiny_1_1fx_1ae87e351d57ff1333afe1f08ae2bd1be2" kindref="member">fnMeshMaterialInitializer</ref></type>
+          <declname>initializer</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetiny_1_1fx_1ad23ba76794ce90cd692edc000db902ec" kindref="member">fnMeshMaterialFactory</ref></type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.cpp" line="32" column="4" bodyfile="fx/registry.cpp" bodystart="32" bodyend="44" declfile="fx/registry.h" declline="18" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a2b8a8179fb6d52f678363fee863423de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; <ref refid="structtiny_1_1fx_1_1_i_material_instance" kindref="compound">fx::IMaterialInstance</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; fx::IMaterialInstance &gt; tiny::fx::MaterialInstanceFactory</definition>
+        <argsstring>()</argsstring>
+        <name>MaterialInstanceFactory</name>
+        <qualifiedname>tiny::fx::MaterialInstanceFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.h" line="21" column="17" bodyfile="fx/registry.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a3bb86e269946007f7e8e4c2be8136b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; <ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">fx::IMeshMaterialInstance</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; fx::IMeshMaterialInstance &gt; tiny::fx::MeshMaterialInstanceFactory</definition>
+        <argsstring>()</argsstring>
+        <name>MeshMaterialInstanceFactory</name>
+        <qualifiedname>tiny::fx::MeshMaterialInstanceFactory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/registry.h" line="27" column="17" bodyfile="fx/registry.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1accb6aebd52c3e26a69d481d1ea75f0d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::fx::META</definition>
+        <argsstring>(IMaterialInstance)</argsstring>
+        <name>META</name>
+        <qualifiedname>tiny::fx::META</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_i_material_instance" kindref="compound">IMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="17" column="1" bodyfile="fx/shaderfx.cpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a496d7071bda338dd778735677e81a119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::fx::META</definition>
+        <argsstring>(IMeshMaterialInstance)</argsstring>
+        <name>META</name>
+        <qualifiedname>tiny::fx::META</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_i_mesh_material_instance" kindref="compound">IMeshMaterialInstance</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="18" column="1" bodyfile="fx/shaderfx.cpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a25011dc9757c882014aaf62a94050ad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::fx::CompileFx</definition>
+        <argsstring>(FxCompilationDesc &amp;desc, IntermediateCompiledCombination &amp;oCompiled)</argsstring>
+        <name>CompileFx</name>
+        <qualifiedname>tiny::fx::CompileFx</qualifiedname>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_fx_compilation_desc" kindref="compound">FxCompilationDesc</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" kindref="compound">IntermediateCompiledCombination</ref> &amp;</type>
+          <declname>oCompiled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="127" column="6" bodyfile="fx/shaderfx.cpp" bodystart="127" bodyend="310" declfile="fx/shaderfx.h" declline="218" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1aed96e11898a69cd467bd4d3e87bd5323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::fx::CompileFxVariants</definition>
+        <argsstring>(const FxVariantsCompilationDesc &amp;desc, std::vector&lt; IntermediateCompiledCombination &gt; &amp;oCompiled)</argsstring>
+        <name>CompileFxVariants</name>
+        <qualifiedname>tiny::fx::CompileFxVariants</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1fx_1_1_fx_variants_compilation_desc" kindref="compound">FxVariantsCompilationDesc</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" kindref="compound">IntermediateCompiledCombination</ref> &gt; &amp;</type>
+          <declname>oCompiled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="312" column="6" bodyfile="fx/shaderfx.cpp" bodystart="312" bodyend="561" declfile="fx/shaderfx.h" declline="219" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1abcfb7cca21846fcc44f770d93ed3fb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::fx::GetReflectionInfo</definition>
+        <argsstring>(const IntermediateCompiledCombination &amp;combination, IntermediateCompiledReflection &amp;oReflection)</argsstring>
+        <name>GetReflectionInfo</name>
+        <qualifiedname>tiny::fx::GetReflectionInfo</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1fx_1_1_intermediate_compiled_combination" kindref="compound">IntermediateCompiledCombination</ref> &amp;</type>
+          <declname>combination</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_intermediate_compiled_reflection" kindref="compound">IntermediateCompiledReflection</ref> &amp;</type>
+          <declname>oReflection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="563" column="6" bodyfile="fx/shaderfx.cpp" bodystart="563" bodyend="671" declfile="fx/shaderfx.h" declline="220" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1abbf8772f466f8e39a6f59ae8e8c32067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::fx::InitializeRootParameter</definition>
+        <argsstring>(const IntermediateShaderResource &amp;resource, CD3DX12_ROOT_PARAMETER &amp;oRootParameter)</argsstring>
+        <name>InitializeRootParameter</name>
+        <qualifiedname>tiny::fx::InitializeRootParameter</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource" kindref="compound">IntermediateShaderResource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>CD3DX12_ROOT_PARAMETER &amp;</type>
+          <declname>oRootParameter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="673" column="6" bodyfile="fx/shaderfx.cpp" bodystart="673" bodyend="719" declfile="fx/shaderfx.h" declline="221" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a74d4aae6efb5f5f5530d549b08597593" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>TINYFX_API bool tiny::fx::ProcessSpecialBindings</definition>
+        <argsstring>(const IntermediateShaderResource &amp;resource, u32 rootIndex, u64 propertyID, std::vector&lt; ShaderResourceSpecialBinding &gt; &amp;bindings)</argsstring>
+        <name>ProcessSpecialBindings</name>
+        <qualifiedname>tiny::fx::ProcessSpecialBindings</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1fx_1_1_intermediate_shader_resource" kindref="compound">IntermediateShaderResource</ref> &amp;</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>rootIndex</declname>
+        </param>
+        <param>
+          <type>u64</type>
+          <declname>propertyID</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structtiny_1_1fx_1_1_shader_resource_special_binding" kindref="compound">ShaderResourceSpecialBinding</ref> &gt; &amp;</type>
+          <declname>bindings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="721" column="6" bodyfile="fx/shaderfx.cpp" bodystart="721" bodyend="740" declfile="fx/shaderfx.h" declline="222" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1ad54440dbbebbcfe3c92d3d7d87d815b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::fx::GenInputVariantsPSOs</definition>
+        <argsstring>(D3D12_GRAPHICS_PIPELINE_STATE_DESC &amp;baseDesc, ID3D12Device *pDevice, u8 mandatoryAttributes, std::unordered_map&lt; u64, CComPtr&lt; ID3D12PipelineState &gt; &gt; &amp;oPso)</argsstring>
+        <name>GenInputVariantsPSOs</name>
+        <qualifiedname>tiny::fx::GenInputVariantsPSOs</qualifiedname>
+        <param>
+          <type>D3D12_GRAPHICS_PIPELINE_STATE_DESC &amp;</type>
+          <declname>baseDesc</declname>
+        </param>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <param>
+          <type>u8</type>
+          <declname>mandatoryAttributes</declname>
+        </param>
+        <param>
+          <type>std::unordered_map&lt; u64, CComPtr&lt; ID3D12PipelineState &gt; &gt; &amp;</type>
+          <declname>oPso</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="743" column="6" bodyfile="fx/shaderfx.cpp" bodystart="743" bodyend="756" declfile="fx/shaderfx.h" declline="223" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1abd4677a3619c689cca04874270d13769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::fx::InitializeFX</definition>
+        <argsstring>(ID3D12Device *pDevice)</argsstring>
+        <name>InitializeFX</name>
+        <qualifiedname>tiny::fx::InitializeFX</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="762" column="6" bodyfile="fx/shaderfx.cpp" bodystart="762" bodyend="772" declfile="fx/shaderfx_internal.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1ac805dcbfa1889133f4ab0edb7bbbb32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::fx::ShutdonwnFX</definition>
+        <argsstring>()</argsstring>
+        <name>ShutdonwnFX</name>
+        <qualifiedname>tiny::fx::ShutdonwnFX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="774" column="6" bodyfile="fx/shaderfx.cpp" bodystart="774" bodyend="781" declfile="fx/shaderfx_internal.h" declline="7" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1aaa53f1142b9d644fd8c08928de7c7a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>TINYFX_API void tiny::fx::MaterialDefaultInitialize</definition>
+        <argsstring>(ID3D12Device *pDevice, const MaterialInitializationDesc &amp;desc, Material &amp;material)</argsstring>
+        <name>MaterialDefaultInitialize</name>
+        <qualifiedname>tiny::fx::MaterialDefaultInitialize</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtiny_1_1fx_1_1_material_initialization_desc" kindref="compound">MaterialInitializationDesc</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_material" kindref="compound">Material</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="787" column="6" bodyfile="fx/shaderfx.cpp" bodystart="787" bodyend="900" declfile="fx/shaderfx.h" declline="238" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetiny_1_1fx_1a1ae7a5ded60737109875a1096fe8096c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TINYFX_API void</type>
+        <definition>TINYFX_API void tiny::fx::MeshMaterialDefaultInitialize</definition>
+        <argsstring>(ID3D12Device *pDevice, const MaterialInitializationDesc &amp;desc, MeshMaterial &amp;material)</argsstring>
+        <name>MeshMaterialDefaultInitialize</name>
+        <qualifiedname>tiny::fx::MeshMaterialDefaultInitialize</qualifiedname>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>pDevice</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtiny_1_1fx_1_1_material_initialization_desc" kindref="compound">MaterialInitializationDesc</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type><ref refid="structtiny_1_1fx_1_1_mesh_material" kindref="compound">MeshMaterial</ref> &amp;</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="902" column="17" bodyfile="fx/shaderfx.cpp" bodystart="902" bodyend="1017" declfile="fx/shaderfx.h" declline="239" declcolumn="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/registry.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

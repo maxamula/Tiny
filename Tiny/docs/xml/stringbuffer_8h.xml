@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="stringbuffer_8h" kind="file" language="C++">
+    <compoundname>stringbuffer.h</compoundname>
+    <includes refid="stream_8h" local="yes">stream.h</includes>
+    <includes refid="stack_8h" local="yes">internal/stack.h</includes>
+    <includedby refid="schema_8h" local="yes">content/cereal/external/rapidjson/schema.h</includedby>
+    <includedby refid="writer_8h" local="yes">content/cereal/external/rapidjson/writer.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>../allocators.h</label>
+        <link refid="allocators_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>encodings.h</label>
+        <link refid="encodings_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>internal/stack.h</label>
+        <link refid="stack_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>swap.h</label>
+        <link refid="swap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rapidjson.h</label>
+        <link refid="rapidjson_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stream.h</label>
+        <link refid="stream_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>content/cereal/external/rapidjson/stringbuffer.h</label>
+        <link refid="stringbuffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="11">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>content/cereal/external/rapidjson/prettywriter.h</label>
+        <link refid="prettywriter_8h"/>
+      </node>
+      <node id="2">
+        <label>content/cereal/external/rapidjson/schema.h</label>
+        <link refid="schema_8h"/>
+      </node>
+      <node id="1">
+        <label>content/cereal/external/rapidjson/stringbuffer.h</label>
+        <link refid="stringbuffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>content/cereal/external/rapidjson/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_generic_string_buffer" prot="public">GenericStringBuffer</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="stringbuffer_8h_1a88f2d61781c8daefde48a81bdeac6ecd" prot="public" static="no">
+        <type><ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref>&lt; <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref>&lt;&gt; &gt;</type>
+        <definition>typedef GenericStringBuffer&lt;UTF8&lt;&gt; &gt; StringBuffer</definition>
+        <argsstring></argsstring>
+        <name>StringBuffer</name>
+        <briefdescription>
+<para>String buffer with <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref> encoding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/stringbuffer.h" line="97" column="29" bodyfile="content/cereal/external/rapidjson/stringbuffer.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="stringbuffer_8h_1a76f1b69abd71a248a55c8a55792dfd69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="classrapidjson_1_1_encoding" kindref="compound">Encoding</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref></type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void PutReserve</definition>
+        <argsstring>(GenericStringBuffer&lt; Encoding, Allocator &gt; &amp;stream, size_t count)</argsstring>
+        <name>PutReserve</name>
+        <param>
+          <type><ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref>&lt; <ref refid="classrapidjson_1_1_encoding" kindref="compound">Encoding</ref>, <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref> &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/stringbuffer.h" line="100" column="13" bodyfile="content/cereal/external/rapidjson/stringbuffer.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="stringbuffer_8h_1a2ff92a4ec7c5995738cfaf39fe99f31a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename <ref refid="classrapidjson_1_1_encoding" kindref="compound">Encoding</ref></type>
+          </param>
+          <param>
+            <type>typename <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref></type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void PutUnsafe</definition>
+        <argsstring>(GenericStringBuffer&lt; Encoding, Allocator &gt; &amp;stream, typename Encoding::Ch c)</argsstring>
+        <name>PutUnsafe</name>
+        <param>
+          <type><ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref>&lt; <ref refid="classrapidjson_1_1_encoding" kindref="compound">Encoding</ref>, <ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref> &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>typename Encoding::Ch</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/stringbuffer.h" line="105" column="13" bodyfile="content/cereal/external/rapidjson/stringbuffer.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="stringbuffer_8h_1a4bcf83273503d7b834ec530e84914f8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void PutN</definition>
+        <argsstring>(GenericStringBuffer&lt; UTF8&lt;&gt; &gt; &amp;stream, char c, size_t n)</argsstring>
+        <name>PutN</name>
+        <param>
+          <type><ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref>&lt; <ref refid="struct_u_t_f8" kindref="compound">UTF8</ref>&lt;&gt; &gt; &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Implement specialized version of <ref refid="stringbuffer_8h_1a4bcf83273503d7b834ec530e84914f8c" kindref="member">PutN()</ref> with memset() for better performance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/stringbuffer.h" line="111" column="13" bodyfile="content/cereal/external/rapidjson/stringbuffer.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Tencent<sp/>is<sp/>pleased<sp/>to<sp/>support<sp/>the<sp/>open<sp/>source<sp/>community<sp/>by<sp/>making<sp/>RapidJSON<sp/>available.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2015<sp/>THL<sp/>A29<sp/>Limited,<sp/>a<sp/>Tencent<sp/>company,<sp/>and<sp/>Milo<sp/>Yip.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>MIT<sp/>License<sp/>(the<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://opensource.org/licenses/MIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software<sp/>distributed<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CEREAL_RAPIDJSON_STRINGBUFFER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CEREAL_RAPIDJSON_STRINGBUFFER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stream_8h" kindref="compound">stream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8h" kindref="compound">internal/stack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CEREAL_RAPIDJSON_HAS_CXX11_RVALUE_REFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>std::move</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stack_8h" kindref="compound">internal/stack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__clang__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_PUSH</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_OFF(c++98-compat)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69bf61966c74b09b5d90b386847f39be" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_BEGIN</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Encoding,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Allocator<sp/>=<sp/>CrtAllocator&gt;</highlight></codeline>
+<codeline lineno="41" refid="class_generic_string_buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Encoding::Ch<sp/><ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>(<ref refid="classrapidjson_1_1_allocator" kindref="compound">Allocator</ref>*<sp/>allocator<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>capacity<sp/>=<sp/><ref refid="class_generic_string_buffer_1ae74f9df854dd5a7db4315ef44b016d22" kindref="member">kDefaultCapacity</ref>)<sp/>:<sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>(allocator,<sp/>capacity)<sp/>{}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CEREAL_RAPIDJSON_HAS_CXX11_RVALUE_REFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>(<ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref>&amp;&amp;<sp/>rhs)<sp/>:<sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>(std::move(rhs.<ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>))<sp/>{}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>&amp;<sp/>operator=(<ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>&amp;&amp;<sp/>rhs)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;rhs<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref><sp/>=<sp/>std::move(rhs.stack_);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_generic_string_buffer_1a8be5c8fadccacdcf40e20220f38e0afa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a8be5c8fadccacdcf40e20220f38e0afa" kindref="member">Put</ref>(<ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref><sp/>c)<sp/>{<sp/>*<ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a80af78c43da93126a940a40d1889278a" kindref="member">Push&lt;Ch&gt;</ref>()<sp/>=<sp/>c;<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="class_generic_string_buffer_1a9225468d11fdddfc3a9a4e48bf4d3ba4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a9225468d11fdddfc3a9a4e48bf4d3ba4" kindref="member">PutUnsafe</ref>(<ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref><sp/>c)<sp/>{<sp/>*<ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a67bbdeb1f0f7c539f85ca36857a62ca3" kindref="member">PushUnsafe&lt;Ch&gt;</ref>()<sp/>=<sp/>c;<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="class_generic_string_buffer_1a28bb539487db17b07314a532f3b8847c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a28bb539487db17b07314a532f3b8847c" kindref="member">Flush</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_generic_string_buffer_1a42f15c959046d899cb74c3120a6995f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a42f15c959046d899cb74c3120a6995f9" kindref="member">Clear</ref>()<sp/>{<sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.Clear();<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="class_generic_string_buffer_1a0dbdb77489b95923795011a24f705be5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a0dbdb77489b95923795011a24f705be5" kindref="member">ShrinkToFit</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Push<sp/>and<sp/>pop<sp/>a<sp/>null<sp/>terminator.<sp/>This<sp/>is<sp/>safe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a80af78c43da93126a940a40d1889278a" kindref="member">Push&lt;Ch&gt;</ref>()<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.ShrinkToFit();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" kindref="member">Pop&lt;Ch&gt;</ref>(1);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_generic_string_buffer_1a4d6becae201b98c122746298882a318f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a4d6becae201b98c122746298882a318f" kindref="member">Reserve</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count)<sp/>{<sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a4d6becae201b98c122746298882a318f" kindref="member">Reserve&lt;Ch&gt;</ref>(count);<sp/>}</highlight></codeline>
+<codeline lineno="69" refid="class_generic_string_buffer_1a80af78c43da93126a940a40d1889278a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref>*<sp/><ref refid="class_generic_string_buffer_1a80af78c43da93126a940a40d1889278a" kindref="member">Push</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a80af78c43da93126a940a40d1889278a" kindref="member">Push&lt;Ch&gt;</ref>(count);<sp/>}</highlight></codeline>
+<codeline lineno="70" refid="class_generic_string_buffer_1a67bbdeb1f0f7c539f85ca36857a62ca3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref>*<sp/><ref refid="class_generic_string_buffer_1a67bbdeb1f0f7c539f85ca36857a62ca3" kindref="member">PushUnsafe</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a67bbdeb1f0f7c539f85ca36857a62ca3" kindref="member">PushUnsafe&lt;Ch&gt;</ref>(count);<sp/>}</highlight></codeline>
+<codeline lineno="71" refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" kindref="member">Pop</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count)<sp/>{<sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" kindref="member">Pop&lt;Ch&gt;</ref>(count);<sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_generic_string_buffer_1a42079865bab1deb930c6cff7d491c719" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref>*<sp/><ref refid="class_generic_string_buffer_1a42079865bab1deb930c6cff7d491c719" kindref="member">GetString</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Push<sp/>and<sp/>pop<sp/>a<sp/>null<sp/>terminator.<sp/>This<sp/>is<sp/>safe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a80af78c43da93126a940a40d1889278a" kindref="member">Push&lt;Ch&gt;</ref>()<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/><ref refid="class_generic_string_buffer_1a0038e53ba03c271bc4cbbac403ec4de4" kindref="member">Pop&lt;Ch&gt;</ref>(1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.template<sp/>Bottom&lt;Ch&gt;();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_generic_string_buffer_1a725e862b9a78375f5363b0b61ad789f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a725e862b9a78375f5363b0b61ad789f3" kindref="member">GetSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.GetSize();<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_generic_string_buffer_1ad324b8154be3354dda3aa4a0a7361499" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1ad324b8154be3354dda3aa4a0a7361499" kindref="member">GetLength</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>.GetSize()<sp/>/<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="class_generic_string_buffer_1a735b75db076ffe86d0d294be49655d46" kindref="member">Ch</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_generic_string_buffer_1ae74f9df854dd5a7db4315ef44b016d22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1ae74f9df854dd5a7db4315ef44b016d22" kindref="member">kDefaultCapacity</ref><sp/>=<sp/>256;</highlight></codeline>
+<codeline lineno="88" refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classinternal_1_1_stack" kindref="compound">internal::Stack&lt;Allocator&gt;</ref><sp/><ref refid="class_generic_string_buffer_1aaef716643febb9de5957dbf8ff904409" kindref="member">stack_</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prohibit<sp/>copy<sp/>constructor<sp/>&amp;<sp/>assignment<sp/>operator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>&amp;);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer_1a62f5ea1a53a2a3f98088f8c152b6183e" kindref="member">GenericStringBuffer</ref>&amp;);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="stringbuffer_8h_1a88f2d61781c8daefde48a81bdeac6ecd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer&lt;UTF8&lt;&gt;</ref><sp/>&gt;<sp/><ref refid="fwd_8h_1ab956b6537825abf8aac4112e81cfad7e" kindref="member">StringBuffer</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Encoding,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Allocator&gt;</highlight></codeline>
+<codeline lineno="100" refid="stringbuffer_8h_1a76f1b69abd71a248a55c8a55792dfd69" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stringbuffer_8h_1a76f1b69abd71a248a55c8a55792dfd69" kindref="member">PutReserve</ref>(<ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer&lt;Encoding, Allocator&gt;</ref>&amp;<sp/>stream,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>stream.<ref refid="class_generic_string_buffer_1a4d6becae201b98c122746298882a318f" kindref="member">Reserve</ref>(count);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Encoding,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Allocator&gt;</highlight></codeline>
+<codeline lineno="105" refid="stringbuffer_8h_1a2ff92a4ec7c5995738cfaf39fe99f31a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stringbuffer_8h_1a2ff92a4ec7c5995738cfaf39fe99f31a" kindref="member">PutUnsafe</ref>(<ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer&lt;Encoding, Allocator&gt;</ref>&amp;<sp/>stream,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Encoding::Ch<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>stream.<ref refid="class_generic_string_buffer_1a9225468d11fdddfc3a9a4e48bf4d3ba4" kindref="member">PutUnsafe</ref>(c);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="111" refid="stringbuffer_8h_1a4bcf83273503d7b834ec530e84914f8c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stringbuffer_8h_1a4bcf83273503d7b834ec530e84914f8c" kindref="member">PutN</ref>(<ref refid="class_generic_string_buffer" kindref="compound">GenericStringBuffer</ref>&lt;<ref refid="struct_u_t_f8" kindref="compound">UTF8&lt;&gt;</ref><sp/>&gt;&amp;<sp/>stream,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>std::memset(stream.stack_.Push&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&gt;(n),<sp/>c,<sp/>n<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(c));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1gaddb083c1a6a5beaafbecc3f99973a3ff" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_END</ref></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__clang__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">CEREAL_RAPIDJSON_DIAG_POP</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CEREAL_RAPIDJSON_STRINGBUFFER_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="content/cereal/external/rapidjson/stringbuffer.h"/>
+  </compounddef>
+</doxygen>

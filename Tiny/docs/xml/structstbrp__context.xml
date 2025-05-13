@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structstbrp__context" kind="struct" language="C++" prot="public">
+    <compoundname>stbrp_context</compoundname>
+    <includes refid="imstb__rectpack_8h" local="no">imstb_rectpack.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbrp__context_1a70cfcb2044ce8397cc440d28b30c09b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbrp_context::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>stbrp_context::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="187" column="8" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1af3715a6f3faecfb4fac8f6ccbb71f9c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbrp_context::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>stbrp_context::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="188" column="8" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1ae36053e2001a725aec2b5756dc990481" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbrp_context::align</definition>
+        <argsstring></argsstring>
+        <name>align</name>
+        <qualifiedname>stbrp_context::align</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="189" column="8" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1a007509feee322404083034e4c2d3dc5d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbrp_context::init_mode</definition>
+        <argsstring></argsstring>
+        <name>init_mode</name>
+        <qualifiedname>stbrp_context::init_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="190" column="8" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1a4b61a7f94e50a54c075e2a8f99f6503a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbrp_context::heuristic</definition>
+        <argsstring></argsstring>
+        <name>heuristic</name>
+        <qualifiedname>stbrp_context::heuristic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="191" column="8" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1afa8105d4ef6d3e0ae5aaf8e1ed4b2c58" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stbrp_context::num_nodes</definition>
+        <argsstring></argsstring>
+        <name>num_nodes</name>
+        <qualifiedname>stbrp_context::num_nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="192" column="8" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1a13277239636803aff28f00b0a0376120" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbrp__node" kindref="compound">stbrp_node</ref> *</type>
+        <definition>stbrp_node* stbrp_context::active_head</definition>
+        <argsstring></argsstring>
+        <name>active_head</name>
+        <qualifiedname>stbrp_context::active_head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="193" column="15" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1a1336ae32373663847866cc65904c2839" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbrp__node" kindref="compound">stbrp_node</ref> *</type>
+        <definition>stbrp_node* stbrp_context::free_head</definition>
+        <argsstring></argsstring>
+        <name>free_head</name>
+        <qualifiedname>stbrp_context::free_head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="194" column="15" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbrp__context_1a0b80e1fbdac125427526f3500d4e7624" prot="public" static="no" mutable="no">
+        <type><ref refid="structstbrp__node" kindref="compound">stbrp_node</ref></type>
+        <definition>stbrp_node stbrp_context::extra[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>extra</name>
+        <qualifiedname>stbrp_context::extra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_rectpack.h" line="195" column="15" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>stbrp_context</label>
+        <link refid="structstbrp__context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>active_head</edgelabel>
+          <edgelabel>extra</edgelabel>
+          <edgelabel>free_head</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stbrp_node</label>
+        <link refid="structstbrp__node"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imstb_rectpack.h" line="185" column="1" bodyfile="graphics/imgui/imstb_rectpack.h" bodystart="186" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structstbrp__context_1a13277239636803aff28f00b0a0376120" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>active_head</name></member>
+      <member refid="structstbrp__context_1ae36053e2001a725aec2b5756dc990481" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>align</name></member>
+      <member refid="structstbrp__context_1a0b80e1fbdac125427526f3500d4e7624" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>extra</name></member>
+      <member refid="structstbrp__context_1a1336ae32373663847866cc65904c2839" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>free_head</name></member>
+      <member refid="structstbrp__context_1af3715a6f3faecfb4fac8f6ccbb71f9c7" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>height</name></member>
+      <member refid="structstbrp__context_1a4b61a7f94e50a54c075e2a8f99f6503a" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>heuristic</name></member>
+      <member refid="structstbrp__context_1a007509feee322404083034e4c2d3dc5d" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>init_mode</name></member>
+      <member refid="structstbrp__context_1afa8105d4ef6d3e0ae5aaf8e1ed4b2c58" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>num_nodes</name></member>
+      <member refid="structstbrp__context_1a70cfcb2044ce8397cc440d28b30c09b2" prot="public" virt="non-virtual"><scope>stbrp_context</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

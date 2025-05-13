@@ -1,11 +1,18 @@
 #include "renderctx.h"
 #include "entt.hpp"
 #include "fx/registry_internal.h"
+#include "engine/application.h"
+
 using namespace entt;
 
 namespace tiny
 {
 	extern "C++" D3DContext gContext;
+
+	void RenderContext::SetWorld(const DirectX::XMMATRIX& world)
+	{
+		this->world = world;
+	}
 
 	void RenderContext::BindMaterial(fx::IMaterialInstance* pMatInstance)
 	{
@@ -22,29 +29,52 @@ namespace tiny
 			if (field)
 			{
 				entt::meta_any value = field.get(meta);
-				if (value)
+				if (!value)
+					THROW_ENGINE_EXCEPTION("Failed to get value for field {} in material type {}", binding.fieldID, pMatInstance->ID());
+				switch (binding.type)
 				{
-					if (auto icbuffer = value.try_cast<ICBuffer>())
+				case D3D_SIT_CBUFFER:
+				{
+					entt::meta_any value = field.get(meta);
+					void* data = value.data();
+					u64 size = value.type().size_of();
+					switch (binding.details.cbufferType)
 					{
-						//cmd->SetGraphicsRootConstantBufferView(binding.rootParamIndex, icbuffer->resource->GetGPUVirtualAddress());
-						auto [data, size] = icbuffer->GetData();
+					case fx::ShaderCBufferType_Constants:
+					{
 						cmd->SetGraphicsRoot32BitConstants(binding.rootParamIndex, size / sizeof(u32), data, 0);
 					}
-					else if (auto texture = value.try_cast<Texture2D>())
+					break;
+					case fx::ShaderCBufferType_CPU:
+					{
+						FrameRingBuffer::Allocation alloc = gContext.frameRingBuffer.Allocate(size);
+						std::memcpy(alloc.cpuAddress, data, size);
+						cmd->SetGraphicsRootConstantBufferView(binding.rootParamIndex, alloc.gpuAddress);
+					}
+					break;
+					case fx::ShaderCBufferType_GPU:
+					{
+						THROW_ENGINE_EXCEPTION("GPU cbuffer not supported yet");
+					}
+					}
+				}
+				break;
+				case D3D_SIT_TEXTURE:
+				{
+					if (auto texture = value.try_cast<Texture2D>())
 					{
 						cmd->SetGraphicsRootDescriptorTable(binding.rootParamIndex, texture->srv.gpu);
+						gContext.Defer(texture->resource);
+						gContext.Defer(texture->srv);
 					}
 					else if (auto renderTexture = value.try_cast<RenderTexture>())
 					{
 						cmd->SetGraphicsRootDescriptorTable(binding.rootParamIndex, renderTexture->srv.gpu);
-
-						auto gpu = renderTexture->srv.gpu;
-						auto cpu = renderTexture->srv.cpu;
-
-						gContext.Defer(renderTexture->rtv);
-						gContext.Defer(renderTexture->srv);
 						gContext.Defer(renderTexture->resource);
+						gContext.Defer(renderTexture->srv);
 					}
+				}
+				break;
 				}
 			}
 		}
@@ -84,14 +114,39 @@ namespace tiny
 			if (field)
 			{
 				entt::meta_any value = field.get(meta);
-				if (value)
+				if (!value)
+					THROW_ENGINE_EXCEPTION("Failed to get value for field {} in material type {}", binding.fieldID, pMatInstance->ID());
+				switch (binding.type)
 				{
-					if (auto icbuffer = value.try_cast<CBufferCPUBase>())
+				case D3D_SIT_CBUFFER:
+				{
+					entt::meta_any value = field.get(meta);
+					void* data = value.data();
+					u64 size = value.type().size_of();
+					switch (binding.details.cbufferType)
 					{
-						cmd->SetGraphicsRootConstantBufferView(binding.rootParamIndex, icbuffer->resource->GetGPUVirtualAddress());
-						gContext.Defer(icbuffer->resource);
+					case fx::ShaderCBufferType_Constants:
+					{
+						cmd->SetGraphicsRoot32BitConstants(binding.rootParamIndex, size / sizeof(u32), data, 0);
 					}
-					else if (auto texture = value.try_cast<Texture2D>())
+					break;
+					case fx::ShaderCBufferType_CPU:
+					{
+						FrameRingBuffer::Allocation alloc = gContext.frameRingBuffer.Allocate(size);
+						std::memcpy(alloc.cpuAddress, data, size);
+						cmd->SetGraphicsRootConstantBufferView(binding.rootParamIndex, alloc.gpuAddress);
+					}
+					break;
+					case fx::ShaderCBufferType_GPU:
+					{
+						THROW_ENGINE_EXCEPTION("GPU cbuffer not supported yet");
+					}
+					}
+				}
+				break;
+				case D3D_SIT_TEXTURE:
+				{
+					if (auto texture = value.try_cast<Texture2D>())
 					{
 						cmd->SetGraphicsRootDescriptorTable(binding.rootParamIndex, texture->srv.gpu);
 						gContext.Defer(texture->resource);
@@ -104,6 +159,8 @@ namespace tiny
 						gContext.Defer(renderTexture->srv);
 					}
 				}
+				break;
+				}
 			}
 		}
 
@@ -111,34 +168,29 @@ namespace tiny
 		{
 			if (specialBinding.special == fx::ShaderSpecialBind_World)
 			{
-				// TODO hardcoded
-				/*worldData.data.world = DirectX::XMMatrixIdentity();
-				worldData.data.view = DirectX::XMMatrixLookAtRH({ 0, 0, -5 }, { 0, 0, 0 }, { 0, 1, 0 });
-				worldData.data.proj = DirectX::XMMatrixPerspectiveFovRH(DirectX::XM_PIDIV4, 1280.0f / 720.0f, 0.1f, 100.0f);
-				worldData.data.fullTransform = DirectX::XMMatrixTranspose(worldData.data.world * worldData.data.view * worldData.data.proj);
-				worldData.Update();*/
-				//worldData.data.fullTransform = view * projection;
-
-				auto world = DirectX::XMMatrixIdentity();
-				static float angle = 0.0f;
-				angle += 0.01f;
-				world = DirectX::XMMatrixRotationY(angle);
-
-				auto view = DirectX::XMMatrixLookAtLH({ 5, 0, 0 }, { 0, 0, 0 }, { 0, 1, 0 });
-				auto proj = DirectX::XMMatrixPerspectiveFovLH(DirectX::XM_PIDIV4, 1280.0f / 720.0f, 0.1f, 100.0f);
-				auto fullTransform = DirectX::XMMatrixTranspose(world * view * proj);
-				//cmd->SetGraphicsRoot32BitConstants(specialBinding.rootParamIndex, sizeof(fullTransform) / sizeof(u32), &fullTransform, 0);
-
-				worldData.data.fullTransform = fullTransform;
-				auto [data, size] = worldData.GetData();
-				cmd->SetGraphicsRoot32BitConstants(specialBinding.rootParamIndex, size / sizeof(u32), data, 0);
-				//worldData.Update();
-				//cmd->SetGraphicsRootConstantBufferView(specialBinding.rootParamIndex, worldData.resource->GetGPUVirtualAddress());
-				//gContext.Defer(worldData.resource);
-
-				/*auto [data, size] = worldData.GetData();
-				cmd->SetGraphicsRootConstantBufferView(specialBinding.rootParamIndex, worldData.resource->GetGPUVirtualAddress());
-				context.Defer(worldData.resource);*/
+				struct alignas(16) WorldData
+				{
+					alignas(16) DirectX::XMMATRIX fullTransform;
+				};
+				WorldData worldData;
+				
+				if (renderView.scene->mCameras.size())
+				{
+					Scene::CameraItem camera = renderView.scene->mCameras[0];
+					f32 fov = DirectX::XMConvertToRadians(camera.fov);
+					f32 aspect = static_cast<f32>(renderView.window->width) / static_cast<f32>(renderView.window->height);
+					DirectX::XMMATRIX proj = DirectX::XMMatrixPerspectiveFovLH(fov, aspect, camera.nearZ, camera.farZ);
+					worldData.fullTransform = DirectX::XMMatrixTranspose(world * camera.view * proj);						
+				}
+				else
+				{
+					auto view = DirectX::XMMatrixLookAtLH({ 5, 0, 0 }, { 0, 0, 0 }, { 0, 1, 0 });
+					auto proj = DirectX::XMMatrixPerspectiveFovLH(DirectX::XM_PIDIV4, 1280.0f / 720.0f, 0.1f, 100.0f);
+					worldData.fullTransform = DirectX::XMMatrixTranspose(world * view * proj);
+				}
+				FrameRingBuffer::Allocation alloc = gContext.frameRingBuffer.Allocate(sizeof(WorldData));
+				std::memcpy(alloc.cpuAddress, &worldData, sizeof(WorldData));
+				cmd->SetGraphicsRootConstantBufferView(specialBinding.rootParamIndex, alloc.gpuAddress);
 			}
 		}
 	}

@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_font_config" kind="struct" language="C++" prot="public">
+    <compoundname>ImFontConfig</compoundname>
+    <includes refid="imgui_8h" local="no">imgui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_font_config_1a0265861de7ba7b0d953e1c97e7a50cf3" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* ImFontConfig::FontData</definition>
+        <argsstring></argsstring>
+        <name>FontData</name>
+        <qualifiedname>ImFontConfig::FontData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2827" column="20" bodyfile="graphics/imgui/imgui.h" bodystart="2827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a39df7ad3bb496421ce2cc5d2428345ef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontConfig::FontDataSize</definition>
+        <argsstring></argsstring>
+        <name>FontDataSize</name>
+        <qualifiedname>ImFontConfig::FontDataSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2828" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a99dfbf61ef79cee89b6f03e17cbe63b4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImFontConfig::FontDataOwnedByAtlas</definition>
+        <argsstring></argsstring>
+        <name>FontDataOwnedByAtlas</name>
+        <qualifiedname>ImFontConfig::FontDataOwnedByAtlas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2829" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1ab37ee3d5cf76000a4000e9296161e527" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontConfig::FontNo</definition>
+        <argsstring></argsstring>
+        <name>FontNo</name>
+        <qualifiedname>ImFontConfig::FontNo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2830" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2830" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a2eff9cc7a11461414402f08ab910d277" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImFontConfig::SizePixels</definition>
+        <argsstring></argsstring>
+        <name>SizePixels</name>
+        <qualifiedname>ImFontConfig::SizePixels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2831" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1ab460df0d8019ffa8d124e8988c710910" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontConfig::OversampleH</definition>
+        <argsstring></argsstring>
+        <name>OversampleH</name>
+        <qualifiedname>ImFontConfig::OversampleH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2832" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a8018f84c60bfafb2b4629aeb77a047cb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontConfig::OversampleV</definition>
+        <argsstring></argsstring>
+        <name>OversampleV</name>
+        <qualifiedname>ImFontConfig::OversampleV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2833" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a635b5fa03934467891fa949a037b5b89" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImFontConfig::PixelSnapH</definition>
+        <argsstring></argsstring>
+        <name>PixelSnapH</name>
+        <qualifiedname>ImFontConfig::PixelSnapH</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2834" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a82db103689b1c434ec92875721967c07" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImFontConfig::GlyphExtraSpacing</definition>
+        <argsstring></argsstring>
+        <name>GlyphExtraSpacing</name>
+        <qualifiedname>ImFontConfig::GlyphExtraSpacing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2835" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a290a81956fdcb7ad3b5e3152594db121" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vec2" kindref="compound">ImVec2</ref></type>
+        <definition>ImVec2 ImFontConfig::GlyphOffset</definition>
+        <argsstring></argsstring>
+        <name>GlyphOffset</name>
+        <qualifiedname>ImFontConfig::GlyphOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2836" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1aa174ceff80323012cd1b717d864258dd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref> *</type>
+        <definition>const ImWchar* ImFontConfig::GlyphRanges</definition>
+        <argsstring></argsstring>
+        <name>GlyphRanges</name>
+        <qualifiedname>ImFontConfig::GlyphRanges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2837" column="20" bodyfile="graphics/imgui/imgui.h" bodystart="2837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a3015c4ad464a7b5abeb5b926e8896bf6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImFontConfig::GlyphMinAdvanceX</definition>
+        <argsstring></argsstring>
+        <name>GlyphMinAdvanceX</name>
+        <qualifiedname>ImFontConfig::GlyphMinAdvanceX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2838" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1af9040efaa5998aef3add4b629d7dc255" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImFontConfig::GlyphMaxAdvanceX</definition>
+        <argsstring></argsstring>
+        <name>GlyphMaxAdvanceX</name>
+        <qualifiedname>ImFontConfig::GlyphMaxAdvanceX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2839" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2839" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1ad5cab281622e5bdec8e2d55cadc5601e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImFontConfig::MergeMode</definition>
+        <argsstring></argsstring>
+        <name>MergeMode</name>
+        <qualifiedname>ImFontConfig::MergeMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2840" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a2582eeaf361f50881a4f02fb1e96d085" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ImFontConfig::FontBuilderFlags</definition>
+        <argsstring></argsstring>
+        <name>FontBuilderFlags</name>
+        <qualifiedname>ImFontConfig::FontBuilderFlags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2841" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a9365265cc52098a8ecf89ff47f6106f2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImFontConfig::RasterizerMultiply</definition>
+        <argsstring></argsstring>
+        <name>RasterizerMultiply</name>
+        <qualifiedname>ImFontConfig::RasterizerMultiply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2842" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a16af4c04622910d619882b9d068fddc9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImFontConfig::RasterizerDensity</definition>
+        <argsstring></argsstring>
+        <name>RasterizerDensity</name>
+        <qualifiedname>ImFontConfig::RasterizerDensity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2843" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1af58c73936500737189bbcfa3480f8c3c" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1ecb49ee827c39a982f1e1467910d020" kindref="member">ImWchar</ref></type>
+        <definition>ImWchar ImFontConfig::EllipsisChar</definition>
+        <argsstring></argsstring>
+        <name>EllipsisChar</name>
+        <qualifiedname>ImFontConfig::EllipsisChar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2844" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a12d3c014914d3b77533e219a013dc750" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ImFontConfig::Name[40]</definition>
+        <argsstring>[40]</argsstring>
+        <name>Name</name>
+        <qualifiedname>ImFontConfig::Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2847" column="21" bodyfile="graphics/imgui/imgui.h" bodystart="2847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_config_1a561773c311f6cf6de00642c2801e7b92" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_font" kindref="compound">ImFont</ref> *</type>
+        <definition>ImFont* ImFontConfig::DstFont</definition>
+        <argsstring></argsstring>
+        <name>DstFont</name>
+        <qualifiedname>ImFontConfig::DstFont</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2848" column="20" bodyfile="graphics/imgui/imgui.h" bodystart="2848" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_font_config_1af56ce39ce94ce0fb5171f4d8aa93f79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a43829975e84e45d1149597467a14bbf5" kindref="member">IMGUI_API</ref></type>
+        <definition>ImFontConfig::ImFontConfig</definition>
+        <argsstring>()</argsstring>
+        <name>ImFontConfig</name>
+        <qualifiedname>ImFontConfig::ImFontConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui.h" line="2850" column="15" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2004" bodyend="2014"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="1">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="2">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="13">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="9">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="4">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui.h" line="2825" column="1" bodyfile="graphics/imgui/imgui.h" bodystart="2826" bodyend="2851"/>
+    <listofallmembers>
+      <member refid="struct_im_font_config_1a561773c311f6cf6de00642c2801e7b92" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>DstFont</name></member>
+      <member refid="struct_im_font_config_1af58c73936500737189bbcfa3480f8c3c" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>EllipsisChar</name></member>
+      <member refid="struct_im_font_config_1a2582eeaf361f50881a4f02fb1e96d085" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>FontBuilderFlags</name></member>
+      <member refid="struct_im_font_config_1a0265861de7ba7b0d953e1c97e7a50cf3" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>FontData</name></member>
+      <member refid="struct_im_font_config_1a99dfbf61ef79cee89b6f03e17cbe63b4" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>FontDataOwnedByAtlas</name></member>
+      <member refid="struct_im_font_config_1a39df7ad3bb496421ce2cc5d2428345ef" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>FontDataSize</name></member>
+      <member refid="struct_im_font_config_1ab37ee3d5cf76000a4000e9296161e527" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>FontNo</name></member>
+      <member refid="struct_im_font_config_1a82db103689b1c434ec92875721967c07" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>GlyphExtraSpacing</name></member>
+      <member refid="struct_im_font_config_1af9040efaa5998aef3add4b629d7dc255" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>GlyphMaxAdvanceX</name></member>
+      <member refid="struct_im_font_config_1a3015c4ad464a7b5abeb5b926e8896bf6" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>GlyphMinAdvanceX</name></member>
+      <member refid="struct_im_font_config_1a290a81956fdcb7ad3b5e3152594db121" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>GlyphOffset</name></member>
+      <member refid="struct_im_font_config_1aa174ceff80323012cd1b717d864258dd" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>GlyphRanges</name></member>
+      <member refid="struct_im_font_config_1af56ce39ce94ce0fb5171f4d8aa93f79c" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>ImFontConfig</name></member>
+      <member refid="struct_im_font_config_1ad5cab281622e5bdec8e2d55cadc5601e" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>MergeMode</name></member>
+      <member refid="struct_im_font_config_1a12d3c014914d3b77533e219a013dc750" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>Name</name></member>
+      <member refid="struct_im_font_config_1ab460df0d8019ffa8d124e8988c710910" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>OversampleH</name></member>
+      <member refid="struct_im_font_config_1a8018f84c60bfafb2b4629aeb77a047cb" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>OversampleV</name></member>
+      <member refid="struct_im_font_config_1a635b5fa03934467891fa949a037b5b89" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>PixelSnapH</name></member>
+      <member refid="struct_im_font_config_1a16af4c04622910d619882b9d068fddc9" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>RasterizerDensity</name></member>
+      <member refid="struct_im_font_config_1a9365265cc52098a8ecf89ff47f6106f2" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>RasterizerMultiply</name></member>
+      <member refid="struct_im_font_config_1a2eff9cc7a11461414402f08ab910d277" prot="public" virt="non-virtual"><scope>ImFontConfig</scope><name>SizePixels</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

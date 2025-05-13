@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="imgui__impl__win32_8h" kind="file" language="C++">
+    <compoundname>imgui_impl_win32.h</compoundname>
+    <includes refid="imgui_8h" local="yes">imgui.h</includes>
+    <includedby refid="gfxdebug_8cpp" local="yes">graphics/gfxdebug.cpp</includedby>
+    <includedby refid="imgui__impl__win32_8cpp" local="yes">graphics/imgui/imgui_impl_win32.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>imconfig.h</label>
+        <link refid="imconfig_8h"/>
+      </node>
+      <node id="2">
+        <label>imgui.h</label>
+        <link refid="imgui_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>graphics/imgui/imgui_impl_win32.h</label>
+        <link refid="imgui__impl__win32_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assert.h</label>
+      </node>
+      <node id="4">
+        <label>float.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="3">
+        <label>graphics/imgui/imgui_impl_win32.cpp</label>
+        <link refid="imgui__impl__win32_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/imgui/imgui_impl_win32.h</label>
+        <link refid="imgui__impl__win32_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="imgui__impl__win32_8h_1afc1bec3634a6b4db30efeaf74c50d1ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> bool</type>
+        <definition>IMGUI_IMPL_API bool ImGui_ImplWin32_Init</definition>
+        <argsstring>(ImGuiContext *ctx, void *hwnd)</argsstring>
+        <name>ImGui_ImplWin32_Init</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>hwnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="23" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="188" bodyend="191" declfile="graphics/imgui/imgui_impl_win32.h" declline="23" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1a2895bb0414a96097220f24c89279b95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> bool</type>
+        <definition>IMGUI_IMPL_API bool ImGui_ImplWin32_InitForOpenGL</definition>
+        <argsstring>(ImGuiContext *ctx, void *hwnd)</argsstring>
+        <name>ImGui_ImplWin32_InitForOpenGL</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>hwnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="24" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="193" bodyend="197" declfile="graphics/imgui/imgui_impl_win32.h" declline="24" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1acaaf7293f23cf3c8a8f12e18df5c42ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplWin32_Shutdown</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>ImGui_ImplWin32_Shutdown</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="25" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="199" bodyend="215" declfile="graphics/imgui/imgui_impl_win32.h" declline="25" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1a83f6b4d85eb330ac25be822a1d336994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplWin32_NewFrame</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>ImGui_ImplWin32_NewFrame</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="26" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="373" bodyend="406" declfile="graphics/imgui/imgui_impl_win32.h" declline="26" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1a1dd8952480dd70d48de16334e5686dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplWin32_EnableDpiAwareness</definition>
+        <argsstring>()</argsstring>
+        <name>ImGui_ImplWin32_EnableDpiAwareness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="43" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="799" bodyend="822" declfile="graphics/imgui/imgui_impl_win32.h" declline="43" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1aac16bf93a00e545ac237b661b4824b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> float</type>
+        <definition>IMGUI_IMPL_API float ImGui_ImplWin32_GetDpiScaleForHwnd</definition>
+        <argsstring>(void *hwnd)</argsstring>
+        <name>ImGui_ImplWin32_GetDpiScaleForHwnd</name>
+        <param>
+          <type>void *</type>
+          <declname>hwnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="44" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="854" bodyend="858" declfile="graphics/imgui/imgui_impl_win32.h" declline="44" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1a8cf9e14edd8ff4e36fa6331c5c0de0c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> float</type>
+        <definition>IMGUI_IMPL_API float ImGui_ImplWin32_GetDpiScaleForMonitor</definition>
+        <argsstring>(void *monitor)</argsstring>
+        <name>ImGui_ImplWin32_GetDpiScaleForMonitor</name>
+        <param>
+          <type>void *</type>
+          <declname>monitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="45" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="828" bodyend="852" declfile="graphics/imgui/imgui_impl_win32.h" declline="45" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__win32_8h_1abfca68b49882f693320d6cbd9ad839b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplWin32_EnableAlphaCompositing</definition>
+        <argsstring>(void *hwnd)</argsstring>
+        <name>ImGui_ImplWin32_EnableAlphaCompositing</name>
+        <param>
+          <type>void *</type>
+          <declname>hwnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_win32.h" line="50" column="25" bodyfile="graphics/imgui/imgui_impl_win32.cpp" bodystart="871" bodyend="898" declfile="graphics/imgui/imgui_impl_win32.h" declline="50" declcolumn="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>dear<sp/>imgui:<sp/>Platform<sp/>Backend<sp/>for<sp/>Windows<sp/>(standard<sp/>windows<sp/>API<sp/>for<sp/>32-bits<sp/>AND<sp/>64-bits<sp/>applications)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>needs<sp/>to<sp/>be<sp/>used<sp/>along<sp/>with<sp/>a<sp/>Renderer<sp/>(e.g.<sp/>DirectX11,<sp/>OpenGL3,<sp/>Vulkan..)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Implemented<sp/>features:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Platform:<sp/>Clipboard<sp/>support<sp/>(for<sp/>Win32<sp/>this<sp/>is<sp/>actually<sp/>part<sp/>of<sp/>core<sp/>dear<sp/>imgui)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Platform:<sp/>Mouse<sp/>support.<sp/>Can<sp/>discriminate<sp/>Mouse/TouchScreen/Pen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Platform:<sp/>Keyboard<sp/>support.<sp/>Since<sp/>1.87<sp/>we<sp/>are<sp/>using<sp/>the<sp/>io.AddKeyEvent()<sp/>function.<sp/>Pass<sp/>ImGuiKey<sp/>values<sp/>to<sp/>all<sp/>key<sp/>functions<sp/>e.g.<sp/>ImGui::IsKeyPressed(ImGuiKey_Space).<sp/>[Legacy<sp/>VK_*<sp/>values<sp/>will<sp/>also<sp/>be<sp/>supported<sp/>unless<sp/>IMGUI_DISABLE_OBSOLETE_KEYIO<sp/>is<sp/>set]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Platform:<sp/>Gamepad<sp/>support.<sp/>Enabled<sp/>with<sp/>&apos;io.ConfigFlags<sp/>|=<sp/>ImGuiConfigFlags_NavEnableGamepad&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Platform:<sp/>Mouse<sp/>cursor<sp/>shape<sp/>and<sp/>visibility.<sp/>Disable<sp/>with<sp/>&apos;io.ConfigFlags<sp/>|=<sp/>ImGuiConfigFlags_NoMouseCursorChange&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>can<sp/>use<sp/>unmodified<sp/>imgui_impl_*<sp/>files<sp/>in<sp/>your<sp/>project.<sp/>See<sp/>examples/<sp/>folder<sp/>for<sp/>examples<sp/>of<sp/>using<sp/>this.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prefer<sp/>including<sp/>the<sp/>entire<sp/>imgui/<sp/>repository<sp/>into<sp/>your<sp/>project<sp/>(either<sp/>as<sp/>a<sp/>copy<sp/>or<sp/>as<sp/>a<sp/>submodule),<sp/>and<sp/>only<sp/>build<sp/>the<sp/>backends<sp/>you<sp/>need.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Learn<sp/>about<sp/>Dear<sp/>ImGui:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>FAQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://dearimgui.com/faq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Getting<sp/>Started<sp/><sp/><sp/><sp/><sp/><sp/>https://dearimgui.com/getting-started</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Documentation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://dearimgui.com/docs<sp/>(same<sp/>as<sp/>your<sp/>local<sp/>docs/<sp/>folder).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Introduction,<sp/>links<sp/>and<sp/>more<sp/>at<sp/>the<sp/>top<sp/>of<sp/>imgui.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="imgui_8h" kindref="compound">imgui.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IMGUI_IMPL_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMGUI_DISABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1afc1bec3634a6b4db30efeaf74c50d1ac" kindref="member">ImGui_ImplWin32_Init</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>hwnd);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1a2895bb0414a96097220f24c89279b95c" kindref="member">ImGui_ImplWin32_InitForOpenGL</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>hwnd);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1acaaf7293f23cf3c8a8f12e18df5c42ab" kindref="member">ImGui_ImplWin32_Shutdown</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1a83f6b4d85eb330ac25be822a1d336994" kindref="member">ImGui_ImplWin32_NewFrame</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Win32<sp/>message<sp/>handler<sp/>your<sp/>application<sp/>need<sp/>to<sp/>call.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Intentionally<sp/>commented<sp/>out<sp/>in<sp/>a<sp/>&apos;#if<sp/>0&apos;<sp/>block<sp/>to<sp/>avoid<sp/>dragging<sp/>dependencies<sp/>on<sp/>&lt;windows.h&gt;<sp/>from<sp/>this<sp/>helper.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>You<sp/>should<sp/>COPY<sp/>the<sp/>line<sp/>below<sp/>into<sp/>your<sp/>.cpp<sp/>code<sp/>to<sp/>forward<sp/>declare<sp/>the<sp/>function<sp/>and<sp/>then<sp/>you<sp/>can<sp/>call<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Call<sp/>from<sp/>your<sp/>application&apos;s<sp/>message<sp/>handler.<sp/>Keep<sp/>calling<sp/>your<sp/>message<sp/>handler<sp/>unless<sp/>this<sp/>function<sp/>returns<sp/>TRUE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/>LRESULT<sp/><ref refid="application_8cpp_1aba21a4abbb9099e1d96e3f38831dbddf" kindref="member">ImGui_ImplWin32_WndProcHandler</ref>(HWND<sp/>hWnd,<sp/>UINT<sp/>msg,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DPI-related<sp/>helpers<sp/>(optional)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Use<sp/>to<sp/>enable<sp/>DPI<sp/>awareness<sp/>without<sp/>having<sp/>to<sp/>create<sp/>an<sp/>application<sp/>manifest.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Your<sp/>own<sp/>app<sp/>may<sp/>already<sp/>do<sp/>this<sp/>via<sp/>a<sp/>manifest<sp/>or<sp/>explicit<sp/>calls.<sp/>This<sp/>is<sp/>mostly<sp/>useful<sp/>for<sp/>our<sp/>examples/<sp/>apps.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>In<sp/>theory<sp/>we<sp/>could<sp/>call<sp/>simple<sp/>functions<sp/>from<sp/>Windows<sp/>SDK<sp/>such<sp/>as<sp/>SetProcessDPIAware(),<sp/>SetProcessDpiAwareness(),<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>but<sp/>most<sp/>of<sp/>the<sp/>functions<sp/>provided<sp/>by<sp/>Microsoft<sp/>require<sp/>Windows<sp/>8.1/10+<sp/>SDK<sp/>at<sp/>compile<sp/>time<sp/>and<sp/>Windows<sp/>8/10+<sp/>at<sp/>runtime,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>neither<sp/>we<sp/>want<sp/>to<sp/>require<sp/>the<sp/>user<sp/>to<sp/>have.<sp/>So<sp/>we<sp/>dynamically<sp/>select<sp/>and<sp/>load<sp/>those<sp/>functions<sp/>to<sp/>avoid<sp/>dependencies.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1a1dd8952480dd70d48de16334e5686dfc" kindref="member">ImGui_ImplWin32_EnableDpiAwareness</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1aac16bf93a00e545ac237b661b4824b23" kindref="member">ImGui_ImplWin32_GetDpiScaleForHwnd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>hwnd);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HWND<sp/>hwnd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1a8cf9e14edd8ff4e36fa6331c5c0de0c2" kindref="member">ImGui_ImplWin32_GetDpiScaleForMonitor</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>monitor);<sp/></highlight><highlight class="comment">//<sp/>HMONITOR<sp/>monitor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transparency<sp/>related<sp/>helpers<sp/>(optional)<sp/>[experimental]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Use<sp/>to<sp/>enable<sp/>alpha<sp/>compositing<sp/>transparency<sp/>with<sp/>the<sp/>desktop.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Use<sp/>together<sp/>with<sp/>e.g.<sp/>clearing<sp/>your<sp/>framebuffer<sp/>with<sp/>zero-alpha.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__win32_8h_1abfca68b49882f693320d6cbd9ad839b5" kindref="member">ImGui_ImplWin32_EnableAlphaCompositing</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>hwnd);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HWND<sp/>hwnd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>#ifndef<sp/>IMGUI_DISABLE</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="graphics/imgui/imgui_impl_win32.h"/>
+  </compounddef>
+</doxygen>

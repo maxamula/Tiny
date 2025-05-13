@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_render_view" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::RenderView</compoundname>
+    <includes refid="application_8h" local="no">application.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_render_view_1a2cad653e5572f0ea85d76db0dbde2d7e" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::RenderView::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::RenderView::__pad0__</qualifiedname>
+        <bitfield> Window* window</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="53" column="1" bodyfile="engine/application.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_view_1a91047ecea73b2282a5513f6aeba1eb98" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_i_renderer" kindref="compound">IRenderer</ref> *</type>
+        <definition>IRenderer* tiny::RenderView::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <qualifiedname>tiny::RenderView::renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="55" column="11" bodyfile="engine/application.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_view_1a08d4e9afc08df26cd9ffbc573556ee94" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_frame_graph" kindref="compound">FrameGraph</ref></type>
+        <definition>FrameGraph tiny::RenderView::frameGraph</definition>
+        <argsstring></argsstring>
+        <name>frameGraph</name>
+        <qualifiedname>tiny::RenderView::frameGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="56" column="12" bodyfile="engine/application.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_view_1ae2ba7ebc9922b9f62c9d07531c23bd4e" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_camera" kindref="compound">Camera</ref> *</type>
+        <definition>Camera* tiny::RenderView::camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <qualifiedname>tiny::RenderView::camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="57" column="8" bodyfile="engine/application.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_view_1ac208b96c45d53835b58ef80e902fab0e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tiny::RenderView::bMarkedForRebuild</definition>
+        <argsstring></argsstring>
+        <name>bMarkedForRebuild</name>
+        <qualifiedname>tiny::RenderView::bMarkedForRebuild</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="58" column="6" bodyfile="engine/application.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>tiny::Camera</label>
+        <link refid="classtiny_1_1_camera"/>
+      </node>
+      <node id="3">
+        <label>tiny::FrameGraph</label>
+        <link refid="classtiny_1_1_frame_graph"/>
+      </node>
+      <node id="2">
+        <label>tiny::IRenderer</label>
+        <link refid="classtiny_1_1_i_renderer"/>
+      </node>
+      <node id="1">
+        <label>tiny::RenderView</label>
+        <link refid="structtiny_1_1_render_view"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>renderer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>frameGraph</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>camera</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/application.h" line="51" column="1" bodyfile="engine/application.h" bodystart="52" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_render_view_1a2cad653e5572f0ea85d76db0dbde2d7e" prot="public" virt="non-virtual"><scope>tiny::RenderView</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_render_view_1ac208b96c45d53835b58ef80e902fab0e" prot="public" virt="non-virtual"><scope>tiny::RenderView</scope><name>bMarkedForRebuild</name></member>
+      <member refid="structtiny_1_1_render_view_1ae2ba7ebc9922b9f62c9d07531c23bd4e" prot="public" virt="non-virtual"><scope>tiny::RenderView</scope><name>camera</name></member>
+      <member refid="structtiny_1_1_render_view_1a08d4e9afc08df26cd9ffbc573556ee94" prot="public" virt="non-virtual"><scope>tiny::RenderView</scope><name>frameGraph</name></member>
+      <member refid="structtiny_1_1_render_view_1a91047ecea73b2282a5513f6aeba1eb98" prot="public" virt="non-virtual"><scope>tiny::RenderView</scope><name>renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

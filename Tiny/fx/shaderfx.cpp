@@ -722,7 +722,7 @@ namespace tiny::fx
 	{
 		switch (propertyID)
 		{
-		case "ilWorld"_hs:
+		case "cbWorld"_hs:
 			if (resource.type == D3D_SIT_CBUFFER)
 				bindings.push_back(ShaderResourceSpecialBinding{ rootIndex, ShaderSpecialBind_World });
 			return true;
@@ -764,17 +764,7 @@ namespace tiny::fx
 		THROW_IF_FAILED(DxcCreateInstance(CLSID_DxcUtils, IID_PPV_ARGS(&gDxcUtils)));
 		THROW_IF_FAILED(DxcCreateInstance(CLSID_DxcCompiler, IID_PPV_ARGS(&gDxcCompiler)));
 		THROW_IF_FAILED(gDxcUtils->CreateDefaultIncludeHandler(&gDxcIncludeHandler));
-
-		{
-			entt::meta_factory<CBufferCPUBase> meta;
-			meta.type("ICBuffer"_hs)
-				.base<CBufferCPUBase>();
-		}
-		{
-			entt::meta_factory<IMeshMaterialInstance> meta;
-			meta.type("MeshMaterialInstance"_hs);
-		}
-		
+	
 		for (auto& [instanceId, info] : GetMaterialsRegistry())
 			info.initializer(pDevice, info.material);
 		for (auto& [instanceId, info] : GetMeshMaterialsRegistry())
@@ -953,14 +943,17 @@ namespace tiny::fx
 					}
 				}
 
-
+				ShaderCBufferType cbufferType = ShaderCBufferType_CPU;
 				if (resource.type == D3D_SIT_CBUFFER)
 				{
 					// In case resource is a cbuffer
 					CD3DX12_ROOT_PARAMETER rootParameter;
 					// Check name prefix for "il" which means "inline" which means that this cbuffer sent as root constants
 					if (strncmp(resource.name, "il", 2) == 0)
+					{
 						rootParameter.InitAsConstants(/*resource.cbufferSize*/64 / sizeof(u32), resource.bindPoint, 0, D3D12_SHADER_VISIBILITY_ALL); // TODO num constants
+						cbufferType = ShaderCBufferType_Constants;
+					}
 					else
 						rootParameter.InitAsConstantBufferView(resource.bindPoint, 0, D3D12_SHADER_VISIBILITY_ALL);
 					rootParameters.push_back(rootParameter);

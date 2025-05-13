@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_text_index" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTextIndex</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_text_index_1ad9683201522668ffd920299243de177b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; int &gt;</type>
+        <definition>ImVector&lt;int&gt; ImGuiTextIndex::LineOffsets</definition>
+        <argsstring></argsstring>
+        <name>LineOffsets</name>
+        <qualifiedname>ImGuiTextIndex::LineOffsets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="724" column="16" bodyfile="graphics/imgui/imgui_internal.h" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_text_index_1a885f884d458a6309a1a524a20670c426" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTextIndex::EndOffset</definition>
+        <argsstring></argsstring>
+        <name>EndOffset</name>
+        <qualifiedname>ImGuiTextIndex::EndOffset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="725" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_text_index_1a4c4f61227f86144ae9c054cc865eecb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiTextIndex::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>ImGuiTextIndex::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="727" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="727" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_index_1a016978541a00f3901b19327296fd4934" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImGuiTextIndex::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <qualifiedname>ImGuiTextIndex::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="728" column="21" bodyfile="graphics/imgui/imgui_internal.h" bodystart="728" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_index_1aca03811115c2399b24cb0051dac850b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ImGuiTextIndex::get_line_begin</definition>
+        <argsstring>(const char *base, int n)</argsstring>
+        <name>get_line_begin</name>
+        <qualifiedname>ImGuiTextIndex::get_line_begin</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="729" column="20" bodyfile="graphics/imgui/imgui_internal.h" bodystart="729" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_index_1a17115775633756615910747494e81a8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ImGuiTextIndex::get_line_end</definition>
+        <argsstring>(const char *base, int n)</argsstring>
+        <name>get_line_end</name>
+        <qualifiedname>ImGuiTextIndex::get_line_end</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="730" column="20" bodyfile="graphics/imgui/imgui_internal.h" bodystart="730" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_gui_text_index_1aa1dd7404a8097a902f1dd83ba988bd95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImGuiTextIndex::append</definition>
+        <argsstring>(const char *base, int old_size, int new_size)</argsstring>
+        <name>append</name>
+        <qualifiedname>ImGuiTextIndex::append</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>old_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="731" column="21" bodyfile="graphics/imgui/imgui.cpp" bodystart="2685" bodyend="2697"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiTextIndex</label>
+        <link refid="struct_im_gui_text_index"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>LineOffsets</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; int &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="722" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="723" bodyend="732"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_text_index_1aa1dd7404a8097a902f1dd83ba988bd95" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>append</name></member>
+      <member refid="struct_im_gui_text_index_1a4c4f61227f86144ae9c054cc865eecb3" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>clear</name></member>
+      <member refid="struct_im_gui_text_index_1a885f884d458a6309a1a524a20670c426" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>EndOffset</name></member>
+      <member refid="struct_im_gui_text_index_1aca03811115c2399b24cb0051dac850b0" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>get_line_begin</name></member>
+      <member refid="struct_im_gui_text_index_1a17115775633756615910747494e81a8c" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>get_line_end</name></member>
+      <member refid="struct_im_gui_text_index_1ad9683201522668ffd920299243de177b" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>LineOffsets</name></member>
+      <member refid="struct_im_gui_text_index_1a016978541a00f3901b19327296fd4934" prot="public" virt="non-virtual"><scope>ImGuiTextIndex</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_descriptor_range" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>tiny::DescriptorRange</compoundname>
+    <includes refid="descriptors_8h" local="no">descriptors.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtiny_1_1_descriptor_range_1a45b2fa354081f2834f6664cd95807ada" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class D3DDescriptorHeap</definition>
+        <argsstring></argsstring>
+        <name>D3DDescriptorHeap</name>
+        <qualifiedname>tiny::DescriptorRange::D3DDescriptorHeap</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="50" column="14" bodyfile="graphics/descriptors.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_descriptor_range_1af136c725ba3ee077835978d37652d94e" prot="private" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> *</type>
+        <definition>D3DDescriptorHeap* tiny::DescriptorRange::mHeap</definition>
+        <argsstring></argsstring>
+        <name>mHeap</name>
+        <qualifiedname>tiny::DescriptorRange::mHeap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="74" column="18" bodyfile="graphics/descriptors.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_descriptor_range_1a93a3d0c76f8a1872254e2cf5b155f02e" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::DescriptorRange::mIndex</definition>
+        <argsstring></argsstring>
+        <name>mIndex</name>
+        <qualifiedname>tiny::DescriptorRange::mIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="75" column="4" bodyfile="graphics/descriptors.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_descriptor_range_1a1ed9c0814cd86141541bb31d81e46579" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::DescriptorRange::mLength</definition>
+        <argsstring></argsstring>
+        <name>mLength</name>
+        <qualifiedname>tiny::DescriptorRange::mLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="76" column="4" bodyfile="graphics/descriptors.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_descriptor_range_1a263c142511989424e6778a445063f469" prot="private" static="no" mutable="no">
+        <type>D3D12_CPU_DESCRIPTOR_HANDLE</type>
+        <definition>D3D12_CPU_DESCRIPTOR_HANDLE tiny::DescriptorRange::mSartCpu</definition>
+        <argsstring></argsstring>
+        <name>mSartCpu</name>
+        <qualifiedname>tiny::DescriptorRange::mSartCpu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="77" column="28" bodyfile="graphics/descriptors.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_descriptor_range_1a91a410975f3e3ba44ac0b2107c53914b" prot="private" static="no" mutable="no">
+        <type>D3D12_GPU_DESCRIPTOR_HANDLE</type>
+        <definition>D3D12_GPU_DESCRIPTOR_HANDLE tiny::DescriptorRange::mStartGpu</definition>
+        <argsstring></argsstring>
+        <name>mStartGpu</name>
+        <qualifiedname>tiny::DescriptorRange::mStartGpu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="78" column="28" bodyfile="graphics/descriptors.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::DescriptorRange</definition>
+        <argsstring>()</argsstring>
+        <name>DescriptorRange</name>
+        <qualifiedname>tiny::DescriptorRange::DescriptorRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="52" column="1" bodyfile="graphics/descriptors.cpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a0b789a230d4414288d9089442513f881" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::DescriptorRange</definition>
+        <argsstring>(const DescriptorRange &amp;) noexcept</argsstring>
+        <name>DescriptorRange</name>
+        <qualifiedname>tiny::DescriptorRange::DescriptorRange</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="53" column="1" bodyfile="graphics/descriptors.cpp" bodystart="269" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1abdaa56b3e425b425687c1898f429d3ed" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &amp;</type>
+        <definition>DescriptorRange &amp; tiny::DescriptorRange::operator=</definition>
+        <argsstring>(const DescriptorRange &amp;) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::DescriptorRange::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="54" column="17" bodyfile="graphics/descriptors.cpp" bodystart="276" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1abbf10ca5ecf4092fe042f1a006cda16b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::DescriptorRange</definition>
+        <argsstring>(DescriptorRange &amp;&amp;) noexcept</argsstring>
+        <name>DescriptorRange</name>
+        <qualifiedname>tiny::DescriptorRange::DescriptorRange</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &amp;&amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="55" column="1" bodyfile="graphics/descriptors.cpp" bodystart="295" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a40fdb8223f725df8ed53bbb08eaf755a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &amp;</type>
+        <definition>DescriptorRange &amp; tiny::DescriptorRange::operator=</definition>
+        <argsstring>(DescriptorRange &amp;&amp;) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tiny::DescriptorRange::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> &amp;&amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="56" column="17" bodyfile="graphics/descriptors.cpp" bodystart="305" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a59d7a0dc8d8f86fef1c5b4d7c2c467eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::~DescriptorRange</definition>
+        <argsstring>()</argsstring>
+        <name>~DescriptorRange</name>
+        <qualifiedname>tiny::DescriptorRange::~DescriptorRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="57" column="1" bodyfile="graphics/descriptors.cpp" bodystart="327" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a9d402d6dd13a9a4cd2c8f2b472e94482" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tiny::DescriptorRange::operator&lt;</definition>
+        <argsstring>(DescriptorRange const &amp;o) const noexcept</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>tiny::DescriptorRange::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_descriptor_range" kindref="compound">DescriptorRange</ref> const &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="59" column="1" bodyfile="graphics/descriptors.h" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1ae9bdd3c9f3afbc73867562c96f0c8256" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>D3D12_CPU_DESCRIPTOR_HANDLE</type>
+        <definition>D3D12_CPU_DESCRIPTOR_HANDLE tiny::DescriptorRange::GetCpuHandle</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>GetCpuHandle</name>
+        <qualifiedname>tiny::DescriptorRange::GetCpuHandle</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="66" column="30" bodyfile="graphics/descriptors.cpp" bodystart="334" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a403a48ff7e76d014ede9053543b5ae6e" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>D3D12_GPU_DESCRIPTOR_HANDLE</type>
+        <definition>D3D12_GPU_DESCRIPTOR_HANDLE tiny::DescriptorRange::GetGpuHandle</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>GetGpuHandle</name>
+        <qualifiedname>tiny::DescriptorRange::GetGpuHandle</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="67" column="30" bodyfile="graphics/descriptors.cpp" bodystart="341" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1ae95543384665cf08398155703ca1ad5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::__declspec</definition>
+        <argsstring>(property(get=GetCpuHandle)) D3D12_CPU_DESCRIPTOR_HANDLE cpu[]</argsstring>
+        <name>__declspec</name>
+        <qualifiedname>tiny::DescriptorRange::__declspec</qualifiedname>
+        <param>
+          <type>property(get=<ref refid="classtiny_1_1_descriptor_range_1ae9bdd3c9f3afbc73867562c96f0c8256" kindref="member">GetCpuHandle</ref>)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a2609e2e0c4f26c06a65cd70c3047fda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::__declspec</definition>
+        <argsstring>(property(get=GetGpuHandle)) D3D12_GPU_DESCRIPTOR_HANDLE gpu[]</argsstring>
+        <name>__declspec</name>
+        <qualifiedname>tiny::DescriptorRange::__declspec</qualifiedname>
+        <param>
+          <type>property(get=<ref refid="classtiny_1_1_descriptor_range_1a403a48ff7e76d014ede9053543b5ae6e" kindref="member">GetGpuHandle</ref>)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="70" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtiny_1_1_descriptor_range_1a5ecebaedd86e2feb908815934099d2b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DescriptorRange::DescriptorRange</definition>
+        <argsstring>(D3DDescriptorHeap *heap, u32 index, u32 length, D3D12_CPU_DESCRIPTOR_HANDLE cpu, D3D12_GPU_DESCRIPTOR_HANDLE gpu)</argsstring>
+        <name>DescriptorRange</name>
+        <qualifiedname>tiny::DescriptorRange::DescriptorRange</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_d3_d_descriptor_heap" kindref="compound">D3DDescriptorHeap</ref> *</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>D3D12_CPU_DESCRIPTOR_HANDLE</type>
+          <declname>cpu</declname>
+        </param>
+        <param>
+          <type>D3D12_GPU_DESCRIPTOR_HANDLE</type>
+          <declname>gpu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/descriptors.h" line="72" column="1" bodyfile="graphics/descriptors.cpp" bodystart="264" bodyend="267"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/descriptors.h" line="48" column="1" bodyfile="graphics/descriptors.h" bodystart="49" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_descriptor_range_1ae95543384665cf08398155703ca1ad5d" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>__declspec</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a2609e2e0c4f26c06a65cd70c3047fda6" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>__declspec</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a45b2fa354081f2834f6664cd95807ada" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>D3DDescriptorHeap</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1ab1c6ccbf9711e30a21b286e159638c52" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>DescriptorRange</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a0b789a230d4414288d9089442513f881" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>DescriptorRange</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1abbf10ca5ecf4092fe042f1a006cda16b" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>DescriptorRange</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a5ecebaedd86e2feb908815934099d2b2" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>DescriptorRange</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1ae9bdd3c9f3afbc73867562c96f0c8256" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>GetCpuHandle</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a403a48ff7e76d014ede9053543b5ae6e" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>GetGpuHandle</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1af136c725ba3ee077835978d37652d94e" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>mHeap</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a93a3d0c76f8a1872254e2cf5b155f02e" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>mIndex</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a1ed9c0814cd86141541bb31d81e46579" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>mLength</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a263c142511989424e6778a445063f469" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>mSartCpu</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a91a410975f3e3ba44ac0b2107c53914b" prot="private" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>mStartGpu</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a9d402d6dd13a9a4cd2c8f2b472e94482" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>operator&lt;</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1abdaa56b3e425b425687c1898f429d3ed" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a40fdb8223f725df8ed53bbb08eaf755a" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>operator=</name></member>
+      <member refid="classtiny_1_1_descriptor_range_1a59d7a0dc8d8f86fef1c5b4d7c2c467eb" prot="public" virt="non-virtual"><scope>tiny::DescriptorRange</scope><name>~DescriptorRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

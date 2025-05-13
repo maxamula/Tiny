@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structstbtt__vertex" kind="struct" language="C++" prot="public">
+    <compoundname>stbtt_vertex</compoundname>
+    <includes refid="imstb__truetype_8h" local="no">imstb_truetype.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstbtt__vertex_1a81773edbe760d0e090561a3c1e86c919" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__truetype_8h_1ab8fd8e5e0b82b0f7da54532035e47b22" kindref="member">stbtt_vertex_type</ref></type>
+        <definition>stbtt_vertex_type stbtt_vertex::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>stbtt_vertex::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="842" column="25" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a9052065ca544b63d537325b246928cfc" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__truetype_8h_1ab8fd8e5e0b82b0f7da54532035e47b22" kindref="member">stbtt_vertex_type</ref></type>
+        <definition>stbtt_vertex_type stbtt_vertex::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>stbtt_vertex::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="842" column="26" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a43835489e2a151b31cb100d20f8adeae" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__truetype_8h_1ab8fd8e5e0b82b0f7da54532035e47b22" kindref="member">stbtt_vertex_type</ref></type>
+        <definition>stbtt_vertex_type stbtt_vertex::cx</definition>
+        <argsstring></argsstring>
+        <name>cx</name>
+        <qualifiedname>stbtt_vertex::cx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="842" column="27" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a5610d6335aa6962d970fc7fd2225545e" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__truetype_8h_1ab8fd8e5e0b82b0f7da54532035e47b22" kindref="member">stbtt_vertex_type</ref></type>
+        <definition>stbtt_vertex_type stbtt_vertex::cy</definition>
+        <argsstring></argsstring>
+        <name>cy</name>
+        <qualifiedname>stbtt_vertex::cy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="842" column="29" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a1c45a8d41727b24b84f97a944f2b800a" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__truetype_8h_1ab8fd8e5e0b82b0f7da54532035e47b22" kindref="member">stbtt_vertex_type</ref></type>
+        <definition>stbtt_vertex_type stbtt_vertex::cx1</definition>
+        <argsstring></argsstring>
+        <name>cx1</name>
+        <qualifiedname>stbtt_vertex::cx1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="842" column="31" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a68227d28643f5667064fa3c385f4ea7d" prot="public" static="no" mutable="no">
+        <type><ref refid="imstb__truetype_8h_1ab8fd8e5e0b82b0f7da54532035e47b22" kindref="member">stbtt_vertex_type</ref></type>
+        <definition>stbtt_vertex_type stbtt_vertex::cy1</definition>
+        <argsstring></argsstring>
+        <name>cy1</name>
+        <qualifiedname>stbtt_vertex::cy1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="842" column="34" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1aa325b3707b88e7e104c0de46bb2bf395" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_vertex::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>stbtt_vertex::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="843" column="21" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstbtt__vertex_1a8bd328747e8ea018612960a52e3e3ede" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char stbtt_vertex::padding</definition>
+        <argsstring></argsstring>
+        <name>padding</name>
+        <qualifiedname>stbtt_vertex::padding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imstb_truetype.h" line="843" column="25" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="843" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imstb_truetype.h" line="840" column="1" bodyfile="graphics/imgui/imstb_truetype.h" bodystart="841" bodyend="844"/>
+    <listofallmembers>
+      <member refid="structstbtt__vertex_1a43835489e2a151b31cb100d20f8adeae" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>cx</name></member>
+      <member refid="structstbtt__vertex_1a1c45a8d41727b24b84f97a944f2b800a" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>cx1</name></member>
+      <member refid="structstbtt__vertex_1a5610d6335aa6962d970fc7fd2225545e" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>cy</name></member>
+      <member refid="structstbtt__vertex_1a68227d28643f5667064fa3c385f4ea7d" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>cy1</name></member>
+      <member refid="structstbtt__vertex_1a8bd328747e8ea018612960a52e3e3ede" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>padding</name></member>
+      <member refid="structstbtt__vertex_1aa325b3707b88e7e104c0de46bb2bf395" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>type</name></member>
+      <member refid="structstbtt__vertex_1a81773edbe760d0e090561a3c1e86c919" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>x</name></member>
+      <member refid="structstbtt__vertex_1a9052065ca544b63d537325b246928cfc" prot="public" virt="non-virtual"><scope>stbtt_vertex</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -6,19 +6,18 @@
 namespace tiny
 {
 	struct Mesh;
+	struct RenderView;
 
 	struct TINYFX_API RenderContext
 	{
-		struct alignas(16) WorldData
-		{
-			alignas(16) DirectX::XMMATRIX fullTransform;
-		};
+		void SetWorld(const DirectX::XMMATRIX& world);
+
 		void BindMaterial(fx::IMaterialInstance* pMatInstance);
 		void BindMaterial(fx::IMeshMaterialInstance* pMatInstance, u8 inputAttributes);
 		void BindMesh(const Mesh& mesh);
 	_internal:
-		entt::registry* renderItems;
 		CComPtr<ID3D12GraphicsCommandList6> cmd;
-		CBufferInline<WorldData> worldData;
+		RenderView&							renderView;
+		DirectX::XMMATRIX					world;
 	};
 }

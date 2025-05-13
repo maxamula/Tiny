@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespacetiny_1_1fx_1_1_0d277053056237300171232065033112173073263110323010" kind="namespace" language="C++">
+    <compoundname>tiny::fx</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetiny_1_1fx_1_1_0d277053056237300171232065033112173073263110323010_1ae206fd4e93f967b3780d88d60f42e56b" prot="public" static="no" strong="no">
+        <type>u8</type>
+        <name>ShaderRegister</name>
+        <qualifiedname>tiny::fx::ShaderRegister</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.cpp" line="64" column="1" bodyfile="fx/shaderfx.cpp" bodystart="65" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.cpp" line="20" column="1"/>
+  </compounddef>
+</doxygen>

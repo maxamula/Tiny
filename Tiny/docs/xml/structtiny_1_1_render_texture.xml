@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_render_texture" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::RenderTexture</compoundname>
+    <includes refid="content_8h" local="no">content.h</includes>
+    <innerclass refid="structtiny_1_1_render_texture_1_1_desc" prot="public">tiny::RenderTexture::Desc</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_render_texture_1a8d5a19c762ab138bf56c35c58eb8588a" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::RenderTexture::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::RenderTexture::__pad0__</qualifiedname>
+        <bitfield> CComPtr&lt;ID3D12Resource&gt; resource</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="44" column="1" bodyfile="content/content.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_texture_1a995d13fcb571066d3e6ef8a9f39ff23a" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref></type>
+        <definition>DescriptorHandle tiny::RenderTexture::rtv</definition>
+        <argsstring></argsstring>
+        <name>rtv</name>
+        <qualifiedname>tiny::RenderTexture::rtv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="46" column="18" bodyfile="content/content.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_texture_1af5b87d7b7845bb273de6b2dcc1394b67" prot="public" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_descriptor_handle" kindref="compound">DescriptorHandle</ref></type>
+        <definition>DescriptorHandle tiny::RenderTexture::srv</definition>
+        <argsstring></argsstring>
+        <name>srv</name>
+        <qualifiedname>tiny::RenderTexture::srv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="47" column="18" bodyfile="content/content.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_texture_1a8af6aa333d493e0a68b6ea7087554162" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::RenderTexture::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>tiny::RenderTexture::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="48" column="5" bodyfile="content/content.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_render_texture_1ab32b2ad56572364d2afb09db205e1e1e" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::RenderTexture::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>tiny::RenderTexture::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="48" column="11" bodyfile="content/content.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structtiny_1_1_render_texture_1a33a5c53c25e38a10bafab46e85791c0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtiny_1_1_render_texture" kindref="compound">RenderTexture</ref></type>
+        <definition>RenderTexture tiny::RenderTexture::Create</definition>
+        <argsstring>(const Desc &amp;desc)</argsstring>
+        <name>Create</name>
+        <qualifiedname>tiny::RenderTexture::Create</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_render_texture_1_1_desc" kindref="compound">Desc</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/content.h" line="43" column="22" bodyfile="content/content.cpp" bodystart="66" bodyend="140"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::DescriptorHandle</label>
+        <link refid="classtiny_1_1_descriptor_handle"/>
+      </node>
+      <node id="1">
+        <label>tiny::RenderTexture</label>
+        <link refid="structtiny_1_1_render_texture"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>rtv</edgelabel>
+          <edgelabel>srv</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="content/content.h" line="34" column="1" bodyfile="content/content.h" bodystart="35" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_render_texture_1a8d5a19c762ab138bf56c35c58eb8588a" prot="public" virt="non-virtual"><scope>tiny::RenderTexture</scope><name>__pad0__</name></member>
+      <member refid="structtiny_1_1_render_texture_1a33a5c53c25e38a10bafab46e85791c0f" prot="public" virt="non-virtual"><scope>tiny::RenderTexture</scope><name>Create</name></member>
+      <member refid="structtiny_1_1_render_texture_1ab32b2ad56572364d2afb09db205e1e1e" prot="public" virt="non-virtual"><scope>tiny::RenderTexture</scope><name>height</name></member>
+      <member refid="structtiny_1_1_render_texture_1a995d13fcb571066d3e6ef8a9f39ff23a" prot="public" virt="non-virtual"><scope>tiny::RenderTexture</scope><name>rtv</name></member>
+      <member refid="structtiny_1_1_render_texture_1af5b87d7b7845bb273de6b2dcc1394b67" prot="public" virt="non-virtual"><scope>tiny::RenderTexture</scope><name>srv</name></member>
+      <member refid="structtiny_1_1_render_texture_1a8af6aa333d493e0a68b6ea7087554162" prot="public" virt="non-virtual"><scope>tiny::RenderTexture</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

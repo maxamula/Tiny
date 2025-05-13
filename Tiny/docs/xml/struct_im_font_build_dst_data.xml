@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_font_build_dst_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImFontBuildDstData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_font_build_dst_data_1ab13d637daba34891db2968684647a728" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontBuildDstData::SrcCount</definition>
+        <argsstring></argsstring>
+        <name>SrcCount</name>
+        <qualifiedname>ImFontBuildDstData::SrcCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2425" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_dst_data_1a2c0592f57b8381a9d106b6881491b29c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontBuildDstData::GlyphsHighest</definition>
+        <argsstring></argsstring>
+        <name>GlyphsHighest</name>
+        <qualifiedname>ImFontBuildDstData::GlyphsHighest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2426" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_dst_data_1aeb9950177ed2ec156332ec8c3683c2e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImFontBuildDstData::GlyphsCount</definition>
+        <argsstring></argsstring>
+        <name>GlyphsCount</name>
+        <qualifiedname>ImFontBuildDstData::GlyphsCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2427" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_font_build_dst_data_1acb81b9abe454d0a989ae467a5b208d9a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_bit_vector" kindref="compound">ImBitVector</ref></type>
+        <definition>ImBitVector ImFontBuildDstData::GlyphsSet</definition>
+        <argsstring></argsstring>
+        <name>GlyphsSet</name>
+        <qualifiedname>ImFontBuildDstData::GlyphsSet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_draw.cpp" line="2428" column="25" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2428" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ImBitVector</label>
+        <link refid="struct_im_bit_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Storage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImFontBuildDstData</label>
+        <link refid="struct_im_font_build_dst_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>GlyphsSet</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVector&lt; ImU32 &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_draw.cpp" line="2423" column="1" bodyfile="graphics/imgui/imgui_draw.cpp" bodystart="2424" bodyend="2429"/>
+    <listofallmembers>
+      <member refid="struct_im_font_build_dst_data_1aeb9950177ed2ec156332ec8c3683c2e2" prot="public" virt="non-virtual"><scope>ImFontBuildDstData</scope><name>GlyphsCount</name></member>
+      <member refid="struct_im_font_build_dst_data_1a2c0592f57b8381a9d106b6881491b29c" prot="public" virt="non-virtual"><scope>ImFontBuildDstData</scope><name>GlyphsHighest</name></member>
+      <member refid="struct_im_font_build_dst_data_1acb81b9abe454d0a989ae467a5b208d9a" prot="public" virt="non-virtual"><scope>ImFontBuildDstData</scope><name>GlyphsSet</name></member>
+      <member refid="struct_im_font_build_dst_data_1ab13d637daba34891db2968684647a728" prot="public" virt="non-virtual"><scope>ImFontBuildDstData</scope><name>SrcCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_input_event_mouse_wheel" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiInputEventMouseWheel</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_wheel_1a73befbdbdd99ebf390a7fb6aa803712b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiInputEventMouseWheel::WheelX</definition>
+        <argsstring></argsstring>
+        <name>WheelX</name>
+        <qualifiedname>ImGuiInputEventMouseWheel::WheelX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1337" column="38" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_wheel_1a78146a6a771f9154fc1901d48e819fdb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiInputEventMouseWheel::WheelY</definition>
+        <argsstring></argsstring>
+        <name>WheelY</name>
+        <qualifiedname>ImGuiInputEventMouseWheel::WheelY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1337" column="45" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_input_event_mouse_wheel_1aac2685e14b8ba9eb5bdb5e321686da23" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3a993a8d676ceae7ca25c4957be9600b" kindref="member">ImGuiMouseSource</ref></type>
+        <definition>ImGuiMouseSource ImGuiInputEventMouseWheel::MouseSource</definition>
+        <argsstring></argsstring>
+        <name>MouseSource</name>
+        <qualifiedname>ImGuiInputEventMouseWheel::MouseSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1337" column="69" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1337" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1337" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1337" bodyend="1337"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_input_event_mouse_wheel_1aac2685e14b8ba9eb5bdb5e321686da23" prot="public" virt="non-virtual"><scope>ImGuiInputEventMouseWheel</scope><name>MouseSource</name></member>
+      <member refid="struct_im_gui_input_event_mouse_wheel_1a73befbdbdd99ebf390a7fb6aa803712b" prot="public" virt="non-virtual"><scope>ImGuiInputEventMouseWheel</scope><name>WheelX</name></member>
+      <member refid="struct_im_gui_input_event_mouse_wheel_1a78146a6a771f9154fc1901d48e819fdb" prot="public" virt="non-virtual"><scope>ImGuiInputEventMouseWheel</scope><name>WheelY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

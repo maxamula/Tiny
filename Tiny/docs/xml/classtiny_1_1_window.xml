@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_window" kind="class" language="C++" prot="public">
+    <compoundname>tiny::Window</compoundname>
+    <includes refid="application_8h" local="no">application.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_window_1aa90bbb5d0a8f7840db830d260ff39113" prot="public" static="no" mutable="no">
+        <type>signal&lt; void()&gt;</type>
+        <definition>signal&lt;void()&gt; tiny::Window::Destroyed</definition>
+        <argsstring></argsstring>
+        <name>Destroyed</name>
+        <qualifiedname>tiny::Window::Destroyed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="36" column="8" bodyfile="engine/application.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1af44c0f9372d141c14d4bb509c1665b0b" prot="public" static="no" mutable="no">
+        <type>signal&lt; void(u16, u16)&gt;</type>
+        <definition>signal&lt;void(u16, u16)&gt; tiny::Window::Resized</definition>
+        <argsstring></argsstring>
+        <name>Resized</name>
+        <qualifiedname>tiny::Window::Resized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="37" column="8" bodyfile="engine/application.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a0d3abc99346ed851639cc58113f6a942" prot="public" static="no" mutable="no">
+        <type>signal&lt; void(u16)&gt;</type>
+        <definition>signal&lt;void(u16)&gt; tiny::Window::KeyDown</definition>
+        <argsstring></argsstring>
+        <name>KeyDown</name>
+        <qualifiedname>tiny::Window::KeyDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="38" column="8" bodyfile="engine/application.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a83ba4ac6438865a1714ca06c53e838e5" prot="public" static="no" mutable="no">
+        <type>signal&lt; void(u16)&gt;</type>
+        <definition>signal&lt;void(u16)&gt; tiny::Window::KeyUp</definition>
+        <argsstring></argsstring>
+        <name>KeyUp</name>
+        <qualifiedname>tiny::Window::KeyUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="39" column="8" bodyfile="engine/application.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a6e999bffd85394eae259220eba6622a9" prot="public" static="no" mutable="no">
+        <type>signal&lt; void(u16, u16)&gt;</type>
+        <definition>signal&lt;void(u16, u16)&gt; tiny::Window::MouseMove</definition>
+        <argsstring></argsstring>
+        <name>MouseMove</name>
+        <qualifiedname>tiny::Window::MouseMove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="40" column="8" bodyfile="engine/application.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a55d38e24281036897629a4e7c90bd76d" prot="public" static="no" mutable="no">
+        <type>signal&lt; void(u16, u16)&gt;</type>
+        <definition>signal&lt;void(u16, u16)&gt; tiny::Window::MouseDown</definition>
+        <argsstring></argsstring>
+        <name>MouseDown</name>
+        <qualifiedname>tiny::Window::MouseDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="41" column="8" bodyfile="engine/application.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1ab1d2c00847137e6d665c9650952ae3f1" prot="public" static="no" mutable="no">
+        <type>signal&lt; void(u16, u16)&gt;</type>
+        <definition>signal&lt;void(u16, u16)&gt; tiny::Window::MouseUp</definition>
+        <argsstring></argsstring>
+        <name>MouseUp</name>
+        <qualifiedname>tiny::Window::MouseUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="42" column="8" bodyfile="engine/application.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a2a4fda41d6399f8b981b41d85b3d7f4a" prot="public" static="no" mutable="no">
+        <type>_internal</type>
+        <definition>_internal tiny::Window::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>tiny::Window::__pad0__</qualifiedname>
+        <bitfield> HWND hWnd</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="43" column="1" bodyfile="engine/application.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a897f97158794e8c62adc5cf1a82ebfc9" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::Window::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>tiny::Window::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="45" column="5" bodyfile="engine/application.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a8119df43dbb583d08998a16ad12e9c0c" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 tiny::Window::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>tiny::Window::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="45" column="11" bodyfile="engine/application.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a92a01e2891cf5a2467732b1c5e8717cb" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetiny_1a72cde6780b07be673b74a0c7a906aad6" kindref="member">WindowProc</ref></type>
+        <definition>WindowProc tiny::Window::proc</definition>
+        <argsstring></argsstring>
+        <name>proc</name>
+        <qualifiedname>tiny::Window::proc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="46" column="12" bodyfile="engine/application.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1a35cc0d08f6f519aa508edbe5caf3b24e" prot="public" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool tiny::Window::bNeedResize</definition>
+        <argsstring></argsstring>
+        <name>bNeedResize</name>
+        <qualifiedname>tiny::Window::bNeedResize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="47" column="18" bodyfile="engine/application.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_window_1ac321a80a638aded58a08c7abee2f067b" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_d3_d_viewport" kindref="compound">D3DViewport</ref></type>
+        <definition>D3DViewport tiny::Window::vp</definition>
+        <argsstring></argsstring>
+        <name>vp</name>
+        <qualifiedname>tiny::Window::vp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="48" column="13" bodyfile="engine/application.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_window_1a9adc41e80890d260d1763733412bb25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::Window::Window</definition>
+        <argsstring>(const WindowDesc &amp;desc)</argsstring>
+        <name>Window</name>
+        <qualifiedname>tiny::Window::Window</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_window_desc" kindref="compound">WindowDesc</ref> &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="31" column="1" bodyfile="engine/application.cpp" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_window_1abf04b180e3bb911a4a505512081de126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::Window::DISABLE_COPY</definition>
+        <argsstring>(Window)</argsstring>
+        <name>DISABLE_COPY</name>
+        <qualifiedname>tiny::Window::DISABLE_COPY</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_window" kindref="compound">Window</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_window_1a77ce25346dafa31b44b5b0e040368988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::Window::DISABLE_MOVE</definition>
+        <argsstring>(Window)</argsstring>
+        <name>DISABLE_MOVE</name>
+        <qualifiedname>tiny::Window::DISABLE_MOVE</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_window" kindref="compound">Window</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_window_1acc3cac6ed3e27e08df861e198674fce4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::Window::~Window</definition>
+        <argsstring>()</argsstring>
+        <name>~Window</name>
+        <qualifiedname>tiny::Window::~Window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/application.h" line="34" column="1" bodyfile="engine/application.cpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>tiny::D3DViewport</label>
+        <link refid="structtiny_1_1_d3_d_viewport"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>allocation</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tiny::DescriptorHandle</label>
+        <link refid="classtiny_1_1_descriptor_handle"/>
+      </node>
+      <node id="1">
+        <label>tiny::Window</label>
+        <link refid="classtiny_1_1_window"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>vp</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="engine/application.h" line="28" column="1" bodyfile="engine/application.h" bodystart="29" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_window_1a2a4fda41d6399f8b981b41d85b3d7f4a" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>__pad0__</name></member>
+      <member refid="classtiny_1_1_window_1a35cc0d08f6f519aa508edbe5caf3b24e" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>bNeedResize</name></member>
+      <member refid="classtiny_1_1_window_1aa90bbb5d0a8f7840db830d260ff39113" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>Destroyed</name></member>
+      <member refid="classtiny_1_1_window_1abf04b180e3bb911a4a505512081de126" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>DISABLE_COPY</name></member>
+      <member refid="classtiny_1_1_window_1a77ce25346dafa31b44b5b0e040368988" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>DISABLE_MOVE</name></member>
+      <member refid="classtiny_1_1_window_1a8119df43dbb583d08998a16ad12e9c0c" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>height</name></member>
+      <member refid="classtiny_1_1_window_1a0d3abc99346ed851639cc58113f6a942" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>KeyDown</name></member>
+      <member refid="classtiny_1_1_window_1a83ba4ac6438865a1714ca06c53e838e5" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>KeyUp</name></member>
+      <member refid="classtiny_1_1_window_1a55d38e24281036897629a4e7c90bd76d" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>MouseDown</name></member>
+      <member refid="classtiny_1_1_window_1a6e999bffd85394eae259220eba6622a9" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>MouseMove</name></member>
+      <member refid="classtiny_1_1_window_1ab1d2c00847137e6d665c9650952ae3f1" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>MouseUp</name></member>
+      <member refid="classtiny_1_1_window_1a92a01e2891cf5a2467732b1c5e8717cb" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>proc</name></member>
+      <member refid="classtiny_1_1_window_1af44c0f9372d141c14d4bb509c1665b0b" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>Resized</name></member>
+      <member refid="classtiny_1_1_window_1ac321a80a638aded58a08c7abee2f067b" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>vp</name></member>
+      <member refid="classtiny_1_1_window_1a897f97158794e8c62adc5cf1a82ebfc9" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>width</name></member>
+      <member refid="classtiny_1_1_window_1a9adc41e80890d260d1763733412bb25f" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>Window</name></member>
+      <member refid="classtiny_1_1_window_1acc3cac6ed3e27e08df861e198674fce4" prot="public" virt="non-virtual"><scope>tiny::Window</scope><name>~Window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

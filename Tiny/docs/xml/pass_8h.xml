@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="pass_8h" kind="file" language="C++">
+    <compoundname>pass.h</compoundname>
+    <includes refid="renderctx_8h" local="yes">renderctx.h</includes>
+    <includes refid="framegraph_8h" local="yes">framegraph.h</includes>
+    <includes refid="scene_8h" local="yes">engine/scene.h</includes>
+    <includedby refid="application_8cpp" local="yes">engine/application.cpp</includedby>
+    <includedby refid="framegraph_8cpp" local="yes">graphics/framegraph.cpp</includedby>
+    <includedby refid="gfxdebug_8h" local="yes">graphics/gfxdebug.h</includedby>
+    <includedby refid="pass_8cpp" local="yes">graphics/pass.cpp</includedby>
+    <includedby refid="renderer_8cpp" local="yes">graphics/renderer.cpp</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>../entt.hpp</label>
+      </node>
+      <node id="28">
+        <label>content/content.h</label>
+        <link refid="content_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>camera.h</label>
+        <link refid="camera_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>engine/scene.h</label>
+        <link refid="scene_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fx/shaderfx.h</label>
+        <link refid="shaderfx_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>cbringbuffer.h</label>
+        <link refid="cbringbuffer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>graphics/copyqueue.h</label>
+        <link refid="copyqueue_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>d3dcontext.h</label>
+        <link refid="d3dcontext_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>descriptors.h</label>
+        <link refid="descriptors_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>framegraph.h</label>
+        <link refid="framegraph_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gpuqueue.h</label>
+        <link refid="gpuqueue_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>renderctx.h</label>
+        <link refid="renderctx_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>DirectXMath.h</label>
+      </node>
+      <node id="37">
+        <label>algorithm</label>
+      </node>
+      <node id="22">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>atlbase.h</label>
+      </node>
+      <node id="26">
+        <label>cassert</label>
+      </node>
+      <node id="14">
+        <label>chrono</label>
+      </node>
+      <node id="36">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>d3d12.h</label>
+      </node>
+      <node id="11">
+        <label>d3dx12.hpp</label>
+      </node>
+      <node id="25">
+        <label>deque</label>
+      </node>
+      <node id="5">
+        <label>dxcapi.h</label>
+      </node>
+      <node id="32">
+        <label>entt.hpp</label>
+      </node>
+      <node id="15">
+        <label>functional</label>
+      </node>
+      <node id="21">
+        <label>future</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="35">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>mutex</label>
+      </node>
+      <node id="16">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>stdexcept</label>
+      </node>
+      <node id="34">
+        <label>string</label>
+      </node>
+      <node id="38">
+        <label>taskflow/taskflow.hpp</label>
+      </node>
+      <node id="29">
+        <label>tuple</label>
+      </node>
+      <node id="7">
+        <label>unordered_map</label>
+      </node>
+      <node id="12">
+        <label>variant</label>
+      </node>
+      <node id="31">
+        <label>vector</label>
+      </node>
+      <node id="27">
+        <label>windows.h</label>
+      </node>
+      <node id="24">
+        <label>wrl.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>engine/application.cpp</label>
+        <link refid="application_8cpp"/>
+      </node>
+      <node id="3">
+        <label>graphics/framegraph.cpp</label>
+        <link refid="framegraph_8cpp"/>
+      </node>
+      <node id="5">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="4">
+        <label>graphics/gfxdebug.h</label>
+        <link refid="gfxdebug_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>graphics/pass.cpp</label>
+        <link refid="pass_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/pass.h</label>
+        <link refid="pass_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>graphics/renderer.cpp</label>
+        <link refid="renderer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtiny_1_1_i_render_pass" prot="public">tiny::IRenderPass</innerclass>
+    <innerclass refid="classtiny_1_1_scene_filtered_pass" prot="public">tiny::SceneFilteredPass</innerclass>
+    <innernamespace refid="namespacetiny">tiny</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="renderctx_8h" kindref="compound">renderctx.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="framegraph_8h" kindref="compound">framegraph.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="scene_8h" kindref="compound">engine/scene.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetiny" kindref="compound">tiny</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="classtiny_1_1_i_render_pass" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="classtiny_1_1_i_render_pass" kindref="compound">IRenderPass</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classtiny_1_1_i_render_pass_1acdc0504e7a298aa148112b0e4b33d9eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_i_render_pass_1acdc0504e7a298aa148112b0e4b33d9eb" kindref="member">~IRenderPass</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="classtiny_1_1_i_render_pass_1a1bb24bef78077a26beb2b3e049e85a71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_i_render_pass_1a1bb24bef78077a26beb2b3e049e85a71" kindref="member">Setup</ref>(<ref refid="classtiny_1_1_frame_graph_1_1_builder" kindref="compound">FrameGraph::Builder</ref>&amp;<sp/>builder)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13" refid="classtiny_1_1_i_render_pass_1a3cbbca0afaaa0c644c81d3e4c6e9524d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_i_render_pass_1a3cbbca0afaaa0c644c81d3e4c6e9524d" kindref="member">Execute</ref>(<ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref>&amp;<sp/>ctx,<sp/><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref>&amp;<sp/>res)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14" refid="classtiny_1_1_i_render_pass_1ac9144bdb0b89038daf768d7a978b592a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f64<sp/><ref refid="classtiny_1_1_i_render_pass_1ac9144bdb0b89038daf768d7a978b592a" kindref="member">EstimateCost</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>450.0;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classtiny_1_1_scene_filtered_pass" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TINYFX_API<sp/><ref refid="classtiny_1_1_scene_filtered_pass_1a9f8ac5c51059336dafbd9790fa251ed8" kindref="member">SceneFilteredPass</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_i_render_pass" kindref="compound">IRenderPass</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_scene_filtered_pass_1a9f8ac5c51059336dafbd9790fa251ed8" kindref="member">SceneFilteredPass</ref>(u16<sp/>passId);</highlight></codeline>
+<codeline lineno="21" refid="classtiny_1_1_scene_filtered_pass_1a70db56082e2e40f078d1d2f8940327dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtiny_1_1_scene_filtered_pass_1a70db56082e2e40f078d1d2f8940327dc" kindref="member">~SceneFilteredPass</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_scene_filtered_pass_1a8e6104c9a8b4d6611317e2a9158ec55c" kindref="member">Execute</ref>(<ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref>&amp;<sp/>ctx,<sp/><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref>&amp;<sp/>res)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23" refid="classtiny_1_1_scene_filtered_pass_1a2dfd368fab207bb868b6f1de9ca61d47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtiny_1_1_scene_filtered_pass_1a2dfd368fab207bb868b6f1de9ca61d47" kindref="member">OnRenderItem</ref>(<ref refid="structtiny_1_1_render_context" kindref="compound">RenderContext</ref>&amp;<sp/>context,<sp/><ref refid="classtiny_1_1_frame_graph_resources" kindref="compound">FrameGraphResources</ref>&amp;<sp/>res,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1a54ce7b4e2aa9ad7c0ffd7544d0be1c1a" kindref="member">ComponentMaterial</ref>&amp;<sp/>material,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetiny_1ab0b0d86cdc01a22d8bfdf65ded78a834" kindref="member">ComponentGeometry</ref>&amp;<sp/>geometry)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="classtiny_1_1_scene_filtered_pass_1a3a39f0fc311c0560e17c4a335341baf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u16<sp/><ref refid="classtiny_1_1_scene_filtered_pass_1a3a39f0fc311c0560e17c4a335341baf4" kindref="member">mPassId</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="graphics/pass.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_flush_dispatcher" kind="class" language="C++" prot="public">
+    <compoundname>tiny::FlushDispatcher</compoundname>
+    <includes refid="dispatcher_8h" local="no">dispatcher.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_flush_dispatcher_1a39d6b4ad6eedfe7b2aca8c38f958cd1e" prot="private" static="no" mutable="no">
+        <type>concurrency::concurrent_queue&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>concurrency::concurrent_queue&lt;std::function&lt;void()&gt; &gt; tiny::FlushDispatcher::tasks_</definition>
+        <argsstring></argsstring>
+        <name>tasks_</name>
+        <qualifiedname>tiny::FlushDispatcher::tasks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="88" column="39" bodyfile="misc/dispatcher.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_flush_dispatcher_1a8332345d15935ebd41f8cea08f477d3f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex tiny::FlushDispatcher::mtx_</definition>
+        <argsstring></argsstring>
+        <name>mtx_</name>
+        <qualifiedname>tiny::FlushDispatcher::mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="89" column="44" bodyfile="misc/dispatcher.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_flush_dispatcher_1ab818f99111bc433af6c6d166919c890d" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::type_index &gt;</type>
+        <definition>std::unordered_set&lt;std::type_index&gt; tiny::FlushDispatcher::pending_</definition>
+        <argsstring></argsstring>
+        <name>pending_</name>
+        <qualifiedname>tiny::FlushDispatcher::pending_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="90" column="28" bodyfile="misc/dispatcher.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_flush_dispatcher_1a7f86e3c4ed4a3b6d56abf6899a76dfdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::FlushDispatcher::FlushDispatcher</definition>
+        <argsstring>()=default</argsstring>
+        <name>FlushDispatcher</name>
+        <qualifiedname>tiny::FlushDispatcher::FlushDispatcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_flush_dispatcher_1aef191ac7138e5befe25f2cb5410d5111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::FlushDispatcher::~FlushDispatcher</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FlushDispatcher</name>
+        <qualifiedname>tiny::FlushDispatcher::~FlushDispatcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_flush_dispatcher_1ad88e9d61045c3aef072163c5a5591049" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tiny::FlushDispatcher::Post</definition>
+        <argsstring>(F &amp;&amp;f, Args &amp;&amp;... args)</argsstring>
+        <name>Post</name>
+        <qualifiedname>tiny::FlushDispatcher::Post</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="51" column="14" bodyfile="misc/dispatcher.h" bodystart="51" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_flush_dispatcher_1adc4f1660ee0339fb3fca86567f1863ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tiny::FlushDispatcher::PostOnce</definition>
+        <argsstring>(F &amp;&amp;f, Args &amp;&amp;... args)</argsstring>
+        <name>PostOnce</name>
+        <qualifiedname>tiny::FlushDispatcher::PostOnce</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="58" column="14" bodyfile="misc/dispatcher.h" bodystart="58" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_flush_dispatcher_1a3f957a98e03f63f922a580858daa6796" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FlushDispatcher::ProcessDispatchQueue</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessDispatchQueue</name>
+        <qualifiedname>tiny::FlushDispatcher::ProcessDispatchQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="misc/dispatcher.h" line="79" column="14" bodyfile="misc/dispatcher.h" bodystart="79" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="misc/dispatcher.h" line="45" column="5" bodyfile="misc/dispatcher.h" bodystart="45" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_flush_dispatcher_1a7f86e3c4ed4a3b6d56abf6899a76dfdc" prot="public" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>FlushDispatcher</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1a8332345d15935ebd41f8cea08f477d3f" prot="private" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>mtx_</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1ab818f99111bc433af6c6d166919c890d" prot="private" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>pending_</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1ad88e9d61045c3aef072163c5a5591049" prot="public" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>Post</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1adc4f1660ee0339fb3fca86567f1863ce" prot="public" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>PostOnce</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1a3f957a98e03f63f922a580858daa6796" prot="public" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>ProcessDispatchQueue</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1a39d6b4ad6eedfe7b2aca8c38f958cd1e" prot="private" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>tasks_</name></member>
+      <member refid="classtiny_1_1_flush_dispatcher_1aef191ac7138e5befe25f2cb5410d5111" prot="public" virt="non-virtual"><scope>tiny::FlushDispatcher</scope><name>~FlushDispatcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

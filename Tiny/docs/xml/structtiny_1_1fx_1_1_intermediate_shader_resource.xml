@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1fx_1_1_intermediate_shader_resource" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::fx::IntermediateShaderResource</compoundname>
+    <includes refid="shaderfx_8h" local="no">shaderfx.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_shader_resource_1a8f956d44162648b5efe907c8ca543f93" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char tiny::fx::IntermediateShaderResource::name[TINY_MAX_SHADER_RESOURCE_NAME]</definition>
+        <argsstring>[TINY_MAX_SHADER_RESOURCE_NAME]</argsstring>
+        <name>name</name>
+        <qualifiedname>tiny::fx::IntermediateShaderResource::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="205" column="5" bodyfile="fx/shaderfx.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_shader_resource_1ae5c9429bf7071a7a329fd08c6554d634" prot="public" static="no" mutable="no">
+        <type>D3D_SHADER_INPUT_TYPE</type>
+        <definition>D3D_SHADER_INPUT_TYPE tiny::fx::IntermediateShaderResource::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>tiny::fx::IntermediateShaderResource::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="206" column="29" bodyfile="fx/shaderfx.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_shader_resource_1a5221f81c42bd2b4bf064ea185338b5c5" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::fx::IntermediateShaderResource::bindPoint</definition>
+        <argsstring></argsstring>
+        <name>bindPoint</name>
+        <qualifiedname>tiny::fx::IntermediateShaderResource::bindPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="207" column="28" bodyfile="fx/shaderfx.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_shader_resource_1a71779b358f49379912e7e5b2acf82e78" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::fx::IntermediateShaderResource::bindCount</definition>
+        <argsstring></argsstring>
+        <name>bindCount</name>
+        <qualifiedname>tiny::fx::IntermediateShaderResource::bindCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="208" column="24" bodyfile="fx/shaderfx.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1fx_1_1_intermediate_shader_resource_1a3d35f2597d490d89b75fdd4d8b33f487" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 tiny::fx::IntermediateShaderResource::cbufferSize</definition>
+        <argsstring></argsstring>
+        <name>cbufferSize</name>
+        <qualifiedname>tiny::fx::IntermediateShaderResource::cbufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fx/shaderfx.h" line="209" column="28" bodyfile="fx/shaderfx.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fx/shaderfx.h" line="203" column="1" bodyfile="fx/shaderfx.h" bodystart="204" bodyend="210"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a71779b358f49379912e7e5b2acf82e78" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateShaderResource</scope><name>bindCount</name></member>
+      <member refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a5221f81c42bd2b4bf064ea185338b5c5" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateShaderResource</scope><name>bindPoint</name></member>
+      <member refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a3d35f2597d490d89b75fdd4d8b33f487" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateShaderResource</scope><name>cbufferSize</name></member>
+      <member refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1a8f956d44162648b5efe907c8ca543f93" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateShaderResource</scope><name>name</name></member>
+      <member refid="structtiny_1_1fx_1_1_intermediate_shader_resource_1ae5c9429bf7071a7a329fd08c6554d634" prot="public" virt="non-virtual"><scope>tiny::fx::IntermediateShaderResource</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

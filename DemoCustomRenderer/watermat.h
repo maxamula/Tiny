@@ -6,16 +6,16 @@
 
 using namespace entt;
 
-struct WaterMaterialInstance : public tiny::fx::MaterialInstance<WaterMaterialInstance>
+struct OceanMaterialInstance : public tiny::fx::MaterialInstance<OceanMaterialInstance>
 {
-	TINY_DECLARE_MAT_ID(WaterMaterialInstance);
+	TINY_DECLARE_MAT_ID(OceanMaterialInstance);
 	
 	struct ShaderParams
 	{
-		float width;
-		float height;
-		float time;
+		f32 width;
+		f32 height;
+		f32 time;
 	};
 
-	tiny::CBufferInline<ShaderParams> ilShaderParams;
+	ShaderParams ilShaderParams;
 };

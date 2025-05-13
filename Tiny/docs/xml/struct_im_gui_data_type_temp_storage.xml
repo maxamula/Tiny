@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_data_type_temp_storage" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiDataTypeTempStorage</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_data_type_temp_storage_1a3fcf6289f880d7b1c44e13760b73ea51" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a3834dc55ff790956b09b4baf387e2fe5" kindref="member">ImU8</ref></type>
+        <definition>ImU8 ImGuiDataTypeTempStorage::Data[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>Data</name>
+        <qualifiedname>ImGuiDataTypeTempStorage::Data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1006" column="17" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="1004" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1005" bodyend="1007"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_data_type_temp_storage_1a3fcf6289f880d7b1c44e13760b73ea51" prot="public" virt="non-virtual"><scope>ImGuiDataTypeTempStorage</scope><name>Data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

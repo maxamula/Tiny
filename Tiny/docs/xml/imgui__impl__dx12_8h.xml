@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="imgui__impl__dx12_8h" kind="file" language="C++">
+    <compoundname>imgui_impl_dx12.h</compoundname>
+    <includes refid="imgui_8h" local="yes">imgui.h</includes>
+    <includes local="no">dxgiformat.h</includes>
+    <includedby refid="gfxdebug_8cpp" local="yes">graphics/gfxdebug.cpp</includedby>
+    <includedby refid="imgui__impl__dx12_8cpp" local="yes">graphics/imgui/imgui_impl_dx12.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>imconfig.h</label>
+        <link refid="imconfig_8h"/>
+      </node>
+      <node id="2">
+        <label>imgui.h</label>
+        <link refid="imgui_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>graphics/imgui/imgui_impl_dx12.h</label>
+        <link refid="imgui__impl__dx12_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>assert.h</label>
+      </node>
+      <node id="9">
+        <label>dxgiformat.h</label>
+      </node>
+      <node id="4">
+        <label>float.h</label>
+      </node>
+      <node id="5">
+        <label>stdarg.h</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>graphics/gfxdebug.cpp</label>
+        <link refid="gfxdebug_8cpp"/>
+      </node>
+      <node id="3">
+        <label>graphics/imgui/imgui_impl_dx12.cpp</label>
+        <link refid="imgui__impl__dx12_8cpp"/>
+      </node>
+      <node id="1">
+        <label>graphics/imgui/imgui_impl_dx12.h</label>
+        <link refid="imgui__impl__dx12_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="imgui__impl__dx12_8h_1a46a6852aa9e851d5e0a9ae708bf0ebb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> bool</type>
+        <definition>IMGUI_IMPL_API bool ImGui_ImplDX12_Init</definition>
+        <argsstring>(ImGuiContext *ctx, ID3D12Device *device, int num_frames_in_flight, DXGI_FORMAT rtv_format, ID3D12DescriptorHeap *cbv_srv_heap, D3D12_CPU_DESCRIPTOR_HANDLE font_srv_cpu_desc_handle, D3D12_GPU_DESCRIPTOR_HANDLE font_srv_gpu_desc_handle)</argsstring>
+        <name>ImGui_ImplDX12_Init</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>ID3D12Device *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_frames_in_flight</declname>
+        </param>
+        <param>
+          <type>DXGI_FORMAT</type>
+          <declname>rtv_format</declname>
+        </param>
+        <param>
+          <type>ID3D12DescriptorHeap *</type>
+          <declname>cbv_srv_heap</declname>
+        </param>
+        <param>
+          <type>D3D12_CPU_DESCRIPTOR_HANDLE</type>
+          <declname>font_srv_cpu_desc_handle</declname>
+        </param>
+        <param>
+          <type>D3D12_GPU_DESCRIPTOR_HANDLE</type>
+          <declname>font_srv_gpu_desc_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.h" line="34" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="701" bodyend="733" declfile="graphics/imgui/imgui_impl_dx12.h" declline="34" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__dx12_8h_1a60df4645a01678f7abfd581b5672ebf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplDX12_NewFrame</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>ImGui_ImplDX12_NewFrame</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.h" line="36" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="750" bodyend="757" declfile="graphics/imgui/imgui_impl_dx12.h" declline="36" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__dx12_8h_1ae240e03b52913090bb6b0d81a7631792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplDX12_Shutdown</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>ImGui_ImplDX12_Shutdown</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.h" line="37" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="735" bodyend="748" declfile="graphics/imgui/imgui_impl_dx12.h" declline="37" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__dx12_8h_1af182dcea12587711313f413d6ac8bc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplDX12_RenderDrawData</definition>
+        <argsstring>(ImGuiContext *ctx, ImDrawData *draw_data, ID3D12GraphicsCommandList *graphics_command_list)</argsstring>
+        <name>ImGui_ImplDX12_RenderDrawData</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_im_draw_data" kindref="compound">ImDrawData</ref> *</type>
+          <declname>draw_data</declname>
+        </param>
+        <param>
+          <type>ID3D12GraphicsCommandList *</type>
+          <declname>graphics_command_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.h" line="38" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="164" bodyend="288" declfile="graphics/imgui/imgui_impl_dx12.h" declline="38" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__dx12_8h_1a22e64d2f11705c5a0e19b08b96f749b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> void</type>
+        <definition>IMGUI_IMPL_API void ImGui_ImplDX12_InvalidateDeviceObjects</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>ImGui_ImplDX12_InvalidateDeviceObjects</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.h" line="41" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="681" bodyend="699" declfile="graphics/imgui/imgui_impl_dx12.h" declline="41" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="imgui__impl__dx12_8h_1a40248054af2548e2b16ddbe390b5e54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref> bool</type>
+        <definition>IMGUI_IMPL_API bool ImGui_ImplDX12_CreateDeviceObjects</definition>
+        <argsstring>(ImGuiContext *ctx)</argsstring>
+        <name>ImGui_ImplDX12_CreateDeviceObjects</name>
+        <param>
+          <type><ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_impl_dx12.h" line="42" column="25" bodyfile="graphics/imgui/imgui_impl_dx12.cpp" bodystart="447" bodyend="679" declfile="graphics/imgui/imgui_impl_dx12.h" declline="42" declcolumn="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>dear<sp/>imgui:<sp/>Renderer<sp/>Backend<sp/>for<sp/>DirectX12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>needs<sp/>to<sp/>be<sp/>used<sp/>along<sp/>with<sp/>a<sp/>Platform<sp/>Backend<sp/>(e.g.<sp/>Win32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Implemented<sp/>features:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Renderer:<sp/>User<sp/>texture<sp/>binding.<sp/>Use<sp/>&apos;D3D12_GPU_DESCRIPTOR_HANDLE&apos;<sp/>as<sp/>ImTextureID.<sp/>Read<sp/>the<sp/>FAQ<sp/>about<sp/>ImTextureID!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[X]<sp/>Renderer:<sp/>Large<sp/>meshes<sp/>support<sp/>(64k+<sp/>vertices)<sp/>with<sp/>16-bit<sp/>indices.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Important:<sp/>to<sp/>compile<sp/>on<sp/>32-bit<sp/>systems,<sp/>this<sp/>backend<sp/>requires<sp/>code<sp/>to<sp/>be<sp/>compiled<sp/>with<sp/>&apos;#define<sp/>ImTextureID<sp/>ImU64&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>imgui_impl_dx12.cpp<sp/>file<sp/>for<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>can<sp/>use<sp/>unmodified<sp/>imgui_impl_*<sp/>files<sp/>in<sp/>your<sp/>project.<sp/>See<sp/>examples/<sp/>folder<sp/>for<sp/>examples<sp/>of<sp/>using<sp/>this.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Prefer<sp/>including<sp/>the<sp/>entire<sp/>imgui/<sp/>repository<sp/>into<sp/>your<sp/>project<sp/>(either<sp/>as<sp/>a<sp/>copy<sp/>or<sp/>as<sp/>a<sp/>submodule),<sp/>and<sp/>only<sp/>build<sp/>the<sp/>backends<sp/>you<sp/>need.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Learn<sp/>about<sp/>Dear<sp/>ImGui:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>FAQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://dearimgui.com/faq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Getting<sp/>Started<sp/><sp/><sp/><sp/><sp/><sp/>https://dearimgui.com/getting-started</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Documentation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://dearimgui.com/docs<sp/>(same<sp/>as<sp/>your<sp/>local<sp/>docs/<sp/>folder).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>Introduction,<sp/>links<sp/>and<sp/>more<sp/>at<sp/>the<sp/>top<sp/>of<sp/>imgui.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="imgui_8h" kindref="compound">imgui.h</ref>&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IMGUI_IMPL_API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMGUI_DISABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dxgiformat.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>DXGI_FORMAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ID3D12Device;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ID3D12DescriptorHeap;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ID3D12GraphicsCommandList;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">D3D12_CPU_DESCRIPTOR_HANDLE;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">D3D12_GPU_DESCRIPTOR_HANDLE;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cmd_list<sp/>is<sp/>the<sp/>command<sp/>list<sp/>that<sp/>the<sp/>implementation<sp/>will<sp/>use<sp/>to<sp/>render<sp/>imgui<sp/>draw<sp/>lists.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Before<sp/>calling<sp/>the<sp/>render<sp/>function,<sp/>caller<sp/>must<sp/>prepare<sp/>cmd_list<sp/>by<sp/>resetting<sp/>it<sp/>and<sp/>setting<sp/>the<sp/>appropriate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>render<sp/>target<sp/>and<sp/>descriptor<sp/>heap<sp/>that<sp/>contains<sp/>font_srv_cpu_desc_handle/font_srv_gpu_desc_handle.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>font_srv_cpu_desc_handle<sp/>and<sp/>font_srv_gpu_desc_handle<sp/>are<sp/>handles<sp/>to<sp/>a<sp/>single<sp/>SRV<sp/>descriptor<sp/>to<sp/>use<sp/>for<sp/>the<sp/>internal<sp/>font<sp/>texture.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__dx12_8h_1a46a6852aa9e851d5e0a9ae708bf0ebb9" kindref="member">ImGui_ImplDX12_Init</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx,<sp/>ID3D12Device*<sp/>device,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_frames_in_flight,<sp/>DXGI_FORMAT<sp/>rtv_format,<sp/>ID3D12DescriptorHeap*<sp/>cbv_srv_heap,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D3D12_CPU_DESCRIPTOR_HANDLE<sp/>font_srv_cpu_desc_handle,<sp/>D3D12_GPU_DESCRIPTOR_HANDLE<sp/>font_srv_gpu_desc_handle);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__dx12_8h_1a60df4645a01678f7abfd581b5672ebf7" kindref="member">ImGui_ImplDX12_NewFrame</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__dx12_8h_1ae240e03b52913090bb6b0d81a7631792" kindref="member">ImGui_ImplDX12_Shutdown</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__dx12_8h_1af182dcea12587711313f413d6ac8bc45" kindref="member">ImGui_ImplDX12_RenderDrawData</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx,<sp/><ref refid="struct_im_draw_data" kindref="compound">ImDrawData</ref>*<sp/>draw_data,<sp/>ID3D12GraphicsCommandList*<sp/>graphics_command_list);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>if<sp/>you<sp/>want<sp/>to<sp/>reset<sp/>your<sp/>rendering<sp/>device<sp/>without<sp/>losing<sp/>Dear<sp/>ImGui<sp/>state.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__dx12_8h_1a22e64d2f11705c5a0e19b08b96f749b6" kindref="member">ImGui_ImplDX12_InvalidateDeviceObjects</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="imgui_8h_1a665f6b404eea9a640b1222a87236fe19" kindref="member">IMGUI_IMPL_API</ref><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="imgui__impl__dx12_8h_1a40248054af2548e2b16ddbe390b5e54a" kindref="member">ImGui_ImplDX12_CreateDeviceObjects</ref>(<ref refid="struct_im_gui_context" kindref="compound">ImGuiContext</ref>*<sp/>ctx);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>#ifndef<sp/>IMGUI_DISABLE</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="graphics/imgui/imgui_impl_dx12.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_frame_graph_1_1_render_resource_info" kind="struct" language="C++" prot="private">
+    <compoundname>tiny::FrameGraph::RenderResourceInfo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1aeac4554560393b651405cabedcff5844" prot="public" static="no" mutable="no">
+        <type><ref refid="structtiny_1_1_render_texture_1_1_desc" kindref="compound">RenderTexture::Desc</ref></type>
+        <definition>RenderTexture::Desc tiny::FrameGraph::RenderResourceInfo::Desc</definition>
+        <argsstring></argsstring>
+        <name>Desc</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::Desc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="112" column="33" bodyfile="graphics/framegraph.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1a8a4d2edfe1255ec66f0acf6250890804" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tiny::FrameGraph::RenderResourceInfo::ProducerPassIndex</definition>
+        <argsstring></argsstring>
+        <name>ProducerPassIndex</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::ProducerPassIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="113" column="17" bodyfile="graphics/framegraph.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1ac9a80537c129492f4af099119e951e95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tiny::FrameGraph::RenderResourceInfo::LastWriterPassIndex</definition>
+        <argsstring></argsstring>
+        <name>LastWriterPassIndex</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::LastWriterPassIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="114" column="17" bodyfile="graphics/framegraph.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1a9e0fc748803305c610915faf9c9bd420" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; tiny::FrameGraph::RenderResourceInfo::ReaderPassIndices</definition>
+        <argsstring></argsstring>
+        <name>ReaderPassIndices</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::ReaderPassIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="115" column="25" bodyfile="graphics/framegraph.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1ac861173cd8af5712089f3e0fa3ac4269" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tiny::FrameGraph::RenderResourceInfo::FirstUseIndex</definition>
+        <argsstring></argsstring>
+        <name>FirstUseIndex</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::FirstUseIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="116" column="17" bodyfile="graphics/framegraph.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1a0cbf782083a95bf60c17e3fdada916fb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tiny::FrameGraph::RenderResourceInfo::LastUseIndex</definition>
+        <argsstring></argsstring>
+        <name>LastUseIndex</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::LastUseIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="117" column="17" bodyfile="graphics/framegraph.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtiny_1_1_frame_graph_1_1_render_resource_info_1adfd20797bed6017d59face26639c60d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tiny::FrameGraph::RenderResourceInfo::PhysAllocationIndex</definition>
+        <argsstring></argsstring>
+        <name>PhysAllocationIndex</name>
+        <qualifiedname>tiny::FrameGraph::RenderResourceInfo::PhysAllocationIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="118" column="17" bodyfile="graphics/framegraph.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>tiny::FrameGraph::RenderResourceInfo</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Desc</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tiny::RenderTexture::Desc</label>
+        <link refid="structtiny_1_1_render_texture_1_1_desc"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/framegraph.h" line="110" column="9" bodyfile="graphics/framegraph.h" bodystart="111" bodyend="119"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1aeac4554560393b651405cabedcff5844" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>Desc</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1ac861173cd8af5712089f3e0fa3ac4269" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>FirstUseIndex</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1a0cbf782083a95bf60c17e3fdada916fb" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>LastUseIndex</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1ac9a80537c129492f4af099119e951e95" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>LastWriterPassIndex</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1adfd20797bed6017d59face26639c60d2" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>PhysAllocationIndex</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1a8a4d2edfe1255ec66f0acf6250890804" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>ProducerPassIndex</name></member>
+      <member refid="structtiny_1_1_frame_graph_1_1_render_resource_info_1a9e0fc748803305c610915faf9c9bd420" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::RenderResourceInfo</scope><name>ReaderPassIndices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

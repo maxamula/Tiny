@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_chunk_stream" kind="struct" language="C++" prot="public">
+    <compoundname>ImChunkStream</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_chunk_stream_1ac6036044bd7eae552342b430527cc620" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; char &gt;</type>
+        <definition>ImVector&lt;char&gt; ImChunkStream&lt; T &gt;::Buf</definition>
+        <argsstring></argsstring>
+        <name>Buf</name>
+        <qualifiedname>ImChunkStream::Buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="705" column="15" bodyfile="graphics/imgui/imgui_internal.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_chunk_stream_1a3bf3babbba7a8edafce99be0589379a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImChunkStream&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>ImChunkStream::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="707" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="707" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1aef1d3eeb4c1aa2980da6a14ae96d2499" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImChunkStream&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>ImChunkStream::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="708" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="708" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a0454c7345104dad27a52828584765edb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImChunkStream&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>ImChunkStream::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="709" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="709" bodyend="709"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a29ced7ee3e9a2ae8123a92b110b4b0bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImChunkStream&lt; T &gt;::alloc_chunk</definition>
+        <argsstring>(size_t sz)</argsstring>
+        <name>alloc_chunk</name>
+        <qualifiedname>ImChunkStream::alloc_chunk</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="710" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="710" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a10a9b29c856b3f84ce8811ebfaf2cfe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImChunkStream&lt; T &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>ImChunkStream::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="711" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="711" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a3a99f21ce1867d694104d740ac7ab133" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImChunkStream&lt; T &gt;::next_chunk</definition>
+        <argsstring>(T *p)</argsstring>
+        <name>next_chunk</name>
+        <qualifiedname>ImChunkStream::next_chunk</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="712" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="712" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a1a83609aaee47cf8b59a8ae09a04a06b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImChunkStream&lt; T &gt;::chunk_size</definition>
+        <argsstring>(const T *p)</argsstring>
+        <name>chunk_size</name>
+        <qualifiedname>ImChunkStream::chunk_size</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="713" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="713" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a5c7faa90ac7fa02140a3298dbfdd5cad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImChunkStream&lt; T &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>ImChunkStream::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="714" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="714" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1ab3dccb857d0b35ae295d14ff7f9dd0ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImChunkStream&lt; T &gt;::offset_from_ptr</definition>
+        <argsstring>(const T *p)</argsstring>
+        <name>offset_from_ptr</name>
+        <qualifiedname>ImChunkStream::offset_from_ptr</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="715" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="715" bodyend="715"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1a385c84c0a5eca2d402f3550530af587e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * ImChunkStream&lt; T &gt;::ptr_from_offset</definition>
+        <argsstring>(int off)</argsstring>
+        <name>ptr_from_offset</name>
+        <qualifiedname>ImChunkStream::ptr_from_offset</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>off</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="716" column="12" bodyfile="graphics/imgui/imgui_internal.h" bodystart="716" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_im_chunk_stream_1adbd734ea08939c0bce519e90b26c9d28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImChunkStream&lt; T &gt;::swap</definition>
+        <argsstring>(ImChunkStream&lt; T &gt; &amp;rhs)</argsstring>
+        <name>swap</name>
+        <qualifiedname>ImChunkStream::swap</qualifiedname>
+        <param>
+          <type><ref refid="struct_im_chunk_stream" kindref="compound">ImChunkStream</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="717" column="13" bodyfile="graphics/imgui/imgui_internal.h" bodystart="717" bodyend="717"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImChunkStream&lt; T &gt;</label>
+        <link refid="struct_im_chunk_stream"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; char &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="703" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="704" bodyend="718"/>
+    <listofallmembers>
+      <member refid="struct_im_chunk_stream_1a29ced7ee3e9a2ae8123a92b110b4b0bd" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>alloc_chunk</name></member>
+      <member refid="struct_im_chunk_stream_1a10a9b29c856b3f84ce8811ebfaf2cfe8" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>begin</name></member>
+      <member refid="struct_im_chunk_stream_1ac6036044bd7eae552342b430527cc620" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>Buf</name></member>
+      <member refid="struct_im_chunk_stream_1a1a83609aaee47cf8b59a8ae09a04a06b" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>chunk_size</name></member>
+      <member refid="struct_im_chunk_stream_1a3bf3babbba7a8edafce99be0589379a3" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>clear</name></member>
+      <member refid="struct_im_chunk_stream_1aef1d3eeb4c1aa2980da6a14ae96d2499" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>empty</name></member>
+      <member refid="struct_im_chunk_stream_1a5c7faa90ac7fa02140a3298dbfdd5cad" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>end</name></member>
+      <member refid="struct_im_chunk_stream_1a3a99f21ce1867d694104d740ac7ab133" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>next_chunk</name></member>
+      <member refid="struct_im_chunk_stream_1ab3dccb857d0b35ae295d14ff7f9dd0ac" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>offset_from_ptr</name></member>
+      <member refid="struct_im_chunk_stream_1a385c84c0a5eca2d402f3550530af587e" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>ptr_from_offset</name></member>
+      <member refid="struct_im_chunk_stream_1a0454c7345104dad27a52828584765edb" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>size</name></member>
+      <member refid="struct_im_chunk_stream_1adbd734ea08939c0bce519e90b26c9d28" prot="public" virt="non-virtual"><scope>ImChunkStream</scope><name>swap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

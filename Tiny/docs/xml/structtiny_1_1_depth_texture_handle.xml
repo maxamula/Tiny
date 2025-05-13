@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="structtiny_1_1_depth_texture_handle" kind="struct" language="C++" prot="public">
+    <compoundname>tiny::DepthTextureHandle</compoundname>
+    <includes refid="framegraph_8h" local="no">framegraph.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtiny_1_1_depth_texture_handle_1a2f39ff105e9c5e687942903770f6bc6b" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t tiny::DepthTextureHandle::Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>tiny::DepthTextureHandle::Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="41" column="18" bodyfile="graphics/framegraph.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtiny_1_1_depth_texture_handle_1a27d9c57fd3f1d7c02b8079f850442697" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DepthTextureHandle::DepthTextureHandle</definition>
+        <argsstring>()</argsstring>
+        <name>DepthTextureHandle</name>
+        <qualifiedname>tiny::DepthTextureHandle::DepthTextureHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="43" column="9" bodyfile="graphics/framegraph.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structtiny_1_1_depth_texture_handle_1aef514a78590b43286ebee37f21b57588" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tiny::DepthTextureHandle::DepthTextureHandle</definition>
+        <argsstring>(uint32_t id)</argsstring>
+        <name>DepthTextureHandle</name>
+        <qualifiedname>tiny::DepthTextureHandle::DepthTextureHandle</qualifiedname>
+        <param>
+          <type><ref refid="stdint_8h_1a435d1572bf3f880d55459d9805097f62" kindref="member">uint32_t</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="48" column="18" bodyfile="graphics/framegraph.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/framegraph.h" line="39" column="5" bodyfile="graphics/framegraph.h" bodystart="40" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structtiny_1_1_depth_texture_handle_1a27d9c57fd3f1d7c02b8079f850442697" prot="public" virt="non-virtual"><scope>tiny::DepthTextureHandle</scope><name>DepthTextureHandle</name></member>
+      <member refid="structtiny_1_1_depth_texture_handle_1aef514a78590b43286ebee37f21b57588" prot="public" virt="non-virtual"><scope>tiny::DepthTextureHandle</scope><name>DepthTextureHandle</name></member>
+      <member refid="structtiny_1_1_depth_texture_handle_1a2f39ff105e9c5e687942903770f6bc6b" prot="public" virt="non-virtual"><scope>tiny::DepthTextureHandle</scope><name>Id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

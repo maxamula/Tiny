@@ -101,6 +101,7 @@ namespace tiny
 			};
 
 			GetEngineCopyQueue().UpdateSubresource(resource, uploadResource.p, 0, 0, 1, &subresourceData, D3D12_RESOURCE_STATE_COMMON).wait();
+			SET_OBJECT_NAME(resource, L"Texture2D {}x{}", texture.width, texture.height);
 			ret.resource = resource;
 		}
 
@@ -144,21 +145,31 @@ namespace tiny
 			entt::meta_data field = type.data(prop.propertyID);
 			if (!field)
 				THROW_ENGINE_EXCEPTION("Material type {} does not have property {}", material.matID, prop.propertyID);
-			entt::meta_any value = field.get(any);
-			if (!value)
-				THROW_ENGINE_EXCEPTION("Material type {} property {} could not be set", material.matID, prop.propertyID);
 
-			if (auto icbuffer = value.try_cast<ICBuffer>())
-			{
-				auto [data, size] = icbuffer->GetData();
-				SerializedCBuffer serializedCbuffer = std::get<SerializedCBuffer>(prop.value);
-				memcpy(data, serializedCbuffer.data.data(), size);
-			}
-			else if (auto texture = value.try_cast<Texture2D>())
-			{
-				SerializedTexture serializedTexture = std::get<SerializedTexture>(prop.value);
-				field.set(any, AssetCreateTexture(serializedTexture));
-			}
+			std::visit(
+				[&](auto&& arg)
+				{
+					using T = std::decay_t<decltype(arg)>;
+					if constexpr (std::is_same_v<T, SerializedCBuffer>)
+					{
+						SerializedCBuffer serializedCbuffer = std::get<SerializedCBuffer>(prop.value);
+						entt::meta_any fieldRef = field.get(any);
+						if (fieldRef)
+						{
+							void* destPtr = fieldRef.data();
+							u64 fieldSize = fieldRef.type().size_of();
+							std::memcpy(destPtr, serializedCbuffer.data.data(), std::min(serializedCbuffer.data.size(), fieldSize));
+						}
+						else
+							THROW_ENGINE_EXCEPTION("Could not set property {} on material type {}", prop.propertyID, material.matID);
+					}
+					else if constexpr (std::is_same_v<T, SerializedTexture>)
+					{
+						SerializedTexture serializedTexture = std::get<SerializedTexture>(prop.value);
+						field.set(any, AssetCreateTexture(serializedTexture));
+					}
+				},
+				prop.value);
 		}
 		mat->SetFeatureFlags(material.features);
 		return mat;

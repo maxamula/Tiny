@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_camera" kind="class" language="C++" prot="public">
+    <compoundname>tiny::Camera</compoundname>
+    <includes refid="camera_8h" local="no">camera.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_camera_1a7a8591dd68d91ec5bee67091b98ccaf6" prot="private" static="no" mutable="no">
+        <type>DirectX::XMVECTOR</type>
+        <definition>DirectX::XMVECTOR tiny::Camera::mPosition</definition>
+        <argsstring></argsstring>
+        <name>mPosition</name>
+        <qualifiedname>tiny::Camera::mPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="29" column="19" bodyfile="engine/camera.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1ad718e728fde675779402b0735445d7a3" prot="private" static="no" mutable="no">
+        <type>DirectX::XMVECTOR</type>
+        <definition>DirectX::XMVECTOR tiny::Camera::mTarget</definition>
+        <argsstring></argsstring>
+        <name>mTarget</name>
+        <qualifiedname>tiny::Camera::mTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="30" column="19" bodyfile="engine/camera.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1a91e1837a9b23b469fba1e0c679156f52" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 tiny::Camera::mFov</definition>
+        <argsstring></argsstring>
+        <name>mFov</name>
+        <qualifiedname>tiny::Camera::mFov</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="31" column="5" bodyfile="engine/camera.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1a48ff7c58fb45843f382062cbfe44cc4d" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 tiny::Camera::mAspectRatio</definition>
+        <argsstring></argsstring>
+        <name>mAspectRatio</name>
+        <qualifiedname>tiny::Camera::mAspectRatio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="32" column="5" bodyfile="engine/camera.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1a1d53428ccb6b82897a46a1a5296a53eb" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 tiny::Camera::mNearZ</definition>
+        <argsstring></argsstring>
+        <name>mNearZ</name>
+        <qualifiedname>tiny::Camera::mNearZ</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="33" column="5" bodyfile="engine/camera.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1aa64df1b9fe18ae6993d337d195312ca9" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 tiny::Camera::mFarZ</definition>
+        <argsstring></argsstring>
+        <name>mFarZ</name>
+        <qualifiedname>tiny::Camera::mFarZ</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="34" column="5" bodyfile="engine/camera.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1a565a20333a97f66cb65087124ae66c27" prot="private" static="no" mutable="no">
+        <type>D3D12_VIEWPORT</type>
+        <definition>D3D12_VIEWPORT tiny::Camera::mViewport</definition>
+        <argsstring></argsstring>
+        <name>mViewport</name>
+        <qualifiedname>tiny::Camera::mViewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="35" column="16" bodyfile="engine/camera.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_camera_1a15e91a33e789ef9dd886f0c7fcbf5274" prot="private" static="no" mutable="no">
+        <type>D3D12_RECT</type>
+        <definition>D3D12_RECT tiny::Camera::mScissorRect</definition>
+        <argsstring></argsstring>
+        <name>mScissorRect</name>
+        <qualifiedname>tiny::Camera::mScissorRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="36" column="12" bodyfile="engine/camera.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_camera_1a3947d1dcb537ea53c4c3990dd7df0439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::Camera::Camera</definition>
+        <argsstring>()</argsstring>
+        <name>Camera</name>
+        <qualifiedname>tiny::Camera::Camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="10" column="1" bodyfile="engine/camera.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1afe4b1eeb1ad6cf05852932c1b07b5830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::Camera::Camera</definition>
+        <argsstring>(DirectX::XMVECTOR position, DirectX::XMVECTOR target, f32 fov, f32 aspectRatio)</argsstring>
+        <name>Camera</name>
+        <qualifiedname>tiny::Camera::Camera</qualifiedname>
+        <param>
+          <type>DirectX::XMVECTOR</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>DirectX::XMVECTOR</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>fov</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="11" column="1" bodyfile="engine/camera.cpp" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a5a74628564ce7a9f71e1c425d5992529" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>DirectX::XMMATRIX</type>
+        <definition>DirectX::XMMATRIX tiny::Camera::GetViewMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewMatrix</name>
+        <qualifiedname>tiny::Camera::GetViewMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="12" column="19" bodyfile="engine/camera.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a2c02627897f092069aaabcf9aa6a885c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>DirectX::XMMATRIX</type>
+        <definition>DirectX::XMMATRIX tiny::Camera::GetProjectionMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>GetProjectionMatrix</name>
+        <qualifiedname>tiny::Camera::GetProjectionMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="13" column="19" bodyfile="engine/camera.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a4398d2025d9a71ea6e4bf61462fd3049" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>D3D12_VIEWPORT</type>
+        <definition>D3D12_VIEWPORT tiny::Camera::GetViewport</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewport</name>
+        <qualifiedname>tiny::Camera::GetViewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="14" column="16" bodyfile="engine/camera.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1ae209d9f5c577b6a60ee181dbaa1ea635" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>D3D12_RECT</type>
+        <definition>D3D12_RECT tiny::Camera::GetScissorRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScissorRect</name>
+        <qualifiedname>tiny::Camera::GetScissorRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="15" column="12" bodyfile="engine/camera.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a92b7bf9ebae2040e497e8411a6ff4c57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const DirectX::XMVECTOR &amp;</type>
+        <definition>const DirectX::XMVECTOR &amp; tiny::Camera::GetPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPosition</name>
+        <qualifiedname>tiny::Camera::GetPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="17" column="25" bodyfile="engine/camera.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a5910021c87b0ee52c9aa28fc40bc35d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DirectX::XMVECTOR &amp;</type>
+        <definition>DirectX::XMVECTOR &amp; tiny::Camera::GetPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetPosition</name>
+        <qualifiedname>tiny::Camera::GetPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="18" column="19" bodyfile="engine/camera.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a9957284f20cee8c70aee0956431bc2f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const DirectX::XMVECTOR &amp;</type>
+        <definition>const DirectX::XMVECTOR &amp; tiny::Camera::GetTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTarget</name>
+        <qualifiedname>tiny::Camera::GetTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="19" column="25" bodyfile="engine/camera.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a20f157dfda6b5598eb6bfc58649c7dba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DirectX::XMVECTOR &amp;</type>
+        <definition>DirectX::XMVECTOR &amp; tiny::Camera::GetTarget</definition>
+        <argsstring>()</argsstring>
+        <name>GetTarget</name>
+        <qualifiedname>tiny::Camera::GetTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="20" column="19" bodyfile="engine/camera.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a3bde4be8e4c1ed679e3418d13cf3b4e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::Camera::SetFov</definition>
+        <argsstring>(f32 fov)</argsstring>
+        <name>SetFov</name>
+        <qualifiedname>tiny::Camera::SetFov</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>fov</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="22" column="6" bodyfile="engine/camera.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1adab691f33bde2f7e7edadab919c85499" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::Camera::SetAspectRatio</definition>
+        <argsstring>(f32 aspectRatio)</argsstring>
+        <name>SetAspectRatio</name>
+        <qualifiedname>tiny::Camera::SetAspectRatio</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="23" column="6" bodyfile="engine/camera.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a6f76abf263e3f091509e2ca4b0473ce0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::Camera::SetNearZ</definition>
+        <argsstring>(f32 nearZ)</argsstring>
+        <name>SetNearZ</name>
+        <qualifiedname>tiny::Camera::SetNearZ</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>nearZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="24" column="6" bodyfile="engine/camera.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a5cb642168a629c9d752110e61b0dd73f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::Camera::SetFarZ</definition>
+        <argsstring>(f32 farZ)</argsstring>
+        <name>SetFarZ</name>
+        <qualifiedname>tiny::Camera::SetFarZ</qualifiedname>
+        <param>
+          <type>f32</type>
+          <declname>farZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="25" column="6" bodyfile="engine/camera.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1a501faddbcf7bf2928403b32f0dea612c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::Camera::SetViewport</definition>
+        <argsstring>(const D3D12_VIEWPORT &amp;viewport)</argsstring>
+        <name>SetViewport</name>
+        <qualifiedname>tiny::Camera::SetViewport</qualifiedname>
+        <param>
+          <type>const D3D12_VIEWPORT &amp;</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="26" column="6" bodyfile="engine/camera.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_camera_1ad4861de1e16312357273eb398fc38e50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::Camera::SetScissorRect</definition>
+        <argsstring>(const D3D12_RECT &amp;scissorRect)</argsstring>
+        <name>SetScissorRect</name>
+        <qualifiedname>tiny::Camera::SetScissorRect</qualifiedname>
+        <param>
+          <type>const D3D12_RECT &amp;</type>
+          <declname>scissorRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="engine/camera.h" line="27" column="6" bodyfile="engine/camera.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="engine/camera.h" line="7" column="1" bodyfile="engine/camera.h" bodystart="8" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_camera_1a3947d1dcb537ea53c4c3990dd7df0439" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>Camera</name></member>
+      <member refid="classtiny_1_1_camera_1afe4b1eeb1ad6cf05852932c1b07b5830" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>Camera</name></member>
+      <member refid="classtiny_1_1_camera_1a92b7bf9ebae2040e497e8411a6ff4c57" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetPosition</name></member>
+      <member refid="classtiny_1_1_camera_1a5910021c87b0ee52c9aa28fc40bc35d1" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetPosition</name></member>
+      <member refid="classtiny_1_1_camera_1a2c02627897f092069aaabcf9aa6a885c" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetProjectionMatrix</name></member>
+      <member refid="classtiny_1_1_camera_1ae209d9f5c577b6a60ee181dbaa1ea635" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetScissorRect</name></member>
+      <member refid="classtiny_1_1_camera_1a9957284f20cee8c70aee0956431bc2f6" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetTarget</name></member>
+      <member refid="classtiny_1_1_camera_1a20f157dfda6b5598eb6bfc58649c7dba" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetTarget</name></member>
+      <member refid="classtiny_1_1_camera_1a5a74628564ce7a9f71e1c425d5992529" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetViewMatrix</name></member>
+      <member refid="classtiny_1_1_camera_1a4398d2025d9a71ea6e4bf61462fd3049" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>GetViewport</name></member>
+      <member refid="classtiny_1_1_camera_1a48ff7c58fb45843f382062cbfe44cc4d" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mAspectRatio</name></member>
+      <member refid="classtiny_1_1_camera_1aa64df1b9fe18ae6993d337d195312ca9" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mFarZ</name></member>
+      <member refid="classtiny_1_1_camera_1a91e1837a9b23b469fba1e0c679156f52" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mFov</name></member>
+      <member refid="classtiny_1_1_camera_1a1d53428ccb6b82897a46a1a5296a53eb" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mNearZ</name></member>
+      <member refid="classtiny_1_1_camera_1a7a8591dd68d91ec5bee67091b98ccaf6" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mPosition</name></member>
+      <member refid="classtiny_1_1_camera_1a15e91a33e789ef9dd886f0c7fcbf5274" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mScissorRect</name></member>
+      <member refid="classtiny_1_1_camera_1ad718e728fde675779402b0735445d7a3" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mTarget</name></member>
+      <member refid="classtiny_1_1_camera_1a565a20333a97f66cb65087124ae66c27" prot="private" virt="non-virtual"><scope>tiny::Camera</scope><name>mViewport</name></member>
+      <member refid="classtiny_1_1_camera_1adab691f33bde2f7e7edadab919c85499" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>SetAspectRatio</name></member>
+      <member refid="classtiny_1_1_camera_1a5cb642168a629c9d752110e61b0dd73f" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>SetFarZ</name></member>
+      <member refid="classtiny_1_1_camera_1a3bde4be8e4c1ed679e3418d13cf3b4e3" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>SetFov</name></member>
+      <member refid="classtiny_1_1_camera_1a6f76abf263e3f091509e2ca4b0473ce0" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>SetNearZ</name></member>
+      <member refid="classtiny_1_1_camera_1ad4861de1e16312357273eb398fc38e50" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>SetScissorRect</name></member>
+      <member refid="classtiny_1_1_camera_1a501faddbcf7bf2928403b32f0dea612c" prot="public" virt="non-virtual"><scope>tiny::Camera</scope><name>SetViewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

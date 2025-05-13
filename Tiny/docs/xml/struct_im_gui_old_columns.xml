@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_old_columns" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiOldColumns</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1ae8e14ed159e758560d196a9012ea617d" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiOldColumns::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>ImGuiOldColumns::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1636" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1aaf37a990d000be9d6d16181edbe1072c" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a930931ec4c54582a278a461676df4dda" kindref="member">ImGuiOldColumnFlags</ref></type>
+        <definition>ImGuiOldColumnFlags ImGuiOldColumns::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiOldColumns::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1637" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a8597134957b8c1f01b97256978f4b7a1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiOldColumns::IsFirstFrame</definition>
+        <argsstring></argsstring>
+        <name>IsFirstFrame</name>
+        <qualifiedname>ImGuiOldColumns::IsFirstFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1638" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a32cc845e4100c21a9cd197d7627a3dd5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImGuiOldColumns::IsBeingResized</definition>
+        <argsstring></argsstring>
+        <name>IsBeingResized</name>
+        <qualifiedname>ImGuiOldColumns::IsBeingResized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1639" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1acb97d32d656cf8e96f707e998a107689" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiOldColumns::Current</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <qualifiedname>ImGuiOldColumns::Current</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1640" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1abdbf31a5bf080613d279e149b3c372b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiOldColumns::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <qualifiedname>ImGuiOldColumns::Count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1641" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a7cbfefcc82a7ca3271c8c0c05cfe9ed4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumns::OffMinX</definition>
+        <argsstring></argsstring>
+        <name>OffMinX</name>
+        <qualifiedname>ImGuiOldColumns::OffMinX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1642" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a19f636d31c2c93d1afe01d9484936b28" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumns::OffMaxX</definition>
+        <argsstring></argsstring>
+        <name>OffMaxX</name>
+        <qualifiedname>ImGuiOldColumns::OffMaxX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1642" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a3b9c843a034e82543a7936e30442704c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumns::LineMinY</definition>
+        <argsstring></argsstring>
+        <name>LineMinY</name>
+        <qualifiedname>ImGuiOldColumns::LineMinY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1643" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a7ba6bbc0231a94ba8c2edcc5029f0d53" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumns::LineMaxY</definition>
+        <argsstring></argsstring>
+        <name>LineMaxY</name>
+        <qualifiedname>ImGuiOldColumns::LineMaxY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1643" column="34" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1acc41fca916c812950aeb6d479ad4f5f1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumns::HostCursorPosY</definition>
+        <argsstring></argsstring>
+        <name>HostCursorPosY</name>
+        <qualifiedname>ImGuiOldColumns::HostCursorPosY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1644" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a82502dcabe70b52e0e89cbb0b55e7087" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumns::HostCursorMaxPosX</definition>
+        <argsstring></argsstring>
+        <name>HostCursorMaxPosX</name>
+        <qualifiedname>ImGuiOldColumns::HostCursorMaxPosX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1645" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1aaaaa00e20d7b72ac75c9deea4f09ce15" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiOldColumns::HostInitialClipRect</definition>
+        <argsstring></argsstring>
+        <name>HostInitialClipRect</name>
+        <qualifiedname>ImGuiOldColumns::HostInitialClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1646" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1aa4554860fcb988d5c667d6d7d70d5484" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiOldColumns::HostBackupClipRect</definition>
+        <argsstring></argsstring>
+        <name>HostBackupClipRect</name>
+        <qualifiedname>ImGuiOldColumns::HostBackupClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1647" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1af2350babd38168dc2a605474b6b8aae4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiOldColumns::HostBackupParentWorkRect</definition>
+        <argsstring></argsstring>
+        <name>HostBackupParentWorkRect</name>
+        <qualifiedname>ImGuiOldColumns::HostBackupParentWorkRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1648" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1ab4f542da960ccad64557fe388a8f82eb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_im_gui_old_column_data" kindref="compound">ImGuiOldColumnData</ref> &gt;</type>
+        <definition>ImVector&lt;ImGuiOldColumnData&gt; ImGuiOldColumns::Columns</definition>
+        <argsstring></argsstring>
+        <name>Columns</name>
+        <qualifiedname>ImGuiOldColumns::Columns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1649" column="14" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_columns_1a0bbefb48400e92ca8245dd62bdea7de3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_draw_list_splitter" kindref="compound">ImDrawListSplitter</ref></type>
+        <definition>ImDrawListSplitter ImGuiOldColumns::Splitter</definition>
+        <argsstring></argsstring>
+        <name>Splitter</name>
+        <qualifiedname>ImGuiOldColumns::Splitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1650" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1650" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_old_columns_1ab8cae447d704e5d9ca332af63301fbf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiOldColumns::ImGuiOldColumns</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiOldColumns</name>
+        <qualifiedname>ImGuiOldColumns::ImGuiOldColumns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1652" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1652" bodyend="1652"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>ImDrawChannel</label>
+        <link refid="struct_im_draw_channel"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>_IdxBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ImDrawCmd</label>
+        <link refid="struct_im_draw_cmd"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>UserCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>ImDrawCmdHeader</label>
+        <link refid="struct_im_draw_cmd_header"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>ImDrawList</label>
+        <link refid="struct_im_draw_list"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>CmdBuffer</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>IdxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>VtxBuffer</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>_Data</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>_VtxWritePtr</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>_ClipRectStack</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>_TextureIdStack</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>_Path</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>_CmdHeader</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ImDrawListSharedData</label>
+        <link refid="struct_im_draw_list_shared_data"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ArcFastVtx</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>ClipRectFullscreen</edgelabel>
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>TempBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ImDrawListSplitter</label>
+        <link refid="struct_im_draw_list_splitter"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_Channels</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ImDrawVert</label>
+        <link refid="struct_im_draw_vert"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pos</edgelabel>
+          <edgelabel>uv</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ImFont</label>
+        <link refid="struct_im_font"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>IndexAdvanceX</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>IndexLookup</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>Glyphs</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>FallbackGlyph</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ContainerAtlas</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>ImFontAtlas</label>
+        <link refid="struct_im_font_atlas"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>TexUvScale</edgelabel>
+          <edgelabel>TexUvWhitePixel</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>Fonts</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>CustomRects</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>ConfigData</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>TexUvLines</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>FontBuilderIO</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ImFontAtlasCustomRect</label>
+        <link refid="struct_im_font_atlas_custom_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Font</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ImFontBuilderIO</label>
+        <link refid="struct_im_font_builder_i_o"/>
+      </node>
+      <node id="27">
+        <label>ImFontConfig</label>
+        <link refid="struct_im_font_config"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>GlyphExtraSpacing</edgelabel>
+          <edgelabel>GlyphOffset</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>DstFont</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ImFontGlyph</label>
+        <link refid="struct_im_font_glyph"/>
+      </node>
+      <node id="5">
+        <label>ImGuiOldColumnData</label>
+        <link refid="struct_im_gui_old_column_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImGuiOldColumns</label>
+        <link refid="struct_im_gui_old_columns"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>HostBackupClipRect</edgelabel>
+          <edgelabel>HostBackupParentWorkRect</edgelabel>
+          <edgelabel>HostInitialClipRect</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Columns</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Splitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+      <node id="11">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="7">
+        <label>ImVector&lt; ImDrawChannel &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ImVector&lt; ImDrawCmd &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ImVector&lt; ImDrawIdx &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="14">
+        <label>ImVector&lt; ImDrawVert &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ImVector&lt; ImFont * &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ImVector&lt; ImFontAtlasCustomRect &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ImVector&lt; ImFontConfig &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ImVector&lt; ImFontGlyph &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImVector&lt; ImGuiOldColumnData &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>ImVector&lt; ImTextureID &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="29">
+        <label>ImVector&lt; ImVec2 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ImVector&lt; ImVec4 &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ImVector&lt; ImWchar &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+      <node id="18">
+        <label>ImVector&lt; float &gt;</label>
+        <link refid="struct_im_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1634" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1635" bodyend="1653"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_old_columns_1ab4f542da960ccad64557fe388a8f82eb" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>Columns</name></member>
+      <member refid="struct_im_gui_old_columns_1abdbf31a5bf080613d279e149b3c372b6" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>Count</name></member>
+      <member refid="struct_im_gui_old_columns_1acb97d32d656cf8e96f707e998a107689" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>Current</name></member>
+      <member refid="struct_im_gui_old_columns_1aaf37a990d000be9d6d16181edbe1072c" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_old_columns_1aa4554860fcb988d5c667d6d7d70d5484" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>HostBackupClipRect</name></member>
+      <member refid="struct_im_gui_old_columns_1af2350babd38168dc2a605474b6b8aae4" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>HostBackupParentWorkRect</name></member>
+      <member refid="struct_im_gui_old_columns_1a82502dcabe70b52e0e89cbb0b55e7087" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>HostCursorMaxPosX</name></member>
+      <member refid="struct_im_gui_old_columns_1acc41fca916c812950aeb6d479ad4f5f1" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>HostCursorPosY</name></member>
+      <member refid="struct_im_gui_old_columns_1aaaaa00e20d7b72ac75c9deea4f09ce15" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>HostInitialClipRect</name></member>
+      <member refid="struct_im_gui_old_columns_1ae8e14ed159e758560d196a9012ea617d" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>ID</name></member>
+      <member refid="struct_im_gui_old_columns_1ab8cae447d704e5d9ca332af63301fbf9" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>ImGuiOldColumns</name></member>
+      <member refid="struct_im_gui_old_columns_1a32cc845e4100c21a9cd197d7627a3dd5" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>IsBeingResized</name></member>
+      <member refid="struct_im_gui_old_columns_1a8597134957b8c1f01b97256978f4b7a1" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>IsFirstFrame</name></member>
+      <member refid="struct_im_gui_old_columns_1a7ba6bbc0231a94ba8c2edcc5029f0d53" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>LineMaxY</name></member>
+      <member refid="struct_im_gui_old_columns_1a3b9c843a034e82543a7936e30442704c" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>LineMinY</name></member>
+      <member refid="struct_im_gui_old_columns_1a19f636d31c2c93d1afe01d9484936b28" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>OffMaxX</name></member>
+      <member refid="struct_im_gui_old_columns_1a7cbfefcc82a7ca3271c8c0c05cfe9ed4" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>OffMinX</name></member>
+      <member refid="struct_im_gui_old_columns_1a0bbefb48400e92ca8245dd62bdea7de3" prot="public" virt="non-virtual"><scope>ImGuiOldColumns</scope><name>Splitter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

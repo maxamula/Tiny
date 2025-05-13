@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classtiny_1_1_frame_graph_1_1_builder" kind="class" language="C++" prot="public">
+    <compoundname>tiny::FrameGraph::Builder</compoundname>
+    <includes refid="framegraph_8h" local="no">framegraph.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtiny_1_1_frame_graph_1_1_builder_1ab0cb1731f5f241d99b19489960a4f6f4" prot="private" static="no" mutable="no">
+        <type><ref refid="classtiny_1_1_frame_graph" kindref="compound">FrameGraph</ref> &amp;</type>
+        <definition>FrameGraph&amp; tiny::FrameGraph::Builder::mFrameGraph</definition>
+        <argsstring></argsstring>
+        <name>mFrameGraph</name>
+        <qualifiedname>tiny::FrameGraph::Builder::mFrameGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="68" column="24" bodyfile="graphics/framegraph.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtiny_1_1_frame_graph_1_1_builder_1aa4149bf5731f39e40a612585b5139eef" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tiny::FrameGraph::Builder::mPassIndex</definition>
+        <argsstring></argsstring>
+        <name>mPassIndex</name>
+        <qualifiedname>tiny::FrameGraph::Builder::mPassIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="69" column="17" bodyfile="graphics/framegraph.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtiny_1_1_frame_graph_1_1_builder_1a8147e62aaed3175feda8a06b4f45df22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FrameGraph</definition>
+        <argsstring></argsstring>
+        <name>FrameGraph</name>
+        <qualifiedname>tiny::FrameGraph::Builder::FrameGraph</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph" kindref="compound">FrameGraph</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="72" column="26" bodyfile="graphics/framegraph.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtiny_1_1_frame_graph_1_1_builder_1a7572b3e31cd31ae99ee1b7a667e92756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tiny::FrameGraph::Builder::Builder</definition>
+        <argsstring>(FrameGraph &amp;frameGraph, int passIndex)</argsstring>
+        <name>Builder</name>
+        <qualifiedname>tiny::FrameGraph::Builder::Builder</qualifiedname>
+        <param>
+          <type><ref refid="classtiny_1_1_frame_graph" kindref="compound">FrameGraph</ref> &amp;</type>
+          <declname>frameGraph</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>passIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="62" column="13" bodyfile="graphics/framegraph.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_graph_1_1_builder_1afdcc81aff5ffcbe6d7d8aaf302d7e718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FrameGraph::Builder::Read</definition>
+        <argsstring>(const RenderTextureHandle &amp;handle)</argsstring>
+        <name>Read</name>
+        <qualifiedname>tiny::FrameGraph::Builder::Read</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="63" column="18" bodyfile="graphics/framegraph.cpp" bodystart="24" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_graph_1_1_builder_1acdd2f8ce9d8dac39fe72b3f4db868dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FrameGraph::Builder::Read</definition>
+        <argsstring>(const DepthTextureHandle &amp;handle)</argsstring>
+        <name>Read</name>
+        <qualifiedname>tiny::FrameGraph::Builder::Read</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_depth_texture_handle" kindref="compound">DepthTextureHandle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="64" column="18" bodyfile="graphics/framegraph.cpp" bodystart="41" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_graph_1_1_builder_1a6f3a6f100db394a09af689a6a982717c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FrameGraph::Builder::Write</definition>
+        <argsstring>(const RenderTextureHandle &amp;handle)</argsstring>
+        <name>Write</name>
+        <qualifiedname>tiny::FrameGraph::Builder::Write</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_render_texture_handle" kindref="compound">RenderTextureHandle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="65" column="18" bodyfile="graphics/framegraph.cpp" bodystart="58" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classtiny_1_1_frame_graph_1_1_builder_1af4fdf8fcdf7599b2eaddd2af458ac5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tiny::FrameGraph::Builder::Write</definition>
+        <argsstring>(const DepthTextureHandle &amp;handle)</argsstring>
+        <name>Write</name>
+        <qualifiedname>tiny::FrameGraph::Builder::Write</qualifiedname>
+        <param>
+          <type>const <ref refid="structtiny_1_1_depth_texture_handle" kindref="compound">DepthTextureHandle</ref> &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="66" column="18" bodyfile="graphics/framegraph.cpp" bodystart="89" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtiny_1_1_frame_graph_1_1_builder_1ab7ae03ca1b2636303c899027e755e840" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename HandleType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool tiny::FrameGraph::Builder::IsHandleInList</definition>
+        <argsstring>(const HandleType &amp;handle, const std::vector&lt; HandleType &gt; &amp;list)</argsstring>
+        <name>IsHandleInList</name>
+        <qualifiedname>tiny::FrameGraph::Builder::IsHandleInList</qualifiedname>
+        <param>
+          <type>const HandleType &amp;</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; HandleType &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/framegraph.h" line="71" column="18" bodyfile="graphics/framegraph.h" bodystart="181" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/framegraph.h" line="59" column="9" bodyfile="graphics/framegraph.h" bodystart="60" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1a7572b3e31cd31ae99ee1b7a667e92756" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>Builder</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1a8147e62aaed3175feda8a06b4f45df22" prot="private" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>FrameGraph</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1ab7ae03ca1b2636303c899027e755e840" prot="private" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>IsHandleInList</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1ab0cb1731f5f241d99b19489960a4f6f4" prot="private" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>mFrameGraph</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1aa4149bf5731f39e40a612585b5139eef" prot="private" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>mPassIndex</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1afdcc81aff5ffcbe6d7d8aaf302d7e718" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>Read</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1acdd2f8ce9d8dac39fe72b3f4db868dcd" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>Read</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1a6f3a6f100db394a09af689a6a982717c" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>Write</name></member>
+      <member refid="classtiny_1_1_frame_graph_1_1_builder_1af4fdf8fcdf7599b2eaddd2af458ac5c3" prot="public" virt="non-virtual"><scope>tiny::FrameGraph::Builder</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

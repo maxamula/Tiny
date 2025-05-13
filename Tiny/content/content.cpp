@@ -63,108 +63,6 @@ namespace tiny
 		return stride;
 	}
 
-	CBufferCPUBase::CBufferCPUBase(u32 size)
-	{
-		D3D12_RESOURCE_DESC resourceDesc
-		{
-			.Dimension = D3D12_RESOURCE_DIMENSION_BUFFER,
-			.Alignment = 0,
-			.Width = size,
-			.Height = 1,
-			.DepthOrArraySize = 1,
-			.MipLevels = 1,
-			.Format = DXGI_FORMAT_UNKNOWN,
-			.SampleDesc
-			{
-				.Count = 1,
-				.Quality = 0
-			},
-			.Layout = D3D12_TEXTURE_LAYOUT_ROW_MAJOR,
-			.Flags = D3D12_RESOURCE_FLAG_NONE
-		};
-		D3D12_HEAP_PROPERTIES heapProperties{ D3D12_HEAP_TYPE_UPLOAD };
-		gDevice->CreateCommittedResource(
-			&heapProperties,
-			D3D12_HEAP_FLAG_NONE,
-			&resourceDesc,
-			D3D12_RESOURCE_STATE_GENERIC_READ,
-			nullptr,
-			IID_PPV_ARGS(&resource)
-		);
-	}
-
-	void CBufferCPUBase::Update()
-	{
-		if (!resource)
-			return;
-		void* pResourceData;
-		THROW_IF_FAILED(resource->Map(0, nullptr, &pResourceData));
-		auto [pPendingData, size] = GetData();
-		memcpy(pResourceData, pPendingData, size * sizeof(u32));
-		resource->Unmap(0, nullptr);
-	}
-
-	CBufferGPUBase::CBufferGPUBase(u32 size)
-	{
-		D3D12_RESOURCE_DESC resourceDesc
-		{
-			.Dimension = D3D12_RESOURCE_DIMENSION_BUFFER,
-			.Alignment = 0,
-			.Width = size,
-			.Height = 1,
-			.DepthOrArraySize = 1,
-			.MipLevels = 1,
-			.Format = DXGI_FORMAT_UNKNOWN,
-			.SampleDesc
-			{
-				.Count = 1,
-				.Quality = 0
-			},
-			.Layout = D3D12_TEXTURE_LAYOUT_ROW_MAJOR,
-			.Flags = D3D12_RESOURCE_FLAG_NONE
-		};
-		D3D12_HEAP_PROPERTIES heapProperties{ D3D12_HEAP_TYPE_DEFAULT };
-		gDevice->CreateCommittedResource(
-			&heapProperties,
-			D3D12_HEAP_FLAG_NONE,
-			&resourceDesc,
-			D3D12_RESOURCE_STATE_COPY_DEST,
-			nullptr,
-			IID_PPV_ARGS(&resource)
-		);
-	}
-
-	void CBufferGPUBase::Update()
-	{
-		// copy with copy queue
-		if (!resource)
-			return;
-		auto [pPendingData, size] = GetData();
-		CopyQueue& copyQueue = GetEngineCopyQueue();
-		CComPtr<ID3D12Resource> uploadBuffer;
-		CD3DX12_HEAP_PROPERTIES uploadHeap(D3D12_HEAP_TYPE_UPLOAD);
-		auto uploadDesc = CD3DX12_RESOURCE_DESC::Buffer(size);
-		THROW_IF_FAILED(gDevice->CreateCommittedResource(
-			&uploadHeap,
-			D3D12_HEAP_FLAG_NONE,
-			&uploadDesc,
-			D3D12_RESOURCE_STATE_GENERIC_READ,
-			nullptr,
-			IID_PPV_ARGS(&uploadBuffer)
-		));
-		void* mappedData;
-		THROW_IF_FAILED(uploadBuffer->Map(0, nullptr, &mappedData));
-		memcpy(mappedData, pPendingData, size * sizeof(u32));
-		uploadBuffer->Unmap(0, nullptr);
-		D3D12_SUBRESOURCE_DATA subresourceData
-		{
-			.pData = pPendingData,
-			.RowPitch = static_cast<LONG_PTR>(size),
-			.SlicePitch = static_cast<LONG_PTR>(size)
-		};
-		copyQueue.UpdateSubresource(resource, uploadBuffer.p, 0, 0, 1, &subresourceData, D3D12_RESOURCE_STATE_COMMON).wait();
-	}
-
 	RenderTexture RenderTexture::Create(const Desc& desc)
 	{
 		RenderTexture tex;
@@ -196,13 +94,12 @@ namespace tiny
 		};
 
 		CD3DX12_HEAP_PROPERTIES defaultHeap(D3D12_HEAP_TYPE_DEFAULT);
-		D3D12_RESOURCE_STATES initialState = D3D12_RESOURCE_STATE_COMMON;
 
 		THROW_IF_FAILED(gDevice->CreateCommittedResource(
 			&defaultHeap,
 			D3D12_HEAP_FLAG_NONE,
 			&resourceDesc,
-			initialState,
+			D3D12_RESOURCE_STATE_RENDER_TARGET,
 			&clearValue,
 			IID_PPV_ARGS(&tex.resource)
 		));

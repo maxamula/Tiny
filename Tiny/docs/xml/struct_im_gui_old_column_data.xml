@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_old_column_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiOldColumnData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_old_column_data_1a87f711016d4006d7fb9fa21815fe6f8f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumnData::OffsetNorm</definition>
+        <argsstring></argsstring>
+        <name>OffsetNorm</name>
+        <qualifiedname>ImGuiOldColumnData::OffsetNorm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1626" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_column_data_1aacf1574d1907c9afaadd5a702d6803ef" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiOldColumnData::OffsetNormBeforeResize</definition>
+        <argsstring></argsstring>
+        <name>OffsetNormBeforeResize</name>
+        <qualifiedname>ImGuiOldColumnData::OffsetNormBeforeResize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1627" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1627" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_column_data_1ac31f2d6cf8d454163d2d5c46b7cb16ad" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui__internal_8h_1a930931ec4c54582a278a461676df4dda" kindref="member">ImGuiOldColumnFlags</ref></type>
+        <definition>ImGuiOldColumnFlags ImGuiOldColumnData::Flags</definition>
+        <argsstring></argsstring>
+        <name>Flags</name>
+        <qualifiedname>ImGuiOldColumnData::Flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1628" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_old_column_data_1a2eef22c9f568b9020ee0f6ec682b1415" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_rect" kindref="compound">ImRect</ref></type>
+        <definition>ImRect ImGuiOldColumnData::ClipRect</definition>
+        <argsstring></argsstring>
+        <name>ClipRect</name>
+        <qualifiedname>ImGuiOldColumnData::ClipRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1629" column="25" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1629" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_old_column_data_1a6fd70ab5181a2615ac83ffb7813b31e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiOldColumnData::ImGuiOldColumnData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiOldColumnData</name>
+        <qualifiedname>ImGuiOldColumnData::ImGuiOldColumnData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="1631" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1631" bodyend="1631"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImGuiOldColumnData</label>
+        <link refid="struct_im_gui_old_column_data"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ClipRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ImRect</label>
+        <link refid="struct_im_rect"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Max</edgelabel>
+          <edgelabel>Min</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImVec2</label>
+        <link refid="struct_im_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_internal.h" line="1624" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="1625" bodyend="1632"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_old_column_data_1a2eef22c9f568b9020ee0f6ec682b1415" prot="public" virt="non-virtual"><scope>ImGuiOldColumnData</scope><name>ClipRect</name></member>
+      <member refid="struct_im_gui_old_column_data_1ac31f2d6cf8d454163d2d5c46b7cb16ad" prot="public" virt="non-virtual"><scope>ImGuiOldColumnData</scope><name>Flags</name></member>
+      <member refid="struct_im_gui_old_column_data_1a6fd70ab5181a2615ac83ffb7813b31e3" prot="public" virt="non-virtual"><scope>ImGuiOldColumnData</scope><name>ImGuiOldColumnData</name></member>
+      <member refid="struct_im_gui_old_column_data_1a87f711016d4006d7fb9fa21815fe6f8f" prot="public" virt="non-virtual"><scope>ImGuiOldColumnData</scope><name>OffsetNorm</name></member>
+      <member refid="struct_im_gui_old_column_data_1aacf1574d1907c9afaadd5a702d6803ef" prot="public" virt="non-virtual"><scope>ImGuiOldColumnData</scope><name>OffsetNormBeforeResize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

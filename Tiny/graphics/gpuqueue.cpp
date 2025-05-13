@@ -14,16 +14,20 @@ namespace tiny
 		THROW_IF_FAILED(gDevice->CreateCommandQueue(&queueDesc, IID_PPV_ARGS(&mCommandQueue)));
 		for (u8 i = 0; i < bufferCount; ++i)
 		{
-			for (auto& ctx : mCommandFrames[i].commandListContexts)
+			for (u8 j = 0; j < TINY_COMMAND_LIST_POOL_SIZE; ++j)
 			{
+				auto& ctx = mCommandFrames[i].commandListContexts[j];
 				THROW_IF_FAILED(gDevice->CreateCommandAllocator(queueDesc.Type, IID_PPV_ARGS(&ctx.commandAllocator)));
 				THROW_IF_FAILED(gDevice->CreateCommandList(0, queueDesc.Type, ctx.commandAllocator.p, nullptr, IID_PPV_ARGS(&ctx.commandList)));
 				ctx.commandList->Close();
+				SET_OBJECT_NAME(ctx.commandList, L"Thread Context #{} CommandList #{}", i, j);
 			}
 			mCommandFrames[i].allocatedCommandListCount = 0;
 			mCommandFrames[i].fenceValue = 0;
 		}
 		THROW_IF_FAILED(gDevice->CreateFence(0, D3D12_FENCE_FLAG_NONE, IID_PPV_ARGS(&mFence)));
+		SET_OBJECT_NAME(mCommandQueue, L"Command Queue");
+		SET_OBJECT_NAME(mFence, L"Command Queue Fence");
 	}
 
 	void D3DGpuQueue::Destroy()
@@ -80,7 +84,8 @@ namespace tiny
 
 	CComPtr<ID3D12GraphicsCommandList6> D3DGpuQueue::AcquireNextCommandList()
 	{
-		u8 frameIndex = mFrameIndex;
+		std::lock_guard lock(mAcquireMutex);
+		u8 frameIndex = mFrameIndex.load();
 		u8 contextIndex = mCommandFrames[frameIndex].allocatedCommandListCount++;
 		auto& ctx = mCommandFrames[frameIndex].commandListContexts[contextIndex];
 		THROW_IF_FAILED(ctx.commandAllocator->Reset());

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_im_gui_table_instance_data" kind="struct" language="C++" prot="public">
+    <compoundname>ImGuiTableInstanceData</compoundname>
+    <includes refid="imgui__internal_8h" local="no">imgui_internal.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_im_gui_table_instance_data_1a7b8a756ecb576effee395b488019fa69" prot="public" static="no" mutable="no">
+        <type><ref refid="imgui_8h_1a1785c9b6f4e16406764a85f32582236f" kindref="member">ImGuiID</ref></type>
+        <definition>ImGuiID ImGuiTableInstanceData::TableInstanceID</definition>
+        <argsstring></argsstring>
+        <name>TableInstanceID</name>
+        <qualifiedname>ImGuiTableInstanceData::TableInstanceID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2687" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_instance_data_1a1073630b1f76c3281c40bf9097784961" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTableInstanceData::LastOuterHeight</definition>
+        <argsstring></argsstring>
+        <name>LastOuterHeight</name>
+        <qualifiedname>ImGuiTableInstanceData::LastOuterHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2688" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_instance_data_1a273064d5882ba6b74d4141b450c26176" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTableInstanceData::LastTopHeadersRowHeight</definition>
+        <argsstring></argsstring>
+        <name>LastTopHeadersRowHeight</name>
+        <qualifiedname>ImGuiTableInstanceData::LastTopHeadersRowHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2689" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_instance_data_1a4716a634093ac8b56020f75f41354469" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImGuiTableInstanceData::LastFrozenHeight</definition>
+        <argsstring></argsstring>
+        <name>LastFrozenHeight</name>
+        <qualifiedname>ImGuiTableInstanceData::LastFrozenHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2690" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_instance_data_1af78766cea190156b905ee41ec21c0acb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTableInstanceData::HoveredRowLast</definition>
+        <argsstring></argsstring>
+        <name>HoveredRowLast</name>
+        <qualifiedname>ImGuiTableInstanceData::HoveredRowLast</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2691" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_im_gui_table_instance_data_1ae3191a6dc89315055034cd2eb14efcea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImGuiTableInstanceData::HoveredRowNext</definition>
+        <argsstring></argsstring>
+        <name>HoveredRowNext</name>
+        <qualifiedname>ImGuiTableInstanceData::HoveredRowNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2692" column="33" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2692" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_im_gui_table_instance_data_1ace9c6bc325970e1d41321d55d06cc079" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImGuiTableInstanceData::ImGuiTableInstanceData</definition>
+        <argsstring>()</argsstring>
+        <name>ImGuiTableInstanceData</name>
+        <qualifiedname>ImGuiTableInstanceData::ImGuiTableInstanceData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_internal.h" line="2694" column="5" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2694" bodyend="2694"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/imgui_internal.h" line="2685" column="1" bodyfile="graphics/imgui/imgui_internal.h" bodystart="2686" bodyend="2695"/>
+    <listofallmembers>
+      <member refid="struct_im_gui_table_instance_data_1af78766cea190156b905ee41ec21c0acb" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>HoveredRowLast</name></member>
+      <member refid="struct_im_gui_table_instance_data_1ae3191a6dc89315055034cd2eb14efcea" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>HoveredRowNext</name></member>
+      <member refid="struct_im_gui_table_instance_data_1ace9c6bc325970e1d41321d55d06cc079" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>ImGuiTableInstanceData</name></member>
+      <member refid="struct_im_gui_table_instance_data_1a4716a634093ac8b56020f75f41354469" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>LastFrozenHeight</name></member>
+      <member refid="struct_im_gui_table_instance_data_1a1073630b1f76c3281c40bf9097784961" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>LastOuterHeight</name></member>
+      <member refid="struct_im_gui_table_instance_data_1a273064d5882ba6b74d4141b450c26176" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>LastTopHeadersRowHeight</name></member>
+      <member refid="struct_im_gui_table_instance_data_1a7b8a756ecb576effee395b488019fa69" prot="public" virt="non-virtual"><scope>ImGuiTableInstanceData</scope><name>TableInstanceID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

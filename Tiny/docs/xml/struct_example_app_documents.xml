@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_example_app_documents" kind="struct" language="C++" prot="public">
+    <compoundname>ExampleAppDocuments</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_example_app_documents_1a6f8cc955192c924720b0413ae7980c12" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_im_vector" kindref="compound">ImVector</ref>&lt; <ref refid="struct_my_document" kindref="compound">MyDocument</ref> &gt;</type>
+        <definition>ImVector&lt;MyDocument&gt; ExampleAppDocuments::Documents</definition>
+        <argsstring></argsstring>
+        <name>Documents</name>
+        <qualifiedname>ExampleAppDocuments::Documents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8228" column="14" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8228" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_example_app_documents_1ad5764912b760eaae5829a7197b26c911" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ExampleAppDocuments::ExampleAppDocuments</definition>
+        <argsstring>()</argsstring>
+        <name>ExampleAppDocuments</name>
+        <qualifiedname>ExampleAppDocuments::ExampleAppDocuments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="graphics/imgui/imgui_demo.cpp" line="8230" column="5" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8230" bodyend="8238"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ExampleAppDocuments</label>
+        <link refid="struct_example_app_documents"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Documents</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ImVec4</label>
+        <link refid="struct_im_vec4"/>
+      </node>
+      <node id="2">
+        <label>ImVector&lt; MyDocument &gt;</label>
+        <link refid="struct_im_vector"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MyDocument</label>
+        <link refid="struct_my_document"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Color</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="graphics/imgui/imgui_demo.cpp" line="8226" column="1" bodyfile="graphics/imgui/imgui_demo.cpp" bodystart="8227" bodyend="8239"/>
+    <listofallmembers>
+      <member refid="struct_example_app_documents_1a6f8cc955192c924720b0413ae7980c12" prot="public" virt="non-virtual"><scope>ExampleAppDocuments</scope><name>Documents</name></member>
+      <member refid="struct_example_app_documents_1ad5764912b760eaae5829a7197b26c911" prot="public" virt="non-virtual"><scope>ExampleAppDocuments</scope><name>ExampleAppDocuments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

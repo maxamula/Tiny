@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s" kind="group">
+    <compoundname>CEREAL_RAPIDJSON_ERRORS</compoundname>
+    <title>RapidJSON error handling</title>
+    <innerclass refid="struct_parse_result" prot="public">ParseResult</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ParseErrorCode</name>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ac0856bac4945cbd1d09e9502fd8f852f" prot="public">
+          <name>kParseErrorNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a04b368d184e84b50580be2faa55f738a" prot="public">
+          <name>kParseErrorDocumentEmpty</name>
+          <briefdescription>
+<para>The document is empty. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2293b39033220f4c2a568482c497dab5" prot="public">
+          <name>kParseErrorDocumentRootNotSingular</name>
+          <briefdescription>
+<para>The document root must not follow by other values. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a20a50e257aab726699ab02192db72ba9" prot="public">
+          <name>kParseErrorValueInvalid</name>
+          <briefdescription>
+<para>Invalid value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae3142fbadf2c4cdfd0c7200d7b6b8ed3" prot="public">
+          <name>kParseErrorObjectMissName</name>
+          <briefdescription>
+<para>Missing a name for object member. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a55cda7eb30436986ab42a61e06caf017" prot="public">
+          <name>kParseErrorObjectMissColon</name>
+          <briefdescription>
+<para>Missing a colon after a name of object member. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a34f70d7ed2fa121954f5fc5b5113d05f" prot="public">
+          <name>kParseErrorObjectMissCommaOrCurlyBracket</name>
+          <briefdescription>
+<para>Missing a comma or &apos;}&apos; after an object member. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7abfdd2bd90134fec4fe6a22762d16a5f5" prot="public">
+          <name>kParseErrorArrayMissCommaOrSquareBracket</name>
+          <briefdescription>
+<para>Missing a comma or &apos;]&apos; after an array element. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7afc65ea941a0a26812f0f258d2429e5d2" prot="public">
+          <name>kParseErrorStringUnicodeEscapeInvalidHex</name>
+          <briefdescription>
+<para>Incorrect hex digit after \u escape in string. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ad9fced6763a06435ca448626c74e5c72" prot="public">
+          <name>kParseErrorStringUnicodeSurrogateInvalid</name>
+          <briefdescription>
+<para>The surrogate pair in string is invalid. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a98bb3f3b1e12fdb7f278b9fa4029306f" prot="public">
+          <name>kParseErrorStringEscapeInvalid</name>
+          <briefdescription>
+<para>Invalid escape character in string. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6369e5b4e4922720cbc45c5941efc4af" prot="public">
+          <name>kParseErrorStringMissQuotationMark</name>
+          <briefdescription>
+<para>Missing a closing quotation mark in string. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a17ecb2ed1524b513d64a93f4a7a8b456" prot="public">
+          <name>kParseErrorStringInvalidEncoding</name>
+          <briefdescription>
+<para>Invalid encoding in string. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7ae52aaa70fde46e4cc422420309700b82" prot="public">
+          <name>kParseErrorNumberTooBig</name>
+          <briefdescription>
+<para>Number too big to be stored in double. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a08a2cc2b4cacfba1673ed536eee229ce" prot="public">
+          <name>kParseErrorNumberMissFraction</name>
+          <briefdescription>
+<para>Miss fraction part in number. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a82cdbd740e22b819a70d05e585c2a442" prot="public">
+          <name>kParseErrorNumberMissExponent</name>
+          <briefdescription>
+<para>Miss exponent in number. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a6fed2d9a15f88540a1ba785f0de2cbe6" prot="public">
+          <name>kParseErrorTermination</name>
+          <briefdescription>
+<para>Parsing was terminated. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gga8d4b32dfc45840bca189ade2bbcb6ba7a2bec6b26bddd3e093a37fc0d6399e0be" prot="public">
+          <name>kParseErrorUnspecificSyntaxError</name>
+          <briefdescription>
+<para>Unspecific syntax error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Error code of parsing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_generic_reader_1a0c450620d14ff1824e58bb7bd9b42099" kindref="member">GenericReader::Parse</ref>, <ref refid="class_generic_reader_1a937bf90919f50e1c370b312cee5833e8" kindref="member">GenericReader::GetParseErrorCode</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/error/error.h" line="64" column="1" bodyfile="content/cereal/external/rapidjson/error/error.h" bodystart="64" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gacb2e274f33e54d91b96e9883a99a98be" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PointerParseErrorCode</name>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ggacb2e274f33e54d91b96e9883a99a98bea81e2b6fbd1bf4ac890ddb7779265e3a0" prot="public">
+          <name>kPointerParseErrorNone</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>The parse is successful. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ggacb2e274f33e54d91b96e9883a99a98bea5821696a2ab6cbccdc8288cbe6e81c77" prot="public">
+          <name>kPointerParseErrorTokenMustBeginWithSolidus</name>
+          <briefdescription>
+<para>A token must begin with a &apos;/&apos;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ggacb2e274f33e54d91b96e9883a99a98bea4d2a7e511d717fd1d2f532ef5fcf821b" prot="public">
+          <name>kPointerParseErrorInvalidEscape</name>
+          <briefdescription>
+<para>Invalid escape. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ggacb2e274f33e54d91b96e9883a99a98beac0c1b013c0db34dcc5a47fc1ee7a8c35" prot="public">
+          <name>kPointerParseErrorInvalidPercentEncoding</name>
+          <briefdescription>
+<para>Invalid percent encoding in URI fragment. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ggacb2e274f33e54d91b96e9883a99a98beabd7eae93627f74267009a03679b6dc38" prot="public">
+          <name>kPointerParseErrorCharacterMustPercentEncode</name>
+          <briefdescription>
+<para>A character must percent encoded in URI fragment. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Error code of parsing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_generic_pointer_1a5d85b7dc82719643e8f7adccd5a74fbe" kindref="member">GenericPointer::GenericPointer</ref>, GenericPointer::GetParseErrorCode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/pointer.h" line="37" column="1" bodyfile="content/cereal/external/rapidjson/pointer.h" bodystart="37" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gaa919ec89e5a5899b894271917b57047f" prot="public" static="no">
+        <type>const <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga5ac207503645d701265f2f3eb113f62d" kindref="member">CEREAL_RAPIDJSON_ERROR_CHARTYPE</ref> *(*</type>
+        <definition>typedef const CEREAL_RAPIDJSON_ERROR_CHARTYPE *(* GetParseErrorFunc) (ParseErrorCode)</definition>
+        <argsstring>)(ParseErrorCode)</argsstring>
+        <name>GetParseErrorFunc</name>
+        <briefdescription>
+<para>Function pointer type of GetParseError(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the prototype for <computeroutput>GetParseError_X()</computeroutput>, where <computeroutput>X</computeroutput> is a locale. User can dynamically change locale in runtime, e.g.: <programlisting><codeline><highlight class="normal">GetParseErrorFunc<sp/>GetParseError<sp/>=<sp/>GetParseError_En;<sp/>//<sp/>or<sp/>whatever</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>CEREAL_RAPIDJSON_ERROR_CHARTYPE*<sp/>s<sp/>=<sp/>GetParseError(document.GetParseErrorCode());</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/error/error.h" line="153" column="15" bodyfile="content/cereal/external/rapidjson/error/error.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga0a32ff59b1edd6cdfe219c23e996974e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga69bf61966c74b09b5d90b386847f39be" kindref="member">CEREAL_RAPIDJSON_NAMESPACE_BEGIN</ref> const <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga5ac207503645d701265f2f3eb113f62d" kindref="member">CEREAL_RAPIDJSON_ERROR_CHARTYPE</ref> *</type>
+        <definition>CEREAL_RAPIDJSON_NAMESPACE_BEGIN const CEREAL_RAPIDJSON_ERROR_CHARTYPE * GetParseError_En</definition>
+        <argsstring>(ParseErrorCode parseErrorCode)</argsstring>
+        <name>GetParseError_En</name>
+        <param>
+          <type><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga8d4b32dfc45840bca189ade2bbcb6ba7" kindref="member">ParseErrorCode</ref></type>
+          <declname>parseErrorCode</declname>
+        </param>
+        <briefdescription>
+<para>Maps error code of parsing into error message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parseErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code obtained in parsing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the error message. </para>
+</simplesect>
+<simplesect kind="note"><para>User can make a copy of this function for localization. Using switch-case is safer for future modification of error codes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/error/en.h" line="36" column="46" bodyfile="content/cereal/external/rapidjson/error/en.h" bodystart="36" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga5ac207503645d701265f2f3eb113f62d" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_ERROR_CHARTYPE</name>
+        <initializer>char</initializer>
+        <briefdescription>
+<para>Character type of error messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default character type is <computeroutput>char</computeroutput>. On Windows, user can define this macro as <computeroutput>TCHAR</computeroutput> for supporting both unicode/non-unicode settings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/error/error.h" line="39" column="9" bodyfile="content/cereal/external/rapidjson/error/error.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gabc2739d9159e8820e36a207d131dbda0" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_ERROR_STRING</name>
+        <param><defname>x</defname></param>
+        <initializer>x</initializer>
+        <briefdescription>
+<para>Macro for converting string literial to <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga5ac207503645d701265f2f3eb113f62d" kindref="member">CEREAL_RAPIDJSON_ERROR_CHARTYPE</ref>[]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default this conversion macro does nothing. On Windows, user can define this macro as <computeroutput>_T(x)</computeroutput> for supporting both unicode/non-unicode settings. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/error/error.h" line="52" column="9" bodyfile="content/cereal/external/rapidjson/error/error.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga2626dc226385d5859c3b1fab54e1b503" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_PARSE_ERROR_NORETURN</name>
+        <param><defname>parseErrorCode</defname></param>
+        <param><defname>offset</defname></param>
+        <initializer>    CEREAL_RAPIDJSON_MULTILINEMACRO_BEGIN \
+    <ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_1ga06f04b87f6adff794a5a4bbe254dc15c" kindref="member">CEREAL_RAPIDJSON_ASSERT</ref>(!HasParseError()); /* Error can only be assigned once */ \
+    SetParseError(parseErrorCode, offset); \
+    CEREAL_RAPIDJSON_MULTILINEMACRO_END</initializer>
+        <briefdescription>
+<para>Macro to indicate a parse error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parseErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rapidjson::ParseErrorCode of the error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position of the error in JSON input (<computeroutput>size_t</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This macros can be used as a customization point for the internal error handling mechanism of RapidJSON.</para>
+<para>A common usage model is to throw an exception instead of requiring the caller to explicitly check the rapidjson::GenericReader::Parse&apos;s return value:</para>
+<para><programlisting><codeline><highlight class="normal">#define<sp/>CEREAL_RAPIDJSON_PARSE_ERROR_NORETURN(parseErrorCode,offset)<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>throw<sp/>ParseException(parseErrorCode,<sp/>#parseErrorCode,<sp/>offset)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;stdexcept&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>std::runtime_error</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;rapidjson/error/error.h&quot;<sp/>//<sp/>rapidjson::ParseResult</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">struct<sp/>ParseException<sp/>:<sp/>std::runtime_error,<sp/>rapidjson::ParseResult<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ParseException(rapidjson::ParseErrorCode<sp/>code,<sp/>const<sp/>char*<sp/>msg,<sp/>size_t<sp/>offset)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>std::runtime_error(msg),<sp/>ParseResult(code,<sp/>offset)<sp/>{}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;rapidjson/reader.h&quot;</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="see"><para><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gaef53189e5b906355453ac69a73618c70" kindref="member">CEREAL_RAPIDJSON_PARSE_ERROR</ref>, rapidjson::GenericReader::Parse </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/reader.h" line="99" column="9" bodyfile="content/cereal/external/rapidjson/reader.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1gaef53189e5b906355453ac69a73618c70" prot="public" static="no">
+        <name>CEREAL_RAPIDJSON_PARSE_ERROR</name>
+        <param><defname>parseErrorCode</defname></param>
+        <param><defname>offset</defname></param>
+        <briefdescription>
+<para>(Internal) macro to indicate and handle a parse error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parseErrorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rapidjson::ParseErrorCode of the error </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position of the error in JSON input (<computeroutput>size_t</computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Invokes CEREAL_RAPIDJSON_PARSE_ERROR_NORETURN and stops the parsing.</para>
+<para><simplesect kind="see"><para><ref refid="group___c_e_r_e_a_l___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_1ga2626dc226385d5859c3b1fab54e1b503" kindref="member">CEREAL_RAPIDJSON_PARSE_ERROR_NORETURN</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="content/cereal/external/rapidjson/reader.h" line="118" column="9" bodyfile="content/cereal/external/rapidjson/reader.h" bodystart="118" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

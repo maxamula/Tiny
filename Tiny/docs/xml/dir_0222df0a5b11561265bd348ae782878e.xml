@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_0222df0a5b11561265bd348ae782878e" kind="dir">
+    <compoundname>graphics/imgui</compoundname>
+    <innerfile refid="imconfig_8h">imconfig.h</innerfile>
+    <innerfile refid="imgui_8cpp">imgui.cpp</innerfile>
+    <innerfile refid="imgui_8h">imgui.h</innerfile>
+    <innerfile refid="imgui__demo_8cpp">imgui_demo.cpp</innerfile>
+    <innerfile refid="imgui__draw_8cpp">imgui_draw.cpp</innerfile>
+    <innerfile refid="imgui__impl__dx12_8cpp">imgui_impl_dx12.cpp</innerfile>
+    <innerfile refid="imgui__impl__dx12_8h">imgui_impl_dx12.h</innerfile>
+    <innerfile refid="imgui__impl__win32_8cpp">imgui_impl_win32.cpp</innerfile>
+    <innerfile refid="imgui__impl__win32_8h">imgui_impl_win32.h</innerfile>
+    <innerfile refid="imgui__internal_8h">imgui_internal.h</innerfile>
+    <innerfile refid="imgui__tables_8cpp">imgui_tables.cpp</innerfile>
+    <innerfile refid="imgui__widgets_8cpp">imgui_widgets.cpp</innerfile>
+    <innerfile refid="imstb__rectpack_8h">imstb_rectpack.h</innerfile>
+    <innerfile refid="imstb__textedit_8h">imstb_textedit.h</innerfile>
+    <innerfile refid="imstb__truetype_8h">imstb_truetype.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="graphics/imgui/"/>
+  </compounddef>
+</doxygen>

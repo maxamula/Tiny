@@ -1,0 +1,35 @@
+digraph "GenericValue&lt; Encoding, Allocator &gt;::ObjectData"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="GenericValue\< Encoding,\l Allocator \>::ObjectData",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" members",fontcolor="grey" ];
+  Node2 [id="Node000002",label="GenericMember\< Encoding,\l Allocator \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_member.html",tooltip="Name-value pair in a JSON object value."];
+  Node3 -> Node2 [id="edge2_Node000002_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" name\nvalue",fontcolor="grey" ];
+  Node3 [id="Node000003",label="GenericValue\< rapidjson\l::Encoding, rapidjson\l::Allocator \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_generic_value.html",tooltip=" "];
+  Node4 -> Node3 [id="edge3_Node000003_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" data_",fontcolor="grey" ];
+  Node4 [id="Node000004",label="GenericValue\< Encoding,\l Allocator \>::Data",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_generic_value_1_1_data.html",tooltip=" "];
+  Node5 -> Node4 [id="edge4_Node000004_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" s",fontcolor="grey" ];
+  Node5 [id="Node000005",label="GenericValue\< Encoding,\l Allocator \>::String",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_string.html",tooltip=" "];
+  Node6 -> Node4 [id="edge5_Node000004_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" ss",fontcolor="grey" ];
+  Node6 [id="Node000006",label="GenericValue\< Encoding,\l Allocator \>::ShortString",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_short_string.html",tooltip=" "];
+  Node7 -> Node4 [id="edge6_Node000004_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" n",fontcolor="grey" ];
+  Node7 [id="Node000007",label="GenericValue\< Encoding,\l Allocator \>::Number",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$union_generic_value_1_1_number.html",tooltip=" "];
+  Node8 -> Node7 [id="edge7_Node000007_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" i",fontcolor="grey" ];
+  Node8 [id="Node000008",label="GenericValue\< Encoding,\l Allocator \>::Number::I",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_number_1_1_i.html",tooltip=" "];
+  Node9 -> Node7 [id="edge8_Node000007_Node000009",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" u",fontcolor="grey" ];
+  Node9 [id="Node000009",label="GenericValue\< Encoding,\l Allocator \>::Number::U",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_number_1_1_u.html",tooltip=" "];
+  Node10 -> Node4 [id="edge9_Node000004_Node000010",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" o",fontcolor="grey" ];
+  Node10 [id="Node000010",label="GenericValue\< Encoding,\l Allocator \>::ObjectData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_object_data.html",tooltip=" "];
+  Node2 -> Node10 [id="edge10_Node000010_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" members",fontcolor="grey" ];
+  Node11 -> Node4 [id="edge11_Node000004_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" a",fontcolor="grey" ];
+  Node11 [id="Node000011",label="GenericValue\< Encoding,\l Allocator \>::ArrayData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_array_data.html",tooltip=" "];
+  Node12 -> Node11 [id="edge12_Node000011_Node000012",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
+  Node12 [id="Node000012",label="GenericValue\< Encoding,\l Allocator \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_generic_value.html",tooltip="Represents a JSON value. Use Value for UTF8 encoding and default allocator."];
+  Node4 -> Node12 [id="edge13_Node000012_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" data_",fontcolor="grey" ];
+  Node13 -> Node4 [id="edge14_Node000004_Node000013",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" f",fontcolor="grey" ];
+  Node13 [id="Node000013",label="GenericValue\< Encoding,\l Allocator \>::Flag",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_generic_value_1_1_flag.html",tooltip=" "];
+}
